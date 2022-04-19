@@ -21,14 +21,31 @@ ENV PROJ_LIB=/usr/local/share/proj/
 
 RUN pip install specify-lmpy
 
-# Install BiotaPhyPy
+# .....................................................................................
+# Create local user and output directories
+RUN addgroup -S specify -g 888 \
+ && adduser -S specify -G specify -u 888
+
+RUN mkdir -p /home/specify \
+ && chown specify.specify /home/specify
+
+RUN mkdir -p /scratch-path/log \
+ && mkdir -p /scratch-path/sessions \
+ && chown -R specify.specify /scratch-path
+
+WORKDIR /home/specify
+USER specify
+
+# .....................................................................................
+# Install
+#  BiotaphyPy
 RUN mkdir git && \
     cd git && \
 	git clone https://github.com/biotaphy/BiotaPhyPy.git && \
 	cd BiotaPhyPy && \
 	pip install .
 
-# Install lmtools
+# lmtools
 RUN cd git && \
     git clone https://github.com/specifysystems/lmtools.git && \
 	cd lmtools && \
@@ -41,4 +58,7 @@ RUN cd git && \
 ENV MAXENT_VERSION=3.4.4
 ENV MAXENT_JAR=/git/Maxent/ArchivedReleases/$MAXENT_VERSION/maxent.jar
 
+WORKDIR /biotaphy-tools
+
 SHELL ["/bin/bash", "-c"]
+

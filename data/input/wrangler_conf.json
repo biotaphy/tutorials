@@ -1,0 +1,13 @@
+[
+    {
+        "wrangler_type" : "decimal_precision_filter",
+        "decimal_precision" : 4
+    },
+    {
+        "wrangler_type" : "unique_localities_filter"
+    },
+    {
+        "wrangler_type" : "minimum_points_filter",
+        "minimum_points" : 12
+    }
+]
