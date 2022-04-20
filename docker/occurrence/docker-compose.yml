@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+  biotaphy:
+    image: conda/miniconda3:latest
+    command: [pip, list]
+#    command: ["echo", "infilename = ", $IN_FNAME]
+#    command: ["clean_occurrences",
+#              "--species_key", $SPECIES_KEY,
+#              "--x_key", $X_KEY,
+#              "--y_key", $Y_KEY,
+#              "--report_filename", $REPORT_FNAME,
+#              "--log_output", $LOG_OUTPUT,
+#              $IN_FNAME,
+#              $OUT_FNAME,
+#              $PROCESS_CONFIG_FNAME]
+    build:
+      context: ./.
+      target: biotaphy
+    ports:
+      - 3000:3000
+    working_dir: /tutorials
+#   use bind-mounts
+    volumes:
+      - "./:/tutorials"
+      - "./data/input:/input:ro"
+      - "./data/output:/output"
+      - "./data/log:/log"
