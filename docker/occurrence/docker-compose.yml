@@ -1,25 +1,14 @@
 version: "3.9"
 services:
-  back-end:
-    build:
-      context: ./.
-      target: occ-back-end
+  backend:
 #    command: ["echo", "infilename = ", $IN_FNAME]
-    command: ["clean_occurrences"]
-#    command: ["clean_occurrences",
-#              "--species_key", $SPECIES_KEY,
-#              "--x_key", $X_KEY,
-#              "--y_key", $Y_KEY,
-#              "--report_filename", $REPORT_FNAME,
-#              "--log_output", $LOG_OUTPUT,
-#              $IN_FNAME,
-#              $OUT_FNAME,
-#              $PROCESS_CONFIG_FNAME]
-    ports:
-      - 3000:3000
-#   use bind-mounts
-    volumes:
-      - "./:/tutorials"
-      - "./data/input:/input:ro"
-      - "./data/output:/output"
-      - "./data/log:/log"
+#    command: ["clean_occurrences"]
+    command: ["clean_occurrences",
+              "--species_key", $SPECIES_KEY,
+              "--x_key", $X_KEY,
+              "--y_key", $Y_KEY,
+              "--report_filename", $REPORT_FNAME,
+              "--log_output", $LOG_OUTPUT,
+              $IN_FNAME,
+              $OUT_FNAME,
+              $PROCESS_CONFIG_FNAME]

@@ -35,7 +35,7 @@ Image tutorials_back-end is now available
 
 Mac / Linux:
 ```commandline
-docker run  -it tutorials_back-end bash
+docker run  -it tutorials_backend bash
 ```
 
 [//]: # (or Windows:)
@@ -69,10 +69,4 @@ And run this command (which ignores running container):
 
 ```zsh
 docker system prune --all --volumes
-```
-
-To examine containers at a shell prompt: 
-
-```zsh
-docker exec -it tutorial /bin/sh
 ```
