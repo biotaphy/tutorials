@@ -16,29 +16,32 @@ git clone https://github.com/biotaphy/tutorials.git
 cd tutorials
 ```
 
-3. Build the docker image
-```commandline
-docker build . -t tutorial
+3. Run the containers:
+
+```zsh
+docker compose up -d
 ```
+
+Image tutorials_back-end is now available
+
+[//]: # (### Development)
+[//]: # ()
+[//]: # (Run the containers:)
+[//]: # (```zsh)
+[//]: # (docker compose -f docker-compose.yml -f docker-compose.development.yml up)
+[//]: # (```)
 
 4. Run a bash shell in the container interactively
 
 Mac / Linux:
 ```commandline
-docker run -v "./data/input:/input:ro"  -it tutorial bash
+docker run  -it tutorials_back-end bash
 ```
 
-[//]: # (or)
-
-[//]: # (Windows:)
-
+[//]: # (or Windows:)
 [//]: # (```commandline)
-
 [//]: # (docker run -v %cd%/data:/demo -it dc_demo bash)
-
 [//]: # (```)
-  
-2. Run the data cleaning example from the container
 
 
 ## Tutorials
@@ -71,5 +74,5 @@ docker system prune --all --volumes
 To examine containers at a shell prompt: 
 
 ```zsh
-docker exec -it lmtrex_nginx_1 /bin/sh
+docker exec -it tutorial /bin/sh
 ```
