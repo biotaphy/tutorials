@@ -1,20 +1,10 @@
 version: "3.9"
 services:
-  back-end:
+  backend:
     build:
       context: ./.
-      target: base-back-end
-#    command: [pip, list]
-    command: ["echo", "infilename = ", $IN_FNAME]
-#    command: ["clean_occurrences",
-#              "--species_key", $SPECIES_KEY,
-#              "--x_key", $X_KEY,
-#              "--y_key", $Y_KEY,
-#              "--report_filename", $REPORT_FNAME,
-#              "--log_output", $LOG_OUTPUT,
-#              $IN_FNAME,
-#              $OUT_FNAME,
-#              $PROCESS_CONFIG_FNAME]
+      target: backend
+    command: [pip, list]
     ports:
       - 3000:3000
 #   use bind-mounts
