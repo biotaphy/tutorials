@@ -3,9 +3,9 @@ services:
   back-end:
     build:
       context: ./.
-      target: occ-back-end
-#    command: ["echo", "infilename = ", $IN_FNAME]
-    command: ["clean_occurrences"]
+      target: base-back-end
+#    command: [pip, list]
+    command: ["echo", "infilename = ", $IN_FNAME]
 #    command: ["clean_occurrences",
 #              "--species_key", $SPECIES_KEY,
 #              "--x_key", $X_KEY,
