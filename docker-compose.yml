@@ -9,7 +9,6 @@ services:
       - 3000:3000
 #   use bind-mounts
     volumes:
-      - "./:/tutorials"
-      - "./data/input:/input:ro"
-      - "./data/output:/output"
-      - "./data/log:/log"
+      - "./data/output:/home/biotaphy/data/output"
+      - "./data/log:/home/biotaphy/data/log"
+
