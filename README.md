@@ -16,11 +16,20 @@ git clone https://github.com/biotaphy/tutorials.git
 cd tutorials
 ```
 
-3. Run the containers:
-
+3. Run the bash script with a command and configuration file to 
+   1. create an environment file 
+   2. run the container with command-specific docker-compose and environment files
 ```zsh
-docker compose up -d
+bash go.sh clean_occurrences data/input/heuchera.ini
 ```
+
+[//]: # (4. Run the containers:)
+
+[//]: # (```zsh)
+
+[//]: # (docker compose -f docker-compose.yml -f docker/up -d)
+
+[//]: # (```)
 
 Image tutorials_back-end is now available
 
@@ -70,3 +79,5 @@ And run this command (which ignores running container):
 ```zsh
 docker system prune --all --volumes
 ```
+
+clean_occurrences --species_key species_name --x_key x --y_key y  --report_filename output/cleaning_report.json input/heuchera.csv  output/clean_heuchera.csv input/wrangler_conf.json

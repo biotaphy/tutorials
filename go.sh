@@ -45,6 +45,9 @@ set_defaults() {
 
     THISNAME=`/bin/basename $0`
     LOG=./data/log/$THISNAME.log
+    if [ -f "$LOG" ] ; then
+        /usr/bin/rm "$LOG"
+    fi
     touch "$LOG"
 
     DOCKER_PATH=./docker
@@ -108,16 +111,41 @@ create_occurrence_docker_envfile() {
         echo "Warning: Missing Y_KEY value in $CONFIG_FILE, identifying latitude column $IN_FNAME.  Using command default value." | tee -a "$LOG"
     fi
 
+    # TODO: modify lmpy.clean_occurrences script to take 0 or 1 instead of a flag
+    #       it is difficult to have optional argument in a docker command
+    if [[ "$LOG_OUTPUT" =~ ^(yes|Yes||y|true|True|TRUE|1)$ ]]; then
+        LOG_OUTPUT="--log_output"
+    else
+        LOG_OUTPUT=""
+        echo "$LOG_OUTPUT is false"
+    fi
+
+    # Set environment for command to be run in docker instance
     set_environment "occurrence"
     echo "SPECIES_KEY=$SPECIES_KEY"  >> "$CMD_ENV_FNAME"
     echo "X_KEY=$X_KEY"  >> "$CMD_ENV_FNAME"
     echo "Y_KEY=$Y_KEY"  >> "$CMD_ENV_FNAME"
     echo "REPORT_FNAME=$REPORT_FNAME"  >> "$CMD_ENV_FNAME"
-    echo "LOG_OUTPUT=$LOG_OUTPUT"  >> "$CMD_ENV_FNAME"
+#    # For now, leave as default
+#    echo "LOG_OUTPUT=$LOG_OUTPUT"  >> "$CMD_ENV_FNAME"
     echo "IN_FNAME=$IN_FNAME"  >> "$CMD_ENV_FNAME"
     echo "OUT_FNAME=$OUT_FNAME"  >> "$CMD_ENV_FNAME"
     echo "PROCESS_CONFIG_FNAME=$PROCESS_CONFIG_FNAME"  >> "$CMD_ENV_FNAME"
 
+    # Log command to be run in docker instance
+    echo "Created environment to run:"     | tee -a "$LOG"
+    echo "     clean_occurrences \ "       | tee -a "$LOG"
+    echo "          --species_key species_name  \ " | tee -a "$LOG"
+    echo "          --x_key x \ "          | tee -a "$LOG"
+    echo "          --y_key y \ "          | tee -a "$LOG"
+    echo "          --report_filename $REPORT_FNAME \ " | tee -a "$LOG"
+#    # For now, leave as default
+#    if [[ "$LOG_OUTPUT" == "--log_output" ]] ; then
+#        echo "          $LOG_OUTPUT  \ "         | tee -a "$LOG"
+#    fi
+    echo "          $IN_FNAME  \ "         | tee -a "$LOG"
+    echo "          $OUT_FNAME \ "         | tee -a "$LOG"
+    echo "          $PROCESS_CONFIG_FNAME" | tee -a "$LOG"
 }
 
 # -----------------------------------------------------------

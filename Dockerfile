@@ -3,17 +3,21 @@
 #RUN conda update -n base -c conda-forge conda
 #RUN conda install -y -c conda-forge tiledb=2.2.9 gdal libspatialindex rtree git openjdk=8
 
-FROM osgeo/gdal:latest as backend
+#FROM osgeo/gdal:latest as backend
+FROM osgeo/gdal:ubuntu-small-latest as backend
 
 RUN apt-get update && \
     apt-get install -y git && \
+    apt-get install -y vim && \
     apt-get install -y python3-pip
 
 # .....................................................................................
-# Install biotaphy projects
-# specify-lmpy
+# Install biotaphy projects for system
+
 # Remove when this has been added to lmpy requirements
 RUN pip install requests
+
+# specify-lmpy
 RUN mkdir git && \
     cd git && \
     git clone https://github.com/specifysystems/lmpy.git
@@ -38,6 +42,24 @@ RUN cd git && \
 
 ENV MAXENT_VERSION=3.4.4
 ENV MAXENT_JAR=/git/Maxent/ArchivedReleases/$MAXENT_VERSION/maxent.jar
+
+# .....................................................................................
+# Add biotaphy user, group, home directory
+RUN addgroup --system --gid 888 biotaphy \
+ && adduser --system  --gid 888 --uid 888 biotaphy
+
+RUN mkdir -p /home/biotaphy \
+ && chown biotaphy.biotaphy /home/biotaphy
+
+COPY --chown=biotaphy:biotaphy ./data /home/biotaphy/
+
+RUN mkdir -p /scratch-path/log \
+ && chown -R biotaphy.biotaphy /scratch-path
+
+# .....................................................................................
+# Change user, workdir
+WORKDIR /home/biotaphy
+USER biotaphy
 
 SHELL ["/bin/bash", "-c"]
 
