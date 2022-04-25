@@ -1,9 +1,3 @@
-#FROM conda/miniconda3:latest as back-end
-#
-#RUN conda update -n base -c conda-forge conda
-#RUN conda install -y -c conda-forge tiledb=2.2.9 gdal libspatialindex rtree git openjdk=8
-
-#FROM osgeo/gdal:latest as backend
 FROM osgeo/gdal:ubuntu-small-latest as backend
 
 RUN apt-get update && \
@@ -43,23 +37,29 @@ RUN cd git && \
 ENV MAXENT_VERSION=3.4.4
 ENV MAXENT_JAR=/git/Maxent/ArchivedReleases/$MAXENT_VERSION/maxent.jar
 
+## .....................................................................................
+## Add biotaphy user, group, home directory
+#RUN addgroup --system --gid 888 biotaphy \
+# && adduser --system  --gid 888 --uid 888 biotaphy
+#
+#RUN mkdir -p /home/biotaphy \
+# && chown biotaphy.biotaphy /home/biotaphy
+#
+##COPY --chown=biotaphy:biotaphy ./data /home/biotaphy/
+#
+#RUN mkdir -p /scratch-path/log \
+# && chown -R biotaphy.biotaphy /scratch-path
+#
+
 # .....................................................................................
-# Add biotaphy user, group, home directory
-RUN addgroup --system --gid 888 biotaphy \
- && adduser --system  --gid 888 --uid 888 biotaphy
+# Copy input data to container
+RUN mkdir -p /biotaphy_data
+COPY ./data/input /biotaphy_data/input
 
-RUN mkdir -p /home/biotaphy \
- && chown biotaphy.biotaphy /home/biotaphy
 
-COPY --chown=biotaphy:biotaphy ./data /home/biotaphy/
-
-RUN mkdir -p /scratch-path/log \
- && chown -R biotaphy.biotaphy /scratch-path
-
-# .....................................................................................
-# Change user, workdir
-WORKDIR /home/biotaphy
-USER biotaphy
+## Change user, workdir
+#WORKDIR /home/biotaphy
+#USER biotaphy
 
 SHELL ["/bin/bash", "-c"]
 

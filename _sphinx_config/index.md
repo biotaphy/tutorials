@@ -16,5 +16,7 @@ learning how to use Biotaphy tools, either through the R interface or through a 
 
 
 ## Tutorials
-### [Occurrence Data cleaning](../tutorial/data_cleaning.md)
+### [Tutorial Overview](../tutorial/overview.md)
+### [Occurrence Data cleaning](../tutorial/clean_occurrences.md)
 
+### [Create PAM grid](../tutorial/create_grid.md)

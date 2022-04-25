@@ -2,34 +2,32 @@
 
 ## Introduction
 
-Each tutorial can be initiated by running the "go" script with 2 arguments at the top level of this project.
-The first argument is the command name, and the second is the configuration file containing command arguments, 
+Read [Tutorial Overview](../tutorial/overview.md) for an overview of how all tutorials work. 
 
-i.e. for linux/mac systems
+## Run clean_occurrences tutorial 
+
+Initiate the clean occurrences command with the following:
+
+for linux/mac systems
 
 ```zsh
-bash go.sh clean_occurrences data/input/heuchera.ini
+bash go.sh clean_occurrences data/input/clean_occurrences.ini
 ```
 
 for windows systems
 
 ```cmd
-./go.bat clean_occurrences data/input/heuchera.ini
+./go.bat clean_occurrences data\input\clean_occurrences.ini
 ```
 
-Each configuration file is an ini file with command-specific parameters.  Every command has an example configuration 
-file, which references example data.
+## Configuration file
 
-The "go" script will build and instantiate a Docker container, and run the specified command with the parameters in 
-the specified configuration file.
+The clean_occurrences configuration file consists of one or more "wrangler_type"s, and the wrangler-specific 
+required and possibly optional parameters for each.  Below are the available wrangler_types. 
 
-On docker instantiation, the files in the data directory will be shared from the host computer to the docker container.  
-Data placed in the input directory on the host machine will be accessible to the container.  Data created by the 
-container in the output and log directories will be accessible by the host computer when the container has completed.
+### Occurrence Data Wranglers
 
-## Occurrence Data Wranglers
 
-These files define occurrence data manipulation parameters that can be configured for various tools
 
 * A configuration file is in JSON format, a list of one dictionary per desired wrangler.
   * Each dictionary must contain "wrangler_type", with the name of the wrangler types (listed below).

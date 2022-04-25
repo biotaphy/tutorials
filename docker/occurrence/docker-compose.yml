@@ -1,7 +1,7 @@
 version: "3.9"
+
 services:
   backend:
-#    command: ["echo", "infilename = ", $IN_FNAME]
     command: ["clean_occurrences",
               "--species_key", $SPECIES_KEY,
               "--x_key", $X_KEY,
@@ -10,4 +10,6 @@ services:
               "--log_output",
               $IN_FNAME,
               $OUT_FNAME,
-              $PROCESS_CONFIG_FNAME]
+              $PROCESS_CONFIG_FNAME,
+              "&&",
+              "tail -f /dev/null" ]

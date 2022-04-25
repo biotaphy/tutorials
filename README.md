@@ -18,27 +18,14 @@ cd tutorials
 
 3. Run the bash script with a command and configuration file to 
    1. create an environment file 
-   2. run the container with command-specific docker-compose and environment files
+   2. run the container with command-specific docker-compose and environment files, which
+      1. runs the command in the container
+      2. creating output files in the container, mounted to the local directory
 ```zsh
-bash go.sh clean_occurrences data/input/heuchera.ini
+bash go.sh clean_occurrences data/input/clean_occurrences.ini
 ```
 
-[//]: # (4. Run the containers:)
-
-[//]: # (```zsh)
-
-[//]: # (docker compose -f docker-compose.yml -f docker/up -d)
-
-[//]: # (```)
-
 Image tutorials_back-end is now available
-
-[//]: # (### Development)
-[//]: # ()
-[//]: # (Run the containers:)
-[//]: # (```zsh)
-[//]: # (docker compose -f docker-compose.yml -f docker-compose.development.yml up)
-[//]: # (```)
 
 4. Run a bash shell in the container interactively
 
