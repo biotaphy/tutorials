@@ -112,8 +112,8 @@ create_occurrence_docker_envfile() {
     fi
 
     # TODO: modify lmpy.clean_occurrences script to take 0 or 1 instead of a flag
-    #       it is difficult to have optional argument in a docker command
-    if [[ "$LOG_OUTPUT" =~ ^(yes|Yes||y|true|True|TRUE|1)$ ]]; then
+    #       it is a PITA to have optional boolean argument in a docker command
+    if [[ "$LOG_OUTPUT" =~ ^(yes|Yes|y|true|True|TRUE|1)$ ]]; then
         LOG_OUTPUT="--log_output"
     else
         LOG_OUTPUT=""
@@ -126,7 +126,7 @@ create_occurrence_docker_envfile() {
     echo "X_KEY=$X_KEY"  >> "$CMD_ENV_FNAME"
     echo "Y_KEY=$Y_KEY"  >> "$CMD_ENV_FNAME"
     echo "REPORT_FNAME=$REPORT_FNAME"  >> "$CMD_ENV_FNAME"
-#    # For now, leave as default
+#    # For now, leave this optional, boolean arg as default
 #    echo "LOG_OUTPUT=$LOG_OUTPUT"  >> "$CMD_ENV_FNAME"
     echo "IN_FNAME=$IN_FNAME"  >> "$CMD_ENV_FNAME"
     echo "OUT_FNAME=$OUT_FNAME"  >> "$CMD_ENV_FNAME"
@@ -139,10 +139,6 @@ create_occurrence_docker_envfile() {
     echo "          --x_key x \ "          | tee -a "$LOG"
     echo "          --y_key y \ "          | tee -a "$LOG"
     echo "          --report_filename $REPORT_FNAME \ " | tee -a "$LOG"
-#    # For now, leave as default
-#    if [[ "$LOG_OUTPUT" == "--log_output" ]] ; then
-#        echo "          $LOG_OUTPUT  \ "         | tee -a "$LOG"
-#    fi
     echo "          $IN_FNAME  \ "         | tee -a "$LOG"
     echo "          $OUT_FNAME \ "         | tee -a "$LOG"
     echo "          $PROCESS_CONFIG_FNAME" | tee -a "$LOG"
@@ -152,10 +148,10 @@ create_occurrence_docker_envfile() {
 start_occurrence_process() {
     # clean_occurrences -r /demo/cleaning_report.json /demo/heuchera.csv /demo/clean_data.csv /demo/wrangler_conf.json
     create_occurrence_docker_envfile
-    echo "Troublesome var is ${DOCKER_OCC_PATH}/.env"
-    docker compose -f ${COMPOSE_FNAME}  -f ${CMD_COMPOSE_FNAME}  --env-file ${CMD_ENV_FNAME}  up
-#    echo "Ready to execute $CMD with:" | tee -a "$LOG"
-#    echo "      docker compose -f $COMPOSE_FNAME -f $DOCKER_OCC_PATH/$COMPOSE_FNAME  --env-file $DOCKER_OCC_PATH/.env  up" | tee -a "$LOG"
+    echo "Ready to execute $CMD with:" | tee -a "$LOG"
+    echo "      docker compose  --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file $CMD_ENV_FNAME  up" | tee -a "$LOG"
+    docker compose --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file ${CMD_ENV_FNAME}  up
+#    docker compose  --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file ${CMD_ENV_FNAME}  up
 }
 
 # -----------------------------------------------------------

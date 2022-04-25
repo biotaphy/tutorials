@@ -1,14 +1,14 @@
 version: "3.9"
+
 services:
   backend:
     build:
       context: ./.
       target: backend
-    command: [pip, list]
     ports:
       - 3000:3000
-#   use bind-mounts
+    # bind-mount output directories
     volumes:
-      - "./data/output:/home/biotaphy/data/output"
-      - "./data/log:/home/biotaphy/data/log"
-
+#      - "./data:/biotaphy_data"
+      - "./data/output:/biotaphy_data/output"
+      - "./data/log:/biotaphy_data/log"
