@@ -16,15 +16,15 @@ import sys
 sys.path.insert(0, os.path.abspath('..'))
 sys.path.insert(0, os.path.abspath('../..'))
 
-import lmpy  # noqa: E402
+#import lmpy  # noqa: E402
 
 # -- Project information -----------------------------------------------------
-project = 'Specify lmpy'
-copyright = '2022, Specify Lifemapper Team'
-author = 'Specify Lifemapper Team'
+project = 'Biotaphy Tutorials'
+copyright = '2022, Biotaphy Team'
+author = 'Biotaphy Team'
 
 # The full version, including alpha/beta/rc tags
-release = lmpy.__version__
+release = '1.0a1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -33,16 +33,17 @@ release = lmpy.__version__
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.doctest',
+    #'sphinx.ext.autodoc',
+    #'sphinx.ext.doctest',
     'sphinx.ext.intersphinx',
-    'sphinx.ext.todo',
-    'sphinx.ext.coverage',
+    #'sphinx.ext.todo',
+    #'sphinx.ext.coverage',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
-    'sphinx.ext.napoleon',
+    #'sphinx.ext.napoleon',
     'sphinx_rtd_theme',
-    'autoapi.extension',
+    #'autoapi.extension',
+    'myst_parser',  # For MD support
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -71,7 +72,7 @@ master_doc = 'index'
 
 
 # Auto api config
-autoapi_type = 'python'
-autoapi_dirs = ['../lmpy']
-autoapi_python_class_content = 'init'
-autoapi_member_order = 'alphabetical'
+#autoapi_type = 'python'
+#autoapi_dirs = ['../lmpy']
+#autoapi_python_class_content = 'init'
+#autoapi_member_order = 'alphabetical'
