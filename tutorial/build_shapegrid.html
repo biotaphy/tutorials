@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Create grid &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Build grid &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -56,9 +56,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Create grid</li>
+      <li>Build grid</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/create_pam_grid.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/build_shapegrid.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -66,33 +66,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="create-grid">
-<h1>Create grid<a class="headerlink" href="#create-grid" title="Permalink to this headline"></a></h1>
+  <section id="build-grid">
+<h1>Build grid<a class="headerlink" href="#build-grid" title="Permalink to this headline"></a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
-<p>Each tutorial can be initiated by running the “go” script with 2 arguments at the top level of this project.
-The first argument is the command name, and the second is the configuration file containing command arguments,</p>
-<p>i.e. for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh create_grid data/input/create_grid.ini
+<p>Read <a class="reference internal" href="overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials work.</p>
+</section>
+<section id="run-clean-occurrences-tutorial">
+<h2>Run clean_occurrences tutorial<a class="headerlink" href="#run-clean-occurrences-tutorial" title="Permalink to this headline"></a></h2>
+<p>Initiate the build_shapegrid process with the following:</p>
+<p>for linux/mac systems</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh build_shapegrid data/input/build_shapegrid.ini
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    shapegrid_file_name (str): The location to store the resulting
-        shapegrid.
-    min_x (numeric): The minimum value for X of the shapegrid.
-    min_y (numeric): The minimum value for Y of the shapegrid.
-    max_x (numeric): The maximum value for X of the shapegrid.
-    max_y (numeric): The maximum value for Y of the shapegrid.
-    cell_size (numeric): The size of each cell (in units indicated by EPSG).
-    epsg_code (int): The EPSG code for the new shapegrid.
-    cell_sides (int): The number of sides for each cell of the shapegrid.
-        4 - square cells, 6 - hexagon cells
-    site_id (str): The name of the site id field for the shapefile.
-    site_x (str): The name of the X field for the shapefile.
-    site_y (str): The name of the Y field for the shapefile.
-    cutout_wkt (None or str): WKT for an area of the shapegrid to be cut
-        out.
+<p>for windows:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>go.bat build_shapegrid data\input\build_shapegrid.ini
 </pre></div>
 </div>
+</section>
+<section id="configuration-file">
+<h2>Configuration file<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h2>
+<p>The clean_occurrences configuration file consists of 7 required parameters:</p>
+<ul class="simple">
+<li><p><strong>shapegrid_filename</strong>: The relative or absolute path for the output shapegrid.</p></li>
+<li><p><strong>min_x</strong>: The minimum value for X (longitude) coordinate of the shapegrid.</p></li>
+<li><p><strong>min_y</strong>: The minimum value for Y (latitude) coordinate of the shapegrid.</p></li>
+<li><p><strong>max_x</strong>: The maximum value for X (longitude) coordinate of the shapegrid.</p></li>
+<li><p><strong>max_y</strong>: The maximum value for Y (latitude) coordinate of the shapegrid.</p></li>
+<li><p><strong>cell_size</strong>: The size of each cell (in units indicated by EPSG).</p></li>
+<li><p><strong>epsg_code</strong>: The EPSG code for the new shapegrid.</p></li>
+</ul>
 </section>
 </section>
 
