@@ -20,7 +20,7 @@ cd tutorials
    1. create an environment file 
    2. run the container with command-specific docker-compose and environment files, which
       1. runs the command in the container
-      2. creating output files in the container, mounted to the local directory
+      2. creates output files available to the host machine through the configured local directory
 ```zsh
 bash go.sh clean_occurrences data/input/clean_occurrences.ini
 ```

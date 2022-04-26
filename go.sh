@@ -20,6 +20,7 @@ usage ()
         echo "the <cmd> argument can be one of:"
         echo "      list_commands"
         echo "      clean_occurrences"
+        echo "      build_shapegrid"
         echo "the <config_file> argument must be the full path to an INI file containing command-specific arguments"
         echo "   "
     elif [ $CMD == "clean_occurrences" ] ; then
@@ -34,6 +35,16 @@ usage ()
         echo "      Y_KEY: the fieldname in the first row of the input file for the latitude"
         echo "      REPORT_FNAME: full or relative path to the output report file."
         echo "      LOG_OUTPUT: True or False, flag indicating whether to enable logging"
+    elif [ $CMD == "build_shapegrid" ] ; then
+        echo "This argument creates an environment for the biotaphy command build_shapegrid to be run"
+        echo "in a docker container.  The <config_file> must containing the following required parameters:"
+        echo "      shapegrid_file_name: The location to store the resulting shapegrid."
+        echo "      min_x: The minimum value for X (longitude) of the shapegrid."
+        echo "      min_y: The minimum value for Y (latitude) of the shapegrid."
+        echo "      max_x: The maximum value for X (longitude) of the shapegrid."
+        echo "      max_y: The maximum value for Y (latitude) of the shapegrid."
+        echo "      cell_size: The size of each cell (in map units indicated by EPSG)."
+        echo "      epsg_code: The numeric EPSG code for the new shapegrid."
     fi
     exit 0
 }
@@ -50,10 +61,6 @@ set_defaults() {
     fi
     touch "$LOG"
 
-    DOCKER_PATH=./docker
-#    DOCKER_OCC_PATH=./docker/occurrence
-    COMPOSE_FNAME=docker-compose.yml
-
     if [ ! -f "$CONFIG_FILE" ] ; then
         echo "File $CONFIG_FILE does not exist" | tee -a "$LOG"
     fi
@@ -62,6 +69,9 @@ set_defaults() {
 
 # -----------------------------------------------------------
 set_environment() {
+    DOCKER_PATH=./docker
+    COMPOSE_FNAME=docker-compose.yml
+
     CMD_PATH="$DOCKER_PATH"/$1
     CMD_COMPOSE_FNAME=$CMD_PATH/$COMPOSE_FNAME
     CMD_ENV_FNAME=$CMD_PATH/.env
@@ -71,6 +81,77 @@ set_environment() {
     fi
 
     touch $CMD_ENV_FNAME
+}
+
+# -----------------------------------------------------------
+log_command() {
+    CMD=$1
+    req_params=("$@")
+    # Log command to be run in docker instance
+    echo "Created environment to run:"     | tee -a "$LOG"
+    echo "     $CMD \ "       | tee -a "$LOG"
+    for p in "${req_params[@]}";
+    do
+        if  [ $p != $CMD ]  ; then
+            echo "          $p  \ " | tee -a "$LOG"
+        fi
+    done
+}
+
+# -----------------------------------------------------------
+create_grid_docker_envfile() {
+    echo "Find $CMD parameters in config file" >> "$LOG"
+
+    # Required parameters
+    SHP_FNAME=$(grep -i ^shapegrid_filename "$CONFIG_FILE" |  awk '{print $2}')
+    MIN_X=$(grep -i ^min_x "$CONFIG_FILE" |  awk '{print $2}')
+    MIN_Y=$(grep -i ^min_y "$CONFIG_FILE" |  awk '{print $2}')
+    MAX_X=$(grep -i ^max_x "$CONFIG_FILE" |  awk '{print $2}')
+    MAX_Y=$(grep -i ^max_y "$CONFIG_FILE" |  awk '{print $2}')
+    CELL_SIZE=$(grep -i ^cell_size "$CONFIG_FILE" |  awk '{print $2}')
+    EPSG=$(grep -i ^epsg_code "$CONFIG_FILE" |  awk '{print $2}')
+
+    if [ ! "$SHP_FNAME" ] ; then
+        echo "Error: Missing value for output shapegrid filename in config." | tee -a "$LOG"
+        exit 1
+    fi
+    if [ ! "$MIN_X" ] ; then
+        echo "Error: Missing value for minimum x coordinate in config." | tee -a "$LOG"
+        exit 1
+    fi
+    if [ ! "$MIN_Y" ] ; then
+        echo "Error: Missing value for minimum y coordinate in config." | tee -a "$LOG"
+        exit 1
+    fi
+    if [ ! "$MAX_X" ] ; then
+        echo "Error: Missing value for maximum x coordinate in config." | tee -a "$LOG"
+        exit 1
+    fi
+    if [ ! "$MAX_Y" ] ; then
+        echo "Error: Missing value for maximum y coordinate in config." | tee -a "$LOG"
+        exit 1
+    fi
+    if [ ! "$CELL_SIZE" ] ; then
+        echo "Error: Missing value for cell size in config." | tee -a "$LOG"
+        exit 1
+    fi
+    if [ ! "$EPSG" ] ; then
+        echo "Error: Missing value for epsg code in config." | tee -a "$LOG"
+        exit 1
+    fi
+
+    # Set environment for command to be run in docker instance
+    echo "SHP_FNAME=$SHP_FNAME"  >> "$CMD_ENV_FNAME"
+    echo "MIN_X=$MIN_X"  >> "$CMD_ENV_FNAME"
+    echo "MIN_Y=$MIN_Y"  >> "$CMD_ENV_FNAME"
+    echo "MAX_X=$MAX_X"  >> "$CMD_ENV_FNAME"
+    echo "MAX_Y=$MAX_Y"  >> "$CMD_ENV_FNAME"
+    echo "CELL_SIZE=$CELL_SIZE"  >> "$CMD_ENV_FNAME"
+    echo "EPSG=$EPSG"  >> "$CMD_ENV_FNAME"
+
+    PARAMS=($SHP_FNAME $MIN_X $MIN_Y $MAX_X $MAX_Y $CELL_SIZE $EPSG)
+    log_command $CMD "${PARAMS[@]}"
+
 }
 
 # -----------------------------------------------------------
@@ -101,6 +182,7 @@ create_occurrence_docker_envfile() {
     Y_KEY=$(grep -i ^y_key "$CONFIG_FILE" |  awk '{print $2}')
     REPORT_FNAME=$(grep -i ^report_filename "$CONFIG_FILE" |  awk '{print $2}')
     LOG_OUTPUT=$(grep -i ^log_output "$CONFIG_FILE" |  awk '{print $2}')
+
     if [ ! "$SPECIES_KEY" ] ; then
         echo "Warning: Missing SPECIES_KEY value in $CONFIG_FILE, identifying species name column $IN_FNAME.  Using command default value." | tee -a "$LOG"
     fi
@@ -121,7 +203,6 @@ create_occurrence_docker_envfile() {
     fi
 
     # Set environment for command to be run in docker instance
-    set_environment "occurrence"
     echo "SPECIES_KEY=$SPECIES_KEY"  >> "$CMD_ENV_FNAME"
     echo "X_KEY=$X_KEY"  >> "$CMD_ENV_FNAME"
     echo "Y_KEY=$Y_KEY"  >> "$CMD_ENV_FNAME"
@@ -132,12 +213,16 @@ create_occurrence_docker_envfile() {
     echo "OUT_FNAME=$OUT_FNAME"  >> "$CMD_ENV_FNAME"
     echo "PROCESS_CONFIG_FNAME=$PROCESS_CONFIG_FNAME"  >> "$CMD_ENV_FNAME"
 
+#    REQ_PARAMS=($IN_FNAME, $OUT_FNAME, $PROCESS_CONFIG_FNAME)
+#    KEY_PARAMS=($SPECIES_KEY, $X_KEY, $Y_KEY, $REPORT_FNAME)
+#    log_command $CMD "${REQ_PARAMS[@]}"  "${KEY_PARAMS[@]}"
+
     # Log command to be run in docker instance
     echo "Created environment to run:"     | tee -a "$LOG"
-    echo "     clean_occurrences \ "       | tee -a "$LOG"
-    echo "          --species_key species_name  \ " | tee -a "$LOG"
-    echo "          --x_key x \ "          | tee -a "$LOG"
-    echo "          --y_key y \ "          | tee -a "$LOG"
+    echo "     $CMD \ "       | tee -a "$LOG"
+    echo "          --species_key $SPECIES_KEY  \ " | tee -a "$LOG"
+    echo "          --x_key $X_KEY \ "          | tee -a "$LOG"
+    echo "          --y_key $Y_KEY \ "          | tee -a "$LOG"
     echo "          --report_filename $REPORT_FNAME \ " | tee -a "$LOG"
     echo "          $IN_FNAME  \ "         | tee -a "$LOG"
     echo "          $OUT_FNAME \ "         | tee -a "$LOG"
@@ -145,14 +230,22 @@ create_occurrence_docker_envfile() {
 }
 
 # -----------------------------------------------------------
-start_occurrence_process() {
+start_process() {
     # clean_occurrences -r /demo/cleaning_report.json /demo/heuchera.csv /demo/clean_data.csv /demo/wrangler_conf.json
-    create_occurrence_docker_envfile
     echo "Ready to execute $CMD with:" | tee -a "$LOG"
     echo "      docker compose  --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file $CMD_ENV_FNAME  up" | tee -a "$LOG"
     docker compose --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file ${CMD_ENV_FNAME}  up
-#    docker compose  --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file ${CMD_ENV_FNAME}  up
 }
+
+## -----------------------------------------------------------
+#start_occurrence_process() {
+#    # clean_occurrences -r /demo/cleaning_report.json /demo/heuchera.csv /demo/clean_data.csv /demo/wrangler_conf.json
+#    set_environment "clean_occurrences"
+#    create_occurrence_docker_envfile
+#    echo "Ready to execute $CMD with:" | tee -a "$LOG"
+#    echo "      docker compose  --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file $CMD_ENV_FNAME  up" | tee -a "$LOG"
+#    docker compose --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file ${CMD_ENV_FNAME}  up
+#}
 
 # -----------------------------------------------------------
 time_stamp () {
@@ -173,13 +266,17 @@ fi
 
 set_defaults $1 $2
 time_stamp "# Start"
+set_environment $CMD
 
 if [ $CMD == "list_commands" ] ; then
     usage
 elif [ $CMD == "clean_occurrences" ] ; then
-    start_occurrence_process
+    create_occurrence_docker_envfile
+elif [ $CMD == "build_shapegrid" ] ; then
+    create_grid_docker_envfile
 fi
 
+start_process
 
 time_stamp "# End"
 
