@@ -10,8 +10,6 @@ learning how to use Biotaphy tools, either through the R interface or through a 
 # Table of contents:
 ## Home
 ### [About](../pages/about.md)
-### [Installation](../pages/installation.md)
-### [Quickstart](../pages/quickstart.md)
 ### [References](../pages/references.md)
 
 

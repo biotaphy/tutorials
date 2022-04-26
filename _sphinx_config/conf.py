@@ -16,15 +16,15 @@ import sys
 sys.path.insert(0, os.path.abspath('..'))
 sys.path.insert(0, os.path.abspath('../..'))
 
-import lmpy  # noqa: E402
+#import lmpy  # noqa: E402
 
 # -- Project information -----------------------------------------------------
-project = 'Specify lmpy'
-copyright = '2022, Specify Lifemapper Team'
-author = 'Specify Lifemapper Team'
+project = 'Biotaphy Tutorials'
+copyright = '2022, Biotaphy Team'
+author = 'Biotaphy Team'
 
 # The full version, including alpha/beta/rc tags
-release = lmpy.__version__
+release = '1.0a1'
 
 
 # -- General configuration ---------------------------------------------------
