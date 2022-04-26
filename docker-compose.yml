@@ -12,3 +12,5 @@ services:
 #      - "./data:/biotaphy_data"
       - "./data/output:/biotaphy_data/output"
       - "./data/log:/biotaphy_data/log"
+
+

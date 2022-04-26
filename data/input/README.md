@@ -1,4 +1,2 @@
-# input directory
-
-Directory for bind-mounting in docker.  Input data, parameters, and processing configurations are created here prior to
-starting the docker container.
+The data/input directory is for input data for the tutorials.  Example input data and command configurations for 
+tutorials are provided here to be used when running Biotaphy tools through Docker containers.  

@@ -1,4 +1,4 @@
-# Data Cleaning
+# Clean Occurrences
 
 ## Introduction
 
@@ -6,7 +6,7 @@ Read [Tutorial Overview](../tutorial/overview.md) for an overview of how all tut
 
 ## Run clean_occurrences tutorial 
 
-Initiate the clean occurrences command with the following:
+Initiate the clean occurrences process with the following:
 
 for linux/mac systems
 
