@@ -2,10 +2,7 @@ version: "3.9"
 
 services:
   backend:
-#    command: >
-#        bash -c "clean_occurrences --species_key $SPECIES_KEY --x_key $X_KEY --y_key $Y_KEY --report_filename $REPORT_FNAME  --log_output $IN_FNAME $OUT_FNAME $PROCESS_CONFIG_FNAME &&
-#                 tail -f /dev/null"
-    command: ["clean_occurrences",
+    command: ["split_occurrence_data",
               "--species_key", $species_key,
               "--x_key", $x_key,
               "--y_key", $y_key,

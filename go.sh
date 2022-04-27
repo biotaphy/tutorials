@@ -72,7 +72,7 @@ set_environment() {
     DOCKER_PATH=./docker
     COMPOSE_FNAME=docker-compose.yml
 
-    CMD_PATH="$DOCKER_PATH"/$1
+    CMD_PATH="$DOCKER_PATH"/$CMD
     CMD_COMPOSE_FNAME=$CMD_PATH/$COMPOSE_FNAME
     CMD_ENV_FNAME=$CMD_PATH/.env
 
@@ -84,23 +84,44 @@ set_environment() {
 }
 
 # -----------------------------------------------------------
-log_command() {
-    CMD=$1
-    req_params=("$@")
-    # Log command to be run in docker instance
-    echo "Created environment to run:"     | tee -a "$LOG"
-    echo "     $CMD \ "       | tee -a "$LOG"
-    for p in "${req_params[@]}";
-    do
-        if  [ $p != $CMD ]  ; then
-            echo "          $p  \ " | tee -a "$LOG"
-        fi
+create_docker_env() {
+    local -n req_env_params=$1
+    local -n opt_env_key_params=$2
+
+    echo "Created environment to run:"  | tee -a "$LOG"
+    echo "    $CMD "                    | tee -a "$LOG"
+    echo "        with"  | tee -a "$LOG"
+
+    # Print any optional keywords and parameters
+    len=${#opt_env_key_params[@]}
+    if [ $len -gt 0 ] ; then
+        echo "            $len optional parameters:"  | tee -a "$LOG"
+        # List of array keys
+        for i in "${!opt_env_key_params[@]}"; do
+            # Write to env file
+            echo "${i}=${opt_env_key_params[$i]}"  >> "$CMD_ENV_FNAME"
+            # Log
+            echo "                --$i ${opt_env_key_params[$i]}" | tee -a "$LOG"
+        done
+        echo "        and" | tee -a "$LOG"
+    fi
+
+    # Log
+    echo "            ${#req_env_params[@]} required parameters (not in order here):" | tee -a "$LOG"
+    echo "               " "${req_env_params[@]}" | tee -a "$LOG"
+    # Required parameters
+    for i in "${!req_env_params[@]}"; do
+        # Write to env file
+        echo "${i}=${req_env_params[$i]}"  >> "$CMD_ENV_FNAME"
     done
 }
 
 # -----------------------------------------------------------
 create_grid_docker_envfile() {
-    echo "Find $CMD parameters in config file" >> "$LOG"
+    echo "Find $CMD parameters in $CONFIG_FILE" | tee -a "$LOG"
+    # Associative arrays have strings as indexes instead of integers
+    declare -A OPT_PARAMS
+    declare -A REQ_PARAMS
 
     # Required parameters
     SHP_FNAME=$(grep -i ^shapegrid_filename "$CONFIG_FILE" |  awk '{print $2}')
@@ -109,7 +130,7 @@ create_grid_docker_envfile() {
     MAX_X=$(grep -i ^max_x "$CONFIG_FILE" |  awk '{print $2}')
     MAX_Y=$(grep -i ^max_y "$CONFIG_FILE" |  awk '{print $2}')
     CELL_SIZE=$(grep -i ^cell_size "$CONFIG_FILE" |  awk '{print $2}')
-    EPSG=$(grep -i ^epsg_code "$CONFIG_FILE" |  awk '{print $2}')
+    EPSG=$(grep -i ^epsg "$CONFIG_FILE" |  awk '{print $2}')
 
     if [ ! "$SHP_FNAME" ] ; then
         echo "Error: Missing value for output shapegrid filename in config." | tee -a "$LOG"
@@ -140,23 +161,23 @@ create_grid_docker_envfile() {
         exit 1
     fi
 
-    # Set environment for command to be run in docker instance
-    echo "SHP_FNAME=$SHP_FNAME"  >> "$CMD_ENV_FNAME"
-    echo "MIN_X=$MIN_X"  >> "$CMD_ENV_FNAME"
-    echo "MIN_Y=$MIN_Y"  >> "$CMD_ENV_FNAME"
-    echo "MAX_X=$MAX_X"  >> "$CMD_ENV_FNAME"
-    echo "MAX_Y=$MAX_Y"  >> "$CMD_ENV_FNAME"
-    echo "CELL_SIZE=$CELL_SIZE"  >> "$CMD_ENV_FNAME"
-    echo "EPSG=$EPSG"  >> "$CMD_ENV_FNAME"
+    REQ_PARAMS[shapegrid_filename]="$SHP_FNAME"
+    REQ_PARAMS[min_x]="$MIN_X"
+    REQ_PARAMS[min_y]="$MIN_Y"
+    REQ_PARAMS[max_x]="$MAX_X"
+    REQ_PARAMS[max_y]="$MAX_Y"
+    REQ_PARAMS[cell_size]="$CELL_SIZE"
+    REQ_PARAMS[epsg]="$EPSG"
 
-    PARAMS=($SHP_FNAME $MIN_X $MIN_Y $MAX_X $MAX_Y $CELL_SIZE $EPSG)
-    log_command $CMD "${PARAMS[@]}"
-
+    # pass arrays by reference
+    create_docker_env REQ_PARAMS OPT_PARAMS
 }
 
 # -----------------------------------------------------------
 create_occurrence_docker_envfile() {
-    echo "Find $CMD parameters in config file" >> "$LOG"
+    echo "Find $CMD parameters in $CONFIG_FILE" | tee -a "$LOG"
+    declare -A OPT_PARAMS
+    declare -A REQ_PARAMS
 
     # Required parameters
     IN_FNAME=$(grep -i ^in_filename "$CONFIG_FILE" |  awk '{print $2}')
@@ -171,8 +192,8 @@ create_occurrence_docker_envfile() {
         exit 1
     fi
 
-    PROCESS_CONFIG_FNAME=$(grep -i ^config_filename "$CONFIG_FILE" |  awk '{print $2}')
-    if [ ! "$PROCESS_CONFIG_FNAME" ] ; then
+    WRANGLER_CONFIG_FNAME=$(grep -i ^wrangler_config_filename "$CONFIG_FILE" |  awk '{print $2}')
+    if [ ! "$WRANGLER_CONFIG_FNAME" ] ; then
         echo "Error: Missing value for input occurrence filename in config." | tee -a "$LOG"
         exit 1
     fi
@@ -193,40 +214,40 @@ create_occurrence_docker_envfile() {
         echo "Warning: Missing Y_KEY value in $CONFIG_FILE, identifying latitude column $IN_FNAME.  Using command default value." | tee -a "$LOG"
     fi
 
-    # TODO: modify lmpy.clean_occurrences script to take 0 or 1 instead of a flag
-    #       it is a PITA to have optional boolean argument in a docker command
-    if [[ "$LOG_OUTPUT" =~ ^(yes|Yes|y|true|True|TRUE|1)$ ]]; then
-        LOG_OUTPUT="--log_output"
-    else
-        LOG_OUTPUT=""
-        echo "$LOG_OUTPUT is false"
+#    # Only add --log_output flag optional parameters if true
+#    if [[ "$LOG_OUTPUT" =~ ^(yes|Yes|y|true|True|TRUE|1)$ ]]; then
+#        LOG_OUTPUT="--log_output"
+#    else
+#        LOG_OUTPUT=""
+#    fi
+
+    REQ_PARAMS[in_filename]="$IN_FNAME"
+    REQ_PARAMS[out_filename]="$OUT_FNAME"
+    REQ_PARAMS[wrangler_config_filename]="$WRANGLER_CONFIG_FNAME"
+
+    OPT_PARAMS[species_key]="$SPECIES_KEY"
+    OPT_PARAMS[x_key]="$X_KEY"
+    OPT_PARAMS[y_key]="$Y_KEY"
+    OPT_PARAMS[report_filename]="$REPORT_FNAME"
+
+    create_docker_env REQ_PARAMS OPT_PARAMS
+}
+
+# -----------------------------------------------------------
+create_split_docker_envfile() {
+    echo "Find $CMD parameters in $CONFIG_FILE" | tee -a "$LOG"
+    declare -A OPT_PARAMS
+    declare -A REQ_PARAMS
+
+    # Required parameters
+    OUT_DIR=$(grep -i ^out_dir "$CONFIG_FILE" |  awk '{print $2}')
+    if [ ! "$OUT_DIR" ] ; then
+        echo "Error: Missing value for out_dir (output directory) in config." | tee -a "$LOG"
+        exit 1
     fi
 
-    # Set environment for command to be run in docker instance
-    echo "SPECIES_KEY=$SPECIES_KEY"  >> "$CMD_ENV_FNAME"
-    echo "X_KEY=$X_KEY"  >> "$CMD_ENV_FNAME"
-    echo "Y_KEY=$Y_KEY"  >> "$CMD_ENV_FNAME"
-    echo "REPORT_FNAME=$REPORT_FNAME"  >> "$CMD_ENV_FNAME"
-#    # For now, leave this optional, boolean arg as default
-#    echo "LOG_OUTPUT=$LOG_OUTPUT"  >> "$CMD_ENV_FNAME"
-    echo "IN_FNAME=$IN_FNAME"  >> "$CMD_ENV_FNAME"
-    echo "OUT_FNAME=$OUT_FNAME"  >> "$CMD_ENV_FNAME"
-    echo "PROCESS_CONFIG_FNAME=$PROCESS_CONFIG_FNAME"  >> "$CMD_ENV_FNAME"
+    MAX_OPEN_WRITERS=$(grep -i ^max_open_writers "$CONFIG_FILE" |  awk '{print $2}')
 
-#    REQ_PARAMS=($IN_FNAME, $OUT_FNAME, $PROCESS_CONFIG_FNAME)
-#    KEY_PARAMS=($SPECIES_KEY, $X_KEY, $Y_KEY, $REPORT_FNAME)
-#    log_command $CMD "${REQ_PARAMS[@]}"  "${KEY_PARAMS[@]}"
-
-    # Log command to be run in docker instance
-    echo "Created environment to run:"     | tee -a "$LOG"
-    echo "     $CMD \ "       | tee -a "$LOG"
-    echo "          --species_key $SPECIES_KEY  \ " | tee -a "$LOG"
-    echo "          --x_key $X_KEY \ "          | tee -a "$LOG"
-    echo "          --y_key $Y_KEY \ "          | tee -a "$LOG"
-    echo "          --report_filename $REPORT_FNAME \ " | tee -a "$LOG"
-    echo "          $IN_FNAME  \ "         | tee -a "$LOG"
-    echo "          $OUT_FNAME \ "         | tee -a "$LOG"
-    echo "          $PROCESS_CONFIG_FNAME" | tee -a "$LOG"
 }
 
 # -----------------------------------------------------------
@@ -237,19 +258,9 @@ start_process() {
     docker compose --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file ${CMD_ENV_FNAME}  up
 }
 
-## -----------------------------------------------------------
-#start_occurrence_process() {
-#    # clean_occurrences -r /demo/cleaning_report.json /demo/heuchera.csv /demo/clean_data.csv /demo/wrangler_conf.json
-#    set_environment "clean_occurrences"
-#    create_occurrence_docker_envfile
-#    echo "Ready to execute $CMD with:" | tee -a "$LOG"
-#    echo "      docker compose  --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file $CMD_ENV_FNAME  up" | tee -a "$LOG"
-#    docker compose --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file ${CMD_ENV_FNAME}  up
-#}
-
 # -----------------------------------------------------------
 time_stamp () {
-    echo "$1" "/bin/date" >> "$LOG"
+    echo "$1" "/bin/date" | tee -a "$LOG"
 }
 
 
@@ -266,7 +277,7 @@ fi
 
 set_defaults $1 $2
 time_stamp "# Start"
-set_environment $CMD
+set_environment
 
 if [ $CMD == "list_commands" ] ; then
     usage
@@ -274,6 +285,8 @@ elif [ $CMD == "clean_occurrences" ] ; then
     create_occurrence_docker_envfile
 elif [ $CMD == "build_shapegrid" ] ; then
     create_grid_docker_envfile
+elif [ $CMD == "split_occurrence_data"] ; then
+  create_split_docker_envfile
 fi
 
 start_process

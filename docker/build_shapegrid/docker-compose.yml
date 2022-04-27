@@ -3,14 +3,12 @@ version: "3.9"
 services:
   backend:
 #    command: >
-#        bash -c "clean_occurrences --species_key $SPECIES_KEY --x_key $X_KEY --y_key $Y_KEY --report_filename $REPORT_FNAME  --log_output $IN_FNAME $OUT_FNAME $PROCESS_CONFIG_FNAME &&
+#        bash -c "build_shapegrid $min_x $min_y $max_x $max_y $cell_size $epsg_code &&
 #                 tail -f /dev/null"
     command: ["build_shapegrid",
-              "--species_key", $SPECIES_KEY,
-              "--x_key", $X_KEY,
-              "--y_key", $Y_KEY,
-              "--report_filename", $REPORT_FNAME,
-              "--log_output",
-              $IN_FNAME,
-              $OUT_FNAME,
-              $PROCESS_CONFIG_FNAME ]
+              $min_x,
+              $min_y,
+              $max_x,
+              $max_y,
+              $cell_size,
+              $epsg_code ]
