@@ -2,3 +2,4 @@
 docker/*/.env
 *.log
 venv/
+test.sh
