@@ -227,23 +227,21 @@ create_occurrence_docker_envfile() {
 }
 
 # -----------------------------------------------------------
-create_split_docker_envfile() {
-    echo "split_occurrence_data"
-}
+create_encode_layers_docker_envfile() {
+    echo "encode_layers"
+    echo "Find $CMD parameters in $CONFIG_FILE" | tee -a "$LOG"
+    declare -A OPT_PARAMS
+    declare -A REQ_PARAMS
 
-#    echo "Find $CMD parameters in $CONFIG_FILE" | tee -a "$LOG"
-#    declare -A OPT_PARAMS
-#    declare -A REQ_PARAMS
-#
-#    # Required parameters
-#    OUT_DIR=$(grep -i ^out_dir "$CONFIG_FILE" |  awk '{print $2}')
-#    if [ ! "$OUT_DIR" ] ; then
-#        echo "Error: Missing value for out_dir (output directory) in config." | tee -a "$LOG"
-#        exit 1
-#    fi
-#
-#    MAX_OPEN_WRITERS=$(grep -i ^max_open_writers "$CONFIG_FILE" |  awk '{print $2}')
-#}
+    # Required parameters
+    OUT_DIR=$(grep -i ^out_dir "$CONFIG_FILE" |  awk '{print $2}')
+    if [ ! "$OUT_DIR" ] ; then
+        echo "Error: Missing value for out_dir (output directory) in config." | tee -a "$LOG"
+        exit 1
+    fi
+
+    ENCODE_METHOD=$(grep -i ^encode_method "$CONFIG_FILE" |  awk '{print $2}')
+}
 
 # -----------------------------------------------------------
 start_process() {
@@ -280,8 +278,8 @@ elif [ "$CMD" == "clean_occurrences" ] ; then
     create_occurrence_docker_envfile
 elif [ "$CMD" == "build_shapegrid" ] ; then
     create_grid_docker_envfile
-elif [ "$CMD" == "split_occurrence_data" ] ; then
-    create_split_docker_envfile
+elif [ "$CMD" == "encode_layers" ] ; then
+    create_encode_layers_docker_envfile
 fi
 
 start_process
