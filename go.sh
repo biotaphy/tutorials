@@ -5,14 +5,14 @@
 #
 # Note: this script could use a provided config file to populate both:
 #             - a docker .env file to be used by docker-compose
-#             - a command configuration json file, such as wranger_conf.json
+#             - a command configuration json file, such as wrangler_conf.json
 #
 
 # -----------------------------------------------------------
 usage ()
 {
     CMD=$1
-    if [ $# -eq 0 ] || [ $CMD == "list_commands" ] ; then
+    if [ $# -eq 0 ] || [ "$CMD" == "list_commands" ] ; then
         echo "Usage: $0 <cmd>  <config_file>"
         echo "   "
         echo "This script creates an environment for a biotaphy command to be run with user-configured arguments "
@@ -23,7 +23,7 @@ usage ()
         echo "      build_shapegrid"
         echo "the <config_file> argument must be the full path to an INI file containing command-specific arguments"
         echo "   "
-    elif [ $CMD == "clean_occurrences" ] ; then
+    elif [ "$CMD" == "clean_occurrences" ] ; then
         echo "This argument creates an environment for the biotaphy command clean_occurrences to be run"
         echo "in a docker container.  The <config_file> must containing the following required parameters:"
         echo "      IN_FNAME: full or relative path to the input occurrences file"
@@ -35,7 +35,7 @@ usage ()
         echo "      Y_KEY: the fieldname in the first row of the input file for the latitude"
         echo "      REPORT_FNAME: full or relative path to the output report file."
         echo "      LOG_OUTPUT: True or False, flag indicating whether to enable logging"
-    elif [ $CMD == "build_shapegrid" ] ; then
+    elif [ "$CMD" == "build_shapegrid" ] ; then
         echo "This argument creates an environment for the biotaphy command build_shapegrid to be run"
         echo "in a docker container.  The <config_file> must containing the following required parameters:"
         echo "      shapegrid_file_name: The location to store the resulting shapegrid."
@@ -44,7 +44,7 @@ usage ()
         echo "      max_x: The maximum value for X (longitude) of the shapegrid."
         echo "      max_y: The maximum value for Y (latitude) of the shapegrid."
         echo "      cell_size: The size of each cell (in map units indicated by EPSG)."
-        echo "      epsg_code: The numeric EPSG code for the new shapegrid."
+        echo "      epsg: The numeric EPSG code for the new shapegrid."
     fi
     exit 0
 }
@@ -54,7 +54,7 @@ set_defaults() {
     CMD=$1
     CONFIG_FILE=$2
 
-    THISNAME=`/bin/basename $0`
+    THISNAME=$(/bin/basename "$0")
     LOG=./data/log/$THISNAME.log
     if [ -f "$LOG" ] ; then
         /usr/bin/rm "$LOG"
@@ -80,7 +80,7 @@ set_environment() {
         /usr/bin/rm "$CMD_ENV_FNAME"
     fi
 
-    touch $CMD_ENV_FNAME
+    touch "$CMD_ENV_FNAME"
 }
 
 # -----------------------------------------------------------
@@ -94,7 +94,7 @@ create_docker_env() {
 
     # Print any optional keywords and parameters
     len=${#opt_env_key_params[@]}
-    if [ $len -gt 0 ] ; then
+    if [ "$len" -gt 0 ] ; then
         echo "            $len optional parameters:"  | tee -a "$LOG"
         # List of array keys
         for i in "${!opt_env_key_params[@]}"; do
@@ -202,7 +202,7 @@ create_occurrence_docker_envfile() {
     X_KEY=$(grep -i ^x_key "$CONFIG_FILE" |  awk '{print $2}')
     Y_KEY=$(grep -i ^y_key "$CONFIG_FILE" |  awk '{print $2}')
     REPORT_FNAME=$(grep -i ^report_filename "$CONFIG_FILE" |  awk '{print $2}')
-    LOG_OUTPUT=$(grep -i ^log_output "$CONFIG_FILE" |  awk '{print $2}')
+#    LOG_OUTPUT=$(grep -i ^log_output "$CONFIG_FILE" |  awk '{print $2}')
 
     if [ ! "$SPECIES_KEY" ] ; then
         echo "Warning: Missing SPECIES_KEY value in $CONFIG_FILE, identifying species name column $IN_FNAME.  Using command default value." | tee -a "$LOG"
@@ -213,13 +213,6 @@ create_occurrence_docker_envfile() {
     if [ ! "$Y_KEY" ] ; then
         echo "Warning: Missing Y_KEY value in $CONFIG_FILE, identifying latitude column $IN_FNAME.  Using command default value." | tee -a "$LOG"
     fi
-
-#    # Only add --log_output flag optional parameters if true
-#    if [[ "$LOG_OUTPUT" =~ ^(yes|Yes|y|true|True|TRUE|1)$ ]]; then
-#        LOG_OUTPUT="--log_output"
-#    else
-#        LOG_OUTPUT=""
-#    fi
 
     REQ_PARAMS[in_filename]="$IN_FNAME"
     REQ_PARAMS[out_filename]="$OUT_FNAME"
@@ -235,32 +228,34 @@ create_occurrence_docker_envfile() {
 
 # -----------------------------------------------------------
 create_split_docker_envfile() {
-    echo "Find $CMD parameters in $CONFIG_FILE" | tee -a "$LOG"
-    declare -A OPT_PARAMS
-    declare -A REQ_PARAMS
-
-    # Required parameters
-    OUT_DIR=$(grep -i ^out_dir "$CONFIG_FILE" |  awk '{print $2}')
-    if [ ! "$OUT_DIR" ] ; then
-        echo "Error: Missing value for out_dir (output directory) in config." | tee -a "$LOG"
-        exit 1
-    fi
-
-    MAX_OPEN_WRITERS=$(grep -i ^max_open_writers "$CONFIG_FILE" |  awk '{print $2}')
-
+    echo "split_occurrence_data"
 }
+
+#    echo "Find $CMD parameters in $CONFIG_FILE" | tee -a "$LOG"
+#    declare -A OPT_PARAMS
+#    declare -A REQ_PARAMS
+#
+#    # Required parameters
+#    OUT_DIR=$(grep -i ^out_dir "$CONFIG_FILE" |  awk '{print $2}')
+#    if [ ! "$OUT_DIR" ] ; then
+#        echo "Error: Missing value for out_dir (output directory) in config." | tee -a "$LOG"
+#        exit 1
+#    fi
+#
+#    MAX_OPEN_WRITERS=$(grep -i ^max_open_writers "$CONFIG_FILE" |  awk '{print $2}')
+#}
 
 # -----------------------------------------------------------
 start_process() {
     # clean_occurrences -r /demo/cleaning_report.json /demo/heuchera.csv /demo/clean_data.csv /demo/wrangler_conf.json
     echo "Ready to execute $CMD with:" | tee -a "$LOG"
     echo "      docker compose  --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file $CMD_ENV_FNAME  up" | tee -a "$LOG"
-    docker compose --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file ${CMD_ENV_FNAME}  up
+    docker compose --file "${COMPOSE_FNAME}" --file "${CMD_COMPOSE_FNAME}"  --env-file "${CMD_ENV_FNAME}"  up
 }
 
 # -----------------------------------------------------------
 time_stamp () {
-    echo "$1" "/bin/date" | tee -a "$LOG"
+    echo "$1" $(/bin/date) | tee -a "$LOG"
 }
 
 
@@ -271,22 +266,22 @@ elif [ $# -eq 1 ]; then
     if [ "$1" == "list_commands" ] ; then
         usage
     else
-        usage $1
+        usage "$1"
     fi
 fi
 
-set_defaults $1 $2
+set_defaults "$1" "$2"
 time_stamp "# Start"
 set_environment
 
-if [ $CMD == "list_commands" ] ; then
+if [ "$CMD" == "list_commands" ] ; then
     usage
-elif [ $CMD == "clean_occurrences" ] ; then
+elif [ "$CMD" == "clean_occurrences" ] ; then
     create_occurrence_docker_envfile
-elif [ $CMD == "build_shapegrid" ] ; then
+elif [ "$CMD" == "build_shapegrid" ] ; then
     create_grid_docker_envfile
-elif [ $CMD == "split_occurrence_data"] ; then
-  create_split_docker_envfile
+elif [ "$CMD" == "split_occurrence_data" ] ; then
+    create_split_docker_envfile
 fi
 
 start_process
