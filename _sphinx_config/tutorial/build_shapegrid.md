@@ -28,4 +28,4 @@ The clean_occurrences configuration file consists of 7 required parameters:
 * **max_x**: The maximum value for X (longitude) coordinate of the shapegrid.
 * **max_y**: The maximum value for Y (latitude) coordinate of the shapegrid.
 * **cell_size**: The size of each cell (in units indicated by EPSG).
-* **epsg_code**: The EPSG code for the new shapegrid.
+* **epsg**: The EPSG code for the new shapegrid.
