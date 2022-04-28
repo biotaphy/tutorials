@@ -3,12 +3,14 @@ version: "3.9"
 services:
   backend:
 #    command: >
-#        bash -c "build_shapegrid $min_x $min_y $max_x $max_y $cell_size $epsg_code &&
+#        bash -c "build_shapegrid $min_x $min_y $max_x $max_y $cell_size $epsg &&
 #                 tail -f /dev/null"
+#    command: ["echo", $shapegrid_filename, $min_x, $min_y, $max_x, $max_y, $cell_size, $epsg]
     command: ["build_shapegrid",
+              $shapegrid_filename,
               $min_x,
               $min_y,
               $max_x,
               $max_y,
               $cell_size,
-              $epsg_code ]
+              $epsg ]
