@@ -27,8 +27,6 @@ required and possibly optional parameters for each.  Below are the available wra
 
 ### Occurrence Data Wranglers
 
-
-
 * A configuration file is in JSON format, a list of one dictionary per desired wrangler.
   * Each dictionary must contain "wrangler_type", with the name of the wrangler types (listed below).
   * The dictionary will also contain all required parameters and any optional parameters.

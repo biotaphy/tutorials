@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Common tutorial properties &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Biotaphy Tutorials &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -40,8 +40,13 @@
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Common tutorial properties</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Biotaphy Tutorials</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preparation">Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#host-and-container-input-output-log-directories">Host and Container input, output, log directories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-configuration-file">User Configuration File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run">Run</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#behind-the-scenes">Behind the scenes</a></li>
 </ul>
 </li>
 </ul>
@@ -60,7 +65,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Common tutorial properties</li>
+      <li>Biotaphy Tutorials</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/tutorial/overview.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -70,13 +75,46 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="common-tutorial-properties">
-<h1>Common tutorial properties<a class="headerlink" href="#common-tutorial-properties" title="Permalink to this headline"></a></h1>
+  <section id="biotaphy-tutorials">
+<h1>Biotaphy Tutorials<a class="headerlink" href="#biotaphy-tutorials" title="Permalink to this headline"></a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
-<p>Each tutorial can be initiated by running the “go” script with 2 arguments at the top level of this project.
-The first argument is the command name, and the second is the configuration file containing command arguments,</p>
-<p>i.e. for linux/mac systems</p>
+<p>These tutorials step through the process of running a Biotaphy tool (or command) with example data.  There are
+several entry points to the tools.  These tutorials cover running them through:</p>
+<ol class="arabic simple">
+<li><p>Docker</p></li>
+<li><p>R Studio (in preparation)</p></li>
+</ol>
+</section>
+<section id="preparation">
+<h2>Preparation<a class="headerlink" href="#preparation" title="Permalink to this headline"></a></h2>
+<p>To run Biotaphy tools on any OS, locally through Docker, first download and install
+<a class="reference external" href="https://docs.docker.com/get-started/">Docker</a>.</p>
+</section>
+<section id="host-and-container-input-output-log-directories">
+<h2>Host and Container input, output, log directories<a class="headerlink" href="#host-and-container-input-output-log-directories" title="Permalink to this headline"></a></h2>
+<p>The data/input directory on the host machine is copied to the biotaphy_data/input directory in the container.<br />
+Any changes made to the biotaphy_data/input directory in the container will not persist to the host machine.</p>
+<p>The data/output and data/log directories on the host machine are accessible to the container as the
+biotaphy_data/output and biotaphy_data/log directories in the container.  These directories are mapped directly, so
+changes made in the container are visible to the host machine.</p>
+</section>
+<section id="user-configuration-file">
+<h2>User Configuration File<a class="headerlink" href="#user-configuration-file" title="Permalink to this headline"></a></h2>
+<p>Each tutorial contains an example configuration file in the docker/&lt;tool_name&gt; directory.  The configuration file<br />
+is an INI format file, with tool-specific parameters.  The example configuration files reference example data and
+parameters reasonable for that data.  All required and optional parameters are described in individual tutorial
+pages.</p>
+<p>Input and output files referenced in the configuration file are intended for the Docker container, so use directory
+paths specific to the container.  Output file parameters (log files, data files) must be specified to be written to
+biotaphy_data/output and biotaphy_data/log directories, as they will then also be visible to the host computer upon
+completion.</p>
+</section>
+<section id="run">
+<h2>Run<a class="headerlink" href="#run" title="Permalink to this headline"></a></h2>
+<p>The “go” script will run each tutorial with the specific command name and configuration file as arguments.<br />
+For example, the  clean_occurrences tutorial can be initiated with:</p>
+<p>for linux/mac systems</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh clean_occurrences data/input/clean_occurrences.ini
 </pre></div>
 </div>
@@ -84,14 +122,24 @@ The first argument is the command name, and the second is the configuration file
 <div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./go.bat clean_occurrences data\input\clean_occurrences.ini
 </pre></div>
 </div>
-<p>Each configuration file is an ini file with command-specific parameters.  Every command has an example configuration
-file, which references example data.</p>
-<p>The “go” script will build and instantiate a Docker container, and run the specified command with the parameters in
-the specified configuration file.</p>
-<p>On docker instantiation, the files in the data directory will be shared from the host computer to the docker container.</p>
-<p>Data placed in the input directory on the host machine will be accessible to the container.  Data created by the
-container in the output and log directories will be accessible by the host computer when the container has completed.</p>
-<p>Command-specific json-format configuration files define command parameters that can be configured for various tools.</p>
+</section>
+<section id="behind-the-scenes">
+<h2>Behind the scenes<a class="headerlink" href="#behind-the-scenes" title="Permalink to this headline"></a></h2>
+<p>The “go” script will:</p>
+<ol class="arabic simple">
+<li><p>Build and instantiate a Docker container.</p></li>
+<li><p>Files placed in the data/input directory on the host machine will be copied to the biotaphy_data/input directory in
+the container.</p></li>
+<li><p>The data/output and data/log directories on the host machine are mapped to the biotaphy_data/output and
+biotaphy_data/log directories in the container.</p></li>
+<li><p>Run the specified command with the parameters in the specified configuration file.</p></li>
+<li><p>Outputs and logs created by the process will be written to the biotaphy_data/output and biotaphy_data/log
+directories.</p></li>
+<li><p>On command completion, the Docker container will stop running.</p></li>
+<li><p>The outputs and logs will be present in the directories data/output and data/log on the host computer.</p></li>
+</ol>
+<p>Some tools will require an additional JSON-format configuration files.  In these cases, the JSON file will be
+identified in the command-configuration file.</p>
 </section>
 </section>
 
