@@ -5,7 +5,7 @@
 #
 # Note: this script could use a provided config file to populate both:
 #             - a docker .env file to be used by docker-compose
-#             - a command configuration json file, such as wrangler_conf.json
+#             - a command configuration json file, such as wrangler_conf_clean_occurrences.json
 #
 
 # -----------------------------------------------------------
@@ -74,13 +74,13 @@ set_environment() {
 
     CMD_PATH="$DOCKER_PATH"/$CMD
     CMD_COMPOSE_FNAME=$CMD_PATH/$COMPOSE_FNAME
-    CMD_ENV_FNAME=$CMD_PATH/.env
+    DOCKER_ENV_FNAME=$CMD_PATH/.env
 
-    if [ -f "$CMD_ENV_FNAME" ] ; then
-        /usr/bin/rm "$CMD_ENV_FNAME"
+    if [ -f "$DOCKER_ENV_FNAME" ] ; then
+        /usr/bin/rm "$DOCKER_ENV_FNAME"
     fi
 
-    touch "$CMD_ENV_FNAME"
+    touch "$DOCKER_ENV_FNAME"
 }
 
 # -----------------------------------------------------------
@@ -99,7 +99,7 @@ create_docker_env() {
         # List of array keys
         for i in "${!opt_env_key_params[@]}"; do
             # Write to env file
-            echo "${i}=${opt_env_key_params[$i]}"  >> "$CMD_ENV_FNAME"
+            echo "${i}=${opt_env_key_params[$i]}"  >> "$DOCKER_ENV_FNAME"
             # Log
             echo "                --$i ${opt_env_key_params[$i]}" | tee -a "$LOG"
         done
@@ -112,7 +112,7 @@ create_docker_env() {
     # Required parameters
     for i in "${!req_env_params[@]}"; do
         # Write to env file
-        echo "${i}=${req_env_params[$i]}"  >> "$CMD_ENV_FNAME"
+        echo "${i}=${req_env_params[$i]}"  >> "$DOCKER_ENV_FNAME"
     done
 }
 
@@ -174,7 +174,7 @@ create_grid_docker_envfile() {
 }
 
 # -----------------------------------------------------------
-create_occurrence_docker_envfile() {
+create_clean_occurrences_envfile() {
     echo "Find $CMD parameters in $CONFIG_FILE" | tee -a "$LOG"
     declare -A OPT_PARAMS
     declare -A REQ_PARAMS
@@ -199,7 +199,7 @@ create_occurrence_docker_envfile() {
     fi
 
     SPECIES_KEY=$(grep -i ^species_key "$CONFIG_FILE" |  awk '{print $2}')
-    X_KEY=$(grep -i ^x_key "$CONFIG_FILE" |  awk '{print $2}')
+
     Y_KEY=$(grep -i ^y_key "$CONFIG_FILE" |  awk '{print $2}')
     REPORT_FNAME=$(grep -i ^report_filename "$CONFIG_FILE" |  awk '{print $2}')
 #    LOG_OUTPUT=$(grep -i ^log_output "$CONFIG_FILE" |  awk '{print $2}')
@@ -227,7 +227,18 @@ create_occurrence_docker_envfile() {
 }
 
 # -----------------------------------------------------------
-create_encode_layers_docker_envfile() {
+create_split_occurrence_data_envfile() {
+  echo "split_occurrence_data"
+#  ["split_occurrence_data",
+#              "--max_open_writers", max_open_writers,
+#              "--key_field", $key_field,
+#              "--out_field", $out_field,
+#              "--dwca", $dwca, $wrangler_filename,
+#              "--csv", $csv_fn, $wranglers_fn, $sp_key, $x_key, $y_key]
+}
+
+# -----------------------------------------------------------
+create_encode_layers_envfile() {
     echo "encode_layers"
     echo "Find $CMD parameters in $CONFIG_FILE" | tee -a "$LOG"
     declare -A OPT_PARAMS
@@ -245,10 +256,10 @@ create_encode_layers_docker_envfile() {
 
 # -----------------------------------------------------------
 start_process() {
-    # clean_occurrences -r /demo/cleaning_report.json /demo/heuchera.csv /demo/clean_data.csv /demo/wrangler_conf.json
+    # clean_occurrences -r /data/output/cleaning_report.json /data/input/heuchera.csv /data/output/clean_data.csv /data/input/wrangler_conf_clean_occurrences.json
     echo "Ready to execute $CMD with:" | tee -a "$LOG"
-    echo "      docker compose  --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file $CMD_ENV_FNAME  up" | tee -a "$LOG"
-    docker compose --file "${COMPOSE_FNAME}" --file "${CMD_COMPOSE_FNAME}"  --env-file "${CMD_ENV_FNAME}"  up
+    echo "      docker compose  --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file $DOCKER_ENV_FNAME  up" | tee -a "$LOG"
+    docker compose --file "${COMPOSE_FNAME}" --file "${CMD_COMPOSE_FNAME}"  --env-file "${DOCKER_ENV_FNAME}"  up
 }
 
 # -----------------------------------------------------------
@@ -272,14 +283,15 @@ set_defaults "$1" "$2"
 time_stamp "# Start"
 set_environment
 
+echo "Find $CMD parameters in $CONFIG_FILE and write to $DOCKER_ENV_FNAME" | tee -a "$LOG"
 if [ "$CMD" == "list_commands" ] ; then
     usage
 elif [ "$CMD" == "clean_occurrences" ] ; then
-    create_occurrence_docker_envfile
+    create_clean_occurrences_envfile
 elif [ "$CMD" == "build_shapegrid" ] ; then
-    create_grid_docker_envfile
-elif [ "$CMD" == "encode_layers" ] ; then
-    create_encode_layers_docker_envfile
+    create_grid_envfile
+elif [ "$CMD" == "split_occurrence_data" ] ; then
+    create_split_occurrence_data_envfile
 fi
 
 start_process
