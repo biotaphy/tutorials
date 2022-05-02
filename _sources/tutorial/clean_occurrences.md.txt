@@ -1,12 +1,42 @@
 # Clean Occurrences
 
+Webinar 5 [Clean Your Dirty Data](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#)
+(Module 2, Biotaphy tools)
+
 ## Introduction
 
 Read [Tutorial Overview](../tutorial/overview.md) for an overview of how all tutorials work. 
 
+## Data preparation
+The the clean occurrences tool requires a parameters INI file.  Each line must start with a parameter name, followed 
+immediately (no spaces) by a colon, followed by one or more spaces, and the value.  An example INI file for the 
+tool used in the tutorial is at ../../data/input/clean_occurrences.ini. These are the required and optional 
+parameters parameters for clean_occurrences: 
+
+* Required: 
+  * in_filename (str): A file path containing CSV occurrence data.
+  * out_filename (str): A file path for output cleaned occurrence data
+  * wrangler_config_filename (str): A file path containing occurrence wrangler options in JSON format 
+* Optional 
+  * species_field (str): The field name of the column containing species data (used for grouping taxa) for the 
+                         out_filename. 
+  * x_key (str):  (str): The field name of the column containing x/longitude coordinate for the out_filename.
+  * y_key (str):  (str): The field name of the column containing y/latitude coordinate for the out_filename.
+  * report_filename (str): File location to write optional output report JSON.
+
+
+species_key:        species_name
+x_key:              x
+y_key:              y  
+report_filename:    /biotaphy_data/output/occurrence_cleaning_report.json
+log_output:         True
+
+in_filename:        /biotaphy_data/input/heuchera.csv
+out_filename:       /biotaphy_data/output/clean_heuchera.csv
+
 ## Run clean_occurrences tutorial 
 
-Initiate the clean occurrences process with the following:
+Initiate the clean occurrences process with the following command and parameters INI file:
 
 for linux/mac systems
 

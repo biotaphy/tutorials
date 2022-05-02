@@ -68,8 +68,16 @@
              
   <section id="resolve-taxonomy-in-a-darwin-core-archive-dwca">
 <h1>Resolve taxonomy in a Darwin Core Archive (DwCA)<a class="headerlink" href="#resolve-taxonomy-in-a-darwin-core-archive-dwca" title="Permalink to this headline"></a></h1>
-<section id="request-a-dwca-from-idigbio">
-<h2>Request a DwCA from iDigBio<a class="headerlink" href="#request-a-dwca-from-idigbio" title="Permalink to this headline"></a></h2>
+<p>Webinar 2, <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.954n7zxfop57">Data Munging</a>
+(Module 2, Big-Data approaches)</p>
+<p>Webinar 3, <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.h2w2s5gw2n6t">Resolving Nomenclature</a>
+(Module 2, map acquired names for consistency)</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<p>Read <a class="reference internal" href="overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials work.</p>
+</section>
+<section id="data-preparation-request-a-dwca-from-idigbio">
+<h2>Data Preparation: Request a DwCA from iDigBio<a class="headerlink" href="#data-preparation-request-a-dwca-from-idigbio" title="Permalink to this headline"></a></h2>
 <p>Request a DwCA from iDigBio using their
 <a class="reference external" href="https://www.idigbio.org/wiki/index.php/IDigBio_Download_API">iDigBio Download API</a>.<br />
 Example:
@@ -81,6 +89,38 @@ curl &lt;query_url&gt;
 curl &lt;status_url&gt;
 <span class="c1"># save response into file with wget </span>
 wget &lt;download_url&gt;
+</pre></div>
+</div>
+</section>
+<section id="configuration-file">
+<h2>Configuration file<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h2>
+<p>The split_occurrence_data configuration file consists of one or more “wrangler_type”s, and= the wrangler-specific
+required and possibly optional parameters for each.  Below are the available wrangler_types.</p>
+<section id="occurrence-data-wranglers">
+<h3>Occurrence Data Wranglers<a class="headerlink" href="#occurrence-data-wranglers" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>A configuration file is in JSON format, a list of one dictionary per desired wrangler.</p>
+<ul>
+<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler types (listed below).</p></li>
+<li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
+</ul>
+</li>
+<li><p>Currently, wrangler names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in this module’s files.</p></li>
+<li><p>Each wrangler’s parameters correspond to the constructor arguments for that wrangler.</p></li>
+<li><p>Below is a list of data wrangler_types and the required and/or optional parameters for each.</p></li>
+<li><p>Example clean_occurrences wrangler configuration:</p></li>
+</ul>
+</section>
+</section>
+<section id="run-split-occurrence-data-tutorial">
+<h2>Run split_occurrence_data tutorial<a class="headerlink" href="#run-split-occurrence-data-tutorial" title="Permalink to this headline"></a></h2>
+<p>Initiate the clean occurrences process with the following:</p>
+<p>for linux/mac systems</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh split_occurrence_data data/input/split_occurrence_data.ini
+</pre></div>
+</div>
+<p>for windows systems</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./go.bat split_occurrence_data data\input\split_occurrence_data.ini
 </pre></div>
 </div>
 </section>
