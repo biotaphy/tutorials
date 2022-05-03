@@ -16,13 +16,12 @@ git clone https://github.com/biotaphy/tutorials.git
 cd tutorials
 ```
 
-3. Run the bash script with a command and configuration file to 
-   1. create an environment file 
-   2. run the container with command-specific docker-compose and environment files, which
-      1. runs the command in the container
-      2. creates output files available to the host machine through the configured local directory
+3. Run the bash script with a command and configuration file to run the container with command-specific docker-compose 
+   and environment files, which
+   1. runs the command in the container
+   2. creates output files available to the host machine through the configured local directory
 ```zsh
-bash go.sh clean_occurrences data/input/clean_occurrences.ini
+bash go.sh clean_occurrences data/input/clean_occurrences.json
 ```
 
 Image tutorials_back-end is now available
@@ -66,5 +65,3 @@ And run this command (which ignores running container):
 ```zsh
 docker system prune --all --volumes
 ```
-
-clean_occurrences --species_key species_name --x_key x --y_key y  --report_filename output/cleaning_report.json input/heuchera.csv  output/clean_heuchera.csv input/wrangler_conf.json

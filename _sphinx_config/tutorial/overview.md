@@ -16,12 +16,13 @@ Any changes made to the biotaphy_data/input directory in the container will not 
 
 The data/output and data/log directories on the host machine are accessible to the container as the 
 biotaphy_data/output and biotaphy_data/log directories in the container.  These directories are mapped directly, so 
-changes made in the container are visible to the host machine.  
+changes made in the container are visible to the host machine.
 
-## User Configuration File
-Each tutorial contains an example configuration file in the docker/<tool_name> directory.  The configuration file  
-is an INI format file, with tool-specific parameters.  The example configuration files reference example data and 
-parameters reasonable for that data.  All required and optional parameters are described in individual tutorial
+## Data preparation: Configuration File
+All tools require a parameters INI file , with tool-specific parameters.  Each line must start with a parameter name, 
+followed immediately (no spaces) by a colon, followed by one or more spaces, and the value.  Each tutorial contains 
+an example configuration file in the docker/<tool_name> directory.  The example configuration files reference example 
+data and parameters reasonable for that data.  All required and optional parameters are described in individual tutorial
 pages.
 
 Input and output files referenced in the configuration file are intended for the Docker container, so use directory 
@@ -29,18 +30,18 @@ paths specific to the container.  Output file parameters (log files, data files)
 biotaphy_data/output and biotaphy_data/log directories, as they will then also be visible to the host computer upon
 completion.
 
-## Run
-The "go" script will run each tutorial with the specific command name and configuration file as arguments.  
+## Run tool tutorials
+The "go" script will run each tutorial with two arguments, the 1) command name and 2) configuration file.  
 For example, the  clean_occurrences tutorial can be initiated with: 
 
 for linux/mac systems
 ```zsh
-bash go.sh clean_occurrences data/input/clean_occurrences.ini
+bash go.sh clean_occurrences data/input/clean_occurrences.json
 ```
 
 for windows systems
 ```cmd
-./go.bat clean_occurrences data\input\clean_occurrences.ini
+./go.bat clean_occurrences data\input\clean_occurrences.json
 ```
 
 ## Behind the scenes
