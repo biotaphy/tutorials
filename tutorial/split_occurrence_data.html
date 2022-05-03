@@ -76,26 +76,98 @@
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
 <p>Read <a class="reference internal" href="overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials work.</p>
 </section>
-<section id="data-preparation-request-a-dwca-from-idigbio">
-<h2>Data Preparation: Request a DwCA from iDigBio<a class="headerlink" href="#data-preparation-request-a-dwca-from-idigbio" title="Permalink to this headline"></a></h2>
-<p>Request a DwCA from iDigBio using their
-<a class="reference external" href="https://www.idigbio.org/wiki/index.php/IDigBio_Download_API">iDigBio Download API</a>.<br />
-Example:
+<section id="data-preparation">
+<h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
+<section id="dwca-input-data">
+<h3>DwCA input data<a class="headerlink" href="#dwca-input-data" title="Permalink to this headline"></a></h3>
+<p>The split_occurrence_data tool accepts either a Darwin Core Archive (DwCA) file or a CSV file containing records for
+one or more taxa.  For this tutorial, the example configuration file works on a DwCA from iDigBio.  To download from
+iDigBio, full instructions are at the
+<a class="reference external" href="https://www.idigbio.org/wiki/index.php/IDigBio_Download_API">iDigBio Download API reference</a>.</p>
+<p>To pull data from the command prompt, use the <code class="docutils literal notranslate"><span class="pre">curl</span></code> command to pull text response directly to terminal with the
+example query_url:
 <a class="reference external" href="https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org">Euphorbia</a></p>
-<p>The response  status via the resulting status_url.  When status response task_status == SUCCESS, pull via included
-download_url.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># pull text response directly to terminal using curl</span>
-curl &lt;query_url&gt;
-curl &lt;status_url&gt;
-<span class="c1"># save response into file with wget </span>
-wget &lt;download_url&gt;
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/?rq<span class="o">=</span>%7B%22genus%22%3A%22euphorbia%22%7D<span class="p">&amp;</span><span class="nv">email</span><span class="o">=</span>donotreply%40idigbio.org
+<span class="o">[</span><span class="m">1</span><span class="o">]</span> <span class="m">58979</span>
+astewart@murderbot:~/git/tutorials$ <span class="o">{</span>
+  <span class="s2">&quot;complete&quot;</span>: false, 
+  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>, 
+  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.628063+00:00&quot;</span>, 
+  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>, 
+  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>, 
+    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>, 
+    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>, 
+    <span class="s2">&quot;mediarecord_fields&quot;</span>: null, 
+    <span class="s2">&quot;mq&quot;</span>: null, 
+    <span class="s2">&quot;record_fields&quot;</span>: null, 
+    <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>, 
+  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>, 
+  <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;PENDING&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Then use <code class="docutils literal notranslate"><span class="pre">curl</span></code> on the resulting <strong>status_url</strong> field:</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
+<span class="o">{</span>
+  <span class="s2">&quot;complete&quot;</span>: false, 
+  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>, 
+  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.735029+00:00&quot;</span>, 
+  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>, 
+  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>, 
+    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>, 
+    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>, 
+    <span class="s2">&quot;mediarecord_fields&quot;</span>: null, 
+    <span class="s2">&quot;mq&quot;</span>: null, 
+    <span class="s2">&quot;record_fields&quot;</span>: null, 
+    <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>, 
+  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>, 
+  <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;PENDING&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>When the task_status shows “SUCCESS”:</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
+<span class="o">{</span>
+  <span class="s2">&quot;complete&quot;</span>: true, 
+  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>, 
+  <span class="s2">&quot;download_url&quot;</span>: <span class="s2">&quot;http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip&quot;</span>, 
+  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.552351+00:00&quot;</span>, 
+  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>, 
+  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>, 
+    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>, 
+    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>, 
+    <span class="s2">&quot;mediarecord_fields&quot;</span>: null, 
+    <span class="s2">&quot;mq&quot;</span>: null, 
+    <span class="s2">&quot;record_fields&quot;</span>: null, 
+    <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>, 
+  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>, 
+  <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;SUCCESS&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Save the response into a file with the <code class="docutils literal notranslate"><span class="pre">wget</span></code> command and the <strong>download_url</strong> field:</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ wget http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip
+...
 </pre></div>
 </div>
 </section>
 <section id="configuration-file">
-<h2>Configuration file<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h2>
+<h3>Configuration file<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h3>
 <p>The split_occurrence_data configuration file consists of one or more “wrangler_type”s, and= the wrangler-specific
 required and possibly optional parameters for each.  Below are the available wrangler_types.</p>
+</section>
 <section id="occurrence-data-wranglers">
 <h3>Occurrence Data Wranglers<a class="headerlink" href="#occurrence-data-wranglers" title="Permalink to this headline"></a></h3>
 <ul class="simple">
@@ -107,20 +179,24 @@ required and possibly optional parameters for each.  Below are the available wra
 </li>
 <li><p>Currently, wrangler names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in this module’s files.</p></li>
 <li><p>Each wrangler’s parameters correspond to the constructor arguments for that wrangler.</p></li>
-<li><p>Below is a list of data wrangler_types and the required and/or optional parameters for each.</p></li>
-<li><p>Example clean_occurrences wrangler configuration:</p></li>
+<li><p>The <a class="reference internal" href="occurrence_wrangler_config.html"><span class="doc std std-doc">Occurrence Data Wrangler Types</span></a> page contains a list of all occurrence data
+wrangler_types and the required and/or optional parameters for each.</p></li>
+<li><p>Example split_occurrence_data wrangler configuration, used for this tutorial (../../input/wrangler_conf_split_occurrence_data.json):</p></li>
 </ul>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 </section>
 </section>
 <section id="run-split-occurrence-data-tutorial">
 <h2>Run split_occurrence_data tutorial<a class="headerlink" href="#run-split-occurrence-data-tutorial" title="Permalink to this headline"></a></h2>
 <p>Initiate the clean occurrences process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh split_occurrence_data data/input/split_occurrence_data.ini
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh split_occurrence_data data/input/split_occurrence_data.json
 </pre></div>
 </div>
 <p>for windows systems</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./go.bat split_occurrence_data data\input\split_occurrence_data.ini
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./go.bat split_occurrence_data data\input\split_occurrence_data.json
 </pre></div>
 </div>
 </section>

@@ -72,22 +72,15 @@
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
 <p>Read <a class="reference internal" href="overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials work.</p>
 </section>
-<section id="run-clean-occurrences-tutorial">
-<h2>Run clean_occurrences tutorial<a class="headerlink" href="#run-clean-occurrences-tutorial" title="Permalink to this headline"></a></h2>
-<p>Initiate the build_shapegrid process with the following:</p>
-<p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh build_shapegrid data/input/build_shapegrid.ini
-</pre></div>
-</div>
-<p>for windows:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>go.bat build_shapegrid data\input\build_shapegrid.ini
-</pre></div>
-</div>
-</section>
+<section id="data-preparation">
+<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
 <section id="configuration-file">
-<h2>Configuration file<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h2>
-<p>The clean_occurrences configuration file consists of 7 required parameters:</p>
+<h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h3>
+<p>An example INI file for running the build_shapegrid tutorial is at
+../../data/input/build_shapegrid.ini. These are the 7 required parameters:</p>
 <ul class="simple">
+<li><p>Required:</p>
+<ul>
 <li><p><strong>shapegrid_filename</strong>: The relative or absolute path for the output shapegrid.</p></li>
 <li><p><strong>min_x</strong>: The minimum value for X (longitude) coordinate of the shapegrid.</p></li>
 <li><p><strong>min_y</strong>: The minimum value for Y (latitude) coordinate of the shapegrid.</p></li>
@@ -96,6 +89,26 @@
 <li><p><strong>cell_size</strong>: The size of each cell (in units indicated by EPSG).</p></li>
 <li><p><strong>epsg</strong>: The EPSG code for the new shapegrid.</p></li>
 </ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="run-build-shapegrid-tutorial">
+<h2>Run build_shapegrid tutorial<a class="headerlink" href="#run-build-shapegrid-tutorial" title="Permalink to this headline"></a></h2>
+<p>Initiate the build_shapegrid process with the following:</p>
+<p>for linux/mac systems</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh build_shapegrid data/input/build_shapegrid.json
+</pre></div>
+</div>
+<p>for windows:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>go.bat build_shapegrid data\input\build_shapegrid.ini
+</pre></div>
+</div>
+</section>
+<section id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
+<p>The build_shapegrid tool outputs a grid in shapefile format, conforming to the arguments specified
+in the configuration INI file.</p>
 </section>
 </section>
 

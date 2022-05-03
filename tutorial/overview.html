@@ -44,8 +44,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#preparation">Preparation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#host-and-container-input-output-log-directories">Host and Container input, output, log directories</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#user-configuration-file">User Configuration File</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#run">Run</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-preparation-configuration-file">Data preparation: Configuration File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-tool-tutorials">Run tool tutorials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#behind-the-scenes">Behind the scenes</a></li>
 </ul>
 </li>
@@ -99,27 +99,28 @@ Any changes made to the biotaphy_data/input directory in the container will not 
 biotaphy_data/output and biotaphy_data/log directories in the container.  These directories are mapped directly, so
 changes made in the container are visible to the host machine.</p>
 </section>
-<section id="user-configuration-file">
-<h2>User Configuration File<a class="headerlink" href="#user-configuration-file" title="Permalink to this headline"></a></h2>
-<p>Each tutorial contains an example configuration file in the docker/&lt;tool_name&gt; directory.  The configuration file<br />
-is an INI format file, with tool-specific parameters.  The example configuration files reference example data and
-parameters reasonable for that data.  All required and optional parameters are described in individual tutorial
+<section id="data-preparation-configuration-file">
+<h2>Data preparation: Configuration File<a class="headerlink" href="#data-preparation-configuration-file" title="Permalink to this headline"></a></h2>
+<p>All tools require a parameters INI file , with tool-specific parameters.  Each line must start with a parameter name,
+followed immediately (no spaces) by a colon, followed by one or more spaces, and the value.  Each tutorial contains
+an example configuration file in the docker/&lt;tool_name&gt; directory.  The example configuration files reference example
+data and parameters reasonable for that data.  All required and optional parameters are described in individual tutorial
 pages.</p>
 <p>Input and output files referenced in the configuration file are intended for the Docker container, so use directory
 paths specific to the container.  Output file parameters (log files, data files) must be specified to be written to
 biotaphy_data/output and biotaphy_data/log directories, as they will then also be visible to the host computer upon
 completion.</p>
 </section>
-<section id="run">
-<h2>Run<a class="headerlink" href="#run" title="Permalink to this headline"></a></h2>
-<p>The “go” script will run each tutorial with the specific command name and configuration file as arguments.<br />
+<section id="run-tool-tutorials">
+<h2>Run tool tutorials<a class="headerlink" href="#run-tool-tutorials" title="Permalink to this headline"></a></h2>
+<p>The “go” script will run each tutorial with two arguments, the 1) command name and 2) configuration file.<br />
 For example, the  clean_occurrences tutorial can be initiated with:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh clean_occurrences data/input/clean_occurrences.ini
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh clean_occurrences data/input/clean_occurrences.json
 </pre></div>
 </div>
 <p>for windows systems</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./go.bat clean_occurrences data\input\clean_occurrences.ini
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./go.bat clean_occurrences data\input\clean_occurrences.json
 </pre></div>
 </div>
 </section>

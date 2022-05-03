@@ -76,64 +76,45 @@
 </section>
 <section id="data-preparation">
 <h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
-<p>The the clean occurrences tool requires a parameters INI file.  Each line must start with a parameter name, followed
-immediately (no spaces) by a colon, followed by one or more spaces, and the value.  An example INI file for the
-tool used in the tutorial is at ../../data/input/clean_occurrences.ini. These are the required and optional
-parameters parameters for clean_occurrences:</p>
+<section id="configuration-file">
+<h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h3>
+<p>An example INI file for running the clean_occurrences tutorial is at ../../data/input/clean_occurrences.ini.
+These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
 <ul>
-<li><p>in_filename (str): A file path containing CSV occurrence data.</p></li>
-<li><p>out_filename (str): A file path for output cleaned occurrence data</p></li>
-<li><p>wrangler_config_filename (str): A file path containing occurrence wrangler options in JSON format</p></li>
+<li><p><strong>in_filename</strong>: An input file containing CSV occurrence data.</p></li>
+<li><p><strong>out_filename</strong>: A file path for output cleaned occurrence data</p></li>
+<li><p><strong>wrangler_config_filename</strong>: An input file containing occurrence wrangler options in JSON format</p></li>
 </ul>
 </li>
 <li><p>Optional</p>
 <ul>
-<li><p>species_field (str): The field name of the column containing species data (used for grouping taxa) for the
+<li><p><strong>species_field</strong>: The field name of the column containing species data (used for grouping taxa) for the
 out_filename.</p></li>
-<li><p>x_key (str):  (str): The field name of the column containing x/longitude coordinate for the out_filename.</p></li>
-<li><p>y_key (str):  (str): The field name of the column containing y/latitude coordinate for the out_filename.</p></li>
-<li><p>report_filename (str): File location to write optional output report JSON.</p></li>
+<li><p><strong>x_key</strong>: The field name of the column containing x/longitude coordinate for the out_filename.</p></li>
+<li><p><strong>y_key</strong>: The field name of the column containing y/latitude coordinate for the out_filename.</p></li>
+<li><p><strong>report_filename</strong>: File location to write optional output report JSON.</p></li>
 </ul>
 </li>
 </ul>
-<p>species_key:        species_name
-x_key:              x
-y_key:              y<br />
-report_filename:    /biotaphy_data/output/occurrence_cleaning_report.json
-log_output:         True</p>
-<p>in_filename:        /biotaphy_data/input/heuchera.csv
-out_filename:       /biotaphy_data/output/clean_heuchera.csv</p>
 </section>
-<section id="run-clean-occurrences-tutorial">
-<h2>Run clean_occurrences tutorial<a class="headerlink" href="#run-clean-occurrences-tutorial" title="Permalink to this headline"></a></h2>
-<p>Initiate the clean occurrences process with the following command and parameters INI file:</p>
-<p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh clean_occurrences data/input/clean_occurrences.ini
-</pre></div>
-</div>
-<p>for windows systems</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./go.bat clean_occurrences data\input\clean_occurrences.ini
-</pre></div>
-</div>
+<section id="input-csv-occurrence-data">
+<h3>Input: CSV occurrence data<a class="headerlink" href="#input-csv-occurrence-data" title="Permalink to this headline"></a></h3>
+<p>A file containing tab or comma-delimited records of specimen occurrence data.</p>
 </section>
-<section id="configuration-file">
-<h2>Configuration file<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h2>
-<p>The clean_occurrences configuration file consists of one or more “wrangler_type”s, and the wrangler-specific
-required and possibly optional parameters for each.  Below are the available wrangler_types.</p>
-<section id="occurrence-data-wranglers">
-<h3>Occurrence Data Wranglers<a class="headerlink" href="#occurrence-data-wranglers" title="Permalink to this headline"></a></h3>
+<section id="input-wrangler-configuration-file">
+<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this headline"></a></h3>
+<p>A file specifying occurrence-wranglers to apply to the CSV data, and options specific to each.</p>
+<p>The clean_occurrences configuration file consists of one or more Occurrence Data Wranglers (wrangler_type), and the
+wrangler-specific required and possibly optional parameters for each.  Configuration files:</p>
 <ul class="simple">
-<li><p>A configuration file is in JSON format, a list of one dictionary per desired wrangler.</p>
-<ul>
+<li><p>are in JSON format, a list of one dictionary per desired wrangler.</p></li>
 <li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler types (listed below).</p></li>
 <li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
-</ul>
-</li>
-<li><p>Currently, wrangler names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in this module’s files.</p></li>
-<li><p>Each wrangler’s parameters correspond to the constructor arguments for that wrangler.</p></li>
 <li><p>Below is a list of data wrangler_types and the required and/or optional parameters for each.</p></li>
+<li><p>The <a class="reference internal" href="occurrence_wrangler_config.html"><span class="doc std std-doc">Occurrence Data Wrangler Types</span></a> page contains a list of all occurrence data
+wrangler_types and the required and/or optional parameters for each.</p></li>
 <li><p>Example clean_occurrences wrangler configuration:</p></li>
 </ul>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
@@ -153,148 +134,22 @@ required and possibly optional parameters for each.  Below are the available wra
 </div>
 </section>
 </section>
-<section id="wrangler-types">
-<h2>Wrangler types<a class="headerlink" href="#wrangler-types" title="Permalink to this headline"></a></h2>
-<section id="acceptednameoccurrencewrangler">
-<h3>AcceptedNameOccurrenceWrangler<a class="headerlink" href="#acceptednameoccurrencewrangler" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>optional</p>
-<ul>
-<li><p>name_map (dict): A map of original name to accepted name.</p></li>
-<li><p>name_resolver (str or Method): If provided, use this method for getting new accepted names.
-If set to ‘gbif’, use GBIF name resolution.</p></li>
-<li><p>store_original_attribute (str): A new attribute to store the
-original taxon name.</p></li>
-</ul>
-</li>
-</ul>
+<section id="run-clean-occurrences-tutorial">
+<h2>Run clean_occurrences tutorial<a class="headerlink" href="#run-clean-occurrences-tutorial" title="Permalink to this headline"></a></h2>
+<p>Initiate the clean occurrences process with two arguments, the 1) command name and 2) configuration INI file:</p>
+<p>for linux/mac systems</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh clean_occurrences data/input/clean_occurrences.json
+</pre></div>
+</div>
+<p>for windows systems</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./go.bat clean_occurrences data\input\clean_occurrences.json
+</pre></div>
+</div>
 </section>
-<section id="attributefilterwrangler">
-<h3>AttributeFilterWrangler<a class="headerlink" href="#attributefilterwrangler" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>required</p>
-<ul>
-<li><p>attribute_name (str): The name of the attribute to modify.</p></li>
-<li><p>filter_func (Method): A function to be used for the pass condition.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="attributemodifierwrangler">
-<h3>AttributeModifierWrangler<a class="headerlink" href="#attributemodifierwrangler" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>required</p>
-<ul>
-<li><p>attribute_name (str): The name of the attribute to modify.</p></li>
-<li><p>attribute_func (Method): A function to generate values for a point.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="boundingboxfilter">
-<h3>BoundingBoxFilter<a class="headerlink" href="#boundingboxfilter" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>required</p>
-<ul>
-<li><p>min_x (numeric): The minimum ‘x’ value for the bounding box.</p></li>
-<li><p>min_y (numeric): The minimum ‘y’ value for the bounding box.</p></li>
-<li><p>max_x (numeric): The maximum ‘x’ value for the bounding box.</p></li>
-<li><p>max_y (numeric): The maximum ‘y’ value for the bounding box.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="commonformatwrangler">
-<h3>CommonFormatWrangler<a class="headerlink" href="#commonformatwrangler" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>required</p>
-<ul>
-<li><p>attribute_map (dict): A mapping of source key, target values.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="coordinateconverterwrangler">
-<h3>CoordinateConverterWrangler<a class="headerlink" href="#coordinateconverterwrangler" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>required</p>
-<ul>
-<li><p>target_epsg (int): Target map projection specified by EPSG code.</p></li>
-</ul>
-</li>
-<li><p>optional</p>
-<ul>
-<li><p>source_epsg (int): Source map projection specified by EPSG code.</p></li>
-<li><p>epsg_attribute (str or None): A point attribute containing EPSG code.</p></li>
-<li><p>original_x_attribute (str): An attribute to store the original x value.</p></li>
-<li><p>original_y_attribute (str): An attribute to store the original y value.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="decimalprecisionfilter">
-<h3>DecimalPrecisionFilter<a class="headerlink" href="#decimalprecisionfilter" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>required:</p>
-<ul>
-<li><p>decimal_places (int): Only keep points with at least this many decimal places of precision.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="disjointgeometriesfilter">
-<h3>DisjointGeometriesFilter<a class="headerlink" href="#disjointgeometriesfilter" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>required:</p>
-<ul>
-<li><p>geometry_wkts (list of str): A list of geometry WKTs to check against.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="intersectgeometriesfilter">
-<h3>IntersectGeometriesFilter<a class="headerlink" href="#intersectgeometriesfilter" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>required:</p>
-<ul>
-<li><p>geometry_wkts (list of str): A list of WKT strings.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="minimumpointswrangler">
-<h3>MinimumPointsWrangler<a class="headerlink" href="#minimumpointswrangler" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>required:</p>
-<ul>
-<li><p>minimum_count (int): The minimum number of points in order to keep all.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="spatialindexfilter">
-<h3>SpatialIndexFilter<a class="headerlink" href="#spatialindexfilter" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>required:</p>
-<ul>
-<li><p>spatial_index (SpatialIndex): A SpatialIndex object that can be searched.</p></li>
-<li><p>intersections_map (dict): A dictionary of species name keys and corresponding valid intersection values.</p></li>
-<li><p>check_hit_func (Method): A function that takes two arguments (search hit, valid intersections for a species)
-and returns a boolean indication if the hit should be counted.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="uniquelocalitiesfilter">
-<h3>UniqueLocalitiesFilter<a class="headerlink" href="#uniquelocalitiesfilter" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>optional parameters:</p>
-<ul>
-<li><p>do_reset (bool): Reset the list of seen localities after each group.</p></li>
-</ul>
-</li>
-</ul>
-</section>
+<section id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
+<p>The clean_occurrences tool outputs occurrence data to the out_filename and optionally writes a summary of
+the points filtered to the report_filename, both specified in the configuration INI file.</p>
 </section>
 </section>
 
