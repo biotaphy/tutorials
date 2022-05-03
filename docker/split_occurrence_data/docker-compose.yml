@@ -2,9 +2,14 @@ version: "3.9"
 
 services:
   backend:
-    command: ["split_occurrence_data",
-              "--max_open_writers", max_open_writers,
-              "--key_field", $key_field,
-              "--out_field", $out_field,
-              "--dwca", $dwca, $wrangler_filename,
-              "--csv", $csv_fn, $wranglers_fn, $sp_key, $x_key, $y_key]
+    command: [ "split_occurrence_data",
+               --$config_key,
+               $config_var
+    ]
+
+#    command: ["split_occurrence_data",
+#              "--max_open_writers", max_open_writers,
+#              "--key_field", $key_field,
+#              "--out_field", $out_field,
+#              "--dwca", $dwca, $wrangler_filename,
+#              "--csv", $csv_fn, $wranglers_fn, $sp_key, $x_key, $y_key]

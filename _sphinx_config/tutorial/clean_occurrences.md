@@ -8,63 +8,37 @@ Webinar 5 [Clean Your Dirty Data](https://docs.google.com/document/d/1CqYkCUlY40
 Read [Tutorial Overview](../tutorial/overview.md) for an overview of how all tutorials work. 
 
 ## Data preparation
-The the clean occurrences tool requires a parameters INI file.  Each line must start with a parameter name, followed 
-immediately (no spaces) by a colon, followed by one or more spaces, and the value.  An example INI file for the 
-tool used in the tutorial is at ../../data/input/clean_occurrences.ini. These are the required and optional 
-parameters parameters for clean_occurrences: 
+
+### Configuration File
+An example INI file for running the clean_occurrences tutorial is at ../../data/input/clean_occurrences.ini. 
+These are the required and optional parameters: 
 
 * Required: 
-  * in_filename (str): A file path containing CSV occurrence data.
-  * out_filename (str): A file path for output cleaned occurrence data
-  * wrangler_config_filename (str): A file path containing occurrence wrangler options in JSON format 
+  * **in_filename**: An input file containing CSV occurrence data.
+  * **out_filename**: A file path for output cleaned occurrence data
+  * **wrangler_config_filename**: An input file containing occurrence wrangler options in JSON format 
 * Optional 
-  * species_field (str): The field name of the column containing species data (used for grouping taxa) for the 
+  * **species_field**: The field name of the column containing species data (used for grouping taxa) for the 
                          out_filename. 
-  * x_key (str):  (str): The field name of the column containing x/longitude coordinate for the out_filename.
-  * y_key (str):  (str): The field name of the column containing y/latitude coordinate for the out_filename.
-  * report_filename (str): File location to write optional output report JSON.
+  * **x_key**: The field name of the column containing x/longitude coordinate for the out_filename.
+  * **y_key**: The field name of the column containing y/latitude coordinate for the out_filename.
+  * **report_filename**: File location to write optional output report JSON.
 
+### Input: CSV occurrence data
+A file containing tab or comma-delimited records of specimen occurrence data.
 
-species_key:        species_name
-x_key:              x
-y_key:              y  
-report_filename:    /biotaphy_data/output/occurrence_cleaning_report.json
-log_output:         True
+### Input: Wrangler configuration file
+A file specifying occurrence-wranglers to apply to the CSV data, and options specific to each.    
 
-in_filename:        /biotaphy_data/input/heuchera.csv
-out_filename:       /biotaphy_data/output/clean_heuchera.csv
-
-## Run clean_occurrences tutorial 
-
-Initiate the clean occurrences process with the following command and parameters INI file:
-
-for linux/mac systems
-
-```zsh
-bash go.sh clean_occurrences data/input/clean_occurrences.ini
-```
-
-for windows systems
-
-```cmd
-./go.bat clean_occurrences data\input\clean_occurrences.ini
-```
-
-## Configuration file
-
-The clean_occurrences configuration file consists of one or more "wrangler_type"s, and the wrangler-specific 
-required and possibly optional parameters for each.  Below are the available wrangler_types. 
-
-### Occurrence Data Wranglers
-
-* A configuration file is in JSON format, a list of one dictionary per desired wrangler.
+The clean_occurrences configuration file consists of one or more Occurrence Data Wranglers (wrangler_type), and the 
+wrangler-specific required and possibly optional parameters for each.  Configuration files:
+  * are in JSON format, a list of one dictionary per desired wrangler.
   * Each dictionary must contain "wrangler_type", with the name of the wrangler types (listed below).
   * The dictionary will also contain all required parameters and any optional parameters.
-
-* Currently, wrangler names correspond to the wrangler class `name` attribute in this module's files.
-* Each wrangler's parameters correspond to the constructor arguments for that wrangler.
-* Below is a list of data wrangler_types and the required and/or optional parameters for each.
-* Example clean_occurrences wrangler configuration:
+  * Below is a list of data wrangler_types and the required and/or optional parameters for each.
+  * The [Occurrence Data Wrangler Types](occurrence_wrangler_config.md) page contains a list of all occurrence data 
+    wrangler_types and the required and/or optional parameters for each.
+  * Example clean_occurrences wrangler configuration:
 
 ```json
 [
@@ -80,72 +54,23 @@ required and possibly optional parameters for each.  Below are the available wra
         "minimum_count" : 12
     }
 ]
-
 ```
 
-## Wrangler types
+## Run clean_occurrences tutorial
+Initiate the clean occurrences process with two arguments, the 1) command name and 2) configuration INI file:
 
-### AcceptedNameOccurrenceWrangler
-* optional
-  * name_map (dict): A map of original name to accepted name.
-  * name_resolver (str or Method): If provided, use this method for getting new accepted names.
-    If set to 'gbif', use GBIF name resolution.
-  * store_original_attribute (str): A new attribute to store the
-    original taxon name.
+for linux/mac systems
+```zsh
+bash go.sh clean_occurrences data/input/clean_occurrences.json
+```
 
-### AttributeFilterWrangler
-* required
-  * attribute_name (str): The name of the attribute to modify.
-  * filter_func (Method): A function to be used for the pass condition.
+for windows systems
+```cmd
+./go.bat clean_occurrences data\input\clean_occurrences.json
+```
 
-### AttributeModifierWrangler
-* required
-  * attribute_name (str): The name of the attribute to modify.
-  * attribute_func (Method): A function to generate values for a point.
+## Output
+The clean_occurrences tool outputs occurrence data to the out_filename and optionally writes a summary of 
+the points filtered to the report_filename, both specified in the configuration INI file.
 
-### BoundingBoxFilter
-* required
-  * min_x (numeric): The minimum 'x' value for the bounding box.
-  * min_y (numeric): The minimum 'y' value for the bounding box.
-  * max_x (numeric): The maximum 'x' value for the bounding box.
-  * max_y (numeric): The maximum 'y' value for the bounding box.
 
-### CommonFormatWrangler
-* required
-  * attribute_map (dict): A mapping of source key, target values.
-
-### CoordinateConverterWrangler
-* required
-  * target_epsg (int): Target map projection specified by EPSG code.
-* optional
-  * source_epsg (int): Source map projection specified by EPSG code.
-  * epsg_attribute (str or None): A point attribute containing EPSG code.
-  * original_x_attribute (str): An attribute to store the original x value.
-  * original_y_attribute (str): An attribute to store the original y value.
-
-### DecimalPrecisionFilter
-* required:
-  * decimal_places (int): Only keep points with at least this many decimal places of precision.
-
-### DisjointGeometriesFilter
-* required:
-  * geometry_wkts (list of str): A list of geometry WKTs to check against.
-
-### IntersectGeometriesFilter
-* required:
-  * geometry_wkts (list of str): A list of WKT strings.
-
-### MinimumPointsWrangler
-* required:
-  * minimum_count (int): The minimum number of points in order to keep all.
-
-### SpatialIndexFilter
-* required:
-  * spatial_index (SpatialIndex): A SpatialIndex object that can be searched.
-  * intersections_map (dict): A dictionary of species name keys and corresponding valid intersection values.
-  * check_hit_func (Method): A function that takes two arguments (search hit, valid intersections for a species)
-    and returns a boolean indication if the hit should be counted.
-
-### UniqueLocalitiesFilter
-* optional parameters:
-  * do_reset (bool): Reset the list of seen localities after each group.
