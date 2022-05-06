@@ -10,7 +10,7 @@ Read [Tutorial Overview](../tutorial/overview.md) for an overview of how all tut
 ## Data preparation
 
 ### Configuration File
-An example INI file for running the clean_occurrences tutorial is at ../../data/input/clean_occurrences.ini. 
+An example json file for running the clean_occurrences tutorial is at ../../data/param_config/clean_occurrences.json. 
 These are the required and optional parameters: 
 
 * Required: 

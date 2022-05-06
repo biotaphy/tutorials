@@ -2,10 +2,7 @@ version: "3.9"
 
 services:
   backend:
-    command: [ "split_occurrence_data",
-               --$config_key,
-               $config_var
-    ]
+    command: [ $command, "--config_file", $config_file ]
 
 #    command: ["split_occurrence_data",
 #              "--max_open_writers", max_open_writers,
