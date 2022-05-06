@@ -101,8 +101,8 @@ changes made in the container are visible to the host machine.</p>
 </section>
 <section id="data-preparation-configuration-file">
 <h2>Data preparation: Configuration File<a class="headerlink" href="#data-preparation-configuration-file" title="Permalink to this headline"></a></h2>
-<p>All tools require a parameters INI file , with tool-specific parameters.  Each line must start with a parameter name,
-followed immediately (no spaces) by a colon, followed by one or more spaces, and the value.  Each tutorial contains
+<p>All tools require a parameters JSON file , with tool-specific parameters.  The file should be in JSON format, with<br />
+parameter names enclosed in double quotes, and string values enclosed in double quotes.  Each tutorial contains
 an example configuration file in the docker/&lt;tool_name&gt; directory.  The example configuration files reference example
 data and parameters reasonable for that data.  All required and optional parameters are described in individual tutorial
 pages.</p>

@@ -19,8 +19,8 @@ biotaphy_data/output and biotaphy_data/log directories in the container.  These 
 changes made in the container are visible to the host machine.
 
 ## Data preparation: Configuration File
-All tools require a parameters INI file , with tool-specific parameters.  Each line must start with a parameter name, 
-followed immediately (no spaces) by a colon, followed by one or more spaces, and the value.  Each tutorial contains 
+All tools require a parameters JSON file , with tool-specific parameters.  The file should be in JSON format, with  
+parameter names enclosed in double quotes, and string values enclosed in double quotes.  Each tutorial contains 
 an example configuration file in the docker/<tool_name> directory.  The example configuration files reference example 
 data and parameters reasonable for that data.  All required and optional parameters are described in individual tutorial
 pages.

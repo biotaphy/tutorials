@@ -71,7 +71,38 @@
 <p>Webinar 7 <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.3y36cau4jutj">Introducing PAMs</a></p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
-<p>Read <a class="reference internal" href="overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials work.</p>
+<p>Read <a class="reference internal" href="overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials
+work.</p>
+<section id="configuration-file">
+<h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h3>
+<p>An example json file for running the encode_layers tutorial is at
+../../data/param_config/encode_layers.json. These are the required and optional
+parameters:</p>
+<ul class="simple">
+<li><p>Required:</p>
+<ul>
+<li><p><strong>shapegrid_filename</strong>: Relative path to shapegrid to use for site geometries</p></li>
+<li><p><strong>out_matrix_filename</strong>: Relative path to write the encoded matrix</p></li>
+</ul>
+</li>
+<li><p>Optional</p>
+<ul>
+<li><p><strong>min_coverage</strong>: Minimum percentage of a cell that has to be covered to encode it</p></li>
+<li><p><strong>min_presence</strong>: Minimum value to be considered present when encoding presence
+absence</p></li>
+<li><p><strong>max_presence</strong>: Maximum value to be considered present</p></li>
+<li><p><strong>layer</strong>: list of a</p>
+<ul>
+<li><p>layer filename</p></li>
+<li><p>(optional) label for the encoded layer in the output matrix. Defaults to file
+basename</p></li>
+<li><p>(optional) attribute</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 <section id="run-encode-layers-tutorial">
 <h2>Run encode_layers tutorial<a class="headerlink" href="#run-encode-layers-tutorial" title="Permalink to this headline"></a></h2>

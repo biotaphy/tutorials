@@ -7,8 +7,8 @@ Read [Tutorial Overview](../tutorial/overview.md) for an overview of how all tut
 ## Data preparation
 
 ### Configuration File
-An example INI file for running the build_shapegrid tutorial is at 
-../../data/input/build_shapegrid.ini. These are the 7 required parameters:
+An example JSON file for running the build_shapegrid tutorial is at 
+../../data/input/build_shapegrid.json. These are the 7 required parameters:
 
 * Required: 
   * **shapegrid_filename**: The relative or absolute path for the output shapegrid.
