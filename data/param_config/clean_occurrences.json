@@ -4,7 +4,7 @@
     "y_key": "y",
     "report_filename": "/biotaphy_data/output/occurrence_cleaning_report.json",
     "log_output": "True",
-    "in_filename": "/biotaphy_data/input/heuchera.csv",
-    "out_filename":  "/biotaphy_data/output/clean_heuchera.csv",
-    "wrangler_config_filename":   "/biotaphy_data/input/wrangler_conf_clean_occurrences.json"
+    "reader_filename": "/biotaphy_data/input/heuchera.csv",
+    "writer_filename":  "/biotaphy_data/output/clean_heuchera.csv",
+    "wrangler_config_filename":   "/biotaphy_data/param_config/wrangler_conf_clean_occurrences.json"
 }
