@@ -11,19 +11,15 @@ RUN apt-get update && \
 # Remove when this has been added to lmpy requirements
 RUN pip install requests
 
-# specify-lmpy
-RUN mkdir git && \
-    cd git && \
-    git clone https://github.com/specifysystems/lmpy.git
-
+# specify-lmpy from pypi
 RUN pip install specify-lmpy
 
+RUN mkdir git
 #  BiotaphyPy
 RUN cd git &&  \
     git clone https://github.com/biotaphy/BiotaPhyPy.git &&  \
     cd BiotaPhyPy \
     && pip install .
-
 # lmtools
 RUN cd git && \
     git clone https://github.com/specifysystems/lmtools.git && \
