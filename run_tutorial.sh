@@ -70,13 +70,13 @@ set_defaults() {
     fi
     touch "$LOG"
 
-    # Host data directory mapped to container data directory
-    HOST_DATA_DIR="data"
-    DOCKER_DATA_DIR="biotaphy_data"
+    # Relative host data directory mapped to container data directory (mounted at root)
+    HOST_DATA_DIR="data/"
+    DOCKER_DATA_DIR="/biotaphy_data/"
     if [ ! -f "$HOST_CONFIG_FILE" ] ; then
         echo "File $HOST_CONFIG_FILE does not exist" | tee -a "$LOG"
     fi
-    CONTAINER_CONFIG_FILE=$(echo $HOST_CONFIG_FILE | sed "s/$HOST_DATA_DIR/$DOCKER_DATA_DIR/g")
+    CONTAINER_CONFIG_FILE=$(echo $HOST_CONFIG_FILE | sed "s:^$HOST_DATA_DIR:$DOCKER_DATA_DIR:g")
 
     DOCKER_PATH=./docker
     COMPOSE_FNAME=docker-compose.yml
