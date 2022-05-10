@@ -1,11 +1,9 @@
-# All file paths are relative to the current (user home) directory
-[
-    {
-            "max_open_writers": 100,
-            "key_field": "x",
-            "out_field": "y",
-            "dwca":  ["/biotaphy_data/input/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip",
-                      "/biotaphy_data/input/wrangler_conf_split_occurrence_data.json"]
+{
+    "max_open_writers": 100,
+    "key_field": "x",
+    "out_field": "y",
+    "dwca":  ["/biotaphy_data/input/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip",
+              "/biotaphy_data/input/wrangler_conf_split_occurrence_data.json"],
+    "out_dir": "/biotaphy_data/output"
 
-    }
-]
+}

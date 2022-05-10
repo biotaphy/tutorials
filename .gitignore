@@ -25,3 +25,5 @@ data/input/b8982e06-7975-4817-801a-6cddc4f85cd2.zip
 data/input/op140814.tif
 docker/clean_occurrences.env
 docker/encode_layers.env
+docker/build_shapegrid.env
+docker/split_occurrence_data.env
