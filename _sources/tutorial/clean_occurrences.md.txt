@@ -71,6 +71,6 @@ for windows systems
 
 ## Output
 The clean_occurrences tool outputs occurrence data to the out_filename and optionally writes a summary of 
-the points filtered to the report_filename, both specified in the configuration INI file.
+the points filtered to the report_filename, both specified in the configuration JSON file.
 
 
