@@ -27,3 +27,5 @@ docker/clean_occurrences.env
 docker/encode_layers.env
 docker/build_shapegrid.env
 docker/split_occurrence_data.env
+data/input/occ_idigbio.zip
+data/input/saxifragales_gbif.zip

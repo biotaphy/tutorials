@@ -1,14 +1,1 @@
-[
-    {
-        "wrangler_type" : "AcceptedNameOccurrenceWrangler",
-        "name_resolver" : "gbif",
-        "store_original_attribute": "original_scientific_name"
-    },
-    {
-        "wrangler_type" : "UniqueLocalitiesFilter"
-    },
-    {
-        "wrangler_type" : "MinimumPointsWrangler",
-        "minimum_count" : 12
-    }
-]
+[]

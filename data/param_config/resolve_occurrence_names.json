@@ -3,10 +3,9 @@
     "key_field": ["scientificName"],
     "dwca":  [
         ["/biotaphy_data/input/saxifragales_gbif.zip",
-         "/biotaphy_data/param_config/wrangler_conf_split_occurrence_data.json"
+         "/biotaphy_data/input/wrangler_conf_resolve_occurrence_names.json"
         ]
     ],
     "out_dir": "/biotaphy_data/output"
 
 }
-

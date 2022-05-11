@@ -1,7 +1,11 @@
 # Occurrence Data Wrangler types
 
-Currently, wrangler_type names correspond to the wrangler class `name` attribute in this module's files.  Each wrangler's 
-parameters correspond to the constructor arguments for that wrangler.
+When running wranglers on an occurrence data set, wranglers are applied in the order 
+that they are listed in the wrangler config file.  
+
+Currently, wrangler_type names correspond to the wrangler class `name` attribute in 
+this module's files.  Each wrangler's parameters correspond to the constructor 
+arguments for that wrangler.
 
 ## AcceptedNameOccurrenceWrangler
 * optional

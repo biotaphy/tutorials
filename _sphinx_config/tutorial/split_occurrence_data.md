@@ -97,13 +97,14 @@ $ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
 Save the response into a file with the `wget` command and the **download_url** field:
 ```zsh
 $ wget http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip
-...
 ```
 
 ### Configuration file
 
-The split_occurrence_data configuration file consists of one or more "wrangler_type"s, and= the wrangler-specific 
-required and possibly optional parameters for each.  Below are the available wrangler_types. 
+The split_occurrence_data configuration file consists of one or more "wrangler_type"s, 
+and= the wrangler-specific required and possibly optional parameters for each.  
+Available wrangler_types with their parameters are listed 
+[here](occurrence_wrangler_config.md)
 
 ### Occurrence Data Wranglers
 
@@ -115,7 +116,9 @@ required and possibly optional parameters for each.  Below are the available wra
 * Each wrangler's parameters correspond to the constructor arguments for that wrangler.
 * The [Occurrence Data Wrangler Types](occurrence_wrangler_config.md) page contains a list of all occurrence data 
   wrangler_types and the required and/or optional parameters for each.
-* Example split_occurrence_data wrangler configuration, used for this tutorial (../../input/wrangler_conf_split_occurrence_data.json):
+* An example split_occurrence_data wrangler configuration, used for this tutorial is 
+  [here](../../input/wrangler_conf_split_occurrence_data.json):
+
 ```json lines
 
 ```
