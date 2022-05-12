@@ -8,7 +8,7 @@ Webinar 3, [Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY
 
 ## Introduction
 
-Read [Tutorial Overview](../tutorial/overview.md) for an overview of how all tutorials work. 
+Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all tutorials work. 
 
 ## Data Preparation
 
@@ -130,11 +130,11 @@ Initiate the clean occurrences process with the following:
 for linux/mac systems
 
 ```zsh
-bash go.sh split_occurrence_data data/input/split_occurrence_data.json
+bash run_tutorial.sh split_occurrence_data data/param_config/split_occurrence_data.json
 ```
 
 for windows systems
 
 ```cmd
-./go.bat split_occurrence_data data\input\split_occurrence_data.json
+./run_tutorial.bat split_occurrence_data data\param_config\split_occurrence_data.json
 ```

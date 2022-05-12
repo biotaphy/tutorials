@@ -1,14 +1,15 @@
 # Resolve names in occurrence data
 
-Webinar #2.  Resolving Nomenclature: Making Appropriate Taxonomic Choices
+**Webinar #2**  Resolving Nomenclature: Making Appropriate Taxonomic Choices
 
 ## Introduction
 
-Read [Tutorial Overview](../tutorial/overview.md) for an overview of how all tutorials work. 
+Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all tutorials work. 
 
 ## Data preparation
 
 ### Input: occurrence data
+
 Either, 
 1) a file containing tab or comma-delimited records of specimen occurrence data; or 
 2) a Darwin Core Archive (DwCA) of occurrence data. 
@@ -16,13 +17,17 @@ Either,
 GBIF and iDigBio provide portals for querying for, and downloading either CSVs or DwCAs.
 
 ### Configuration File
+
 A JSON configuration file is required for this command.  These are the required and 
 optional parameters: 
 
-* Required: 
+* Required:
+
   * **out_dir**: The parent output directory for CSVs of occurrence records resulting 
     from splitting the data by species (or other grouping field).
+  
 * Optional 
+
   * **max_open_writers**: The maximum number of files that can be open at one time for 
     writing occurrence records.  The default value of 100 is appropriate for most 
     systems.
@@ -54,6 +59,7 @@ optional parameters:
     * fieldname for grouping data (often a taxonomic designation such as scientificName)
     * fieldname for the longitude/x coordinate
     * fieldname for the latitude/y coordinate
+    
 An example configuration file to process a DwCA, using data wranglers specified in 
 wrangler_conf_resolve_occurrence_names.json, writing all files to the 
 /biotaphy_data/output directory.  
@@ -63,7 +69,7 @@ wrangler_conf_resolve_occurrence_names.json, writing all files to the
     "max_open_writers": 100,
     "key_field": "scientificName",
     "dwca":  [
-        ["/biotaphy_data/input/saxifragales_gbif.zip",
+        ["/biotaphy_data/input/occ_idigbio.zip",
          "/biotaphy_data/param_config/wrangler_conf_resolve_occurrence_names.json"
         ]
     ],
@@ -94,17 +100,20 @@ wrangler_conf_resolve_occurrence_names2.json, writing the files to the
 ```
 
 ### Input: Wrangler configuration file
-A file specifying occurrence-wranglers to apply to the occurrence data, and options 
-specific to each.    
 
-The resolve_occurrence_names.json  configuration file consists of one or more Occurrence Data Wranglers (wrangler_type), and the 
-wrangler-specific required and possibly optional parameters for each.  Configuration files:
+A file specifying 0 or more occurrence-wranglers to apply to the occurrence data, and  
+options specific to each.    
+
+The resolve_occurrence_names.json  configuration file consists of one or more Occurrence 
+Data Wranglers (wrangler_type), and the wrangler-specific required and possibly optional
+parameters for each.  Configuration files:
+
   * are in JSON format, a list of one dictionary per desired wrangler.
-  * Each dictionary must contain "wrangler_type", with the name of the wrangler types (listed below).
+  * Each dictionary must contain "wrangler_type", with the name of the wrangler types.
   * The dictionary will also contain all required parameters and any optional parameters.
-  * Below is a list of data wrangler_types and the required and/or optional parameters for each.
-  * The [Occurrence Data Wrangler Types](occurrence_wrangler_config.md) page contains a list of all occurrence data 
-    wrangler_types and the required and/or optional parameters for each.
+  * The [Occurrence Data Wrangler Types](occurrence_wrangler_config.md) page contains a
+    list of all occurrence data wrangler_types and the required and/or optional 
+    parameters for each.
   * Example resolve_occurrence_names wrangler configuration:
 
 ```json
@@ -124,13 +133,13 @@ Initiate the process with the following:
 for linux/mac systems
 
 ```zsh
-bash go.sh split_occurrence_data data/input/resolve_occurrence_names.json
+bash run_tutorial.sh split_occurrence_data data/input/resolve_occurrence_names.json
 ```
 
 for windows:
 
 ```cmd
-go.bat split_occurrence_data data\input\resolve_occurrence_names.json
+run_tutorial.bat split_occurrence_data data\input\resolve_occurrence_names.json
 ```
 
 ## Output
