@@ -39,7 +39,6 @@
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Biotaphy Tutorials</a></li>
 </ul>
 
         </div>
@@ -58,7 +57,7 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Resolve names in occurrence data</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/resolve_occurrence_names.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w2_resolve_occurrence_names.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -68,10 +67,10 @@
              
   <section id="resolve-names-in-occurrence-data">
 <h1>Resolve names in occurrence data<a class="headerlink" href="#resolve-names-in-occurrence-data" title="Permalink to this headline"></a></h1>
-<p>Webinar #2.  Resolving Nomenclature: Making Appropriate Taxonomic Choices</p>
+<p><strong>Webinar #2</strong>  Resolving Nomenclature: Making Appropriate Taxonomic Choices</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
-<p>Read <a class="reference internal" href="overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials work.</p>
+<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials work.</p>
 </section>
 <section id="data-preparation">
 <h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
@@ -131,20 +130,20 @@ will be included in outputs.</p></li>
 <li><p>occurrence data wrangler configuration file</p></li>
 <li><p>fieldname for grouping data (often a taxonomic designation such as scientificName)</p></li>
 <li><p>fieldname for the longitude/x coordinate</p></li>
-<li><p>fieldname for the latitude/y coordinate
-An example configuration file to process a DwCA, using data wranglers specified in
+<li><p>fieldname for the latitude/y coordinate</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>An example configuration file to process a DwCA, using data wranglers specified in
 wrangler_conf_resolve_occurrence_names.json, writing all files to the
-/biotaphy_data/output directory.</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+/biotaphy_data/output directory.</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;max_open_writers&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
     <span class="nt">&quot;key_field&quot;</span><span class="p">:</span> <span class="s2">&quot;scientificName&quot;</span><span class="p">,</span>
     <span class="nt">&quot;dwca&quot;</span><span class="p">:</span>  <span class="p">[</span>
-        <span class="p">[</span><span class="s2">&quot;/biotaphy_data/input/saxifragales_gbif.zip&quot;</span><span class="p">,</span>
+        <span class="p">[</span><span class="s2">&quot;/biotaphy_data/input/occ_idigbio.zip&quot;</span><span class="p">,</span>
          <span class="s2">&quot;/biotaphy_data/param_config/wrangler_conf_resolve_occurrence_names.json&quot;</span>
         <span class="p">]</span>
     <span class="p">],</span>
@@ -175,17 +174,18 @@ wrangler_conf_resolve_occurrence_names2.json, writing the files to the
 </section>
 <section id="input-wrangler-configuration-file">
 <h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this headline"></a></h3>
-<p>A file specifying occurrence-wranglers to apply to the occurrence data, and options
-specific to each.</p>
-<p>The resolve_occurrence_names.json  configuration file consists of one or more Occurrence Data Wranglers (wrangler_type), and the
-wrangler-specific required and possibly optional parameters for each.  Configuration files:</p>
+<p>A file specifying 0 or more occurrence-wranglers to apply to the occurrence data, and<br />
+options specific to each.</p>
+<p>The resolve_occurrence_names.json  configuration file consists of one or more Occurrence
+Data Wranglers (wrangler_type), and the wrangler-specific required and possibly optional
+parameters for each.  Configuration files:</p>
 <ul class="simple">
 <li><p>are in JSON format, a list of one dictionary per desired wrangler.</p></li>
-<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler types (listed below).</p></li>
+<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler types.</p></li>
 <li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
-<li><p>Below is a list of data wrangler_types and the required and/or optional parameters for each.</p></li>
-<li><p>The <a class="reference internal" href="occurrence_wrangler_config.html"><span class="doc std std-doc">Occurrence Data Wrangler Types</span></a> page contains a list of all occurrence data
-wrangler_types and the required and/or optional parameters for each.</p></li>
+<li><p>The <a class="reference internal" href="occurrence_wrangler_config.html"><span class="doc std std-doc">Occurrence Data Wrangler Types</span></a> page contains a
+list of all occurrence data wrangler_types and the required and/or optional
+parameters for each.</p></li>
 <li><p>Example resolve_occurrence_names wrangler configuration:</p></li>
 </ul>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
@@ -202,11 +202,11 @@ wrangler_types and the required and/or optional parameters for each.</p></li>
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this headline"></a></h2>
 <p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash go.sh split_occurrence_data data/input/resolve_occurrence_names.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh split_occurrence_data data/input/resolve_occurrence_names.json
 </pre></div>
 </div>
 <p>for windows:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>go.bat split_occurrence_data data\input\resolve_occurrence_names.json
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat split_occurrence_data data\input\resolve_occurrence_names.json
 </pre></div>
 </div>
 </section>

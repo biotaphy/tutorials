@@ -4,7 +4,7 @@ Webinar 7 [Introducing PAMs](https://docs.google.com/document/d/1CqYkCUlY40p8Nnq
 
 ## Introduction
 
-Read [Tutorial Overview](../tutorial/overview.md) for an overview of how all tutorials 
+Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all tutorials 
 work. 
 
 ### Configuration File
@@ -34,11 +34,11 @@ Initiate the clean occurrences process with the following:
 for linux/mac systems
 
 ```zsh
-bash go.sh encode_layers data/input/encode_layers.ini
+bash run_tutorial.sh encode_layers data/param_config/encode_layers.ini
 ```
 
 for windows systems
 
 ```cmd
-./go.bat encode_layers data\input\encode_layers.ini
+./run_tutorial.bat encode_layers data\param_config\encode_layers.ini
 ```

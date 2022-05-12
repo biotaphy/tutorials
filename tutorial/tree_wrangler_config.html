@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Build grid &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Tree Data Wrangler types &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -55,9 +55,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Build grid</li>
+      <li>Tree Data Wrangler types</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/build_shapegrid.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/tree_wrangler_config.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -65,49 +65,48 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="build-grid">
-<h1>Build grid<a class="headerlink" href="#build-grid" title="Permalink to this headline"></a></h1>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
-<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials work.</p>
-</section>
-<section id="data-preparation">
-<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
-<section id="configuration-file">
-<h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h3>
-<p>An example JSON file for running the build_shapegrid tutorial is at
-../../data/input/build_shapegrid.json. These are the 7 required parameters:</p>
+  <section id="tree-data-wrangler-types">
+<h1>Tree Data Wrangler types<a class="headerlink" href="#tree-data-wrangler-types" title="Permalink to this headline"></a></h1>
+<p>When running wranglers on a tree, wranglers are applied in the order
+that they are listed in the wrangler config file.</p>
+<p>Currently, wrangler_type names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in
+this module’s files.  Each wrangler’s parameters correspond to the constructor
+arguments for that wrangler.</p>
+<section id="acceptednametreewrangler">
+<h2>AcceptedNameTreeWrangler<a class="headerlink" href="#acceptednametreewrangler" title="Permalink to this headline"></a></h2>
 <ul class="simple">
-<li><p>Required:</p>
+<li><p>optional</p>
 <ul>
-<li><p><strong>shapegrid_filename</strong>: The relative or absolute path for the output shapegrid.</p></li>
-<li><p><strong>min_x</strong>: The minimum value for X (longitude) coordinate of the shapegrid.</p></li>
-<li><p><strong>min_y</strong>: The minimum value for Y (latitude) coordinate of the shapegrid.</p></li>
-<li><p><strong>max_x</strong>: The maximum value for X (longitude) coordinate of the shapegrid.</p></li>
-<li><p><strong>max_y</strong>: The maximum value for Y (latitude) coordinate of the shapegrid.</p></li>
-<li><p><strong>cell_size</strong>: The size of each cell (in units indicated by EPSG).</p></li>
-<li><p><strong>epsg</strong>: The EPSG code for the new shapegrid.</p></li>
+<li><p>name_map (dict): A map of original name to accepted name.</p></li>
+<li><p>name_resolver (str or Method): If provided, use this method for getting new accepted names.
+If set to ‘gbif’, use GBIF name resolution.</p></li>
+<li><p>purge_failures (bool): Should failures be purged from the tree.</p></li>
 </ul>
 </li>
 </ul>
 </section>
+<section id="matchmatrixtreewrangler">
+<h2>MatchMatrixTreeWrangler<a class="headerlink" href="#matchmatrixtreewrangler" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>required</p>
+<ul>
+<li><p>matrix (str): The filename of a matrix to match.</p></li>
+<li><p>species_axis (int): An integer indicating which axis contains species names.<br />
+Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
+(rows/y axis), and species in the 1 axis (columns/x axis)</p></li>
+</ul>
+</li>
+</ul>
 </section>
-<section id="run-build-shapegrid-tutorial">
-<h2>Run build_shapegrid tutorial<a class="headerlink" href="#run-build-shapegrid-tutorial" title="Permalink to this headline"></a></h2>
-<p>Initiate the build_shapegrid process with the following:</p>
-<p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh build_shapegrid data/input/build_shapegrid.json
-</pre></div>
-</div>
-<p>for windows:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat build_shapegrid data\input\build_shapegrid.ini
-</pre></div>
-</div>
-</section>
-<section id="output">
-<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
-<p>The build_shapegrid tool outputs a grid in shapefile format, conforming to the arguments specified
-in the configuration INI file.</p>
+<section id="subsettreewrangler">
+<h2>SubsetTreeWrangler<a class="headerlink" href="#subsettreewrangler" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>required</p>
+<ul>
+<li><p>keep_taxa (list of str): A list of taxon names to keep.</p></li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
 

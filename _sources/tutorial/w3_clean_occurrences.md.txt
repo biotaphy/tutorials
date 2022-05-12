@@ -5,7 +5,7 @@ Webinar 5 [Clean Your Dirty Data](https://docs.google.com/document/d/1CqYkCUlY40
 
 ## Introduction
 
-Read [Tutorial Overview](../tutorial/overview.md) for an overview of how all tutorials work. 
+Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all tutorials work. 
 
 ## Data preparation
 
@@ -61,12 +61,12 @@ Initiate the clean occurrences process with two arguments, the 1) command name a
 
 for linux/mac systems
 ```zsh
-bash go.sh clean_occurrences data/input/clean_occurrences.json
+bash run_tutorial.sh clean_occurrences data/param_config/clean_occurrences.json
 ```
 
 for windows systems
 ```cmd
-./go.bat clean_occurrences data\input\clean_occurrences.json
+./run_tutorial.bat clean_occurrences data\param_config\clean_occurrences.json
 ```
 
 ## Output

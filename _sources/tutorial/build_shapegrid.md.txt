@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Read [Tutorial Overview](../tutorial/overview.md) for an overview of how all tutorials work. 
+Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all tutorials work. 
 
 ## Data preparation
 
@@ -25,12 +25,12 @@ Initiate the build_shapegrid process with the following:
 
 for linux/mac systems
 ```zsh
-bash go.sh build_shapegrid data/input/build_shapegrid.json
+bash run_tutorial.sh build_shapegrid data/input/build_shapegrid.json
 ```
 
 for windows: 
 ```cmd
-go.bat build_shapegrid data\input\build_shapegrid.ini
+run_tutorial.bat build_shapegrid data\input\build_shapegrid.ini
 ```
 
 ## Output

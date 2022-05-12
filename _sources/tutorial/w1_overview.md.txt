@@ -36,12 +36,12 @@ For example, the  clean_occurrences tutorial can be initiated with:
 
 for linux/mac systems
 ```zsh
-bash go.sh clean_occurrences data/input/clean_occurrences.json
+bash run_tutorial.sh clean_occurrences data/param_config/clean_occurrences.json
 ```
 
 for windows systems
 ```cmd
-./go.bat clean_occurrences data\input\clean_occurrences.json
+./run_tutorial.bat clean_occurrences data\param_config\clean_occurrences.json
 ```
 
 ## Behind the scenes
