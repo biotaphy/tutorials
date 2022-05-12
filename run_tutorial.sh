@@ -63,8 +63,7 @@ set_defaults() {
     CMD=$1
     HOST_CONFIG_FILE=$2
 
-    THISNAME=$(/bin/basename "$0")
-    LOG=./data/log/$THISNAME.log
+    LOG=./data/log/$CMD.log
     if [ -f "$LOG" ] ; then
         /usr/bin/rm "$LOG"
     fi
@@ -82,7 +81,6 @@ set_defaults() {
     COMPOSE_FNAME=docker-compose.yml
     CMD_COMPOSE_FNAME="$DOCKER_PATH"/docker-compose.command.yml
 
-#    DOCKER_ENV_FNAME=$CMD_PATH/.env
     DOCKER_ENV_FNAME="$DOCKER_PATH"/"$CMD".env
     if [ -f "$DOCKER_ENV_FNAME" ] ; then
         /usr/bin/rm "$DOCKER_ENV_FNAME"
@@ -124,7 +122,8 @@ time_stamp () {
 
 # -----------------------------------------------------------
 ####### Main #######
-COMMANDS=("list_commands"  "clean_occurrences" "encode_layers" "split_occurrence_data"  "build_shapegrid")
+COMMANDS=("list_commands"  "build_shapegrid"  "clean_occurrences" "encode_layers" \
+          "split_occurrence_data"  "wrangle_tree")
 
 if [ $# -eq 0 ]; then
     usage
