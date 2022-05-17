@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Encode Layers &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Build grid &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -55,9 +55,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Encode Layers</li>
+      <li>Build grid</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/encode_layers.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w7_build_shapegrid.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -65,55 +65,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="encode-layers">
-<h1>Encode Layers<a class="headerlink" href="#encode-layers" title="Permalink to this headline"></a></h1>
-<p>Webinar 7 <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.3y36cau4jutj">Introducing PAMs</a></p>
+  <section id="build-grid">
+<h1>Build grid<a class="headerlink" href="#build-grid" title="Permalink to this headline"></a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
-<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials
-work.</p>
+<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials work.</p>
+</section>
+<section id="data-preparation">
+<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
 <section id="configuration-file">
 <h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h3>
-<p>An example json file for running the encode_layers tutorial is at
-../../data/param_config/encode_layers.json. These are the required and optional
-parameters:</p>
+<p>An example JSON file for running the build_shapegrid tutorial is at
+../../data/input/build_shapegrid.json. These are the 7 required parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
 <ul>
-<li><p><strong>shapegrid_filename</strong>: Relative path to shapegrid to use for site geometries</p></li>
-<li><p><strong>out_matrix_filename</strong>: Relative path to write the encoded matrix</p></li>
-</ul>
-</li>
-<li><p>Optional</p>
-<ul>
-<li><p><strong>min_coverage</strong>: Minimum percentage of a cell that has to be covered to encode it</p></li>
-<li><p><strong>min_presence</strong>: Minimum value to be considered present when encoding presence
-absence</p></li>
-<li><p><strong>max_presence</strong>: Maximum value to be considered present</p></li>
-<li><p><strong>layer</strong>: list of a</p>
-<ul>
-<li><p>layer filename</p></li>
-<li><p>(optional) label for the encoded layer in the output matrix. Defaults to file
-basename</p></li>
-<li><p>(optional) attribute</p></li>
-</ul>
-</li>
+<li><p><strong>shapegrid_filename</strong>: The relative or absolute path for the output shapegrid.</p></li>
+<li><p><strong>min_x</strong>: The minimum value for X (longitude) coordinate of the shapegrid.</p></li>
+<li><p><strong>min_y</strong>: The minimum value for Y (latitude) coordinate of the shapegrid.</p></li>
+<li><p><strong>max_x</strong>: The maximum value for X (longitude) coordinate of the shapegrid.</p></li>
+<li><p><strong>max_y</strong>: The maximum value for Y (latitude) coordinate of the shapegrid.</p></li>
+<li><p><strong>cell_size</strong>: The size of each cell (in units indicated by EPSG).</p></li>
+<li><p><strong>epsg</strong>: The EPSG code for the new shapegrid.</p></li>
 </ul>
 </li>
 </ul>
 </section>
 </section>
-<section id="run-encode-layers-tutorial">
-<h2>Run encode_layers tutorial<a class="headerlink" href="#run-encode-layers-tutorial" title="Permalink to this headline"></a></h2>
-<p>Initiate the clean occurrences process with the following:</p>
+<section id="run-build-shapegrid-tutorial">
+<h2>Run build_shapegrid tutorial<a class="headerlink" href="#run-build-shapegrid-tutorial" title="Permalink to this headline"></a></h2>
+<p>Initiate the build_shapegrid process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh encode_layers data/param_config/encode_layers.ini
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh build_shapegrid data/input/build_shapegrid.json
 </pre></div>
 </div>
-<p>for windows systems</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./run_tutorial.bat encode_layers data\param_config\encode_layers.ini
+<p>for windows:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat build_shapegrid data\input\build_shapegrid.ini
 </pre></div>
 </div>
+</section>
+<section id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
+<p>The build_shapegrid tool outputs a grid in shapefile format, conforming to the arguments specified
+in the configuration INI file.</p>
 </section>
 </section>
 

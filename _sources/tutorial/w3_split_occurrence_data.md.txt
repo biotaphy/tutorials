@@ -1,10 +1,10 @@
 # Resolve taxonomy in a Darwin Core Archive (DwCA)
 
-Webinar 2, [Data Munging](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.954n7zxfop57) 
-(Module 2, Big-Data approaches)
-
-Webinar 3, [Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.h2w2s5gw2n6t)
+Webinar 2, [Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U)
 (Module 2, map acquired names for consistency)
+
+Webinar 3, [Data Munging](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1) 
+(Module 2, Big-Data approaches)
 
 ## Introduction
 

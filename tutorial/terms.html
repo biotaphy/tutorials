@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contents &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Biotaphy Tutorials
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Biotaphy Tutorials</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Contents</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tutorial/terms.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="contents">
+<h1>Contents<a class="headerlink" href="#contents" title="Permalink to this headline"></a></h1>
+<p>{:.no_toc}</p>
+<ul class="simple">
+<li><p>Will be replaced with the ToC, excluding the “Contents” header
+{:toc}</p></li>
+</ul>
+</section>
+<section id="geospatial-data">
+<h1>Geospatial data<a class="headerlink" href="#geospatial-data" title="Permalink to this headline"></a></h1>
+<p>Geospatial data is data with geographic location associated with it, i.e. map
+data.  There are two kinds of spatial data, raster data and vector data.  Each
+has properties that make it better for representing different information.</p>
+<section id="raster-data">
+<h2>Raster Data<a class="headerlink" href="#raster-data" title="Permalink to this headline"></a></h2>
+<p>Geospatial data best represented in raster format generally has one value at
+every point.  The area to be represented is split up into a grid, with each
+grid cell containing a value. Elevation, temperature, precipitation are
+examples of data generally represented as raster.</p>
+</section>
+<section id="vector-data">
+<h2>Vector Data<a class="headerlink" href="#vector-data" title="Permalink to this headline"></a></h2>
+<p>Geospatial data best represented in vector format can be represented as points,
+lines, or polygons.</p>
+<p><strong>Point</strong>: Points represent a single location on a 2 dimensional surface.<br />
+Depending on the scale, different types of data are appropriate to be
+represented as points. At a very small scale (think of from a very great
+distance), a city might be represented as a single point.  Species occurrences
+are usually represented as points.</p>
+<p><strong>Line</strong>: Lines are made up of multiple points, joined.  Roads and rivers are
+usually represented as rivers.</p>
+<p><strong>Polygon</strong>: Polygons are made up of multiple points or lines, joined to define
+a discrete area.  At a larger scale (zoomed in), a city, river, or street might
+be represented as a polygon. Administrative boundaries, like country, state, or
+other geo-political units are examples of polygon data.</p>
+</section>
+<section id="scale">
+<h2>Scale<a class="headerlink" href="#scale" title="Permalink to this headline"></a></h2>
+<p>Large scale maps refer to maps of a small area with a large amount of detail.<br />
+The ratio between distance on the map to distance on the ground is very large.<br />
+For example a detailed map of a city might be at 1:5000, meaning that 1 unit on
+the map (i.e. centimeter) equals 5000 units on the ground (5000 centimeters).<br />
+A smaller scale map, for example a regional map used for land-management, might
+be at a scale of 1:100,000 (1 centimeter = 1 kilometer).</p>
+<p>Small scale maps are generally used for mapping large areas.  The ratio of the
+distance on the map to the distance on the ground is much smaller.  For example,
+a map of the country of Indonesia might be at the ratio of 1:2,000,000.</p>
+</section>
+<section id="sample-geospatial-data-resources">
+<h2>Sample Geospatial Data resources<a class="headerlink" href="#sample-geospatial-data-resources" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>[World borders]  (http://thematicmapping.org/downloads/world_borders.php)</p></li>
+<li><p>[Global administrative boundaries]  http://www.gadm.org/country)</p></li>
+<li><p>[Natural earth data] (http://www.naturalearthdata.com/)</p></li>
+</ul>
+</section>
+</section>
+<section id="species-analysis-terms">
+<h1>Species Analysis Terms<a class="headerlink" href="#species-analysis-terms" title="Permalink to this headline"></a></h1>
+<p>Algorithm
+: An algorithm is a procedure or formula for solving a problem.  There are  multiple
+algorithms for computing Species Distribution Models (SDM) which
+define the relationship between a set of points and the environmental values
+at those points.</p>
+<p>Occurrence Data
+: Point data representing specimens collected for a single species or taxa.  Data
+contains a location, x and y, in some known geographic spatial reference system.
+Public data in BiotaPhy installations are in the ‘Geographic’ spatial
+reference system, latitude and longitude in decimal degrees.</p>
+<p>Environmental Layer
+: Raster data representing environmental values for cells in a map.  Data
+may be numeric or categorical, with only one value per cell.
+Public data in BiotaPhy installations are in the ‘Geographic’ spatial
+reference system, latitude and longitude in decimal degrees.</p>
+<p>SDM
+: Species Distribution Modeling (SDM) is also known by several other names, including
+environmental niche modeling, ecological niche modeling, and habitat modeling.<br />
+SDM refers to the process of creating mathematical formulas (models) to predict the
+geographic distribution of species based on where they have been found and the
+environmental conditions in those locations.</p>
+<p>Presence-Absence Matrix (PAM)
+: A binary matrix containing species distributions of 0/1 indicating presence or
+non-presence in each grid cell of a region. The matrix may be thought of as a
+three-dimensional cube, of binary maps, with one layer per species.  The 3-dimensional
+matrix is flattened into 2 dimensions, with rows representing sites with an x,y
+coordinate for the center of a gridcell on a map, and columns representing
+species.</p>
+<p>Phylogenetic Tree
+: A data structure containing species names or identifiers for  analyzing
+evolutionary patterns.  BiotaPhy uses phylogenetic trees matching species
+data in a gridset to correlate evolutionary patterns with species
+distributions and landscape features.</p>
+<p>Ultrametric Tree
+: A tree whose total branch length from the root to each tip in the tree is the same.</p>
+<p>Biogeographic Hypotheses
+: Spatial layers for testing the influence of geographic elements, such as
+geology, drainage basins, etc, on the biodiversity of a landscape. These
+can be in the form of raster or vector files.</p>
+<p>MCPA
+: Meta-Community Phylogenetic Analysis (MCPA, Leibold et al, 2010) is a “method that<br />
+aims to evaluate the interaction between phylogenetic structure, historical
+biogeographic events and environmental filtering in driving species distributions in
+a large-scale metacommunity”.</p>
+</section>
+<section id="biotaphy-specific-data-and-parameter-terms">
+<h1>BiotaPhy-specific Data and Parameter Terms<a class="headerlink" href="#biotaphy-specific-data-and-parameter-terms" title="Permalink to this headline"></a></h1>
+<p>Shapegrid
+: A grid encompassing the area of interest in a Gridset for multi-species
+analyses. In a gridset, different data layers are intersected with a Shapegrid
+to produce Matrices for analyses.  Species layers are intersected to
+create a PAM, environmental layers are intersected to create an Environmental
+Matrix (GRIM) and Biogeographic Hypotheses are intersected to create a BioGeo
+Matrix. Intersection parameters define how values are computed for gridcells
+from the values in data layers.</p>
+</section>
+<section id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h1>
+<p>Leibold, M. A., Economo, E. P., &amp; Peres‐Neto, P. (2010). Metacommunity
+phylogenetics: separating the roles of environmental filters and historical
+biogeography. Ecology letters, 13(10), 1290-1299.
+<a class="reference external" href="https://doi.org/10.1111/j.1461-0248.2010.01523.x">doi:10.1111/j.1461-0248.2010.01523.x</a></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Biotaphy Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
