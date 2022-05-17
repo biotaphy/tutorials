@@ -1,6 +1,7 @@
 # Resolve names in a tree
 
-**Webinar #2**  Resolving Nomenclature: Making Appropriate Taxonomic Choices
+**Webinar #2** [Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l)
+Using pre-generated name-map 
 
 ## Introduction
 
