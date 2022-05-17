@@ -19,9 +19,7 @@ Tutorials Glossary
     editing data using specified criteria or methods.
 
   Geospatial data
-    Geospatial data is data with geographic location associated with it, i.e. map
-    data.  There are two kinds of spatial data, Raster Data and Vector Data.  Each
-    has properties that make it better for representing different information.
+    Geospatial data is discussed in more detail [here](./spatial_data.rst)
 
   Matrix
     A Matrix is a multi-dimensional array of values.
@@ -38,12 +36,6 @@ Tutorials Glossary
     A grid (in this context) is a geospatial region represented as a contiguous set of
     square polygons (cells) to be used for matrix creation.  Grids are created as
     vector data, in shapegrid format.
-
-  Raster Data
-    Geospatial data best represented in raster format generally has one value at
-    every point.  The area to be represented is split up into a grid, with each
-    grid cell containing a value. Elevation, temperature, precipitation are
-    examples of data generally represented as raster.
 
   Species Distribution Model
     A species distribution model is a estimation of potential habitat for a particular
