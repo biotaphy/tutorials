@@ -14,7 +14,9 @@ Either,
 1) a file containing tab or comma-delimited records of specimen occurrence data; or 
 2) a Darwin Core Archive (DwCA) of occurrence data. 
 
-GBIF and iDigBio provide portals for querying for, and downloading either CSVs or DwCAs.
+[GBIF](https://www.gbif.org/), [iDigBio](https://www.idigbio.org/portal), 
+[Atlas of Living Australia](https://www.ala.org.au/), and more, provide 
+portals for querying for, and downloading either CSVs or DwCAs.
 
 ### Configuration File
 
@@ -61,8 +63,7 @@ optional parameters:
     * fieldname for the latitude/y coordinate
     
 An example configuration file to process a DwCA, using data wranglers specified in 
-wrangler_conf_resolve_occurrence_names.json, writing all files to the 
-/biotaphy_data/output directory.  
+wrangle_occnames.json, writing all files to the /biotaphy_data/output directory.  
 
 ```json lines
 {
@@ -70,7 +71,7 @@ wrangler_conf_resolve_occurrence_names.json, writing all files to the
     "key_field": "scientificName",
     "dwca":  [
         ["/biotaphy_data/input/occ_idigbio.zip",
-         "/biotaphy_data/param_config/wrangler_conf_resolve_occurrence_names.json"
+         "/biotaphy_data/param_config/wrangle_occnames.json"
         ]
     ],
     "out_dir": "/biotaphy_data/output"
@@ -87,8 +88,8 @@ wrangler_conf_resolve_occurrence_names2.json, writing the files to the
     "max_open_writers": 100,
     "key_field": ["family", "genus", "scientificName"],
     "csv":  [
-        ["/biotaphy_data/input/big_data.csv",
-         "/biotaphy_data/param_config/some_wrangler_conf.json",
+        ["/biotaphy_data/input/gbif_sax_100k.csv",
+         "/biotaphy_data/param_config/wrangle_occurrences.json",
          "scientificName", 
           "longitude", 
           "latitude"
@@ -111,7 +112,7 @@ parameters for each.  Configuration files:
   * are in JSON format, a list of one dictionary per desired wrangler.
   * Each dictionary must contain "wrangler_type", with the name of the wrangler types.
   * The dictionary will also contain all required parameters and any optional parameters.
-  * The [Occurrence Data Wrangler Types](occurrence_wrangler_config.md) page contains a
+  * The [Occurrence Data Wrangler Types](occurrence_wrangler.md) page contains a
     list of all occurrence data wrangler_types and the required and/or optional 
     parameters for each.
   * Example resolve_occurrence_names wrangler configuration:

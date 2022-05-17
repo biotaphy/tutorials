@@ -30,3 +30,4 @@ docker/split_occurrence_data.env
 data/input/occ_idigbio.zip
 data/input/saxifragales_gbif.zip
 docker/wrangle_tree.env
+data/input/occ_sax_gbif.zip

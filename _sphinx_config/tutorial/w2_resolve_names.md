@@ -1,17 +1,22 @@
-# Resolve names in a tree
+# Resolve names in a list
 
-**Webinar #2** [Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l)
-Using pre-generated name-map 
+**Webinar #2** 
+[Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l)
+Creating name-map 
 
 ## Introduction
 
-Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all tutorials work. 
+
+
+Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all 
+tutorials work. 
+
 
 ## Data preparation
 
-### Input: tree data
+### Input: species list 
 
-Use your own tree in Newick or Nexus format, or download from 
+Use your own species list, or download from 
 [OpenTree of Life](https://tree.opentreeoflife.org/) .  After filtering for the tree
 you want, choose **Download subtree as Newick string** in the upper, rightmost panel.
 
@@ -22,6 +27,13 @@ optional parameters:
 
 * Required:
 
+  * log_filename  
+  * log_console
+  * report_filename
+  * in_species_list_filename
+  * wrangler_configuration_file
+  * out_species_list_filename: output species 
+* 
   * **tree_filename**: input tree filename
   * **tree_schema**: input tree format
   * **wrangler_configuration_file**: tree data wrangler configuration file 
@@ -39,9 +51,9 @@ wrangler_conf_resolve_occurrence_names.json, writing all files to the
 ```json lines
 {
     "report_filename": "/biotaphy_data/output/resolve_tree_names.rpt",
-    "tree_filename": "/biotaphy_data/input/subtree-ottol-648890-Saxifragales.tre",
+    "tree_filename": "/biotaphy_data/input/subtree-ottol-saxifragales.tre",
     "tree_schema": "newick",
-    "wrangler_configuration_file": "/biotaphy_data/param_config/wrangler_conf_resolve_tree_names.json",
+    "wrangler_configuration_file": "/biotaphy_data/param_config/wrangle_treenames.json",
     "out_tree_filename": "/biotaphy_data/output/ottol-Saxifragales.tre",
     "out_tree_schema": "newick"
 }
@@ -59,7 +71,7 @@ parameters for each.  Configuration files:
   * Each dictionary must contain "wrangler_type", with the name of the wrangler types.
   * The dictionary will also contain all required parameters and any optional parameters.
   * A list of tree wrangler_types and the required and/or optional parameters for each
-    are [here](tree_wrangler_config.md)
+    are [here](tree_wrangler.md)
 
 
 ## Run tutorial

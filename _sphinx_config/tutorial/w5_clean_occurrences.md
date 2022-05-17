@@ -39,7 +39,7 @@ wrangler-specific required and possibly optional parameters for each.  Configura
   * Each dictionary must contain "wrangler_type", with the name of the wrangler types (listed below).
   * The dictionary will also contain all required parameters and any optional parameters.
   * Below is a list of data wrangler_types and the required and/or optional parameters for each.
-  * The [Occurrence Data Wrangler Types](occurrence_wrangler_config.md) page contains a list of all occurrence data 
+  * The [Occurrence Data Wrangler Types](occurrence_wrangler.md) page contains a list of all occurrence data 
     wrangler_types and the required and/or optional parameters for each.
   * Example clean_occurrences wrangler configuration:
 

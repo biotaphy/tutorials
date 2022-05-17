@@ -104,7 +104,7 @@ $ wget http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a
 The split_occurrence_data configuration file consists of one or more "wrangler_type"s, 
 and= the wrangler-specific required and possibly optional parameters for each.  
 Available wrangler_types with their parameters are listed 
-[here](occurrence_wrangler_config.md)
+[here](occurrence_wrangler.md)
 
 ### Occurrence Data Wranglers
 
@@ -114,7 +114,7 @@ Available wrangler_types with their parameters are listed
 
 * Currently, wrangler names correspond to the wrangler class `name` attribute in this module's files.
 * Each wrangler's parameters correspond to the constructor arguments for that wrangler.
-* The [Occurrence Data Wrangler Types](occurrence_wrangler_config.md) page contains a list of all occurrence data 
+* The [Occurrence Data Wrangler Types](occurrence_wrangler.md) page contains a list of all occurrence data 
   wrangler_types and the required and/or optional parameters for each.
 * An example split_occurrence_data wrangler configuration, used for this tutorial is 
   [here](../../input/wrangler_conf_split_occurrence_data.json):

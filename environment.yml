@@ -1,0 +1,17 @@
+name: tutorials
+channels:
+  - conda-forge
+dependencies:
+  - gdal
+  - libspatialindex
+  - sphinx-rtd-theme
+    sphinx-autoapi
+    myst-parser
+  - defusedxml
+  - coverage
+  - coveralls
+  - pytest
+  - pytest-cov
+  - pip=21.3.1
+  - pip:
+    - specify-lmpy
