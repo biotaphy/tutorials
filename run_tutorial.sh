@@ -81,7 +81,7 @@ set_defaults() {
     COMPOSE_FNAME=docker-compose.yml
     CMD_COMPOSE_FNAME="$DOCKER_PATH"/docker-compose.command.yml
 
-    DOCKER_ENV_FNAME="$DOCKER_PATH"/"$CMD".env
+    DOCKER_ENV_FNAME="$DOCKER_PATH"/.env
     if [ -f "$DOCKER_ENV_FNAME" ] ; then
         /usr/bin/rm "$DOCKER_ENV_FNAME"
     fi
@@ -151,7 +151,3 @@ if [[ " ${COMMANDS[*]} " =~  ${CMD}  ]]; then
 fi
 
 time_stamp "# End"
-
-
-
-

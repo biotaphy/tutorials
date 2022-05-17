@@ -1,6 +1,6 @@
 # Encode Layers
 
-Webinar 7 [Introducing PAMs](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.3y36cau4jutj)
+**Webinar 7** [Introducing PAMs](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U)
 
 ## Introduction
 
