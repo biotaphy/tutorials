@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Build grid &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Calculate PAM statistics &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -55,9 +55,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Build grid</li>
+      <li>Calculate PAM statistics</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/w7_build_shapegrid.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w7c_calc_pam_stats.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -65,20 +65,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="build-grid">
-<h1>Build grid<a class="headerlink" href="#build-grid" title="Permalink to this headline"></a></h1>
+  <section id="calculate-pam-statistics">
+<h1>Calculate PAM statistics<a class="headerlink" href="#calculate-pam-statistics" title="Permalink to this headline"></a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
 <p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
 tutorials work.</p>
-<p>A grid defines the geographic extent for a term:<code class="docutils literal notranslate"><span class="pre">PAM</span></code> or other biogeographic matrix,
-used for multi-species analyses. A grid is represented by term:<code class="docutils literal notranslate"><span class="pre">Polygon</span></code>s in a<br />
-term:<code class="docutils literal notranslate"><span class="pre">Vector</span></code> dataset, and written in shapefile format. In a biogeograpic matrix,<br />
-different data layers are intersected with a geospatial grid to produce Matrices for<br />
-analyses.  Multiple two-dimensional (longitude/x and latitude/y) matrices are stacked<br />
-into a cube, then flattened back into a 2-dimensional multi-layer matrix by combining<br />
-the x and y coordinates into “sites”, identified by the coordinates of the center of
-the grid cell.</p>
+<p>Now that a grid has been built, and a PAM has been populated by intersecting species
+distribution models with the grid, we calculate biogeographic statistics on that PAM.</p>
 </section>
 <section id="data-preparation">
 <h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
@@ -109,7 +103,7 @@ the grid cell.</p>
 </pre></div>
 </div>
 <p>for windows:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat build_grid data\input\build_grid.ini
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat build_grid data\input\calc_pam_stats.json
 </pre></div>
 </div>
 </section>
