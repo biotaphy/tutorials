@@ -2,8 +2,8 @@
     "max_open_writers": 100,
     "key_field": ["scientificName"],
     "dwca":  [
-        ["/biotaphy_data/input/occ_idigbio.zip",
-         "/biotaphy_data/param_config/wrangler_conf_resolve_occurrence_names.json"
+        ["/biotaphy_data/input/gbif_sax_100k.csv",
+         "/biotaphy_data/param_config/wrangle_names.json"
         ]
     ],
     "out_dir": "/biotaphy_data/output"
