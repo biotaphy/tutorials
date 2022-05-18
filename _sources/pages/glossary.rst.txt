@@ -1,13 +1,13 @@
-==================
-Tutorials Glossary
-==================
+============================
+Biotaphy Tutorial Glossary
+============================
 
 .. glossary::
 
   CSV
     CSV (Comma Separated Values) is a file format for records, in which fields are
     separated by a delimiter.  Commas and tabs are common, but other characters may
-    be used as deliters.
+    be used as delimiters.
 
   DwCA
     DwCA (Darwin Core Archive) is a packaged dataset of occurrence records in [Darwin
@@ -35,7 +35,8 @@ Tutorials Glossary
   Grid
     A grid (in this context) is a geospatial region represented as a contiguous set of
     square polygons (cells) to be used for matrix creation.  Grids are created as
-    vector data, in shapegrid format.
+    vector data, with one square polygon for every grid-cell, and stored in shapefile
+    format.
 
   Species Distribution Model
     A species distribution model is a estimation of potential habitat for a particular

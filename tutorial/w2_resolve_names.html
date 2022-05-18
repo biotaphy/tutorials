@@ -158,6 +158,27 @@ are <a class="reference internal" href="tree_wrangler.html"><span class="doc std
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
 <p>This process outputs a file containing the modified tree in the requested format, one
 Current available taxonomic services include only GBIF at this time.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">lmpy</span>
+<span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">lmpy.data_wrangling.factory</span> <span class="kn">import</span> <span class="n">WranglerFactory</span>
+<span class="kn">from</span> <span class="nn">lmpy.tools._config_parser</span> <span class="kn">import</span> <span class="n">_process_arguments</span><span class="p">,</span> <span class="n">get_logger</span>
+<span class="kn">from</span> <span class="nn">lmpy.tree</span> <span class="kn">import</span> <span class="n">TreeWrapper</span>
+
+<span class="n">tree_fn</span> <span class="o">=</span> <span class="s2">&quot;../tutorials/data/input/subtree-ottol-saxifragales.tre&quot;</span>
+<span class="n">conf_fn</span> <span class="o">=</span> <span class="s2">&quot;../tutorials/data/param_config/wrangle_treenames.json&quot;</span>
+
+<span class="n">tree</span> <span class="o">=</span> <span class="n">TreeWrapper</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">tree_fn</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="s2">&quot;newick&quot;</span><span class="p">)</span>
+<span class="n">wrangler_factory</span> <span class="o">=</span> <span class="n">WranglerFactory</span><span class="p">()</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">conf_fn</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;rt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">in_json</span><span class="p">:</span>
+    <span class="n">wranglers</span> <span class="o">=</span> <span class="n">wrangler_factory</span><span class="o">.</span><span class="n">get_wranglers</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">in_json</span><span class="p">))</span>
+
+<span class="n">wrangler</span> <span class="o">=</span> <span class="n">wranglers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">wtree</span> <span class="o">=</span> <span class="n">wrangler</span><span class="o">.</span><span class="n">wrangle_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+
+
+</pre></div>
+</div>
 </section>
 </section>
 
