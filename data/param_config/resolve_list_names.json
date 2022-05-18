@@ -1,0 +1,7 @@
+{
+  "log_filename": "/biotaphy_data/log/resolve_list_names.log",
+  "log_console": true,
+  "report_filename": "/biotaphy_data/output/resolve_list_names.rpt",
+  "in_species_list_filename": "/biotaphy_data/input/saxifragales.txt",
+  "out_species_list_filename": "/biotaphy_data/input/saxifragales_accepted.txt"
+}

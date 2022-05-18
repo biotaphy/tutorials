@@ -1,18 +1,12 @@
-# Build grid
+# Calculate PAM statistics
 
 ## Introduction
 
 Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all 
 tutorials work. 
 
-A grid defines the geographic extent for a term:`PAM` or other biogeographic matrix, 
-used for multi-species analyses. A grid is represented by term:`Polygon`s in a  
-term:`Vector` dataset, and written in shapefile format. In a biogeograpic matrix,  
-different data layers are intersected with a geospatial grid to produce Matrices for  
-analyses.  Multiple two-dimensional (longitude/x and latitude/y) matrices are stacked  
-into a cube, then flattened back into a 2-dimensional multi-layer matrix by combining  
-the x and y coordinates into "sites", identified by the coordinates of the center of 
-the grid cell.
+Now that a grid has been built, and a PAM has been populated by intersecting species
+distribution models with the grid, we calculate biogeographic statistics on that PAM.
 
 ## Data preparation
 
@@ -39,7 +33,7 @@ bash run_tutorial.sh build_grid data/param_config/build_grid.json
 
 for windows: 
 ```cmd
-run_tutorial.bat build_grid data\input\build_grid.ini
+run_tutorial.bat build_grid data\input\calc_pam_stats.json
 ```
 
 ## Output

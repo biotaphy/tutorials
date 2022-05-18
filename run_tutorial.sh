@@ -19,41 +19,12 @@ usage ()
         echo "This script creates an environment for a biotaphy command to be run with "
         echo "user-configured arguments in a docker container."
         echo "the <cmd> argument can be one of:"
-        echo "      list_commands"
-        echo "      clean_occurrences"
-        echo "      build_shapegrid"
-        echo "the <config_file> argument must be the full path to an INI file"
+        for i in "${!COMMANDS[@]}"; do
+            echo "      ${COMMANDS[$i]}" | tee -a "$LOG"
+        done
+        echo "the <config_file> argument must be the full path to a JSON file"
         echo "containing command-specific arguments"
         echo "   "
-    elif [ "$CMD" == "clean_occurrences" ] ; then
-        echo "This argument creates an environment for the biotaphy command "
-        echo "clean_occurrences to be run in a docker container.  The <config_file>"
-        echo "must containing the following required parameters:"
-        echo "      IN_FNAME: full or relative path to the input occurrences file"
-        echo "      OUT_FNAME: full or relative path to the output cleaned occurrences"
-        echo "          file"
-        echo "      PROCESS_CONFIG_FNAME: full or relative path to the command-specific"
-        echo "          parameters JSON file."
-        echo "and may contain the following optional parameters:"
-        echo "      SPECIES_KEY: the fieldname in the first row of the input file for"
-        echo "          the species name"
-        echo "      X_KEY: the fieldname in the first row of the input file for the"
-        echo "           longitude"
-        echo "      Y_KEY: the fieldname in the first row of the input file for the"
-        echo "           latitude"
-        echo "      REPORT_FNAME: full or relative path to the output report file."
-        echo "      LOG_OUTPUT: True or False flag indicating whether to enable logging"
-    elif [ "$CMD" == "build_shapegrid" ] ; then
-        echo "This argument creates an environment for the biotaphy command"
-        echo "build_shapegrid to be run in a docker container.  "
-        echo "The <config_file> must containing the following required parameters:"
-        echo "      shapegrid_file_name: The location to store the resulting shapegrid."
-        echo "      min_x: The minimum value for X (longitude) of the shapegrid."
-        echo "      min_y: The minimum value for Y (latitude) of the shapegrid."
-        echo "      max_x: The maximum value for X (longitude) of the shapegrid."
-        echo "      max_y: The maximum value for Y (latitude) of the shapegrid."
-        echo "      cell_size: The size of each cell (in map units indicated by EPSG)."
-        echo "      epsg: The numeric EPSG code for the new shapegrid."
     fi
     exit 0
 }
@@ -122,8 +93,9 @@ time_stamp () {
 
 # -----------------------------------------------------------
 ####### Main #######
-COMMANDS=("list_commands"  "build_shapegrid"  "clean_occurrences" "encode_layers" \
-          "split_occurrence_data"  "wrangle_tree")
+COMMANDS=(\
+"list_commands"  "build_grid"  "encode_layers" "split_occurrence_data"  \
+"wrangle_species_list"  "wrangle_occurrences"  "wrangle_tree")
 
 if [ $# -eq 0 ]; then
     usage

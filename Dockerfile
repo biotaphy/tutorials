@@ -11,10 +11,15 @@ RUN apt-get update && \
 # Remove when this has been added to lmpy requirements
 RUN pip install requests
 
+RUN mkdir git
+
 # specify-lmpy from pypi
+#RUN cd git &&  \
+#    git clone https://github.com/specifysystems/lmpy.git &&  \
+#    cd lmpy \
+#    && pip install .
 RUN pip install specify-lmpy
 
-RUN mkdir git
 #  BiotaphyPy
 RUN cd git &&  \
     git clone https://github.com/biotaphy/BiotaPhyPy.git &&  \
@@ -32,20 +37,6 @@ RUN cd git && \
 
 ENV MAXENT_VERSION=3.4.4
 ENV MAXENT_JAR=/git/Maxent/ArchivedReleases/$MAXENT_VERSION/maxent.jar
-
-## .....................................................................................
-## Add biotaphy user, group, home directory
-#RUN addgroup --system --gid 888 biotaphy \
-# && adduser --system  --gid 888 --uid 888 biotaphy
-#
-#RUN mkdir -p /home/biotaphy \
-# && chown biotaphy.biotaphy /home/biotaphy
-#
-##COPY --chown=biotaphy:biotaphy ./data /home/biotaphy/
-#
-#RUN mkdir -p /scratch-path/log \
-# && chown -R biotaphy.biotaphy /scratch-path
-#
 
 # .....................................................................................
 # Copy static inputs to container
