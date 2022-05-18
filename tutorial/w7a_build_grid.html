@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Build grid &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Biotaphy Tutorials
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Biotaphy Tutorials</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Build grid</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tutorial/w7a_build_grid.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="build-grid">
+<h1>Build grid<a class="headerlink" href="#build-grid" title="Permalink to this headline"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
+tutorials work.</p>
+<p>Build grid creates a geospatial grid, in vector format.  The grid is used for defining
+cells (or “sites”) as polygons.  These sites, or polygonal cells, can then be
+intersected with other geospatial data layers, in order to generalize the values in a
+layer to a single value per site.  When we intersect many data layers with the same
+grid, we can create a matrix of layers by sites, and compute statistics on these values.</p>
+</section>
+<section id="data-preparation">
+<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
+<section id="configuration-file">
+<h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h3>
+<p>An example JSON file for running the build_grid tutorial is at
+../../data/input/build_grid.json. These are the 7 required parameters:</p>
+<ul class="simple">
+<li><p>Required:</p>
+<ul>
+<li><p><strong>grid_filename</strong>: The relative or absolute path for the output grid.</p></li>
+<li><p><strong>min_x</strong>: The minimum value for X (longitude) coordinate of the grid.</p></li>
+<li><p><strong>min_y</strong>: The minimum value for Y (latitude) coordinate of the grid.</p></li>
+<li><p><strong>max_x</strong>: The maximum value for X (longitude) coordinate of the grid.</p></li>
+<li><p><strong>max_y</strong>: The maximum value for Y (latitude) coordinate of the grid.</p></li>
+<li><p><strong>cell_size</strong>: The size of each cell (in units indicated by EPSG).</p></li>
+<li><p><strong>epsg</strong>: The EPSG code for the new grid.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="run-build-grid-tutorial">
+<h2>Run build_grid tutorial<a class="headerlink" href="#run-build-grid-tutorial" title="Permalink to this headline"></a></h2>
+<p>Initiate the build_grid process with the following:</p>
+<p>for linux/mac systems</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh build_grid data/input/build_grid.json
+</pre></div>
+</div>
+<p>for windows:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat build_grid data\input\build_grid.ini
+</pre></div>
+</div>
+</section>
+<section id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
+<p>The build_grid tool outputs a grid in shapefile format, conforming to the arguments specified
+in the configuration INI file.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Biotaphy Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

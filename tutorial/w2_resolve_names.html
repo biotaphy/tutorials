@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resolve names in a list &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Biotaphy Tutorials
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Biotaphy Tutorials</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Resolve names in a list</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tutorial/w2_resolve_names.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="resolve-names-in-a-list">
+<h1>Resolve names in a list<a class="headerlink" href="#resolve-names-in-a-list" title="Permalink to this headline"></a></h1>
+<p><strong>Webinar #2</strong>
+<a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l">Resolving Nomenclature</a>
+Creating name-map</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
+tutorials work.</p>
+</section>
+<section id="data-preparation">
+<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
+<section id="input-species-list">
+<h3>Input: species list<a class="headerlink" href="#input-species-list" title="Permalink to this headline"></a></h3>
+<p>Use your own species list, or download from
+<a class="reference external" href="https://tree.opentreeoflife.org/">OpenTree of Life</a> .  After filtering for the tree
+you want, choose <strong>Download subtree as Newick string</strong> in the upper, rightmost panel.</p>
+</section>
+<section id="configuration-file">
+<h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h3>
+<p>A JSON configuration file is required for this command.  These are the required and
+optional parameters:</p>
+<ul class="simple">
+<li><p>Required:</p>
+<ul>
+<li><p>log_filename</p></li>
+<li><p>log_console</p></li>
+<li><p>report_filename</p></li>
+<li><p>in_species_list_filename</p></li>
+<li><p>wrangler_configuration_file</p></li>
+<li><p>out_species_list_filename: output species</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p><strong>tree_filename</strong>: input tree filename</p></li>
+<li><p><strong>tree_schema</strong>: input tree format</p></li>
+<li><p><strong>wrangler_configuration_file</strong>: tree data wrangler configuration file</p></li>
+<li><p><strong>out_tree_filename</strong>: output tree filename</p></li>
+<li><p><strong>out_tree_schema</strong>: output tree format</p></li>
+</ul>
+</li>
+<li><p>Optional</p>
+<ul>
+<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+</ul>
+</li>
+</ul>
+<p>An example configuration file to process a tree, using data wranglers specified in
+wrangler_conf_resolve_occurrence_names.json, writing all files to the
+/biotaphy_data/output directory.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;report_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/output/resolve_tree_names.rpt&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;tree_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/input/subtree-ottol-saxifragales.tre&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;tree_schema&quot;</span><span class="p">:</span> <span class="s2">&quot;newick&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;wrangler_configuration_file&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/param_config/wrangle_treenames.json&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;out_tree_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/output/ottol-Saxifragales.tre&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;out_tree_schema&quot;</span><span class="p">:</span> <span class="s2">&quot;newick&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="input-wrangler-configuration-file">
+<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this headline"></a></h3>
+<p>A file specifying 0 or more tree-wranglers to apply to the tree data, and options
+specific to each.</p>
+<p>The resolve_tree_names.json  configuration file consists of zero or more Tree Data
+Wranglers (wrangler_type), and the wrangler-specific required and possibly optional
+parameters for each.  Configuration files:</p>
+<ul class="simple">
+<li><p>are in JSON format, a list of one dictionary per desired wrangler.</p></li>
+<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler types.</p></li>
+<li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
+<li><p>A list of tree wrangler_types and the required and/or optional parameters for each
+are <a class="reference internal" href="tree_wrangler.html"><span class="doc std std-doc">here</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="run-tutorial">
+<h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this headline"></a></h2>
+<p>Initiate the process with the following:</p>
+<p>for linux/mac systems</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh wrangle_tree data/param_config/resolve_tree_names.json
+</pre></div>
+</div>
+<p>for windows:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat wrangle_tree data\param_config\resolve_tree_names.json
+</pre></div>
+</div>
+</section>
+<section id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
+<p>This process outputs a file containing the modified tree in the requested format, one
+Current available taxonomic services include only GBIF at this time.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Biotaphy Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
