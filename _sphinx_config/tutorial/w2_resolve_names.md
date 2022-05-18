@@ -92,3 +92,25 @@ run_tutorial.bat wrangle_tree data\param_config\resolve_tree_names.json
 ## Output
 This process outputs a file containing the modified tree in the requested format, one 
 Current available taxonomic services include only GBIF at this time.
+
+```python
+import lmpy
+from copy import deepcopy
+import json
+from lmpy.data_wrangling.factory import WranglerFactory
+from lmpy.tools._config_parser import _process_arguments, get_logger
+from lmpy.tree import TreeWrapper
+
+tree_fn = "../tutorials/data/input/subtree-ottol-saxifragales.tre"
+conf_fn = "../tutorials/data/param_config/wrangle_treenames.json"
+
+tree = TreeWrapper.get(path=tree_fn, schema="newick")
+wrangler_factory = WranglerFactory()
+with open(conf_fn, mode="rt") as in_json:
+    wranglers = wrangler_factory.get_wranglers(json.load(in_json))
+
+wrangler = wranglers[0]
+wtree = wrangler.wrangle_tree(tree)
+
+
+```

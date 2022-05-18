@@ -4,8 +4,8 @@
 
     Geospatial data
         Geospatial data is data with geographic location associated with it, i.e. map
-        data.  There are two kinds of spatial data, term:`Raster Data` and
-        term:`Vector Data`.  Each
+        data.  There are two kinds of spatial data, :term:`Raster Data` and
+        :term:`Vector Data`.  Each
         has properties that make it better for representing different information.
 
     Line
@@ -15,7 +15,7 @@
     Point
         Points represent a single location on a 2 dimensional surface.
         Depending on the scale, different types of data are appropriate to be
-        represented as points. At a very small term:`Scale` (from a very great
+        represented as points. At a very small :term:`Scale` (from a very great
         distance), a city might be represented as a single point.  Species occurrences
         are usually represented as points.
 
@@ -45,7 +45,7 @@
 
     Vector Data
         Geospatial data best represented in vector format can be represented as
-        term:`Point`s, term:`Lines`, or term:`Polygon`s.
+        :term:`Point`s, :term:`Line`s, or :term:`Polygon`s.
 
 
 

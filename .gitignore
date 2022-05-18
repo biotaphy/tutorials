@@ -11,3 +11,4 @@ data/input/flowline*
 data/input/topo*
 data/input/*.tif
 data/input/gbif_sax_100k.csv
+data/input/tmp
