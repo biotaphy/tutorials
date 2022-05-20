@@ -48,11 +48,13 @@ set_defaults() {
     fi
     CONTAINER_CONFIG_FILE=$(echo $HOST_CONFIG_FILE | sed "s:^$HOST_DATA_DIR:$DOCKER_DATA_DIR:g")
 
-    DOCKER_PATH=./docker
+#    DOCKER_PATH=./docker
     COMPOSE_FNAME=docker-compose.yml
-    CMD_COMPOSE_FNAME="$DOCKER_PATH"/docker-compose.command.yml
+    DOCKER_ENV_FNAME=./.env
+#    CMD_COMPOSE_FNAME="$DOCKER_PATH"/docker-compose.command.yml
+#    DOCKER_ENV_FNAME="$DOCKER_PATH"/.env
 
-    DOCKER_ENV_FNAME="$DOCKER_PATH"/.env
+
     if [ -f "$DOCKER_ENV_FNAME" ] ; then
         /usr/bin/rm "$DOCKER_ENV_FNAME"
     fi
@@ -80,8 +82,10 @@ create_docker_envfile() {
 start_process() {
     # clean_occurrences -r /data/output/cleaning_report.json /data/input/heuchera.csv /data/output/clean_data.csv /data/input/wrangler_conf_clean_occurrences.json
     echo "Ready to execute $CMD with:" | tee -a "$LOG"
-    echo "      docker compose  --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file $DOCKER_ENV_FNAME  up" | tee -a "$LOG"
-    docker compose --file "${COMPOSE_FNAME}" --file "${CMD_COMPOSE_FNAME}"  --env-file "${DOCKER_ENV_FNAME}"  up
+    echo "      docker compose  --file ${COMPOSE_FNAME}  --env-file $DOCKER_ENV_FNAME  up" | tee -a "$LOG"
+    docker compose --file "${COMPOSE_FNAME}"  --env-file "${DOCKER_ENV_FNAME}"  up
+#    echo "      docker compose  --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file $DOCKER_ENV_FNAME  up" | tee -a "$LOG"
+#    docker compose --file "${COMPOSE_FNAME}" --file "${CMD_COMPOSE_FNAME}"  --env-file "${DOCKER_ENV_FNAME}"  up
 }
 
 

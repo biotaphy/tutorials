@@ -21,7 +21,7 @@ cd tutorials
    1. runs the command in the container
    2. creates output files available to the host machine through the configured local directory
 ```zsh
-bash go.sh clean_occurrences data/input/clean_occurrences.json
+bash run_tutorial.sh wrangle_occurrences data/input/clean_occurrences.json
 ```
 
 Image tutorials_back-end is now available
@@ -31,6 +31,8 @@ Image tutorials_back-end is now available
 Mac / Linux:
 ```commandline
 docker run  -it tutorials_backend bash
+docker run tutorials_backend wrangle_species_list \
+  --config_file /biotaphy_data/param_config/resolve_list_names.json
 ```
 
 [//]: # (or Windows:)

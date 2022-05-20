@@ -11,5 +11,8 @@ services:
     # bind-mount output directories
     volumes:
       # Map output directories to retain modifications on host
+      - "./data/input:/biotaphy_data/input"
       - "./data/output:/biotaphy_data/output"
+      - "./data/param_config:/biotaphy_data/param_config"
       - "./data/log:/biotaphy_data/log"
+    command: ["ls", "-lahtr", "/biotaphy_data/*/*"]
