@@ -16,46 +16,42 @@ tutorials work.
 
 ### Input: species list 
 
-Use your own species list, or download from 
-[OpenTree of Life](https://tree.opentreeoflife.org/) .  After filtering for the tree
-you want, choose **Download subtree as Newick string** in the upper, rightmost panel.
+Options:
+
+1) Create your own species list, a text file with one name per line.  One resource is
+[World Flora Online, WFO](http://www.worldfloraonline.org/)
+2) A species list from GBIF (query for heuchera)
+   https://www.gbif.org/occurrence/search?taxon_key=3032645&occurrence_status=present
+   GBIF.org (19 May 2022) GBIF Occurrence Download  https://doi.org/10.15468/dl.kbdpd7
 
 ### Configuration File
 
 A JSON configuration file is required for this command.  These are the required and 
 optional parameters: 
 
-* Required:
-
-  * log_filename  
-  * log_console
-  * report_filename
-  * in_species_list_filename
-  * wrangler_configuration_file
-  * out_species_list_filename: output species 
-* 
-  * **tree_filename**: input tree filename
-  * **tree_schema**: input tree format
-  * **wrangler_configuration_file**: tree data wrangler configuration file 
-  * **out_tree_filename**: output tree filename
-  * **out_tree_schema**: output tree format
-
 * Optional 
 
+  * **log_filename**: Output filename to write logging data
+  * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
 
-An example configuration file to process a tree, using data wranglers specified in 
-wrangler_conf_resolve_occurrence_names.json, writing all files to the 
-/biotaphy_data/output directory.  
+* Required:
+
+  * **in_species_list_filename**: Input filename containing species list.
+  * **wrangler_configuration_file**: species list data wrangler configuration file 
+  * **out_species_list_filename**: output filename for resulting resolved species list.
+
+An example configuration file to process the saxifragales.txt species list, using the 
+AcceptedNameSpeciesListWrangler data wrangler specified in wrangle_list_names.json.  
 
 ```json lines
 {
-    "report_filename": "/biotaphy_data/output/resolve_tree_names.rpt",
-    "tree_filename": "/biotaphy_data/input/subtree-ottol-saxifragales.tre",
-    "tree_schema": "newick",
-    "wrangler_configuration_file": "/biotaphy_data/param_config/wrangle_treenames.json",
-    "out_tree_filename": "/biotaphy_data/output/ottol-Saxifragales.tre",
-    "out_tree_schema": "newick"
+  "log_filename": "/biotaphy_data/log/resolve_list_names.log",
+  "log_console": true,
+  "report_filename": "/biotaphy_data/output/resolve_list_names.rpt",
+  "in_species_list_filename": "/biotaphy_data/input/heuchera.txt",
+  "wrangler_configuration_file": "/biotaphy_data/param_config/wrangle_list_names.txt",
+  "out_species_list_filename": "/biotaphy_data/input/saxifragales_accepted.txt"
 }
 ```
 
@@ -70,8 +66,8 @@ parameters for each.  Configuration files:
   * are in JSON format, a list of one dictionary per desired wrangler.
   * Each dictionary must contain "wrangler_type", with the name of the wrangler types.
   * The dictionary will also contain all required parameters and any optional parameters.
-  * A list of tree wrangler_types and the required and/or optional parameters for each
-    are [here](tree_wrangler.md)
+  * A list of species list wrangler_types and the required and/or optional parameters 
+    for each are [here](species_list_wrangler.md)
 
 
 ## Run tutorial
@@ -80,18 +76,19 @@ Initiate the process with the following:
 for linux/mac systems
 
 ```zsh
-bash run_tutorial.sh wrangle_tree data/param_config/resolve_tree_names.json
+bash run_tutorial.sh  wrangle_species_list  data/param_config/resolve_list_names.json
 ```
 
 for windows:
 
 ```cmd
-run_tutorial.bat wrangle_tree data\param_config\resolve_tree_names.json
+run_tutorial.bat  wrangle_species_list  data\param_config\resolve_list_names.json
 ```
 
 ## Output
-This process outputs a file containing the modified tree in the requested format, one 
-Current available taxonomic services include only GBIF at this time.
+This process outputs a text file containing the modified species list, one name per 
+line.  Current available taxonomic services include only GBIF at this time.
+
 
 ```python
 import lmpy
@@ -102,7 +99,7 @@ from lmpy.tools._config_parser import _process_arguments, get_logger
 from lmpy.tree import TreeWrapper
 
 tree_fn = "../tutorials/data/input/subtree-ottol-saxifragales.tre"
-conf_fn = "../tutorials/data/param_config/wrangle_treenames.json"
+conf_fn = "../tutorials/data/param_config/wrangle_tree_names.json"
 
 tree = TreeWrapper.get(path=tree_fn, schema="newick")
 wrangler_factory = WranglerFactory()
@@ -112,5 +109,8 @@ with open(conf_fn, mode="rt") as in_json:
 wrangler = wranglers[0]
 wtree = wrangler.wrangle_tree(tree)
 
+dir(wtree.taxon_namespace)
 
+for taxon in wtree.taxon_namespace:
+    
 ```

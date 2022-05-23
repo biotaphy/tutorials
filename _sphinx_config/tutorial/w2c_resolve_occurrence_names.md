@@ -12,7 +12,10 @@ Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all 
 
 Either, 
 1) a file containing tab or comma-delimited records of specimen occurrence data; or 
-2) a Darwin Core Archive (DwCA) of occurrence data. 
+2) a Darwin Core Archive (DwCA) of occurrence data.
+   1) GBIF query for heuchera:
+      https://www.gbif.org/occurrence/search?taxon_key=3032645&occurrence_status=present
+      GBIF.org (19 May 2022) GBIF Occurrence Download https://doi.org/10.15468/dl.vhs4ju
 
 [GBIF](https://www.gbif.org/), [iDigBio](https://www.idigbio.org/portal), 
 [Atlas of Living Australia](https://www.ala.org.au/), and more, provide 

@@ -49,3 +49,12 @@
 
 
 
+
+## Sample Geospatial Data resources
+
+* [World borders]  (http://thematicmapping.org/downloads/world_borders.php)
+
+* [Global administrative boundaries]  http://www.gadm.org/country)
+
+* [Natural earth data] (http://www.naturalearthdata.com/)
+

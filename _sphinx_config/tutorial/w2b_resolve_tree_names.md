@@ -41,7 +41,7 @@ wrangler_conf_resolve_occurrence_names.json, writing all files to the
     "report_filename": "/biotaphy_data/output/resolve_tree_names.rpt",
     "tree_filename": "/biotaphy_data/input/subtree-ottol-saxifragales.tre",
     "tree_schema": "newick",
-    "wrangler_configuration_file": "/biotaphy_data/param_config/wrangle_treenames.json",
+    "wrangler_configuration_file": "/biotaphy_data/param_config/wrangle_tree_names.json",
     "out_tree_filename": "/biotaphy_data/output/ottol-Saxifragales.tre",
     "out_tree_schema": "newick"
 }

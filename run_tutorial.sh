@@ -20,7 +20,7 @@ usage ()
         echo "user-configured arguments in a docker container."
         echo "the <cmd> argument can be one of:"
         for i in "${!COMMANDS[@]}"; do
-            echo "      ${COMMANDS[$i]}" | tee -a "$LOG"
+            echo "      ${COMMANDS[$i]}"
         done
         echo "the <config_file> argument must be the full path to a JSON file"
         echo "containing command-specific arguments"

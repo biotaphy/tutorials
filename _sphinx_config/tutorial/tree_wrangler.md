@@ -10,8 +10,7 @@ arguments for that wrangler.
 ## AcceptedNameTreeWrangler
 
 * optional
-
-* optional
+  
   * name_map (dict): A map of original name to accepted name.    Defaults to None, but 
     either this or name_resolver must be provided.
   * name_resolver (str or Method): Use this method for getting new 

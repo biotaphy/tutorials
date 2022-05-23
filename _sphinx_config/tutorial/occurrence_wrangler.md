@@ -22,8 +22,7 @@ arguments for that wrangler.
   * map_write_interval (int): Interval at which to write records to disk.  Used to 
     ensure that if something fails, all is not lost. Defaults to 100.
   * out_map_format (str): Type of file format for out_map_filename, defaults to "json".
-  * store_original_attribute (str): A new attribute to store the
-    original taxon name.
+  * store_original_attribute (str): A new attribute to store the original taxon name.
 
 ## AttributeFilterWrangler
 
