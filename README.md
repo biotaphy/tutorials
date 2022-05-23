@@ -55,6 +55,13 @@ docker run tutorials_backend wrangle_species_list \
 
 ## Troubleshooting
 
+To run manually:
+
+```zsh
+docker volume create output
+docker run -it --volume output:/biotaphy_data/output
+```
+
 To delete all containers, images, networks and volumes, stop any running
 containers:
 
@@ -67,3 +74,4 @@ And run this command (which ignores running container):
 ```zsh
 docker system prune --all --volumes
 ```
+
