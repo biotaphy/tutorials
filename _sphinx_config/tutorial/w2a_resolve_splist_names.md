@@ -91,6 +91,7 @@ line.  Current available taxonomic services include only GBIF at this time.
 
 
 ```python
+import argparse
 import lmpy
 from copy import deepcopy
 import json
@@ -100,6 +101,55 @@ from lmpy.tree import TreeWrapper
 
 tree_fn = "../tutorials/data/input/subtree-ottol-saxifragales.tre"
 conf_fn = "../tutorials/data/param_config/wrangle_tree_names.json"
+conf_fn = "../tutorials/data/param_config/wrangle_treenames.json"
+conf_fn = "/biotaphy_data/param_config/resolve_list_names.json"
+
+parser = argparse.ArgumentParser(prog='wrangle_species_list')
+parser.add_argument('--config_file', type=str, help='Path to configuration file.')
+parser.add_argument(
+    '--log_filename',
+    '-l',
+    type=str,
+    help='A file location to write logging data.'
+)
+parser.add_argument(
+    '--log_console',
+    action='store_true',
+    default=False,
+    help='If provided, write log to console.'
+)
+parser.add_argument(
+    '-r',
+    '--report_filename',
+    type=str,
+    help='File location to write the wrangler report.'
+)
+parser.add_argument(
+    'in_species_list_filename', type=str, help='Path to the input SpeciesList.'
+)
+parser.add_argument(
+    'wrangler_configuration_file',
+    type=str,
+    help='Path to Matrix wrangler configuration.',
+)
+parser.add_argument(
+    'out_species_list_filename', type=str, help='Path to the outut SpeciesList.'
+)
+
+args = _process_arguments(parser, 'config_file')
+logger = get_logger(
+    'wrangle_occurrences',
+    log_filename=args.log_filename,
+    log_console=args.log_console
+)
+
+# Get wranglers
+wrangler_factory = WranglerFactory(logger=logger)
+wranglers = wrangler_factory.get_wranglers(
+    json.load(open(args.wrangler_config_filename, mode='rt'))
+)
+
+>>>>>>> 96128619ae4020ef6bd751e4ace5df25b4989533
 
 tree = TreeWrapper.get(path=tree_fn, schema="newick")
 wrangler_factory = WranglerFactory()

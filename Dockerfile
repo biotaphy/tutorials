@@ -39,15 +39,12 @@ ENV MAXENT_VERSION=3.4.4
 ENV MAXENT_JAR=/git/Maxent/ArchivedReleases/$MAXENT_VERSION/maxent.jar
 
 # .....................................................................................
+
+# .....................................................................................
 # Copy static inputs to container
-RUN mkdir -p /biotaphy_data
+# Create directory to be bind-mounted to host directories
 COPY ./data/input /biotaphy_data/input
 COPY ./data/param_config /biotaphy_data/param_config
-
-
-## Change user, workdir
-#WORKDIR /home/biotaphy
-#USER biotaphy
 
 SHELL ["/bin/bash", "-c"]
 

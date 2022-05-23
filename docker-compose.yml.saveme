@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./.
+      target: backend
+#    command: [ $command, "--config_file", $config_file ]
+    ports:
+      - 3000:3000
+    # bind-mount output directories
+    volumes:
+      # existing named volume
+      - output:/biotaphy_data/output
+#      # bind mounts from host to container
+#      - "./data/output:/biotaphy_data/output"
+#      - "./data/log:/biotaphy_data/log"
+#    command: ["ls", "-lahtr", "/biotaphy_data/*/*"]
+volumes:
+  output:
