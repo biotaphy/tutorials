@@ -110,13 +110,20 @@ container, so use directory paths specific to the container.  Output file parame
 /volumes/output/log directories, as they will then also be visible to the host computer
 upon completion.</p>
 </section>
+<section id="script-preparation">
+<h2>Script preparation<a class="headerlink" href="#script-preparation" title="Permalink to this headline"></a></h2>
+<p>Change the permissions on run_tutorial.sh or run_tutorial.bat to allow execution</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>chmod a+x run_tutorial.sh 
+</pre></div>
+</div>
+</section>
 <section id="run-tool-tutorials">
 <h2>Run tool tutorials<a class="headerlink" href="#run-tool-tutorials" title="Permalink to this headline"></a></h2>
 <p>The “run_tutorial” script will run each tutorial with two arguments,<br />
 the 1) command name and 2) configuration file.  For example, the  wrangle_species_list
 tutorial can be initiated with:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh wrangle_species_list data/config/resolve_list_names.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh wrangle_species_list data/config/resolve_list_names.json
 </pre></div>
 </div>
 <p>for windows systems</p>
@@ -140,6 +147,19 @@ directory.</p></li>
 </ol>
 <p>Some tools will require an additional JSON-format configuration files.  In these cases,
 the JSON file will be identified in the command-configuration file.</p>
+</section>
+<section id="summary-of-tutorial-commands">
+<h2>Summary of tutorial commands<a class="headerlink" href="#summary-of-tutorial-commands" title="Permalink to this headline"></a></h2>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh wrangle_species_list  data/config/resolve_list_names.json
+./run_tutorial.sh wrangle_tree data/config/resolve_tree_names.json
+./run_tutorial.sh wrangle_occurrences  data/config/resolve_occurrence_names.json
+./run_tutorial.sh split_occurrence_data  data/config/split_occurrence_data.json
+./run_tutorial.sh clean_occurrences  data/config/clean_occurrences.json
+./run_tutorial.sh build_grid  data/config/build_shapegrid.json
+./run_tutorial.sh encode_layers  data/config/encode_layers.json
+./run_tutorial.sh calculate_pam_stats  data/config/calc_pam_stats.json
+</pre></div>
+</div>
 </section>
 </section>
 

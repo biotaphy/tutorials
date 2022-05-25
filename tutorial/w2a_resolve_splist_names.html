@@ -118,19 +118,19 @@ AcceptedNameSpeciesListWrangler data wrangler specified in wrangle_list_names.js
   <span class="nt">&quot;log_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/output/resolve_list_names.log&quot;</span><span class="p">,</span>
   <span class="nt">&quot;log_console&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
   <span class="nt">&quot;report_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/output/resolve_list_names.rpt&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;in_species_list_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/input/heuchera.txt&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;wrangler_configuration_file&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/config/wrangle_list_names.txt&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;out_species_list_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/input/saxifragales_accepted.txt&quot;</span>
+  <span class="nt">&quot;in_species_list_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/data/input/heuchera.txt&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;wrangler_configuration_file&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/data/config/wrangle_list_names.json&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;out_species_list_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/data/input/heuchera_accepted.txt&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </section>
 <section id="input-wrangler-configuration-file">
 <h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this headline"></a></h3>
-<p>A file specifying 0 or more tree-wranglers to apply to the tree data, and options
+<p>A file specifying 0 or more wranglers to apply to the species list data, and options
 specific to each.</p>
-<p>The resolve_tree_names.json  configuration file consists of zero or more Tree Data
-Wranglers (wrangler_type), and the wrangler-specific required and possibly optional
+<p>The resolve_list_names.json  configuration file consists of zero or more Species List
+Data Wranglers (wrangler_type), and the wrangler-specific required and possibly optional
 parameters for each.  Configuration files:</p>
 <ul class="simple">
 <li><p>are in JSON format, a list of one dictionary per desired wrangler.</p></li>
@@ -145,11 +145,11 @@ for each are <a class="reference internal" href="species_list_wrangler.html"><sp
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this headline"></a></h2>
 <p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh  wrangle_species_list  data/param_config/resolve_list_names.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh  wrangle_species_list  data/config/resolve_list_names.json
 </pre></div>
 </div>
 <p>for windows:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat  wrangle_species_list  data\param_config\resolve_list_names.json
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat  wrangle_species_list  data\config\resolve_list_names.json
 </pre></div>
 </div>
 </section>

@@ -49,19 +49,19 @@ AcceptedNameSpeciesListWrangler data wrangler specified in wrangle_list_names.js
   "log_filename": "/volumes/output/resolve_list_names.log",
   "log_console": true,
   "report_filename": "/volumes/output/resolve_list_names.rpt",
-  "in_species_list_filename": "/volumes/input/heuchera.txt",
-  "wrangler_configuration_file": "/volumes/config/wrangle_list_names.txt",
-  "out_species_list_filename": "/volumes/input/saxifragales_accepted.txt"
+  "in_species_list_filename": "/volumes/data/input/heuchera.txt",
+  "wrangler_configuration_file": "/volumes/data/config/wrangle_list_names.json",
+  "out_species_list_filename": "/volumes/data/input/heuchera_accepted.txt"
 }
 ```
 
 ### Input: Wrangler configuration file
 
-A file specifying 0 or more tree-wranglers to apply to the tree data, and options 
+A file specifying 0 or more wranglers to apply to the species list data, and options 
 specific to each.   
 
-The resolve_tree_names.json  configuration file consists of zero or more Tree Data 
-Wranglers (wrangler_type), and the wrangler-specific required and possibly optional 
+The resolve_list_names.json  configuration file consists of zero or more Species List 
+Data Wranglers (wrangler_type), and the wrangler-specific required and possibly optional 
 parameters for each.  Configuration files:
   * are in JSON format, a list of one dictionary per desired wrangler.
   * Each dictionary must contain "wrangler_type", with the name of the wrangler types.
@@ -69,26 +69,26 @@ parameters for each.  Configuration files:
   * A list of species list wrangler_types and the required and/or optional parameters 
     for each are [here](species_list_wrangler.md)
 
-
 ## Run tutorial
+
 Initiate the process with the following:
 
 for linux/mac systems
 
 ```zsh
-bash run_tutorial.sh  wrangle_species_list  data/param_config/resolve_list_names.json
+bash run_tutorial.sh  wrangle_species_list  data/config/resolve_list_names.json
 ```
 
 for windows:
 
 ```cmd
-run_tutorial.bat  wrangle_species_list  data\param_config\resolve_list_names.json
+run_tutorial.bat  wrangle_species_list  data\config\resolve_list_names.json
 ```
 
 ## Output
+
 This process outputs a text file containing the modified species list, one name per 
 line.  Current available taxonomic services include only GBIF at this time.
-
 
 ```python
 import argparse
