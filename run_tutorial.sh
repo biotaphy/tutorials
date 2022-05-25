@@ -42,23 +42,20 @@ set_defaults() {
 
     IMAGE_NAME="tutor"
 
-    VOLUME_NAME="output_vol"
-    VOLUME_MOUNT="/biotaphy_data/output"
+    RO_VOLUME="data"
+    RW_VOLUME="output"
+    VOLUME_BASE_MOUNT="/volumes"
 
     # Relative host data directory mapped to container data directory (mounted at root)
-    HOST_DATA_DIR="data/"
-    DOCKER_DATA_DIR="/biotaphy_data/"
+    HOST_DATA_DIR="data/param_config"
+    DOCKER_DATA_DIR="/volumes/data/param_config"
     if [ ! -f "$HOST_CONFIG_FILE" ] ; then
         echo "File $HOST_CONFIG_FILE does not exist" | tee -a "$LOG"
     fi
     CONTAINER_CONFIG_FILE=$(echo $HOST_CONFIG_FILE | sed "s:^$HOST_DATA_DIR:$DOCKER_DATA_DIR:g")
 
-#    DOCKER_PATH=./docker
-    COMPOSE_FNAME=docker-compose.yml
-    DOCKER_ENV_FNAME=./.env
-#    CMD_COMPOSE_FNAME="$DOCKER_PATH"/docker-compose.command.yml
-#    DOCKER_ENV_FNAME="$DOCKER_PATH"/.env
-
+#    COMPOSE_FNAME=docker-compose.yml
+#    DOCKER_ENV_FNAME=./.env
 
     if [ -f "$DOCKER_ENV_FNAME" ] ; then
         /usr/bin/rm "$DOCKER_ENV_FNAME"
@@ -84,19 +81,25 @@ create_docker_envfile() {
 
 
 # -----------------------------------------------------------
-create_docker_volume() {
-    vol_exists=$(docker volume ls | grep -v $VOLUME_NAME | wc -l )
-    if [ "$vol_exists" == "0" ]; then
-        docker create volume $VOLUME_NAME
-    else
-        echo "Volume $VOLUME_NAME exists"  | tee -a "$LOG"
-    fi
+create_docker_volumes() {
+    # Create a named volume for use by any container
+    volumes=($RO_VOLUME $RW_VOLUME)
+    for i in "${!volumes[@]}"; do
+        vol_name=${volumesS[$i]}
+        vol_exists=$(docker volume ls | grep $vol_name | wc -l )
+        if [ "$vol_exists" == "0" ]; then
+            docker volume create $vol_name
+        else
+            echo "Volume $vol_name exists"  | tee -a "$LOG"
+        fi
+    done
 }
 
 
 # -----------------------------------------------------------
 build_docker_image() {
-    image_exists=$(docker image list | grep -v $IMAGE_NAME | wc -l )
+    # Build and name an image from Dockerfile in this directory
+    image_exists=$(docker image list | grep $IMAGE_NAME | wc -l )
     if [ "$image_exists" == "0" ]; then
         docker build . -t $IMAGE_NAME
     else
@@ -107,13 +110,17 @@ build_docker_image() {
 
 # -----------------------------------------------------------
 start_process() {
-    # clean_occurrences -r /data/output/cleaning_report.json /data/input/heuchera.csv /data/output/clean_data.csv /data/input/wrangler_conf_clean_occurrences.json
-    echo "Ready to execute $CMD with:" | tee -a "$LOG"
-    echo "      docker compose  --file ${COMPOSE_FNAME}  --env-file $DOCKER_ENV_FNAME  up" | tee -a "$LOG"
-    docker compose --file "${COMPOSE_FNAME}"  --env-file "${DOCKER_ENV_FNAME}"  up
-#    echo "      docker compose  --file ${COMPOSE_FNAME} --file ${CMD_COMPOSE_FNAME}  --env-file $DOCKER_ENV_FNAME  up" | tee -a "$LOG"
-#    docker compose --file "${COMPOSE_FNAME}" --file "${CMD_COMPOSE_FNAME}"  --env-file "${DOCKER_ENV_FNAME}"  up
-    docker run -it --volume ${VOLUME_NAME}:${VOLUME_MOUNT}
+    # Option string for volumes
+    ro_vol_opt="--volume ${RO_VOLUME}:${VOLUME_MOUNT}/${RO_VOLUME}:ro"
+    rw_vol_opt="--volume ${RW_VOLUME}:${VOLUME_MOUNT}/${RW_VOLUME}"
+    # Command to execute in container
+    command="${CMD} --config_file=${CONTAINER_CONFIG_FILE}"
+
+    # Start a container from image built in build_docker_image, and
+    # mounting volume created in create_docker_volume
+    echo "Ready to execute:" | tee -a "$LOG"
+    echo "    ${command}" | tee -a "$LOG"
+    docker run -it  ${ro_vol_opt}  ${rw_vol_opt}  ${IMAGE_NAME}  ${command}
 }
 
 
@@ -149,8 +156,7 @@ if [[ " ${COMMANDS[*]} " =~  ${CMD}  ]]; then
     if [ "$CMD" == "list_commands" ] ; then
         usage
     else
-        create_docker_volume
-        create_docker_envfile
+        create_docker_volumes
         build_docker_image
         start_process
     fi

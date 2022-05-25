@@ -1,0 +1,9 @@
+{
+  "tree_filename": None,
+  "tree_matrix": None,
+  "covariance_matrix": "/volumes/output/covariance.lmm",
+  "diversity_matrix":  "/volumes/output/diversity.lmm",
+  "site_stats_matrix":  "/volumes/output/site_stats.lmm",
+  "species_stats_matrix": "/volumes/output/species_stats.lmm",
+  "pam_filename":
+}

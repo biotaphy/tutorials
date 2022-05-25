@@ -66,39 +66,39 @@ optional parameters:
     * fieldname for the latitude/y coordinate
     
 An example configuration file to process a DwCA, using data wranglers specified in 
-wrangle_occnames.json, writing all files to the /biotaphy_data/output directory.  
+wrangle_occnames.json, writing all files to the /volumes/output directory.  
 
 ```json lines
 {
     "max_open_writers": 100,
     "key_field": "scientificName",
     "dwca":  [
-        ["/biotaphy_data/input/occ_idigbio.zip",
-         "/biotaphy_data/param_config/wrangle_occnames.json"
+        ["/volumes/data/input/occ_idigbio.zip",
+         "/volumes/data/config/wrangle_occnames.json"
         ]
     ],
-    "out_dir": "/biotaphy_data/output"
+    "out_dir": "/volumes/output"
 
 }
 ```
 
 An example configuration file to process a CSV, using data wranglers specified in 
 wrangler_conf_resolve_occurrence_names2.json, writing the files to the 
-/biotaphy_data/output directory.  
+/volumes/output directory.  
 
 ```json lines
 {
     "max_open_writers": 100,
     "key_field": ["family", "genus", "scientificName"],
     "csv":  [
-        ["/biotaphy_data/input/gbif_sax_100k.csv",
-         "/biotaphy_data/param_config/wrangle_occurrences.json",
+        ["/volumes/data/input/gbif_sax_100k.csv",
+         "/volumes/data/config/wrangle_occurrences.json",
          "scientificName", 
           "longitude", 
           "latitude"
         ]
     ],
-    "out_dir": "/biotaphy_data/output"
+    "out_dir": "/volumes/output"
 
 }
 ```

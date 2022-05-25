@@ -1,0 +1,11 @@
+{
+    "max_open_writers": 100,
+    "key_field": ["scientificName"],
+    "dwca":  [
+        ["/volumes/data/input/gbif_sax_100k.csv",
+         "/volumes/data/param_config/wrangle_occurrence_names.json"
+        ]
+    ],
+    "out_dir": "/volumes/output"
+
+}

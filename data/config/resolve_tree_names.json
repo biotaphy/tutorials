@@ -1,0 +1,8 @@
+{
+    "report_filename": "/volumes/output/resolve_tree_names.rpt",
+    "tree_filename": "/volumes/data/input/subtree-ottol-saxifragales.tre",
+    "tree_schema": "newick",
+    "wrangler_configuration_file": "/volumes/data/param_config/wrangle_treenames.json",
+    "out_tree_filename": "/volumes/output/ottol-saxifragales.tre",
+    "out_tree_schema": "newick"
+}

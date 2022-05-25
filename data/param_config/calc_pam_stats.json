@@ -1,9 +1,0 @@
-{
-  "tree_filename": None,
-  "tree_matrix": None,
-  "covariance_matrix": "/biotaphy_data/output/covariance.lmm",
-  "diversity_matrix":  "/biotaphy_data/output/diversity.lmm",
-  "site_stats_matrix":  "/biotaphy_data/output/site_stats.lmm",
-  "species_stats_matrix": "/biotaphy_data/output/species_stats.lmm",
-  "pam_filename":
-}

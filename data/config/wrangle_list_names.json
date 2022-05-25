@@ -2,7 +2,7 @@
     {
         "wrangler_type": "AcceptedNameSpeciesListWrangler",
         "name_resolver": "gbif",
-        "out_map_filename=": "/biotaphy_data/output/heuchera_name_map.json",
+        "out_map_filename=": "/volumes/output/heuchera_name_map.json",
         "map_write_interval": 100,
         "out_map_format": "json"
     }

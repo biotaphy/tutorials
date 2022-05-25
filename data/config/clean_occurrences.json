@@ -1,0 +1,10 @@
+{
+    "species_key": "species_name",
+    "x_key": "x",
+    "y_key": "y",
+    "report_filename": "/volumes/output/occurrence_cleaning_report.json",
+    "log_output": "True",
+    "reader_filename": "/volumes/data/input/heuchera.csv",
+    "writer_filename":  "/volumes/output/clean_heuchera.csv",
+    "wrangler_config_filename":   "/volumes/data/param_config/wrangle_occurrences.json"
+}

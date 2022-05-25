@@ -1,11 +1,0 @@
---2022-05-19 15:40:48--  https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapi.gbif.org%2Fv1%2Foccurrence%2Fdownload%2Frequest%2F0292618-210914110416597.zip
-Resolving nam10.safelinks.protection.outlook.com (nam10.safelinks.protection.outlook.com)... 104.47.55.28, 104.47.70.28
-Connecting to nam10.safelinks.protection.outlook.com (nam10.safelinks.protection.outlook.com)|104.47.55.28|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 2556 (2.5K) [text/html]
-Saving to: ‘index.html?url=https:%2F%2Fapi.gbif.org%2Fv1%2Foccurrence%2Fdownload%2Frequest%2F0292618-210914110416597.zip’
-
-                              index.html?url=https:%2F%2Fap   0%[                                                                                                                                           ]       0  --.-KB/s               index.html?url=https:%2F%2Fapi.gbif.org%2Fv1%2Foccurrence%2 100%[==========================================================================================================================================>]   2.50K  --.-KB/s    in 0s      
-
-2022-05-19 15:40:49 (170 MB/s) - ‘index.html?url=https:%2F%2Fapi.gbif.org%2Fv1%2Foccurrence%2Fdownload%2Frequest%2F0292618-210914110416597.zip’ saved [2556/2556]
-

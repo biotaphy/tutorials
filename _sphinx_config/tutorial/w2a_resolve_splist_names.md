@@ -46,12 +46,12 @@ AcceptedNameSpeciesListWrangler data wrangler specified in wrangle_list_names.js
 
 ```json lines
 {
-  "log_filename": "/biotaphy_data/log/resolve_list_names.log",
+  "log_filename": "/volumes/output/resolve_list_names.log",
   "log_console": true,
-  "report_filename": "/biotaphy_data/output/resolve_list_names.rpt",
-  "in_species_list_filename": "/biotaphy_data/input/heuchera.txt",
-  "wrangler_configuration_file": "/biotaphy_data/param_config/wrangle_list_names.txt",
-  "out_species_list_filename": "/biotaphy_data/input/saxifragales_accepted.txt"
+  "report_filename": "/volumes/output/resolve_list_names.rpt",
+  "in_species_list_filename": "/volumes/input/heuchera.txt",
+  "wrangler_configuration_file": "/volumes/config/wrangle_list_names.txt",
+  "out_species_list_filename": "/volumes/input/saxifragales_accepted.txt"
 }
 ```
 
@@ -102,7 +102,7 @@ from lmpy.tree import TreeWrapper
 tree_fn = "../tutorials/data/input/subtree-ottol-saxifragales.tre"
 conf_fn = "../tutorials/data/param_config/wrangle_tree_names.json"
 conf_fn = "../tutorials/data/param_config/wrangle_treenames.json"
-conf_fn = "/biotaphy_data/param_config/resolve_list_names.json"
+conf_fn = "/volumes/param_config/resolve_list_names.json"
 
 parser = argparse.ArgumentParser(prog='wrangle_species_list')
 parser.add_argument('--config_file', type=str, help='Path to configuration file.')

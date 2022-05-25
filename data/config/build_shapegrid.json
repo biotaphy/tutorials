@@ -1,5 +1,5 @@
 {
-    "shapegrid_filename": "/biotaphy_data/output/global_1deg_grid.shp",
+    "shapegrid_filename": "/volumes/output/global_1deg_grid.shp",
     "min_x": -180,
     "min_y": -90,
     "max_x": 180,

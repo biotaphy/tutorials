@@ -41,10 +41,9 @@ ENV MAXENT_JAR=/git/Maxent/ArchivedReleases/$MAXENT_VERSION/maxent.jar
 # .....................................................................................
 
 # .....................................................................................
-# Copy static inputs to container
-# Create directory to be bind-mounted to host directories
-COPY ./data/input /biotaphy_data/input
-COPY ./data/param_config /biotaphy_data/param_config
+# Copy read-only inputs to volume
+COPY ./data/input /volumes/data/input
+COPY ./data/params /volumes/data/params
 
 SHELL ["/bin/bash", "-c"]
 

@@ -32,7 +32,7 @@ Mac / Linux:
 ```commandline
 docker run  -it tutorials_backend bash
 docker run tutorials_backend wrangle_species_list \
-  --config_file /biotaphy_data/param_config/resolve_list_names.json
+  --config_file /volumes/data/config/resolve_list_names.json
 ```
 
 [//]: # (or Windows:)
@@ -55,12 +55,20 @@ docker run tutorials_backend wrangle_species_list \
 
 ## Troubleshooting
 
-To run manually:
+Create volumes outside of Dockerfiles and compose files
 
 ```zsh
+docker volume create data
 docker volume create output
-docker run -it --volume output:/biotaphy_data/output
 ```
+
+Build and run with only Dockerfile and run options:
+
+```zsh
+docker build . -t tutor
+docker run -it --volume data:/volumes/data:ro --volume output:/volumes/output tutor bash
+```
+
 
 To delete all containers, images, networks and volumes, stop any running
 containers:
