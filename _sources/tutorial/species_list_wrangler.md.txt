@@ -1,4 +1,4 @@
-# Occurrence Data Wrangler types
+# Species List Data Wrangler types
 
 When running wranglers on an occurrence data set, wranglers are applied in the order 
 that they are listed in the wrangler config file.  
@@ -7,7 +7,7 @@ Currently, wrangler_type names correspond to the wrangler class `name` attribute
 this module's files.  Each wrangler's parameters correspond to the constructor 
 arguments for that wrangler.
 
-## AcceptedNameOccurrenceWrangler
+## AcceptedNameSpeciesListWrangler
 
 * optional
   
@@ -22,86 +22,27 @@ arguments for that wrangler.
   * map_write_interval (int): Interval at which to write records to disk.  Used to 
     ensure that if something fails, all is not lost. Defaults to 100.
   * out_map_format (str): Type of file format for out_map_filename, defaults to "json".
-  * store_original_attribute (str): A new attribute to store the
-    original taxon name.
 
-## AttributeFilterWrangler
+## IntersectionSpeciesListWrangler
 
 * required
   
-  * attribute_name (str): The name of the attribute to modify.
-  * filter_func (Method): A function to be used for the pass condition.
+  * species_list (str): Filename containing species list to intersect 
 
-## AttributeModifierWrangler
-
-* required
-  
-  * attribute_name (str): The name of the attribute to modify.
-  * attribute_func (Method): A function to generate values for a point.
-
-## BoundingBoxFilter
+## MatchMatrixSpeciesListWrangler
 
 * required
   
-  * min_x (numeric): The minimum 'x' value for the bounding box.
-  * min_y (numeric): The minimum 'y' value for the bounding box.
-  * max_x (numeric): The maximum 'x' value for the bounding box.
-  * max_y (numeric): The maximum 'y' value for the bounding box.
+  * matrix (str): Filename containing matrix to match
 
-## CommonFormatWrangler
+## MatchTreeSpeciesListWrangler
+
+* required
+  
+  * tree (str): Filename containing tree to match
+
+## UnionSpeciesListWrangler
 
 * required
 
-  * attribute_map (dict): A mapping of source key, target values.
-
-## CoordinateConverterWrangler
-
-* required
-
-  * target_epsg (int): Target map projection specified by EPSG code.
-  
-* optional
-
-  * source_epsg (int): Source map projection specified by EPSG code.
-  * epsg_attribute (str or None): A point attribute containing EPSG code.
-  * original_x_attribute (str): An attribute to store the original x value.
-  * original_y_attribute (str): An attribute to store the original y value.
-
-## DecimalPrecisionFilter
-
-* required:
-
-  * decimal_places (int): Only keep points with at least this many decimal places of precision.
-
-## DisjointGeometriesFilter'
-
-* required:
-  
-  * geometry_wkts (list of str): A list of geometry WKTs to check against.
-
-## IntersectGeometriesFilter
-
-* required:
-  
-  * geometry_wkts (list of str): A list of WKT strings.
-
-## MinimumPointsWrangler
-
-* required:
-  
-  * minimum_count (int): The minimum number of points in order to keep all.
-
-## SpatialIndexFilter
-
-* required:
-  
-  * spatial_index (SpatialIndex): A SpatialIndex object that can be searched.
-  * intersections_map (dict): A dictionary of species name keys and corresponding valid intersection values.
-  * check_hit_func (Method): A function that takes two arguments (search hit, valid intersections for a species)
-    and returns a boolean indication if the hit should be counted.
-
-## UniqueLocalitiesFilter
-
-* optional parameters:
-  
-  * do_reset (bool): Reset the list of seen localities after each group.
+  * species_list (str): Filename containing species list to join 

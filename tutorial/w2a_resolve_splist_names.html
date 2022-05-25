@@ -39,6 +39,10 @@
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="occurrence_wrangler.html">Occurrence Data Wrangler types</a></li>
 </ul>
 
         </div>
@@ -79,49 +83,44 @@ tutorials work.</p>
 <h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
 <section id="input-species-list">
 <h3>Input: species list<a class="headerlink" href="#input-species-list" title="Permalink to this headline"></a></h3>
-<p>Use your own species list, or download from
-<a class="reference external" href="https://tree.opentreeoflife.org/">OpenTree of Life</a> .  After filtering for the tree
-you want, choose <strong>Download subtree as Newick string</strong> in the upper, rightmost panel.</p>
+<p>Options:</p>
+<ol class="arabic simple">
+<li><p>Create your own species list, a text file with one name per line.  One resource is
+<a class="reference external" href="http://www.worldfloraonline.org/">World Flora Online, WFO</a></p></li>
+<li><p>A species list from GBIF (query for heuchera)
+https://www.gbif.org/occurrence/search?taxon_key=3032645&amp;occurrence_status=present
+GBIF.org (19 May 2022) GBIF Occurrence Download  https://doi.org/10.15468/dl.kbdpd7</p></li>
+</ol>
 </section>
 <section id="configuration-file">
 <h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h3>
 <p>A JSON configuration file is required for this command.  These are the required and
 optional parameters:</p>
 <ul class="simple">
-<li><p>Required:</p>
-<ul>
-<li><p>log_filename</p></li>
-<li><p>log_console</p></li>
-<li><p>report_filename</p></li>
-<li><p>in_species_list_filename</p></li>
-<li><p>wrangler_configuration_file</p></li>
-<li><p>out_species_list_filename: output species</p></li>
-</ul>
-</li>
-<li><ul>
-<li><p><strong>tree_filename</strong>: input tree filename</p></li>
-<li><p><strong>tree_schema</strong>: input tree format</p></li>
-<li><p><strong>wrangler_configuration_file</strong>: tree data wrangler configuration file</p></li>
-<li><p><strong>out_tree_filename</strong>: output tree filename</p></li>
-<li><p><strong>out_tree_schema</strong>: output tree format</p></li>
-</ul>
-</li>
 <li><p>Optional</p>
 <ul>
+<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
+<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
 <li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
 </ul>
 </li>
+<li><p>Required:</p>
+<ul>
+<li><p><strong>in_species_list_filename</strong>: Input filename containing species list.</p></li>
+<li><p><strong>wrangler_configuration_file</strong>: species list data wrangler configuration file</p></li>
+<li><p><strong>out_species_list_filename</strong>: output filename for resulting resolved species list.</p></li>
 </ul>
-<p>An example configuration file to process a tree, using data wranglers specified in
-wrangler_conf_resolve_occurrence_names.json, writing all files to the
-/biotaphy_data/output directory.</p>
+</li>
+</ul>
+<p>An example configuration file to process the saxifragales.txt species list, using the
+AcceptedNameSpeciesListWrangler data wrangler specified in wrangle_list_names.json.</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;report_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/output/resolve_tree_names.rpt&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;tree_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/input/subtree-ottol-saxifragales.tre&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;tree_schema&quot;</span><span class="p">:</span> <span class="s2">&quot;newick&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;wrangler_configuration_file&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/param_config/wrangle_treenames.json&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;out_tree_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/output/ottol-Saxifragales.tre&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;out_tree_schema&quot;</span><span class="p">:</span> <span class="s2">&quot;newick&quot;</span>
+  <span class="nt">&quot;log_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/output/resolve_list_names.log&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;log_console&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nt">&quot;report_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/output/resolve_list_names.rpt&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;in_species_list_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/input/heuchera.txt&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;wrangler_configuration_file&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/config/wrangle_list_names.txt&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;out_species_list_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/input/saxifragales_accepted.txt&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -137,8 +136,8 @@ parameters for each.  Configuration files:</p>
 <li><p>are in JSON format, a list of one dictionary per desired wrangler.</p></li>
 <li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler types.</p></li>
 <li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
-<li><p>A list of tree wrangler_types and the required and/or optional parameters for each
-are <a class="reference internal" href="tree_wrangler.html"><span class="doc std std-doc">here</span></a></p></li>
+<li><p>A list of species list wrangler_types and the required and/or optional parameters
+for each are <a class="reference internal" href="species_list_wrangler.html"><span class="doc std std-doc">here</span></a></p></li>
 </ul>
 </section>
 </section>
@@ -146,18 +145,18 @@ are <a class="reference internal" href="tree_wrangler.html"><span class="doc std
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this headline"></a></h2>
 <p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh wrangle_tree data/param_config/resolve_tree_names.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh  wrangle_species_list  data/param_config/resolve_list_names.json
 </pre></div>
 </div>
 <p>for windows:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat wrangle_tree data\param_config\resolve_tree_names.json
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat  wrangle_species_list  data\param_config\resolve_list_names.json
 </pre></div>
 </div>
 </section>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
-<p>This process outputs a file containing the modified tree in the requested format, one
-Current available taxonomic services include only GBIF at this time.</p>
+<p>This process outputs a text file containing the modified species list, one name per
+line.  Current available taxonomic services include only GBIF at this time.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">argparse</span>
 <span class="kn">import</span> <span class="nn">lmpy</span>
 <span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
@@ -167,8 +166,9 @@ Current available taxonomic services include only GBIF at this time.</p>
 <span class="kn">from</span> <span class="nn">lmpy.tree</span> <span class="kn">import</span> <span class="n">TreeWrapper</span>
 
 <span class="n">tree_fn</span> <span class="o">=</span> <span class="s2">&quot;../tutorials/data/input/subtree-ottol-saxifragales.tre&quot;</span>
+<span class="n">conf_fn</span> <span class="o">=</span> <span class="s2">&quot;../tutorials/data/param_config/wrangle_tree_names.json&quot;</span>
 <span class="n">conf_fn</span> <span class="o">=</span> <span class="s2">&quot;../tutorials/data/param_config/wrangle_treenames.json&quot;</span>
-<span class="n">conf_fn</span> <span class="o">=</span> <span class="s2">&quot;/biotaphy_data/param_config/resolve_list_names.json&quot;</span>
+<span class="n">conf_fn</span> <span class="o">=</span> <span class="s2">&quot;/volumes/param_config/resolve_list_names.json&quot;</span>
 
 <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">prog</span><span class="o">=</span><span class="s1">&#39;wrangle_species_list&#39;</span><span class="p">)</span>
 <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--config_file&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Path to configuration file.&#39;</span><span class="p">)</span>
@@ -215,6 +215,7 @@ Current available taxonomic services include only GBIF at this time.</p>
     <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">wrangler_config_filename</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;rt&#39;</span><span class="p">))</span>
 <span class="p">)</span>
 
+<span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="mi">96128619</span><span class="n">ae4020ef6bd751e4ace5df25b4989533</span>
 
 <span class="n">tree</span> <span class="o">=</span> <span class="n">TreeWrapper</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">tree_fn</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="s2">&quot;newick&quot;</span><span class="p">)</span>
 <span class="n">wrangler_factory</span> <span class="o">=</span> <span class="n">WranglerFactory</span><span class="p">()</span>
@@ -224,7 +225,10 @@ Current available taxonomic services include only GBIF at this time.</p>
 <span class="n">wrangler</span> <span class="o">=</span> <span class="n">wranglers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">wtree</span> <span class="o">=</span> <span class="n">wrangler</span><span class="o">.</span><span class="n">wrangle_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
 
+<span class="nb">dir</span><span class="p">(</span><span class="n">wtree</span><span class="o">.</span><span class="n">taxon_namespace</span><span class="p">)</span>
 
+<span class="k">for</span> <span class="n">taxon</span> <span class="ow">in</span> <span class="n">wtree</span><span class="o">.</span><span class="n">taxon_namespace</span><span class="p">:</span>
+    
 </pre></div>
 </div>
 </section>

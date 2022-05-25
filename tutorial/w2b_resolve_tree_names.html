@@ -39,6 +39,10 @@
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="occurrence_wrangler.html">Occurrence Data Wrangler types</a></li>
 </ul>
 
         </div>
@@ -103,13 +107,13 @@ optional parameters:</p>
 </ul>
 <p>An example configuration file to process a tree, using data wranglers specified in
 wrangler_conf_resolve_occurrence_names.json, writing all files to the
-/biotaphy_data/output directory.</p>
+/volumes/output directory.</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;report_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/output/resolve_tree_names.rpt&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;tree_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/input/subtree-ottol-saxifragales.tre&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;report_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/output/resolve_tree_names.rpt&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;tree_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/data/input/subtree-ottol-saxifragales.tre&quot;</span><span class="p">,</span>
     <span class="nt">&quot;tree_schema&quot;</span><span class="p">:</span> <span class="s2">&quot;newick&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;wrangler_configuration_file&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/param_config/wrangle_treenames.json&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;out_tree_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/output/ottol-Saxifragales.tre&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;wrangler_configuration_file&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/config/wrangle_tree_names.json&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;out_tree_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/output/ottol-Saxifragales.tre&quot;</span><span class="p">,</span>
     <span class="nt">&quot;out_tree_schema&quot;</span><span class="p">:</span> <span class="s2">&quot;newick&quot;</span>
 <span class="p">}</span>
 </pre></div>

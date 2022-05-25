@@ -4,6 +4,18 @@ Biotaphy Tutorial Glossary
 
 .. glossary::
 
+  Algorithm
+    An algorithm is a procedure or formula for solving a problem.  There are  multiple
+    algorithms for computing Species Distribution Models (SDM) which
+    define the relationship between a set of points and the environmental values
+    at those points.
+
+  Biogeographic Hypotheses
+    Spatial layers for testing the influence of geographic elements, such as
+    geology, drainage basins, etc, on the biodiversity of a landscape. These
+    can be in the form of raster or vector files.
+
+
   CSV
     CSV (Comma Separated Values) is a file format for records, in which fields are
     separated by a delimiter.  Commas and tabs are common, but other characters may
@@ -18,19 +30,45 @@ Biotaphy Tutorial Glossary
     Data wranglers are types of specify-lmpy data modification tools for filtering or
     editing data using specified criteria or methods.
 
+  Environmental Layer
+    Raster data representing environmental values for cells in a map.  Data
+    may be numeric or categorical, with only one value per cell.
+    Public data in BiotaPhy installations are in the 'Geographic' spatial
+    reference system, latitude and longitude in decimal degrees.
+
   Geospatial data
+    Geospatial data is data with geographic location associated with it, i.e. map
+    data.  There are two kinds of spatial data, raster data and vector data.  Each
+    has properties that make it better for representing different information.
     Geospatial data is discussed in more detail [here](./spatial_data.rst)
 
   Matrix
     A Matrix is a multi-dimensional array of values.
 
+  MCPA
+    Meta-Community Phylogenetic Analysis (MCPA, Leibold et al, 2010) is a "method that
+    aims to evaluate the interaction between phylogenetic structure, historical
+    biogeographic events and environmental filtering in driving species distributions in
+    a large-scale metacommunity".
+
   PAM
-    A Presence-Absence Matrix (PAM) is a 2-dimensional Matrix of sites (rows) and
-    species (columns) encoded as presence (1) or absence (0).
+    A Presence-Absence Matrix (PAM) is a 2-dimensional, binary Matrix of sites (rows)
+    and species (columns).  The matrix contains species distributions of 0 and 1
+    indicating presence or non-presence (absence) in each grid cell of a region. The
+    matrix may be thought of as a three-dimensional cube of binary maps, with one
+    layer per species.  The 3-dimensional matrix is flattened into 2 dimensions, with
+    rows representing sites with an x,y coordinate for the center of a gridcell on a
+    map, and columns representing species.
 
   Occurrence
     An occurrence is a record of a specimen occurrence including metadata about the
     specimen and the spatial location where it was found.
+
+  Occurrence Data
+    Point data representing specimens collected for a single species or taxa.  Data
+    contains a location, x and y, in some known geographic spatial reference system.
+    Public data in BiotaPhy installations are in the 'Geographic' spatial
+    reference system, latitude and longitude in decimal degrees.
 
   Grid
     A grid (in this context) is a geospatial region represented as a contiguous set of
@@ -38,13 +76,30 @@ Biotaphy Tutorial Glossary
     vector data, with one square polygon for every grid-cell, and stored in shapefile
     format.
 
-  Species Distribution Model
-    A species distribution model is a estimation of potential habitat for a particular
-    species.
-
-  Tree
-    A Tree is a set of hierarchical data.  In this tutorial, our tree data is all
-    phylogenetic data, and is represented in
+  Phylogenetic Tree
+    A Phylogenetic :term:`Tree` contains species names or identifiers for  analyzing
+    evolutionary patterns.  BiotaPhy uses phylogenetic trees matching species
+    data in a :term:`PAM` to correlate evolutionary patterns with species
+    distributions and landscape features. Trees are stored in
     [Newick](https://evolution.genetics.washington.edu/phylip/newicktree.html) or
     [Nexus](http://wiki.christophchamp.com/index.php?title=NEXUS_file_format) format.
 
+  SDM
+    Species Distribution Modeling (SDM) is also known by several other names, including
+    environmental niche modeling, ecological niche modeling, and habitat modeling.
+    SDM refers to the process of creating mathematical formulas (models) to predict the
+    geographic distribution of species based on where they have been found and the
+    environmental conditions in those locations.
+
+  Species Distribution Model
+    A species distribution model (SDM) is a estimation of potential habitat for a particular
+    species.
+
+  Tree
+    A Tree is a set of hierarchical data.
+
+  Ultrametric Tree
+    A :term:`Phylogenetic Tree` may contain numbers on the edges between species nodes
+    corresponding to the hypothesized time between the evolution of one species node to
+    the other.  In an Ultrametric tree, the branch length from each tip in
+    the tree up to the root, is equal to all other tip-to-root total lengths.

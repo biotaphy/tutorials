@@ -34,15 +34,15 @@ optional parameters:
 
 An example configuration file to process a tree, using data wranglers specified in 
 wrangler_conf_resolve_occurrence_names.json, writing all files to the 
-/biotaphy_data/output directory.  
+/volumes/output directory.  
 
 ```json lines
 {
-    "report_filename": "/biotaphy_data/output/resolve_tree_names.rpt",
-    "tree_filename": "/biotaphy_data/input/subtree-ottol-saxifragales.tre",
+    "report_filename": "/volumes/output/resolve_tree_names.rpt",
+    "tree_filename": "/volumes/data/input/subtree-ottol-saxifragales.tre",
     "tree_schema": "newick",
-    "wrangler_configuration_file": "/biotaphy_data/param_config/wrangle_treenames.json",
-    "out_tree_filename": "/biotaphy_data/output/ottol-Saxifragales.tre",
+    "wrangler_configuration_file": "/volumes/config/wrangle_tree_names.json",
+    "out_tree_filename": "/volumes/output/ottol-Saxifragales.tre",
     "out_tree_schema": "newick"
 }
 ```

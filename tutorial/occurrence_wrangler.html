@@ -18,7 +18,8 @@
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="../pages/spatial_data.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -37,8 +38,26 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Occurrence Data Wrangler types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#acceptednameoccurrencewrangler">AcceptedNameOccurrenceWrangler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#attributefilterwrangler">AttributeFilterWrangler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#attributemodifierwrangler">AttributeModifierWrangler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#boundingboxfilter">BoundingBoxFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commonformatwrangler">CommonFormatWrangler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordinateconverterwrangler">CoordinateConverterWrangler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#decimalprecisionfilter">DecimalPrecisionFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#disjointgeometriesfilter">DisjointGeometriesFilter’</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#intersectgeometriesfilter">IntersectGeometriesFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#minimumpointswrangler">MinimumPointsWrangler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spatialindexfilter">SpatialIndexFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uniquelocalitiesfilter">UniqueLocalitiesFilter</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -88,8 +107,7 @@ name wrangling.  Defaults to None.</p></li>
 <li><p>map_write_interval (int): Interval at which to write records to disk.  Used to
 ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 <li><p>out_map_format (str): Type of file format for out_map_filename, defaults to “json”.</p></li>
-<li><p>store_original_attribute (str): A new attribute to store the
-original taxon name.</p></li>
+<li><p>store_original_attribute (str): A new attribute to store the original taxon name.</p></li>
 </ul>
 </li>
 </ul>
@@ -225,7 +243,9 @@ and returns a boolean indication if the hit should be counted.</p></li>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../pages/spatial_data.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 

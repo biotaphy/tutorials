@@ -39,6 +39,10 @@
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="occurrence_wrangler.html">Occurrence Data Wrangler types</a></li>
 </ul>
 
         </div>
@@ -79,7 +83,13 @@
 <p>Either,</p>
 <ol class="arabic simple">
 <li><p>a file containing tab or comma-delimited records of specimen occurrence data; or</p></li>
-<li><p>a Darwin Core Archive (DwCA) of occurrence data.</p></li>
+<li><p>a Darwin Core Archive (DwCA) of occurrence data.</p>
+<ol class="arabic simple">
+<li><p>GBIF query for heuchera:
+https://www.gbif.org/occurrence/search?taxon_key=3032645&amp;occurrence_status=present
+GBIF.org (19 May 2022) GBIF Occurrence Download https://doi.org/10.15468/dl.vhs4ju</p></li>
+</ol>
+</li>
 </ol>
 <p><a class="reference external" href="https://www.gbif.org/">GBIF</a>, <a class="reference external" href="https://www.idigbio.org/portal">iDigBio</a>,
 <a class="reference external" href="https://www.ala.org.au/">Atlas of Living Australia</a>, and more, provide
@@ -139,35 +149,35 @@ will be included in outputs.</p></li>
 </li>
 </ul>
 <p>An example configuration file to process a DwCA, using data wranglers specified in
-wrangle_occnames.json, writing all files to the /biotaphy_data/output directory.</p>
+wrangle_occnames.json, writing all files to the /volumes/output directory.</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;max_open_writers&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
     <span class="nt">&quot;key_field&quot;</span><span class="p">:</span> <span class="s2">&quot;scientificName&quot;</span><span class="p">,</span>
     <span class="nt">&quot;dwca&quot;</span><span class="p">:</span>  <span class="p">[</span>
-        <span class="p">[</span><span class="s2">&quot;/biotaphy_data/input/occ_idigbio.zip&quot;</span><span class="p">,</span>
-         <span class="s2">&quot;/biotaphy_data/param_config/wrangle_occnames.json&quot;</span>
+        <span class="p">[</span><span class="s2">&quot;/volumes/data/input/occ_idigbio.zip&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/volumes/data/config/wrangle_occnames.json&quot;</span>
         <span class="p">]</span>
     <span class="p">],</span>
-    <span class="nt">&quot;out_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/output&quot;</span>
+    <span class="nt">&quot;out_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/output&quot;</span>
 
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>An example configuration file to process a CSV, using data wranglers specified in
 wrangler_conf_resolve_occurrence_names2.json, writing the files to the
-/biotaphy_data/output directory.</p>
+/volumes/output directory.</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;max_open_writers&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
     <span class="nt">&quot;key_field&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;family&quot;</span><span class="p">,</span> <span class="s2">&quot;genus&quot;</span><span class="p">,</span> <span class="s2">&quot;scientificName&quot;</span><span class="p">],</span>
     <span class="nt">&quot;csv&quot;</span><span class="p">:</span>  <span class="p">[</span>
-        <span class="p">[</span><span class="s2">&quot;/biotaphy_data/input/gbif_sax_100k.csv&quot;</span><span class="p">,</span>
-         <span class="s2">&quot;/biotaphy_data/param_config/wrangle_occurrences.json&quot;</span><span class="p">,</span>
+        <span class="p">[</span><span class="s2">&quot;/volumes/data/input/gbif_sax_100k.csv&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;/volumes/data/config/wrangle_occurrences.json&quot;</span><span class="p">,</span>
          <span class="s2">&quot;scientificName&quot;</span><span class="p">,</span> 
           <span class="s2">&quot;longitude&quot;</span><span class="p">,</span> 
           <span class="s2">&quot;latitude&quot;</span>
         <span class="p">]</span>
     <span class="p">],</span>
-    <span class="nt">&quot;out_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/biotaphy_data/output&quot;</span>
+    <span class="nt">&quot;out_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/volumes/output&quot;</span>
 
 <span class="p">}</span>
 </pre></div>
