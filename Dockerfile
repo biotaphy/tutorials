@@ -41,9 +41,9 @@ ENV MAXENT_JAR=/git/Maxent/ArchivedReleases/$MAXENT_VERSION/maxent.jar
 # .....................................................................................
 
 # .....................................................................................
-# Copy read-only inputs to volume
+# Populate (pre-created, read-only) volume with inputs
 COPY ./data/input /volumes/data/input
-COPY ./data/params /volumes/data/params
+COPY ./data/config /volumes/data/config
 
 SHELL ["/bin/bash", "-c"]
 

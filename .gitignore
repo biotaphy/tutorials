@@ -13,3 +13,5 @@ data/input/*.tif
 data/input/gbif_sax_100k.csv
 data/input/tmp
 meta.xml
+output
+.env
