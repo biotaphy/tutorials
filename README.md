@@ -21,8 +21,8 @@ cd tutorials
 3. Run the bash script with a command and configuration file to:
 
    1. create the volumes `data` and `output` (if they do not exist) 
-   2. build the container `tutor` (if it does not exist) 
-   3. start a container with volumes attached and 
+   2. build the image `tutor` (if it does not exist) 
+   3. start a container `tutor_container` with volumes attached and 
    4. run the chosen command with chosen configuration file
    5. compute output files in the `output` volume
    6. copy output files to the host machine

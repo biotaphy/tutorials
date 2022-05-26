@@ -3,7 +3,7 @@
     "key_field": ["genus","scientificName"],
     "dwca":  [
         ["/volumes/data/input/occ_sax_gbif.zip",
-         "/volumes/data/param_config/wrangle_nothing.json"
+         "/volumes/data/config/wrangle_nothing.json"
         ]
     ],
     "out_dir": "/volumes/output"

@@ -7,8 +7,8 @@ services:
       target: backend
     volumes:
       # bind mounts
-      - ./data/input:/volumes/input:ro
-      - ./data/param_config:/volumes/param_config:ro
+      - ./data/input:/volumes/data/input:ro
+      - ./data/config:/volumes/data/config:ro
       # named volume
       - output:/volumes/output
 

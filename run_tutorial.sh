@@ -4,10 +4,13 @@
 # with parameters to run a command in a docker container with an input-parameter
 # configuration file
 #
-# Note: this script uses a provided param_config file to
-#       1) populate docker .env file with a command and configuration filename
-#       2) call docker-compose up with the supplemental docker-compose file
-#          using
+# Note: this script uses a provided config file to
+#   1. create the volumes `data` and `output` (if they do not exist)
+#   2. build the image `tutor` (if it does not exist)
+#   3. start a container with volumes attached and
+#   4. run the chosen command with chosen configuration file
+#   5. compute output files in the `output` volume
+#   6. copy output files to the host machine
 
 # -----------------------------------------------------------
 usage ()
@@ -36,7 +39,7 @@ set_defaults() {
     # Relative host config directory mapped to container config directory
     VOLUME_MOUNT="/volumes"
     host_config_dir="$RO_VOLUME/config"
-    docker_config_dir="$VOLUME_MOUNT/$host_config_dir"
+    container_config_dir="$VOLUME_MOUNT/$host_config_dir"
 
     if [ ! -f "$HOST_CONFIG_FILE" ] ; then
         echo "File $HOST_CONFIG_FILE does not exist"
@@ -48,33 +51,33 @@ set_defaults() {
         /usr/bin/rm "$LOG"
     fi
     touch "$LOG"
-    CONTAINER_CONFIG_FILE=$(echo $HOST_CONFIG_FILE | sed "s:^$host_config_dir:$docker_config_dir:g")
+    CONTAINER_CONFIG_FILE=$(echo $HOST_CONFIG_FILE | sed "s:^$host_config_dir:$container_config_dir:g")
 }
 
 
 ## -----------------------------------------------------------
-#create_docker_envfile() {
-#    docker_envfile="./.env"
-#    if [ -f "$docker_envfile" ] ; then
-#        /usr/bin/rm "$docker_envfile"
+#create_envfile() {
+#    envfile="./.env"
+#    if [ -f "$envfile" ] ; then
+#        /usr/bin/rm "$envfile"
 #    fi
-#    touch "$docker_envfile"
+#    touch "$envfile"
 #
 #    echo " - Created environment to run:"  | tee -a "$LOG"
 #    echo "        with command ${CMD}"  | tee -a "$LOG"
 #
-#    echo "command=${CMD}"  >> "$docker_envfile"
+#    echo "command=${CMD}"  >> "$envfile"
 #    if [ ! "$CONTAINER_CONFIG_FILE" ]  ; then
 #        echo "        without a configuration file argument"  | tee -a "$LOG"
 #    else
-#        echo "config_file=${CONTAINER_CONFIG_FILE}"  >> "$docker_envfile"
+#        echo "config_file=${CONTAINER_CONFIG_FILE}"  >> "$envfile"
 #        echo "        and config_file ${CONTAINER_CONFIG_FILE}"  | tee -a "$LOG"
 #    fi
 #}
 
 
 ## -----------------------------------------------------------
-#create_docker_volumes() {
+#create_volumes() {
 #    # Create a named volume for use by any container
 #    volumes=($RO_VOLUME $RW_VOLUME)
 #    for i in "${!volumes[@]}"; do
@@ -89,7 +92,7 @@ set_defaults() {
 #}
 
 # -----------------------------------------------------------
-create_docker_volumes() {
+create_volumes() {
     # Create named RO input volume for use by any container
     ro_vol_exists=$(docker volume ls | grep $RO_VOLUME | wc -l )
     if [ "$ro_vol_exists" == "0" ]; then
@@ -108,9 +111,9 @@ create_docker_volumes() {
 
 
 # -----------------------------------------------------------
-build_docker_image() {
+build_image() {
     # Build and name an image from Dockerfile in this directory
-    image_exists=$(docker image list | grep $IMAGE_NAME | wc -l )
+    image_exists=$(docker image ls | grep $IMAGE_NAME | wc -l )
     if [ "$image_exists" == "0" ]; then
         docker build . -t $IMAGE_NAME
     else
@@ -120,11 +123,14 @@ build_docker_image() {
 
 
 # -----------------------------------------------------------
+#docker run -td --name tutor_container -v data:/volumes/data:ro -v output:/volumes/output tutor bash
 start_container() {
     container_count=$(docker ps | grep $CONTAINER_NAME |  wc -l )
     if [ $container_count -ne 1 ]; then
         # Option string for volumes
-        vol_opts="--volume ${RO_VOLUME}:${VOLUME_MOUNT}/${RO_VOLUME}:ro \
+        # TODO: after debugging, add read-only back to data volume
+#        vol_opts="--volume ${RO_VOLUME}:${VOLUME_MOUNT}/${RO_VOLUME}:ro \
+        vol_opts="--volume ${RO_VOLUME}:${VOLUME_MOUNT}/${RO_VOLUME} \
                   --volume ${RW_VOLUME}:${VOLUME_MOUNT}/${RW_VOLUME}"
         # Start the container, leaving it up
         echo " - Run container $CONTAINER_NAME from image $IMAGE_NAME" | tee -a "$LOG"
@@ -136,6 +142,7 @@ start_container() {
 
 
 # -----------------------------------------------------------
+#docker exec -it tutor_container ls -lahtr /volumes/output
 execute_process() {
     # Command to execute in container; `test` lists directory contents
     if [ $CMD = "test" ]; then
@@ -146,43 +153,45 @@ execute_process() {
 
     container_count=$(docker ps | grep $CONTAINER_NAME |  wc -l )
     if [ $container_count -eq 1 ]; then
-        echo " - Ready to execute: ${command}" | tee -a "$LOG"
+        echo " - Execute '${command}' on container $CONTAINER_NAME" | tee -a "$LOG"
         # Run the command in the container
         docker exec -it ${CONTAINER_NAME} ${command}
     else
-        echo " - Container $CONTAINER_NAME is not running to execute_process" | tee -a "$LOG"
+        echo " - Container $CONTAINER_NAME not running to execute_process" | tee -a "$LOG"
     fi
 }
 
 
 # -----------------------------------------------------------
+#docker cp tutor_container:/volumes/output  ./data/
 save_outputs() {
     # TODO: determine if bind-mount is more efficient than this named-volume
-    # Find container id
+    # Find running container
     container_count=$(docker ps | grep $CONTAINER_NAME |  wc -l )
     if [ $container_count -eq 1 ]; then
-        # If host directory does not exist, create it
-        if [ ! -d "$RW_VOLUME" ] ; then
-            mkdir ${RW_VOLUME}
-        else
-            echo " - Host directory $RW_VOLUME already exists" | tee -a "$LOG"
-        fi
-        # Copy command outputs (no wildcards) from container volume to host directory
+        # Copy entire container output directory to host (no wildcards)
+        # If directory exists, does not overwrite, just adds contents
         echo " - Copy outputs from container $CONTAINER_NAME" | tee -a "$LOG"
-        docker cp ${CONTAINER_NAME}:${VOLUME_MOUNT}/${RW_VOLUME}/  ./${RW_VOLUME}/
+        docker cp ${CONTAINER_NAME}:${VOLUME_MOUNT}/${RW_VOLUME}  ./${RO_VOLUME}/
     else
-        echo " - Container $CONTAINER_NAME is not running to save_outputs" | tee -a "$LOG"
+        echo " - Container $CONTAINER_NAME not running to save_outputs" | tee -a "$LOG"
     fi
 }
 
 
 # -----------------------------------------------------------
-stop_container() {
-    # Find container id
-    container_count=$(docker ps | grep $CONTAINER_NAME |  wc -l )
+#docker run -td --name tutor_container -v data:/volumes/data:ro -v output:/volumes/output tutor bash
+#docker exec -it tutor_container ls -lahtr /volumes/output
+#docker stop tutor_container
+#docker container rm tutor_container
+remove_container() {
+    # Find container, running or stopped
+    container_count=$(docker ps -a | grep $CONTAINER_NAME |  wc -l )
     if [ $container_count -eq 1 ]; then
         echo " - Stop container $CONTAINER_NAME" | tee -a "$LOG"
         docker stop $CONTAINER_NAME
+        echo " - Remove container $CONTAINER_NAME" | tee -a "$LOG"
+        docker container rm $CONTAINER_NAME
     else
         echo " - Container $CONTAINER_NAME is not running" | tee -a "$LOG"
     fi
@@ -210,18 +219,18 @@ HOST_CONFIG_FILE=$2
 set_defaults
 time_stamp "# Start"
 
-echo "Container command is: $CMD --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
+echo "Container command: $CMD --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
 
 if [[ " ${COMMANDS[*]} " =~  ${CMD}  ]]; then
     if [ "$CMD" == "list_commands" ] ; then
         usage
     else
-        create_docker_volumes
-        build_docker_image
+        create_volumes
+        build_image
         start_container
         execute_process
         save_outputs
-        stop_container
+        remove_container
     fi
 fi
 
