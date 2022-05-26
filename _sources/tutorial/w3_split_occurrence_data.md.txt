@@ -131,11 +131,11 @@ Initiate the clean occurrences process with the following:
 for linux/mac systems
 
 ```zsh
-bash run_tutorial.sh split_occurrence_data data/param_config/split_occurrence_data.json
+bash run_tutorial.sh split_occurrence_data data/config/split_occurrence_data.json
 ```
 
 for windows systems
 
 ```cmd
-./run_tutorial.bat split_occurrence_data data\param_config\split_occurrence_data.json
+./run_tutorial.bat split_occurrence_data data\config\split_occurrence_data.json
 ```

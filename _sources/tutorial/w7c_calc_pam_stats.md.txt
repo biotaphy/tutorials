@@ -28,7 +28,7 @@ Initiate the build_grid process with the following:
 
 for linux/mac systems
 ```zsh
-bash run_tutorial.sh build_grid data/param_config/build_grid.json
+bash run_tutorial.sh build_grid data/config/build_grid.json
 ```
 
 for windows: 

@@ -13,7 +13,7 @@ Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all 
 ## Data preparation
 
 ### Configuration File
-An example json file for running the clean_occurrences tutorial is at ../../data/param_config/clean_occurrences.json. 
+An example json file for running the clean_occurrences tutorial is at ../../data/config/clean_occurrences.json. 
 These are the required and optional parameters: 
 
 * Required: 
@@ -64,12 +64,12 @@ Initiate the clean occurrences process with two arguments, the 1) command name a
 
 for linux/mac systems
 ```zsh
-bash run_tutorial.sh clean_occurrences data/param_config/clean_occurrences.json
+bash run_tutorial.sh clean_occurrences data/config/clean_occurrences.json
 ```
 
 for windows systems
 ```cmd
-./run_tutorial.bat clean_occurrences data\param_config\clean_occurrences.json
+./run_tutorial.bat clean_occurrences data\config\clean_occurrences.json
 ```
 
 ## Output

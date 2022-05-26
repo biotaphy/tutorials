@@ -10,7 +10,7 @@ work.
 ### Configuration File
 
 An example json file for running the encode_layers tutorial is at 
-../../data/param_config/encode_layers.json. These are the required and optional 
+../../data/config/encode_layers.json. These are the required and optional 
 parameters:
 
 * Required: 
@@ -34,11 +34,11 @@ Initiate the clean occurrences process with the following:
 for linux/mac systems
 
 ```zsh
-bash run_tutorial.sh encode_layers data/param_config/encode_layers.ini
+bash run_tutorial.sh encode_layers data/config/encode_layers.ini
 ```
 
 for windows systems
 
 ```cmd
-./run_tutorial.bat encode_layers data\param_config\encode_layers.ini
+./run_tutorial.bat encode_layers data\config\encode_layers.ini
 ```

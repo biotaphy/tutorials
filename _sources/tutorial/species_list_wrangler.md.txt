@@ -11,8 +11,8 @@ arguments for that wrangler.
 
 * optional
   
-  * name_map (dict): A map of original name to accepted name.    Defaults to None, but 
-    either this or name_resolver must be provided.
+  * name_map (dict): A map of original name to accepted name.  Defaults to None, but 
+    either this or name_resolver **must be provided**.
   * name_resolver (str or Method): Use this method for getting new 
     accepted names. If set to 'gbif' or 'otol', use GBIF or OTOL name resolution 
     respectively.  Defaults to None, but either this or name_map must be provided.
@@ -46,3 +46,13 @@ arguments for that wrangler.
 * required
 
   * species_list (str): Filename containing species list to join 
+
+# Wrangler configuration file
+
+A file specifying 0 or more wranglers to apply to the species list, and options 
+specific to each.  Configuration files:
+
+  * are in JSON format, a list of desired wranglers.
+  * Each wrangler is a dictionary.
+  * Each dictionary must contain "wrangler_type", with the name of the wrangler type.
+  * The dictionary will also contain all required parameters and any optional parameters.

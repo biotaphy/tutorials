@@ -1,0 +1,8 @@
+{
+  "log_filename": "/volumes/output/resolve_list_names.log",
+  "log_console": true,
+  "report_filename": "/volumes/output/resolve_list_names.rpt",
+  "in_species_list_filename": "/volumes/data/input/heuchera.txt",
+  "wrangler_configuration_file": "/volumes/data/config/wrangle_list_names.json",
+  "out_species_list_filename": "/volumes/output/heuchera_accepted.txt"
+}

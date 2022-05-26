@@ -81,8 +81,8 @@ arguments for that wrangler.</p>
 <ul class="simple">
 <li><p>optional</p>
 <ul>
-<li><p>name_map (dict): A map of original name to accepted name.    Defaults to None, but
-either this or name_resolver must be provided.</p></li>
+<li><p>name_map (dict): A map of original name to accepted name.  Defaults to None, but
+either this or name_resolver <strong>must be provided</strong>.</p></li>
 <li><p>name_resolver (str or Method): Use this method for getting new
 accepted names. If set to ‘gbif’ or ‘otol’, use GBIF or OTOL name resolution
 respectively.  Defaults to None, but either this or name_map must be provided.</p></li>
@@ -136,6 +136,17 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </li>
 </ul>
 </section>
+</section>
+<section id="wrangler-configuration-file">
+<h1>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this headline"></a></h1>
+<p>A file specifying 0 or more wranglers to apply to the species list, and options
+specific to each.  Configuration files:</p>
+<ul class="simple">
+<li><p>are in JSON format, a list of desired wranglers.</p></li>
+<li><p>Each wrangler is a dictionary.</p></li>
+<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler type.</p></li>
+<li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
+</ul>
 </section>
 
 

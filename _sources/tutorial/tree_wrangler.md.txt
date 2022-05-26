@@ -44,3 +44,13 @@ arguments for that wrangler.
 * required
   
   * keep_taxa (list of str): A list of taxon names to keep.
+
+# Wrangler configuration file
+
+A file specifying 0 or more wranglers to apply to the tree data, and options 
+specific to each.  Configuration files:
+
+  * are in JSON format, a list of desired wranglers.
+  * Each wrangler is a dictionary.
+  * Each dictionary must contain "wrangler_type", with the name of the wrangler type.
+  * The dictionary will also contain all required parameters and any optional parameters.
