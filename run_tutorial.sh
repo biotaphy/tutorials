@@ -180,10 +180,6 @@ save_outputs() {
 
 
 # -----------------------------------------------------------
-#docker run -td --name tutor_container -v data:/volumes/data:ro -v output:/volumes/output tutor bash
-#docker exec -it tutor_container ls -lahtr /volumes/output
-#docker stop tutor_container
-#docker container rm tutor_container
 remove_container() {
     # Find container, running or stopped
     container_count=$(docker ps -a | grep $CONTAINER_NAME |  wc -l )
@@ -235,3 +231,9 @@ if [[ " ${COMMANDS[*]} " =~  ${CMD}  ]]; then
 fi
 
 time_stamp "# End"
+
+
+docker run -td --name tutor_container -v data:/volumes/data:ro -v output:/volumes/output tutor bash
+docker exec -it tutor_container ls -lahtr /volumes/data/config
+docker stop tutor_container
+docker container rm tutor_container

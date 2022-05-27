@@ -5,7 +5,7 @@
     "report_filename": "/volumes/output/resolve_occurrence_names.rpt",
     "log_filename": "/volumes/output/resolve_occurrence_names.log",
     "log_console": true,
-    "reader_filename": "/volumes/input/heuchera.csv",
+    "reader_filename": "/volumes/data/input/heuchera.csv",
     "writer_filename": "/volumes/output/heuchera_accepted.csv",
-    "wrangler_config_filename": "/volumes/config/wrangle_occurrence_names.csv"
+    "wrangler_config_filename": "/volumes/data/config/wrangle_occurrence_names.json"
 }
