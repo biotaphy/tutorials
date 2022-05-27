@@ -1,9 +1,6 @@
 # Resolve taxonomy in a Darwin Core Archive (DwCA)
 
-Webinar 2, [Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U)
-(Module 2, map acquired names for consistency)
-
-Webinar 3, [Data Munging](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1) 
+**Webinar 3**, [Big Data Munging](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1) 
 (Module 2, Big-Data approaches)
 
 ## Introduction
@@ -12,113 +9,66 @@ Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all 
 
 ## Data Preparation
 
-### DwCA input data
-The split_occurrence_data tool accepts either a Darwin Core Archive (DwCA) file or a CSV file containing records for 
-one or more taxa.  For this tutorial, the example configuration file works on a DwCA from iDigBio.  To download from 
-iDigBio, full instructions are at the 
-[iDigBio Download API reference](https://www.idigbio.org/wiki/index.php/IDigBio_Download_API).
+### Input occurrence data
 
-To pull data from the command prompt, use the `curl` command to pull text response directly to terminal with the 
-example query_url:
-[Euphorbia](https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&email=donotreply%40idigbio.org)
-```zsh
-$ curl https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&email=donotreply%40idigbio.org
-[1] 58979
-astewart@murderbot:~/git/tutorials$ {
-  "complete": false, 
-  "created": "2022-05-02T15:28:41.730968+00:00", 
-  "expires": "2022-06-01T15:28:41.628063+00:00", 
-  "hash": "18911492e8517926cb8693fc9f971cf066107016", 
-  "query": {
-    "core_source": "indexterms", 
-    "core_type": "records", 
-    "form": "dwca-csv", 
-    "mediarecord_fields": null, 
-    "mq": null, 
-    "record_fields": null, 
-    "rq": {
-      "genus": "euphorbia"
-    }
-  }, 
-  "status_url": "https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38", 
-  "task_status": "PENDING"
-}
-```
+The split_occurrence_data tool accepts either a Darwin Core Archive (DwCA) file or a 
+CSV file containing records for one or more taxa.  
 
-Then use `curl` on the resulting **status_url** field:
-```zsh
-$ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
-{
-  "complete": false, 
-  "created": "2022-05-02T15:28:41.730968+00:00", 
-  "expires": "2022-06-01T15:28:41.735029+00:00", 
-  "hash": "18911492e8517926cb8693fc9f971cf066107016", 
-  "query": {
-    "core_source": "indexterms", 
-    "core_type": "records", 
-    "form": "dwca-csv", 
-    "mediarecord_fields": null, 
-    "mq": null, 
-    "record_fields": null, 
-    "rq": {
-      "genus": "euphorbia"
-    }
-  }, 
-  "status_url": "https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38", 
-  "task_status": "PENDING"
-}
-```
+1) The tutorial example DwCA is at [occ_sax_gbif.zip](../../data/input/occ_sax_gbif.zip)
+2) To download from GBIF, choose your filters in the portal 
+   https://www.gbif.org/occurrence.  For example, to select occurrences where 
+   genus=`Heuchera L`, 
+   https://www.gbif.org/occurrence/search?taxon_key=3032645&occurrence_status=present.
+   Then choose the download link at the upper right column header.
+3) To download from iDigBio, instructions for querying and downloading from the 
+   command prompt are at [idigbio_download.md](./idigbio_download.md). 
 
-When the task_status shows "SUCCESS": 
-```zsh
-$ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
-{
-  "complete": true, 
-  "created": "2022-05-02T15:28:41.730968+00:00", 
-  "download_url": "http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip", 
-  "expires": "2022-06-01T15:28:41.552351+00:00", 
-  "hash": "18911492e8517926cb8693fc9f971cf066107016", 
-  "query": {
-    "core_source": "indexterms", 
-    "core_type": "records", 
-    "form": "dwca-csv", 
-    "mediarecord_fields": null, 
-    "mq": null, 
-    "record_fields": null, 
-    "rq": {
-      "genus": "euphorbia"
-    }
-  }, 
-  "status_url": "https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38", 
-  "task_status": "SUCCESS"
-}
-```
+### Tool Configuration file
 
-Save the response into a file with the `wget` command and the **download_url** field:
-```zsh
-$ wget http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip
-```
-
-### Configuration file
-
-The split_occurrence_data configuration file consists of one or more "wrangler_type"s, 
-and= the wrangler-specific required and possibly optional parameters for each.  
-Available wrangler_types with their parameters are listed 
 
 [here](occurrence_wrangler_config.md)
 
+  * **max_open_writers**: The maximum number of data writers to have open at once.
+  * **key_field**: The field name (or names) to use for filenames.  This/these must be 
+    encased in square brackets, i.e. `"key_field": ["scientificName"]`. If multiple fields
+    are provided, the ordered fields specify the sub-directory structure used for 
+    organizing files.  The first field will specify the directory directly under
+    out_dir, and so on.  The final field will be contain the base filename.  These 
+    fields should be hierarchical.  For example, if grouping records into files by 
+    species, with a dataset containing 2000 species, using taxonomic grouping fields 
+    (in order from coarser to finer groups) 
+    such as `"key_field": ["family", "genus", "species"]` would create a file 
+    with records for the Giant Panda in 
+    "<out_dir>/Ursidae/Ailuropoda/Ailuropoda melanoleuca.csv".  
+    If this parameter is not specified, it will default to the fieldname for grouping 
+    data.  This is a required argument for CSV files and defaults to "scientificName" 
+    in DwCA files.  If there are more groups/files than are allowed in a directory, the   
+    files will be written to subdirectories by the beginning characters in the species 
+    name.
+  * **out_field**: The field name or names of columns to be included in output CSV files.
+    If this field is left out, all fields from the first successfully processed record
+    will be included in outputs.
+  * **dwca**: List of 0 or more lists, each containing 2 arguments 
+    * input DwCA file, and
+    * occurrence data wrangler configuration file (described in the next section). The 
+      example split_occurrence_data wrangler configuration used for this tutorial step 
+      is [here](../../input/wrangle_occurrences.json)
+  * **csv**:  List of 0 or more lists, each containing 5 arguments 
+    * input CSV file
+    * occurrence data wrangler configuration file (described in the next section).
+    * fieldname for grouping data (often a taxonomic designation such as scientificName)
+    * fieldname for the longitude/x coordinate
+    * fieldname for the latitude/y coordinate
+
 ### Occurrence Data Wranglers
 
-* A configuration file is in JSON format, a list of one dictionary per desired wrangler.
-  * Each dictionary must contain "wrangler_type", with the name of the wrangler types (listed below).
-  * The dictionary will also contain all required parameters and any optional parameters.
+An example split_occurrence_data wrangler configuration used for this tutorial step is 
+[here](../../input/wrangle_occurrences.json)
 
-* Currently, wrangler names correspond to the wrangler class `name` attribute in this module's files.
-* Each wrangler's parameters correspond to the constructor arguments for that wrangler.
-* The [Occurrence Data Wrangler Types](occurrence_wrangler.md) page contains a list of all occurrence data 
-  wrangler_types and the required and/or optional parameters for each.
-* An example split_occurrence_data wrangler configuration, used for this tutorial is 
-  [here](../../input/wrangler_conf_split_occurrence_data.json):
+The split_occurrence_data configuration file consists of one or more "wrangler_type"s, 
+and= the wrangler-specific required and possibly optional parameters for each.  
+Available wrangler_types with their parameters are listed at
+[Occurrence Data Wrangler Types](occurrence_wrangler.md)
 
 ```json lines
 
@@ -131,11 +81,11 @@ Initiate the clean occurrences process with the following:
 for linux/mac systems
 
 ```zsh
-bash run_tutorial.sh split_occurrence_data data/config/split_occurrence_data.json
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data.json
 ```
 
 for windows systems
 
 ```cmd
-./run_tutorial.bat split_occurrence_data data\config\split_occurrence_data.json
+run_tutorial.bat split_occurrence_data data\config\split_occurrence_data.json
 ```

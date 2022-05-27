@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download occurrence data from iDigBio &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Biotaphy Tutorials
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="occurrence_wrangler.html">Occurrence Data Wrangler types</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Biotaphy Tutorials</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Download occurrence data from iDigBio</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tutorial/idigbio_download.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="download-occurrence-data-from-idigbio">
+<h1>Download occurrence data from iDigBio<a class="headerlink" href="#download-occurrence-data-from-idigbio" title="Permalink to this headline"></a></h1>
+<p>To download from iDigBio, full instructions are at the
+<a class="reference external" href="https://www.idigbio.org/wiki/index.php/IDigBio_Download_API">Download API reference</a>.</p>
+<p>To pull data from the command prompt, use the <code class="docutils literal notranslate"><span class="pre">curl</span></code> command to pull text response
+directly to terminal with the example query_url:
+<a class="reference external" href="https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org">Euphorbia</a></p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/?rq<span class="o">=</span>%7B%22genus%22%3A%22euphorbia%22%7D<span class="p">&amp;</span><span class="nv">email</span><span class="o">=</span>donotreply%40idigbio.org
+<span class="o">[</span><span class="m">1</span><span class="o">]</span> <span class="m">58979</span>
+astewart@murderbot:~/git/tutorials$ <span class="o">{</span>
+  <span class="s2">&quot;complete&quot;</span>: false, 
+  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>, 
+  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.628063+00:00&quot;</span>, 
+  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>, 
+  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>, 
+    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>, 
+    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>, 
+    <span class="s2">&quot;mediarecord_fields&quot;</span>: null, 
+    <span class="s2">&quot;mq&quot;</span>: null, 
+    <span class="s2">&quot;record_fields&quot;</span>: null, 
+    <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>, 
+  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>, 
+  <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;PENDING&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Then use <code class="docutils literal notranslate"><span class="pre">curl</span></code> on the resulting <strong>status_url</strong> field:</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
+<span class="o">{</span>
+  <span class="s2">&quot;complete&quot;</span>: false, 
+  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>, 
+  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.735029+00:00&quot;</span>, 
+  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>, 
+  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>, 
+    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>, 
+    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>, 
+    <span class="s2">&quot;mediarecord_fields&quot;</span>: null, 
+    <span class="s2">&quot;mq&quot;</span>: null, 
+    <span class="s2">&quot;record_fields&quot;</span>: null, 
+    <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>, 
+  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>, 
+  <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;PENDING&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>When the task_status shows “SUCCESS”:</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
+<span class="o">{</span>
+  <span class="s2">&quot;complete&quot;</span>: true, 
+  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>, 
+  <span class="s2">&quot;download_url&quot;</span>: <span class="s2">&quot;http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip&quot;</span>, 
+  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.552351+00:00&quot;</span>, 
+  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>, 
+  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>, 
+    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>, 
+    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>, 
+    <span class="s2">&quot;mediarecord_fields&quot;</span>: null, 
+    <span class="s2">&quot;mq&quot;</span>: null, 
+    <span class="s2">&quot;record_fields&quot;</span>: null, 
+    <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>, 
+  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>, 
+  <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;SUCCESS&quot;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Save the response into a file with the <code class="docutils literal notranslate"><span class="pre">wget</span></code> command and the <strong>download_url</strong> field:</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ wget http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Biotaphy Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

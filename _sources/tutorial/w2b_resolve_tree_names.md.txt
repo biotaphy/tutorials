@@ -12,8 +12,7 @@ tutorials work.
 
 ### Input tree data
 
-Use an existing or create your own tree in Newick or Nexus format.  This file is 
-specified in the Configuration file described in the next section.   
+Use an existing or create your own tree in Newick or Nexus format.    
 
 1) The tutorial example tree is 
 [subtree-ottol-saxifragales.tre](../../data/input/subtree-ottol-saxifragales.tre).
@@ -41,6 +40,8 @@ These are the required and optional parameters:
 
 * Optional 
 
+  * **log_filename**: Output filename to write logging data
+  * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
 
 

@@ -71,9 +71,7 @@
              
   <section id="resolve-taxonomy-in-a-darwin-core-archive-dwca">
 <h1>Resolve taxonomy in a Darwin Core Archive (DwCA)<a class="headerlink" href="#resolve-taxonomy-in-a-darwin-core-archive-dwca" title="Permalink to this headline"></a></h1>
-<p>Webinar 2, <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U">Resolving Nomenclature</a>
-(Module 2, map acquired names for consistency)</p>
-<p>Webinar 3, <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1">Data Munging</a>
+<p><strong>Webinar 3</strong>, <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1">Big Data Munging</a>
 (Module 2, Big-Data approaches)</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
@@ -81,113 +79,72 @@
 </section>
 <section id="data-preparation">
 <h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
-<section id="dwca-input-data">
-<h3>DwCA input data<a class="headerlink" href="#dwca-input-data" title="Permalink to this headline"></a></h3>
-<p>The split_occurrence_data tool accepts either a Darwin Core Archive (DwCA) file or a CSV file containing records for
-one or more taxa.  For this tutorial, the example configuration file works on a DwCA from iDigBio.  To download from
-iDigBio, full instructions are at the
-<a class="reference external" href="https://www.idigbio.org/wiki/index.php/IDigBio_Download_API">iDigBio Download API reference</a>.</p>
-<p>To pull data from the command prompt, use the <code class="docutils literal notranslate"><span class="pre">curl</span></code> command to pull text response directly to terminal with the
-example query_url:
-<a class="reference external" href="https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org">Euphorbia</a></p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/?rq<span class="o">=</span>%7B%22genus%22%3A%22euphorbia%22%7D<span class="p">&amp;</span><span class="nv">email</span><span class="o">=</span>donotreply%40idigbio.org
-<span class="o">[</span><span class="m">1</span><span class="o">]</span> <span class="m">58979</span>
-astewart@murderbot:~/git/tutorials$ <span class="o">{</span>
-  <span class="s2">&quot;complete&quot;</span>: false, 
-  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>, 
-  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.628063+00:00&quot;</span>, 
-  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>, 
-  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
-    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>, 
-    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>, 
-    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>, 
-    <span class="s2">&quot;mediarecord_fields&quot;</span>: null, 
-    <span class="s2">&quot;mq&quot;</span>: null, 
-    <span class="s2">&quot;record_fields&quot;</span>: null, 
-    <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
-      <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
-    <span class="o">}</span>
-  <span class="o">}</span>, 
-  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>, 
-  <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;PENDING&quot;</span>
-<span class="o">}</span>
-</pre></div>
-</div>
-<p>Then use <code class="docutils literal notranslate"><span class="pre">curl</span></code> on the resulting <strong>status_url</strong> field:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
-<span class="o">{</span>
-  <span class="s2">&quot;complete&quot;</span>: false, 
-  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>, 
-  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.735029+00:00&quot;</span>, 
-  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>, 
-  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
-    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>, 
-    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>, 
-    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>, 
-    <span class="s2">&quot;mediarecord_fields&quot;</span>: null, 
-    <span class="s2">&quot;mq&quot;</span>: null, 
-    <span class="s2">&quot;record_fields&quot;</span>: null, 
-    <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
-      <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
-    <span class="o">}</span>
-  <span class="o">}</span>, 
-  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>, 
-  <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;PENDING&quot;</span>
-<span class="o">}</span>
-</pre></div>
-</div>
-<p>When the task_status shows “SUCCESS”:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
-<span class="o">{</span>
-  <span class="s2">&quot;complete&quot;</span>: true, 
-  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>, 
-  <span class="s2">&quot;download_url&quot;</span>: <span class="s2">&quot;http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip&quot;</span>, 
-  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.552351+00:00&quot;</span>, 
-  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>, 
-  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
-    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>, 
-    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>, 
-    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>, 
-    <span class="s2">&quot;mediarecord_fields&quot;</span>: null, 
-    <span class="s2">&quot;mq&quot;</span>: null, 
-    <span class="s2">&quot;record_fields&quot;</span>: null, 
-    <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
-      <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
-    <span class="o">}</span>
-  <span class="o">}</span>, 
-  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>, 
-  <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;SUCCESS&quot;</span>
-<span class="o">}</span>
-</pre></div>
-</div>
-<p>Save the response into a file with the <code class="docutils literal notranslate"><span class="pre">wget</span></code> command and the <strong>download_url</strong> field:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ wget http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip
-</pre></div>
-</div>
+<section id="input-occurrence-data">
+<h3>Input occurrence data<a class="headerlink" href="#input-occurrence-data" title="Permalink to this headline"></a></h3>
+<p>The split_occurrence_data tool accepts either a Darwin Core Archive (DwCA) file or a
+CSV file containing records for one or more taxa.</p>
+<ol class="arabic simple">
+<li><p>The tutorial example DwCA is at <span class="xref myst">occ_sax_gbif.zip</span></p></li>
+<li><p>To download from GBIF, choose your filters in the portal
+https://www.gbif.org/occurrence.  For example, to select occurrences where
+genus=<code class="docutils literal notranslate"><span class="pre">Heuchera</span> <span class="pre">L</span></code>,
+https://www.gbif.org/occurrence/search?taxon_key=3032645&amp;occurrence_status=present.
+Then choose the download link at the upper right column header.</p></li>
+<li><p>To download from iDigBio, instructions for querying and downloading from the
+command prompt are at <a class="reference internal" href="idigbio_download.html"><span class="doc std std-doc">idigbio_download.md</span></a>.</p></li>
+</ol>
 </section>
-<section id="configuration-file">
-<h3>Configuration file<a class="headerlink" href="#configuration-file" title="Permalink to this headline"></a></h3>
-<p>The split_occurrence_data configuration file consists of one or more “wrangler_type”s,
-and= the wrangler-specific required and possibly optional parameters for each.<br />
-Available wrangler_types with their parameters are listed</p>
+<section id="tool-configuration-file">
+<h3>Tool Configuration file<a class="headerlink" href="#tool-configuration-file" title="Permalink to this headline"></a></h3>
 <p><span class="xref myst">here</span></p>
+<ul class="simple">
+<li><p><strong>max_open_writers</strong>: The maximum number of data writers to have open at once.</p></li>
+<li><p><strong>key_field</strong>: The field name (or names) to use for filenames.  This/these must be
+encased in square brackets, i.e. <code class="docutils literal notranslate"><span class="pre">&quot;key_field&quot;:</span> <span class="pre">[&quot;scientificName&quot;]</span></code>. If multiple fields
+are provided, the ordered fields specify the sub-directory structure used for
+organizing files.  The first field will specify the directory directly under
+out_dir, and so on.  The final field will be contain the base filename.  These
+fields should be hierarchical.  For example, if grouping records into files by
+species, with a dataset containing 2000 species, using taxonomic grouping fields
+(in order from coarser to finer groups)
+such as <code class="docutils literal notranslate"><span class="pre">&quot;key_field&quot;:</span> <span class="pre">[&quot;family&quot;,</span> <span class="pre">&quot;genus&quot;,</span> <span class="pre">&quot;species&quot;]</span></code> would create a file
+with records for the Giant Panda in
+“&lt;out_dir&gt;/Ursidae/Ailuropoda/Ailuropoda melanoleuca.csv”.<br />
+If this parameter is not specified, it will default to the fieldname for grouping
+data.  This is a required argument for CSV files and defaults to “scientificName”
+in DwCA files.  If there are more groups/files than are allowed in a directory, the<br />
+files will be written to subdirectories by the beginning characters in the species
+name.</p></li>
+<li><p><strong>out_field</strong>: The field name or names of columns to be included in output CSV files.
+If this field is left out, all fields from the first successfully processed record
+will be included in outputs.</p></li>
+<li><p><strong>dwca</strong>: List of 0 or more lists, each containing 2 arguments</p>
+<ul>
+<li><p>input DwCA file, and</p></li>
+<li><p>occurrence data wrangler configuration file (described in the next section). The
+example split_occurrence_data wrangler configuration used for this tutorial step
+is <span class="xref myst">here</span></p></li>
+</ul>
+</li>
+<li><p><strong>csv</strong>:  List of 0 or more lists, each containing 5 arguments</p>
+<ul>
+<li><p>input CSV file</p></li>
+<li><p>occurrence data wrangler configuration file (described in the next section).</p></li>
+<li><p>fieldname for grouping data (often a taxonomic designation such as scientificName)</p></li>
+<li><p>fieldname for the longitude/x coordinate</p></li>
+<li><p>fieldname for the latitude/y coordinate</p></li>
+</ul>
+</li>
+</ul>
 </section>
 <section id="occurrence-data-wranglers">
 <h3>Occurrence Data Wranglers<a class="headerlink" href="#occurrence-data-wranglers" title="Permalink to this headline"></a></h3>
-<ul class="simple">
-<li><p>A configuration file is in JSON format, a list of one dictionary per desired wrangler.</p>
-<ul>
-<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler types (listed below).</p></li>
-<li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
-</ul>
-</li>
-<li><p>Currently, wrangler names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in this module’s files.</p></li>
-<li><p>Each wrangler’s parameters correspond to the constructor arguments for that wrangler.</p></li>
-<li><p>The <a class="reference internal" href="occurrence_wrangler.html"><span class="doc std std-doc">Occurrence Data Wrangler Types</span></a> page contains a list of all occurrence data
-wrangler_types and the required and/or optional parameters for each.</p></li>
-<li><p>An example split_occurrence_data wrangler configuration, used for this tutorial is
-<span class="xref myst">here</span>:</p></li>
-</ul>
+<p>An example split_occurrence_data wrangler configuration used for this tutorial step is
+<span class="xref myst">here</span></p>
+<p>The split_occurrence_data configuration file consists of one or more “wrangler_type”s,
+and= the wrangler-specific required and possibly optional parameters for each.<br />
+Available wrangler_types with their parameters are listed at
+<a class="reference internal" href="occurrence_wrangler.html"><span class="doc std std-doc">Occurrence Data Wrangler Types</span></a></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
@@ -197,11 +154,11 @@ wrangler_types and the required and/or optional parameters for each.</p></li>
 <h2>Run split_occurrence_data tutorial<a class="headerlink" href="#run-split-occurrence-data-tutorial" title="Permalink to this headline"></a></h2>
 <p>Initiate the clean occurrences process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh split_occurrence_data data/config/split_occurrence_data.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data.json
 </pre></div>
 </div>
 <p>for windows systems</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./run_tutorial.bat split_occurrence_data data\config\split_occurrence_data.json
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat split_occurrence_data data\config\split_occurrence_data.json
 </pre></div>
 </div>
 </section>
