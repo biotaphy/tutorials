@@ -15,6 +15,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -42,7 +43,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="occurrence_wrangler.html">Occurrence Data Wrangler types</a></li>
 </ul>
 
         </div>
@@ -70,17 +70,17 @@
            <div itemprop="articleBody">
              
   <section id="resolve-taxonomy-in-a-darwin-core-archive-dwca">
-<h1>Resolve taxonomy in a Darwin Core Archive (DwCA)<a class="headerlink" href="#resolve-taxonomy-in-a-darwin-core-archive-dwca" title="Permalink to this headline"></a></h1>
+<h1>Resolve taxonomy in a Darwin Core Archive (DwCA)<a class="headerlink" href="#resolve-taxonomy-in-a-darwin-core-archive-dwca" title="Permalink to this heading"></a></h1>
 <p><strong>Webinar 3</strong>, <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1">Big Data Munging</a>
 (Module 2, Big-Data approaches)</p>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials work.</p>
 </section>
 <section id="data-preparation">
-<h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
+<h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>
 <section id="input-occurrence-data">
-<h3>Input occurrence data<a class="headerlink" href="#input-occurrence-data" title="Permalink to this headline"></a></h3>
+<h3>Input occurrence data<a class="headerlink" href="#input-occurrence-data" title="Permalink to this heading"></a></h3>
 <p>The split_occurrence_data tool accepts either a Darwin Core Archive (DwCA) file or a
 CSV file containing records for one or more taxa.</p>
 <ol class="arabic simple">
@@ -95,7 +95,7 @@ command prompt are at <a class="reference internal" href="idigbio_download.html"
 </ol>
 </section>
 <section id="tool-configuration-file">
-<h3>Tool Configuration file<a class="headerlink" href="#tool-configuration-file" title="Permalink to this headline"></a></h3>
+<h3>Tool Configuration file<a class="headerlink" href="#tool-configuration-file" title="Permalink to this heading"></a></h3>
 <p><span class="xref myst">here</span></p>
 <ul class="simple">
 <li><p><strong>max_open_writers</strong>: The maximum number of data writers to have open at once.</p></li>
@@ -138,20 +138,20 @@ is <span class="xref myst">here</span></p></li>
 </ul>
 </section>
 <section id="occurrence-data-wranglers">
-<h3>Occurrence Data Wranglers<a class="headerlink" href="#occurrence-data-wranglers" title="Permalink to this headline"></a></h3>
+<h3>Occurrence Data Wranglers<a class="headerlink" href="#occurrence-data-wranglers" title="Permalink to this heading"></a></h3>
 <p>An example split_occurrence_data wrangler configuration used for this tutorial step is
 <span class="xref myst">here</span></p>
 <p>The split_occurrence_data configuration file consists of one or more “wrangler_type”s,
 and= the wrangler-specific required and possibly optional parameters for each.<br />
 Available wrangler_types with their parameters are listed at
-<a class="reference internal" href="occurrence_wrangler.html"><span class="doc std std-doc">Occurrence Data Wrangler Types</span></a></p>
+<span class="xref myst">Occurrence Data Wrangler Types</span></p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </section>
 </section>
 <section id="run-split-occurrence-data-tutorial">
-<h2>Run split_occurrence_data tutorial<a class="headerlink" href="#run-split-occurrence-data-tutorial" title="Permalink to this headline"></a></h2>
+<h2>Run split_occurrence_data tutorial<a class="headerlink" href="#run-split-occurrence-data-tutorial" title="Permalink to this heading"></a></h2>
 <p>Initiate the clean occurrences process with the following:</p>
 <p>for linux/mac systems</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data.json

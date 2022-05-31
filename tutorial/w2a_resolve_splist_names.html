@@ -15,6 +15,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -42,7 +43,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="occurrence_wrangler.html">Occurrence Data Wrangler types</a></li>
 </ul>
 
         </div>
@@ -70,19 +70,19 @@
            <div itemprop="articleBody">
              
   <section id="resolve-names-in-a-list">
-<h1>Resolve names in a list<a class="headerlink" href="#resolve-names-in-a-list" title="Permalink to this headline"></a></h1>
+<h1>Resolve names in a list<a class="headerlink" href="#resolve-names-in-a-list" title="Permalink to this heading"></a></h1>
 <p><strong>Webinar #2</strong>
 <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l">Resolving Nomenclature</a>
 Create an updated/accepted species list and name-map (original_name –&gt; accepted_name).</p>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
 tutorials work.</p>
 </section>
 <section id="data-preparation">
-<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline"></a></h2>
+<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>
 <section id="input-data">
-<h3>Input data<a class="headerlink" href="#input-data" title="Permalink to this headline"></a></h3>
+<h3>Input data<a class="headerlink" href="#input-data" title="Permalink to this heading"></a></h3>
 <p>Use an existing or prepare a new species list, a text file with one name per line.  This
 file is specified in the Configuration file described in the next section.</p>
 <ol class="arabic simple">
@@ -97,7 +97,7 @@ file is specified in the Configuration file described in the next section.</p>
 </ol>
 </section>
 <section id="tool-configuration-file">
-<h3>Tool Configuration File<a class="headerlink" href="#tool-configuration-file" title="Permalink to this headline"></a></h3>
+<h3>Tool Configuration File<a class="headerlink" href="#tool-configuration-file" title="Permalink to this heading"></a></h3>
 <p>A JSON tool configuration file is required for this command.  The tutorial example tool
 configuration is <a class="reference download internal" download="" href="../_downloads/7aaf04526119126e3eaa40bf7dbfee52/resolve_list_names.json"><span class="xref download myst">resolve_list_names.json</span></a>.
 These are the required and optional parameters:</p>
@@ -123,7 +123,7 @@ contains one wrangler, the AcceptedNameSpeciesListWrangler, and is in
 </ul>
 </section>
 <section id="input-wrangler-configuration-file">
-<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this headline"></a></h3>
+<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
 <p>A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.<br />
 More information on file format, available wrangler types, and the required and/or
@@ -131,7 +131,7 @@ optional parameters for each are <a class="reference internal" href="species_lis
 </section>
 </section>
 <section id="run-tutorial">
-<h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this headline"></a></h2>
+<h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
 <p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  wrangle_species_list  data/config/resolve_list_names.json
@@ -143,7 +143,7 @@ optional parameters for each are <a class="reference internal" href="species_lis
 </div>
 </section>
 <section id="output">
-<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline"></a></h2>
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
 <p>This process outputs a text file containing the modified species list, one name per
 line.  Current available taxonomic services include only GBIF at this time.</p>
 </section>

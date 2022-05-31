@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Occurrence Data Wrangler types &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Occurrence Data &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -15,11 +15,11 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="../pages/spatial_data.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -38,26 +38,11 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Occurrence Data Wrangler types</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#acceptednameoccurrencewrangler">AcceptedNameOccurrenceWrangler</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#attributefilterwrangler">AttributeFilterWrangler</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#attributemodifierwrangler">AttributeModifierWrangler</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#boundingboxfilter">BoundingBoxFilter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#commonformatwrangler">CommonFormatWrangler</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#coordinateconverterwrangler">CoordinateConverterWrangler</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#decimalprecisionfilter">DecimalPrecisionFilter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#disjointgeometriesfilter">DisjointGeometriesFilter’</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#intersectgeometriesfilter">IntersectGeometriesFilter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#minimumpointswrangler">MinimumPointsWrangler</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#spatialindexfilter">SpatialIndexFilter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#uniquelocalitiesfilter">UniqueLocalitiesFilter</a></li>
-</ul>
-</li>
 </ul>
 
         </div>
@@ -74,9 +59,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Occurrence Data Wrangler types</li>
+      <li>Occurrence Data</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/occurrence_wrangler.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/data_wrangle_occurrence.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -84,15 +69,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="occurrence-data-wrangler-types">
-<h1>Occurrence Data Wrangler types<a class="headerlink" href="#occurrence-data-wrangler-types" title="Permalink to this headline"></a></h1>
+  <section id="occurrence-data">
+<h1>Occurrence Data<a class="headerlink" href="#occurrence-data" title="Permalink to this heading"></a></h1>
+<p>Several tools (<a class="reference internal" href="w3_split_occurrence_data.html"><span class="doc std std-doc">split_occurrence_data</span></a>,
+<a class="reference internal" href="w2c_resolve_occurrence_names.html"><span class="doc std std-doc">wrangle_occurrences</span></a>) accept occurrence data.<br />
+The filename must be specified in the script parameter file, described in each tool’s
+documentation and linked above.  Data can be in one of two formats:</p>
+<ol class="arabic simple">
+<li><p>Darwin Core Archive (DwCA) file.  DwCA files may be downloaded from several places,
+including GBIF and iDigBio.</p>
+<ol class="arabic simple">
+<li><p>To download from GBIF, choose your filters in the portal
+https://www.gbif.org/occurrence.  For example, the example data was downloaded<br />
+after selecting occurrences where genus=<code class="docutils literal notranslate"><span class="pre">Heuchera</span> <span class="pre">L</span></code>,
+https://www.gbif.org/occurrence/search?taxon_key=3032645&amp;occurrence_status=present
+Then choose the download link at the upper right column header.</p></li>
+<li><p>To download from iDigBio, instructions for querying and downloading from the
+command prompt are at <a class="reference internal" href="idigbio_download.html"><span class="doc std std-doc">idigbio_download.md</span></a>.</p></li>
+<li><p>The tutorial example DwCA is at
+<span class="xref myst">occ_heuchera_gbif.zip</span>.</p></li>
+</ol>
+</li>
+<li><p>CSV file containing records for one or more taxa.</p>
+<ol class="arabic simple">
+<li><p>A CSV file is a text file with one species occurrence record per line.  The file<br />
+must be a delimited text file, and the first line must contain field names.  Each<br />
+record/line must contain a species (or other group) identifier, such as<br />
+scientificName or species_name, and x and y coordinates indicating a geographic<br />
+location.  The field names for these 3 columns are specified in the script<br />
+parameter file. The tutorial example occurrence datafile
+is <a class="reference download internal" download="" href="../_downloads/1f89a80e10a14f8c79662e05535eb0c3/heuchera.csv"><span class="xref download myst">heuchera.csv</span></a>.</p></li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="occurrence-wrangler-types">
+<h1>Occurrence Wrangler types<a class="headerlink" href="#occurrence-wrangler-types" title="Permalink to this heading"></a></h1>
 <p>When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.</p>
 <p>Currently, wrangler_type names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in
 this module’s files.  Each wrangler’s parameters correspond to the constructor
 arguments for that wrangler.</p>
 <section id="acceptednameoccurrencewrangler">
-<h2>AcceptedNameOccurrenceWrangler<a class="headerlink" href="#acceptednameoccurrencewrangler" title="Permalink to this headline"></a></h2>
+<h2>AcceptedNameOccurrenceWrangler<a class="headerlink" href="#acceptednameoccurrencewrangler" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>optional</p>
 <ul>
@@ -113,7 +132,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="attributefilterwrangler">
-<h2>AttributeFilterWrangler<a class="headerlink" href="#attributefilterwrangler" title="Permalink to this headline"></a></h2>
+<h2>AttributeFilterWrangler<a class="headerlink" href="#attributefilterwrangler" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -124,7 +143,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="attributemodifierwrangler">
-<h2>AttributeModifierWrangler<a class="headerlink" href="#attributemodifierwrangler" title="Permalink to this headline"></a></h2>
+<h2>AttributeModifierWrangler<a class="headerlink" href="#attributemodifierwrangler" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -135,7 +154,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="boundingboxfilter">
-<h2>BoundingBoxFilter<a class="headerlink" href="#boundingboxfilter" title="Permalink to this headline"></a></h2>
+<h2>BoundingBoxFilter<a class="headerlink" href="#boundingboxfilter" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -148,7 +167,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="commonformatwrangler">
-<h2>CommonFormatWrangler<a class="headerlink" href="#commonformatwrangler" title="Permalink to this headline"></a></h2>
+<h2>CommonFormatWrangler<a class="headerlink" href="#commonformatwrangler" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -158,7 +177,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="coordinateconverterwrangler">
-<h2>CoordinateConverterWrangler<a class="headerlink" href="#coordinateconverterwrangler" title="Permalink to this headline"></a></h2>
+<h2>CoordinateConverterWrangler<a class="headerlink" href="#coordinateconverterwrangler" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -176,7 +195,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="decimalprecisionfilter">
-<h2>DecimalPrecisionFilter<a class="headerlink" href="#decimalprecisionfilter" title="Permalink to this headline"></a></h2>
+<h2>DecimalPrecisionFilter<a class="headerlink" href="#decimalprecisionfilter" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>required:</p>
 <ul>
@@ -186,7 +205,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="disjointgeometriesfilter">
-<h2>DisjointGeometriesFilter’<a class="headerlink" href="#disjointgeometriesfilter" title="Permalink to this headline"></a></h2>
+<h2>DisjointGeometriesFilter’<a class="headerlink" href="#disjointgeometriesfilter" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>required:</p>
 <ul>
@@ -196,7 +215,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="intersectgeometriesfilter">
-<h2>IntersectGeometriesFilter<a class="headerlink" href="#intersectgeometriesfilter" title="Permalink to this headline"></a></h2>
+<h2>IntersectGeometriesFilter<a class="headerlink" href="#intersectgeometriesfilter" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>required:</p>
 <ul>
@@ -206,7 +225,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="minimumpointswrangler">
-<h2>MinimumPointsWrangler<a class="headerlink" href="#minimumpointswrangler" title="Permalink to this headline"></a></h2>
+<h2>MinimumPointsWrangler<a class="headerlink" href="#minimumpointswrangler" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>required:</p>
 <ul>
@@ -216,7 +235,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="spatialindexfilter">
-<h2>SpatialIndexFilter<a class="headerlink" href="#spatialindexfilter" title="Permalink to this headline"></a></h2>
+<h2>SpatialIndexFilter<a class="headerlink" href="#spatialindexfilter" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>required:</p>
 <ul>
@@ -229,7 +248,7 @@ and returns a boolean indication if the hit should be counted.</p></li>
 </ul>
 </section>
 <section id="uniquelocalitiesfilter">
-<h2>UniqueLocalitiesFilter<a class="headerlink" href="#uniquelocalitiesfilter" title="Permalink to this headline"></a></h2>
+<h2>UniqueLocalitiesFilter<a class="headerlink" href="#uniquelocalitiesfilter" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>optional parameters:</p>
 <ul>
@@ -243,9 +262,7 @@ and returns a boolean indication if the hit should be counted.</p></li>
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../pages/spatial_data.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-    </div>
+          <footer>
 
   <hr/>
 
