@@ -72,7 +72,11 @@
   <section id="resolve-names-in-occurrence-data">
 <h1>Resolve names in occurrence data<a class="headerlink" href="#resolve-names-in-occurrence-data" title="Permalink to this heading"></a></h1>
 <p><strong>Webinar #2</strong>  <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l">Resolving Nomenclature</a>
-Create a new tree with accepted names and name-map (original_name –&gt; accepted_name).</p>
+Resolve the species name in each occurrence record to an “accepted” name from some
+authority, either a provided name-mapping or the GBIF name resolution service.  Group
+and write out occurrence records into separate CSV files with accepted names.  If the
+authority is not a name-map, write out the resulting name-map
+(original_name –&gt; accepted_name).</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
@@ -80,18 +84,27 @@ tutorials work.</p>
 </section>
 <section id="data-preparation">
 <h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>
-<section id="input-occurrence-data">
-<h3>Input: occurrence data<a class="headerlink" href="#input-occurrence-data" title="Permalink to this heading"></a></h3>
-<p>Use an existing or prepare a new occurrence CSV file, a text file with one species
-occurrence record per line.  This file is specified in the Configuration file described
-in the next section.  The tutorial example occurrence datafile is
-<a class="reference download internal" download="" href="../_downloads/1f89a80e10a14f8c79662e05535eb0c3/heuchera.csv"><span class="xref download myst">heuchera.csv</span></a>.</p>
+<section id="input-occurrence-records">
+<h3>Input: occurrence records<a class="headerlink" href="#input-occurrence-records" title="Permalink to this heading"></a></h3>
+<p>The wrangle_occurrences tool accepts either a Darwin Core Archive (DwCA) file or a
+CSV file containing records for one or more taxa.  More information is in the
+<strong>Occurrence Data</strong> section of <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">data_wrangle_occurrence</span></a>.</p>
 </section>
-<section id="tool-configuration-file">
-<h3>Tool Configuration File<a class="headerlink" href="#tool-configuration-file" title="Permalink to this heading"></a></h3>
-<p>A JSON tool configuration file is required for this command.  The tutorial example tool
-configuration is
-<a class="reference download internal" download="" href="../_downloads/21925b8ceae2f1d9151e18b22a0197f5/resolve_occurrence_names.json"><span class="xref download myst">resolve_occurrence_names.json</span></a>.
+<section id="input-wrangler-configuration-file">
+<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
+<p>A data wrangler configuration is a file containing a JSON list of zero or more
+wranglers - each performs a different operation, and each has its own parameters.
+More information on file format, available wrangler types, and the required and/or
+optional parameters for each are in the <strong>Occurrence Wrangler Types</strong> section
+of <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">data_wrangle_occurrence</span></a>.  In this example, we will
+resolve occurrence data names, but not perform any other wrangling on it, so our
+<span class="xref myst">wrangler configuration file</span> contains only
+an AcceptedNameOccurrenceWrangler.</p>
+</section>
+<section id="input-script-parameter-file">
+<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
+<p>A JSON parameter file is required for this command.  The tutorial parameter file
+is <a class="reference download internal" download="" href="../_downloads/21925b8ceae2f1d9151e18b22a0197f5/resolve_occurrence_names.json"><span class="xref download myst">resolve_occurrence_names.json</span></a>.
 These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -99,7 +112,7 @@ These are the required and optional parameters:</p>
 <li><p><strong>reader_filename</strong>: The input CSV file of occurrence records.</p></li>
 <li><p><strong>writer_filename</strong>: A file location to write cleaned points.</p></li>
 <li><p><strong>wrangler_configuration_file</strong>: occurrence wrangler configuration file,
-described in the next section.  The tutorial example wrangler configuration<br />
+described in the next section.  The tutorial example wrangler configuration
 contains one wrangler, the AcceptedNameOccurrenceWrangler, and is in
 <a class="reference download internal" download="" href="../_downloads/2ca8f6619061abaf007e51d26072e122/wrangle_occurrence_names.json"><span class="xref download myst">wrangle_occurrence_names.json</span></a></p></li>
 </ul>
@@ -116,31 +129,33 @@ contains one wrangler, the AcceptedNameOccurrenceWrangler, and is in
 </li>
 </ul>
 </section>
-<section id="input-wrangler-configuration-file">
-<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
-<p>A data wrangler configuration is a file containing a JSON list of zero or more
-wranglers - each performs a different operation, and each has its own parameters.<br />
-More information on file format, available wrangler types, and the required and/or
-optional parameters for each are <span class="xref myst">here</span>.</p>
-</section>
 </section>
 <section id="run-tutorial">
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
 <p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  wrangle_occurrences  data/input/resolve_occurrence_names.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  wrangle_occurrences  data/config/resolve_occurrence_names.json
 </pre></div>
 </div>
 <p>for windows:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat split_occurrence_data data\input\resolve_occurrence_names.json
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat split_occurrence_data data\config\resolve_occurrence_names.json
 </pre></div>
 </div>
 </section>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
-<p>This process outputs a set of CSV files, one per species, in which each record is
-annotated with an “accepted name” as defined in a name-map or by a taxonomic service.
-Current available taxonomic services include only GBIF at this time.</p>
+<p>This process outputs a set of CSV files, one per species, to the directory specified in
+the script parameter file.  Each record is annotated with an “accepted name” as defined
+in a name-map or by a taxonomic service. Records are grouped into files by matching
+“accepted name”.</p>
+<p>If the “accepted name” does not come from a name-map, and a name-map filename is
+specified in the wrangler configuration, that file is also an output.</p>
+<p>If “report_filename” is specified in the script parameter file, a summary of point
+manipulations by each wrangler will be written to this file.</p>
+<p>If “log_filename” is specified in the script parameter file, that will be created.</p>
+<p>If “log_console” is specified in the script parameter file, logs will be written to the
+command prompt during execution.</p>
+<p>Current available taxonomic services include only GBIF at this time.</p>
 </section>
 </section>
 

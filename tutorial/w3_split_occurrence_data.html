@@ -72,31 +72,35 @@
   <section id="resolve-taxonomy-in-a-darwin-core-archive-dwca">
 <h1>Resolve taxonomy in a Darwin Core Archive (DwCA)<a class="headerlink" href="#resolve-taxonomy-in-a-darwin-core-archive-dwca" title="Permalink to this heading"></a></h1>
 <p><strong>Webinar 3</strong>, <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1">Big Data Munging</a>
-(Module 2, Big-Data approaches)</p>
+(Module 2, Big-Data approaches).</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials work.</p>
+<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
+tutorials work.</p>
 </section>
 <section id="data-preparation">
 <h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>
-<section id="input-occurrence-data">
-<h3>Input occurrence data<a class="headerlink" href="#input-occurrence-data" title="Permalink to this heading"></a></h3>
+<section id="input-occurrence-records">
+<h3>Input: occurrence records<a class="headerlink" href="#input-occurrence-records" title="Permalink to this heading"></a></h3>
 <p>The split_occurrence_data tool accepts either a Darwin Core Archive (DwCA) file or a
-CSV file containing records for one or more taxa.</p>
-<ol class="arabic simple">
-<li><p>The tutorial example DwCA is at <span class="xref myst">occ_sax_gbif.zip</span></p></li>
-<li><p>To download from GBIF, choose your filters in the portal
-https://www.gbif.org/occurrence.  For example, to select occurrences where
-genus=<code class="docutils literal notranslate"><span class="pre">Heuchera</span> <span class="pre">L</span></code>,
-https://www.gbif.org/occurrence/search?taxon_key=3032645&amp;occurrence_status=present.
-Then choose the download link at the upper right column header.</p></li>
-<li><p>To download from iDigBio, instructions for querying and downloading from the
-command prompt are at <a class="reference internal" href="idigbio_download.html"><span class="doc std std-doc">idigbio_download.md</span></a>.</p></li>
-</ol>
+CSV file containing records for one or more taxa.  More information is in the
+<strong>Occurrence Data</strong> section of <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">data_wrangle_occurrence</span></a>.</p>
 </section>
-<section id="tool-configuration-file">
-<h3>Tool Configuration file<a class="headerlink" href="#tool-configuration-file" title="Permalink to this heading"></a></h3>
-<p><span class="xref myst">here</span></p>
+<section id="input-wrangler-configuration-file">
+<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
+<p>A data wrangler configuration is a file containing a JSON list of zero or more
+wranglers - each performs a different operation, and each has its own parameters.
+More information on file format, available wrangler types, and the required and/or
+optional parameters for each are in the <strong>Occurrence Wrangler Types</strong> section
+of <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">data_wrangle_occurrence</span></a>.  In this example, we will
+split occurrence data, but not perform any other wrangling on it, so our <span class="xref myst">wrangler
+configuration file</span> contains an empty list.</p>
+</section>
+<section id="input-script-parameter-file">
+<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
+<p>A JSON parameter file is required for this command.  The tutorial parameter file
+is <a class="reference download internal" download="" href="../_downloads/00ef9a11a43e7a6bee069a99ae9618c0/split_occurrence_data.json"><span class="xref download myst">split_occurrence_data.json</span></a>.
+These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p><strong>max_open_writers</strong>: The maximum number of data writers to have open at once.</p></li>
 <li><p><strong>key_field</strong>: The field name (or names) to use for filenames.  This/these must be
@@ -109,10 +113,10 @@ species, with a dataset containing 2000 species, using taxonomic grouping fields
 (in order from coarser to finer groups)
 such as <code class="docutils literal notranslate"><span class="pre">&quot;key_field&quot;:</span> <span class="pre">[&quot;family&quot;,</span> <span class="pre">&quot;genus&quot;,</span> <span class="pre">&quot;species&quot;]</span></code> would create a file
 with records for the Giant Panda in
-“&lt;out_dir&gt;/Ursidae/Ailuropoda/Ailuropoda melanoleuca.csv”.<br />
+“&lt;out_dir&gt;/Ursidae/Ailuropoda/Ailuropoda melanoleuca.csv”.
 If this parameter is not specified, it will default to the fieldname for grouping
 data.  This is a required argument for CSV files and defaults to “scientificName”
-in DwCA files.  If there are more groups/files than are allowed in a directory, the<br />
+in DwCA files.  If there are more groups/files than are allowed in a directory, the
 files will be written to subdirectories by the beginning characters in the species
 name.</p></li>
 <li><p><strong>out_field</strong>: The field name or names of columns to be included in output CSV files.
@@ -137,22 +141,10 @@ is <span class="xref myst">here</span></p></li>
 </li>
 </ul>
 </section>
-<section id="occurrence-data-wranglers">
-<h3>Occurrence Data Wranglers<a class="headerlink" href="#occurrence-data-wranglers" title="Permalink to this heading"></a></h3>
-<p>An example split_occurrence_data wrangler configuration used for this tutorial step is
-<span class="xref myst">here</span></p>
-<p>The split_occurrence_data configuration file consists of one or more “wrangler_type”s,
-and= the wrangler-specific required and possibly optional parameters for each.<br />
-Available wrangler_types with their parameters are listed at
-<span class="xref myst">Occurrence Data Wrangler Types</span></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
 </section>
-</section>
-<section id="run-split-occurrence-data-tutorial">
-<h2>Run split_occurrence_data tutorial<a class="headerlink" href="#run-split-occurrence-data-tutorial" title="Permalink to this heading"></a></h2>
-<p>Initiate the clean occurrences process with the following:</p>
+<section id="run-tutorial">
+<h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
+<p>Initiate the split_occurrence_data process with the following:</p>
 <p>for linux/mac systems</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data.json
 </pre></div>
@@ -161,6 +153,21 @@ Available wrangler_types with their parameters are listed at
 <div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat split_occurrence_data data\config\split_occurrence_data.json
 </pre></div>
 </div>
+</section>
+<section id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
+<p>This process outputs a set of CSV files, one per species, to the directory specified in
+the script parameter file.  Each record is annotated with an “accepted name” as defined
+in a name-map or by a taxonomic service. Records are grouped into files by matching
+“accepted name”.</p>
+<p>If the “accepted name” does not come from a name-map, and a name-map filename is
+specified in the wrangler configuration, that file is also an output.</p>
+<p>If “report_filename” is specified in the script parameter file, a summary of point
+manipulations by each wrangler will be written to this file.</p>
+<p>If “log_filename” is specified in the script parameter file, that will be created.</p>
+<p>If “log_console” is specified in the script parameter file, logs will be written to the
+command prompt during execution.</p>
+<p>Current available taxonomic services include only GBIF at this time.</p>
 </section>
 </section>
 

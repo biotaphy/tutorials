@@ -79,22 +79,22 @@ directly to terminal with the example query_url:
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/?rq<span class="o">=</span>%7B%22genus%22%3A%22euphorbia%22%7D<span class="p">&amp;</span><span class="nv">email</span><span class="o">=</span>donotreply%40idigbio.org
 <span class="o">[</span><span class="m">1</span><span class="o">]</span> <span class="m">58979</span>
 astewart@murderbot:~/git/tutorials$ <span class="o">{</span>
-  <span class="s2">&quot;complete&quot;</span>: false, 
-  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>, 
-  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.628063+00:00&quot;</span>, 
-  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>, 
+  <span class="s2">&quot;complete&quot;</span>: false,
+  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>,
+  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.628063+00:00&quot;</span>,
+  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>,
   <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
-    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>, 
-    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>, 
-    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>, 
-    <span class="s2">&quot;mediarecord_fields&quot;</span>: null, 
-    <span class="s2">&quot;mq&quot;</span>: null, 
-    <span class="s2">&quot;record_fields&quot;</span>: null, 
+    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>,
+    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>,
+    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>,
+    <span class="s2">&quot;mediarecord_fields&quot;</span>: null,
+    <span class="s2">&quot;mq&quot;</span>: null,
+    <span class="s2">&quot;record_fields&quot;</span>: null,
     <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
       <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
     <span class="o">}</span>
-  <span class="o">}</span>, 
-  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>, 
+  <span class="o">}</span>,
+  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>,
   <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;PENDING&quot;</span>
 <span class="o">}</span>
 </pre></div>
@@ -102,22 +102,22 @@ astewart@murderbot:~/git/tutorials$ <span class="o">{</span>
 <p>Then use <code class="docutils literal notranslate"><span class="pre">curl</span></code> on the resulting <strong>status_url</strong> field:</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
 <span class="o">{</span>
-  <span class="s2">&quot;complete&quot;</span>: false, 
-  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>, 
-  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.735029+00:00&quot;</span>, 
-  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>, 
+  <span class="s2">&quot;complete&quot;</span>: false,
+  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>,
+  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.735029+00:00&quot;</span>,
+  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>,
   <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
-    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>, 
-    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>, 
-    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>, 
-    <span class="s2">&quot;mediarecord_fields&quot;</span>: null, 
-    <span class="s2">&quot;mq&quot;</span>: null, 
-    <span class="s2">&quot;record_fields&quot;</span>: null, 
+    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>,
+    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>,
+    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>,
+    <span class="s2">&quot;mediarecord_fields&quot;</span>: null,
+    <span class="s2">&quot;mq&quot;</span>: null,
+    <span class="s2">&quot;record_fields&quot;</span>: null,
     <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
       <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
     <span class="o">}</span>
-  <span class="o">}</span>, 
-  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>, 
+  <span class="o">}</span>,
+  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>,
   <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;PENDING&quot;</span>
 <span class="o">}</span>
 </pre></div>
@@ -125,23 +125,23 @@ astewart@murderbot:~/git/tutorials$ <span class="o">{</span>
 <p>When the task_status shows “SUCCESS”:</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
 <span class="o">{</span>
-  <span class="s2">&quot;complete&quot;</span>: true, 
-  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>, 
-  <span class="s2">&quot;download_url&quot;</span>: <span class="s2">&quot;http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip&quot;</span>, 
-  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.552351+00:00&quot;</span>, 
-  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>, 
+  <span class="s2">&quot;complete&quot;</span>: true,
+  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>,
+  <span class="s2">&quot;download_url&quot;</span>: <span class="s2">&quot;http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip&quot;</span>,
+  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.552351+00:00&quot;</span>,
+  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>,
   <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
-    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>, 
-    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>, 
-    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>, 
-    <span class="s2">&quot;mediarecord_fields&quot;</span>: null, 
-    <span class="s2">&quot;mq&quot;</span>: null, 
-    <span class="s2">&quot;record_fields&quot;</span>: null, 
+    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>,
+    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>,
+    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>,
+    <span class="s2">&quot;mediarecord_fields&quot;</span>: null,
+    <span class="s2">&quot;mq&quot;</span>: null,
+    <span class="s2">&quot;record_fields&quot;</span>: null,
     <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
       <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
     <span class="o">}</span>
-  <span class="o">}</span>, 
-  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>, 
+  <span class="o">}</span>,
+  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>,
   <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;SUCCESS&quot;</span>
 <span class="o">}</span>
 </pre></div>

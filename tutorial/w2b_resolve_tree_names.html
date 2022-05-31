@@ -81,8 +81,9 @@ tutorials work.</p>
 <section id="data-preparation">
 <h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>
 <section id="input-tree-data">
-<h3>Input tree data<a class="headerlink" href="#input-tree-data" title="Permalink to this heading"></a></h3>
-<p>Use an existing or create your own tree in Newick or Nexus format.</p>
+<h3>Input: tree data<a class="headerlink" href="#input-tree-data" title="Permalink to this heading"></a></h3>
+<p>Use an existing or create your own tree in Newick or Nexus format.  This
+file is specified in the script parameter file described below.</p>
 <ol class="arabic simple">
 <li><p>The tutorial example tree is
 <span class="xref myst">subtree-ottol-saxifragales.tre</span>.</p></li>
@@ -91,19 +92,28 @@ tutorials work.</p>
 you want, choose <strong>Download subtree as Newick string</strong> in the upper, rightmost panel.</p></li>
 </ol>
 </section>
-<section id="tool-configuration-file">
-<h3>Tool Configuration File<a class="headerlink" href="#tool-configuration-file" title="Permalink to this heading"></a></h3>
-<p>A JSON tool configuration file is required for this command.  The tutorial example tool
-configuration is <a class="reference download internal" download="" href="../_downloads/5cdaa1760103fa9bc3b9d85a978b5dfa/resolve_tree_names.json"><span class="xref download myst">resolve_tree_names.json</span></a>.
-These are the required and optional parameters:</p>
+<section id="input-wrangler-configuration-file">
+<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
+<p>A data wrangler configuration is a file containing a JSON list of zero or more
+wranglers - each performs a different operation, and each has its own parameters.
+More information on file format, available wrangler types, and the required and/or
+optional parameters for each are in the <strong>Tree Data Wrangler Types</strong> section
+<a class="reference internal" href="wrangle_tree.html"><span class="doc std std-doc">here</span></a>.</p>
+</section>
+<section id="input-script-parameter-file">
+<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
+<p>A JSON parameter file is required for this command.  The tutorial parameter file
+is <a class="reference download internal" download="" href="../_downloads/5cdaa1760103fa9bc3b9d85a978b5dfa/resolve_tree_names.json"><span class="xref download myst">resolve_tree_names.json</span></a>. These are the
+required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
 <ul>
-<li><p><strong>tree_filename</strong>: input tree filename.  The tutorial example tree is
+<li><p><strong>tree_filename</strong>: input filename containing tree, described
+in the previous section.  The tutorial example tree is
 <span class="xref myst">subtree-ottol-saxifragales.tre</span>.</p></li>
 <li><p><strong>tree_schema</strong>: input tree format.  The tutorial example is in “newick” format.</p></li>
 <li><p><strong>wrangler_configuration_file</strong>: tree wrangler configuration file,
-described in the next section.  The tutorial example wrangler configuration<br />
+described in the next section.  The tutorial example wrangler configuration
 contains one wrangler, the  AcceptedTreeWrangler, and is in
 <a class="reference download internal" download="" href="../_downloads/7ae2f37efa3f0c749acd55f8fa38f7f6/wrangle_tree_names.json"><span class="xref download myst">wrangle_tree_names.json</span></a></p></li>
 <li><p><strong>out_tree_filename</strong>: output tree filename</p></li>
@@ -118,13 +128,6 @@ contains one wrangler, the  AcceptedTreeWrangler, and is in
 </ul>
 </li>
 </ul>
-</section>
-<section id="input-wrangler-configuration-file">
-<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
-<p>A data wrangler configuration is a file containing a JSON list of zero or more
-wranglers - each performs a different operation, and each has its own parameters.<br />
-More information on file format, available wrangler types, and the required and/or
-optional parameters for each are <span class="xref myst">here</span></p>
 </section>
 </section>
 <section id="run-tutorial">

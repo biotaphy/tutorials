@@ -72,7 +72,7 @@
   <section id="occurrence-data">
 <h1>Occurrence Data<a class="headerlink" href="#occurrence-data" title="Permalink to this heading"></a></h1>
 <p>Several tools (<a class="reference internal" href="w3_split_occurrence_data.html"><span class="doc std std-doc">split_occurrence_data</span></a>,
-<a class="reference internal" href="w2c_resolve_occurrence_names.html"><span class="doc std std-doc">wrangle_occurrences</span></a>) accept occurrence data.<br />
+<a class="reference internal" href="w2c_resolve_occurrence_names.html"><span class="doc std std-doc">wrangle_occurrences</span></a>) accept occurrence data.
 The filename must be specified in the script parameter file, described in each tool’s
 documentation and linked above.  Data can be in one of two formats:</p>
 <ol class="arabic simple">
@@ -80,7 +80,7 @@ documentation and linked above.  Data can be in one of two formats:</p>
 including GBIF and iDigBio.</p>
 <ol class="arabic simple">
 <li><p>To download from GBIF, choose your filters in the portal
-https://www.gbif.org/occurrence.  For example, the example data was downloaded<br />
+https://www.gbif.org/occurrence.  For example, the example data was downloaded
 after selecting occurrences where genus=<code class="docutils literal notranslate"><span class="pre">Heuchera</span> <span class="pre">L</span></code>,
 https://www.gbif.org/occurrence/search?taxon_key=3032645&amp;occurrence_status=present
 Then choose the download link at the upper right column header.</p></li>
@@ -92,11 +92,11 @@ command prompt are at <a class="reference internal" href="idigbio_download.html"
 </li>
 <li><p>CSV file containing records for one or more taxa.</p>
 <ol class="arabic simple">
-<li><p>A CSV file is a text file with one species occurrence record per line.  The file<br />
-must be a delimited text file, and the first line must contain field names.  Each<br />
-record/line must contain a species (or other group) identifier, such as<br />
-scientificName or species_name, and x and y coordinates indicating a geographic<br />
-location.  The field names for these 3 columns are specified in the script<br />
+<li><p>A CSV file is a text file with one species occurrence record per line.  The file
+must be a delimited text file, and the first line must contain field names.  Each
+record/line must contain a species (or other group) identifier, such as
+scientificName or species_name, and x and y coordinates indicating a geographic
+location.  The field names for these 3 columns are specified in the script
 parameter file. The tutorial example occurrence datafile
 is <a class="reference download internal" download="" href="../_downloads/1f89a80e10a14f8c79662e05535eb0c3/heuchera.csv"><span class="xref download myst">heuchera.csv</span></a>.</p></li>
 </ol>
@@ -104,7 +104,7 @@ is <a class="reference download internal" download="" href="../_downloads/1f89a8
 </ol>
 </section>
 <section id="occurrence-wrangler-types">
-<h1>Occurrence Wrangler types<a class="headerlink" href="#occurrence-wrangler-types" title="Permalink to this heading"></a></h1>
+<h1>Occurrence Wrangler Types<a class="headerlink" href="#occurrence-wrangler-types" title="Permalink to this heading"></a></h1>
 <p>When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.</p>
 <p>Currently, wrangler_type names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in
@@ -121,7 +121,7 @@ either this or name_resolver must be provided.</p></li>
 accepted names. If set to ‘gbif’ or ‘otol’, use GBIF or OTOL name resolution
 respectively.  Defaults to None, but either this or name_map must be provided.</p></li>
 <li><p>out_map_filename (str): Output for name-mapping between original and accepted names.
-This file is then acceptable for use as a <strong>name-map</strong> input for subsequent<br />
+This file is then acceptable for use as a <strong>name-map</strong> input for subsequent
 name wrangling.  Defaults to None.</p></li>
 <li><p>map_write_interval (int): Interval at which to write records to disk.  Used to
 ensure that if something fails, all is not lost. Defaults to 100.</p></li>

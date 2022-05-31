@@ -6,5 +6,3 @@ Before installation, your environment must have [Docker](https://docs.docker.com
 ```commandline
   git clone https://github.com/biotaphy/tutorials.git
 ```
-
-

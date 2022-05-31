@@ -85,7 +85,7 @@ the tools, executes the processes, and returns the outputs to the local machine.
 </section>
 <section id="host-and-container-input-output-log-directories">
 <h2>Host and Container input, output, log directories<a class="headerlink" href="#host-and-container-input-output-log-directories" title="Permalink to this heading"></a></h2>
-<p>A named volume <code class="docutils literal notranslate"><span class="pre">data</span></code>, is created on the host machine, and the data directory in this<br />
+<p>A named volume <code class="docutils literal notranslate"><span class="pre">data</span></code>, is created on the host machine, and the data directory in this
 repository is copied to it, then mounted at /volumes/data in the container.  This
 volume is read-only, and can only be modified from the host.  If modified, the docker
 <code class="docutils literal notranslate"><span class="pre">data</span></code> volume must be re-created to propogate those changes to the containers.</p>
@@ -95,23 +95,23 @@ to the host machine.</p>
 </section>
 <section id="data-preparation-tool-configuration-file">
 <h2>Data preparation: Tool Configuration File<a class="headerlink" href="#data-preparation-tool-configuration-file" title="Permalink to this heading"></a></h2>
-<p>All commands require a configuration file with tool-specific parameters.  The file<br />
-must be in JSON format, with parameter names enclosed in double quotes, and string<br />
-values enclosed in double quotes.  Each tutorial contains an example configuration file<br />
+<p>All commands require a configuration file with tool-specific parameters.  The file
+must be in JSON format, with parameter names enclosed in double quotes, and string
+values enclosed in double quotes.  Each tutorial contains an example configuration file
 in the docker/&lt;tool_name&gt; directory.  The tutorial configuration files reference example
 data and parameters reasonable for that data.  All required and optional parameters
 are described in individual tutorial pages.</p>
 <p>Input and output files referenced in the configuration file are intended for the Docker
-container, so directory paths reference volumes mounted in the container.  Output file<br />
+container, so directory paths reference volumes mounted in the container.  Output file
 parameters (log files, data files) must be in the /volumes/output path, which allows
 writing.</p>
 </section>
 <section id="run-tool-tutorials">
 <h2>Run tool tutorials<a class="headerlink" href="#run-tool-tutorials" title="Permalink to this heading"></a></h2>
-<p>The “run_tutorial” script will run each tutorial with two arguments,<br />
+<p>The “run_tutorial” script will run each tutorial with two arguments,
 the 1) command name and 2) configuration file.  The configuration file will be a path
 on the local machine; the script will translate that to the container path, and execute
-the command in the container with the container’s copy of the file.  For example, the<br />
+the command in the container with the container’s copy of the file.  For example, the
 <strong>wrangle_species_list</strong> tutorial can be initiated with:</p>
 <p>for linux/mac systems</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh wrangle_species_list ./data/config/resolve_list_names.json
@@ -153,7 +153,7 @@ will be copied to the data/outputs directory on completion.</p>
 <p>Tools can be called with the run_tutorial script:</p>
 <p><strong>run_tutorial.sh   command   tool_configuration_file</strong></p>
 <p>Sending the command <strong>list_commands</strong> will print all valid commands.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh list_commands  
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh list_commands
 ./run_tutorial.sh wrangle_species_list  data/config/resolve_list_names.json
 ./run_tutorial.sh wrangle_tree data/config/resolve_tree_names.json
 ./run_tutorial.sh wrangle_occurrences  data/config/resolve_occurrence_names.json
