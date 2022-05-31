@@ -2,22 +2,22 @@
 
 ## Introduction
 
-Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all 
-tutorials work. 
+Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all
+tutorials work.
 
 Build grid creates a geospatial grid, in vector format.  The grid is used for defining
-cells (or "sites") as polygons.  These sites, or polygonal cells, can then be 
-intersected with other geospatial data layers, in order to generalize the values in a 
-layer to a single value per site.  When we intersect many data layers with the same 
-grid, we can create a matrix of layers by sites, and compute statistics on these values.  
+cells (or "sites") as polygons.  These sites, or polygonal cells, can then be
+intersected with other geospatial data layers, in order to generalize the values in a
+layer to a single value per site.  When we intersect many data layers with the same
+grid, we can create a matrix of layers by sites, and compute statistics on these values.
 
 ## Data preparation
 
 ### Configuration File
-An example JSON file for running the build_grid tutorial is at 
+An example JSON file for running the build_grid tutorial is at
 ../../data/input/build_grid.json. These are the 7 required parameters:
 
-* Required: 
+* Required:
   * **grid_filename**: The relative or absolute path for the output grid.
   * **min_x**: The minimum value for X (longitude) coordinate of the grid.
   * **min_y**: The minimum value for Y (latitude) coordinate of the grid.
@@ -35,7 +35,7 @@ for linux/mac systems
 bash run_tutorial.sh build_grid data/input/build_grid.json
 ```
 
-for windows: 
+for windows:
 ```cmd
 run_tutorial.bat build_grid data\input\build_grid.ini
 ```

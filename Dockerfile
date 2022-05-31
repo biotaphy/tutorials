@@ -46,4 +46,3 @@ COPY ./data/input /volumes/data/input
 COPY ./data/config /volumes/data/config
 
 SHELL ["/bin/bash", "-c"]
-

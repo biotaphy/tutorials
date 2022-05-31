@@ -33,12 +33,12 @@ usage ()
 set_defaults() {
     IMAGE_NAME="tutor"
     CONTAINER_NAME="tutor_container"
-    RO_VOLUME="data"
-    RW_VOLUME="output"
+    IN_VOLUME="data"
+    OUT_VOLUME="output"
 
     # Relative host config directory mapped to container config directory
     VOLUME_MOUNT="/volumes"
-    host_config_dir="$RO_VOLUME/config"
+    host_config_dir="$IN_VOLUME/config"
     container_config_dir="$VOLUME_MOUNT/$host_config_dir"
 
     if [ ! -f "$HOST_CONFIG_FILE" ] ; then
@@ -52,6 +52,18 @@ set_defaults() {
     fi
     touch "$LOG"
     CONTAINER_CONFIG_FILE=$(echo $HOST_CONFIG_FILE | sed "s:^$host_config_dir:$container_config_dir:g")
+}
+
+
+# -----------------------------------------------------------
+build_image() {
+    # Build and name an image from Dockerfile in this directory
+    image_exists=$(docker image ls | grep $IMAGE_NAME | wc -l )
+    if [ "$image_exists" == "0" ]; then
+        docker build . -t $IMAGE_NAME
+    else
+        echo " - Image $IMAGE_NAME is already built"  | tee -a "$LOG"
+    fi
 }
 
 
@@ -79,7 +91,7 @@ set_defaults() {
 ## -----------------------------------------------------------
 #create_volumes() {
 #    # Create a named volume for use by any container
-#    volumes=($RO_VOLUME $RW_VOLUME)
+#    volumes=($IN_VOLUME $OUT_VOLUME)
 #    for i in "${!volumes[@]}"; do
 #        vol_name=${volumesS[$i]}
 #        vol_exists=$(docker volume ls | grep $vol_name | wc -l )
@@ -94,30 +106,18 @@ set_defaults() {
 # -----------------------------------------------------------
 create_volumes() {
     # Create named RO input volume for use by any container
-    ro_vol_exists=$(docker volume ls | grep $RO_VOLUME | wc -l )
+    ro_vol_exists=$(docker volume ls | grep $IN_VOLUME | wc -l )
     if [ "$ro_vol_exists" == "0" ]; then
-        docker volume create $RO_VOLUME
+        docker volume create $IN_VOLUME
     else
-        echo " - Volume $RO_VOLUME is already created"  | tee -a "$LOG"
+        echo " - Volume $IN_VOLUME is already created"  | tee -a "$LOG"
     fi
     # Create named RW output volume for use by any container
-    rw_vol_exists=$(docker volume ls | grep $RW_VOLUME | wc -l )
+    rw_vol_exists=$(docker volume ls | grep $OUT_VOLUME | wc -l )
     if [ "$rw_vol_exists" == "0" ]; then
-        docker volume create $RW_VOLUME
+        docker volume create $OUT_VOLUME
     else
-        echo " - Volume $RW_VOLUME is already created"  | tee -a "$LOG"
-    fi
-}
-
-
-# -----------------------------------------------------------
-build_image() {
-    # Build and name an image from Dockerfile in this directory
-    image_exists=$(docker image ls | grep $IMAGE_NAME | wc -l )
-    if [ "$image_exists" == "0" ]; then
-        docker build . -t $IMAGE_NAME
-    else
-        echo " - Image $IMAGE_NAME is already built"  | tee -a "$LOG"
+        echo " - Volume $OUT_VOLUME is already created"  | tee -a "$LOG"
     fi
 }
 
@@ -129,9 +129,9 @@ start_container() {
     if [ $container_count -ne 1 ]; then
         # Option string for volumes
         # TODO: after debugging, add read-only back to data volume
-#        vol_opts="--volume ${RO_VOLUME}:${VOLUME_MOUNT}/${RO_VOLUME}:ro \
-        vol_opts="--volume ${RO_VOLUME}:${VOLUME_MOUNT}/${RO_VOLUME} \
-                  --volume ${RW_VOLUME}:${VOLUME_MOUNT}/${RW_VOLUME}"
+#        vol_opts="--volume ${IN_VOLUME}:${VOLUME_MOUNT}/${IN_VOLUME}:ro \
+        vol_opts="--volume ${IN_VOLUME}:${VOLUME_MOUNT}/${IN_VOLUME} \
+                  --volume ${OUT_VOLUME}:${VOLUME_MOUNT}/${OUT_VOLUME}"
         # Start the container, leaving it up
         echo " - Run container $CONTAINER_NAME from image $IMAGE_NAME" | tee -a "$LOG"
         docker run -td --name ${CONTAINER_NAME}  ${vol_opts}  ${IMAGE_NAME}  bash
@@ -146,7 +146,7 @@ start_container() {
 execute_process() {
     # Command to execute in container; `test` lists directory contents
     if [ $CMD = "test" ]; then
-        command="ls -lahtr $VOLUME_MOUNT/$RO_VOLUME/config"
+        command="ls -lahtr $VOLUME_MOUNT/$IN_VOLUME/config"
     else
         command="${CMD} --config_file=${CONTAINER_CONFIG_FILE}"
     fi
@@ -172,7 +172,7 @@ save_outputs() {
         # Copy entire container output directory to host (no wildcards)
         # If directory exists, does not overwrite, just adds contents
         echo " - Copy outputs from container $CONTAINER_NAME" | tee -a "$LOG"
-        docker cp ${CONTAINER_NAME}:${VOLUME_MOUNT}/${RW_VOLUME}  ./${RO_VOLUME}/
+        docker cp ${CONTAINER_NAME}:${VOLUME_MOUNT}/${OUT_VOLUME}  ./${IN_VOLUME}/
     else
         echo " - Container $CONTAINER_NAME not running to save_outputs" | tee -a "$LOG"
     fi
@@ -190,6 +190,24 @@ remove_container() {
         docker container rm $CONTAINER_NAME
     else
         echo " - Container $CONTAINER_NAME is not running" | tee -a "$LOG"
+    fi
+}
+
+
+# -----------------------------------------------------------
+list_volume_contents() {
+    # Find an image, start it with output volume, check contents
+    image_count=$(docker image ls | grep $IMAGE_NAME |  wc -l )
+    if [ $image_count -eq 1 ]; then
+        echo " - Start a container from $IMAGE_NAME" | tee -a "$LOG"
+        vol_opt="${OUT_VOLUME}:${VOLUME_MOUNT}/${OUT_VOLUME}"
+        docker run -td --name $CONTAINER_NAME --volume ${vol_opt} ${IMAGE_NAME} bash
+        echo " - List output volume contents $CONTAINER_NAME" | tee -a "$LOG"
+        docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${OUT_VOLUME}
+        docker stop $CONTAINER_NAME
+        docker container rm $CONTAINER_NAME
+    else
+        echo " - Image $IMAGE_NAME does not exist" | tee -a "$LOG"
     fi
 }
 
@@ -227,13 +245,22 @@ if [[ " ${COMMANDS[*]} " =~  ${CMD}  ]]; then
         execute_process
         save_outputs
         remove_container
+        list_volume_contents
     fi
 fi
 
 time_stamp "# End"
 
-
-docker run -td --name tutor_container -v data:/volumes/data:ro -v output:/volumes/output tutor bash
-docker exec -it tutor_container ls -lahtr /volumes/data/config
-docker stop tutor_container
-docker container rm tutor_container
+#    IMAGE_NAME="tutor"
+#    CONTAINER_NAME="tutor_container"
+#    IN_VOLUME="data"
+#    OUT_VOLUME="output"
+#    VOLUME_MOUNT="/volumes"
+#        vol_opts="--volume ${IN_VOLUME}:${VOLUME_MOUNT}/${IN_VOLUME} \
+#                  --volume ${OUT_VOLUME}:${VOLUME_MOUNT}/${OUT_VOLUME} "
+#
+#        docker run -td --name $CONTAINER_NAME  ${vol_opts} ${IMAGE_NAME} bash
+#        echo " - List output volume contents $CONTAINER_NAME" | tee -a "$LOG"
+#        docker exec -it $CONTAINER_NAME /bin/sh
+#        docker stop $CONTAINER_NAME
+#        docker container rm $CONTAINER_NAME

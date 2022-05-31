@@ -1,0 +1,45 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: check-toml
+-   repo: https://github.com/PyCQA/pydocstyle
+    rev: 6.1.1
+    hooks:
+    - id: pydocstyle
+      args: ['--convention=google']
+-   repo: https://github.com/terrencepreilly/darglint
+    rev: v1.8.1
+    hooks:
+    - id: darglint
+      exclude: versioneer.py|lmpy/_version.py
+      args: ['-v2', '-sgoogle']
+-   repo: https://github.com/PyCQA/bandit
+    rev: 1.7.4
+    hooks:
+    - id: bandit
+      args: [-c, .github/linters/.bandit]
+#-   repo: https://github.com/jendrikseipp/vulture
+#    rev: 'v2.3'
+#    hooks:
+#    - id: vulture
+-   repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.31.1
+    hooks:
+    - id: markdownlint
+      args: [--config=.github/linters/.markdownlint]
+-   repo: https://github.com/asottile/pyupgrade
+    rev: v2.31.1
+    hooks:
+    -   id: pyupgrade
+
+#-   repo: https://github.com/markdownlint/markdownlint
+#    rev: v0.11.0
+#    hooks:
+#      - id: markdownlint
+#        files: \.md$
+#        args:
+#          - --git-recurse

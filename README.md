@@ -3,7 +3,7 @@
 ## Setup Steps
 
 Before we can run the demo, we need to build the container.  This documentation
-assumes that Docker has been installed for your environment 
+assumes that Docker has been installed for your environment
 (see: https://docs.docker.com/get-docker/).
 
 1. Clone or download the repository
@@ -20,15 +20,15 @@ cd tutorials
 
 3. Run the bash script with a command and configuration file to:
 
-   1. create the volumes `data` and `output` (if they do not exist) 
-   2. build the image `tutor` (if it does not exist) 
-   3. start a container `tutor_container` with volumes attached and 
+   1. create the volumes `data` and `output` (if they do not exist)
+   2. build the image `tutor` (if it does not exist)
+   3. start a container `tutor_container` with volumes attached and
    4. run the chosen command with chosen configuration file
    5. compute output files in the `output` volume
    6. copy output files to the host machine
 
 ```zsh
-bash run_tutorial.sh wrangle_occurrences data/input/clean_occurrences.json
+./run_tutorial.sh wrangle_occurrences data/input/clean_occurrences.json
 ```
 
 4. Run a bash shell in the container interactively to examine outputs
@@ -98,7 +98,7 @@ Run, attaching volumes, with command and (container) path to config file:
 CMD="wrangle_occurrences /volumes/data/input/clean_occurrences.json"
 docker run -it --volume data:/volumes/data:ro --volume output:/volumes/output tutor $CMD
 ```
-4. 
+4.
 5. Run a bash shell in the container interactively to examine outputs
 
 Mac / Linux:
@@ -128,4 +128,3 @@ And run this command (which ignores running container):
 ```zsh
 docker system prune --all --volumes
 ```
-
