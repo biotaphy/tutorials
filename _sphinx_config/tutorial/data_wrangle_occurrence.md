@@ -1,4 +1,35 @@
-# Occurrence Data Wrangler types
+# Occurrence Data
+
+Several tools ([split_occurrence_data](w3_split_occurrence_data.md), 
+[wrangle_occurrences](w2c_resolve_occurrence_names.md)) accept occurrence data.  
+The filename must be specified in the script parameter file, described in each tool's
+documentation and linked above.  Data can be in one of two formats:
+
+1) Darwin Core Archive (DwCA) file.  DwCA files may be downloaded from several places, 
+   including GBIF and iDigBio.
+
+   1) To download from GBIF, choose your filters in the portal 
+      https://www.gbif.org/occurrence.  For example, the example data was downloaded    
+      after selecting occurrences where genus=`Heuchera L`, 
+      https://www.gbif.org/occurrence/search?taxon_key=3032645&occurrence_status=present
+      Then choose the download link at the upper right column header.
+   2) To download from iDigBio, instructions for querying and downloading from the 
+      command prompt are at [idigbio_download.md](./idigbio_download.md). 
+   3) The tutorial example DwCA is at
+      [occ_heuchera_gbif.zip](../../data/input/occ_heuchera_gbif.zip).
+
+2) CSV file containing records for one or more taxa.    
+
+   1) A CSV file is a text file with one species occurrence record per line.  The file  
+      must be a delimited text file, and the first line must contain field names.  Each  
+      record/line must contain a species (or other group) identifier, such as  
+      scientificName or species_name, and x and y coordinates indicating a geographic  
+      location.  The field names for these 3 columns are specified in the script  
+      parameter file. The tutorial example occurrence datafile 
+      is [heuchera.csv](../../data/input/heuchera.csv).
+
+
+# Occurrence Wrangler types
 
 When running wranglers on an occurrence data set, wranglers are applied in the order 
 that they are listed in the wrangler config file.  
