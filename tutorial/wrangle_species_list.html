@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Species List Data Wrangler types &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Species List Data Wrangler &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -59,9 +59,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Species List Data Wrangler types</li>
+      <li>Species List Data Wrangler</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/species_list_wrangler.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/wrangle_species_list.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -69,15 +69,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="species-list-data-wrangler-types">
-<h1>Species List Data Wrangler types<a class="headerlink" href="#species-list-data-wrangler-types" title="Permalink to this heading"></a></h1>
+  <section id="species-list-data-wrangler">
+<h1>Species List Data Wrangler<a class="headerlink" href="#species-list-data-wrangler" title="Permalink to this heading"></a></h1>
 <p>When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.</p>
 <p>Currently, wrangler_type names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in
 this module’s files.  Each wrangler’s parameters correspond to the constructor
 arguments for that wrangler.</p>
+<section id="wrangler-configuration-file">
+<h2>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading"></a></h2>
+<p>A file specifying 0 or more wranglers to apply to the species list, and options
+specific to each.  Configuration files:</p>
+<ul class="simple">
+<li><p>are in JSON format, a list of desired wranglers.</p></li>
+<li><p>Each wrangler is a dictionary.</p></li>
+<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler type.</p></li>
+<li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
+</ul>
+</section>
+<section id="species-list-wrangler-types">
+<h2>Species List Wrangler Types<a class="headerlink" href="#species-list-wrangler-types" title="Permalink to this heading"></a></h2>
 <section id="acceptednamespecieslistwrangler">
-<h2>AcceptedNameSpeciesListWrangler<a class="headerlink" href="#acceptednamespecieslistwrangler" title="Permalink to this heading"></a></h2>
+<h3>AcceptedNameSpeciesListWrangler<a class="headerlink" href="#acceptednamespecieslistwrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>optional</p>
 <ul>
@@ -97,7 +110,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="intersectionspecieslistwrangler">
-<h2>IntersectionSpeciesListWrangler<a class="headerlink" href="#intersectionspecieslistwrangler" title="Permalink to this heading"></a></h2>
+<h3>IntersectionSpeciesListWrangler<a class="headerlink" href="#intersectionspecieslistwrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -107,7 +120,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="matchmatrixspecieslistwrangler">
-<h2>MatchMatrixSpeciesListWrangler<a class="headerlink" href="#matchmatrixspecieslistwrangler" title="Permalink to this heading"></a></h2>
+<h3>MatchMatrixSpeciesListWrangler<a class="headerlink" href="#matchmatrixspecieslistwrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -117,7 +130,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="matchtreespecieslistwrangler">
-<h2>MatchTreeSpeciesListWrangler<a class="headerlink" href="#matchtreespecieslistwrangler" title="Permalink to this heading"></a></h2>
+<h3>MatchTreeSpeciesListWrangler<a class="headerlink" href="#matchtreespecieslistwrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -127,7 +140,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="unionspecieslistwrangler">
-<h2>UnionSpeciesListWrangler<a class="headerlink" href="#unionspecieslistwrangler" title="Permalink to this heading"></a></h2>
+<h3>UnionSpeciesListWrangler<a class="headerlink" href="#unionspecieslistwrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -137,16 +150,6 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 </section>
-<section id="wrangler-configuration-file">
-<h1>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading"></a></h1>
-<p>A file specifying 0 or more wranglers to apply to the species list, and options
-specific to each.  Configuration files:</p>
-<ul class="simple">
-<li><p>are in JSON format, a list of desired wranglers.</p></li>
-<li><p>Each wrangler is a dictionary.</p></li>
-<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler type.</p></li>
-<li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
-</ul>
 </section>
 
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tree Data Wrangler Types &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Trees &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -59,9 +59,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Tree Data Wrangler Types</li>
+      <li>Trees</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/wrangle_tree.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/data_wrangle_tree.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -69,15 +69,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="tree-data-wrangler-types">
-<h1>Tree Data Wrangler Types<a class="headerlink" href="#tree-data-wrangler-types" title="Permalink to this heading"></a></h1>
+  <section id="trees">
+<h1>Trees<a class="headerlink" href="#trees" title="Permalink to this heading"></a></h1>
+<section id="tree-data">
+<h2>Tree Data<a class="headerlink" href="#tree-data" title="Permalink to this heading"></a></h2>
+<p>Trees may be created by the user, downloaded from one of various sources, or output by
+another Biotaphy process.  Trees must be in Nexus or Newick format.  The tutorial
+example tree is
+<span class="xref myst">subtree-ottol-saxifragales.tre</span>.</p>
+<p>To download a tree from <a class="reference external" href="https://tree.opentreeoflife.org/">OpenTree of Life</a>, filter for
+the desired tree, then choose <strong>Download subtree as Newick string</strong> in the upper,
+rightmost panel.</p>
+</section>
+<section id="wrangler-configuration-file">
+<h2>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading"></a></h2>
+<p>A file specifying 0 or more wranglers to apply to the tree data, and options
+specific to each.  Configuration files:</p>
+<ul class="simple">
+<li><p>are in JSON format, a list of desired wranglers.</p></li>
+<li><p>Each wrangler is a dictionary.</p></li>
+<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler type.</p></li>
+<li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
+</ul>
+</section>
+<section id="tree-data-wrangler-types">
+<h2>Tree Data Wrangler Types<a class="headerlink" href="#tree-data-wrangler-types" title="Permalink to this heading"></a></h2>
 <p>When running wranglers on a tree, wranglers are applied in the order
 that they are listed in the wrangler config file.</p>
 <p>Currently, wrangler_type names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in
 this module’s files.  Each wrangler’s parameters correspond to the constructor
 arguments for that wrangler.</p>
 <section id="acceptednametreewrangler">
-<h2>AcceptedNameTreeWrangler<a class="headerlink" href="#acceptednametreewrangler" title="Permalink to this heading"></a></h2>
+<h3>AcceptedNameTreeWrangler<a class="headerlink" href="#acceptednametreewrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>optional</p>
 <ul>
@@ -98,7 +121,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="matchmatrixtreewrangler">
-<h2>MatchMatrixTreeWrangler<a class="headerlink" href="#matchmatrixtreewrangler" title="Permalink to this heading"></a></h2>
+<h3>MatchMatrixTreeWrangler<a class="headerlink" href="#matchmatrixtreewrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -111,7 +134,7 @@ Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
 </ul>
 </section>
 <section id="matchspecieslisttreewrangler">
-<h2>MatchSpeciesListTreeWrangler<a class="headerlink" href="#matchspecieslisttreewrangler" title="Permalink to this heading"></a></h2>
+<h3>MatchSpeciesListTreeWrangler<a class="headerlink" href="#matchspecieslisttreewrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -121,7 +144,7 @@ Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
 </ul>
 </section>
 <section id="subsettreewrangler">
-<h2>SubsetTreeWrangler<a class="headerlink" href="#subsettreewrangler" title="Permalink to this heading"></a></h2>
+<h3>SubsetTreeWrangler<a class="headerlink" href="#subsettreewrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -131,16 +154,6 @@ Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
 </ul>
 </section>
 </section>
-<section id="wrangler-configuration-file">
-<h1>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading"></a></h1>
-<p>A file specifying 0 or more wranglers to apply to the tree data, and options
-specific to each.  Configuration files:</p>
-<ul class="simple">
-<li><p>are in JSON format, a list of desired wranglers.</p></li>
-<li><p>Each wrangler is a dictionary.</p></li>
-<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler type.</p></li>
-<li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
-</ul>
 </section>
 
 

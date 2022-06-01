@@ -77,28 +77,33 @@
 (Module 2, Biotaphy tools)</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials work.</p>
+<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
+tutorials work.</p>
 </section>
 <section id="data-preparation">
 <h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>
 <section id="configuration-file">
 <h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this heading"></a></h3>
-<p>An example json file for running the clean_occurrences tutorial is at ../../data/config/wrangle_occurrences.json.
-These are the required and optional parameters:</p>
+<p>An example json file for running the clean_occurrences tutorial is
+<span class="xref myst">here</span>  These are the required and optional
+parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
 <ul>
 <li><p><strong>in_filename</strong>: An input file containing CSV occurrence data.</p></li>
 <li><p><strong>out_filename</strong>: A file path for output cleaned occurrence data</p></li>
-<li><p><strong>wrangler_config_filename</strong>: An input file containing occurrence wrangler options in JSON format</p></li>
+<li><p><strong>wrangler_config_filename</strong>: An input file containing occurrence wrangler options
+in JSON format</p></li>
 </ul>
 </li>
 <li><p>Optional</p>
 <ul>
-<li><p><strong>species_field</strong>: The field name of the column containing species data (used for grouping taxa) for the
+<li><p><strong>species_field</strong>: The field name of the column containing species data (used for
+grouping taxa) for the out_filename.</p></li>
+<li><p><strong>x_key</strong>: The field name of the column containing x/longitude coordinate for the
 out_filename.</p></li>
-<li><p><strong>x_key</strong>: The field name of the column containing x/longitude coordinate for the out_filename.</p></li>
-<li><p><strong>y_key</strong>: The field name of the column containing y/latitude coordinate for the out_filename.</p></li>
+<li><p><strong>y_key</strong>: The field name of the column containing y/latitude coordinate for the
+out_filename.</p></li>
 <li><p><strong>report_filename</strong>: File location to write optional output report JSON.</p></li>
 </ul>
 </li>
@@ -112,16 +117,22 @@ CSV file containing records for one or more taxa.  More information is in the
 </section>
 <section id="input-wrangler-configuration-file">
 <h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
-<p>A file specifying occurrence-wranglers to apply to the CSV data, and options specific to each.</p>
-<p>The clean_occurrences configuration file consists of one or more Occurrence Data Wranglers (wrangler_type), and the
-wrangler-specific required and possibly optional parameters for each.  Configuration files:</p>
+<p>A file specifying occurrence-wranglers to apply to the CSV data, and options specific
+to each.</p>
+<p>The clean_occurrences configuration file consists of one or more Occurrence Data
+Wranglers (wrangler_type), and the wrangler-specific required and possibly optional
+parameters for each.  Configuration files:</p>
 <ul class="simple">
 <li><p>are in JSON format, a list of one dictionary per desired wrangler.</p></li>
-<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler types (listed below).</p></li>
-<li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
-<li><p>Below is a list of data wrangler_types and the required and/or optional parameters for each.</p></li>
-<li><p>The <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">Occurrence Data Wrangler Types</span></a> page contains a list of all occurrence data
-wrangler_types and the required and/or optional parameters for each.</p></li>
+<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler types
+(listed below).</p></li>
+<li><p>The dictionary will also contain all required parameters and any optional
+parameters.</p></li>
+<li><p>Below is a list of data wrangler_types and the required and/or optional parameters
+for each.</p></li>
+<li><p>The <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">Occurrence Data Wrangler Types</span></a> page contains a
+list of all occurrence data wrangler_types and the required and/or optional
+parameters for each.</p></li>
 <li><p>Example clean_occurrences wrangler configuration:</p></li>
 </ul>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
@@ -143,7 +154,7 @@ wrangler_types and the required and/or optional parameters for each.</p></li>
 </section>
 <section id="run-tutorial">
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
-<p>Initiate the clean occurrences process with two arguments, the 1) command name and 2) configuration INI file:</p>
+<p>Initiate the clean occurrences process with the following:</p>
 <p>for linux/mac systems</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh wrangle_occurrences data/config/wrangle_occurrences.json
 </pre></div>

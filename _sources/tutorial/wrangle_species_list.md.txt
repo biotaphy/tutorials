@@ -1,4 +1,4 @@
-# Species List Data Wrangler types
+# Species List Data Wrangler
 
 When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.
@@ -7,7 +7,19 @@ Currently, wrangler_type names correspond to the wrangler class `name` attribute
 this module's files.  Each wrangler's parameters correspond to the constructor
 arguments for that wrangler.
 
-## AcceptedNameSpeciesListWrangler
+## Wrangler configuration file
+
+A file specifying 0 or more wranglers to apply to the species list, and options
+specific to each.  Configuration files:
+
+* are in JSON format, a list of desired wranglers.
+* Each wrangler is a dictionary.
+* Each dictionary must contain "wrangler_type", with the name of the wrangler type.
+* The dictionary will also contain all required parameters and any optional parameters.
+
+## Species List Wrangler Types
+
+### AcceptedNameSpeciesListWrangler
 
 * optional
 
@@ -23,36 +35,26 @@ arguments for that wrangler.
     ensure that if something fails, all is not lost. Defaults to 100.
   * out_map_format (str): Type of file format for out_map_filename, defaults to "json".
 
-## IntersectionSpeciesListWrangler
+### IntersectionSpeciesListWrangler
 
 * required
 
   * species_list (str): Filename containing species list to intersect
 
-## MatchMatrixSpeciesListWrangler
+### MatchMatrixSpeciesListWrangler
 
 * required
 
   * matrix (str): Filename containing matrix to match
 
-## MatchTreeSpeciesListWrangler
+### MatchTreeSpeciesListWrangler
 
 * required
 
   * tree (str): Filename containing tree to match
 
-## UnionSpeciesListWrangler
+### UnionSpeciesListWrangler
 
 * required
 
   * species_list (str): Filename containing species list to join
-
-# Wrangler configuration file
-
-A file specifying 0 or more wranglers to apply to the species list, and options
-specific to each.  Configuration files:
-
-  * are in JSON format, a list of desired wranglers.
-  * Each wrangler is a dictionary.
-  * Each dictionary must contain "wrangler_type", with the name of the wrangler type.
-  * The dictionary will also contain all required parameters and any optional parameters.

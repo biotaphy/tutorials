@@ -28,7 +28,7 @@ file is specified in the script parameter file described below.
 A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
-optional parameters for each are [here](species_list_wrangler.md).
+optional parameters for each are [here](wrangle_species_list.md).
 
 ### Input: Script parameter file
 
@@ -36,23 +36,22 @@ A JSON parameter file is required for this command.  The tutorial parameter file
 is [resolve_list_names.json](../../data/config/resolve_list_names.json).  These are the
 required and optional parameters:
 
-   * Required:
+* Required:
 
-     * **in_species_list_filename**: Input filename containing species list, described
-       in the section above.  The tutorial example species list is
-       [heuchera.txt](../../data/input/heuchera.txt).
-     * **wrangler_configuration_file**: species list wrangler configuration file,
-       described in the previous input section.  The tutorial example wrangler
-       configuration contains one wrangler, the AcceptedNameSpeciesListWrangler, and
-       is in [wrangle_list_names.json](../../data/config/wrangle_list_names.json)
-     * **out_species_list_filename**: output filename for resolved species list.
+  * **in_species_list_filename**: Input filename containing species list, described
+    in the section above.  The tutorial example species list is
+    [heuchera.txt](../../data/input/heuchera.txt).
+  * **wrangler_configuration_file**: species list wrangler configuration file,
+    described in the previous input section.  The tutorial example wrangler
+    configuration contains one wrangler, the AcceptedNameSpeciesListWrangler, and
+    is in [wrangle_list_names.json](../../data/config/wrangle_list_names.json)
+  * **out_species_list_filename**: output filename for resolved species list.
 
-   * Optional
+* Optional
 
-     * **log_filename**: Output filename to write logging data
-     * **log_console**: 'true' to write log to console
-     * **report_filename**: output filename with data modifications made by wranglers
-
+  * **log_filename**: Output filename to write logging data
+  * **log_console**: 'true' to write log to console
+  * **report_filename**: output filename with data modifications made by wranglers
 
 ## Run tutorial
 

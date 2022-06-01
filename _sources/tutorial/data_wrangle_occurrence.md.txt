@@ -1,4 +1,6 @@
-# Occurrence Data
+# Specimen Occurrences
+
+## Occurrence Data
 
 Several tools ([split_occurrence_data](w3_split_occurrence_data.md),
 [wrangle_occurrences](w2c_resolve_occurrence_names.md)) accept occurrence data.
@@ -8,10 +10,10 @@ documentation and linked above.  Data can be in one of two formats:
 1) Darwin Core Archive (DwCA) file.  DwCA files may be downloaded from several places,
    including GBIF and iDigBio.
 
-   1) To download from GBIF, choose your filters in the portal
-      https://www.gbif.org/occurrence.  For example, the example data was downloaded
-      after selecting occurrences where genus=`Heuchera L`,
-      https://www.gbif.org/occurrence/search?taxon_key=3032645&occurrence_status=present
+   1) To download from GBIF, choose your filters in the
+      [portal](https://www.gbif.org/occurrence).  For example, the example data was
+      downloaded after selecting occurrences where
+      [genus=`Heuchera L`](https://www.gbif.org/occurrence/search?taxon_key=3032645&occurrence_status=present)
       Then choose the download link at the upper right column header.
    2) To download from iDigBio, instructions for querying and downloading from the
       command prompt are at [idigbio_download.md](./idigbio_download.md).
@@ -28,8 +30,7 @@ documentation and linked above.  Data can be in one of two formats:
       parameter file. The tutorial example occurrence datafile
       is [heuchera.csv](../../data/input/heuchera.csv).
 
-
-# Occurrence Wrangler Types
+## Occurrence Wrangler Types
 
 When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.
@@ -38,7 +39,7 @@ Currently, wrangler_type names correspond to the wrangler class `name` attribute
 this module's files.  Each wrangler's parameters correspond to the constructor
 arguments for that wrangler.
 
-## AcceptedNameOccurrenceWrangler
+### AcceptedNameOccurrenceWrangler
 
 * optional
 
@@ -55,21 +56,21 @@ arguments for that wrangler.
   * out_map_format (str): Type of file format for out_map_filename, defaults to "json".
   * store_original_attribute (str): A new attribute to store the original taxon name.
 
-## AttributeFilterWrangler
+### AttributeFilterWrangler
 
 * required
 
   * attribute_name (str): The name of the attribute to modify.
   * filter_func (Method): A function to be used for the pass condition.
 
-## AttributeModifierWrangler
+### AttributeModifierWrangler
 
 * required
 
   * attribute_name (str): The name of the attribute to modify.
   * attribute_func (Method): A function to generate values for a point.
 
-## BoundingBoxFilter
+### BoundingBoxFilter
 
 * required
 
@@ -78,13 +79,13 @@ arguments for that wrangler.
   * max_x (numeric): The maximum 'x' value for the bounding box.
   * max_y (numeric): The maximum 'y' value for the bounding box.
 
-## CommonFormatWrangler
+### CommonFormatWrangler
 
 * required
 
   * attribute_map (dict): A mapping of source key, target values.
 
-## CoordinateConverterWrangler
+### CoordinateConverterWrangler
 
 * required
 
@@ -97,40 +98,43 @@ arguments for that wrangler.
   * original_x_attribute (str): An attribute to store the original x value.
   * original_y_attribute (str): An attribute to store the original y value.
 
-## DecimalPrecisionFilter
+### DecimalPrecisionFilter
 
 * required:
 
-  * decimal_places (int): Only keep points with at least this many decimal places of precision.
+  * decimal_places (int): Only keep points with at least this many decimal places of
+    precision.
 
-## DisjointGeometriesFilter'
+### DisjointGeometriesFilter'
 
 * required:
 
   * geometry_wkts (list of str): A list of geometry WKTs to check against.
 
-## IntersectGeometriesFilter
+### IntersectGeometriesFilter
 
 * required:
 
   * geometry_wkts (list of str): A list of WKT strings.
 
-## MinimumPointsWrangler
+### MinimumPointsWrangler
 
 * required:
 
   * minimum_count (int): The minimum number of points in order to keep all.
 
-## SpatialIndexFilter
+### SpatialIndexFilter
 
 * required:
 
   * spatial_index (SpatialIndex): A SpatialIndex object that can be searched.
-  * intersections_map (dict): A dictionary of species name keys and corresponding valid intersection values.
-  * check_hit_func (Method): A function that takes two arguments (search hit, valid intersections for a species)
-    and returns a boolean indication if the hit should be counted.
+  * intersections_map (dict): A dictionary of species name keys and corresponding valid
+    intersection values.
+  * check_hit_func (Method): A function that takes two arguments (search hit, valid
+    intersections for a species) and returns a boolean indication if the hit should be
+    counted.
 
-## UniqueLocalitiesFilter
+### UniqueLocalitiesFilter
 
 * optional parameters:
 
