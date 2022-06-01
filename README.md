@@ -3,20 +3,20 @@
 ## Setup Steps
 
 Before we can run the demo, we need to build the container.  This documentation
-assumes that Docker has been installed for your environment
-(see: https://docs.docker.com/get-docker/).
+assumes that [Docker](https://docs.docker.com/get-docker/) has been installed for your
+environment.
 
 1. Clone or download the repository
 
-```commandline
-git clone https://github.com/biotaphy/tutorials.git
-```
+   ```commandline
+   git clone https://github.com/biotaphy/tutorials.git
+   ```
 
 2. Change to the repository directory
 
-```commandline
-cd tutorials
-```
+   ```commandline
+   cd tutorials
+   ```
 
 3. Run the bash script with a command and configuration file to:
 
@@ -27,43 +27,42 @@ cd tutorials
    5. compute output files in the `output` volume
    6. copy output files to the host machine
 
-```zsh
-./run_tutorial.sh wrangle_occurrences data/input/clean_occurrences.json
-```
+   ```zsh
+   ./run_tutorial.sh wrangle_occurrences data/input/clean_occurrences.json
+   ```
 
 4. Run a bash shell in the container interactively to examine outputs
 
-Mac / Linux:
+   Mac / Linux:
 
-```commandline
-docker run  -it tutorials_backend bash
-root@f13e704738cf:/# ls -lahtr /volumes/output/
-total 72K
-drwxr-xr-x 1 root root 4.0K May 25 15:41 ..
--rw-r--r-- 1 root root  56K May 25 15:58 resolve_list_names.log
--rw-r--r-- 1 root root   97 May 25 15:58 resolve_list_names.rpt
--rw-r--r-- 1 root root 2.4K May 25 15:58 heuchera_accepted.txt
-drwxr-xr-x 2 root root 4.0K May 25 15:58 .
-```
+   ```commandline
+   docker run  -it tutorials_backend bash
+   root@f13e704738cf:/# ls -lahtr /volumes/output/
+   total 72K
+   drwxr-xr-x 1 root root 4.0K May 25 15:41 ..
+   -rw-r--r-- 1 root root  56K May 25 15:58 resolve_list_names.log
+   -rw-r--r-- 1 root root   97 May 25 15:58 resolve_list_names.rpt
+   -rw-r--r-- 1 root root 2.4K May 25 15:58 heuchera_accepted.txt
+   drwxr-xr-x 2 root root 4.0K May 25 15:58 .
+   ```
 
 5. Check the output locally
 
-```commandline
-ls -lahtr ./output
-astewart@murderbot:~/git/tutorials$ ls -lahtr ./output/
-total 72K
--rw-r--r-- 1 astewart astewart   97 May 25 10:58 resolve_list_names.rpt
--rw-r--r-- 1 astewart astewart  56K May 25 10:58 resolve_list_names.log
--rw-r--r-- 1 astewart astewart 2.4K May 25 10:58 heuchera_accepted.txt
-drwxr-xr-x 2 astewart astewart 4.0K May 25 10:58 .
-drwxrwxr-x 9 astewart astewart 4.0K May 25 12:48 ..
-```
+   ```commandline
+   ls -lahtr ./output
+   astewart@murderbot:~/git/tutorials$ ls -lahtr ./output/
+   total 72K
+   -rw-r--r-- 1 astewart astewart   97 May 25 10:58 resolve_list_names.rpt
+   -rw-r--r-- 1 astewart astewart  56K May 25 10:58 resolve_list_names.log
+   -rw-r--r-- 1 astewart astewart 2.4K May 25 10:58 heuchera_accepted.txt
+   drwxr-xr-x 2 astewart astewart 4.0K May 25 10:58 .
+   drwxrwxr-x 9 astewart astewart 4.0K May 25 12:48 ..
+   ```
 
 [//]: # (or Windows:)
 [//]: # (```commandline)
 [//]: # (docker run -v %cd%/data:/demo -it dc_demo bash)
 [//]: # (```)
-
 
 ## Tutorials
 
@@ -75,7 +74,6 @@ drwxrwxr-x 9 astewart astewart 4.0K May 25 12:48 ..
 6. Biogeographic hypotheses and MCPA
 7. Hypothesis testing
 8. Scaling?
-
 
 ## Run without helper script
 
@@ -98,8 +96,8 @@ Run, attaching volumes, with command and (container) path to config file:
 CMD="wrangle_occurrences /volumes/data/input/clean_occurrences.json"
 docker run -it --volume data:/volumes/data:ro --volume output:/volumes/output tutor $CMD
 ```
-4.
-5. Run a bash shell in the container interactively to examine outputs
+
+Run a bash shell in the container interactively to examine outputs
 
 Mac / Linux:
 

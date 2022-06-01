@@ -75,11 +75,14 @@ The "run_tutorial" script will:
 
 1. Create (if they do not exist) volumes to share data between the host and container.
 2. Build (if it does not exist) a Docker image.
-3. Start (if it is not running) a Docker container from the image, with volumes attached.
-4. Execute the specified command with the parameters in the specified configuration file.
-   directory.  The process will:
+3. Start (if it is not running) a Docker container from the image, with volumes
+   attached.
+4. Execute the specified command with the parameters in the specified configuration
+   file. directory.  The process will:
+
    1. read files from the container **/volumes/data** directory
    2. write outputs and logs to the container **/volumes/output** directory
+
 5. Copy the container **/volumes/output** directory back to the local data directory.
 6. Stop and delete the container.  All outputs in the docker volume are preserved and
    accessible the next time it is attached to a container.
@@ -96,7 +99,9 @@ will be copied to the data/outputs directory on completion.
 
 Tools can be called with the run_tutorial script:
 
-**run_tutorial.sh   command   tool_configuration_file**
+```zsh
+./run_tutorial.sh  <command>  <tool_configuration_file>
+```
 
 Sending the command **list_commands** will print all valid commands.
 

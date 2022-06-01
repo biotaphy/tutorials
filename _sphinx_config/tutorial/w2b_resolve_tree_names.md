@@ -13,13 +13,8 @@ tutorials work.
 ### Input: tree data
 
 Use an existing or create your own tree in Newick or Nexus format.  This
-file is specified in the script parameter file described below.
-
-1) The tutorial example tree is
-[subtree-ottol-saxifragales.tre](../../data/input/subtree-ottol-saxifragales.tre).
-2) Or download a tree from
-[OpenTree of Life](https://tree.opentreeoflife.org/) .  After filtering for the tree
-you want, choose **Download subtree as Newick string** in the upper, rightmost panel.
+file is specified in the script parameter file described below and described further
+in [data_wrangle_tree.md](data_wrangle_tree.md).
 
 ### Input: Wrangler configuration file
 
@@ -27,7 +22,7 @@ A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the **Tree Data Wrangler Types** section
-[here](wrangle_tree.md).
+[here](data_wrangle_tree.md).
 
 ### Input: Script parameter file
 

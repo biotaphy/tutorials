@@ -6,6 +6,7 @@ To download from iDigBio, full instructions are at the
 To pull data from the command prompt, use the `curl` command to pull text response
 directly to terminal with the example query_url:
 [Euphorbia](https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&email=donotreply%40idigbio.org)
+
 ```zsh
 $ curl https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&email=donotreply%40idigbio.org
 [1] 58979
@@ -31,6 +32,7 @@ astewart@murderbot:~/git/tutorials$ {
 ```
 
 Then use `curl` on the resulting **status_url** field:
+
 ```zsh
 $ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
 {
@@ -55,6 +57,7 @@ $ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
 ```
 
 When the task_status shows "SUCCESS":
+
 ```zsh
 $ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
 {
@@ -80,6 +83,7 @@ $ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
 ```
 
 Save the response into a file with the `wget` command and the **download_url** field:
+
 ```zsh
-$ wget http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip
+wget http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip
 ```

@@ -26,45 +26,43 @@ of [data_wrangle_occurrence](data_wrangle_occurrence.md).  In this example, we w
 split occurrence data, but not perform any other wrangling on it, so our [wrangler
 configuration file](../data/config/wrangle_nothing.json) contains an empty list.
 
-
 ### Input: Script parameter file
 
 A JSON parameter file is required for this command.  The tutorial parameter file
 is [split_occurrence_data.json](../../data/config/split_occurrence_data.json).
 These are the required and optional parameters:
 
-  * **max_open_writers**: The maximum number of data writers to have open at once.
-  * **key_field**: The field name (or names) to use for filenames.  This/these must be
-    encased in square brackets, i.e. `"key_field": ["scientificName"]`. If multiple fields
-    are provided, the ordered fields specify the sub-directory structure used for
-    organizing files.  The first field will specify the directory directly under
-    out_dir, and so on.  The final field will be contain the base filename.  These
-    fields should be hierarchical.  For example, if grouping records into files by
-    species, with a dataset containing 2000 species, using taxonomic grouping fields
-    (in order from coarser to finer groups)
-    such as `"key_field": ["family", "genus", "species"]` would create a file
-    with records for the Giant Panda in
-    "<out_dir>/Ursidae/Ailuropoda/Ailuropoda melanoleuca.csv".
-    If this parameter is not specified, it will default to the fieldname for grouping
-    data.  This is a required argument for CSV files and defaults to "scientificName"
-    in DwCA files.  If there are more groups/files than are allowed in a directory, the
-    files will be written to subdirectories by the beginning characters in the species
-    name.
-  * **out_field**: The field name or names of columns to be included in output CSV files.
-    If this field is left out, all fields from the first successfully processed record
-    will be included in outputs.
-  * **dwca**: List of 0 or more lists, each containing 2 arguments
-    * input DwCA file, and
-    * occurrence data wrangler configuration file (described in the next section). The
-      example split_occurrence_data wrangler configuration used for this tutorial step
-      is [here](../../input/wrangle_occurrences.json)
-  * **csv**:  List of 0 or more lists, each containing 5 arguments
-    * input CSV file
-    * occurrence data wrangler configuration file (described in the next section).
-    * fieldname for grouping data (often a taxonomic designation such as scientificName)
-    * fieldname for the longitude/x coordinate
-    * fieldname for the latitude/y coordinate
-
+* **max_open_writers**: The maximum number of data writers to have open at once.
+* **key_field**: The field name (or names) to use for filenames.  This/these must be
+  encased in square brackets, i.e. `"key_field": ["scientificName"]`. If multiple
+  fields are provided, the ordered fields specify the sub-directory structure used for
+  organizing files.  The first field will specify the directory directly under
+  out_dir, and so on.  The final field will be contain the base filename.  These
+  fields should be hierarchical.  For example, if grouping records into files by
+  species, with a dataset containing 2000 species, using taxonomic grouping fields
+  (in order from coarser to finer groups)
+  such as `"key_field": ["family", "genus", "species"]` would create a file
+  with records for the Giant Panda in
+  "<out_dir>/Ursidae/Ailuropoda/Ailuropoda melanoleuca.csv".
+  If this parameter is not specified, it will default to the fieldname for grouping
+  data.  This is a required argument for CSV files and defaults to "scientificName"
+  in DwCA files.  If there are more groups/files than are allowed in a directory, the
+  files will be written to subdirectories by the beginning characters in the species
+  name.
+* **out_field**: The field name or names of columns to be included in output CSV files.
+  If this field is left out, all fields from the first successfully processed record
+  will be included in outputs.
+* **dwca**: List of 0 or more lists, each containing 2 arguments
+  * input DwCA file, and
+  * occurrence data wrangler configuration file (described in the next section). The
+    example split_occurrence_data wrangler configuration used for this tutorial step
+    is [here](../../input/wrangle_occurrences.json)
+* **csv**:  List of 0 or more lists, each containing 5 arguments
+  * input CSV file
+  * occurrence data wrangler configuration file (described in the next section).
+  * fieldname for grouping data (often a taxonomic designation such as scientificName)
+  * fieldname for the longitude/x coordinate
+  * fieldname for the latitude/y coordinate
 
 ## Run tutorial
 
