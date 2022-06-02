@@ -106,47 +106,57 @@ optional parameters for each are <a class="reference internal" href="wrangle_spe
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
-is <a class="reference download internal" download="" href="../_downloads/814b619bcbea71f4e4dfd2a29ad5e44c/wrangle_species_list.json"><span class="xref download myst">wrangle_species_list.json</span></a>.  These are the
+is <a class="reference download internal" download="" href="../_downloads/77189285b6061072a2794e532b25c32c/wrangle_species_list_gbif.json"><span class="xref download myst">wrangle_species_list_gbif.json</span></a>.  These are the
 required and optional parameters:</p>
+<p>Required:</p>
 <ul class="simple">
-<li><p>Required:</p>
-<ul>
 <li><p><strong>in_species_list_filename</strong>: Input filename containing species list, described
 in the section above.  The tutorial example species list is
 <a class="reference download internal" download="" href="../_downloads/d4078f4049c6ac84c207522c50c940c4/heuchera.txt"><span class="xref download myst">heuchera.txt</span></a>.</p></li>
 <li><p><strong>wrangler_configuration_file</strong>: species list wrangler configuration file,
 described in the previous input section.  The tutorial example wrangler
 configuration contains one wrangler, the AcceptedNameSpeciesListWrangler, and
-is in <a class="reference download internal" download="" href="../_downloads/7758e28559ef926a1e9771627cc3cbd9/splist_wranglers.json"><span class="xref download myst">splist_wranglers.json</span></a></p></li>
+is in <a class="reference download internal" download="" href="../_downloads/463f04e3da74ab0e02aa4b782668b255/splist_wranglers_namemap.json"><span class="xref download myst">splist_wranglers.json</span></a></p></li>
 <li><p><strong>out_species_list_filename</strong>: output filename for resolved species list.</p></li>
 </ul>
-</li>
-<li><p>Optional</p>
-<ul>
+<p>Optional</p>
+<ul class="simple">
 <li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
 <li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
 <li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
 </ul>
-</li>
-</ul>
 </section>
 </section>
-<section id="run-tutorial">
-<h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
+<section id="demo-run-tutorial-with-gbif-service">
+<h2>Demo: Run tutorial with ‘gbif’ service<a class="headerlink" href="#demo-run-tutorial-with-gbif-service" title="Permalink to this heading"></a></h2>
 <p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  wrangle_species_list  data/config/wrangle_species_list.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  wrangle_species_list  data/config/wrangle_species_list_gbif.json
 </pre></div>
 </div>
 <p>for windows:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat  wrangle_species_list  data\config\wrangle_species_list.json
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat  wrangle_species_list  data\config\wrangle_species_list_gbif.json
 </pre></div>
 </div>
 </section>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
 <p>This process outputs a text file containing the modified species list, one name per
-line.  Current available taxonomic services include only GBIF at this time.</p>
+line, and a name-mapping from the original name to the accepted name according to the
+specified authority.  This name-map is suitable to use for input when resolving another
+dataset containing a subset of the same original names.</p>
+</section>
+<section id="hands-on-run-tutorial-with-name-map">
+<h2>Hands-on: Run tutorial with name-map<a class="headerlink" href="#hands-on-run-tutorial-with-name-map" title="Permalink to this heading"></a></h2>
+<p>Initiate the process with the following:</p>
+<p>for linux/mac systems</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  wrangle_species_list  data/config/wrangle_species_list_namemap.json
+</pre></div>
+</div>
+<p>for windows:</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat  wrangle_species_list  data\config\wrangle_species_list_namemap.json
+</pre></div>
+</div>
 </section>
 </section>
 

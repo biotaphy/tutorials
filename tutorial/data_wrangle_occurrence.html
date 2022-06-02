@@ -109,6 +109,11 @@ is <a class="reference download internal" download="" href="../_downloads/1f89a8
 <h2>Occurrence Wrangler Types<a class="headerlink" href="#occurrence-wrangler-types" title="Permalink to this heading"></a></h2>
 <p>When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.</p>
+<p>Note that some wranglers (MinimumPointsWrangler, UniqueLocalitiesFilter) assess the
+counts over the entire file/dataset, not subsets within a file.  So if wrangling an
+occurrence record file that contains multiple groups of records, the wrangler will not
+assess the minimum number of points or unique localities for each group, it will do that
+for the dataset as a whole.  This is not recommended.</p>
 <p>Currently, wrangler_type names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in
 this module’s files.  Each wrangler’s parameters correspond to the constructor
 arguments for that wrangler.</p>
@@ -117,8 +122,9 @@ arguments for that wrangler.</p>
 <ul class="simple">
 <li><p>optional</p>
 <ul>
-<li><p>name_map (dict): A map of original name to accepted name.    Defaults to None, but
-either this or name_resolver must be provided.</p></li>
+<li><p>name_map (str or dict): A dictionary or filename containing a dictionary of original
+name to accepted name.  Defaults to None, but either this or name_resolver
+<strong>must be</strong> provided.</p></li>
 <li><p>name_resolver (str or Method): Use this method for getting new
 accepted names. If set to ‘gbif’ or ‘otol’, use GBIF or OTOL name resolution
 respectively.  Defaults to None, but either this or name_map must be provided.</p></li>
@@ -229,6 +235,10 @@ precision.</p></li>
 </section>
 <section id="minimumpointswrangler">
 <h3>MinimumPointsWrangler<a class="headerlink" href="#minimumpointswrangler" title="Permalink to this heading"></a></h3>
+<p>Note: This point must only be used on occurrence data file that is to be used as a
+single group of records, i.e. a file containing only one species or grouping.  When<br />
+wrangling multi-species datasets, this will count the number of points for the entire<br />
+set, not subsets within a file.</p>
 <ul class="simple">
 <li><p>required:</p>
 <ul>
@@ -254,6 +264,10 @@ counted.</p></li>
 </section>
 <section id="uniquelocalitiesfilter">
 <h3>UniqueLocalitiesFilter<a class="headerlink" href="#uniquelocalitiesfilter" title="Permalink to this heading"></a></h3>
+<p>Note: This point must only be used on occurrence data file that is to be used as a
+single group of records, i.e. a file containing only one species or grouping.  When<br />
+wrangling multi-species datasets, this will count the unique localities for the entire<br />
+set, not subsets within a file</p>
 <ul class="simple">
 <li><p>optional parameters:</p>
 <ul>

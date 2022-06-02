@@ -99,11 +99,18 @@ configuration file</span> contains an empty list.</p>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
-is <a class="reference download internal" download="" href="../_downloads/00ef9a11a43e7a6bee069a99ae9618c0/split_occurrence_data.json"><span class="xref download myst">split_occurrence_data.json</span></a>.
+is <a class="reference download internal" download="" href="../_downloads/dcdfe5e9bd8291646a28db90400c3618/split_occurrence_data_dwca.json"><span class="xref download myst">split_occurrence_data_dwca.json</span></a>.
 These are the required and optional parameters:</p>
+<p>Required:</p>
+<ul class="simple">
+<li><p><strong>out_dir</strong>: Directory where the output data should be written.  If the directory
+does not exist, it will be created</p></li>
+</ul>
+<p>Optional:</p>
 <ul class="simple">
 <li><p><strong>max_open_writers</strong>: The maximum number of data writers to have open at once.</p></li>
-<li><p><strong>key_field</strong>: The field name (or names) to use for filenames.  This/these must be
+<li><p><strong>key_field</strong>: <strong>BUGGY - IGNORE THIS FOR NOW</strong> -
+The field name (or names) to use for filenames.  This/these must be
 encased in square brackets, i.e. <code class="docutils literal notranslate"><span class="pre">&quot;key_field&quot;:</span> <span class="pre">[&quot;scientificName&quot;]</span></code>. If multiple
 fields are provided, the ordered fields specify the sub-directory structure used for
 organizing files.  The first field will specify the directory directly under
@@ -122,7 +129,8 @@ name.</p></li>
 <li><p><strong>out_field</strong>: The field name or names of columns to be included in output CSV files.
 If this field is left out, all fields from the first successfully processed record
 will be included in outputs.</p></li>
-<li><p><strong>dwca</strong>: List of 0 or more lists, each containing 2 arguments</p>
+<li><p><strong>dwca</strong>: This is an optional argument, but either this, or <strong>csv</strong>, must be provided.
+List of 0 or more lists, each containing 2 arguments</p>
 <ul>
 <li><p>input DwCA file, and</p></li>
 <li><p>occurrence data wrangler configuration file (described in the next section). The
@@ -130,7 +138,8 @@ example split_occurrence_data wrangler configuration used for this tutorial step
 is <span class="xref myst">here</span></p></li>
 </ul>
 </li>
-<li><p><strong>csv</strong>:  List of 0 or more lists, each containing 5 arguments</p>
+<li><p><strong>csv</strong>: This is an optional argument, but either this, or <strong>dwca</strong>, must be provided.
+List of 0 or more lists, each containing 5 arguments</p>
 <ul>
 <li><p>input CSV file</p></li>
 <li><p>occurrence data wrangler configuration file (described in the next section).</p></li>
@@ -139,18 +148,20 @@ is <span class="xref myst">here</span></p></li>
 <li><p>fieldname for the latitude/y coordinate</p></li>
 </ul>
 </li>
+<li><p><strong>species_list_filename</strong>: File location to write list of species seen (after
+wrangling).</p></li>
 </ul>
 </section>
 </section>
-<section id="run-tutorial">
-<h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
+<section id="run-tutorial-with-dwca-data">
+<h2>Run tutorial with DwCA data<a class="headerlink" href="#run-tutorial-with-dwca-data" title="Permalink to this heading"></a></h2>
 <p>Initiate the split_occurrence_data process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
 </pre></div>
 </div>
 <p>for windows systems</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat split_occurrence_data data\config\split_occurrence_data.json
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat split_occurrence_data data\config\split_occurrence_data_dwca.json
 </pre></div>
 </div>
 </section>
@@ -168,6 +179,18 @@ manipulations by each wrangler will be written to this file.</p>
 <p>If “log_console” is specified in the script parameter file, logs will be written to the
 command prompt during execution.</p>
 <p>Current available taxonomic services include only GBIF at this time.</p>
+</section>
+<section id="run-tutorial-with-csv-data">
+<h2>Run tutorial with CSV data<a class="headerlink" href="#run-tutorial-with-csv-data" title="Permalink to this heading"></a></h2>
+<p>Initiate the split_occurrence_data process with the following:</p>
+<p>for linux/mac systems</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
+</pre></div>
+</div>
+<p>for windows systems</p>
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat split_occurrence_data data\config\split_occurrence_data_csv.json
+</pre></div>
+</div>
 </section>
 </section>
 
