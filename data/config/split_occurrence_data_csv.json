@@ -1,0 +1,19 @@
+{
+    "max_open_writers": 100,
+    "key_field_ignore": ["genus","scientficName"],
+    "csv":  [
+      ["/volumes/data/input/heuchera.csv",
+        "/volumes/data/config/no_wranglers.json",
+        "species_name",
+        "x",
+        "y"
+      ],
+      ["/volumes/data/input/occ_heuchera_gbif.csv",
+        "/volumes/data/config/no_wranglers.json",
+        "scientificName",
+        "decimalLongitude",
+        "decimalLatitude"
+      ]
+    ],
+    "out_dir": "/volumes/output/heuchera_csv"
+}

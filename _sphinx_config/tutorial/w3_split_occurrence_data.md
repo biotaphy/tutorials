@@ -29,11 +29,19 @@ configuration file](../data/config/wrangle_nothing.json) contains an empty list.
 ### Input: Script parameter file
 
 A JSON parameter file is required for this command.  The tutorial parameter file
-is [split_occurrence_data.json](../../data/config/split_occurrence_data.json).
+is [split_occurrence_data_dwca.json](../../data/config/split_occurrence_data_dwca.json).
 These are the required and optional parameters:
 
+Required:
+
+* **out_dir**: Directory where the output data should be written.  If the directory 
+  does not exist, it will be created
+
+Optional: 
+
 * **max_open_writers**: The maximum number of data writers to have open at once.
-* **key_field**: The field name (or names) to use for filenames.  This/these must be
+* **key_field**: **BUGGY - IGNORE THIS FOR NOW** - 
+  The field name (or names) to use for filenames.  This/these must be
   encased in square brackets, i.e. `"key_field": ["scientificName"]`. If multiple
   fields are provided, the ordered fields specify the sub-directory structure used for
   organizing files.  The first field will specify the directory directly under
@@ -52,32 +60,40 @@ These are the required and optional parameters:
 * **out_field**: The field name or names of columns to be included in output CSV files.
   If this field is left out, all fields from the first successfully processed record
   will be included in outputs.
-* **dwca**: List of 0 or more lists, each containing 2 arguments
+* **dwca**: This is an optional argument, but either this, or **csv**, must be provided.
+  List of 0 or more lists, each containing 2 arguments
+
   * input DwCA file, and
   * occurrence data wrangler configuration file (described in the next section). The
     example split_occurrence_data wrangler configuration used for this tutorial step
     is [here](../../input/wrangle_occurrences.json)
-* **csv**:  List of 0 or more lists, each containing 5 arguments
+
+* **csv**: This is an optional argument, but either this, or **dwca**, must be provided. 
+  List of 0 or more lists, each containing 5 arguments
+  
   * input CSV file
   * occurrence data wrangler configuration file (described in the next section).
   * fieldname for grouping data (often a taxonomic designation such as scientificName)
   * fieldname for the longitude/x coordinate
   * fieldname for the latitude/y coordinate
+  
+* **species_list_filename**: File location to write list of species seen (after 
+  wrangling).
 
-## Run tutorial
+## Run tutorial with DwCA data
 
 Initiate the split_occurrence_data process with the following:
 
 for linux/mac systems
 
 ```zsh
-./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data.json
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
 ```
 
 for windows systems
 
 ```cmd
-run_tutorial.bat split_occurrence_data data\config\split_occurrence_data.json
+run_tutorial.bat split_occurrence_data data\config\split_occurrence_data_dwca.json
 ```
 
 ## Output
@@ -99,3 +115,19 @@ If "log_console" is specified in the script parameter file, logs will be written
 command prompt during execution.
 
 Current available taxonomic services include only GBIF at this time.
+
+## Run tutorial with CSV data
+
+Initiate the split_occurrence_data process with the following:
+
+for linux/mac systems
+
+```zsh
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
+```
+
+for windows systems
+
+```cmd
+run_tutorial.bat split_occurrence_data data\config\split_occurrence_data_csv.json
+```

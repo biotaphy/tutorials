@@ -34,8 +34,9 @@ arguments for that wrangler.
 
 * optional
 
-  * name_map (dict): A map of original name to accepted name.    Defaults to None, but
-    either this or name_resolver must be provided.
+  * name_map (str or dict): A dictionary or filename containing a dictionary of original 
+    name to accepted name.  Defaults to None, but either this or name_resolver 
+    **must be** provided.
   * name_resolver (str or Method): Use this method for getting new
     accepted names. If set to 'gbif' or 'otol', use GBIF or OTOL name resolution
     respectively.  Defaults to None, but either this or name_map must be provided.
