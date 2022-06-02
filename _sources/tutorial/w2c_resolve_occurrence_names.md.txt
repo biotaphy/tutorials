@@ -44,7 +44,7 @@ These are the required and optional parameters:
   * **wrangler_configuration_file**: occurrence wrangler configuration file,
     described in the next section.  The tutorial example wrangler configuration
     contains one wrangler, the AcceptedNameOccurrenceWrangler, and is in
-    [wrangle_occurrence_names.json](../../data/config/wrangle_occurrence_names.json)
+    [wrangle_occurrence_names.json](../../data/config/wrangle_occurrences_with_names.json)
 
 * Optional
 

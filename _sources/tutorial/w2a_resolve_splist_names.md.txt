@@ -33,7 +33,7 @@ optional parameters for each are [here](wrangle_species_list.md).
 ### Input: Script parameter file
 
 A JSON parameter file is required for this command.  The tutorial parameter file
-is [resolve_list_names.json](../../data/config/resolve_list_names.json).  These are the
+is [wrangle_species_list.json](../../data/config/wrangle_species_list.json).  These are the
 required and optional parameters:
 
 * Required:
@@ -44,7 +44,7 @@ required and optional parameters:
   * **wrangler_configuration_file**: species list wrangler configuration file,
     described in the previous input section.  The tutorial example wrangler
     configuration contains one wrangler, the AcceptedNameSpeciesListWrangler, and
-    is in [wrangle_list_names.json](../../data/config/wrangle_list_names.json)
+    is in [splist_wranglers.json](../../data/config/splist_wranglers.json)
   * **out_species_list_filename**: output filename for resolved species list.
 
 * Optional
@@ -60,13 +60,13 @@ Initiate the process with the following:
 for linux/mac systems
 
 ```zsh
-./run_tutorial.sh  wrangle_species_list  data/config/resolve_list_names.json
+./run_tutorial.sh  wrangle_species_list  data/config/wrangle_species_list.json
 ```
 
 for windows:
 
 ```cmd
-run_tutorial.bat  wrangle_species_list  data\config\resolve_list_names.json
+run_tutorial.bat  wrangle_species_list  data\config\wrangle_species_list.json
 ```
 
 ## Output
