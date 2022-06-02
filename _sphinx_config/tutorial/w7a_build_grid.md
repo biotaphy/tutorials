@@ -11,12 +11,19 @@ intersected with other geospatial data layers, in order to generalize the values
 layer to a single value per site.  When we intersect many data layers with the same
 grid, we can create a matrix of layers by sites, and compute statistics on these values.
 
+In a biogeograpic matrix, different data layers are intersected with a geospatial grid
+to produce Matrices for analyses.  Multiple two-dimensional (longitude/x and latitude/y)
+matrices are stacked into a cube, then flattened back into a 2-dimensional multi-layer
+matrix by combining the x and y coordinates into "sites", identified by the coordinates
+of the center of the grid cell.
+
 ## Data preparation
 
-### Configuration File
+### Input: Script parameter file
 
-An example JSON file for running the build_grid tutorial is at
-../../data/input/build_grid.json. These are the 7 required parameters:
+A JSON parameter file is required for this command.  The tutorial parameter file
+is [build_grid.json](../../data/input/build_grid.json). These are the required
+parameters:
 
 * Required:
 
@@ -28,14 +35,14 @@ An example JSON file for running the build_grid tutorial is at
   * **cell_size**: The size of each cell (in units indicated by EPSG).
   * **epsg**: The EPSG code for the new grid.
 
-## Run build_grid tutorial
+## Run tutorial
 
-Initiate the build_grid process with the following:
+Initiate the process with the following:
 
 for linux/mac systems
 
 ```zsh
-bash run_tutorial.sh build_grid data/input/build_grid.json
+./run_tutorial.sh build_grid data/input/build_grid.json
 ```
 
 for windows:
@@ -46,5 +53,5 @@ run_tutorial.bat build_grid data\input\build_grid.ini
 
 ## Output
 
-The build_grid tool outputs a grid in shapefile format, conforming to the arguments specified
-in the configuration INI file.
+The build_grid tool outputs a grid in shapefile format, conforming to the arguments
+specified in the configuration INI file.

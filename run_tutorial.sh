@@ -15,8 +15,8 @@
 # -----------------------------------------------------------
 usage ()
 {
+    echo ""
     echo "Usage: $0 <cmd>  <config_file>"
-    echo "   "
     echo "This script creates an environment for a biotaphy command to be run with "
     echo "user-configured arguments in a docker container."
     echo "the <cmd> argument can be one of:"
@@ -25,7 +25,7 @@ usage ()
     done
     echo "the <config_file> argument must be the full path to a JSON file"
     echo "containing command-specific arguments"
-    echo "   "
+    echo ""
     exit 0
 }
 
@@ -232,13 +232,13 @@ HOST_CONFIG_FILE=$2
 
 set_defaults
 time_stamp "# Start"
-
-echo "Container command: $CMD --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
+echo ""
 
 if [[ " ${COMMANDS[*]} " =~  ${CMD}  ]]; then
     if [ "$CMD" == "list_commands" ] ; then
         usage
     else
+        echo "Container command: $CMD --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
         create_volumes
         build_image
         start_container
@@ -247,6 +247,9 @@ if [[ " ${COMMANDS[*]} " =~  ${CMD}  ]]; then
         remove_container
         list_volume_contents
     fi
+else
+    echo "Unrecognized command: $CMD"
+    usage
 fi
 
 time_stamp "# End"
