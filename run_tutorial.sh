@@ -47,6 +47,7 @@ set_defaults() {
             host_dir="$IN_VOLUME/config"
             container_dir="$VOLUME_MOUNT/$host_dir"
             CONTAINER_CONFIG_FILE=$(echo $HOST_CONFIG_FILE | sed "s:^$host_dir:$container_dir:g")
+            echo "$CONTAINER_CONFIG_FILE"
         fi
     fi
 
@@ -61,8 +62,8 @@ set_defaults() {
 # -----------------------------------------------------------
 build_image() {
     # Build and name an image from Dockerfile in this directory
-    image_exists=$(docker image ls | grep $IMAGE_NAME | wc -l )
-    if [ "$image_exists" == "0" ]; then
+    image_count=$(docker image ls | grep $IMAGE_NAME |  wc -l )
+    if [ $image_count -eq 0 ]; then
         docker build . -t $IMAGE_NAME
     else
         echo " - Image $IMAGE_NAME is already built"  | tee -a "$LOG"
@@ -128,57 +129,42 @@ create_volumes() {
 # -----------------------------------------------------------
 #docker run -td --name tutor_container -v data:/volumes/data:ro -v output:/volumes/output tutor bash
 start_container() {
+    # Find running container
     container_count=$(docker ps | grep $CONTAINER_NAME |  wc -l )
-    if [ $container_count -ne 1 ]; then
+    if [ "$container_count" -ne 1 ]; then
+        build_image
         # Option string for volumes
         # TODO: after debugging, add read-only back to data volume
-#        vol_opts="--volume ${IN_VOLUME}:${VOLUME_MOUNT}/${IN_VOLUME}:ro \
         vol_opts="--volume ${IN_VOLUME}:${VOLUME_MOUNT}/${IN_VOLUME} \
                   --volume ${OUT_VOLUME}:${VOLUME_MOUNT}/${OUT_VOLUME}"
         # Start the container, leaving it up
-        echo " - Run container $CONTAINER_NAME from image $IMAGE_NAME" | tee -a "$LOG"
+        echo " - Start container $CONTAINER_NAME from $IMAGE_NAME" | tee -a "$LOG"
         docker run -td --name ${CONTAINER_NAME}  ${vol_opts}  ${IMAGE_NAME}  bash
     else
-        echo " - Container $CONTAINER_NAME is already started" | tee -a "$LOG"
+        echo " - Container $CONTAINER_NAME is running" | tee -a "$LOG"
     fi
 }
 
 
 # -----------------------------------------------------------
-#docker exec -it tutor_container ls -lahtr /volumes/output
 execute_process() {
-    # Command to execute in container; `test` lists directory contents
-    if [ $CMD = "test" ]; then
-        command="ls -lahtr $VOLUME_MOUNT/$IN_VOLUME/config"
-    else
-        command="${CMD} --config_file=${CONTAINER_CONFIG_FILE}"
-    fi
-
-    container_count=$(docker ps | grep $CONTAINER_NAME |  wc -l )
-    if [ $container_count -eq 1 ]; then
-        echo " - Execute '${command}' on container $CONTAINER_NAME" | tee -a "$LOG"
-        # Run the command in the container
-        docker exec -it ${CONTAINER_NAME} ${command}
-    else
-        echo " - Container $CONTAINER_NAME not running to execute_process" | tee -a "$LOG"
-    fi
+    start_container
+    # Command to execute in container
+    command="${CMD} --config_file=${CONTAINER_CONFIG_FILE}"
+    echo " - Execute '${command}' on container $CONTAINER_NAME" | tee -a "$LOG"
+    # Run the command in the container
+    docker exec -it ${CONTAINER_NAME} ${command}
 }
 
 
 # -----------------------------------------------------------
-#docker cp tutor_container:/volumes/output  ./data/
 save_outputs() {
     # TODO: determine if bind-mount is more efficient than this named-volume
-    # Find running container
-    container_count=$(docker ps | grep $CONTAINER_NAME |  wc -l )
-    if [ $container_count -eq 1 ]; then
-        # Copy entire container output directory to host (no wildcards)
-        # If directory exists, does not overwrite, just adds contents
-        echo " - Copy outputs from container $CONTAINER_NAME" | tee -a "$LOG"
-        docker cp ${CONTAINER_NAME}:${VOLUME_MOUNT}/${OUT_VOLUME}  ./${IN_VOLUME}/
-    else
-        echo " - Container $CONTAINER_NAME not running to save_outputs" | tee -a "$LOG"
-    fi
+    start_container
+    # Copy container output directory to host (no wildcards)
+    # If directory does not exist, create, then add contents
+    echo " - Copy outputs from $OUT_VOLUME to $IN_VOLUME" | tee -a "$LOG"
+    docker cp ${CONTAINER_NAME}:${VOLUME_MOUNT}/${OUT_VOLUME}  ./${IN_VOLUME}/
 }
 
 
@@ -196,44 +182,26 @@ remove_container() {
     fi
 }
 
-
-# -----------------------------------------------------------
-list_volume_contents() {
-    # Find an image, start it with output volume, check contents
-    image_count=$(docker image ls | grep $IMAGE_NAME |  wc -l )
-    if [ $image_count -eq 1 ]; then
-        echo " - Start a container from $IMAGE_NAME" | tee -a "$LOG"
-        vol_opt="${OUT_VOLUME}:${VOLUME_MOUNT}/${OUT_VOLUME}"
-        docker run -td --name $CONTAINER_NAME --volume ${vol_opt} ${IMAGE_NAME} bash
-        echo " - List output volume contents $CONTAINER_NAME" | tee -a "$LOG"
-        docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${OUT_VOLUME}
-        docker stop $CONTAINER_NAME
-        docker container rm $CONTAINER_NAME
-    else
-        echo " - Image $IMAGE_NAME does not exist" | tee -a "$LOG"
-    fi
-}
-
 # -----------------------------------------------------------
 list_output_volume_contents() {
     # Find an image, start it with output volume, check contents
-    image_count=$(docker image ls | grep $IMAGE_NAME |  wc -l )
-    if [ $image_count -eq 1 ]; then
-        echo " - Start a container from $IMAGE_NAME" | tee -a "$LOG"
-        vol_opt="${OUT_VOLUME}:${VOLUME_MOUNT}/${OUT_VOLUME}"
-        docker run -td --name $CONTAINER_NAME --volume ${vol_opt} ${IMAGE_NAME} bash
-        echo " - List output volume contents $CONTAINER_NAME" | tee -a "$LOG"
-        docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${OUT_VOLUME}
-    else
-        echo " - Image $IMAGE_NAME does not exist" | tee -a "$LOG"
-    fi
+    start_container
+    echo " - List output volume contents $CONTAINER_NAME" | tee -a "$LOG"
+    docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${OUT_VOLUME}
+}
+
+# -----------------------------------------------------------
+list_output_host_contents() {
+    # Find an image, start it with output volume, check contents
+    echo " - List host output directory contents " | tee -a "$LOG"
+    ls -lahtr ${IN_VOLUME}/${OUT_VOLUME}
 }
 
 # -----------------------------------------------------------
 start_console() {
     # Create, connect to command line
-    echo " - Start a container and shell from $IMAGE_NAME" | tee -a "$LOG"
-    docker run -td --name $CONTAINER_NAME  ${vol_opts} ${IMAGE_NAME} bash
+    start_container
+    echo " - Execute shell on $CONTAINER_NAME" | tee -a "$LOG"
     docker exec -it $CONTAINER_NAME bash
 }
 
@@ -280,11 +248,10 @@ else
     if [[ " ${COMMANDS[*]} " =~  ${CMD}  ]]; then
         echo "Container command: $CMD --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
         create_volumes
-        build_image
         start_container
         execute_process
         save_outputs
-        list_output_volume_contents
+        list_output_host_contents
         remove_container
     else
         echo "Unrecognized command: $CMD"

@@ -131,3 +131,20 @@ for windows systems
 ```cmd
 run_tutorial.bat split_occurrence_data data\config\split_occurrence_data_csv.json
 ```
+
+
+## Run tutorial with CSV data, resolving names
+
+Initiate the split_occurrence_data process with the following:
+
+for linux/mac systems
+
+```zsh
+./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data_csv.json
+```
+
+for windows systems
+
+```cmd
+run_tutorial.bat split_occurrence_data data\config\split_wrangle_occurrence_data_csv.json
+```

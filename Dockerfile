@@ -14,11 +14,11 @@ RUN pip install requests
 RUN mkdir git
 
 # specify-lmpy from pypi
-#RUN cd git &&  \
-#    git clone https://github.com/specifysystems/lmpy.git &&  \
-#    cd lmpy \
-#    && pip install .
-RUN pip install specify-lmpy
+RUN cd git &&  \
+    git clone -b filenotfound-issue-347 https://github.com/specifysystems/lmpy.git &&  \
+    cd lmpy \
+    && pip install .
+#RUN pip install specify-lmpy
 
 #  BiotaphyPy
 RUN cd git &&  \
