@@ -34,11 +34,21 @@ Initiate the clean occurrences process with the following:
 for linux/mac systems
 
 ```zsh
-bash run_tutorial.sh encode_layers data/config/encode_layers.ini
+bash run_tutorial.sh encode_layers data/config/encode_layers.json
 ```
 
 for windows systems
 
 ```cmd
-./run_tutorial.bat encode_layers data\config\encode_layers.ini
+./run_tutorial.bat encode_layers data\config\encode_layers.json
+```
+
+## Note
+
+You may get the following warning.  This indicates that there is a window with no
+values, a common occurrence in most datasets, and may be safely ignored.
+
+```commandline
+RuntimeWarning: Mean of empty slice
+  window_mean = np.nanmean(window[np.where(window != nodata)])
 ```

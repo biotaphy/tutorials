@@ -35,9 +35,9 @@ documentation and linked above.  Data can be in one of two formats:
 When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.
 
-Note that some wranglers (MinimumPointsWrangler, UniqueLocalitiesFilter) assess the 
-counts over the entire file/dataset, not subsets within a file.  So if wrangling an 
-occurrence record file that contains multiple groups of records, the wrangler will not 
+Note that some wranglers (MinimumPointsWrangler, UniqueLocalitiesFilter) assess the
+counts over the entire file/dataset, not subsets within a file.  So if wrangling an
+occurrence record file that contains multiple groups of records, the wrangler will not
 assess the minimum number of points or unique localities for each group, it will do that
 for the dataset as a whole.  This is not recommended.
 
@@ -49,8 +49,8 @@ arguments for that wrangler.
 
 * optional
 
-  * name_map (str or dict): A dictionary or filename containing a dictionary of original 
-    name to accepted name.  Defaults to None, but either this or name_resolver 
+  * name_map (str or dict): A dictionary or filename containing a dictionary of original
+    name to accepted name.  Defaults to None, but either this or name_resolver
     **must be** provided.
   * name_resolver (str or Method): Use this method for getting new
     accepted names. If set to 'gbif' or 'otol', use GBIF or OTOL name resolution
@@ -126,9 +126,9 @@ arguments for that wrangler.
 
 ### MinimumPointsWrangler
 
-Note: This point must only be used on occurrence data file that is to be used as a 
-single group of records, i.e. a file containing only one species or grouping.  When  
-wrangling multi-species datasets, this will count the number of points for the entire  
+Note: This point must only be used on occurrence data file that is to be used as a
+single group of records, i.e. a file containing only one species or grouping.  When
+wrangling multi-species datasets, this will count the number of points for the entire
 set, not subsets within a file.
 
 * required:
@@ -148,9 +148,9 @@ set, not subsets within a file.
 
 ### UniqueLocalitiesFilter
 
-Note: This point must only be used on occurrence data file that is to be used as a 
-single group of records, i.e. a file containing only one species or grouping.  When  
-wrangling multi-species datasets, this will count the unique localities for the entire  
+Note: This point must only be used on occurrence data file that is to be used as a
+single group of records, i.e. a file containing only one species or grouping.  When
+wrangling multi-species datasets, this will count the unique localities for the entire
 set, not subsets within a file
 
 * optional parameters:

@@ -111,11 +111,20 @@ basename</p></li>
 <h2>Run encode_layers tutorial<a class="headerlink" href="#run-encode-layers-tutorial" title="Permalink to this heading"></a></h2>
 <p>Initiate the clean occurrences process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh encode_layers data/config/encode_layers.ini
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh encode_layers data/config/encode_layers.json
 </pre></div>
 </div>
 <p>for windows systems</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./run_tutorial.bat encode_layers data\config\encode_layers.ini
+<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./run_tutorial.bat encode_layers data\config\encode_layers.json
+</pre></div>
+</div>
+</section>
+<section id="note">
+<h2>Note<a class="headerlink" href="#note" title="Permalink to this heading"></a></h2>
+<p>You may get the following warning.  This indicates that there is a window with no
+values, a common occurrence in most datasets, and may be safely ignored.</p>
+<div class="highlight-commandline notranslate"><div class="highlight"><pre><span></span>RuntimeWarning: Mean of empty slice
+  window_mean = np.nanmean(window[np.where(window != nodata)])
 </pre></div>
 </div>
 </section>

@@ -54,4 +54,4 @@ run_tutorial.bat build_grid data\input\build_grid.ini
 ## Output
 
 The build_grid tool outputs a grid in shapefile format, conforming to the arguments
-specified in the configuration INI file.
+specified in the configuration JSON file.

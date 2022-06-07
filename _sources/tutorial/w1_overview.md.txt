@@ -112,7 +112,7 @@ Sending the command **list_commands** will print all valid commands.
 ./run_tutorial.sh wrangle_occurrences  data/config/resolve_occurrence_names.json
 ./run_tutorial.sh split_occurrence_data  data/config/split_occurrence_data_dwca.json
 ./run_tutorial.sh clean_occurrences  data/config/clean_occurrences.json
-./run_tutorial.sh build_grid  data/config/build_shapegrid.json
+./run_tutorial.sh build_grid  data/config/build_grid.json
 ./run_tutorial.sh encode_layers  data/config/encode_layers.json
 ./run_tutorial.sh calculate_pam_stats  data/config/calc_pam_stats.json
 ```
