@@ -34,11 +34,11 @@ Initiate the clean occurrences process with the following:
 for linux/mac systems
 
 ```zsh
-bash run_tutorial.sh encode_layers data/config/encode_layers.ini
+bash run_tutorial.sh encode_layers data/config/encode_layers.json
 ```
 
 for windows systems
 
 ```cmd
-./run_tutorial.bat encode_layers data\config\encode_layers.ini
+./run_tutorial.bat encode_layers data\config\encode_layers.json
 ```

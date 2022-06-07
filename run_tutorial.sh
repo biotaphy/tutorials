@@ -216,7 +216,7 @@ time_stamp () {
 COMMANDS=(\
 "list_commands"  "build_grid"  "calculate_pam_stats" "encode_layers"   \
 "split_occurrence_data"  "wrangle_species_list"  "wrangle_occurrences"  "wrangle_tree" \
-"cleanup")
+"cleanup"  "list_outputs")
 
 CMD=$1
 HOST_CONFIG_FILE=$2
@@ -233,6 +233,9 @@ if [ $arg_count -eq 0 ]; then
 elif [ $arg_count -eq 1 ]; then
     if [ "$CMD" == "list_commands" ] ; then
         usage
+    elif [ "$CMD" == "list_outputs" ] ; then
+        list_output_volume_contents
+        remove_container
     elif [ "$CMD" == "test" ]; then
         list_output_volume_contents
         remove_container

@@ -34,13 +34,13 @@ These are the required and optional parameters:
 
 Required:
 
-* **out_dir**: Directory where the output data should be written.  If the directory 
+* **out_dir**: Directory where the output data should be written.  If the directory
   does not exist, it will be created
 
-Optional: 
+Optional:
 
 * **max_open_writers**: The maximum number of data writers to have open at once.
-* **key_field**: **BUGGY - IGNORE THIS FOR NOW** - 
+* **key_field**: **BUGGY - IGNORE THIS FOR NOW** -
   The field name (or names) to use for filenames.  This/these must be
   encased in square brackets, i.e. `"key_field": ["scientificName"]`. If multiple
   fields are provided, the ordered fields specify the sub-directory structure used for
@@ -68,16 +68,16 @@ Optional:
     example split_occurrence_data wrangler configuration used for this tutorial step
     is [here](../../input/wrangle_occurrences.json)
 
-* **csv**: This is an optional argument, but either this, or **dwca**, must be provided. 
+* **csv**: This is an optional argument, but either this, or **dwca**, must be provided.
   List of 0 or more lists, each containing 5 arguments
-  
+
   * input CSV file
   * occurrence data wrangler configuration file (described in the next section).
   * fieldname for grouping data (often a taxonomic designation such as scientificName)
   * fieldname for the longitude/x coordinate
   * fieldname for the latitude/y coordinate
-  
-* **species_list_filename**: File location to write list of species seen (after 
+
+* **species_list_filename**: File location to write list of species seen (after
   wrangling).
 
 ## Run tutorial with DwCA data
@@ -131,7 +131,6 @@ for windows systems
 ```cmd
 run_tutorial.bat split_occurrence_data data\config\split_occurrence_data_csv.json
 ```
-
 
 ## Run tutorial with CSV data, resolving names
 

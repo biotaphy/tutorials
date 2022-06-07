@@ -3,9 +3,12 @@
     "min_coverage": 25,
     "min_presence": 10,
     "max_presence": 127,
-    "shapegrid_filename": "/volumes/data/input/shapegrid.shp",
+    "grid_filename": "/volumes/data/input/grid.shp",
     "out_matrix_filename": "/volumes/output/encode_layers_matrix.lmm",
     "layer": [
+        ["/volumes/data/input/env_1.tif", "env_raster"]
+    ],
+    "layer_ignore": [
         ["/volumes/data/input/bg_hyp_1.shp", "bg_hyp_1"],
         ["/volumes/data/input/bg_hyp_4_event_myevent.shp", "bg_hyp_4", "myevent"],
         ["/volumes/data/input/env_1.tif", "env_raster"],

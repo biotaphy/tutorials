@@ -33,8 +33,8 @@ optional parameters for each are [here](wrangle_species_list.md).
 ### Input: Script parameter file
 
 A JSON parameter file is required for this command.  The tutorial parameter file
-is [wrangle_species_list_gbif.json](../../data/config/wrangle_species_list_gbif.json).  These are the
-required and optional parameters:
+is [wrangle_species_list_gbif.json](../../data/config/wrangle_species_list_gbif.json).
+These are the required and optional parameters:
 
 Required:
 
@@ -74,8 +74,7 @@ run_tutorial.bat  wrangle_species_list  data\config\wrangle_species_list_gbif.js
 This process outputs a text file containing the modified species list, one name per
 line, and a name-mapping from the original name to the accepted name according to the
 specified authority.  This name-map is suitable to use for input when resolving another
-dataset containing a subset of the same original names.  
-
+dataset containing a subset of the same original names.
 
 ## Hands-on: Run tutorial with name-map
 
