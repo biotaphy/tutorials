@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clean Occurrences &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Webinar 5: Clean Occurrence Data &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -20,8 +20,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Build grid" href="w7_build_shapegrid.html" />
-    <link rel="prev" title="Resolve taxonomy in a Darwin Core Archive (DwCA)" href="w3_split_occurrence_data.html" /> 
+    <link rel="next" title="Webinar 7: Build a grid to analyze a multi-species dataset" href="w7a_build_grid.html" />
+    <link rel="prev" title="Webinar 5: Resolve taxonomy in occurrence data" href="w5_resolve_occurrence_names.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,10 +44,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Biotaphy Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w2a_resolve_splist_names.html">Resolve names in a list</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w2c_resolve_occurrence_names.html">Resolve names in occurrence data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w3_split_occurrence_data.html">Resolve taxonomy in a Darwin Core Archive (DwCA)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Clean Occurrences</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolve taxonomy for a list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w3_split_occurrence_data.html">Webinar 3: Split and merge occurrence data by species</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w5_resolve_occurrence_names.html">Webinar 5: Resolve taxonomy in occurrence data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 5: Clean Occurrence Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data preparation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#configuration-file">Configuration File</a></li>
@@ -59,12 +59,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="w7_build_shapegrid.html">Build grid</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7_encode_layers.html">Encode Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7a_build_grid.html">Build grid</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7b_encode_layers.html">Encode Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7c_calc_pam_stats.html">Calculate PAM statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8a_resolve_tree_names.html">Resolve names in a tree</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w7a_build_grid.html">Webinar 7: Build a grid to analyze a multi-species dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w7b_encode_layers.html">Webinar 7: Encode Layers into a Presence-Absence matrix (PAM) for multi-species analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w7c_calc_pam_stats.html">Webinar 7: Calculate statistics for a PAM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w8a_resolve_tree_names.html">Webinar 8: Resolve names in a phylogenetic tree</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w8b_compute_pd.html">Webinar 8: Compute Phylogenetic Diversity (PD) for a PAM with a tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List Data Wrangler</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_tree.html">Trees</a></li>
@@ -87,7 +86,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Clean Occurrences</li>
+      <li>Webinar 5: Clean Occurrence Data</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/tutorial/w5_wrangle_occurrences.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -97,8 +96,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="clean-occurrences">
-<h1>Clean Occurrences<a class="headerlink" href="#clean-occurrences" title="Permalink to this heading"></a></h1>
+  <section id="webinar-5-clean-occurrence-data">
+<h1>Webinar 5: Clean Occurrence Data<a class="headerlink" href="#webinar-5-clean-occurrence-data" title="Permalink to this heading"></a></h1>
 <p><strong>Webinar 3</strong> <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1">Big Data Munging</a>
 (Module 3, Big Data)</p>
 <p><strong>Webinar 5</strong> <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#">Clean Your Dirty Data</a>
@@ -208,8 +207,8 @@ command prompt during execution.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="w3_split_occurrence_data.html" class="btn btn-neutral float-left" title="Resolve taxonomy in a Darwin Core Archive (DwCA)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="w7_build_shapegrid.html" class="btn btn-neutral float-right" title="Build grid" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="w5_resolve_occurrence_names.html" class="btn btn-neutral float-left" title="Webinar 5: Resolve taxonomy in occurrence data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="w7a_build_grid.html" class="btn btn-neutral float-right" title="Webinar 7: Build a grid to analyze a multi-species dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
