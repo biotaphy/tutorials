@@ -14,27 +14,15 @@ computations on a Docker instance.
     pages/installation
     pages/quickstart
 
-.. toctree::
-    :glob:
-    :maxdepth: 3
     :caption: Tutorial lessons
     tutorial/w*
 
-.. toctree::
-    :glob:
-    :maxdepth: 3
     :caption: Data wrangler configuration
     tutorial/*wrangle*
 
-.. toctree::
-    :glob:
-    :maxdepth: 3
     :caption: Data download
     tutorial/idigbio_download.md
 
-.. toctree::
-    :glob:
-    :maxdepth: 3
     :caption: Reference
     pages/glossary
     pages/references
