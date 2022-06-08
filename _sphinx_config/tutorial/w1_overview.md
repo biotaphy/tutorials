@@ -9,33 +9,34 @@ the tools, executes the processes, and returns the outputs to the local machine.
 
 ## Preparation
 
-To run Biotaphy tools on any OS, locally through Docker, first download and install
-[Docker](https://docs.docker.com/get-started/).
+To run Biotaphy tools on any OS, locally through :term:`Docker`, first download and 
+install [Docker](https://docs.docker.com/get-started/).
 
 ## Host and Container input, output, log directories
 
-A named volume `data`, is created on the host machine, and the data directory in this
-repository is copied to it, then mounted at /volumes/data in the container.  This
-volume is read-only, and can only be modified from the host.  If modified, the docker
-`data` volume must be re-created to propogate those changes to the containers.
+A named volume `data`, is created on the :term:`Host machine`, and the data/input and 
+data/config directories in this repository are copied to it, then mounted at 
+/volumes/data in the :term:`Container`.  This volume is read-only, and can only be 
+modified from the host.  If modified, the docker `data` volume must be re-created to 
+propagate those changes to the containers.
 
-A named volume `output` is created on the host machine and mounted at /volumes/output
-in the container.  Changes in this directory are saved in the volume, and copied back
-to the host machine.
+A named volume `output` is created on the :term:`Host machine` and mounted at 
+/volumes/output in the :term:`Container`.  Changes in this directory are saved in the 
+volume, and copied back to the host machine, under the data directory.
 
 ## Data preparation: Tool Configuration File
 
 All commands require a configuration file with tool-specific parameters.  The file
-must be in JSON format, with parameter names enclosed in double quotes, and string
-values enclosed in double quotes.  Each tutorial contains an example configuration file
-in the docker/<tool_name> directory.  The tutorial configuration files reference example
-data and parameters reasonable for that data.  All required and optional parameters
-are described in individual tutorial pages.
+must be in :term:`JSON` format, with parameter names enclosed in double quotes, and 
+string values enclosed in double quotes.  Each tutorial contains an example 
+configuration file in the data/config directory.  The tutorial configuration files 
+reference example data and parameters reasonable for that data.  All required and 
+optional parameters are described in individual tutorial pages.
 
-Input and output files referenced in the configuration file are intended for the Docker
-container, so directory paths reference volumes mounted in the container.  Output file
-parameters (log files, data files) must be in the /volumes/output path, which allows
-writing.
+Input and output files referenced in the configuration file are intended for the 
+:term:`Docker` :term:`Container`, so directory paths reference volumes mounted in the 
+container.  Output file parameters (log files, data files) must be specified to be 
+written in the /volumes/output path, which allows writing.
 
 [//]: # (## Script preparation)
 
@@ -73,9 +74,10 @@ run_tutorial.bat data\config\resolve_list_names.json
 
 The "run_tutorial" script will:
 
-1. Create (if they do not exist) volumes to share data between the host and container.
-2. Build (if it does not exist) a Docker image.
-3. Start (if it is not running) a Docker container from the image, with volumes
+1. Create (if they do not exist) :term:`Volume`s to share data between the host and 
+   container.
+2. Build (if it does not exist) a :term:`Docker image`.
+3. Start (if it is not running) a Docker :term:`Container` from the image, with volumes
    attached.
 4. Execute the specified command with the parameters in the specified configuration
    file. directory.  The process will:
@@ -88,7 +90,7 @@ The "run_tutorial" script will:
    accessible the next time it is attached to a container.
 
 Some tools will require an additional JSON-format configuration file.  In these cases,
-the JSON file will be specified in the command-configuration file.
+the :term:`JSON` file will be specified in the command-configuration file.
 
 ## Outputs
 
