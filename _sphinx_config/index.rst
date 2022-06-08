@@ -6,35 +6,39 @@ community for learning how to use Biotaphy tools through a script initiating
 computations on a Docker instance.
 
 .. toctree::
-    :maxdepth: 4
-    :caption: Contents:
+    :glob:
+    :maxdepth: 3
+    :caption: Overview
 
     pages/about
     pages/installation
     pages/quickstart
 
+.. toctree::
+    :glob:
+    :maxdepth: 3
     :caption: Tutorial lessons
-    tutorial/w1_overview.md
-    tutorial/w2a_resolve_splist_names.md
-    tutorial/w2c_resolve_occurrence_names.md
-    tutorial/w3_split_occurrence_data.md
-    tutorial/w5_wrangle_occurrences.md
-    tutorial/w7a_build_grid.md
-    tutorial/w7b_encode_layers.md
-    tutorial/w7_build_shapegrid.md
-    tutorial/w7c_calc_pam_stats.md
-    tutorial/w7_encode_layers.md
-    tutorial/w8a_resolve_tree_names.md
-    tutorial/w8b_compute_pd.rst
+    tutorial/w*
 
+.. toctree::
+    :glob:
+    :maxdepth: 3
     :caption: Data wrangler configuration
-    tutorial/data_wrangle_occurrence.md
-    tutorial/data_wrangle_tree.md
-    tutorial/idigbio_download.md
-    tutorial/wrangle_species_list.md
+    tutorial/*wrangle*
 
+.. toctree::
+    :glob:
+    :maxdepth: 3
     :caption: Data download
     tutorial/idigbio_download.md
+
+.. toctree::
+    :glob:
+    :maxdepth: 3
+    :caption: Reference
+    pages/glossary
+    pages/references
+    pages/spatial_data
 
 Indices and tables
 ==================
