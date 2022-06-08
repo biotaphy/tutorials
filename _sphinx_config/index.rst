@@ -7,7 +7,7 @@ computations on a Docker instance.
 
 .. toctree::
     :glob:
-    :maxdepth: 3
+    :maxdepth: 2
     :caption: Overview
 
     pages/about
