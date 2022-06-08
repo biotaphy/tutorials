@@ -13,6 +13,7 @@ computations on a Docker instance.
     pages/installation
     pages/quickstart
 
+    :caption: Tutorial lessons
     tutorial/w1_overview.md
     tutorial/w2a_resolve_splist_names.md
     tutorial/w2c_resolve_occurrence_names.md
@@ -26,10 +27,14 @@ computations on a Docker instance.
     tutorial/w8a_resolve_tree_names.md
     tutorial/w8b_compute_pd.rst
 
+    :caption: Data wrangler configuration
     tutorial/data_wrangle_occurrence.md
     tutorial/data_wrangle_tree.md
     tutorial/idigbio_download.md
     tutorial/wrangle_species_list.md
+
+    :caption: Data download
+    tutorial/idigbio_download.md
 
 Indices and tables
 ==================
