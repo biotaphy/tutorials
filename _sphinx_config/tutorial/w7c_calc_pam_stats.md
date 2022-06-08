@@ -1,4 +1,4 @@
-# Calculate PAM statistics
+# Webinar 7: Calculate statistics for a PAM
 
 ## Introduction
 

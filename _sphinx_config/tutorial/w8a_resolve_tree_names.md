@@ -1,6 +1,6 @@
-# Resolve names in a tree
+# Webinar 8: Resolve names in a phylogenetic tree
 
-**Webinar #2** [Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l)
+[Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l)
 Create a new tree with accepted names and name-map (original_name --> accepted_name).
 
 ## Introduction

@@ -3,7 +3,7 @@
 ## Occurrence Data
 
 Several tools ([split_occurrence_data](w3_split_occurrence_data.md),
-[wrangle_occurrences](w2c_resolve_occurrence_names.md)) accept occurrence data.
+[wrangle_occurrences](w5_resolve_occurrence_names.md)) accept occurrence data.
 The filename must be specified in the script parameter file, described in each tool's
 documentation and linked above.  Data can be in one of two formats:
 
@@ -29,6 +29,16 @@ documentation and linked above.  Data can be in one of two formats:
       location.  The field names for these 3 columns are specified in the script
       parameter file. The tutorial example occurrence datafile
       is [heuchera.csv](../../data/input/heuchera.csv).
+
+## Wrangler configuration file
+
+A file specifying 0 or more wranglers to apply to the tree data, and options
+specific to each.  Configuration files:
+
+* are in JSON format, a list of desired wranglers.
+* Each wrangler is a dictionary.
+* Each dictionary must contain "wrangler_type", with the name of the wrangler type.
+* The dictionary will also contain all required parameters and any optional parameters.
 
 ## Occurrence Wrangler Types
 

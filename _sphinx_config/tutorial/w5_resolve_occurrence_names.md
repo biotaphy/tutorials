@@ -1,4 +1,4 @@
-# Resolve names in occurrence data
+# Webinar 5: Resolve taxonomy in occurrence data
 
 **Webinar #2**  [Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l)
 Resolve the species name in each occurrence record to an "accepted" name from some

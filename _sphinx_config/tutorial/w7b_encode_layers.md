@@ -1,4 +1,4 @@
-# Encode Layers
+# Webinar 7: Encode Layers into a Presence-Absence matrix (PAM) for multi-species analysis
 
 **Webinar 7** [Introducing PAMs](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U)
 

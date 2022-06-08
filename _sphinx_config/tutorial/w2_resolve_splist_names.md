@@ -1,4 +1,4 @@
-# Resolve names in a list
+# Webinar 2: Resolve taxonomy for a list
 
 **Webinar #2**
 [Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l)

@@ -1,4 +1,4 @@
-# Build grid
+# Webinar 7: Build a grid to analyze a multi-species dataset
 
 ## Introduction
 
@@ -11,11 +11,16 @@ intersected with other geospatial data layers, in order to generalize the values
 layer to a single value per site.  When we intersect many data layers with the same
 grid, we can create a matrix of layers by sites, and compute statistics on these values.
 
-In a biogeograpic matrix, different data layers are intersected with a geospatial grid
-to produce Matrices for analyses.  Multiple two-dimensional (longitude/x and latitude/y)
-matrices are stacked into a cube, then flattened back into a 2-dimensional multi-layer
-matrix by combining the x and y coordinates into "sites", identified by the coordinates
-of the center of the grid cell.
+A grid defines the geographic extent for a term:`PAM` or other biogeographic matrix,
+used for multi-species analyses. A grid is represented by term:`Polygon`s in a
+term:`Vector` dataset, and written in shapefile format. 
+
+In a biogeograpic matrix,
+different data layers are intersected with a geospatial grid to produce Matrices for
+analyses.  Multiple two-dimensional (longitude/x and latitude/y) matrices are stacked
+into a cube, then flattened back into a 2-dimensional multi-layer matrix by combining
+the x and y coordinates into "sites", identified by the coordinates of the center of
+the grid cell.
 
 ## Data preparation
 

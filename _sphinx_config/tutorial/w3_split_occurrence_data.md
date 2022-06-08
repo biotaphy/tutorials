@@ -1,4 +1,4 @@
-# Resolve taxonomy in a Darwin Core Archive (DwCA)
+# Webinar 3: Split and merge occurrence data by species
 
 **Webinar 3**, [Big Data Munging](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1)
 (Module 2, Big-Data approaches).
