@@ -1,4 +1,4 @@
-# Trees
+# Trees: Data and Wrangling
 
 ## Tree Data
 
