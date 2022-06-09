@@ -3,7 +3,7 @@
     "key_field_ignore": ["genus","scientficName"],
     "dwca":  [
         ["/volumes/data/input/occ_heuchera_gbif.zip",
-         "/volumes/data/config/no_wranglers.json"
+         "/volumes/data/wranglers/no_wranglers.json"
         ]
     ],
     "out_dir": "/volumes/output/heuchera_dwca"

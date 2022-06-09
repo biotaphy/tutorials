@@ -6,7 +6,9 @@
     "grid_filename": "/volumes/data/input/grid.shp",
     "out_matrix_filename": "/volumes/output/encode_layers_matrix.lmm",
     "layer": [
-        ["/volumes/data/input/env_1.tif", "env_raster"]
+        ["/volumes/data/input/env_1.tif", "env_raster"],
+        ["/volumes/data/input/env_vector_1.shp", "env_vector"],
+        ["/volumes/data/input/sdm_vector_1.shp", "sdm_vector"]
     ],
     "layer_ignore": [
         ["/volumes/data/input/bg_hyp_1.shp", "bg_hyp_1"],

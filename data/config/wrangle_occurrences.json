@@ -7,5 +7,5 @@
     "log_output": "True",
     "reader_filename": "/volumes/data/input/heuchera.csv",
     "writer_filename":  "/volumes/output/heuchera_clean.csv",
-    "wrangler_config_filename":   "/volumes/data/config/occ_wranglers.json"
+    "wrangler_config_filename":   "/volumes/data/wranglers/occ_wranglers.json"
 }

@@ -13,7 +13,7 @@ grid, we can create a matrix of layers by sites, and compute statistics on these
 
 A grid defines the geographic extent for a term:`PAM` or other biogeographic matrix,
 used for multi-species analyses. A grid is represented by term:`Polygon`s in a
-term:`Vector` dataset, and written in shapefile format. 
+term:`Vector` dataset, and written in shapefile format.
 
 In a biogeograpic matrix,
 different data layers are intersected with a geospatial grid to produce Matrices for

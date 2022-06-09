@@ -9,53 +9,41 @@ the tools, executes the processes, and returns the outputs to the local machine.
 
 ## Preparation
 
-To run Biotaphy tools on any OS, locally through :term:`Docker`, first download and 
+To run Biotaphy tools on any OS, locally through :term:`Docker`, first download and
 install [Docker](https://docs.docker.com/get-started/).
 
 ## Host and Container input, output, log directories
 
-A named volume `data`, is created on the :term:`Host machine`, and the data/input and 
-data/config directories in this repository are copied to it, then mounted at 
-/volumes/data in the :term:`Container`.  This volume is read-only, and can only be 
-modified from the host.  If modified, the docker `data` volume must be re-created to 
+A named volume `data`, is created on the :term:`Host machine`, and the data/input and
+data/config directories in this repository are copied to it, then mounted at
+/volumes/data in the :term:`Container`.  This volume is read-only, and can only be
+modified from the host.  If modified, the docker `data` volume must be re-created to
 propagate those changes to the containers.
 
-A named volume `output` is created on the :term:`Host machine` and mounted at 
-/volumes/output in the :term:`Container`.  Changes in this directory are saved in the 
+A named volume `output` is created on the :term:`Host machine` and mounted at
+/volumes/output in the :term:`Container`.  Changes in this directory are saved in the
 volume, and copied back to the host machine, under the data directory.
 
-## Data preparation: Tool Configuration File
+## Data preparation: Script parameters File
 
-All commands require a configuration file with tool-specific parameters.  The file
-must be in :term:`JSON` format, with parameter names enclosed in double quotes, and 
-string values enclosed in double quotes.  Each tutorial contains an example 
-configuration file in the data/config directory.  The tutorial configuration files 
-reference example data and parameters reasonable for that data.  All required and 
-optional parameters are described in individual tutorial pages.
+All commands require a parameters file with tool-specific parameters.  The file
+must be in :term:`JSON` format.  More information is [here](script_params.md).
 
-Input and output files referenced in the configuration file are intended for the 
-:term:`Docker` :term:`Container`, so directory paths reference volumes mounted in the 
-container.  Output file parameters (log files, data files) must be specified to be 
-written in the /volumes/output path, which allows writing.
+Each tutorial contains one or more example parameters files in the tutorials/data/config
+directory.  These parameters files reference example data and parameters reasonable for
+that command.  All required and optional parameters are described in individual tutorial
+pages.
 
-[//]: # (## Script preparation)
-
-[//]: # ()
-[//]: # (Change the permissions on run_tutorial.sh or run_tutorial.bat to allow execution)
-
-[//]: # ()
-[//]: # (```zsh)
-
-[//]: # (chmod a+x run_tutorial.sh )
-
-[//]: # (```)
+Some tools will require an additional :term:`JSON` format configuration file.  In these
+cases, the JSON file will be specified in the parameters file.
 
 ## Run tool tutorials
 
 The "run_tutorial" script will run each tutorial with two arguments,
-the 1) command name and 2) configuration file.  The configuration file will be a path
-on the local machine; the script will translate that to the container path, and execute
-the command in the container with the container's copy of the file.  For example, the
+the 1) command name and 2) parameters file.  The parameters file will be a path
+on the local machine, in the tutorials/data/config directory.  The script will translate
+that to the container path, and execute the command in the container with the
+container's copy of the file.  For example, the
 **wrangle_species_list** tutorial can be initiated with:
 
 for linux/mac systems
@@ -74,7 +62,7 @@ run_tutorial.bat data\config\resolve_list_names.json
 
 The "run_tutorial" script will:
 
-1. Create (if they do not exist) :term:`Volume`s to share data between the host and 
+1. Create (if they do not exist) :term:`Volume`s to share data between the host and
    container.
 2. Build (if it does not exist) a :term:`Docker image`.
 3. Start (if it is not running) a Docker :term:`Container` from the image, with volumes
@@ -88,9 +76,6 @@ The "run_tutorial" script will:
 5. Copy the container **/volumes/output** directory back to the local data directory.
 6. Stop and delete the container.  All outputs in the docker volume are preserved and
    accessible the next time it is attached to a container.
-
-Some tools will require an additional JSON-format configuration file.  In these cases,
-the :term:`JSON` file will be specified in the command-configuration file.
 
 ## Outputs
 
