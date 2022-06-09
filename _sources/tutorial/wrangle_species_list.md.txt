@@ -1,4 +1,4 @@
-# Species List Data Wrangler
+# Species List: Wrangling
 
 When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.
