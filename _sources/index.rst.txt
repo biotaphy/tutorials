@@ -17,11 +17,12 @@ computations on a Docker instance.
     :caption: Tutorial lessons
     tutorial/w*
 
-    :caption: Data wrangler configuration
+    :caption: Command configuration
+    tutorial/script_params
     tutorial/*wrangle*
 
     :caption: Data download
-    tutorial/idigbio_download.md
+    tutorial/idigbio_download
 
     :caption: Reference
     pages/glossary
@@ -34,4 +35,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

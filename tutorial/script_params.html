@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webinar 7: Encode Layers into a Presence-Absence matrix (PAM) for multi-species analysis &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Script parameters file &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -20,8 +20,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Webinar 7: Calculate statistics for a PAM" href="w7c_calc_pam_stats.html" />
-    <link rel="prev" title="Webinar 7: Build a grid to analyze a multi-species dataset" href="w7a_build_grid.html" /> 
+    <link rel="next" title="Specimen Occurrences" href="data_wrangle_occurrence.html" />
+    <link rel="prev" title="Species List Data Wrangler" href="wrangle_species_list.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -49,20 +49,12 @@
 <li class="toctree-l1"><a class="reference internal" href="w5_resolve_occurrence_names.html">Webinar 5: Resolve taxonomy in occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_wrangle_occurrences.html">Webinar 5: Clean Occurrence Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w7a_build_grid.html">Webinar 7: Build a grid to analyze a multi-species dataset</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 7: Encode Layers into a Presence-Absence matrix (PAM) for multi-species analysis</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#configuration-file">Configuration File</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#run-encode-layers-tutorial">Run encode_layers tutorial</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#note">Note</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="w7b_encode_layers.html">Webinar 7: Encode Layers into a Presence-Absence matrix (PAM) for multi-species analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w7c_calc_pam_stats.html">Webinar 7: Calculate statistics for a PAM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w8a_resolve_tree_names.html">Webinar 8: Resolve names in a phylogenetic tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w8b_compute_pd.html">Webinar 8: Compute Phylogenetic Diversity (PD) for a PAM with a tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List Data Wrangler</a></li>
-<li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_tree.html">Trees</a></li>
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
@@ -84,9 +76,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Webinar 7: Encode Layers into a Presence-Absence matrix (PAM) for multi-species analysis</li>
+      <li>Script parameters file</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/w7b_encode_layers.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/script_params.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -94,73 +86,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="webinar-7-encode-layers-into-a-presence-absence-matrix-pam-for-multi-species-analysis">
-<h1>Webinar 7: Encode Layers into a Presence-Absence matrix (PAM) for multi-species analysis<a class="headerlink" href="#webinar-7-encode-layers-into-a-presence-absence-matrix-pam-for-multi-species-analysis" title="Permalink to this heading"></a></h1>
-<p><strong>Webinar 7</strong> <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U">Introducing PAMs</a></p>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all tutorials
-work.</p>
-<section id="configuration-file">
-<h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this heading"></a></h3>
-<p>An example json file for running the encode_layers tutorial is at
-../../data/config/encode_layers.json. These are the required and optional
-parameters:</p>
+  <section id="script-parameters-file">
+<h1>Script parameters file<a class="headerlink" href="#script-parameters-file" title="Permalink to this heading"></a></h1>
+<p>A :term:<code class="docutils literal notranslate"><span class="pre">JSON</span></code> parameter file is required for all tutorial commands.  There are one or
+more example parameter files for each tutorial.  All of these JSON parameter files
+follow the same pattern, and many have the same options.</p>
+<ol class="arabic simple">
+<li><p>Each command has required and/or optional parameters.</p></li>
+<li><p>The group of options are enclosed in curly braces ( {} ).</p></li>
+<li><p>Each option keyword is quoted with double quotes ( ” ), is followed by a colon ( : )
+and a value.</p></li>
+<li><p>Each value may be a double-quoted string, a number, a boolean (true or false, not
+quoted), or a list of these items, separated by commas and enclosed in square
+brackets ( [] ).</p></li>
+<li><p>Output filenames must be a full path to the file to be created in the
+:term:<code class="docutils literal notranslate"><span class="pre">Container</span></code>.  Output file must be placed in <code class="docutils literal notranslate"><span class="pre">/volumes/output</span></code> or a
+subdirectory of that location.  Output files and directories will be copied to the
+project directory data/output on the :term:<code class="docutils literal notranslate"><span class="pre">Host</span> <span class="pre">machine</span></code>.</p></li>
+</ol>
+<p>Many commands include the optional parameters:</p>
 <ul class="simple">
-<li><p>Required:</p>
-<ul>
-<li><p><strong>shapegrid_filename</strong>: Relative path to shapegrid to use for site geometries</p></li>
-<li><p><strong>out_matrix_filename</strong>: Relative path to write the encoded matrix</p></li>
+<li><p>log_console: this is a boolean value.  The value <code class="docutils literal notranslate"><span class="pre">true</span></code>, causes the command to
+print logging lines in the command line window, to show the processes and progress.</p></li>
+<li><p>log_filename: a full path to the output log file to be created.  The file is an
+<code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">filename</span></code> as described above.  It contains all logging output from the
+process, and may be useful for identifying what processes were executed and their <br />
+outcomes.</p></li>
+<li><p>report_filename: a full path to the report log file to be created.  The file is an
+<code class="docutils literal notranslate"><span class="pre">Output</span> <span class="pre">filename</span></code> as described above.  It contains a summary of the modifications made
+to the output data, and may be useful for quantifying or comparing them.</p></li>
 </ul>
-</li>
-<li><p>Optional</p>
-<ul>
-<li><p><strong>min_coverage</strong>: Minimum percentage of a cell that has to be covered to encode it</p></li>
-<li><p><strong>min_presence</strong>: Minimum value to be considered present when encoding presence
-absence</p></li>
-<li><p><strong>max_presence</strong>: Maximum value to be considered present</p></li>
-<li><p><strong>layer</strong>: list of a</p>
-<ul>
-<li><p>layer filename</p></li>
-<li><p>(optional) label for the encoded layer in the output matrix. Defaults to file
-basename</p></li>
-<li><p>(optional) attribute</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</section>
-</section>
-<section id="run-encode-layers-tutorial">
-<h2>Run encode_layers tutorial<a class="headerlink" href="#run-encode-layers-tutorial" title="Permalink to this heading"></a></h2>
-<p>Initiate the clean occurrences process with the following:</p>
-<p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh encode_layers data/config/encode_layers.json
-</pre></div>
-</div>
-<p>for windows systems</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./run_tutorial.bat encode_layers data\config\encode_layers.json
-</pre></div>
-</div>
-</section>
-<section id="note">
-<h2>Note<a class="headerlink" href="#note" title="Permalink to this heading"></a></h2>
-<p>You may get the following warning.  This indicates that there is a window with no
-values, a common occurrence in most datasets, and may be safely ignored.</p>
-<div class="highlight-commandline notranslate"><div class="highlight"><pre><span></span>RuntimeWarning: Mean of empty slice
-  window_mean = np.nanmean(window[np.where(window != nodata)])
-</pre></div>
-</div>
-</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="w7a_build_grid.html" class="btn btn-neutral float-left" title="Webinar 7: Build a grid to analyze a multi-species dataset" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="w7c_calc_pam_stats.html" class="btn btn-neutral float-right" title="Webinar 7: Calculate statistics for a PAM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="wrangle_species_list.html" class="btn btn-neutral float-left" title="Species List Data Wrangler" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="data_wrangle_occurrence.html" class="btn btn-neutral float-right" title="Specimen Occurrences" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
