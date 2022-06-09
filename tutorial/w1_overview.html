@@ -112,11 +112,13 @@ install <a class="reference external" href="https://docs.docker.com/get-started/
 </section>
 <section id="host-and-container-input-output-log-directories">
 <h2>Host and Container input, output, log directories<a class="headerlink" href="#host-and-container-input-output-log-directories" title="Permalink to this heading"></a></h2>
-<p>A named volume <code class="docutils literal notranslate"><span class="pre">data</span></code>, is created on the :term:<code class="docutils literal notranslate"><span class="pre">Host</span> <span class="pre">machine</span></code>, and the data/input and
-data/config directories in this repository are copied to it, then mounted at
-/volumes/data in the :term:<code class="docutils literal notranslate"><span class="pre">Container</span></code>.  This volume is read-only, and can only be
-modified from the host.  If modified, the docker <code class="docutils literal notranslate"><span class="pre">data</span></code> volume must be re-created to
-propagate those changes to the containers.</p>
+<p>A :term:<code class="docutils literal notranslate"><span class="pre">Volume</span></code> “data”, is created on the :term:<code class="docutils literal notranslate"><span class="pre">Host</span> <span class="pre">machine</span></code>, and the
+tutorials/data/input, tutorials/data/config, and tutorials/data/wranglers directories
+in this repository are copied to it.  These directories are then made available on the
+term:<code class="docutils literal notranslate"><span class="pre">Container</span></code> under the /volumes/data volume (directory).  This volume is read-only,
+and can only be modified from the Host machine prior to building your Container.<br />
+If modified, the docker “data” volume must be re-created to propagate those changes to
+the containers.</p>
 <p>A named volume <code class="docutils literal notranslate"><span class="pre">output</span></code> is created on the :term:<code class="docutils literal notranslate"><span class="pre">Host</span> <span class="pre">machine</span></code> and mounted at
 /volumes/output in the :term:<code class="docutils literal notranslate"><span class="pre">Container</span></code>.  Changes in this directory are saved in the
 volume, and copied back to the host machine, under the data directory.</p>
