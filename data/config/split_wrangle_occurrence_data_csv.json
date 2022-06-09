@@ -2,7 +2,7 @@
     "max_open_writers": 100,
     "key_field_ignore": ["genus","scientficName"],
     "csv":  [
-      ["/volumes/data/input/heuchera_missing.csv",
+      ["/volumes/data/input/heuchera.csv",
        "/volumes/data/wranglers/occ_wrangler_resolve.json",
        "species_name",
        "x",

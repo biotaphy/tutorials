@@ -15,15 +15,27 @@
 # -----------------------------------------------------------
 usage ()
 {
+    # Commands that are substrings of other commands will match the superstring and
+    # possibly print the wrong Usage string.
+    config_required=(
+    "build_grid"  "calculate_pam_stats" "encode_layers"  "split_occurrence_data"
+    "wrangle_species_list"  "wrangle_occurrences"  "wrangle_tree"
+    )
     echo ""
-    echo "Usage: $0 <cmd>  <config_file>"
+    echo "Usage: $0 <cmd> "
+    echo "   or:  $0 <cmd>  <parameters_file>"
+    echo ""
     echo "This script creates an environment for a biotaphy command to be run with "
     echo "user-configured arguments in a docker container."
     echo "the <cmd> argument can be one of:"
     for i in "${!COMMANDS[@]}"; do
-        echo "      ${COMMANDS[$i]}"
+        if [[ " ${config_required[*]} " =~  ${COMMANDS[$i]}  ]] ; then
+            echo "      ${COMMANDS[$i]}   <parameters_file>"
+        else
+            echo "      ${COMMANDS[$i]}"
+        fi
     done
-    echo "the <config_file> argument must be the full path to a JSON file"
+    echo "and the <parameters_file> argument must be the full path to a JSON file"
     echo "containing command-specific arguments"
     echo ""
     exit 0
@@ -60,8 +72,9 @@ set_defaults() {
 
 
 # -----------------------------------------------------------
-build_image() {
+build_image_fill_data() {
     # Build and name an image from Dockerfile in this directory
+    # This build also populates the data volume
     image_count=$(docker image ls | grep $IMAGE_NAME |  wc -l )
     if [ $image_count -eq 0 ]; then
         docker build . -t $IMAGE_NAME
@@ -112,6 +125,7 @@ create_volumes() {
     # Create named RO input volume for use by any container
     ro_vol_exists=$(docker volume ls | grep $IN_VOLUME | wc -l )
     if [ "$ro_vol_exists" == "0" ]; then
+        echo " - Create volume $IN_VOLUME"  | tee -a "$LOG"
         docker volume create $IN_VOLUME
     else
         echo " - Volume $IN_VOLUME is already created"  | tee -a "$LOG"
@@ -119,6 +133,7 @@ create_volumes() {
     # Create named RW output volume for use by any container
     rw_vol_exists=$(docker volume ls | grep $OUT_VOLUME | wc -l )
     if [ "$rw_vol_exists" == "0" ]; then
+        echo " - Create volume $OUT_VOLUME"  | tee -a "$LOG"
         docker volume create $OUT_VOLUME
     else
         echo " - Volume $OUT_VOLUME is already created"  | tee -a "$LOG"
@@ -132,7 +147,7 @@ start_container() {
     # Find running container
     container_count=$(docker ps | grep $CONTAINER_NAME |  wc -l )
     if [ "$container_count" -ne 1 ]; then
-        build_image
+        build_image_fill_data
         # Option string for volumes
         # TODO: after debugging, add read-only back to data volume
         vol_opts="--volume ${IN_VOLUME}:${VOLUME_MOUNT}/${IN_VOLUME} \
@@ -213,10 +228,11 @@ time_stamp () {
 
 # -----------------------------------------------------------
 ####### Main #######
-COMMANDS=(\
-"list_commands"  "build_grid"  "calculate_pam_stats" "encode_layers"   \
-"split_occurrence_data"  "wrangle_species_list"  "wrangle_occurrences"  "wrangle_tree" \
-"cleanup"  "list_outputs")
+COMMANDS=(
+"list_commands"  "build_image"  "cleanup"  "list_outputs" "rebuild_data"
+"build_grid"  "calculate_pam_stats" "encode_layers"  "split_occurrence_data"
+"wrangle_species_list"  "wrangle_occurrences"  "wrangle_tree"
+)
 
 CMD=$1
 HOST_CONFIG_FILE=$2
@@ -231,18 +247,23 @@ if [ $arg_count -eq 0 ]; then
     usage
 # Arguments: command
 elif [ $arg_count -eq 1 ]; then
-    if [ "$CMD" == "list_commands" ] ; then
+    if [ "$CMD" == "cleanup" ] ; then
+        docker system prune -f --all --volumes
+    elif [ "$CMD" == "list_commands" ] ; then
         usage
     elif [ "$CMD" == "list_outputs" ] ; then
         list_output_volume_contents
         remove_container
+    elif [ "$CMD" == "build_image" ] || [ "$CMD" == "rebuild_data" ] ; then
+        docker system prune -f --all --volumes
+        echo "System build will take approximately 5 minutes ..." | tee -a "$LOG"
+        create_volumes
+        build_image_fill_data
     elif [ "$CMD" == "test" ]; then
         list_output_volume_contents
         remove_container
         start_console
         remove_container
-    elif [ "$CMD" == "cleanup" ]; then
-        docker system prune -f --all --volumes
     else
         usage
     fi
@@ -251,6 +272,7 @@ else
     if [[ " ${COMMANDS[*]} " =~  ${CMD}  ]]; then
         echo "Container command: $CMD --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
         create_volumes
+        build_image_fill_data
         start_container
         execute_process
         save_outputs

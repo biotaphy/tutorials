@@ -14,11 +14,13 @@ install [Docker](https://docs.docker.com/get-started/).
 
 ## Host and Container input, output, log directories
 
-A named volume `data`, is created on the :term:`Host machine`, and the data/input and
-data/config directories in this repository are copied to it, then mounted at
-/volumes/data in the :term:`Container`.  This volume is read-only, and can only be
-modified from the host.  If modified, the docker `data` volume must be re-created to
-propagate those changes to the containers.
+A :term:`Volume` "data", is created on the :term:`Host machine`, and the 
+tutorials/data/input, tutorials/data/config, and tutorials/data/wranglers directories 
+in this repository are copied to it.  These directories are then made available on the
+term:`Container` under the /volumes/data volume (directory).  This volume is read-only, 
+and can only be modified from the Host machine prior to building your Container.  
+If modified, the docker "data" volume must be re-created to propagate those changes to 
+the containers.
 
 A named volume `output` is created on the :term:`Host machine` and mounted at
 /volumes/output in the :term:`Container`.  Changes in this directory are saved in the

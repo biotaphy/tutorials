@@ -1,7 +1,7 @@
 [
     {
         "wrangler_type": "AcceptedNameOccurrenceWrangler",
-        "name_map": "/volumes/input/heuchera_name_map.json",
+        "name_map": "/volumes/data/input/heuchera_name_map.json",
         "name_resolver_ignore": "gbif",
         "out_map_filename": "/volumes/output/heuchera_name_map3.json",
         "map_write_interval": 100,
