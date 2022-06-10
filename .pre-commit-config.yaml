@@ -26,11 +26,11 @@ repos:
 #    rev: 'v2.3'
 #    hooks:
 #    - id: vulture
--   repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.31.1
-    hooks:
-    - id: markdownlint
-      args: [--config=.github/linters/.markdownlint]
+#-   repo: https://github.com/igorshubovych/markdownlint-cli
+#    rev: v0.31.1
+#    hooks:
+#    - id: markdownlint
+#      args: [--config=.github/linters/.markdownlint]
 -   repo: https://github.com/asottile/pyupgrade
     rev: v2.31.1
     hooks:
