@@ -52,9 +52,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#demo-run-tutorial-with-gbif-service">Demo: Run tutorial with ‘gbif’ service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hands-on-run-tutorial-with-gbif-service">Hands-on: Run tutorial with ‘gbif’ service</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#hands-on-run-tutorial-with-name-map">Hands-on: Run tutorial with name-map</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="w3_split_occurrence_data.html">Webinar 3: Split and merge occurrence data by species</a></li>
@@ -145,7 +144,7 @@ in the section above.  The tutorial example species list is
 <li><p><strong>wrangler_configuration_file</strong>: species list wrangler configuration file,
 described in the previous input section.  The tutorial example wrangler
 configuration contains one wrangler, the AcceptedNameSpeciesListWrangler, and
-is in <a class="reference download internal" download="" href="../_downloads/505bdd4e91840ed31f77cfc466724c0d/splist_wranglers_namemap.json"><span class="xref download myst">splist_wranglers.json</span></a></p></li>
+is in <a class="reference download internal" download="" href="../_downloads/07a0ced1602025d50f0eb4ef1ff1475c/splist_wranglers_gbif.json"><span class="xref download myst">splist_wranglers_gbif.json</span></a></p></li>
 <li><p><strong>out_species_list_filename</strong>: output filename for resolved species list.</p></li>
 </ul>
 <p>Optional</p>
@@ -156,8 +155,8 @@ is in <a class="reference download internal" download="" href="../_downloads/505
 </ul>
 </section>
 </section>
-<section id="demo-run-tutorial-with-gbif-service">
-<h2>Demo: Run tutorial with ‘gbif’ service<a class="headerlink" href="#demo-run-tutorial-with-gbif-service" title="Permalink to this heading"></a></h2>
+<section id="hands-on-run-tutorial-with-gbif-service">
+<h2>Hands-on: Run tutorial with ‘gbif’ service<a class="headerlink" href="#hands-on-run-tutorial-with-gbif-service" title="Permalink to this heading"></a></h2>
 <p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  wrangle_species_list  data/config/wrangle_species_list_gbif.json
@@ -174,18 +173,6 @@ is in <a class="reference download internal" download="" href="../_downloads/505
 line, and a name-mapping from the original name to the accepted name according to the
 specified authority.  This name-map is suitable to use for input when resolving another
 dataset containing a subset of the same original names.</p>
-</section>
-<section id="hands-on-run-tutorial-with-name-map">
-<h2>Hands-on: Run tutorial with name-map<a class="headerlink" href="#hands-on-run-tutorial-with-name-map" title="Permalink to this heading"></a></h2>
-<p>Initiate the process with the following:</p>
-<p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  wrangle_species_list  data/config/wrangle_species_list_namemap.json
-</pre></div>
-</div>
-<p>for windows:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat  wrangle_species_list  data\config\wrangle_species_list_namemap.json
-</pre></div>
-</div>
 </section>
 </section>
 

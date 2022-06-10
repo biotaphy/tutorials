@@ -44,7 +44,7 @@ Required:
 * **wrangler_configuration_file**: species list wrangler configuration file,
   described in the previous input section.  The tutorial example wrangler
   configuration contains one wrangler, the AcceptedNameSpeciesListWrangler, and
-  is in [splist_wranglers.json](../../data/wranglers/splist_wranglers_namemap.json)
+  is in [splist_wranglers_gbif.json](../../data/wranglers/splist_wranglers_gbif.json)
 * **out_species_list_filename**: output filename for resolved species list.
 
 Optional
@@ -53,7 +53,7 @@ Optional
 * **log_console**: 'true' to write log to console
 * **report_filename**: output filename with data modifications made by wranglers
 
-## Demo: Run tutorial with 'gbif' service
+## Hands-on: Run tutorial with 'gbif' service
 
 Initiate the process with the following:
 
@@ -75,19 +75,3 @@ This process outputs a text file containing the modified species list, one name 
 line, and a name-mapping from the original name to the accepted name according to the
 specified authority.  This name-map is suitable to use for input when resolving another
 dataset containing a subset of the same original names.
-
-## Hands-on: Run tutorial with name-map
-
-Initiate the process with the following:
-
-for linux/mac systems
-
-```zsh
-./run_tutorial.sh  wrangle_species_list  data/config/wrangle_species_list_namemap.json
-```
-
-for windows:
-
-```cmd
-run_tutorial.bat  wrangle_species_list  data\config\wrangle_species_list_namemap.json
-```
