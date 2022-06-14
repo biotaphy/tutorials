@@ -75,7 +75,7 @@ environment.
 7. Hypothesis testing
 8. Scaling?
 
-## Run without helper script
+## (Advanced, proceed with caution!) Native commands
 
 Create volumes outside of Dockerfiles and compose files
 
@@ -98,8 +98,6 @@ docker run -it --volume data:/volumes/data:ro --volume output:/volumes/output tu
 ```
 
 Run a bash shell in the container interactively to examine outputs
-
-Mac / Linux:
 
 ```commandline
 docker run  -it tutorials_backend bash
