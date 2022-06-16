@@ -1,6 +1,9 @@
 {
     "max_open_writers": 100,
-    "key_field_ignore": ["genus","scientficName"],
+    "key_field_ignore": ["genus","scientificName"],
+    "report_filename": "/volumes/output/split_wrangle_occurrences_report.json",
+    "log_filename": "/volumes/output/split_wrangle_occurrences.log",
+    "log_output": false,
     "csv":  [
       ["/volumes/data/input/heuchera.csv",
        "/volumes/data/wranglers/occ_wrangler_resolve.json",
