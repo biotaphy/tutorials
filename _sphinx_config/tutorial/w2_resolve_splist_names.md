@@ -68,18 +68,19 @@ for linux/mac systems
 This process outputs files similar to the following, and configured in the script 
 parameter file: 
 1. text to the console as it processes each name.
-2. a log file similar to 
+2. a log file named in the log_filename parameter, similar to 
    [wrangle_species_list_gbif.log](../../data/easy_bake/wrangle_species_list_gbif.log)
-3. a report file similar to 
+3. a report file named in the report_filename parameter, similar to 
    [wrangle_species_list_gbif.rpt](../../data/easy_bake/wrangle_species_list_gbif.rpt)
    containing a summary of the processing.
-4. an output species list similar to 
+4. an output species list named in the out_species_list_filename, similar to 
    [heuchera_accepted_gbif.txt](../../data/easy_bake/heuchera_accepted_gbif.txt)
    containing the modified species list, one name per line.
 
-The process also outputs a name-mapping configured in the wrangler configuration file 
-for the AcceptedNameSpeciesListWrangler.  The name-map is a JSON file with pairs of 
-names - the original name to the accepted name according to the specified authority.  
+The process also outputs a name-mapping named in the wrangler configuration file 
+out_map_filename parameter for the AcceptedNameSpeciesListWrangler.  The name-map is a 
+JSON file with pairs of names - the original name to the accepted name according to the 
+specified authority.  
 This name-map is suitable to use for input when resolving another dataset containing a 
 subset of the same original names.  A sample output name-map is 
 [gbif_splist.namemap](../../data/output/gbif_splist.namemap).
