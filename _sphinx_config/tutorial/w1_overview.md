@@ -92,16 +92,30 @@ Tools can be called with the run_tutorial script:
 ./run_tutorial.sh  <command>  <tool_configuration_file>
 ```
 
-Sending the command **list_commands** will print all valid commands.
+Sending the command **list_commands** will print all valid commands.  Below are some
+commands with example configurations.
 
 ```zsh
+# Webinar 1
 ./run_tutorial.sh list_commands
-./run_tutorial.sh wrangle_species_list  data/config/resolve_list_names.json
-./run_tutorial.sh wrangle_tree data/config/resolve_tree_names.json
-./run_tutorial.sh wrangle_occurrences  data/config/resolve_occurrence_names.json
-./run_tutorial.sh split_occurrence_data  data/config/split_occurrence_data_dwca.json
-./run_tutorial.sh clean_occurrences  data/config/clean_occurrences.json
+# Webinar 2
+./run_tutorial.sh wrangle_species_list  data/config/wrangle_species_list_gbif.json
+./run_tutorial.sh wrangle_species_list  data/config/wrangle_species_list_namemap.json
+# Webinar 3
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
+./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
+# Webinar 5
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
+# Webinar 7
 ./run_tutorial.sh build_grid  data/config/build_grid.json
 ./run_tutorial.sh encode_layers  data/config/encode_layers.json
 ./run_tutorial.sh calculate_pam_stats  data/config/calc_pam_stats.json
+# Webinar 8
+./run_tutorial.sh wrangle_tree data/config/wrangle_tree.json
+
+./run_tutorial.sh clean_occurrences  data/config/clean_occurrences.json
+
 ```
