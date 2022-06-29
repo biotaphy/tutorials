@@ -183,16 +183,29 @@ will be copied to the data/outputs directory on completion.</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  &lt;command&gt;  &lt;tool_configuration_file&gt;
 </pre></div>
 </div>
-<p>Sending the command <strong>list_commands</strong> will print all valid commands.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh list_commands
-./run_tutorial.sh wrangle_species_list  data/config/resolve_list_names.json
-./run_tutorial.sh wrangle_tree data/config/resolve_tree_names.json
-./run_tutorial.sh wrangle_occurrences  data/config/resolve_occurrence_names.json
-./run_tutorial.sh split_occurrence_data  data/config/split_occurrence_data_dwca.json
-./run_tutorial.sh clean_occurrences  data/config/clean_occurrences.json
+<p>Sending the command <strong>list_commands</strong> will print all valid commands.  Below are some
+commands with example configurations.</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Webinar 1</span>
+./run_tutorial.sh list_commands
+<span class="c1"># Webinar 2</span>
+./run_tutorial.sh wrangle_species_list  data/config/wrangle_species_list_gbif.json
+./run_tutorial.sh wrangle_species_list  data/config/wrangle_species_list_namemap.json
+<span class="c1"># Webinar 3</span>
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
+./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
+<span class="c1"># Webinar 5</span>
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
+<span class="c1"># Webinar 7</span>
 ./run_tutorial.sh build_grid  data/config/build_grid.json
 ./run_tutorial.sh encode_layers  data/config/encode_layers.json
 ./run_tutorial.sh calculate_pam_stats  data/config/calc_pam_stats.json
+<span class="c1"># Webinar 8</span>
+./run_tutorial.sh wrangle_tree data/config/wrangle_tree.json
+
+./run_tutorial.sh clean_occurrences  data/config/clean_occurrences.json
 </pre></div>
 </div>
 </section>
