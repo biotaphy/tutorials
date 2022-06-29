@@ -13,11 +13,12 @@ RUN pip install requests
 
 RUN mkdir git
 
-# specify-lmpy from pypi
+# specify-lmpy testing branch from Github
 RUN cd git &&  \
     git clone -b filenotfound-issue-347 https://github.com/specifysystems/lmpy.git &&  \
     cd lmpy \
     && pip install .
+# specify-lmpy from pypi
 #RUN pip install specify-lmpy
 
 #  BiotaphyPy

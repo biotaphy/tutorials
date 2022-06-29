@@ -1,6 +1,6 @@
 # Biotaphy tutorials
 
-## Setup Steps
+## Setup Steps 
 
 Before we can run the demo, we need to build the container.  This documentation
 assumes that [Docker](https://docs.docker.com/get-docker/) has been installed for your
@@ -28,7 +28,7 @@ environment.
    6. copy output files to the host machine
 
    ```zsh
-   ./run_tutorial.sh wrangle_occurrences data/input/clean_occurrences.json
+   ./run_tutorial.sh wrangle_occurrences data/config/wrangle_species_list_gbif.json
    ```
 
 4. Run a bash shell in the container interactively to examine outputs
