@@ -169,18 +169,19 @@ is in <a class="reference download internal" download="" href="../_downloads/07a
 parameter file:</p>
 <ol class="arabic simple">
 <li><p>text to the console as it processes each name.</p></li>
-<li><p>a log file similar to
+<li><p>a log file named in the log_filename parameter, similar to
 <span class="xref myst">wrangle_species_list_gbif.log</span></p></li>
-<li><p>a report file similar to
+<li><p>a report file named in the report_filename parameter, similar to
 <a class="reference download internal" download="" href="../_downloads/1b8ce3981c5a541439fe4f7612db2e92/wrangle_species_list_gbif.rpt"><span class="xref download myst">wrangle_species_list_gbif.rpt</span></a>
 containing a summary of the processing.</p></li>
-<li><p>an output species list similar to
+<li><p>an output species list named in the out_species_list_filename, similar to
 <a class="reference download internal" download="" href="../_downloads/826234dad0ccfb66c6c7f9922b2406d6/heuchera_accepted_gbif.txt"><span class="xref download myst">heuchera_accepted_gbif.txt</span></a>
 containing the modified species list, one name per line.</p></li>
 </ol>
-<p>The process also outputs a name-mapping configured in the wrangler configuration file
-for the AcceptedNameSpeciesListWrangler.  The name-map is a JSON file with pairs of
-names - the original name to the accepted name according to the specified authority.<br />
+<p>The process also outputs a name-mapping named in the wrangler configuration file
+out_map_filename parameter for the AcceptedNameSpeciesListWrangler.  The name-map is a
+JSON file with pairs of names - the original name to the accepted name according to the
+specified authority.<br />
 This name-map is suitable to use for input when resolving another dataset containing a
 subset of the same original names.  A sample output name-map is
 <span class="xref myst">gbif_splist.namemap</span>.</p>
