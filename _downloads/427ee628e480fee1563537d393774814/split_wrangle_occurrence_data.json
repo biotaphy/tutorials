@@ -1,0 +1,26 @@
+{
+    "max_open_writers": 100,
+    "report_filename": "/volumes/output/split_wrangle_occurrence_data.rpt",
+    "log_filename": "/volumes/output/split_wrangle_occurrence_data.log",
+    "log_output": false,
+    "csv":  [
+      ["/volumes/data/input/heuchera.csv",
+       "/volumes/data/wranglers/occ_wrangler_resolve.json",
+       "species_name",
+       "x",
+       "y"
+      ],
+      ["/volumes/data/input/occ_heuchera_gbif.csv",
+        "/volumes/data/wranglers/occ_wrangler_resolve.json",
+        "acceptedScientificName",
+        "decimalLongitude",
+        "decimalLatitude"
+      ]
+    ],
+    "dwca":  [
+        ["/volumes/data/input/occ_heuchera_gbif.zip",
+         "/volumes/data/wranglers/occ_wrangler_resolve.json"
+        ]
+      ],
+    "out_dir": "/volumes/output/heuchera_split_resolve"
+}

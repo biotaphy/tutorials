@@ -1,6 +1,6 @@
 {
     "max_open_writers": 100,
-    "key_field_ignore": ["genus","scientficName"],
+    "key_field": ["genus","scientificName"],
     "dwca":  [
         ["/volumes/data/input/occ_heuchera_gbif.zip",
          "/volumes/data/wranglers/no_wranglers.json"

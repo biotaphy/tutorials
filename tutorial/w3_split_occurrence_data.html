@@ -56,7 +56,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#run-tutorial-with-dwca-data">Run tutorial with DwCA data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#run-tutorial-with-csv-data">Run tutorial with CSV data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#run-tutorial-with-csv-data-resolving-names">Run tutorial with CSV data, resolving names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Output</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="w5_resolve_occurrence_names.html">Webinar 5: Resolve taxonomy in occurrence data</a></li>
@@ -122,15 +122,22 @@ CSV file containing records for one or more taxa.  More information is in the
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the <strong>Occurrence Wrangler Types</strong> section
-of <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">data_wrangle_occurrence</span></a>.  In this example, we will
+of <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">data_wrangle_occurrence</span></a>.  In the first example, we will
 split occurrence data, but not perform any other wrangling on it, so our <span class="xref myst">wrangler
-configuration file</span> contains an empty list.</p>
+configuration file</span> contains an empty list.  A
+second example <span class="xref myst">wrangler configuration file</span>
+resolves names with GBIF before grouping the data by name.</p>
+<p>If more than one dataset is being processed, it is logical to apply the same wranglers
+to each.</p>
 </section>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
-<p>A JSON parameter file is required for this command.  The tutorial parameter file
-is <a class="reference download internal" download="" href="../_downloads/dcdfe5e9bd8291646a28db90400c3618/split_occurrence_data_dwca.json"><span class="xref download myst">split_occurrence_data_dwca.json</span></a>.
-These are the required and optional parameters:</p>
+<p>A JSON parameter file is required for this command.  Three tutorial parameter files are
+<a class="reference download internal" download="" href="../_downloads/dcdfe5e9bd8291646a28db90400c3618/split_occurrence_data_dwca.json"><span class="xref download myst">split_occurrence_data_dwca.json</span></a>,
+<a class="reference download internal" download="" href="../_downloads/f8d9a818db1c03c7022f4f8a3389f71b/split_occurrence_data_csv.json"><span class="xref download myst">split_occurrence_data_csv.json</span></a>,
+and
+<a class="reference download internal" download="" href="../_downloads/427ee628e480fee1563537d393774814/split_wrangle_occurrence_data.json"><span class="xref download myst">split_wrangle_occurrence_data.json</span></a>.</p>
+<p>These are the required and optional parameters:</p>
 <p>Required:</p>
 <ul class="simple">
 <li><p><strong>out_dir</strong>: Directory where the output data should be written.  If the directory
@@ -187,7 +194,9 @@ wrangling).</p></li>
 <h2>Run tutorial with DwCA data<a class="headerlink" href="#run-tutorial-with-dwca-data" title="Permalink to this heading"></a></h2>
 <p>Initiate the split_occurrence_data process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_missing_wrangler.json
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
 </pre></div>
 </div>
 <p>for windows systems</p>
@@ -214,25 +223,28 @@ command prompt during execution.</p>
 <h2>Run tutorial with CSV data<a class="headerlink" href="#run-tutorial-with-csv-data" title="Permalink to this heading"></a></h2>
 <p>Initiate the split_occurrence_data process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
-</pre></div>
-</div>
-<p>for windows systems</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat split_occurrence_data data\config\split_occurrence_data_csv.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># with CSV data</span>
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
+<span class="c1"># with DwCA data</span>
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
+<span class="c1"># with CSV data and resolving names with GBIF</span>
+./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
 </pre></div>
 </div>
 </section>
-<section id="run-tutorial-with-csv-data-resolving-names">
-<h2>Run tutorial with CSV data, resolving names<a class="headerlink" href="#run-tutorial-with-csv-data-resolving-names" title="Permalink to this heading"></a></h2>
-<p>Initiate the split_occurrence_data process with the following:</p>
-<p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data_csv.json
-</pre></div>
-</div>
-<p>for windows systems</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat split_occurrence_data data\config\split_wrangle_occurrence_data_csv.json
-</pre></div>
-</div>
+<section id="id1">
+<h2>Output<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<p>This process outputs files configured in the script parameter file, similar to the
+following:</p>
+<ol class="arabic simple">
+<li><p>TODO: text to the console as it processes each name.</p></li>
+<li><p>TODO: a log file named in the log_filename parameter, similar to <span class="xref myst"></span></p></li>
+<li><p>TODO: a report file named in the report_filename parameter, similar to
+<span class="xref myst"></span>, containing a summary of the processing.</p></li>
+<li><p>a directory, named in the out_dir parameter, of output CSV files, one per species (or
+other grouping field).  The basename of each CSV file will be named by the value in
+the grouping field.</p></li>
+</ol>
 </section>
 </section>
 

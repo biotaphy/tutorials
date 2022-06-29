@@ -65,8 +65,8 @@ for linux/mac systems
 
 ## Output
 
-This process outputs files similar to the following, and configured in the script 
-parameter file: 
+This process outputs files configured in the script parameter file, similar to the 
+following: 
 1. text to the console as it processes each name.
 2. a log file named in the log_filename parameter, similar to 
    [wrangle_species_list_gbif.log](../../data/easy_bake/wrangle_species_list_gbif.log)
