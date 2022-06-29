@@ -1,0 +1,15 @@
+{
+    "log_filename": "/volumes/output/split_occurrence_data_missing_wrangler.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/split_occurrence_data_missing_wrangler.rpt",
+    "max_open_writers": 100,
+    "csv":  [
+      ["/volumes/data/input/heuchera.csv",
+        "/volumes/data/wranglers/missing_wrangler.json",
+        "species_name",
+        "x",
+        "y"
+      ]
+    ],
+    "out_dir": "/volumes/output/heuchera_csv"
+}

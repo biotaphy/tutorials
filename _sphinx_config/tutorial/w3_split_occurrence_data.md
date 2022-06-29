@@ -22,14 +22,23 @@ A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the **Occurrence Wrangler Types** section
-of [data_wrangle_occurrence](data_wrangle_occurrence.md).  In this example, we will
+of [data_wrangle_occurrence](data_wrangle_occurrence.md).  In the first example, we will
 split occurrence data, but not perform any other wrangling on it, so our [wrangler
-configuration file](../data/config/wrangle_nothing.json) contains an empty list.
+configuration file](../data/config/wrangle_nothing.json) contains an empty list.  A
+second example [wrangler configuration file](../data/config/occ_wrangler_resolve.json)
+resolves names with GBIF before grouping the data by name.
+
+If more than one dataset is being processed, it is logical to apply the same wranglers 
+to each.  
 
 ### Input: Script parameter file
 
-A JSON parameter file is required for this command.  The tutorial parameter file
-is [split_occurrence_data_dwca.json](../../data/config/split_occurrence_data_dwca.json).
+A JSON parameter file is required for this command.  Three tutorial parameter files are 
+[split_occurrence_data_dwca.json](../../data/config/split_occurrence_data_dwca.json),
+[split_occurrence_data_csv.json](../../data/config/split_occurrence_data_csv.json),
+and 
+[split_wrangle_occurrence_data.json](../../data/config/split_wrangle_occurrence_data.json).
+
 These are the required and optional parameters:
 
 Required:
@@ -87,6 +96,8 @@ Initiate the split_occurrence_data process with the following:
 for linux/mac systems
 
 ```zsh
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_missing_wrangler.json
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
 ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
 ```
 
@@ -123,27 +134,24 @@ Initiate the split_occurrence_data process with the following:
 for linux/mac systems
 
 ```zsh
+# with CSV data
 ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
+# with DwCA data
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
+# with CSV data and resolving names with GBIF
+./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
 ```
 
-for windows systems
+## Output
 
-```cmd
-run_tutorial.bat split_occurrence_data data\config\split_occurrence_data_csv.json
-```
+This process outputs files configured in the script parameter file, similar to the 
+following: 
+1. TODO: text to the console as it processes each name.
+2. TODO: a log file named in the log_filename parameter, similar to []()
+3. TODO: a report file named in the report_filename parameter, similar to
+   [](), containing a summary of the processing.
+4. a directory, named in the out_dir parameter, of output CSV files, one per species (or 
+   other grouping field).  The basename of each CSV file will be named by the value in 
+   the grouping field.
 
-## Run tutorial with CSV data, resolving names
-
-Initiate the split_occurrence_data process with the following:
-
-for linux/mac systems
-
-```zsh
-./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data_csv.json
-```
-
-for windows systems
-
-```cmd
-run_tutorial.bat split_occurrence_data data\config\split_wrangle_occurrence_data_csv.json
-```
+   

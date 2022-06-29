@@ -1,6 +1,8 @@
 {
+    "log_filename": "/volumes/output/split_occurrence_data_csv.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/split_occurrence_data_csv.rpt",
     "max_open_writers": 100,
-    "key_field_ignore": ["genus","scientficName"],
     "csv":  [
       ["/volumes/data/input/heuchera.csv",
         "/volumes/data/wranglers/no_wranglers.json",
