@@ -178,13 +178,15 @@ containing a summary of the processing.</p></li>
 <a class="reference download internal" download="" href="../_downloads/826234dad0ccfb66c6c7f9922b2406d6/heuchera_accepted_gbif.txt"><span class="xref download myst">heuchera_accepted_gbif.txt</span></a>
 containing the modified species list, one name per line.</p></li>
 </ol>
-<p>The process also outputs a name-mapping named in the wrangler configuration file
-out_map_filename parameter for the AcceptedNameSpeciesListWrangler.  The name-map is a
-JSON file with pairs of names - the original name to the accepted name according to the
-specified authority.<br />
-This name-map is suitable to use for input when resolving another dataset containing a
-subset of the same original names.  A sample output name-map is
-<span class="xref myst">gbif_splist.namemap</span>.</p>
+<p>The process also produces outputs according to the wrangler configuration file:</p>
+<ol class="arabic simple">
+<li><p>a name-map file named in out_map_filename parameter for the
+AcceptedNameSpeciesListWrangler.  The name-map is a JSON file with pairs of names -
+the original name to the accepted name according to the specified authority.<br />
+This name-map is suitable to use for input when resolving another dataset containing
+a subset of the same original names.  A sample output name-map is
+<a class="reference download internal" download="" href="../_downloads/b208be9571559b0bce1d03a2e341deb7/gbif_splist.namemap"><span class="xref download myst">gbif_splist.namemap</span></a>.</p></li>
+</ol>
 </section>
 </section>
 

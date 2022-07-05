@@ -66,7 +66,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#commonformatwrangler">CommonFormatWrangler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#coordinateconverterwrangler">CoordinateConverterWrangler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#decimalprecisionfilter">DecimalPrecisionFilter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#disjointgeometriesfilter">DisjointGeometriesFilter’</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#disjointgeometriesfilter">DisjointGeometriesFilter</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#intersectgeometriesfilter">IntersectGeometriesFilter</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#minimumpointswrangler">MinimumPointsWrangler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#spatialindexfilter">SpatialIndexFilter</a></li>
@@ -166,6 +166,9 @@ this module’s files.  Each wrangler’s parameters correspond to the construct
 arguments for that wrangler.</p>
 <section id="acceptednameoccurrencewrangler">
 <h3>AcceptedNameOccurrenceWrangler<a class="headerlink" href="#acceptednameoccurrencewrangler" title="Permalink to this heading"></a></h3>
+<p>The AcceptedNameOccurrenceWrangler matches the value in the occurrence data identified
+as the “species” field with an “accepted name” as defined in a name-map or by a
+taxonomic service.</p>
 <ul class="simple">
 <li><p>optional</p>
 <ul>
@@ -188,6 +191,8 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </section>
 <section id="attributefilterwrangler">
 <h3>AttributeFilterWrangler<a class="headerlink" href="#attributefilterwrangler" title="Permalink to this heading"></a></h3>
+<p>The AttributeFilterWrangler filters out points based on whether the value in the
+given attribute passes the given function.</p>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -199,6 +204,8 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </section>
 <section id="attributemodifierwrangler">
 <h3>AttributeModifierWrangler<a class="headerlink" href="#attributemodifierwrangler" title="Permalink to this heading"></a></h3>
+<p>The AttributeModifierWrangler modifies a newly added or existing attribute, computing
+the value with the given function.</p>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -210,6 +217,8 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </section>
 <section id="boundingboxfilter">
 <h3>BoundingBoxFilter<a class="headerlink" href="#boundingboxfilter" title="Permalink to this heading"></a></h3>
+<p>The BoundingBoxFilter filters out occurrence points if they do not fall within the given<br />
+bounding box.</p>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -223,6 +232,8 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </section>
 <section id="commonformatwrangler">
 <h3>CommonFormatWrangler<a class="headerlink" href="#commonformatwrangler" title="Permalink to this heading"></a></h3>
+<p>The CommonFormatWrangler modifies points to a common format, using the given
+attribute-map between the original fields, and the desired fields in the common format.</p>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -233,6 +244,11 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </section>
 <section id="coordinateconverterwrangler">
 <h3>CoordinateConverterWrangler<a class="headerlink" href="#coordinateconverterwrangler" title="Permalink to this heading"></a></h3>
+<p>The CoordinateConverterWrangler modifies occurrence points by transforming the
+x and y coordinates from one projection (coded as an EPSG number) into another
+projection.  The new coordinates overwrite the x and y fields.  If original_x_attribute
+and original_y_attribute are provided, these should be new fields in which to save
+the original x and y coordinates.</p>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -241,8 +257,10 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </li>
 <li><p>optional</p>
 <ul>
-<li><p>source_epsg (int): Source map projection specified by EPSG code.</p></li>
-<li><p>epsg_attribute (str or None): A point attribute containing EPSG code.</p></li>
+<li><p>source_epsg (int): Source map projection specified by EPSG code.  Either this or
+epsg_attribute MUST be provided.</p></li>
+<li><p>epsg_attribute (str or None): A point attribute containing EPSG code.  Either this
+or source_epsg MUST be provided.</p></li>
 <li><p>original_x_attribute (str): An attribute to store the original x value.</p></li>
 <li><p>original_y_attribute (str): An attribute to store the original y value.</p></li>
 </ul>
@@ -251,6 +269,9 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </section>
 <section id="decimalprecisionfilter">
 <h3>DecimalPrecisionFilter<a class="headerlink" href="#decimalprecisionfilter" title="Permalink to this heading"></a></h3>
+<p>The DecimalPrecisionFilter filters out occurrence points where one or both coordinates<br />
+have values where the number of digits to the right of the decimal point is less than<br />
+the given number.</p>
 <ul class="simple">
 <li><p>required:</p>
 <ul>
@@ -261,7 +282,9 @@ precision.</p></li>
 </ul>
 </section>
 <section id="disjointgeometriesfilter">
-<h3>DisjointGeometriesFilter’<a class="headerlink" href="#disjointgeometriesfilter" title="Permalink to this heading"></a></h3>
+<h3>DisjointGeometriesFilter<a class="headerlink" href="#disjointgeometriesfilter" title="Permalink to this heading"></a></h3>
+<p>The DisjointGeometriesFilter filters out points where the coordinates intersect with
+the given geometries.</p>
 <ul class="simple">
 <li><p>required:</p>
 <ul>
@@ -272,6 +295,8 @@ precision.</p></li>
 </section>
 <section id="intersectgeometriesfilter">
 <h3>IntersectGeometriesFilter<a class="headerlink" href="#intersectgeometriesfilter" title="Permalink to this heading"></a></h3>
+<p>The IntersectGeometriesFilter filters out points where the coordinates do NOT intersect
+with the given geometries.</p>
 <ul class="simple">
 <li><p>required:</p>
 <ul>
@@ -282,6 +307,8 @@ precision.</p></li>
 </section>
 <section id="minimumpointswrangler">
 <h3>MinimumPointsWrangler<a class="headerlink" href="#minimumpointswrangler" title="Permalink to this heading"></a></h3>
+<p>The MinimumPointsWrangler filters out groups of points where the number of points in a
+group does not meet the minimum.</p>
 <p>Note: This point must only be used on occurrence data file that is to be used as a
 single group of records, i.e. a file containing only one species or grouping.  When
 wrangling multi-species datasets, this will count the number of points for the entire
@@ -296,6 +323,8 @@ set, not subsets within a file.</p>
 </section>
 <section id="spatialindexfilter">
 <h3>SpatialIndexFilter<a class="headerlink" href="#spatialindexfilter" title="Permalink to this heading"></a></h3>
+<p>The SpatialIndexFilter filters out points that match some given condition
+(check_hit_function) on the given spatial index.</p>
 <ul class="simple">
 <li><p>required:</p>
 <ul>
@@ -311,6 +340,9 @@ counted.</p></li>
 </section>
 <section id="uniquelocalitiesfilter">
 <h3>UniqueLocalitiesFilter<a class="headerlink" href="#uniquelocalitiesfilter" title="Permalink to this heading"></a></h3>
+<p>The UniqueLocalitiesFilter filters out points from a grouping that do not have unique
+coordinates.  The filter can operate on one or more groups, and uniqueness is only
+checked within groups.</p>
 <p>Note: This point must only be used on occurrence data file that is to be used as a
 single group of records, i.e. a file containing only one species or grouping.  When
 wrangling multi-species datasets, this will count the unique localities for the entire

@@ -96,51 +96,16 @@ Initiate the split_occurrence_data process with the following:
 for linux/mac systems
 
 ```zsh
+# Test missing input file
 ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_missing_wrangler.json
-./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
-./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
-```
-
-for windows systems
-
-```cmd
-run_tutorial.bat split_occurrence_data data\config\split_occurrence_data_dwca.json
-```
-
-## Output
-
-This process outputs a set of CSV files, one per species, to the directory specified in
-the script parameter file.  Each record is annotated with an "accepted name" as defined
-in a name-map or by a taxonomic service. Records are grouped into files by matching
-"accepted name".
-
-If the "accepted name" does not come from a name-map, and a name-map filename is
-specified in the wrangler configuration, that file is also an output.
-
-If "report_filename" is specified in the script parameter file, a summary of point
-manipulations by each wrangler will be written to this file.
-
-If "log_filename" is specified in the script parameter file, that will be created.
-
-If "log_console" is specified in the script parameter file, logs will be written to the
-command prompt during execution.
-
-Current available taxonomic services include only GBIF at this time.
-
-## Run tutorial with CSV data
-
-Initiate the split_occurrence_data process with the following:
-
-for linux/mac systems
-
-```zsh
 # with CSV data
 ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
 # with DwCA data
 ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
-# with CSV data and resolving names with GBIF
+# with 1 DwCA and 2 CSV and resolving names with GBIF
 ./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
 ```
+
 
 ## Output
 
@@ -152,6 +117,13 @@ following:
    [](), containing a summary of the processing.
 4. a directory, named in the out_dir parameter, of output CSV files, one per species (or 
    other grouping field).  The basename of each CSV file will be named by the value in 
-   the grouping field.
+   the grouping field.  
 
-   
+The process also produces outputs according to the wrangler configuration file:
+1. If the AcceptedNameOccurrenceWrangler is included, and there is a name-map file 
+   named in out_map_filename parameter, this file will be output.  
+   The name-map is a JSON file with pairs of names - 
+   the original name to the accepted name according to the specified authority.  
+   This name-map is suitable to use for input when resolving another dataset containing 
+   a subset of the same original names.  A sample output name-map is 
+   [gbif_occ.namemap](../../data/easy_bake/gbif_occ.namemap).

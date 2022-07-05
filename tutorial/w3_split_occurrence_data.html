@@ -55,8 +55,6 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#run-tutorial-with-dwca-data">Run tutorial with DwCA data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#run-tutorial-with-csv-data">Run tutorial with CSV data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Output</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="w5_resolve_occurrence_names.html">Webinar 5: Resolve taxonomy in occurrence data</a></li>
@@ -194,46 +192,19 @@ wrangling).</p></li>
 <h2>Run tutorial with DwCA data<a class="headerlink" href="#run-tutorial-with-dwca-data" title="Permalink to this heading"></a></h2>
 <p>Initiate the split_occurrence_data process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_missing_wrangler.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Test missing input file</span>
+./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_missing_wrangler.json
+<span class="c1"># with CSV data</span>
 ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
+<span class="c1"># with DwCA data</span>
 ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
-</pre></div>
-</div>
-<p>for windows systems</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat split_occurrence_data data\config\split_occurrence_data_dwca.json
+<span class="c1"># with 1 DwCA and 2 CSV and resolving names with GBIF</span>
+./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
 </pre></div>
 </div>
 </section>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
-<p>This process outputs a set of CSV files, one per species, to the directory specified in
-the script parameter file.  Each record is annotated with an “accepted name” as defined
-in a name-map or by a taxonomic service. Records are grouped into files by matching
-“accepted name”.</p>
-<p>If the “accepted name” does not come from a name-map, and a name-map filename is
-specified in the wrangler configuration, that file is also an output.</p>
-<p>If “report_filename” is specified in the script parameter file, a summary of point
-manipulations by each wrangler will be written to this file.</p>
-<p>If “log_filename” is specified in the script parameter file, that will be created.</p>
-<p>If “log_console” is specified in the script parameter file, logs will be written to the
-command prompt during execution.</p>
-<p>Current available taxonomic services include only GBIF at this time.</p>
-</section>
-<section id="run-tutorial-with-csv-data">
-<h2>Run tutorial with CSV data<a class="headerlink" href="#run-tutorial-with-csv-data" title="Permalink to this heading"></a></h2>
-<p>Initiate the split_occurrence_data process with the following:</p>
-<p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># with CSV data</span>
-./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
-<span class="c1"># with DwCA data</span>
-./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
-<span class="c1"># with CSV data and resolving names with GBIF</span>
-./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
-</pre></div>
-</div>
-</section>
-<section id="id1">
-<h2>Output<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
 <p>This process outputs files configured in the script parameter file, similar to the
 following:</p>
 <ol class="arabic simple">
@@ -244,6 +215,16 @@ following:</p>
 <li><p>a directory, named in the out_dir parameter, of output CSV files, one per species (or
 other grouping field).  The basename of each CSV file will be named by the value in
 the grouping field.</p></li>
+</ol>
+<p>The process also produces outputs according to the wrangler configuration file:</p>
+<ol class="arabic simple">
+<li><p>If the AcceptedNameOccurrenceWrangler is included, and there is a name-map file
+named in out_map_filename parameter, this file will be output.<br />
+The name-map is a JSON file with pairs of names -
+the original name to the accepted name according to the specified authority.<br />
+This name-map is suitable to use for input when resolving another dataset containing
+a subset of the same original names.  A sample output name-map is
+<span class="xref myst">gbif_occ.namemap</span>.</p></li>
 </ol>
 </section>
 </section>
