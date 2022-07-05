@@ -57,6 +57,10 @@ arguments for that wrangler.
 
 ### AcceptedNameOccurrenceWrangler
 
+The AcceptedNameOccurrenceWrangler matches the value in the occurrence data identified 
+as the "species" field with an "accepted name" as defined in a name-map or by a 
+taxonomic service. 
+
 * optional
 
   * name_map (str or dict): A dictionary or filename containing a dictionary of original
@@ -75,6 +79,9 @@ arguments for that wrangler.
 
 ### AttributeFilterWrangler
 
+The AttributeFilterWrangler filters out points based on whether the value in the 
+given attribute passes the given function.
+
 * required
 
   * attribute_name (str): The name of the attribute to modify.
@@ -82,12 +89,18 @@ arguments for that wrangler.
 
 ### AttributeModifierWrangler
 
+The AttributeModifierWrangler modifies a newly added or existing attribute, computing 
+the value with the given function.
+
 * required
 
   * attribute_name (str): The name of the attribute to modify.
   * attribute_func (Method): A function to generate values for a point.
 
 ### BoundingBoxFilter
+
+The BoundingBoxFilter filters out occurrence points if they do not fall within the given  
+bounding box.
 
 * required
 
@@ -98,11 +111,20 @@ arguments for that wrangler.
 
 ### CommonFormatWrangler
 
+The CommonFormatWrangler modifies points to a common format, using the given 
+attribute-map between the original fields, and the desired fields in the common format.
+
 * required
 
   * attribute_map (dict): A mapping of source key, target values.
 
 ### CoordinateConverterWrangler
+
+The CoordinateConverterWrangler modifies occurrence points by transforming the 
+x and y coordinates from one projection (coded as an EPSG number) into another 
+projection.  The new coordinates overwrite the x and y fields.  If original_x_attribute
+and original_y_attribute are provided, these should be new fields in which to save 
+the original x and y coordinates.  
 
 * required
 
@@ -110,19 +132,28 @@ arguments for that wrangler.
 
 * optional
 
-  * source_epsg (int): Source map projection specified by EPSG code.
-  * epsg_attribute (str or None): A point attribute containing EPSG code.
+  * source_epsg (int): Source map projection specified by EPSG code.  Either this or 
+    epsg_attribute MUST be provided.
+  * epsg_attribute (str or None): A point attribute containing EPSG code.  Either this 
+    or source_epsg MUST be provided.
   * original_x_attribute (str): An attribute to store the original x value.
   * original_y_attribute (str): An attribute to store the original y value.
 
 ### DecimalPrecisionFilter
+
+The DecimalPrecisionFilter filters out occurrence points where one or both coordinates  
+have values where the number of digits to the right of the decimal point is less than  
+the given number.
 
 * required:
 
   * decimal_places (int): Only keep points with at least this many decimal places of
     precision.
 
-### DisjointGeometriesFilter'
+### DisjointGeometriesFilter
+
+The DisjointGeometriesFilter filters out points where the coordinates intersect with 
+the given geometries.  
 
 * required:
 
@@ -130,11 +161,17 @@ arguments for that wrangler.
 
 ### IntersectGeometriesFilter
 
+The IntersectGeometriesFilter filters out points where the coordinates do NOT intersect 
+with the given geometries.  
+
 * required:
 
   * geometry_wkts (list of str): A list of WKT strings.
 
 ### MinimumPointsWrangler
+
+The MinimumPointsWrangler filters out groups of points where the number of points in a 
+group does not meet the minimum.
 
 Note: This point must only be used on occurrence data file that is to be used as a
 single group of records, i.e. a file containing only one species or grouping.  When
@@ -147,6 +184,9 @@ set, not subsets within a file.
 
 ### SpatialIndexFilter
 
+The SpatialIndexFilter filters out points that match some given condition 
+(check_hit_function) on the given spatial index. 
+
 * required:
 
   * spatial_index (SpatialIndex): A SpatialIndex object that can be searched.
@@ -157,6 +197,10 @@ set, not subsets within a file.
     counted.
 
 ### UniqueLocalitiesFilter
+
+The UniqueLocalitiesFilter filters out points from a grouping that do not have unique 
+coordinates.  The filter can operate on one or more groups, and uniqueness is only 
+checked within groups.
 
 Note: This point must only be used on occurrence data file that is to be used as a
 single group of records, i.e. a file containing only one species or grouping.  When
