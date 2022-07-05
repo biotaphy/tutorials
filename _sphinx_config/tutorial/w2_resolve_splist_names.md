@@ -77,10 +77,10 @@ following:
    [heuchera_accepted_gbif.txt](../../data/easy_bake/heuchera_accepted_gbif.txt)
    containing the modified species list, one name per line.
 
-The process also outputs a name-mapping named in the wrangler configuration file 
-out_map_filename parameter for the AcceptedNameSpeciesListWrangler.  The name-map is a 
-JSON file with pairs of names - the original name to the accepted name according to the 
-specified authority.  
-This name-map is suitable to use for input when resolving another dataset containing a 
-subset of the same original names.  A sample output name-map is 
-[gbif_splist.namemap](../../data/output/gbif_splist.namemap).
+The process also produces outputs according to the wrangler configuration file:
+1. a name-map file named in out_map_filename parameter for the 
+   AcceptedNameSpeciesListWrangler.  The name-map is a JSON file with pairs of names - 
+   the original name to the accepted name according to the specified authority.  
+   This name-map is suitable to use for input when resolving another dataset containing 
+   a subset of the same original names.  A sample output name-map is 
+   [gbif_splist.namemap](../../data/easy_bake/gbif_splist.namemap).
