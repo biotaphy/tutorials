@@ -2,7 +2,7 @@
     {
         "wrangler_type": "AcceptedNameTreeWrangler",
         "name_resolver": "gbif",
-        "out_map_filename": "/volumes/output/sax_name_map_from_tree.json",
+        "out_map_filename": "/volumes/output/gbif_tree.namemap",
         "map_write_interval": 100,
         "out_map_format": "json"
     }

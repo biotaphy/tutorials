@@ -1,4 +1,4 @@
-# Webinar 7: Build a grid to analyze a multi-species dataset
+# Webinar 7: Build a grid to analyze a group of multi-species dataset
 
 ## Introduction
 
