@@ -59,7 +59,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="w5_wrangle_occurrences.html">Webinar 5: Clean Occurrence Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7a_build_grid.html">Webinar 7: Build a grid to analyze a multi-species dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w7a_build_grid.html">Webinar 7: Build a grid to analyze a group of multi-species dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w7b_encode_layers.html">Webinar 7: Encode Layers into a Presence-Absence matrix (PAM) for multi-species analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w7c_calc_pam_stats.html">Webinar 7: Calculate statistics for a PAM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w8a_resolve_tree_names.html">Webinar 8: Resolve names in a phylogenetic tree</a></li>
@@ -162,11 +162,12 @@ contains one wrangler, the AcceptedNameOccurrenceWrangler, and is in
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
 <p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  wrangle_occurrences  data/config/resolve_occurrence_names.json
-</pre></div>
-</div>
-<p>for windows:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat split_occurrence_data data\config\resolve_occurrence_names.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data cleaning only</span>
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
+<span class="c1"># Name resolution only</span>
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
+<span class="c1"># Data cleaning and name resolution</span>
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
 </pre></div>
 </div>
 </section>

@@ -62,13 +62,12 @@ Initiate the process with the following:
 for linux/mac systems
 
 ```zsh
-./run_tutorial.sh  wrangle_occurrences  data/config/resolve_occurrence_names.json
-```
-
-for windows:
-
-```cmd
-run_tutorial.bat split_occurrence_data data\config\resolve_occurrence_names.json
+# Data cleaning only
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
+# Name resolution only
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
+# Data cleaning and name resolution
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
 ```
 
 ## Output
