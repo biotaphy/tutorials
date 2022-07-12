@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webinar 5: Clean Occurrence Data &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Webinar 3: Wrangle occurrence data &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -20,8 +20,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Webinar 7: Build a grid to analyze a group of multi-species dataset" href="w7a_build_grid.html" />
-    <link rel="prev" title="Webinar 5: Resolve taxonomy in occurrence data" href="w5_resolve_occurrence_names.html" /> 
+    <link rel="next" title="Webinar 5: Split and merge occurrence data by species" href="w5_split_occurrence_data.html" />
+    <link rel="prev" title="Webinar 2: Resolve taxonomy for a list" href="w2_resolve_splist_names.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,20 +45,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolve taxonomy for a list</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w3_split_occurrence_data.html">Webinar 3: Split and merge occurrence data by species</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w5_resolve_occurrence_names.html">Webinar 5: Resolve taxonomy in occurrence data</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 5: Clean Occurrence Data</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 3: Wrangle occurrence data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data preparation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#configuration-file">Configuration File</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#input-csv-occurrence-data">Input: CSV occurrence data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-occurrence-records">Input: occurrence records</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#input-wrangler-configuration-file">Input: Wrangler configuration file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#run-tutorial">Run tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w7a_build_grid.html">Webinar 7: Build a grid to analyze a group of multi-species dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w7b_encode_layers.html">Webinar 7: Encode Layers into a Presence-Absence matrix (PAM) for multi-species analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w7c_calc_pam_stats.html">Webinar 7: Calculate statistics for a PAM</a></li>
@@ -87,9 +86,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Webinar 5: Clean Occurrence Data</li>
+      <li>Webinar 3: Wrangle occurrence data</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/w5_wrangle_occurrences.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w3_wrangle_occurrence_data.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -97,12 +96,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="webinar-5-clean-occurrence-data">
-<h1>Webinar 5: Clean Occurrence Data<a class="headerlink" href="#webinar-5-clean-occurrence-data" title="Permalink to this heading"></a></h1>
-<p><strong>Webinar 3</strong> <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1">Big Data Munging</a>
-(Module 3, Big Data)</p>
-<p><strong>Webinar 5</strong> <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#">Clean Your Dirty Data</a>
-(Module 2, Biotaphy tools)</p>
+  <section id="webinar-3-wrangle-occurrence-data">
+<h1>Webinar 3: Wrangle occurrence data<a class="headerlink" href="#webinar-3-wrangle-occurrence-data" title="Permalink to this heading"></a></h1>
+<p><strong>Webinar #3</strong>  <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi">Clean Your Dirty Data</a>
+Filter occurrence and/or modify data in a single dataset.  The tool allows multiple<br />
+operations, defined in a configuration file, to be applied to the data at the same time.
+These operations range from filtering points out based on values in certain fields, to
+filtering out all points of a certain species if the group does not match some criteria,
+to modifying values in each record.</p>
+<p>One modification that can be applied is to resolve the species name in each occurrence
+record to an “accepted” name from some authority, either a provided name-mapping or the
+GBIF name resolution service.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
@@ -110,97 +114,85 @@ tutorials work.</p>
 </section>
 <section id="data-preparation">
 <h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>
-<section id="configuration-file">
-<h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this heading"></a></h3>
-<p>An example json file for running the clean_occurrences tutorial is
-<span class="xref myst">here</span>  These are the required and optional
-parameters:</p>
-<ul class="simple">
-<li><p>Required:</p>
-<ul>
-<li><p><strong>in_filename</strong>: An input file containing CSV occurrence data.</p></li>
-<li><p><strong>out_filename</strong>: A file path for output cleaned occurrence data</p></li>
-<li><p><strong>wrangler_config_filename</strong>: An input file containing occurrence wrangler options
-in JSON format</p></li>
-</ul>
-</li>
-<li><p>Optional</p>
-<ul>
-<li><p><strong>species_field</strong>: The field name of the column containing species data (used for
-grouping taxa) for the out_filename.</p></li>
-<li><p><strong>x_key</strong>: The field name of the column containing x/longitude coordinate for the
-out_filename.</p></li>
-<li><p><strong>y_key</strong>: The field name of the column containing y/latitude coordinate for the
-out_filename.</p></li>
-<li><p><strong>report_filename</strong>: File location to write optional output report JSON.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="input-csv-occurrence-data">
-<h3>Input: CSV occurrence data<a class="headerlink" href="#input-csv-occurrence-data" title="Permalink to this heading"></a></h3>
-<p>The split_occurrence_data tool accepts either a Darwin Core Archive (DwCA) file or a
+<section id="input-occurrence-records">
+<h3>Input: occurrence records<a class="headerlink" href="#input-occurrence-records" title="Permalink to this heading"></a></h3>
+<p>The wrangle_occurrences tool accepts either a Darwin Core Archive (DwCA) file or a
 CSV file containing records for one or more taxa.  More information is in the
 <strong>Occurrence Data</strong> section of <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">data_wrangle_occurrence</span></a>.</p>
 </section>
 <section id="input-wrangler-configuration-file">
 <h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
-<p>A file specifying occurrence-wranglers to apply to the CSV data, and options specific
-to each.</p>
-<p>The clean_occurrences configuration file consists of one or more Occurrence Data
-Wranglers (wrangler_type), and the wrangler-specific required and possibly optional
-parameters for each.  Configuration files:</p>
+<p>The tool allows multiple operations, defined in a wrangler configuration file, to be
+applied to the data at the same time.  A data wrangler configuration is a file
+containing a JSON list of zero or more
+wranglers - each performs a different operation, and each has its own parameters.</p>
+<p>More information on file format, available wrangler types, and the required and/or
+optional parameters for each are in the <strong>Occurrence Wrangler Types</strong> section
+of <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">data_wrangle_occurrence</span></a>.</p>
+<p>In this example, we will
+resolve occurrence data names with GBIF using the AcceptedNameOccurrenceWrangler,
+and also apply the DecimalPrecisionFilter to filter out points with a latitude or
+longitude less than 4 digits past a decimal point.  Our
+<span class="xref myst">wrangler configuration file</span>
+contains these parameters, and the file is specified in the Script parameter file
+described next.</p>
+</section>
+<section id="input-script-parameter-file">
+<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
+<p>A JSON parameter file is required for this command.  The tutorial parameter file is
+<a class="reference download internal" download="" href="../_downloads/f962aa67454197d9333bae075f6431b5/wrangle_occurrences_w_resolve.json"><span class="xref download myst">wrangle_occurrences_w_resolve.json</span></a>.
+These are the required and optional parameters:</p>
 <ul class="simple">
-<li><p>are in JSON format, a list of one dictionary per desired wrangler.</p></li>
-<li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler types
-(listed below).</p></li>
-<li><p>The dictionary will also contain all required parameters and any optional
-parameters.</p></li>
-<li><p>Below is a list of data wrangler_types and the required and/or optional parameters
-for each.</p></li>
-<li><p>The <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">Occurrence Data Wrangler Types</span></a> page contains a
-list of all occurrence data wrangler_types and the required and/or optional
-parameters for each.</p></li>
-<li><p>Example clean_occurrences wrangler configuration:</p></li>
+<li><p>Required:</p>
+<ul>
+<li><p><strong>reader_filename</strong>: The input CSV file of occurrence records.</p></li>
+<li><p><strong>writer_filename</strong>: A file location to write cleaned points.</p></li>
+<li><p><strong>wrangler_configuration_file</strong>: occurrence wrangler configuration file,
+described in the next section.  The tutorial example wrangler configuration
+contains one wrangler, the AcceptedNameOccurrenceWrangler, and is in
+<span class="xref myst">occ_wranglers_w_resolve.json</span></p></li>
 </ul>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;wrangler_type&quot;</span> <span class="p">:</span> <span class="s2">&quot;DecimalPrecisionFilter&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;decimal_places&quot;</span> <span class="p">:</span> <span class="mi">4</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;wrangler_type&quot;</span> <span class="p">:</span> <span class="s2">&quot;UniqueLocalitiesFilter&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;wrangler_type&quot;</span> <span class="p">:</span> <span class="s2">&quot;MinimumPointsWrangler&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;minimum_count&quot;</span> <span class="p">:</span> <span class="mi">12</span>
-    <span class="p">}</span>
-<span class="p">]</span>
-</pre></div>
-</div>
+</li>
+<li><p>Optional</p>
+<ul>
+<li><p><strong>species_key</strong>: The field name of the input file column containing species data.</p></li>
+<li><p><strong>x_key</strong>: The field name of the input file column containing x/longitude coordinate.</p></li>
+<li><p><strong>y_key</strong>: The field name of the input file column containing y/latitude coordinate.</p></li>
+<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
+<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
+<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
 <section id="run-tutorial">
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
-<p>Initiate the clean occurrences process with the following:</p>
+<p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh wrangle_occurrences data/config/wrangle_occurrences.json
-</pre></div>
-</div>
-<p>for windows systems</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>./run_tutorial.bat wrangle_occurrences data\config\wrangle_occurrences.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data cleaning only</span>
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
+<span class="c1"># Name resolution only</span>
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
+<span class="c1"># Data cleaning and name resolution</span>
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
 </pre></div>
 </div>
 </section>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
-<p>This process outputs modified occurrence data to the out_filename specified in the
-script parameter file.</p>
+<p>This process outputs a set of CSV files, one per species, to the directory specified in
+the script parameter file.  Each record is annotated with an “accepted name” as defined
+in a name-map or by a taxonomic service. Records are grouped into files by matching
+“accepted name”.</p>
+<p>If the “accepted name” does not come from a name-map, and a name-map filename is
+specified in the wrangler configuration, that file is also an output.</p>
 <p>If “report_filename” is specified in the script parameter file, a summary of point
 manipulations by each wrangler will be written to this file.</p>
 <p>If “log_filename” is specified in the script parameter file, that will be created.</p>
 <p>If “log_console” is specified in the script parameter file, logs will be written to the
 command prompt during execution.</p>
+<p>Current available taxonomic services include only GBIF at this time.</p>
 </section>
 </section>
 
@@ -208,8 +200,8 @@ command prompt during execution.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="w5_resolve_occurrence_names.html" class="btn btn-neutral float-left" title="Webinar 5: Resolve taxonomy in occurrence data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="w7a_build_grid.html" class="btn btn-neutral float-right" title="Webinar 7: Build a grid to analyze a group of multi-species dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="w2_resolve_splist_names.html" class="btn btn-neutral float-left" title="Webinar 2: Resolve taxonomy for a list" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="w5_split_occurrence_data.html" class="btn btn-neutral float-right" title="Webinar 5: Split and merge occurrence data by species" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

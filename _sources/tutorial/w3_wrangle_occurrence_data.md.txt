@@ -1,11 +1,15 @@
-# Webinar 5: Resolve taxonomy in occurrence data
+# Webinar 3: Wrangle occurrence data
 
-**Webinar #2**  [Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l)
-Resolve the species name in each occurrence record to an "accepted" name from some
-authority, either a provided name-mapping or the GBIF name resolution service.  Group
-and write out occurrence records into separate CSV files with accepted names.  If the
-authority is not a name-map, write out the resulting name-map
-(original_name --> accepted_name).
+**Webinar #3**  [Clean Your Dirty Data](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi)
+Filter occurrence and/or modify data in a single dataset.  The tool allows multiple  
+operations, defined in a configuration file, to be applied to the data at the same time. 
+These operations range from filtering points out based on values in certain fields, to
+filtering out all points of a certain species if the group does not match some criteria,
+to modifying values in each record.
+
+One modification that can be applied is to resolve the species name in each occurrence 
+record to an "accepted" name from some authority, either a provided name-mapping or the 
+GBIF name resolution service. 
 
 ## Introduction
 
@@ -22,19 +26,27 @@ CSV file containing records for one or more taxa.  More information is in the
 
 ### Input: Wrangler configuration file
 
-A data wrangler configuration is a file containing a JSON list of zero or more
+The tool allows multiple operations, defined in a wrangler configuration file, to be 
+applied to the data at the same time.  A data wrangler configuration is a file 
+containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
+
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the **Occurrence Wrangler Types** section
-of [data_wrangle_occurrence](data_wrangle_occurrence.md).  In this example, we will
-resolve occurrence data names, but not perform any other wrangling on it, so our
-[wrangler configuration file](../data/config/wrangle_nothing.json) contains only
-an AcceptedNameOccurrenceWrangler.
+of [data_wrangle_occurrence](data_wrangle_occurrence.md).  
+
+In this example, we will
+resolve occurrence data names with GBIF using the AcceptedNameOccurrenceWrangler, 
+and also apply the DecimalPrecisionFilter to filter out points with a latitude or 
+longitude less than 4 digits past a decimal point.  Our
+[wrangler configuration file](../data/wranglers/occ_wranglers_w_resolve.json) 
+contains these parameters, and the file is specified in the Script parameter file 
+described next.
 
 ### Input: Script parameter file
 
-A JSON parameter file is required for this command.  The tutorial parameter file
-is [resolve_occurrence_names.json](../../data/config/resolve_occurrence_names.json).
+A JSON parameter file is required for this command.  The tutorial parameter file is
+[wrangle_occurrences_w_resolve.json](../../data/config/wrangle_occurrences_w_resolve.json).
 These are the required and optional parameters:
 
 * Required:
@@ -44,7 +56,7 @@ These are the required and optional parameters:
   * **wrangler_configuration_file**: occurrence wrangler configuration file,
     described in the next section.  The tutorial example wrangler configuration
     contains one wrangler, the AcceptedNameOccurrenceWrangler, and is in
-    [wrangle_occurrence_names.json](../../data/config/wrangle_occurrences_with_names.json)
+    [occ_wranglers_w_resolve.json](../../data/config/occ_wranglers_w_resolve.json)
 
 * Optional
 
