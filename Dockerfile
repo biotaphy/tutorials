@@ -15,7 +15,7 @@ RUN mkdir git
 
 # specify-lmpy testing branch from Github
 RUN cd git &&  \
-    git clone -b filenotfound-issue-347 https://github.com/specifysystems/lmpy.git &&  \
+    git clone -b 342-consistent-logging https://github.com/specifysystems/lmpy.git &&  \
     cd lmpy \
     && pip install .
 # specify-lmpy from pypi

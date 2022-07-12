@@ -1,7 +1,14 @@
-# Webinar 3: Split and merge occurrence data by species
+# Webinar 5: Split and merge occurrence data by species
 
-**Webinar 3**, [Big Data Munging](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1)
-(Module 2, Big-Data approaches).
+**Webinar 5**, [Big Data Munging](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1)
+(Module 2, Big-Data approaches).  Split one or more occurrence datasets by species.  
+If we are splitting more than one dataset, records in different datasets with the same
+species name will be combined into one file.  The tool allows multiple operations, 
+defined in a configuration file, to be applied to the data at the same time, just like
+in the wrangle_occurrences tool demonstrated in Webinar 3.  
+
+The tool will group and write out occurrence records into separate CSV files based on 
+a field with values to be grouped on, generally a species name. 
 
 ## Introduction
 
@@ -12,9 +19,11 @@ tutorials work.
 
 ### Input: occurrence records
 
-The split_occurrence_data tool accepts either a Darwin Core Archive (DwCA) file or a
-CSV file containing records for one or more taxa.  More information is in the
-**Occurrence Data** section of [data_wrangle_occurrence](data_wrangle_occurrence.md).
+The split_occurrence_data tool accepts one or more datasets, each must be either a 
+Darwin Core Archive (DwCA) file or a CSV file containing records for one or more taxa.
+
+More information is in the **Occurrence Data** section of 
+[data_wrangle_occurrence](data_wrangle_occurrence.md).
 
 ### Input: Wrangler configuration file
 
@@ -109,17 +118,19 @@ for linux/mac systems
 
 ## Output
 
-This process outputs files configured in the script parameter file, similar to the 
-following: 
-1. TODO: text to the console as it processes each name.
-2. TODO: a log file named in the log_filename parameter, similar to []()
-3. TODO: a report file named in the report_filename parameter, similar to
-   [](), containing a summary of the processing.
-4. a directory, named in the out_dir parameter, of output CSV files, one per species (or 
+Most outputs are configured in the script parameter file, and may include:
+
+1. **If "report_filename" is specified in the script parameter file, a summary of point
+   manipulations by each wrangler will be written to this file. 
+2. If "log_filename" is specified in the script parameter file, that will be created. 
+3. If "log_console" is specified in the script parameter file, logs will be written to the
+    command prompt during execution.
+4. A directory, named in the out_dir parameter, of output CSV files, one per species (or 
    other grouping field).  The basename of each CSV file will be named by the value in 
    the grouping field.  
 
 The process also produces outputs according to the wrangler configuration file:
+
 1. If the AcceptedNameOccurrenceWrangler is included, and there is a name-map file 
    named in out_map_filename parameter, this file will be output.  
    The name-map is a JSON file with pairs of names - 

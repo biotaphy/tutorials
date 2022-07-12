@@ -2,8 +2,8 @@
 
 ## Occurrence Data
 
-Several tools ([split_occurrence_data](w3_split_occurrence_data.md),
-[wrangle_occurrences](w5_resolve_occurrence_names.md)) accept occurrence data.
+Several tools ([split_occurrence_data](w5_split_occurrence_data.md),
+[wrangle_occurrences](w3_wrangle_occurrence_data.md)) accept occurrence data.
 The filename must be specified in the script parameter file, described in each tool's
 documentation and linked above.  Data can be in one of two formats:
 
