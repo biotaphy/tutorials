@@ -20,7 +20,9 @@
     "dwca":  [
         ["/volumes/data/input/occ_heuchera_gbif.zip",
          "/volumes/data/wranglers/occ_wrangler_resolve.json"
-        ]
+        ],
+        ["/volumes/data/input/heuchera_idigbio.zip"],
+         "/volumes/data/wranglers/occ_wrangler_resolve.json"
       ],
     "out_dir": "/volumes/output/heuchera_split_resolve"
 }
