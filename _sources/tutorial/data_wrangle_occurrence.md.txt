@@ -62,7 +62,7 @@ as the "species" field with an "accepted name" as defined in a name-map or by a
 taxonomic service. 
 
 * optional
-
+occ_wranglers_w_resolve
   * name_map (str or dict): A dictionary or filename containing a dictionary of original
     name to accepted name.  Defaults to None, but either this or name_resolver
     **must be** provided.
