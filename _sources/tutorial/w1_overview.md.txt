@@ -51,13 +51,7 @@ container's copy of the file.  For example, the
 for linux/mac systems
 
 ```zsh
-./run_tutorial.sh wrangle_species_list ./data/config/resolve_list_names.json
-```
-
-for windows systems
-
-```cmd
-run_tutorial.bat data\config\resolve_list_names.json
+./run_tutorial.sh wrangle_species_list ./data/config/wrangle_species_list_gbif.json
 ```
 
 ## Behind the scenes
