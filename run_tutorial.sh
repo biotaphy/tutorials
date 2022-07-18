@@ -138,6 +138,14 @@ create_volumes() {
     else
         echo " - Volume $OUT_VOLUME is already created"  | tee -a "$LOG"
     fi
+    # Create named temp RW output volume for debugging
+    tmp_vol_exists=$(docker volume ls | grep $TMP_VOLUME | wc -l )
+    if [ "$tmp_vol_exists" == "0" ]; then
+        echo " - Create volume $TMP_VOLUME"  | tee -a "$LOG"
+        docker volume create $TMP_VOLUME
+    else
+        echo " - Volume $TMP_VOLUME is already created"  | tee -a "$LOG"
+    fi
 }
 
 

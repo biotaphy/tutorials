@@ -3,7 +3,8 @@ FROM osgeo/gdal:ubuntu-small-latest as backend
 RUN apt-get update && \
     apt-get install -y git && \
     apt-get install -y vim && \
-    apt-get install -y python3-pip
+    apt-get install -y python3-pip && \
+    apt-get install -y default-jdk
 
 # .....................................................................................
 # Install biotaphy projects for system
@@ -15,7 +16,7 @@ RUN mkdir git
 
 # specify-lmpy testing branch from Github
 RUN cd git &&  \
-    git clone -b 342-consistent-logging https://github.com/specifysystems/lmpy.git &&  \
+    git clone -b origin/tryout_sdm https://github.com/specifysystems/lmpy.git &&  \
     cd lmpy \
     && pip install .
 # specify-lmpy from pypi

@@ -16,3 +16,4 @@ meta.xml
 output
 .env
 lmpy_issues.txt
+data/input/worldclim1.4
