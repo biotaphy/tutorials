@@ -16,7 +16,7 @@ RUN mkdir git
 
 # specify-lmpy testing branch from Github
 RUN cd git &&  \
-    git clone -b origin/tryout_sdm https://github.com/specifysystems/lmpy.git &&  \
+    git clone -b tryout_sdm https://github.com/specifysystems/lmpy.git &&  \
     cd lmpy \
     && pip install .
 # specify-lmpy from pypi
