@@ -1,0 +1,9 @@
+{
+    "log_filename": "/volumes/output/project_sdm.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/project_sdm.rpt",
+    "maxent_lambdas_file": "/volumes/data/input/Heuchera.lambdas",
+    "env_dir":  "/volumes/data/input/worldclim1.4",
+    "work_dir": "/volumes/output/maxent",
+    "model_raster_filename": "/volumes/output/heuchera.tif"
+}

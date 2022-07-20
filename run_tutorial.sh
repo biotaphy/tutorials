@@ -238,8 +238,8 @@ time_stamp () {
 ####### Main #######
 COMMANDS=(
 "list_commands"  "build_image"  "cleanup"  "list_outputs" "rebuild_data"
-"build_grid"  "calculate_pam_stats" "encode_layers"  "split_occurrence_data"
-"wrangle_species_list"  "wrangle_occurrences"  "wrangle_tree"
+"create_sdm" "build_grid"  "calculate_pam_stats" "encode_layers"
+"split_occurrence_data" "wrangle_species_list"  "wrangle_occurrences"  "wrangle_tree"
 )
 
 CMD=$1
