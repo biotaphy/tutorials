@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webinar 7: Build a grid to analyze a group of multi-species dataset &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -20,7 +20,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Webinar 7: Encode Layers into a Presence-Absence matrix (PAM) for multi-species analysis" href="w7b_encode_layers.html" />
+    <link rel="next" title="Webinar 7: Calculate statistics for a PAM" href="w7c_calc_pam_stats.html" />
     <link rel="prev" title="Webinar 5: Split and merge occurrence data by species" href="w5_split_occurrence_data.html" /> 
 </head>
 
@@ -47,20 +47,25 @@
 <li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolve taxonomy for a list</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 7: Build a grid to analyze a group of multi-species dataset</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data preparation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-build-a-grid-to-analyze-a-group-of-multi-species-dataset">Step 1: Build a grid to analyze a group of multi-species dataset</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-tutorial">Run tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#run-tutorial">Run tutorial</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-encode-species-layers-into-a-pam-defined-by-the-grid-for-multi-species-analysis">Step 2: Encode species layers into a PAM (defined by the grid) for multi-species analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#input-layers">Input: Layers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Input: Script parameter file</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="w7b_encode_layers.html">Webinar 7: Encode Layers into a Presence-Absence matrix (PAM) for multi-species analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-encode-layers-tutorial">Run encode_layers tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#note">Note</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="w7c_calc_pam_stats.html">Webinar 7: Calculate statistics for a PAM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8a_resolve_tree_names.html">Webinar 8: Resolve names in a phylogenetic tree</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8b_compute_pd.html">Webinar 8: Compute Phylogenetic Diversity (PD) for a PAM with a tree</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Resolve names in a phylogenetic tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -84,9 +89,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Webinar 7: Build a grid to analyze a group of multi-species dataset</li>
+      <li>Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/w7a_build_grid.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w7_build_pam.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -94,8 +99,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="webinar-7-build-a-grid-to-analyze-a-group-of-multi-species-dataset">
-<h1>Webinar 7: Build a grid to analyze a group of multi-species dataset<a class="headerlink" href="#webinar-7-build-a-grid-to-analyze-a-group-of-multi-species-dataset" title="Permalink to this heading"></a></h1>
+  <section id="webinar-7-introducing-presence-absence-matrices-pams-for-large-scale-analyses">
+<h1>Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses<a class="headerlink" href="#webinar-7-introducing-presence-absence-matrices-pams-for-large-scale-analyses" title="Permalink to this heading"></a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
@@ -115,8 +120,8 @@ into a cube, then flattened back into a 2-dimensional multi-layer matrix by comb
 the x and y coordinates into “sites”, identified by the coordinates of the center of
 the grid cell.</p>
 </section>
-<section id="data-preparation">
-<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>
+<section id="step-1-build-a-grid-to-analyze-a-group-of-multi-species-dataset">
+<h2>Step 1: Build a grid to analyze a group of multi-species dataset<a class="headerlink" href="#step-1-build-a-grid-to-analyze-a-group-of-multi-species-dataset" title="Permalink to this heading"></a></h2>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
@@ -136,23 +141,81 @@ parameters:</p>
 </li>
 </ul>
 </section>
-</section>
 <section id="run-tutorial">
-<h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
+<h3>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h3>
 <p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh build_grid data/input/build_grid.json
 </pre></div>
 </div>
-<p>for windows:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat build_grid data\input\build_grid.ini
+</section>
+<section id="output">
+<h3>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h3>
+<p>The build_grid tool outputs a grid in shapefile format, conforming to the arguments
+specified in the configuration JSON file.</p>
+</section>
+</section>
+<section id="step-2-encode-species-layers-into-a-pam-defined-by-the-grid-for-multi-species-analysis">
+<h2>Step 2: Encode species layers into a PAM (defined by the grid) for multi-species analysis<a class="headerlink" href="#step-2-encode-species-layers-into-a-pam-defined-by-the-grid-for-multi-species-analysis" title="Permalink to this heading"></a></h2>
+<section id="input-layers">
+<h3>Input: Layers<a class="headerlink" href="#input-layers" title="Permalink to this heading"></a></h3>
+<p>Layers are specified in the Script parameter file, described fully in the next section.<br />
+Each layer of a PAM represents the presence or absence of a taxon in the analysis.<br />
+Presence or absence is calculated with the min_coverage, min_presence, and  max_presence
+parameters also detailed in the Script parameter file.  If you define different values
+for computing different layers, you can create a matrix from each set of layers that
+share parameters (each matrix created with the same command, called with a different<br />
+configuration file), then aggregate the matrices in another step.</p>
+</section>
+<section id="id1">
+<h3>Input: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<p>An example json file for running the encode_layers tutorial is at
+../../data/config/encode_layers.json. These are the required and optional
+parameters:</p>
+<ul class="simple">
+<li><p>Required:</p>
+<ul>
+<li><p><strong>grid_filename</strong>: Relative path to shapegrid to use for site geometries</p></li>
+<li><p><strong>out_matrix_filename</strong>: Relative path to write the encoded matrix</p></li>
+<li><p><strong>encode_method</strong>: The only valid option for creating a PAM is “presence_absence”.<br />
+Other options “biogeo”, “largest_class”, “mean_value”, are used for a different
+types of matrices and operations.</p></li>
+</ul>
+</li>
+<li><p>Optional</p>
+<ul>
+<li><p><strong>min_coverage</strong>: Minimum percentage of a cell that has to be covered to encode it</p></li>
+<li><p><strong>min_presence</strong>: Minimum value to be considered present when encoding presence
+absence</p></li>
+<li><p><strong>max_presence</strong>: Maximum value to be considered present</p></li>
+<li><p><strong>layer</strong>: list of a</p>
+<ul>
+<li><p>layer filename</p></li>
+<li><p>(optional) label for the encoded layer in the output matrix. Defaults to file
+basename</p></li>
+<li><p>(optional) attribute</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="run-encode-layers-tutorial">
+<h2>Run encode_layers tutorial<a class="headerlink" href="#run-encode-layers-tutorial" title="Permalink to this heading"></a></h2>
+<p>Initiate the clean occurrences process with the following for linux/mac systems:</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh encode_layers data/config/encode_layers.json
 </pre></div>
 </div>
 </section>
-<section id="output">
-<h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
-<p>The build_grid tool outputs a grid in shapefile format, conforming to the arguments
-specified in the configuration JSON file.</p>
+<section id="note">
+<h2>Note<a class="headerlink" href="#note" title="Permalink to this heading"></a></h2>
+<p>You may get the following warning.  This indicates that there is a window with no
+values, a common occurrence in most datasets, and may be safely ignored.</p>
+<div class="highlight-commandline notranslate"><div class="highlight"><pre><span></span>RuntimeWarning: Mean of empty slice
+  window_mean = np.nanmean(window[np.where(window != nodata)])
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -161,7 +224,7 @@ specified in the configuration JSON file.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="w5_split_occurrence_data.html" class="btn btn-neutral float-left" title="Webinar 5: Split and merge occurrence data by species" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="w7b_encode_layers.html" class="btn btn-neutral float-right" title="Webinar 7: Encode Layers into a Presence-Absence matrix (PAM) for multi-species analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="w7c_calc_pam_stats.html" class="btn btn-neutral float-right" title="Webinar 7: Calculate statistics for a PAM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
