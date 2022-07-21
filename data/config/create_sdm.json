@@ -7,9 +7,9 @@
     "species_key": "species_name",
     "x_key": "x",
     "y_key": "y",
-    "points_filename": "/volumes/data/input/heuchera.csv",
+    "points_dir": "/volumes/output/heuchera_split_resolve/",
+    "points_layer_ignore": ["/volumes/data/input/heuchera.csv"],
     "env_dir":  "/volumes/data/input/worldclim1.4",
     "ecoregions_filename":  "/volumes/data/input/ecoreg_10min_global.tif",
-    "work_dir": "/volumes/output/maxent",
-    "model_raster_filename": "/volumes/output/heuchera.tif"
+    "work_dir": "/volumes/output/heuchera_sdm"
 }
