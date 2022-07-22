@@ -27,11 +27,6 @@ RUN cd git &&  \
     git clone https://github.com/biotaphy/BiotaPhyPy.git &&  \
     cd BiotaPhyPy \
     && pip install .
-# lmtools
-RUN cd git && \
-    git clone https://github.com/specifysystems/lmtools.git && \
-    cd lmtools && \
-    pip install .
 
 # Maxent
 RUN cd git && \
@@ -43,9 +38,12 @@ ENV MAXENT_JAR=/git/Maxent/ArchivedReleases/$MAXENT_VERSION/maxent.jar
 # .....................................................................................
 
 # .....................................................................................
-# Populate (pre-created, read-only) volume with inputs
-COPY ./data/input /volumes/data/input
-COPY ./data/config /volumes/data/config
+# Populate (pre-created, read-only) volumes with inputs
+COPY ./data/input     /volumes/data/input
+COPY ./data/config    /volumes/data/config
+COPY ./data/easy_bake /volumes/data/easy_bake
 COPY ./data/wranglers /volumes/data/wranglers
+# Populate big data volume
+COPY ./data/env/worldclim1.4  /volumes/env/worldclim1.4
 
 SHELL ["/bin/bash", "-c"]
