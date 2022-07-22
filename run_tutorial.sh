@@ -314,12 +314,8 @@ else
             echo "Container python command:"  | tee -a "$LOG"
             echo "   $command_path/$CMD.py --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
             execute_python_process $command_path
-            echo "work_dir /volumes/output/heuchera_sdm/Heuchera_richardsonii:"
-            docker exec -it $CONTAINER_NAME ls -lahtr /volumes/output/heuchera_sdm/Heuchera_richardsonii
-            echo "env_dir /volumes/data/input/worldclim1.4:"
-            docker exec -it $CONTAINER_NAME ls -lahtr /volumes/data/input/worldclim1.4
-            echo "work_env_dir /volumes/output/heuchera_sdm/Heuchera_richardsonii/model_layers:"
-            docker exec -it $CONTAINER_NAME ls -lahtr /volumes/output/heuchera_sdm/Heuchera_richardsonii/model_layers
+            echo "env_dir /volumes/env/worldclim1.4:"
+            docker exec -it $CONTAINER_NAME ls -lahtr /volumes/env/worldclim1.4
         else
             echo "Container command: $CMD --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
             execute_process

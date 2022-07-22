@@ -7,8 +7,8 @@
     "species_key": "species_name",
     "x_key": "x",
     "y_key": "y",
-    "ignore_points_dir": "/volumes/data/input/easy_bake/heuchera_split_resolve/",
-    "points_layer": ["/volumes/data/easy_bake/heuchera_split_resolve/Heuchera richardsonii.csv"],
+    "points_dir": "/volumes/data/easy_bake/heuchera_split_resolve/",
+    "ignore_points_layer": ["/volumes/data/easy_bake/heuchera_split_resolve/Heuchera richardsonii.csv"],
     "env_dir":  "/volumes/env/worldclim1.4",
     "ecoregions_filename":  "/volumes/data/input/ecoreg_10min_global.tif",
     "work_dir": "/volumes/output/heuchera_sdm"
