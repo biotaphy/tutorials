@@ -45,6 +45,7 @@ usage ()
 set_defaults() {
     IMAGE_NAME="tutor"
     CONTAINER_NAME="tutor_container"
+    VOLUME_MOUNT="/volumes"
     IN_VOLUME="data"
     ENV_VOLUME="env"
     OUT_VOLUME="output"
@@ -139,7 +140,7 @@ create_volumes() {
 
 
 # -----------------------------------------------------------
-#docker run -td --name tutor_container -v data:/volumes/data:ro -v output:/volumes/output tutor bash
+#docker run -td --name tutor_container -v data:/volumes/data:ro -v env:/volumes/env: -v output:/volumes/output tutor bash
 start_container() {
     # Find running container
     container_count=$(docker ps | grep $CONTAINER_NAME |  wc -l )
@@ -219,6 +220,7 @@ list_all_volume_contents() {
     # Find an image, start it with output volume, check contents
     start_container
     echo " - List volume contents $CONTAINER_NAME" | tee -a "$LOG"
+    docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}
     echo "    - Volume $ENV_VOLUME" | tee -a "$LOG"
     docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${ENV_VOLUME}
     echo "    - Volume $IN_VOLUME" | tee -a "$LOG"
@@ -314,8 +316,8 @@ else
             echo "Container python command:"  | tee -a "$LOG"
             echo "   $command_path/$CMD.py --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
             execute_python_process $command_path
-            echo "env_dir /volumes/env/worldclim1.4:"
-            docker exec -it $CONTAINER_NAME ls -lahtr /volumes/env/worldclim1.4
+            echo "env vol ${VOLUME_MOUNT}/${ENV_VOLUME}:"
+            docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${ENV_VOLUME}
         else
             echo "Container command: $CMD --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
             execute_process

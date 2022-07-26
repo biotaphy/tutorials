@@ -1,15 +1,14 @@
 {
-    "log_filename": "/volumes/output/create_sdm.log",
+    "log_filename": "/volumes/output/heuchera_sdm/create_sdm.log",
     "log_console": true,
-    "report_filename": "/volumes/output/create_sdm.rpt",
+    "report_filename": "/volumes/output/heuchera_sdm/create_sdm.rpt",
     "min_points": 12,
-    "mask": "/volumes/data/input/ecoreg_10min_global.tif",
     "species_key": "species_name",
     "x_key": "x",
     "y_key": "y",
-    "points_dir": "/volumes/data/easy_bake/heuchera_split_resolve/",
+    "points_dir": "/volumes/data/easy_bake/heuchera_split_resolve",
     "ignore_points_layer": ["/volumes/data/easy_bake/heuchera_split_resolve/Heuchera richardsonii.csv"],
     "env_dir":  "/volumes/env/worldclim1.4",
     "ecoregions_filename":  "/volumes/data/input/ecoreg_10min_global.tif",
-    "work_dir": "/volumes/output/heuchera_sdm"
+    "out_dir": "/volumes/output/heuchera_sdm"
 }
