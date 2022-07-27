@@ -44,8 +44,8 @@ Required:
   data should be written.  If the directory does not exist, it will be created
 * **env_dir**: Directory containing the environmental raster files for modeling and 
   projecting species distributions.
-* **ecoregions_filename**: Raster file to be used for modeling rare species or as a mask 
-  for the Maxent algorithm.
+* **ecoregions_filename**: Raster file denoting ecologically and geographically defined 
+  regions to be used for modeling rare species or as a mask for the Maxent algorithm.
 
 Optional:
 
@@ -95,13 +95,3 @@ Most outputs are configured in the script parameter file, and may include:
    input occurrence data file.  Each subdirectory will be named by the value in 
    the grouping field and contain a predicted distribution raster in ASCII format.  
    Occurrence data that were modeled with Maxent will also contain Maxent outputs.  
-
-The process also produces outputs according to the wrangler configuration file:
-
-1. If the AcceptedNameOccurrenceWrangler is included, and there is a name-map file 
-   named in out_map_filename parameter, this file will be output.  
-   The name-map is a JSON file with pairs of names - 
-   the original name to the accepted name according to the specified authority.  
-   This name-map is suitable to use for input when resolving another dataset containing 
-   a subset of the same original names.  A sample output name-map is 
-   [gbif_occ.namemap](../../data/easy_bake/gbif_occ.namemap).
