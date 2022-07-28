@@ -121,10 +121,10 @@ for linux/mac systems
 
 Most outputs are configured in the script parameter file, and may include:
 
-1. **If "report_filename" is specified in the script parameter file, a summary of point
+1. A "report_filename" named in the script parameter file, a summary of point
    manipulations by each wrangler will be written to this file. 
-2. If "log_filename" is specified in the script parameter file, that will be created. 
-3. If "log_console" is specified in the script parameter file, logs will be written to the
+2. A "log_filename" named in the script parameter file, that will be created. 
+3. A "log_console" named in the script parameter file, logs will be written to the
     command prompt during execution.
 4. A directory, named in the out_dir parameter, of output CSV files, one per species (or 
    other grouping field).  The basename of each CSV file will be named by the value in 
