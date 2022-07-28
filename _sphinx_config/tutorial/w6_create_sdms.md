@@ -38,39 +38,42 @@ A JSON parameter file is required for this command.  A test tutorial parameter f
 
 These are the required and optional parameters:
 
-Required:
+* Required:
 
-* **out_dir**: Parent directory where the output species directories containing output 
-  data should be written.  If the directory does not exist, it will be created
-* **env_dir**: Directory containing the environmental raster files for modeling and 
-  projecting species distributions.
-* **ecoregions_filename**: Raster file denoting ecologically and geographically defined 
-  regions to be used for modeling rare species or as a mask for the Maxent algorithm.
+  * **out_dir**: Parent directory where the output species directories containing output 
+    data should be written.  If the directory does not exist, it will be created
+  * **env_dir**: Directory containing the environmental raster files for modeling and 
+    projecting species distributions.
+  * **ecoregions_filename**: Raster file denoting ecologically and geographically defined 
+    regions to be used for modeling rare species or as a mask for the Maxent algorithm.
 
-Optional:
+* Optional:
 
-* **points_dir**: Parent directory containing occurrence data in CSV format.  The tool 
-  will attempt to model all CSV files in this directory.  Though this parameter is 
-  optional, one or both of `points_dir` and `points_layer` must be included.
-* **points_layer**: List of filenames containing occurrence data in CSV format.
-  Though this parameter is optional, one or both of `points_dir` and `points_layer` must
-  be included.
-* **species_key**: The field name of the column containing the taxon value in all 
-  occurrence data files. If this parameter is not specified, it will default to 
-  `species_name` (which is also the default value created in CSV data output from
-  split_occurrence_data and wrangle_occurrences).
-* **x_key**: The field name of the column containing the x/longitude value in all 
-  occurrence data files. If this parameter is not specified, it will default to 
-  `x` (which is also the default value created in CSV data output from
-  split_occurrence_data and wrangle_occurrences).
-* **y_key**: The field name of the column containing the y/latitude value in all 
-  occurrence data files. If this parameter is not specified, it will default to 
-  `y` (which is also the default value created in CSV data output from
-  split_occurrence_data and wrangle_occurrences).
-* **maxent_params**: Extra options and parameters to be sent to Maxent.  
-* **min_points**: Minimum number of points in an occurrence dataset for Maxent to be 
-   used for modeling to.  If the data contains less than the minimum, the 
-   `Rare Species Modeling` algorithm will be used.
+  * **points_dir**: Parent directory containing occurrence data in CSV format.  The tool 
+    will attempt to model all CSV files in this directory.  Though this parameter is 
+    optional, one or both of `points_dir` and `points_layer` must be included.
+  * **points_layer**: List of filenames containing occurrence data in CSV format.
+    Though this parameter is optional, one or both of `points_dir` and `points_layer` must
+    be included.
+  * **species_key**: The field name of the column containing the taxon value in all 
+    occurrence data files. If this parameter is not specified, it will default to 
+    `species_name` (which is also the default value created in CSV data output from
+    split_occurrence_data and wrangle_occurrences).
+  * **x_key**: The field name of the column containing the x/longitude value in all 
+    occurrence data files. If this parameter is not specified, it will default to 
+    `x` (which is also the default value created in CSV data output from
+    split_occurrence_data and wrangle_occurrences).
+  * **y_key**: The field name of the column containing the y/latitude value in all 
+    occurrence data files. If this parameter is not specified, it will default to 
+    `y` (which is also the default value created in CSV data output from
+    split_occurrence_data and wrangle_occurrences).
+  * **maxent_params**: Extra options and parameters to be sent to Maxent.  
+  * **min_points**: Minimum number of points in an occurrence dataset for Maxent to be 
+     used for modeling to.  If the data contains less than the minimum, the 
+     `Rare Species Modeling` algorithm will be used.
+  * **log_filename**: Output filename to write logging data
+  * **log_console**: 'true' to write log to console
+  * **report_filename**: output filename with data modifications made by wranglers
 
 ## Run tutorial with a list and a directory containing occurrence data files.
 

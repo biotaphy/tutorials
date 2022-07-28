@@ -108,7 +108,7 @@ commands with example configurations.
 # Webinar 7
 ./run_tutorial.sh build_grid  data/config/build_grid.json
 ./run_tutorial.sh encode_layers  data/config/encode_layers.json
-./run_tutorial.sh calculate_pam_stats  data/config/calc_pam_stats.json
+./run_tutorial.sh calculate_pam_stats  data/config/calculate_pam_stats.json
 # Webinar 8
 ./run_tutorial.sh wrangle_tree data/config/wrangle_tree.json
 

@@ -230,6 +230,14 @@ list_all_volume_contents() {
 }
 
 # -----------------------------------------------------------
+open_container_shell() {
+    # Find an image, start it with output volume, check contents
+    start_container
+    echo " - Connect to $CONTAINER_NAME" | tee -a "$LOG"
+    docker exec -it $CONTAINER_NAME bash
+}
+
+# -----------------------------------------------------------
 list_output_host_contents() {
     # Find an image, start it with output volume, check contents
     echo " - List host output directory contents " | tee -a "$LOG"
@@ -281,6 +289,8 @@ elif [ $arg_count -eq 1 ]; then
         docker volume rm ${OUT_VOLUME}
     elif [ "$CMD" == "cleanup_all" ] ; then
         docker system prune -f --all --volumes
+    elif [ "$CMD" == "open" ] ; then
+        open_container_shell
     elif [ "$CMD" == "list_commands" ] ; then
         usage
     elif [ "$CMD" == "list_outputs" ] ; then
@@ -323,8 +333,8 @@ else
             execute_process
         fi
         save_outputs
-        list_all_volume_contents
-        list_output_host_contents
+#        list_all_volume_contents
+#        list_output_host_contents
         remove_container
     else
         echo "Unrecognized command: $CMD"

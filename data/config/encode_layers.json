@@ -8,16 +8,10 @@
     "max_presence": 127,
     "grid_filename": "/volumes/data/input/grid.shp",
     "out_matrix_filename": "/volumes/output/encode_layers_matrix.lmm",
-    "layer": [
+    "layer_file_pattern": "/volumes/data/easy_bake/heuchera_sdm/*/*.asc",
+    "ignore_layer": [
         ["/volumes/data/input/env_1.tif", "env_raster"],
         ["/volumes/data/input/env_vector_1.shp", "env_vector"],
         ["/volumes/data/input/sdm_vector_1.shp", "sdm_vector"]
-    ],
-    "layer_ignore": [
-        ["/volumes/data/input/bg_hyp_1.shp", "bg_hyp_1"],
-        ["/volumes/data/input/bg_hyp_4_event_myevent.shp", "bg_hyp_4", "myevent"],
-        ["/volumes/data/input/env_1.tif", "env_raster"],
-        ["/volumes/data/input/env_vector_1.shp", "env_vector"],
-        ["/volumes/data/input/sdm_vector_1.shp", "sdm_vector"]
-  ]
+    ]
 }
