@@ -28,7 +28,7 @@ the grid cell.
 
 ## Step 1: Build a grid to analyze a group of multi-species dataset
 
-### Input: Script parameter file
+### Data preparation: Script parameter file
 
 A JSON parameter file is required for this command.  The tutorial parameter file
 is [build_grid.json](../../data/config/build_grid.json). These are the required and
@@ -66,7 +66,7 @@ specified in the configuration JSON file.
 
 ## Step 2: Encode species layers into a PAM (defined by the grid) for multi-species analysis
 
-### Input: Layers
+### Data preparation: Layers
 
 Layers are specified in the Script parameter file, described fully in the next section.  
 Each layer of a PAM represents the presence or absence of a taxon in the analysis.  
@@ -76,7 +76,7 @@ for computing different layers, you can create a matrix from each set of layers 
 share parameters (each matrix created with the same command, called with a different  
 configuration file), then aggregate the matrices in another step.  
 
-### Input: Script parameter file
+### Data preparation: Script parameter file
 
 An example json file for running the encode_layers tutorial is at
 [encode_layers.json](../../data/config/encode_layers.json). These are the required 
@@ -103,7 +103,7 @@ and optional parameters:
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
 
-## Run encode_layers command
+### Run encode_layers command
 
 Initiate the clean occurrences process with the following for linux/mac systems:
 
@@ -111,9 +111,7 @@ Initiate the clean occurrences process with the following for linux/mac systems:
 bash run_tutorial.sh encode_layers data/config/encode_layers.json
 ```
 
-## Note
-
-You may get the following warning.  This indicates that there is a window with no
+**Note**: You may get the following warning.  This indicates that there is a window with no
 values, a common occurrence in most datasets, and may be safely ignored.
 
 ```commandline
@@ -126,28 +124,26 @@ RuntimeWarning: Mean of empty slice
 Now that a grid has been built, and a PAM has been populated by intersecting species
 distribution models with the grid, we calculate biogeographic statistics on that PAM.
 
-## Data preparation
+### Data preparation: Script parameter file
 
-### Command configuration File
-
-An example JSON file for running the build_grid tutorial is at
+An example JSON file for running the calculate_pam_stats command is at
 [calculate_pam_stats](../../data/config/calculate_pam_stats.json). These are the 
 required and optional parameters:
 
 * Required:
-
-  * **shapegrid_filename**: The relative or absolute path for the output shapegrid.
-  * **min_x**: The minimum value for X (longitude) coordinate of the shapegrid.
-  * **min_y**: The minimum value for Y (latitude) coordinate of the shapegrid.
-  * **max_x**: The maximum value for X (longitude) coordinate of the shapegrid.
-  * **max_y**: The maximum value for Y (latitude) coordinate of the shapegrid.
-  * **cell_size**: The size of each cell (in units indicated by EPSG).
-  * **epsg**: The EPSG code for the new shapegrid.
+  * **pam_filename**: The full filename to the input PAM file.
 
 * Optional 
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
+  * **covariance_matrix**: The full filename for writing the covariance matrix.
+  * **diversity_matrix**: The full filename for writing the diversity matrix.
+  * **site_stats_matrix**: The full filename for writing the site statistics matrix.
+  * **species_stats_matrix**: The full filename for writing the species statistics 
+    matrix.
+  * **tree_filename**: The full filename to an input tree in Nexus format.
+  * **tree_matrix**: The full filename to an input tree encoded as a matrix.
 
 ## Run calculate_pam_stats command
 
@@ -161,5 +157,17 @@ bash run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
 
 ## Output
 
-The calculate_pam_stats tool outputs ...
-conforming to the arguments specified in the command configuration file.
+The calculate_pam_stats tool outputs computes various statistics, depending on the 
+output files specified in the command configuration file.  Outputs may include:
+
+1. A "report_filename" named in the script parameter file, a summary of point
+   manipulations by each wrangler will be written to this file. 
+2. A "log_filename" named in the script parameter file, that will be created. 
+3. A "log_console" named in the script parameter file, logs will be written to the
+    command prompt during execution.
+4. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
+   and it is written to the covariance_matrix filename, where the statistic name is 
+   appended to the end of the base file name.
+5. A "diversity_matrix" containing different diversity statistics 
+  * **site_stats_matrix**: The full filename for writing the site statistics matrix.
+  * **species_stats_matrix

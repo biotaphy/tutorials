@@ -8,6 +8,7 @@ Create a new tree with accepted names and name-map (original_name --> accepted_n
 Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all
 tutorials work.
 
+## Step 
 ## Data preparation
 
 ### Input: tree data

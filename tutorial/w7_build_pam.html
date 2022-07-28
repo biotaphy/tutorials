@@ -51,25 +51,23 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-1-build-a-grid-to-analyze-a-group-of-multi-species-dataset">Step 1: Build a grid to analyze a group of multi-species dataset</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-preparation-script-parameter-file">Data preparation: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-build-grid-command">Run build_grid command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#step-2-encode-species-layers-into-a-pam-defined-by-the-grid-for-multi-species-analysis">Step 2: Encode species layers into a PAM (defined by the grid) for multi-species analysis</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#input-layers">Input: Layers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Input: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-preparation-layers">Data preparation: Layers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Data preparation: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-encode-layers-command">Run encode_layers command</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#run-encode-layers-command">Run encode_layers command</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#note">Note</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step-3-calculate-statistics-for-a-pam">Step 3: Calculate statistics for a PAM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data preparation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#command-configuration-file">Command configuration File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-3-calculate-statistics-for-a-pam">Step 3: Calculate statistics for a PAM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Data preparation: Script parameter file</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Output</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Resolve names in a phylogenetic tree</a></li>
@@ -133,8 +131,8 @@ the grid cell.</p>
 </section>
 <section id="step-1-build-a-grid-to-analyze-a-group-of-multi-species-dataset">
 <h2>Step 1: Build a grid to analyze a group of multi-species dataset<a class="headerlink" href="#step-1-build-a-grid-to-analyze-a-group-of-multi-species-dataset" title="Permalink to this heading"></a></h2>
-<section id="input-script-parameter-file">
-<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
+<section id="data-preparation-script-parameter-file">
+<h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
 is <a class="reference download internal" download="" href="../_downloads/b6b84e6e1a7857ec2485cc018039f172/build_grid.json"><span class="xref download myst">build_grid.json</span></a>. These are the required and
 optional parameters:</p>
@@ -175,8 +173,8 @@ specified in the configuration JSON file.</p>
 </section>
 <section id="step-2-encode-species-layers-into-a-pam-defined-by-the-grid-for-multi-species-analysis">
 <h2>Step 2: Encode species layers into a PAM (defined by the grid) for multi-species analysis<a class="headerlink" href="#step-2-encode-species-layers-into-a-pam-defined-by-the-grid-for-multi-species-analysis" title="Permalink to this heading"></a></h2>
-<section id="input-layers">
-<h3>Input: Layers<a class="headerlink" href="#input-layers" title="Permalink to this heading"></a></h3>
+<section id="data-preparation-layers">
+<h3>Data preparation: Layers<a class="headerlink" href="#data-preparation-layers" title="Permalink to this heading"></a></h3>
 <p>Layers are specified in the Script parameter file, described fully in the next section.<br />
 Each layer of a PAM represents the presence or absence of a taxon in the analysis.<br />
 Presence or absence is calculated with the min_coverage, min_presence, and  max_presence
@@ -186,7 +184,7 @@ share parameters (each matrix created with the same command, called with a diffe
 configuration file), then aggregate the matrices in another step.</p>
 </section>
 <section id="id1">
-<h3>Input: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<h3>Data preparation: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <p>An example json file for running the encode_layers tutorial is at
 <a class="reference download internal" download="" href="../_downloads/e4f97b642e45b6ecac662cecd5883712/encode_layers.json"><span class="xref download myst">encode_layers.json</span></a>. These are the required
 and optional parameters:</p>
@@ -221,45 +219,33 @@ basename</p></li>
 </li>
 </ul>
 </section>
-</section>
 <section id="run-encode-layers-command">
-<h2>Run encode_layers command<a class="headerlink" href="#run-encode-layers-command" title="Permalink to this heading"></a></h2>
+<h3>Run encode_layers command<a class="headerlink" href="#run-encode-layers-command" title="Permalink to this heading"></a></h3>
 <p>Initiate the clean occurrences process with the following for linux/mac systems:</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh encode_layers data/config/encode_layers.json
 </pre></div>
 </div>
-</section>
-<section id="note">
-<h2>Note<a class="headerlink" href="#note" title="Permalink to this heading"></a></h2>
-<p>You may get the following warning.  This indicates that there is a window with no
+<p><strong>Note</strong>: You may get the following warning.  This indicates that there is a window with no
 values, a common occurrence in most datasets, and may be safely ignored.</p>
 <div class="highlight-commandline notranslate"><div class="highlight"><pre><span></span>RuntimeWarning: Mean of empty slice
   window_mean = np.nanmean(window[np.where(window != nodata)])
 </pre></div>
 </div>
 </section>
+</section>
 <section id="step-3-calculate-statistics-for-a-pam">
 <h2>Step 3: Calculate statistics for a PAM<a class="headerlink" href="#step-3-calculate-statistics-for-a-pam" title="Permalink to this heading"></a></h2>
 <p>Now that a grid has been built, and a PAM has been populated by intersecting species
 distribution models with the grid, we calculate biogeographic statistics on that PAM.</p>
-</section>
-<section id="data-preparation">
-<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>
-<section id="command-configuration-file">
-<h3>Command configuration File<a class="headerlink" href="#command-configuration-file" title="Permalink to this heading"></a></h3>
-<p>An example JSON file for running the build_grid tutorial is at
+<section id="id2">
+<h3>Data preparation: Script parameter file<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<p>An example JSON file for running the calculate_pam_stats command is at
 <a class="reference download internal" download="" href="../_downloads/6f14d9401b6b4b2f0ee0cd89d209e809/calculate_pam_stats.json"><span class="xref download myst">calculate_pam_stats</span></a>. These are the
 required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
 <ul>
-<li><p><strong>shapegrid_filename</strong>: The relative or absolute path for the output shapegrid.</p></li>
-<li><p><strong>min_x</strong>: The minimum value for X (longitude) coordinate of the shapegrid.</p></li>
-<li><p><strong>min_y</strong>: The minimum value for Y (latitude) coordinate of the shapegrid.</p></li>
-<li><p><strong>max_x</strong>: The maximum value for X (longitude) coordinate of the shapegrid.</p></li>
-<li><p><strong>max_y</strong>: The maximum value for Y (latitude) coordinate of the shapegrid.</p></li>
-<li><p><strong>cell_size</strong>: The size of each cell (in units indicated by EPSG).</p></li>
-<li><p><strong>epsg</strong>: The EPSG code for the new shapegrid.</p></li>
+<li><p><strong>pam_filename</strong>: The full filename to the input PAM file.</p></li>
 </ul>
 </li>
 <li><p>Optional</p>
@@ -267,6 +253,13 @@ required and optional parameters:</p>
 <li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
 <li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
 <li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+<li><p><strong>covariance_matrix</strong>: The full filename for writing the covariance matrix.</p></li>
+<li><p><strong>diversity_matrix</strong>: The full filename for writing the diversity matrix.</p></li>
+<li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
+<li><p><strong>species_stats_matrix</strong>: The full filename for writing the species statistics
+matrix.</p></li>
+<li><p><strong>tree_filename</strong>: The full filename to an input tree in Nexus format.</p></li>
+<li><p><strong>tree_matrix</strong>: The full filename to an input tree encoded as a matrix.</p></li>
 </ul>
 </li>
 </ul>
@@ -280,10 +273,25 @@ required and optional parameters:</p>
 </pre></div>
 </div>
 </section>
-<section id="id2">
-<h2>Output<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
-<p>The calculate_pam_stats tool outputs …
-conforming to the arguments specified in the command configuration file.</p>
+<section id="id3">
+<h2>Output<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<p>The calculate_pam_stats tool outputs computes various statistics, depending on the
+output files specified in the command configuration file.  Outputs may include:</p>
+<ol class="arabic simple">
+<li><p>A “report_filename” named in the script parameter file, a summary of point
+manipulations by each wrangler will be written to this file.</p></li>
+<li><p>A “log_filename” named in the script parameter file, that will be created.</p></li>
+<li><p>A “log_console” named in the script parameter file, logs will be written to the
+command prompt during execution.</p></li>
+<li><p>One or more “covariance_matrix” files.  Each covariance statistic produces a matrix
+and it is written to the covariance_matrix filename, where the statistic name is
+appended to the end of the base file name.</p></li>
+<li><p>A “diversity_matrix” containing different diversity statistics</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
+<li><p>**species_stats_matrix</p></li>
+</ul>
 </section>
 </section>
 
