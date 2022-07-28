@@ -60,7 +60,6 @@
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6:</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7c_calc_pam_stats.html">Webinar 7: Calculate statistics for a PAM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Resolve names in a phylogenetic tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
@@ -169,12 +168,12 @@ contains one wrangler, the AcceptedNameOccurrenceWrangler, and is in
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
 <p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data cleaning only</span>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data cleaning and name resolution</span>
+./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
+<span class="c1"># Data cleaning only</span>
 ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
 <span class="c1"># Name resolution only</span>
 ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
-<span class="c1"># Data cleaning and name resolution</span>
-./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
 </pre></div>
 </div>
 </section>

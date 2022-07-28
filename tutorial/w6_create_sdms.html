@@ -60,7 +60,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7c_calc_pam_stats.html">Webinar 7: Calculate statistics for a PAM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Resolve names in a phylogenetic tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
@@ -130,17 +129,19 @@ the configuration file.</p>
 <p>A JSON parameter file is required for this command.  A test tutorial parameter file is:
 <a class="reference download internal" download="" href="../_downloads/790f3b2d107374e0c859255372f0a0ee/create_sdm.json"><span class="xref download myst">create_sdm.json</span></a>,</p>
 <p>These are the required and optional parameters:</p>
-<p>Required:</p>
 <ul class="simple">
+<li><p>Required:</p>
+<ul>
 <li><p><strong>out_dir</strong>: Parent directory where the output species directories containing output
 data should be written.  If the directory does not exist, it will be created</p></li>
 <li><p><strong>env_dir</strong>: Directory containing the environmental raster files for modeling and
 projecting species distributions.</p></li>
-<li><p><strong>ecoregions_filename</strong>: Raster file to be used for modeling rare species or as a mask
-for the Maxent algorithm.</p></li>
+<li><p><strong>ecoregions_filename</strong>: Raster file denoting ecologically and geographically defined
+regions to be used for modeling rare species or as a mask for the Maxent algorithm.</p></li>
 </ul>
-<p>Optional:</p>
-<ul class="simple">
+</li>
+<li><p>Optional:</p>
+<ul>
 <li><p><strong>points_dir</strong>: Parent directory containing occurrence data in CSV format.  The tool
 will attempt to model all CSV files in this directory.  Though this parameter is
 optional, one or both of <code class="docutils literal notranslate"><span class="pre">points_dir</span></code> and <code class="docutils literal notranslate"><span class="pre">points_layer</span></code> must be included.</p></li>
@@ -163,6 +164,11 @@ split_occurrence_data and wrangle_occurrences).</p></li>
 <li><p><strong>min_points</strong>: Minimum number of points in an occurrence dataset for Maxent to be
 used for modeling to.  If the data contains less than the minimum, the
 <code class="docutils literal notranslate"><span class="pre">Rare</span> <span class="pre">Species</span> <span class="pre">Modeling</span></code> algorithm will be used.</p></li>
+<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
+<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
+<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+</ul>
+</li>
 </ul>
 </section>
 </section>
@@ -187,16 +193,6 @@ command prompt during execution.</p></li>
 input occurrence data file.  Each subdirectory will be named by the value in
 the grouping field and contain a predicted distribution raster in ASCII format.<br />
 Occurrence data that were modeled with Maxent will also contain Maxent outputs.</p></li>
-</ol>
-<p>The process also produces outputs according to the wrangler configuration file:</p>
-<ol class="arabic simple">
-<li><p>If the AcceptedNameOccurrenceWrangler is included, and there is a name-map file
-named in out_map_filename parameter, this file will be output.<br />
-The name-map is a JSON file with pairs of names -
-the original name to the accepted name according to the specified authority.<br />
-This name-map is suitable to use for input when resolving another dataset containing
-a subset of the same original names.  A sample output name-map is
-<span class="xref myst">gbif_occ.namemap</span>.</p></li>
 </ol>
 </section>
 </section>
