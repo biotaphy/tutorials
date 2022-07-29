@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trees: Data and Wrangling &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Matrices: Data and Wrangling &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -20,8 +20,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Download occurrence data from iDigBio" href="idigbio_download.html" />
-    <link rel="prev" title="Specimen Occurrences: Data and Wrangling" href="data_wrangle_occurrence.html" /> 
+    <link rel="next" title="Specimen Occurrences: Data and Wrangling" href="data_wrangle_occurrence.html" />
+    <link rel="prev" title="Script parameters file" href="script_params.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,20 +52,20 @@
 <li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Trees: Data and Wrangling</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#tree-data">Tree Data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Matrices: Data and Wrangling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#matrix-data">Matrix Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#wrangler-configuration-file">Wrangler configuration file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tree-data-wrangler-types">Tree Data Wrangler Types</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#acceptednametreewrangler">AcceptedNameTreeWrangler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#matchmatrixtreewrangler">MatchMatrixTreeWrangler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#matrix-data-wrangler-types">Matrix Data Wrangler Types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#acceptednamematrixwrangler">AcceptedNameMatrixWrangler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#matchspecieslistmatrixwrangler">MatchSpeciesListMatrixWrangler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#matchspecieslisttreewrangler">MatchSpeciesListTreeWrangler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#subsettreewrangler">SubsetTreeWrangler</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_wrangle_tree.html">Trees: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
@@ -85,9 +85,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Trees: Data and Wrangling</li>
+      <li>Matrices: Data and Wrangling</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/data_wrangle_tree.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/data_wrangle_matrix.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -95,17 +95,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="trees-data-and-wrangling">
-<h1>Trees: Data and Wrangling<a class="headerlink" href="#trees-data-and-wrangling" title="Permalink to this heading"></a></h1>
-<section id="tree-data">
-<h2>Tree Data<a class="headerlink" href="#tree-data" title="Permalink to this heading"></a></h2>
-<p>Trees may be created by the user, downloaded from one of various sources, or output by
-another Biotaphy process.  Trees must be in Nexus or Newick format.  The tutorial
-example tree is
-<span class="xref myst">subtree-ottol-saxifragales.tre</span>.</p>
-<p>To download a tree from <a class="reference external" href="https://tree.opentreeoflife.org/">OpenTree of Life</a>, filter for
-the desired tree, then choose <strong>Download subtree as Newick string</strong> in the upper,
-rightmost panel.</p>
+  <section id="matrices-data-and-wrangling">
+<h1>Matrices: Data and Wrangling<a class="headerlink" href="#matrices-data-and-wrangling" title="Permalink to this heading"></a></h1>
+<section id="matrix-data">
+<h2>Matrix Data<a class="headerlink" href="#matrix-data" title="Permalink to this heading"></a></h2>
+<p>Matrices may be created by other lmpy processes, primarily “encode_layers” described in
+<a class="reference internal" href="w7_build_pam.html"><span class="doc std std-doc">Tutorial 7: Build PAM</span></a>.  PAMs used in these processes are simply
+standard numpy matrices, with the addition of header metadata indicating the
+species and site labels.</p>
 </section>
 <section id="wrangler-configuration-file">
 <h2>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading"></a></h2>
@@ -118,15 +115,15 @@ specific to each.  Configuration files:</p>
 <li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
 </ul>
 </section>
-<section id="tree-data-wrangler-types">
-<h2>Tree Data Wrangler Types<a class="headerlink" href="#tree-data-wrangler-types" title="Permalink to this heading"></a></h2>
+<section id="matrix-data-wrangler-types">
+<h2>Matrix Data Wrangler Types<a class="headerlink" href="#matrix-data-wrangler-types" title="Permalink to this heading"></a></h2>
 <p>When running wranglers on a tree, wranglers are applied in the order
 that they are listed in the wrangler config file.</p>
 <p>Currently, wrangler_type names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in
 this module’s files.  Each wrangler’s parameters correspond to the constructor
 arguments for that wrangler.</p>
-<section id="acceptednametreewrangler">
-<h3>AcceptedNameTreeWrangler<a class="headerlink" href="#acceptednametreewrangler" title="Permalink to this heading"></a></h3>
+<section id="acceptednamematrixwrangler">
+<h3>AcceptedNameMatrixWrangler<a class="headerlink" href="#acceptednamematrixwrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>optional</p>
 <ul>
@@ -147,12 +144,12 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </li>
 </ul>
 </section>
-<section id="matchmatrixtreewrangler">
-<h3>MatchMatrixTreeWrangler<a class="headerlink" href="#matchmatrixtreewrangler" title="Permalink to this heading"></a></h3>
+<section id="matchspecieslistmatrixwrangler">
+<h3>MatchSpeciesListMatrixWrangler<a class="headerlink" href="#matchspecieslistmatrixwrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
-<li><p>matrix (str): The filename of a matrix to match.</p></li>
+<li><p>species_list (str): The filename of a species list to match.</p></li>
 <li><p>species_axis (int): An integer indicating which axis contains species names.
 Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
 (rows/y axis), and species in the 1 axis (columns/x axis)</p></li>
@@ -187,8 +184,8 @@ Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="data_wrangle_occurrence.html" class="btn btn-neutral float-left" title="Specimen Occurrences: Data and Wrangling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="idigbio_download.html" class="btn btn-neutral float-right" title="Download occurrence data from iDigBio" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="script_params.html" class="btn btn-neutral float-left" title="Script parameters file" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="data_wrangle_occurrence.html" class="btn btn-neutral float-right" title="Specimen Occurrences: Data and Wrangling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

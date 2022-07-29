@@ -51,11 +51,10 @@
 <li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step-1">Step 1:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data preparation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#input-tree-data">Input: tree data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#input-wrangler-configuration-file">Input: Wrangler configuration file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-subset-the-matrix-to-the-tree-species-wrangle-matrix">Step 1: Subset the matrix to the tree species (wrangle_matrix )</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-preparation-input-matrix">Data preparation: Input matrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-wrangler-configuration-file">Input: Wrangler configuration file</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#run-tutorial">Run tutorial</a></li>
@@ -64,6 +63,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_tree.html">Trees: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
@@ -99,37 +99,15 @@
 <h1>Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data<a class="headerlink" href="#webinar-8-phylogenetic-diversity-integrating-phylogenies-with-species-and-biogeographic-data" title="Permalink to this heading"></a></h1>
 <p><strong>Webinar #8</strong>  <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.z9bjp5mgfgld">Phylogenetic diversity: Integrating Phylogenies with Species and
 Biogeographic Data</a>
-Filter occurrence and/or modify data in a single dataset.  The tool allows multiple<br />
-operations, defined in a configuration file, to be applied to the data at the same time.
-These operations range from filtering points out based on values in certain fields, to
-filtering out all points of a certain species if the group does not match some criteria,
-to modifying values in each record.</p>
-<p><a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l">Resolving Nomenclature</a>
-Create a new tree with accepted names and name-map (original_name –&gt; accepted_name).</p>
+Analyze the PAM matrix with a tree containing the same species to determine the
+phylogenetic diversity of a region.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
 tutorials work.</p>
 </section>
-<section id="step-1">
-<h2>Step 1:<a class="headerlink" href="#step-1" title="Permalink to this heading"></a></h2>
-</section>
-<section id="data-preparation">
-<h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>
-<section id="input-tree-data">
-<h3>Input: tree data<a class="headerlink" href="#input-tree-data" title="Permalink to this heading"></a></h3>
-<p>Use an existing or create your own tree in Newick or Nexus format.  This
-file is specified in the script parameter file described below and described further
-in <a class="reference internal" href="data_wrangle_tree.html"><span class="doc std std-doc">data_wrangle_tree.md</span></a>.</p>
-</section>
-<section id="input-wrangler-configuration-file">
-<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
-<p>A data wrangler configuration is a file containing a JSON list of zero or more
-wranglers - each performs a different operation, and each has its own parameters.
-More information on file format, available wrangler types, and the required and/or
-optional parameters for each are in the <strong>Tree Data Wrangler Types</strong> section
-<a class="reference internal" href="data_wrangle_tree.html"><span class="doc std std-doc">here</span></a>.</p>
-</section>
+<section id="step-1-subset-the-matrix-to-the-tree-species-wrangle-matrix">
+<h2>Step 1: Subset the matrix to the tree species (wrangle_matrix )<a class="headerlink" href="#step-1-subset-the-matrix-to-the-tree-species-wrangle-matrix" title="Permalink to this heading"></a></h2>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
@@ -158,6 +136,19 @@ contains one wrangler, the  AcceptedTreeWrangler, and is in
 </ul>
 </li>
 </ul>
+</section>
+<section id="data-preparation-input-matrix">
+<h3>Data preparation: Input matrix<a class="headerlink" href="#data-preparation-input-matrix" title="Permalink to this heading"></a></h3>
+<p>Use a PAM created in <a class="reference internal" href="w7_build_pam.html"><span class="doc std std-doc">Tutorial 7</span></a>.  An example PAM is available in
+../../data/input/pam.lmm.</p>
+</section>
+<section id="input-wrangler-configuration-file">
+<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
+<p>A data wrangler configuration is a file containing a JSON list of zero or more
+wranglers - each performs a different operation, and each has its own parameters.
+More information on file format, available wrangler types, and the required and/or
+optional parameters for each are in the <strong>Tree Data Wrangler Types</strong> section
+<a class="reference internal" href="data_wrangle_tree.html"><span class="doc std std-doc">here</span></a>.</p>
 </section>
 </section>
 <section id="run-tutorial">

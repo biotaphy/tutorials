@@ -2,36 +2,16 @@
 
 **Webinar #8**  [Phylogenetic diversity: Integrating Phylogenies with Species and 
 Biogeographic Data](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.z9bjp5mgfgld)
-Filter occurrence and/or modify data in a single dataset.  The tool allows multiple  
-operations, defined in a configuration file, to be applied to the data at the same time. 
-These operations range from filtering points out based on values in certain fields, to
-filtering out all points of a certain species if the group does not match some criteria,
-to modifying values in each record.
-
-[Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l)
-Create a new tree with accepted names and name-map (original_name --> accepted_name).
+Analyze the PAM matrix with a tree containing the same species to determine the 
+phylogenetic diversity of a region.
 
 ## Introduction
 
 Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all
 tutorials work.
 
-## Step 1: 
-## Data preparation
+## Step 1: Subset the matrix to the tree species (wrangle_matrix )
 
-### Input: tree data
-
-Use an existing or create your own tree in Newick or Nexus format.  This
-file is specified in the script parameter file described below and described further
-in [data_wrangle_tree.md](data_wrangle_tree.md).
-
-### Input: Wrangler configuration file
-
-A data wrangler configuration is a file containing a JSON list of zero or more
-wranglers - each performs a different operation, and each has its own parameters.
-More information on file format, available wrangler types, and the required and/or
-optional parameters for each are in the **Tree Data Wrangler Types** section
-[here](data_wrangle_tree.md).
 
 ### Input: Script parameter file
 
@@ -57,6 +37,19 @@ required and optional parameters:
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
+
+### Data preparation: Input matrix
+
+Use a PAM created in [Tutorial 7](./w7_build_pam.md).  An example PAM is available in 
+../../data/input/pam.lmm.
+
+### Input: Wrangler configuration file
+
+A data wrangler configuration is a file containing a JSON list of zero or more
+wranglers - each performs a different operation, and each has its own parameters.
+More information on file format, available wrangler types, and the required and/or
+optional parameters for each are in the **Tree Data Wrangler Types** section
+[here](data_wrangle_tree.md).
 
 ## Run tutorial
 
