@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webinar 8: Resolve names in a phylogenetic tree &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -49,9 +49,9 @@
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6:</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 8: Resolve names in a phylogenetic tree</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step">Step</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-1">Step 1:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data preparation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#input-tree-data">Input: tree data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#input-wrangler-configuration-file">Input: Wrangler configuration file</a></li>
@@ -85,7 +85,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Webinar 8: Resolve names in a phylogenetic tree</li>
+      <li>Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/tutorial/w8_phylo_diversity.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -95,8 +95,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="webinar-8-resolve-names-in-a-phylogenetic-tree">
-<h1>Webinar 8: Resolve names in a phylogenetic tree<a class="headerlink" href="#webinar-8-resolve-names-in-a-phylogenetic-tree" title="Permalink to this heading"></a></h1>
+  <section id="webinar-8-phylogenetic-diversity-integrating-phylogenies-with-species-and-biogeographic-data">
+<h1>Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data<a class="headerlink" href="#webinar-8-phylogenetic-diversity-integrating-phylogenies-with-species-and-biogeographic-data" title="Permalink to this heading"></a></h1>
+<p><strong>Webinar #8</strong>  <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.z9bjp5mgfgld">Phylogenetic diversity: Integrating Phylogenies with Species and
+Biogeographic Data</a>
+Filter occurrence and/or modify data in a single dataset.  The tool allows multiple<br />
+operations, defined in a configuration file, to be applied to the data at the same time.
+These operations range from filtering points out based on values in certain fields, to
+filtering out all points of a certain species if the group does not match some criteria,
+to modifying values in each record.</p>
 <p><a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l">Resolving Nomenclature</a>
 Create a new tree with accepted names and name-map (original_name –&gt; accepted_name).</p>
 <section id="introduction">
@@ -104,8 +111,8 @@ Create a new tree with accepted names and name-map (original_name –&gt; accept
 <p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
 tutorials work.</p>
 </section>
-<section id="step">
-<h2>Step<a class="headerlink" href="#step" title="Permalink to this heading"></a></h2>
+<section id="step-1">
+<h2>Step 1:<a class="headerlink" href="#step-1" title="Permalink to this heading"></a></h2>
 </section>
 <section id="data-preparation">
 <h2>Data preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>

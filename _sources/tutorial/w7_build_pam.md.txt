@@ -19,12 +19,10 @@ In a biogeograpic matrix, such as a Presence-Absence Matrix, or PAM, data layers
 intersected with a geospatial grid to produce a two-dimensional (longitude/x and 
 latitude/y) Matrix for each layer.  Each 2-D matrix is converted into a 1-D matrix - 
 a single column with "sites", identified by the coordinates of the center of
-the grid cell.
- (x,y) along the y axis) which are then appended together, 
-forming a 3-d matrix with each data layer (species) representing a column, and each row 
-a site. 
-"sites", identified by the coordinates of the center of
-the grid cell.
+the grid cell.  Each row, identified by the y axis, represent a site.  In the matrix, 
+this is considered the "0" axis.  Each column, identified by the x axis, represents
+the species presence or absence in each site.  In the matrix, this is considered the 
+"1" axis. 
 
 ## Step 1: Build a grid to analyze a group of multi-species dataset
 

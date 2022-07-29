@@ -20,7 +20,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Webinar 8: Resolve names in a phylogenetic tree" href="w8_phylo_diversity.html" />
+    <link rel="next" title="Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data" href="w8_phylo_diversity.html" />
     <link rel="prev" title="Webinar 6:" href="w6_create_sdms.html" /> 
 </head>
 
@@ -70,7 +70,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#id3">Output</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Resolve names in a phylogenetic tree</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -122,12 +122,10 @@ term:<code class="docutils literal notranslate"><span class="pre">Vector</span><
 intersected with a geospatial grid to produce a two-dimensional (longitude/x and
 latitude/y) Matrix for each layer.  Each 2-D matrix is converted into a 1-D matrix -
 a single column with “sites”, identified by the coordinates of the center of
-the grid cell.
-(x,y) along the y axis) which are then appended together,
-forming a 3-d matrix with each data layer (species) representing a column, and each row
-a site.
-“sites”, identified by the coordinates of the center of
-the grid cell.</p>
+the grid cell.  Each row, identified by the y axis, represent a site.  In the matrix,
+this is considered the “0” axis.  Each column, identified by the x axis, represents
+the species presence or absence in each site.  In the matrix, this is considered the
+“1” axis.</p>
 </section>
 <section id="step-1-build-a-grid-to-analyze-a-group-of-multi-species-dataset">
 <h2>Step 1: Build a grid to analyze a group of multi-species dataset<a class="headerlink" href="#step-1-build-a-grid-to-analyze-a-group-of-multi-species-dataset" title="Permalink to this heading"></a></h2>
@@ -300,7 +298,7 @@ appended to the end of the base file name.</p></li>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="w6_create_sdms.html" class="btn btn-neutral float-left" title="Webinar 6:" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="w8_phylo_diversity.html" class="btn btn-neutral float-right" title="Webinar 8: Resolve names in a phylogenetic tree" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="w8_phylo_diversity.html" class="btn btn-neutral float-right" title="Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
