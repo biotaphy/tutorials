@@ -18,3 +18,6 @@ output
 lmpy_issues.txt
 data/input/worldclim1.4
 data/env/worldclim1.4
+data/input/tree_1.nex
+data/input/tree_2.nex
+data/input/heuchera.nex

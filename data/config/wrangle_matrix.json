@@ -1,0 +1,8 @@
+{
+    "log_filename": "/volumes/output/wrangle_matrix.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/wrangle_matrix.rpt",
+    "in_matrix_filename": "/volumes/data/easy_bake/pam.lmm",
+    "out_matrix_filename": "/volumes/output/pam_wrangled.lmm",
+    "wrangler_configuration_file": "/volumes/data/wranglers/matrix_wranglers.json"
+}

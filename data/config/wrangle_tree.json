@@ -1,10 +1,10 @@
 {
-    "log_filename": "/volumes/output/resolve_tree_names.log",
+    "log_filename": "/volumes/output/wrangle_tree.log",
     "log_console": true,
-    "report_filename": "/volumes/output/resolve_tree_names.rpt",
-    "tree_filename": "/volumes/data/input/subtree-ottol-1035588-Saxifragaceae.tre",
-    "tree_schema": "newick",
+    "report_filename": "/volumes/output/wrangle_tree.rpt",
+    "tree_filename": "/volumes/data/input/heuchera3.nex",
+    "tree_schema": "nexus",
     "wrangler_configuration_file": "/volumes/data/wranglers/tree_wranglers.json",
-    "out_tree_filename": "/volumes/output/Saxifragaceae.tre",
-    "out_tree_schema": "newick"
+    "out_tree_filename": "/volumes/output/heuchera_wrangled.tre",
+    "out_tree_schema": "nexus"
 }

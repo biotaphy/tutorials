@@ -1,4 +1,12 @@
-# Webinar 8: Resolve names in a phylogenetic tree
+# Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data
+
+**Webinar #8**  [Phylogenetic diversity: Integrating Phylogenies with Species and 
+Biogeographic Data](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.z9bjp5mgfgld)
+Filter occurrence and/or modify data in a single dataset.  The tool allows multiple  
+operations, defined in a configuration file, to be applied to the data at the same time. 
+These operations range from filtering points out based on values in certain fields, to
+filtering out all points of a certain species if the group does not match some criteria,
+to modifying values in each record.
 
 [Resolving Nomenclature](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l)
 Create a new tree with accepted names and name-map (original_name --> accepted_name).
@@ -8,7 +16,7 @@ Create a new tree with accepted names and name-map (original_name --> accepted_n
 Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all
 tutorials work.
 
-## Step 
+## Step 1: 
 ## Data preparation
 
 ### Input: tree data
