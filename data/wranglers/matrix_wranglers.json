@@ -5,7 +5,6 @@
         "species_axis": 1
     },
     {
-        "wrangler_type": "PurgeEmptySlicesWrangler",
-        "species_axis": 1
+        "wrangler_type": "PurgeEmptySlicesWrangler"
     }
 ]
