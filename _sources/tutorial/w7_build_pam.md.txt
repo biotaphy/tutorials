@@ -62,7 +62,7 @@ for linux/mac systems
 The build_grid tool outputs a grid in shapefile format, conforming to the arguments
 specified in the configuration JSON file.
 
-## Step 2: Encode species layers into a PAM (defined by the grid) for multi-species analysis
+## Step 2: Encode species layers into a PAM (defined by grid) for multi-species analysis
 
 ### Data preparation: Layers
 

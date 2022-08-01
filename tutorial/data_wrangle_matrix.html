@@ -58,8 +58,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#matrix-data-wrangler-types">Matrix Data Wrangler Types</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#acceptednamematrixwrangler">AcceptedNameMatrixWrangler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#matchspecieslistmatrixwrangler">MatchSpeciesListMatrixWrangler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#matchspecieslisttreewrangler">MatchSpeciesListTreeWrangler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#subsettreewrangler">SubsetTreeWrangler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#matchtreematrixwrangler">MatchTreeMatrixWrangler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#purgeemptysliceswrangler">PurgeEmptySlicesWrangler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#subsetreordersliceswrangler">SubsetReorderSlicesWrangler</a></li>
 </ul>
 </li>
 </ul>
@@ -103,10 +104,13 @@
 <a class="reference internal" href="w7_build_pam.html"><span class="doc std std-doc">Tutorial 7: Build PAM</span></a>.  PAMs used in these processes are simply
 standard numpy matrices, with the addition of header metadata indicating the
 species and site labels.</p>
+<p>Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
+(rows/y axis), and species in the 1 axis (columns/x axis).  In general, the species_axis
+in wrangler parameters will always be 1.</p>
 </section>
 <section id="wrangler-configuration-file">
 <h2>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading"></a></h2>
-<p>A file specifying 0 or more wranglers to apply to the tree data, and options
+<p>A file specifying 0 or more wranglers to apply to the matrix data, and options
 specific to each.  Configuration files:</p>
 <ul class="simple">
 <li><p>are in JSON format, a list of desired wranglers.</p></li>
@@ -117,62 +121,88 @@ specific to each.  Configuration files:</p>
 </section>
 <section id="matrix-data-wrangler-types">
 <h2>Matrix Data Wrangler Types<a class="headerlink" href="#matrix-data-wrangler-types" title="Permalink to this heading"></a></h2>
-<p>When running wranglers on a tree, wranglers are applied in the order
+<p>When running wranglers on a matrix, wranglers are applied in the order
 that they are listed in the wrangler config file.</p>
 <p>Currently, wrangler_type names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in
 this module’s files.  Each wrangler’s parameters correspond to the constructor
 arguments for that wrangler.</p>
 <section id="acceptednamematrixwrangler">
 <h3>AcceptedNameMatrixWrangler<a class="headerlink" href="#acceptednamematrixwrangler" title="Permalink to this heading"></a></h3>
+<p>The AcceptedNameMatrixWrangler matches the labels in the matrix species axis with
+an “accepted name” as defined in a name-map or by a taxonomic service.</p>
 <ul class="simple">
-<li><p>optional</p>
+<li><p>Optional</p>
 <ul>
-<li><p>name_map (str or dict): A dictionary or filename containing a dictionary of original
+<li><p><strong>name_map</strong> (str or dict): A dictionary or filename containing a dictionary of original
 name to accepted name.  Defaults to None, but either this or name_resolver
 <strong>must be</strong> provided.</p></li>
-<li><p>name_resolver (str or Method): Use this method for getting new
+<li><p><strong>name_resolver</strong> (str or Method): Use this method for getting new
 accepted names. If set to ‘gbif’ or ‘otol’, use GBIF or OTOL name resolution
 respectively.  Defaults to None, but either this or name_map must be provided.</p></li>
-<li><p>out_map_filename (str): Output for name-mapping between original and accepted names.
+<li><p><strong>species_axis</strong> (int): An integer indicating which axis contains species names.
+Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
+(rows/y axis), and species in the 1 axis (columns/x axis)</p></li>
+<li><p><strong>purge_failures</strong> (bool): True to delete columns where the species label cannot
+be resolved to an AcceptedName</p></li>
+<li><p><strong>out_map_filename</strong> (str): Output for name-mapping between original and accepted names.
 This file is then acceptable for use as a <strong>name-map</strong> input for subsequent
 name wrangling.  Defaults to None.</p></li>
-<li><p>map_write_interval (int): Interval at which to write records to disk.  Used to
+<li><p><strong>map_write_interval</strong> (int): Interval at which to write records to disk.  Used to
 ensure that if something fails, all is not lost. Defaults to 100.</p></li>
-<li><p>out_map_format (str): Type of file format for out_map_filename, defaults to “json”.</p></li>
-<li><p>purge_failures (bool): Should failures be purged from the tree.</p></li>
+<li><p><strong>out_map_format</strong> (str): Type of file format for out_map_filename, defaults to “json”.</p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="matchspecieslistmatrixwrangler">
 <h3>MatchSpeciesListMatrixWrangler<a class="headerlink" href="#matchspecieslistmatrixwrangler" title="Permalink to this heading"></a></h3>
+<p>The MatchSpeciesListMatrixWrangler subsets and re-orders a matrix to match a
+Species List.</p>
 <ul class="simple">
-<li><p>required</p>
+<li><p>Required</p>
 <ul>
-<li><p>species_list (str): The filename of a species list to match.</p></li>
-<li><p>species_axis (int): An integer indicating which axis contains species names.
+<li><p><strong>species_list</strong> (str): The filename of a species list to match.</p></li>
+<li><p><strong>species_axis</strong> (int): An integer indicating which axis contains species names.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="matchtreematrixwrangler">
+<h3>MatchTreeMatrixWrangler<a class="headerlink" href="#matchtreematrixwrangler" title="Permalink to this heading"></a></h3>
+<p>The MatchTreeMatrixWrangler subsets and re-orders a matrix to match a tree.</p>
+<ul class="simple">
+<li><p>Required</p>
+<ul>
+<li><p><strong>tree</strong> (str): Input file containing a tree to match</p></li>
+<li><p><strong>species_axis</strong> (int): An integer indicating which axis contains species names.
 Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
 (rows/y axis), and species in the 1 axis (columns/x axis)</p></li>
 </ul>
 </li>
 </ul>
 </section>
-<section id="matchspecieslisttreewrangler">
-<h3>MatchSpeciesListTreeWrangler<a class="headerlink" href="#matchspecieslisttreewrangler" title="Permalink to this heading"></a></h3>
+<section id="purgeemptysliceswrangler">
+<h3>PurgeEmptySlicesWrangler<a class="headerlink" href="#purgeemptysliceswrangler" title="Permalink to this heading"></a></h3>
+<p>The PurgeEmptySlicesWrangler will remove slices (set of data along an axis) where the
+sum of all values is zero.</p>
 <ul class="simple">
-<li><p>required</p>
+<li><p>Optional</p>
 <ul>
-<li><p>species_list (str): Input file containing a species list to match</p></li>
+<li><p><strong>purge_axes</strong> (int or list of int): A list of axes to test for all-zeros.  If not
+provided, defaults to all axes.</p></li>
 </ul>
 </li>
 </ul>
 </section>
-<section id="subsettreewrangler">
-<h3>SubsetTreeWrangler<a class="headerlink" href="#subsettreewrangler" title="Permalink to this heading"></a></h3>
+<section id="subsetreordersliceswrangler">
+<h3>SubsetReorderSlicesWrangler<a class="headerlink" href="#subsetreordersliceswrangler" title="Permalink to this heading"></a></h3>
+<p>The SubsetReorderSlicesWrangler subsets and/or re-orders them according to the
+parameters.</p>
 <ul class="simple">
-<li><p>required</p>
+<li><p>Required</p>
 <ul>
-<li><p>keep_taxa (list of str): A list of taxon names to keep.</p></li>
+<li><p><strong>axes</strong> (dict): A dictionary of axis keys (int or str of int) and list of
+values of those headers to keep.</p></li>
 </ul>
 </li>
 </ul>

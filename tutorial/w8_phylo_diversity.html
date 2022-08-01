@@ -51,14 +51,15 @@
 <li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step-1-subset-the-matrix-to-the-tree-species-wrangle-matrix">Step 1: Subset the matrix to the tree species (wrangle_matrix )</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-subset-the-matrix-to-the-tree-species-wrangle-matrix">Step 1: Subset the matrix to the tree species (wrangle_matrix)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data-preparation-script-parameter-file">Data preparation: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#data-preparation-input-matrix">Data preparation: Input matrix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#input-wrangler-configuration-file">Input: Wrangler configuration file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-preparation-wrangler-configuration-file">Data preparation: Wrangler configuration file</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#run-tutorial">Run tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-calculate-stats-with-the-updated-matrix-and-associated-tree-calculate-pam-stats">Step 2: Calculate stats with the updated Matrix and associated Tree (calculate_pam_stats)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
@@ -107,25 +108,22 @@ phylogenetic diversity of a region.</p>
 tutorials work.</p>
 </section>
 <section id="step-1-subset-the-matrix-to-the-tree-species-wrangle-matrix">
-<h2>Step 1: Subset the matrix to the tree species (wrangle_matrix )<a class="headerlink" href="#step-1-subset-the-matrix-to-the-tree-species-wrangle-matrix" title="Permalink to this heading"></a></h2>
-<section id="input-script-parameter-file">
-<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
+<h2>Step 1: Subset the matrix to the tree species (wrangle_matrix)<a class="headerlink" href="#step-1-subset-the-matrix-to-the-tree-species-wrangle-matrix" title="Permalink to this heading"></a></h2>
+<section id="data-preparation-script-parameter-file">
+<h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
 is <span class="xref myst">resolve_tree_names.json</span>. These are the
 required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
 <ul>
-<li><p><strong>tree_filename</strong>: input filename containing tree, described
-in the previous section.  The tutorial example tree is
-<span class="xref myst">subtree-ottol-saxifragales.tre</span>.</p></li>
-<li><p><strong>tree_schema</strong>: input tree format.  The tutorial example is in “newick” format.</p></li>
-<li><p><strong>wrangler_configuration_file</strong>: tree wrangler configuration file,
+<li><p><strong>in_matrix_filename</strong>: input filename containing a PAM matrix.</p></li>
+<li><p><strong>out_matrix_filename</strong>: output filename for the updated matrix.</p></li>
+<li><p><strong>wrangler_configuration_file</strong>: matrix wrangler configuration file,
 described in the next section.  The tutorial example wrangler configuration
-contains one wrangler, the  AcceptedTreeWrangler, and is in
-<span class="xref myst">wrangle_tree_names.json</span></p></li>
-<li><p><strong>out_tree_filename</strong>: output tree filename</p></li>
-<li><p><strong>out_tree_schema</strong>: output tree format</p></li>
+contains two wranglers, the MatchTreeMatrixWrangler and the
+PurgeEmptySlicesWrangler, and is in
+<a class="reference download internal" download="" href="../_downloads/16b5d650ddc945968b969a7758002961/matrix_wranglers.json"><span class="xref download myst">matrix_wranglers.json</span></a></p></li>
 </ul>
 </li>
 <li><p>Optional</p>
@@ -140,34 +138,30 @@ contains one wrangler, the  AcceptedTreeWrangler, and is in
 <section id="data-preparation-input-matrix">
 <h3>Data preparation: Input matrix<a class="headerlink" href="#data-preparation-input-matrix" title="Permalink to this heading"></a></h3>
 <p>Use a PAM created in <a class="reference internal" href="w7_build_pam.html"><span class="doc std std-doc">Tutorial 7</span></a>.  An example PAM is available in
-../../data/input/pam.lmm.</p>
+<span class="xref myst">pam.lmm</span>.</p>
 </section>
-<section id="input-wrangler-configuration-file">
-<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
+<section id="data-preparation-wrangler-configuration-file">
+<h3>Data preparation: Wrangler configuration file<a class="headerlink" href="#data-preparation-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
 <p>A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
-optional parameters for each are in the <strong>Tree Data Wrangler Types</strong> section
-<a class="reference internal" href="data_wrangle_tree.html"><span class="doc std std-doc">here</span></a>.</p>
+optional parameters for each are in <a class="reference internal" href="data_wrangle_matrix.html"><span class="doc std std-doc">data_wrangle_matrix</span></a>.</p>
 </section>
 </section>
 <section id="run-tutorial">
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
 <p>Initiate the process with the following:</p>
-<p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  wrangle_tree  data/config/resolve_tree_names.json
-</pre></div>
-</div>
-<p>for windows:</p>
-<div class="highlight-cmd notranslate"><div class="highlight"><pre><span></span>run_tutorial.bat  wrangle_tree  data\config\resolve_tree_names.json
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  wrangle_matrix  data/config/wrangle_matrix.json
 </pre></div>
 </div>
 </section>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
-<p>This process outputs a file containing the modified tree in the requested format, and
-any optional logfiles and reports specified in the Tool Configuration file.
-Current available taxonomic services include only GBIF at this time.</p>
+<p>This process outputs a file containing the modified matrix and any optional logfiles
+and reports specified in the Script parameter file.</p>
+</section>
+<section id="step-2-calculate-stats-with-the-updated-matrix-and-associated-tree-calculate-pam-stats">
+<h2>Step 2: Calculate stats with the updated Matrix and associated Tree (calculate_pam_stats)<a class="headerlink" href="#step-2-calculate-stats-with-the-updated-matrix-and-associated-tree-calculate-pam-stats" title="Permalink to this heading"></a></h2>
 </section>
 </section>
 

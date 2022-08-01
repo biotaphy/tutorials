@@ -1,0 +1,10 @@
+[
+    {
+        "wrangler_type": "MatchTreeMatrixWrangler",
+        "tree": "/volumes/data/input/heuchera3.nex",
+        "species_axis": 1
+    },
+    {
+        "wrangler_type": "PurgeEmptySlicesWrangler"
+    }
+]
