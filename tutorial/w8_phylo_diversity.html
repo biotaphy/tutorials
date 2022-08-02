@@ -51,7 +51,7 @@
 <li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step-1-subset-the-matrix-to-the-tree-species-wrangle-matrix">Step 1: Subset the matrix to the tree species (wrangle_matrix)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-cleanup-the-matrix">Step 1: Cleanup the matrix</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#data-preparation-script-parameter-file">Data preparation: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#data-preparation-input-matrix">Data preparation: Input matrix</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#data-preparation-wrangler-configuration-file">Data preparation: Wrangler configuration file</a></li>
@@ -59,7 +59,12 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#run-tutorial">Run tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step-2-calculate-stats-with-the-updated-matrix-and-associated-tree-calculate-pam-stats">Step 2: Calculate stats with the updated Matrix and associated Tree (calculate_pam_stats)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-calculate-stats-with-the-updated-pam-and-associated-tree">Step 2: Calculate stats with the updated PAM and associated Tree</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Data preparation: Script parameter file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Output</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
@@ -107,8 +112,9 @@ phylogenetic diversity of a region.</p>
 <p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
 tutorials work.</p>
 </section>
-<section id="step-1-subset-the-matrix-to-the-tree-species-wrangle-matrix">
-<h2>Step 1: Subset the matrix to the tree species (wrangle_matrix)<a class="headerlink" href="#step-1-subset-the-matrix-to-the-tree-species-wrangle-matrix" title="Permalink to this heading"></a></h2>
+<section id="step-1-cleanup-the-matrix">
+<h2>Step 1: Cleanup the matrix<a class="headerlink" href="#step-1-cleanup-the-matrix" title="Permalink to this heading"></a></h2>
+<p>Subset the matrix to the tree species and remove empty (all zeros) rows and columns.</p>
 <section id="data-preparation-script-parameter-file">
 <h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
@@ -160,8 +166,65 @@ optional parameters for each are in <a class="reference internal" href="data_wra
 <p>This process outputs a file containing the modified matrix and any optional logfiles
 and reports specified in the Script parameter file.</p>
 </section>
-<section id="step-2-calculate-stats-with-the-updated-matrix-and-associated-tree-calculate-pam-stats">
-<h2>Step 2: Calculate stats with the updated Matrix and associated Tree (calculate_pam_stats)<a class="headerlink" href="#step-2-calculate-stats-with-the-updated-matrix-and-associated-tree-calculate-pam-stats" title="Permalink to this heading"></a></h2>
+<section id="step-2-calculate-stats-with-the-updated-pam-and-associated-tree">
+<h2>Step 2: Calculate stats with the updated PAM and associated Tree<a class="headerlink" href="#step-2-calculate-stats-with-the-updated-pam-and-associated-tree" title="Permalink to this heading"></a></h2>
+<p>Now that a grid has been built, and a PAM has been populated by intersecting species
+distribution models with the grid, we calculate biogeographic statistics on that PAM.</p>
+<section id="id1">
+<h3>Data preparation: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<p>An example JSON file for running the calculate_pam_stats command is at
+<a class="reference download internal" download="" href="../_downloads/6f14d9401b6b4b2f0ee0cd89d209e809/calculate_pam_stats.json"><span class="xref download myst">calculate_pam_stats</span></a>. These are the
+required and optional parameters:</p>
+<ul class="simple">
+<li><p>Required:</p>
+<ul>
+<li><p><strong>pam_filename</strong>: The full filename to the input PAM file.</p></li>
+</ul>
+</li>
+<li><p>Optional</p>
+<ul>
+<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
+<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
+<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+<li><p><strong>covariance_matrix</strong>: The full filename for writing the covariance matrix.</p></li>
+<li><p><strong>diversity_matrix</strong>: The full filename for writing the diversity matrix.</p></li>
+<li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
+<li><p><strong>species_stats_matrix</strong>: The full filename for writing the species statistics
+matrix.</p></li>
+<li><p><strong>tree_filename</strong>: The full filename to an input tree in Nexus format.</p></li>
+<li><p><strong>tree_matrix</strong>: The full filename to an input tree encoded as a matrix.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="run-calculate-pam-stats-command">
+<h2>Run calculate_pam_stats command<a class="headerlink" href="#run-calculate-pam-stats-command" title="Permalink to this heading"></a></h2>
+<p>Initiate the calculate_pam_stats process with the following:</p>
+<p>for linux/mac systems</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>Output<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<p>The calculate_pam_stats tool outputs computes various statistics, depending on the
+output files specified in the command configuration file.  Outputs may include:</p>
+<ol class="arabic simple">
+<li><p>A “report_filename” named in the script parameter file, a summary of point
+manipulations by each wrangler will be written to this file.</p></li>
+<li><p>A “log_filename” named in the script parameter file, that will be created.</p></li>
+<li><p>A “log_console” named in the script parameter file, logs will be written to the
+command prompt during execution.</p></li>
+<li><p>One or more “covariance_matrix” files.  Each covariance statistic produces a matrix
+and it is written to the covariance_matrix filename, where the statistic name is
+appended to the end of the base file name.</p></li>
+<li><p>A “diversity_matrix” containing different diversity statistics</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
+<li><p>**species_stats_matrix</p></li>
+</ul>
 </section>
 </section>
 
