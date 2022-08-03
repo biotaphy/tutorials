@@ -1,6 +1,6 @@
 <title>Maxent model for Mitella_diphylla</title>
 <CENTER><H1>Maxent model for Mitella_diphylla</H1></CENTER>
-<br> This page contains some analysis of the Maxent model for Mitella_diphylla, created Wed Jul 27 16:41:14 GMT 2022 using Maxent version 3.4.4.  If you would like to do further analyses, the raw data used here is linked to at the end of this page.<br>
+<br> This page contains some analysis of the Maxent model for Mitella_diphylla, created Wed Aug 03 11:32:09 CDT 2022 using Maxent version 3.4.4.  If you would like to do further analyses, the raw data used here is linked to at the end of this page.<br>
 <br><HR><H2>Analysis of omission/commission</H2>
 The following picture shows the omission rate and predicted area as a function of the cumulative threshold.  The omission rate is is calculated both on the training presence records, and (if test data are used) on the test records.  The omission rate should be close to the predicted omission, because of the definition of the cumulative threshold.
 <br><img src="plots/Mitella_diphylla_omission.png"><br>
@@ -26,7 +26,7 @@ The data used in the above analysis is contained in the next links.  Please see 
 <a href = "maxentResults.csv">Results for all species modeled in the same Maxent run, with summary statistics and (optionally) jackknife results</a><br>
 <br><br>
 Regularized training gain is 0.675, training AUC is 0.825, unregularized training gain is 0.889.<br>
-Algorithm terminated after 500 iterations (5 seconds).<br>
+Algorithm terminated after 500 iterations (4 seconds).<br>
 <br>
 The follow settings were used during the run:<br>
 217 presence records used for training.<br>
@@ -35,12 +35,12 @@ Environmental layers used: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12
 Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500<br>
 Feature types used: hinge product linear quadratic<br>
 outputdirectory: /volumes/output/heuchera_sdm/Mitella_diphylla<br>
-samplesfile: /volumes/output/heuchera_sdm/Mitella_diphylla/Mitella_diphylla.csv<br>
+samplesfile: /volumes/output/heuchera_sdm/Mitella_diphylla/Mitella diphylla.csv<br>
 environmentallayers: /volumes/env/worldclim1.4<br>
 warnings: false<br>
 autorun: true<br>
 visible: false<br>
 cache: false<br>
-Command line used:  samplesfile=/volumes/output/heuchera_sdm/Mitella_diphylla/Mitella_diphylla.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_sdm/Mitella_diphylla nowarnings nocache autorun -z togglelayertype=mask<br>
+Command line used:  samplesfile=/volumes/output/heuchera_sdm/Mitella_diphylla/Mitella diphylla.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_sdm/Mitella_diphylla nowarnings nocache autorun -z togglelayertype=mask<br>
 <br>
-Command line to repeat this species model: java density.MaxEnt nowarnings noprefixes -E "" -E Mitella_diphylla outputdirectory=/volumes/output/heuchera_sdm/Mitella_diphylla samplesfile=/volumes/output/heuchera_sdm/Mitella_diphylla/Mitella_diphylla.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask<br>
+Command line to repeat this species model: java density.MaxEnt nowarnings noprefixes -E "" -E Mitella_diphylla outputdirectory=/volumes/output/heuchera_sdm/Mitella_diphylla "samplesfile=/volumes/output/heuchera_sdm/Mitella_diphylla/Mitella diphylla.csv" environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask<br>

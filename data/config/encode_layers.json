@@ -2,7 +2,7 @@
     "log_filename": "/volumes/output/encode_layers.log",
     "log_console": true,
     "report_filename": "/volumes/output/encode_layers.rpt",
-    "encode_method": "mean_value",
+    "encode_method": "presence_absence",
     "min_coverage": 25,
     "min_presence": 10,
     "max_presence": 127,

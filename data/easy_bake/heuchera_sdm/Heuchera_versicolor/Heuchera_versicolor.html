@@ -1,6 +1,6 @@
 <title>Maxent model for Heuchera_versicolor</title>
 <CENTER><H1>Maxent model for Heuchera_versicolor</H1></CENTER>
-<br> This page contains some analysis of the Maxent model for Heuchera_versicolor, created Wed Jul 27 16:44:28 GMT 2022 using Maxent version 3.4.4.  If you would like to do further analyses, the raw data used here is linked to at the end of this page.<br>
+<br> This page contains some analysis of the Maxent model for Heuchera_versicolor, created Wed Aug 03 11:35:41 CDT 2022 using Maxent version 3.4.4.  If you would like to do further analyses, the raw data used here is linked to at the end of this page.<br>
 <br><HR><H2>Analysis of omission/commission</H2>
 The following picture shows the omission rate and predicted area as a function of the cumulative threshold.  The omission rate is is calculated both on the training presence records, and (if test data are used) on the test records.  The omission rate should be close to the predicted omission, because of the definition of the cumulative threshold.
 <br><img src="plots/Heuchera_versicolor_omission.png"><br>
@@ -35,12 +35,12 @@ Environmental layers used: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12
 Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500<br>
 Feature types used: hinge product linear quadratic<br>
 outputdirectory: /volumes/output/heuchera_sdm/Heuchera_versicolor<br>
-samplesfile: /volumes/output/heuchera_sdm/Heuchera_versicolor/Heuchera_versicolor.csv<br>
+samplesfile: /volumes/output/heuchera_sdm/Heuchera_versicolor/Heuchera versicolor.csv<br>
 environmentallayers: /volumes/env/worldclim1.4<br>
 warnings: false<br>
 autorun: true<br>
 visible: false<br>
 cache: false<br>
-Command line used:  samplesfile=/volumes/output/heuchera_sdm/Heuchera_versicolor/Heuchera_versicolor.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_sdm/Heuchera_versicolor nowarnings nocache autorun -z togglelayertype=mask<br>
+Command line used:  samplesfile=/volumes/output/heuchera_sdm/Heuchera_versicolor/Heuchera versicolor.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_sdm/Heuchera_versicolor nowarnings nocache autorun -z togglelayertype=mask<br>
 <br>
-Command line to repeat this species model: java density.MaxEnt nowarnings noprefixes -E "" -E Heuchera_versicolor outputdirectory=/volumes/output/heuchera_sdm/Heuchera_versicolor samplesfile=/volumes/output/heuchera_sdm/Heuchera_versicolor/Heuchera_versicolor.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask<br>
+Command line to repeat this species model: java density.MaxEnt nowarnings noprefixes -E "" -E Heuchera_versicolor outputdirectory=/volumes/output/heuchera_sdm/Heuchera_versicolor "samplesfile=/volumes/output/heuchera_sdm/Heuchera_versicolor/Heuchera versicolor.csv" environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask<br>

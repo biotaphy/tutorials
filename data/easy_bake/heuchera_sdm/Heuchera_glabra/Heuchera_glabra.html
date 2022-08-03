@@ -1,6 +1,6 @@
 <title>Maxent model for Heuchera_glabra</title>
 <CENTER><H1>Maxent model for Heuchera_glabra</H1></CENTER>
-<br> This page contains some analysis of the Maxent model for Heuchera_glabra, created Wed Jul 27 16:44:49 GMT 2022 using Maxent version 3.4.4.  If you would like to do further analyses, the raw data used here is linked to at the end of this page.<br>
+<br> This page contains some analysis of the Maxent model for Heuchera_glabra, created Wed Aug 03 11:36:02 CDT 2022 using Maxent version 3.4.4.  If you would like to do further analyses, the raw data used here is linked to at the end of this page.<br>
 <br><HR><H2>Analysis of omission/commission</H2>
 The following picture shows the omission rate and predicted area as a function of the cumulative threshold.  The omission rate is is calculated both on the training presence records, and (if test data are used) on the test records.  The omission rate should be close to the predicted omission, because of the definition of the cumulative threshold.
 <br><img src="plots/Heuchera_glabra_omission.png"><br>
@@ -26,7 +26,7 @@ The data used in the above analysis is contained in the next links.  Please see 
 <a href = "maxentResults.csv">Results for all species modeled in the same Maxent run, with summary statistics and (optionally) jackknife results</a><br>
 <br><br>
 Regularized training gain is 0.756, training AUC is 0.845, unregularized training gain is 0.911.<br>
-Algorithm terminated after 500 iterations (6 seconds).<br>
+Algorithm terminated after 500 iterations (5 seconds).<br>
 <br>
 The follow settings were used during the run:<br>
 201 presence records used for training.<br>
@@ -35,12 +35,12 @@ Environmental layers used: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12
 Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500<br>
 Feature types used: hinge product linear quadratic<br>
 outputdirectory: /volumes/output/heuchera_sdm/Heuchera_glabra<br>
-samplesfile: /volumes/output/heuchera_sdm/Heuchera_glabra/Heuchera_glabra.csv<br>
+samplesfile: /volumes/output/heuchera_sdm/Heuchera_glabra/Heuchera glabra.csv<br>
 environmentallayers: /volumes/env/worldclim1.4<br>
 warnings: false<br>
 autorun: true<br>
 visible: false<br>
 cache: false<br>
-Command line used:  samplesfile=/volumes/output/heuchera_sdm/Heuchera_glabra/Heuchera_glabra.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_sdm/Heuchera_glabra nowarnings nocache autorun -z togglelayertype=mask<br>
+Command line used:  samplesfile=/volumes/output/heuchera_sdm/Heuchera_glabra/Heuchera glabra.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_sdm/Heuchera_glabra nowarnings nocache autorun -z togglelayertype=mask<br>
 <br>
-Command line to repeat this species model: java density.MaxEnt nowarnings noprefixes -E "" -E Heuchera_glabra outputdirectory=/volumes/output/heuchera_sdm/Heuchera_glabra samplesfile=/volumes/output/heuchera_sdm/Heuchera_glabra/Heuchera_glabra.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask<br>
+Command line to repeat this species model: java density.MaxEnt nowarnings noprefixes -E "" -E Heuchera_glabra outputdirectory=/volumes/output/heuchera_sdm/Heuchera_glabra "samplesfile=/volumes/output/heuchera_sdm/Heuchera_glabra/Heuchera glabra.csv" environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask<br>

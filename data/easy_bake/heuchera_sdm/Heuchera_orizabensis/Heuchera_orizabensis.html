@@ -1,6 +1,6 @@
 <title>Maxent model for Heuchera_orizabensis</title>
 <CENTER><H1>Maxent model for Heuchera_orizabensis</H1></CENTER>
-<br> This page contains some analysis of the Maxent model for Heuchera_orizabensis, created Wed Jul 27 16:40:36 GMT 2022 using Maxent version 3.4.4.  If you would like to do further analyses, the raw data used here is linked to at the end of this page.<br>
+<br> This page contains some analysis of the Maxent model for Heuchera_orizabensis, created Wed Aug 03 11:31:30 CDT 2022 using Maxent version 3.4.4.  If you would like to do further analyses, the raw data used here is linked to at the end of this page.<br>
 <br><HR><H2>Analysis of omission/commission</H2>
 The following picture shows the omission rate and predicted area as a function of the cumulative threshold.  The omission rate is is calculated both on the training presence records, and (if test data are used) on the test records.  The omission rate should be close to the predicted omission, because of the definition of the cumulative threshold.
 <br><img src="plots/Heuchera_orizabensis_omission.png"><br>
@@ -35,12 +35,12 @@ Environmental layers used: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12
 Regularization values: linear/quadratic/product: 0.119, categorical: 0.250, threshold: 1.240, hinge: 0.500<br>
 Feature types used: hinge linear quadratic<br>
 outputdirectory: /volumes/output/heuchera_sdm/Heuchera_orizabensis<br>
-samplesfile: /volumes/output/heuchera_sdm/Heuchera_orizabensis/Heuchera_orizabensis.csv<br>
+samplesfile: /volumes/output/heuchera_sdm/Heuchera_orizabensis/Heuchera orizabensis.csv<br>
 environmentallayers: /volumes/env/worldclim1.4<br>
 warnings: false<br>
 autorun: true<br>
 visible: false<br>
 cache: false<br>
-Command line used:  samplesfile=/volumes/output/heuchera_sdm/Heuchera_orizabensis/Heuchera_orizabensis.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_sdm/Heuchera_orizabensis nowarnings nocache autorun -z togglelayertype=mask<br>
+Command line used:  samplesfile=/volumes/output/heuchera_sdm/Heuchera_orizabensis/Heuchera orizabensis.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_sdm/Heuchera_orizabensis nowarnings nocache autorun -z togglelayertype=mask<br>
 <br>
-Command line to repeat this species model: java density.MaxEnt nowarnings noprefixes -E "" -E Heuchera_orizabensis outputdirectory=/volumes/output/heuchera_sdm/Heuchera_orizabensis samplesfile=/volumes/output/heuchera_sdm/Heuchera_orizabensis/Heuchera_orizabensis.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask<br>
+Command line to repeat this species model: java density.MaxEnt nowarnings noprefixes -E "" -E Heuchera_orizabensis outputdirectory=/volumes/output/heuchera_sdm/Heuchera_orizabensis "samplesfile=/volumes/output/heuchera_sdm/Heuchera_orizabensis/Heuchera orizabensis.csv" environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask<br>
