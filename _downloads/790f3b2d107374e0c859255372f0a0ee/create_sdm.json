@@ -1,7 +1,7 @@
 {
-    "log_filename": "/volumes/output/heuchera_sdm/create_sdm.log",
+    "log_filename": "/volumes/output/create_sdm.log",
     "log_console": true,
-    "report_filename": "/volumes/output/heuchera_sdm/create_sdm.rpt",
+    "report_filename": "/volumes/output/create_sdm.rpt",
     "min_points": 12,
     "species_key": "species_name",
     "x_key": "x",
