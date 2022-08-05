@@ -5,6 +5,6 @@
     "shapefile_filename": "/volumes/data/easy_bake/global_1deg_grid.shp",
     "resolution": 1.0,
     "omit_value": [-9999],
-    "in_lmm_filename": "/volumes/output/encode_layers_matrix.lmm",
+    "in_lmm_filename": "/volumes/data/easy_bake/encode_layers_matrix.lmm",
     "out_geojson_filename": "/volumes/output/encode_layers_matrix.geojson"
 }
