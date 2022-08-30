@@ -1,9 +1,12 @@
-# Specimen Occurrences: Data and Wrangling
+====================
+Specimen Occurrences: Data and Wrangling
+====================
 
-## Occurrence Data
-
-Several tools ([split_occurrence_data](w5_split_occurrence_data.md),
-[wrangle_occurrences](w3_wrangle_occurrence_data.md)) accept occurrence data.
+----------------
+Occurrence Data
+----------------
+Several tools ([split_occurrence_data](w5_split_occurrence_data.rst),
+[wrangle_occurrences](w3_wrangle_occurrence_data.rst)) accept occurrence data.
 The filename must be specified in the script parameter file, described in each tool's
 documentation and linked above.  Data can be in one of two formats:
 
@@ -30,7 +33,9 @@ documentation and linked above.  Data can be in one of two formats:
       parameter file. The tutorial example occurrence datafile
       is [heuchera.csv](../../data/input/heuchera.csv).
 
-## Wrangler configuration file
+----------------------------
+Wrangler configuration file
+----------------------------
 
 A file specifying 0 or more wranglers to apply to the tree data, and options
 specific to each.  Configuration files:
@@ -40,7 +45,9 @@ specific to each.  Configuration files:
 * Each dictionary must contain "wrangler_type", with the name of the wrangler type.
 * The dictionary will also contain all required parameters and any optional parameters.
 
-## Occurrence Wrangler Types
+--------------------------------
+Occurrence Wrangler Types
+--------------------------------
 
 When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.
@@ -55,15 +62,15 @@ Currently, wrangler_type names correspond to the wrangler class `name` attribute
 this module's files.  Each wrangler's parameters correspond to the constructor
 arguments for that wrangler.
 
-### AcceptedNameOccurrenceWrangler
-
+AcceptedNameOccurrenceWrangler
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The AcceptedNameOccurrenceWrangler matches the value in the occurrence data identified 
 as the "species" field with an "accepted name" as defined in a name-map or by a 
 taxonomic service. 
 
 * optional
-occ_wranglers_w_resolve
-  * name_map (str or dict): A dictionary or filename containing a dictionary of original
+
+ * name_map (str or dict): A dictionary or filename containing a dictionary of original
     name to accepted name.  Defaults to None, but either this or name_resolver
     **must be** provided.
   * name_resolver (str or Method): Use this method for getting new
@@ -77,8 +84,8 @@ occ_wranglers_w_resolve
   * out_map_format (str): Type of file format for out_map_filename, defaults to "json".
   * store_original_attribute (str): A new attribute to store the original taxon name.
 
-### AttributeFilterWrangler
-
+AttributeFilterWrangler
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The AttributeFilterWrangler filters out points based on whether the value in the 
 given attribute passes the given function.
 
@@ -87,8 +94,9 @@ given attribute passes the given function.
   * attribute_name (str): The name of the attribute to modify.
   * filter_func (Method): A function to be used for the pass condition.
 
-### AttributeModifierWrangler
-
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeModifierWrangler
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The AttributeModifierWrangler modifies a newly added or existing attribute, computing 
 the value with the given function.
 
@@ -97,8 +105,9 @@ the value with the given function.
   * attribute_name (str): The name of the attribute to modify.
   * attribute_func (Method): A function to generate values for a point.
 
-### BoundingBoxFilter
-
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BoundingBoxFilter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The BoundingBoxFilter filters out occurrence points if they do not fall within the given  
 bounding box.
 
@@ -109,8 +118,8 @@ bounding box.
   * max_x (numeric): The maximum 'x' value for the bounding box.
   * max_y (numeric): The maximum 'y' value for the bounding box.
 
-### CommonFormatWrangler
-
+CommonFormatWrangler
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The CommonFormatWrangler modifies points to a common format, using the given 
 attribute-map between the original fields, and the desired fields in the common format.
 
@@ -118,8 +127,8 @@ attribute-map between the original fields, and the desired fields in the common 
 
   * attribute_map (dict): A mapping of source key, target values.
 
-### CoordinateConverterWrangler
-
+CoordinateConverterWrangler
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The CoordinateConverterWrangler modifies occurrence points by transforming the 
 x and y coordinates from one projection (coded as an EPSG number) into another 
 projection.  The new coordinates overwrite the x and y fields.  If original_x_attribute
@@ -139,8 +148,8 @@ the original x and y coordinates.
   * original_x_attribute (str): An attribute to store the original x value.
   * original_y_attribute (str): An attribute to store the original y value.
 
-### DecimalPrecisionFilter
-
+DecimalPrecisionFilter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The DecimalPrecisionFilter filters out occurrence points where one or both coordinates  
 have values where the number of digits to the right of the decimal point is less than  
 the given number.
@@ -150,8 +159,8 @@ the given number.
   * decimal_places (int): Only keep points with at least this many decimal places of
     precision.
 
-### DisjointGeometriesFilter
-
+DisjointGeometriesFilter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The DisjointGeometriesFilter filters out points where the coordinates intersect with 
 the given geometries.  
 
@@ -159,8 +168,8 @@ the given geometries.
 
   * geometry_wkts (list of str): A list of geometry WKTs to check against.
 
-### IntersectGeometriesFilter
-
+IntersectGeometriesFilter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The IntersectGeometriesFilter filters out points where the coordinates do NOT intersect 
 with the given geometries.  
 
@@ -168,8 +177,8 @@ with the given geometries.
 
   * geometry_wkts (list of str): A list of WKT strings.
 
-### MinimumPointsWrangler
-
+MinimumPointsWrangler
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The MinimumPointsWrangler filters out groups of points where the number of points in a 
 group does not meet the minimum.
 
@@ -182,8 +191,8 @@ set, not subsets within a file.
 
   * minimum_count (int): The minimum number of points in order to keep all.
 
-### SpatialIndexFilter
-
+SpatialIndexFilter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The SpatialIndexFilter filters out points that match some given condition 
 (check_hit_function) on the given spatial index. 
 
@@ -196,8 +205,8 @@ The SpatialIndexFilter filters out points that match some given condition
     intersections for a species) and returns a boolean indication if the hit should be
     counted.
 
-### UniqueLocalitiesFilter
-
+UniqueLocalitiesFilter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The UniqueLocalitiesFilter filters out points from a grouping that do not have unique 
 coordinates.  The filter can operate on one or more groups, and uniqueness is only 
 checked within groups.

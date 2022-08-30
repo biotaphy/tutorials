@@ -6,6 +6,10 @@ Before we can run the demo, we need to build the container.  This documentation
 assumes that [Docker](https://docs.docker.com/get-docker/) has been installed for your
 environment.
 
+Note that installing Docker on Windows machines requires Administrator privileges.  
+After installation, any user that is a member of the "docker-users" group can run Docker
+Desktop.
+
 1. Clone or download the repository
 
    ```commandline
@@ -116,7 +120,7 @@ To delete all containers, images, networks and volumes, stop any running
 containers:
 
 ```zsh
-docker compose stop
+docker container stop <container_name>
 ```
 
 And run this command (which ignores running container):

@@ -1,6 +1,8 @@
-# Webinar 5: Split and merge occurrence data by species
+================================================================
+Webinar 5: Split and merge occurrence data by species
+================================================================
 
-**Webinar 5**, [Big Data Munging](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1)
+[Big Data Munging](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1)
 (Module 2, Big-Data approaches).  Split one or more occurrence datasets by species.  
 If we are splitting more than one dataset, records in different datasets with the same
 species name will be combined into one file.  The tool allows multiple operations, 
@@ -10,23 +12,25 @@ in the wrangle_occurrences tool demonstrated in Webinar 3.
 The tool will group and write out occurrence records into separate CSV files based on 
 a field with values to be grouped on, generally a species name. 
 
-## Introduction
-
-Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all
+------------------------------------------------
+Introduction
+------------------------------------------------
+Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
 tutorials work.
 
-## Data Preparation
-
-### Input: occurrence records
-
+------------------------------------------------
+Data Preparation
+------------------------------------------------
+Input: occurrence records
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The split_occurrence_data tool accepts one or more datasets, each must be either a 
 Darwin Core Archive (DwCA) file or a CSV file containing records for one or more taxa.
 
 More information is in the **Occurrence Data** section of 
 [data_wrangle_occurrence](data_wrangle_occurrence.md).
 
-### Input: Wrangler configuration file
-
+Input: Wrangler configuration file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
@@ -40,7 +44,8 @@ resolves names with GBIF before grouping the data by name.
 If more than one dataset is being processed, it is logical to apply the same wranglers 
 to each.  
 
-### Input: Script parameter file
+Input: Script parameter file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A JSON parameter file is required for this command.  Three tutorial parameter files are 
 [split_occurrence_data_dwca.json](../../data/config/split_occurrence_data_dwca.json),
@@ -101,24 +106,23 @@ These are the required and optional parameters:
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
 
-## Run tutorial with DwCA data
-
+------------------------------------------------
+Run tutorial with DwCA data
+------------------------------------------------
 Initiate the split_occurrence_data process with the following:
+.. code-block::
 
-for linux/mac systems
-
-```zsh
-# with CSV data
-./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
-# with DwCA data
-./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
-# with 1 DwCA and 2 CSV and resolving names with GBIF
-./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
-```
+      # with CSV data
+      ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
+      # with DwCA data
+      ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
+      # with 1 DwCA and 2 CSV and resolving names with GBIF
+      ./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
 
 
-## Output
-
+------------------------------------------------
+Output
+------------------------------------------------
 Most outputs are configured in the script parameter file, and may include:
 
 1. A "report_filename" named in the script parameter file, a summary of point

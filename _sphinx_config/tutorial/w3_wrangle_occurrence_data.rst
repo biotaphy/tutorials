@@ -1,6 +1,8 @@
-# Webinar 3: Wrangle occurrence data
+============================================
+Webinar 3: Wrangle occurrence data
+============================================
 
-**Webinar #3**  [Clean Your Dirty Data](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi)
+[Clean Your Dirty Data](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi)
 Filter occurrence and/or modify data in a single dataset.  The tool allows multiple  
 operations, defined in a configuration file, to be applied to the data at the same time. 
 These operations range from filtering points out based on values in certain fields, to
@@ -11,21 +13,25 @@ One modification that can be applied is to resolve the species name in each occu
 record to an "accepted" name from some authority, either a provided name-mapping or the 
 GBIF name resolution service. 
 
-## Introduction
+--------------------------------
+Introduction
+--------------------------------
 
-Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all
+Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
 tutorials work.
 
-## Data preparation
+--------------------------------
+Data preparation
+--------------------------------
 
-### Input: occurrence records
-
+Input: occurrence records
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The wrangle_occurrences tool accepts either a Darwin Core Archive (DwCA) file or a
 CSV file containing records for one or more taxa.  More information is in the
 **Occurrence Data** section of [data_wrangle_occurrence](data_wrangle_occurrence.md).
 
-### Input: Wrangler configuration file
-
+Input: Wrangler configuration file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The tool allows multiple operations, defined in a wrangler configuration file, to be 
 applied to the data at the same time.  A data wrangler configuration is a file 
 containing a JSON list of zero or more
@@ -43,8 +49,8 @@ longitude less than 4 digits past a decimal point.  Our
 contains these parameters, and the file is specified in the Script parameter file 
 described next.
 
-### Input: Script parameter file
-
+Input: Script parameter file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 A JSON parameter file is required for this command.  The tutorial parameter file is
 [wrangle_occurrences_w_resolve.json](../../data/config/wrangle_occurrences_w_resolve.json).
 These are the required and optional parameters:
@@ -67,22 +73,24 @@ These are the required and optional parameters:
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
 
-## Run tutorial
+--------------------------------
+Run tutorial
+--------------------------------
 
 Initiate the process with the following:
 
-for linux/mac systems
+.. code-block::
 
-```zsh
-# Data cleaning and name resolution
-./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
-# Data cleaning only
-./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
-# Name resolution only
-./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
-```
+        # Data cleaning and name resolution
+        ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
+        # Data cleaning only
+        ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
+        # Name resolution only
+        ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
 
-## Output
+--------------------------------
+Output
+--------------------------------
 
 This process outputs a set of CSV files, one per species, to the directory specified in
 the script parameter file.  Each record is annotated with an "accepted name" as defined
