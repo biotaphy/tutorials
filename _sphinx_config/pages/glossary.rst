@@ -4,23 +4,23 @@ Biotaphy Tutorial Glossary
 
 .. glossary::
 
-# Algorithm
+  Algorithm
     An algorithm is a procedure or formula for solving a problem.  There are  multiple
     algorithms for computing Species Distribution Models (SDM) which
     define the relationship between a set of points and the environmental values
     at those points.
 
-# Biogeographic Hypotheses
+  Biogeographic Hypotheses
     Spatial layers for testing the influence of geographic elements, such as
     geology, drainage basins, etc, on the biodiversity of a landscape. These
     can be in the form of raster or vector files.
 
-# Container
+  Container
     A :term:`Docker` instance which runs as an application on a :term:`Host machine`.
     The Docker container contains all software dependencies required by the programs it
     will run.
 
-# CSV
+  CSV
     CSV (Comma Separated Values) is a file format for records, in which fields are
     separated by a delimiter.  Commas and tabs are common, but other characters may
     be used as delimiters.
