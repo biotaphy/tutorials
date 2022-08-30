@@ -46,9 +46,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w6_create_sdms.html">Webinar 6:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial/w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial/w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial/wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -56,6 +53,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 
         </div>
@@ -74,7 +73,7 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Quick Start</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/pages/quckstart.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/pages/quckstart.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -84,15 +83,40 @@
              
   <section id="quick-start">
 <h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this heading"></a></h1>
+<section id="install-docker">
+<h2>Install Docker<a class="headerlink" href="#install-docker" title="Permalink to this heading"></a></h2>
+<p>Follow instructions for your operating system at
+[Get Docker](<a class="reference external" href="https://docs.docker.com/get-docker/">https://docs.docker.com/get-docker/</a>)</p>
+</section>
+<section id="download-tutorial">
+<h2>Download Tutorial<a class="headerlink" href="#download-tutorial" title="Permalink to this heading"></a></h2>
+<p>The [Biotaphy tutorial](<a class="reference external" href="https://github.com/biotaphy/tutorials">https://github.com/biotaphy/tutorials</a>)  can be installed by
+downloading from Github.  This code repository contains scripts, Docker composition
+files, and data for the tutorials.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`commandline</span>
+<span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/biotaphy/tutorials.git</span>
+<span class="pre">`</span></code></p>
+</section>
 <section id="initiate-each-tutorial">
 <h2>Initiate each tutorial<a class="headerlink" href="#initiate-each-tutorial" title="Permalink to this heading"></a></h2>
 <p>Choose a command to initiate with the default data.  Commands</p>
 <p>From the top level project directory (tutorials):</p>
-<p>.. code-block:: bash</p>
-<p>docker pull ghcr.io/specifysystems/lmpy:latest</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker pull ghcr.io/specifysystems/lmpy:latest
+</pre></div>
+</div>
 <p>Then you can run the container interactively and call tools with bash</p>
-<p>.. code-block:: bash</p>
-<p>docker run -it specifysystems/lmpy:latest bash</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run -it specifysystems/lmpy:latest bash
+</pre></div>
+</div>
+</section>
+<section id="examine-results">
+<h2>Examine results<a class="headerlink" href="#examine-results" title="Permalink to this heading"></a></h2>
+<p>All outputs from tutorial exercises are copied to the local system in a newly
+created <cite>output</cite> directory under the <cite>data</cite> directory in the downloaded <cite>tutorials</cite>
+repository.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`commandline</span>
+<span class="pre">ls</span> <span class="pre">./tutorials/data/output</span>
+<span class="pre">`</span></code></p>
 </section>
 </section>
 

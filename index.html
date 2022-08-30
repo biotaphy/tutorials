@@ -47,9 +47,6 @@
 <li class="toctree-l1"><a class="reference internal" href="tutorial/w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial/w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial/w6_create_sdms.html">Webinar 6:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial/w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial/w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial/wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial/script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial/data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial/data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -57,6 +54,8 @@
 <li class="toctree-l1"><a class="reference internal" href="tutorial/idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 
         </div>
@@ -92,7 +91,11 @@ computations on a Docker instance.</p>
 <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="pages/about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pages/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pages/installation.html#install-docker">Install Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pages/installation.html#download-tutorial">Download Tutorial</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial/w1_overview.html">Webinar 1: Tutorial Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/w1_overview.html#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/w1_overview.html#preparation">Preparation</a></li>
@@ -128,32 +131,8 @@ computations on a Docker instance.</p>
 <li class="toctree-l1"><a class="reference internal" href="tutorial/w6_create_sdms.html">Webinar 6:</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/w6_create_sdms.html#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/w6_create_sdms.html#data-preparation">Data Preparation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w6_create_sdms.html#run-tutorial-with-a-list-and-a-directory-containing-occurrence-data-files">Run tutorial with a list and a directory containing occurrence data files.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/w6_create_sdms.html#run-tutorial">Run tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/w6_create_sdms.html#output">Output</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial/w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w7_build_pam.html#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w7_build_pam.html#step-1-build-a-grid-to-analyze-a-group-of-multi-species-dataset">Step 1: Build a grid to analyze a group of multi-species dataset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w7_build_pam.html#step-2-encode-species-layers-into-a-pam-defined-by-grid-for-multi-species-analysis">Step 2: Encode species layers into a PAM (defined by grid) for multi-species analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w7_build_pam.html#step-3-calculate-statistics-for-a-pam">Step 3: Calculate statistics for a PAM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w7_build_pam.html#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w7_build_pam.html#id3">Output</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial/w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w8_phylo_diversity.html#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w8_phylo_diversity.html#step-1-cleanup-the-matrix">Step 1: Cleanup the matrix</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w8_phylo_diversity.html#run-tutorial">Run tutorial</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w8_phylo_diversity.html#output">Output</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w8_phylo_diversity.html#step-2-calculate-stats-with-the-updated-pam-and-associated-tree">Step 2: Calculate stats with the updated PAM and associated Tree</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w8_phylo_diversity.html#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/w8_phylo_diversity.html#id2">Output</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial/wrangle_species_list.html">Species List: Wrangling</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/wrangle_species_list.html#wrangler-configuration-file">Wrangler configuration file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/wrangle_species_list.html#species-list-wrangler-types">Species List Wrangler Types</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial/script_params.html">Script parameters file</a></li>
@@ -175,9 +154,16 @@ computations on a Docker instance.</p>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/data_wrangle_tree.html#tree-data-wrangler-types">Tree Data Wrangler Types</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial/idigbio_download.html">Download occurrence data from iDigBio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/idigbio_download.html">Download occurrence data from iDigBio</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/idigbio_download.html#request-data">Request data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/idigbio_download.html#determine-download-readiness">Determine download readiness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/idigbio_download.html#download-data">Download data</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pages/spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 </div>
 </section>

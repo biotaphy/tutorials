@@ -1,6 +1,8 @@
-# Webinar 6: 
+==================================
+Webinar 6:
+==================================
 
-**Webinar 5**, [Species Distribution Modeling](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.cny714hbiydb)
+[Species Distribution Modeling](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.cny714hbiydb)
 (Part 1, Creation).  Create one or more Species Distribution Models using Maxent for 
 occurrence data with the minimum number of points defined in the configuration file or  
 the `Rare Species Model` algorithm for data without the required minimum number of 
@@ -8,12 +10,16 @@ points.  The Rare Species Model intersects the convex hull of the points
 with a raster denoting ecoregions.  For all species data using Maxent, the tool uses the
 Maxent parameters indicated in the configuration file.  
 
-## Introduction
+-----------------------------------
+Introduction
+-----------------------------------
 
-Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all
+Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
 tutorials work.
 
-## Data Preparation
+-----------------------------------
+Data Preparation
+-----------------------------------
 
 ### Input: occurrence records
 
@@ -75,17 +81,21 @@ These are the required and optional parameters:
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
 
-## Run tutorial with a list and a directory containing occurrence data files.
+-----------------------------------
+Run tutorial
+-----------------------------------
+
+with a list and a directory containing occurrence data files.
 
 Initiate the create_sdm process with the following:
 
-for linux/mac systems
+.. code-block::
+      ./run_tutorial.sh create_sdm data/config/create_sdm.json
 
-```zsh
-./run_tutorial.sh create_sdm data/config/create_sdm.json
-```
 
-## Output
+-----------------------------------
+Output
+-----------------------------------
 
 Most outputs are configured in the script parameter file, and may include:
 

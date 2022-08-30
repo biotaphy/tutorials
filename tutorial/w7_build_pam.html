@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>&lt;no title&gt; &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -20,7 +20,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data" href="w8_phylo_diversity.html" />
+    <link rel="next" title="&lt;no title&gt;" href="w8_phylo_diversity.html" />
     <link rel="prev" title="Webinar 6:" href="w6_create_sdms.html" /> 
 </head>
 
@@ -40,7 +40,7 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
@@ -48,30 +48,6 @@
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6:</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step-1-build-a-grid-to-analyze-a-group-of-multi-species-dataset">Step 1: Build a grid to analyze a group of multi-species dataset</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#data-preparation-script-parameter-file">Data preparation: Script parameter file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#run-build-grid-command">Run build_grid command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#step-2-encode-species-layers-into-a-pam-defined-by-grid-for-multi-species-analysis">Step 2: Encode species layers into a PAM (defined by grid) for multi-species analysis</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#data-preparation-layers">Data preparation: Layers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Data preparation: Script parameter file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#run-encode-layers-command">Run encode_layers command</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#step-3-calculate-statistics-for-a-pam">Step 3: Calculate statistics for a PAM</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Data preparation: Script parameter file</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">Output</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -79,6 +55,8 @@
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 
         </div>
@@ -95,9 +73,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</li>
+      <li>&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/w7_build_pam.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w7_build_pam.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -105,20 +83,18 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="webinar-7-introducing-presence-absence-matrices-pams-for-large-scale-analyses">
-<h1>Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses<a class="headerlink" href="#webinar-7-introducing-presence-absence-matrices-pams-for-large-scale-analyses" title="Permalink to this heading"></a></h1>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
+  <p># Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</p>
+<p>## Introduction</p>
+<p>Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
 tutorials work.</p>
 <p>Build grid creates a geospatial grid, in vector format.  The grid is used for defining
 cells (or “sites”) as polygons.  These sites, or polygonal cells, can then be
 intersected with other geospatial data layers, in order to generalize the values in a
 layer to a single value per site.  When we intersect many data layers with the same
 grid, we can create a matrix of layers by sites, and compute statistics on these values.</p>
-<p>A grid defines the geographic extent for a term:<code class="docutils literal notranslate"><span class="pre">PAM</span></code> or other biogeographic matrix,
-used for multi-species analyses. A grid is represented by term:<code class="docutils literal notranslate"><span class="pre">Polygon</span></code>s in a
-term:<code class="docutils literal notranslate"><span class="pre">Vector</span></code> dataset, and written in shapefile format.</p>
+<p>A grid defines the geographic extent for a term:<cite>PAM</cite> or other biogeographic matrix,
+used for multi-species analyses. A grid is represented by term:<cite>Polygon`s in a
+term:`Vector</cite> dataset, and written in shapefile format.</p>
 <p>In a biogeograpic matrix, such as a Presence-Absence Matrix, or PAM, data layers are
 intersected with a geospatial grid to produce a two-dimensional (longitude/x and
 latitude/y) Matrix for each layer.  Each 2-D matrix is converted into a 1-D matrix -
@@ -127,13 +103,10 @@ the grid cell.  Each row, identified by the y axis, represent a site.  In the ma
 this is considered the “0” axis.  Each column, identified by the x axis, represents
 the species presence or absence in each site.  In the matrix, this is considered the
 “1” axis.</p>
-</section>
-<section id="step-1-build-a-grid-to-analyze-a-group-of-multi-species-dataset">
-<h2>Step 1: Build a grid to analyze a group of multi-species dataset<a class="headerlink" href="#step-1-build-a-grid-to-analyze-a-group-of-multi-species-dataset" title="Permalink to this heading"></a></h2>
-<section id="data-preparation-script-parameter-file">
-<h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
+<p>## Step 1: Build a grid to analyze a group of multi-species dataset</p>
+<p>### Data preparation: Script parameter file</p>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
-is <a class="reference download internal" download="" href="../_downloads/b6b84e6e1a7857ec2485cc018039f172/build_grid.json"><span class="xref download myst">build_grid.json</span></a>. These are the required and
+is [build_grid.json](../../data/config/build_grid.json). These are the required and
 optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -147,67 +120,58 @@ optional parameters:</p>
 <li><p><strong>epsg</strong>: The EPSG code for the new grid.</p></li>
 </ul>
 </li>
-<li><p>Optional</p>
-<ul>
-<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
-<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
-<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+<li><p>Optional
+* <strong>log_filename</strong>: Output filename to write logging data
+* <strong>log_console</strong>: ‘true’ to write log to console
+* <strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
 </ul>
-</li>
-</ul>
-</section>
-<section id="run-build-grid-command">
-<h3>Run build_grid command<a class="headerlink" href="#run-build-grid-command" title="Permalink to this heading"></a></h3>
+<p>### Run build_grid command</p>
 <p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh build_grid data/input/build_grid.json
-</pre></div>
-</div>
-</section>
-<section id="output">
-<h3>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">`zsh</span>
+<span class="pre">./run_tutorial.sh</span> <span class="pre">build_grid</span> <span class="pre">data/input/build_grid.json</span>
+<span class="pre">`</span></code></p>
+<p>### Output</p>
 <p>The build_grid tool outputs a grid in shapefile format, conforming to the arguments
 specified in the configuration JSON file.</p>
-</section>
-</section>
-<section id="step-2-encode-species-layers-into-a-pam-defined-by-grid-for-multi-species-analysis">
-<h2>Step 2: Encode species layers into a PAM (defined by grid) for multi-species analysis<a class="headerlink" href="#step-2-encode-species-layers-into-a-pam-defined-by-grid-for-multi-species-analysis" title="Permalink to this heading"></a></h2>
-<section id="data-preparation-layers">
-<h3>Data preparation: Layers<a class="headerlink" href="#data-preparation-layers" title="Permalink to this heading"></a></h3>
-<p>Layers are specified in the Script parameter file, described fully in the next section.<br />
-Each layer of a PAM represents the presence or absence of a taxon in the analysis.<br />
+<p>## Step 2: Encode species layers into a PAM (defined by grid) for multi-species analysis</p>
+<p>### Data preparation: Layers</p>
+<p>Layers are specified in the Script parameter file, described fully in the next section.
+Each layer of a PAM represents the presence or absence of a taxon in the analysis.
 Presence or absence is calculated with the min_coverage, min_presence, and  max_presence
 parameters also detailed in the Script parameter file.  If you define different values
 for computing different layers, you can create a matrix from each set of layers that
-share parameters (each matrix created with the same command, called with a different<br />
+share parameters (each matrix created with the same command, called with a different
 configuration file), then aggregate the matrices in another step.</p>
-</section>
-<section id="id1">
-<h3>Data preparation: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<p>### Data preparation: Script parameter file</p>
 <p>An example json file for running the encode_layers tutorial is at
-<a class="reference download internal" download="" href="../_downloads/e4f97b642e45b6ecac662cecd5883712/encode_layers.json"><span class="xref download myst">encode_layers.json</span></a>. These are the required
+[encode_layers.json](../../data/config/encode_layers.json). These are the required
 and optional parameters:</p>
-<ul class="simple">
-<li><p>Required:</p>
 <ul>
-<li><p><strong>grid_filename</strong>: Relative path to shapegrid to use for site geometries</p></li>
-<li><p><strong>out_matrix_filename</strong>: Relative path to write the encoded matrix</p></li>
-<li><p><strong>encode_method</strong>: The only valid option for creating a PAM is “presence_absence”.<br />
-Other options “biogeo”, “largest_class”, “mean_value”, are used for a different
-types of matrices and operations.</p></li>
-</ul>
+<li><p>Required:
+* <strong>grid_filename</strong>: Relative path to shapegrid to use for site geometries
+* <strong>out_matrix_filename</strong>: Relative path to write the encoded matrix
+* <strong>encode_method</strong>: The only valid option for creating a PAM is “presence_absence”.</p>
+<blockquote>
+<div><p>Other options “biogeo”, “largest_class”, “mean_value”, are used for a different
+types of matrices and operations.</p>
+</div></blockquote>
 </li>
-<li><p>Optional</p>
+<li><p>Optional
+* <strong>min_coverage</strong>: Minimum percentage of a cell that has to be covered to encode it
+* <strong>min_presence</strong>: Minimum value to be considered present when encoding presence</p>
+<blockquote>
+<div><p>absence</p>
+</div></blockquote>
 <ul>
-<li><p><strong>min_coverage</strong>: Minimum percentage of a cell that has to be covered to encode it</p></li>
-<li><p><strong>min_presence</strong>: Minimum value to be considered present when encoding presence
-absence</p></li>
 <li><p><strong>max_presence</strong>: Maximum value to be considered present</p></li>
-<li><p><strong>layer</strong>: list of a</p>
-<ul>
-<li><p>layer filename</p></li>
-<li><p>(optional) label for the encoded layer in the output matrix. Defaults to file
-basename</p></li>
+<li><p><strong>layer</strong>: list of a
+* layer filename
+* (optional) label for the encoded layer in the output matrix. Defaults to file</p>
+<blockquote>
+<div><p>basename</p>
+</div></blockquote>
+<ul class="simple">
 <li><p>(optional) attribute</p></li>
 </ul>
 </li>
@@ -217,89 +181,82 @@ basename</p></li>
 </ul>
 </li>
 </ul>
-</section>
-<section id="run-encode-layers-command">
-<h3>Run encode_layers command<a class="headerlink" href="#run-encode-layers-command" title="Permalink to this heading"></a></h3>
+<p>### Run encode_layers command</p>
 <p>Initiate the clean occurrences process with the following for linux/mac systems:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh encode_layers data/config/encode_layers.json
-</pre></div>
-</div>
+<p><code class="docutils literal notranslate"><span class="pre">`zsh</span>
+<span class="pre">bash</span> <span class="pre">run_tutorial.sh</span> <span class="pre">encode_layers</span> <span class="pre">data/config/encode_layers.json</span>
+<span class="pre">`</span></code></p>
 <p><strong>Note</strong>: You may get the following warning.  This indicates that there is a window with no
 values, a common occurrence in most datasets, and may be safely ignored.</p>
-<div class="highlight-commandline notranslate"><div class="highlight"><pre><span></span>RuntimeWarning: Mean of empty slice
-  window_mean = np.nanmean(window[np.where(window != nodata)])
-</pre></div>
-</div>
-</section>
-</section>
-<section id="step-3-calculate-statistics-for-a-pam">
-<h2>Step 3: Calculate statistics for a PAM<a class="headerlink" href="#step-3-calculate-statistics-for-a-pam" title="Permalink to this heading"></a></h2>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>commandline
+RuntimeWarning: Mean of empty slice</p>
+<blockquote>
+<div><p>window_mean = np.nanmean(window[np.where(window != nodata)])</p>
+</div></blockquote>
+<p><a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
+<p>## Step 3: Calculate statistics for a PAM</p>
 <p>Now that a grid has been built, and a PAM has been populated by intersecting species
 distribution models with the grid, we calculate biogeographic statistics on that PAM.</p>
-<section id="id2">
-<h3>Data preparation: Script parameter file<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<p>### Data preparation: Script parameter file</p>
 <p>An example JSON file for running the calculate_pam_stats command is at
-<a class="reference download internal" download="" href="../_downloads/6f14d9401b6b4b2f0ee0cd89d209e809/calculate_pam_stats.json"><span class="xref download myst">calculate_pam_stats</span></a>. These are the
+[calculate_pam_stats](../../data/config/calculate_pam_stats.json). These are the
 required and optional parameters:</p>
+<ul>
+<li><p>Required:
+* <strong>pam_filename</strong>: The full filename to the input PAM file.</p></li>
+<li><p>Optional
+* <strong>log_filename</strong>: Output filename to write logging data
+* <strong>log_console</strong>: ‘true’ to write log to console
+* <strong>report_filename</strong>: output filename with data modifications made by wranglers
+* <strong>covariance_matrix</strong>: The full filename for writing the covariance matrix.
+* <strong>diversity_matrix</strong>: The full filename for writing the diversity matrix.
+* <strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.
+* <strong>species_stats_matrix</strong>: The full filename for writing the species statistics</p>
+<blockquote>
+<div><p>matrix.</p>
+</div></blockquote>
 <ul class="simple">
-<li><p>Required:</p>
-<ul>
-<li><p><strong>pam_filename</strong>: The full filename to the input PAM file.</p></li>
-</ul>
-</li>
-<li><p>Optional</p>
-<ul>
-<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
-<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
-<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
-<li><p><strong>covariance_matrix</strong>: The full filename for writing the covariance matrix.</p></li>
-<li><p><strong>diversity_matrix</strong>: The full filename for writing the diversity matrix.</p></li>
-<li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
-<li><p><strong>species_stats_matrix</strong>: The full filename for writing the species statistics
-matrix.</p></li>
 <li><p><strong>tree_filename</strong>: The full filename to an input tree in Nexus format.</p></li>
 <li><p><strong>tree_matrix</strong>: The full filename to an input tree encoded as a matrix.</p></li>
 </ul>
 </li>
 </ul>
-</section>
-</section>
-<section id="run-calculate-pam-stats-command">
-<h2>Run calculate_pam_stats command<a class="headerlink" href="#run-calculate-pam-stats-command" title="Permalink to this heading"></a></h2>
+<p>## Run calculate_pam_stats command</p>
 <p>Initiate the calculate_pam_stats process with the following:</p>
 <p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>bash run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
-</pre></div>
-</div>
-</section>
-<section id="id3">
-<h2>Output<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">`zsh</span>
+<span class="pre">bash</span> <span class="pre">run_tutorial.sh</span> <span class="pre">calculate_pam_stats</span> <span class="pre">data/config/calculate_pam_stats.json</span>
+<span class="pre">`</span></code></p>
+<p>## Output</p>
 <p>The calculate_pam_stats tool outputs computes various statistics, depending on the
 output files specified in the command configuration file.  Outputs may include:</p>
 <ol class="arabic simple">
 <li><p>A “report_filename” named in the script parameter file, a summary of point
 manipulations by each wrangler will be written to this file.</p></li>
 <li><p>A “log_filename” named in the script parameter file, that will be created.</p></li>
-<li><p>A “log_console” named in the script parameter file, logs will be written to the
-command prompt during execution.</p></li>
+<li><dl class="simple">
+<dt>A “log_console” named in the script parameter file, logs will be written to the</dt><dd><p>command prompt during execution.</p>
+</dd>
+</dl>
+</li>
 <li><p>One or more “covariance_matrix” files.  Each covariance statistic produces a matrix
 and it is written to the covariance_matrix filename, where the statistic name is
 appended to the end of the base file name.</p></li>
 <li><p>A “diversity_matrix” containing different diversity statistics</p></li>
 </ol>
-<ul class="simple">
+<blockquote>
+<div><ul class="simple">
 <li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
-<li><p>**species_stats_matrix</p></li>
+<li><p><a href="#id9"><span class="problematic" id="id10">**</span></a>species_stats_matrix</p></li>
 </ul>
-</section>
-</section>
+</div></blockquote>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="w6_create_sdms.html" class="btn btn-neutral float-left" title="Webinar 6:" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="w8_phylo_diversity.html" class="btn btn-neutral float-right" title="Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="w8_phylo_diversity.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

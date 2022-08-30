@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Species List: Wrangling &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>&lt;no title&gt; &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -21,7 +21,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Script parameters file" href="script_params.html" />
-    <link rel="prev" title="Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data" href="w8_phylo_diversity.html" /> 
+    <link rel="prev" title="&lt;no title&gt;" href="w8_phylo_diversity.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,7 +40,7 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
@@ -48,20 +48,6 @@
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Species List: Wrangling</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#wrangler-configuration-file">Wrangler configuration file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#species-list-wrangler-types">Species List Wrangler Types</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#acceptednamespecieslistwrangler">AcceptedNameSpeciesListWrangler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#intersectionspecieslistwrangler">IntersectionSpeciesListWrangler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#matchmatrixspecieslistwrangler">MatchMatrixSpeciesListWrangler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#matchtreespecieslistwrangler">MatchTreeSpeciesListWrangler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#unionspecieslistwrangler">UnionSpeciesListWrangler</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -69,6 +55,8 @@
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 
         </div>
@@ -85,9 +73,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Species List: Wrangling</li>
+      <li>&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/wrangle_species_list.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/wrangle_species_list.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -95,15 +83,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="species-list-wrangling">
-<h1>Species List: Wrangling<a class="headerlink" href="#species-list-wrangling" title="Permalink to this heading"></a></h1>
+  <p># Species List: Wrangling</p>
 <p>When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.</p>
-<p>Currently, wrangler_type names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in
+<p>Currently, wrangler_type names correspond to the wrangler class <cite>name</cite> attribute in
 this module’s files.  Each wrangler’s parameters correspond to the constructor
 arguments for that wrangler.</p>
-<section id="wrangler-configuration-file">
-<h2>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading"></a></h2>
+<p>## Wrangler configuration file</p>
 <p>A file specifying 0 or more wranglers to apply to the species list, and options
 specific to each.  Configuration files:</p>
 <ul class="simple">
@@ -112,11 +98,8 @@ specific to each.  Configuration files:</p>
 <li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler type.</p></li>
 <li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
 </ul>
-</section>
-<section id="species-list-wrangler-types">
-<h2>Species List Wrangler Types<a class="headerlink" href="#species-list-wrangler-types" title="Permalink to this heading"></a></h2>
-<section id="acceptednamespecieslistwrangler">
-<h3>AcceptedNameSpeciesListWrangler<a class="headerlink" href="#acceptednamespecieslistwrangler" title="Permalink to this heading"></a></h3>
+<p>## Species List Wrangler Types</p>
+<p>### AcceptedNameSpeciesListWrangler</p>
 <ul class="simple">
 <li><p>optional</p>
 <ul>
@@ -135,9 +118,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </li>
 </ul>
-</section>
-<section id="intersectionspecieslistwrangler">
-<h3>IntersectionSpeciesListWrangler<a class="headerlink" href="#intersectionspecieslistwrangler" title="Permalink to this heading"></a></h3>
+<p>### IntersectionSpeciesListWrangler</p>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -145,9 +126,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </li>
 </ul>
-</section>
-<section id="matchmatrixspecieslistwrangler">
-<h3>MatchMatrixSpeciesListWrangler<a class="headerlink" href="#matchmatrixspecieslistwrangler" title="Permalink to this heading"></a></h3>
+<p>### MatchMatrixSpeciesListWrangler</p>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -155,9 +134,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </li>
 </ul>
-</section>
-<section id="matchtreespecieslistwrangler">
-<h3>MatchTreeSpeciesListWrangler<a class="headerlink" href="#matchtreespecieslistwrangler" title="Permalink to this heading"></a></h3>
+<p>### MatchTreeSpeciesListWrangler</p>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -165,9 +142,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </li>
 </ul>
-</section>
-<section id="unionspecieslistwrangler">
-<h3>UnionSpeciesListWrangler<a class="headerlink" href="#unionspecieslistwrangler" title="Permalink to this heading"></a></h3>
+<p>### UnionSpeciesListWrangler</p>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -175,15 +150,12 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </li>
 </ul>
-</section>
-</section>
-</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="w8_phylo_diversity.html" class="btn btn-neutral float-left" title="Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="w8_phylo_diversity.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="script_params.html" class="btn btn-neutral float-right" title="Script parameters file" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

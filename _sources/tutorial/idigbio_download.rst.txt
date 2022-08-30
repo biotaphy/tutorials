@@ -1,5 +1,10 @@
-# Download occurrence data from iDigBio
+#######################################
+Download occurrence data from iDigBio
+#######################################
 
+===============================
+Request data
+===============================
 To download from iDigBio, full instructions are at the
 [Download API reference](https://www.idigbio.org/wiki/index.php/IDigBio_Download_API).
 
@@ -31,6 +36,9 @@ astewart@murderbot:~/git/tutorials$ {
 }
 ```
 
+===============================
+Determine download readiness
+===============================
 Then use `curl` on the resulting **status_url** field:
 
 ```zsh
@@ -82,6 +90,9 @@ $ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
 }
 ```
 
+===============================
+Download data
+===============================
 Save the response into a file with the `wget` command and the **download_url** field:
 
 ```zsh

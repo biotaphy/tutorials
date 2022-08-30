@@ -1,7 +1,10 @@
-# Trees: Data and Wrangling
+=========================
+Trees: Data and Wrangling
+=========================
 
-## Tree Data
-
+------------------
+Tree Data
+------------------
 Trees may be created by the user, downloaded from one of various sources, or output by
 another Biotaphy process.  Trees must be in Nexus or Newick format.  The tutorial
 example tree is
@@ -11,7 +14,9 @@ To download a tree from [OpenTree of Life](https://tree.opentreeoflife.org/), fi
 the desired tree, then choose **Download subtree as Newick string** in the upper,
 rightmost panel.
 
-## Wrangler configuration file
+----------------------------
+Wrangler configuration file
+----------------------------
 
 A file specifying 0 or more wranglers to apply to the tree data, and options
 specific to each.  Configuration files:
@@ -21,7 +26,9 @@ specific to each.  Configuration files:
 * Each dictionary must contain "wrangler_type", with the name of the wrangler type.
 * The dictionary will also contain all required parameters and any optional parameters.
 
-## Tree Data Wrangler Types
+----------------------------
+Tree Data Wrangler Types
+----------------------------
 
 When running wranglers on a tree, wranglers are applied in the order
 that they are listed in the wrangler config file.
@@ -30,7 +37,8 @@ Currently, wrangler_type names correspond to the wrangler class `name` attribute
 this module's files.  Each wrangler's parameters correspond to the constructor
 arguments for that wrangler.
 
-### AcceptedNameTreeWrangler
+AcceptedNameTreeWrangler
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * optional
 
@@ -48,7 +56,8 @@ arguments for that wrangler.
   * out_map_format (str): Type of file format for out_map_filename, defaults to "json".
   * purge_failures (bool): Should failures be purged from the tree.
 
-### MatchMatrixTreeWrangler
+MatchMatrixTreeWrangler
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * required
 
@@ -57,13 +66,15 @@ arguments for that wrangler.
     Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
     (rows/y axis), and species in the 1 axis (columns/x axis)
 
-### MatchSpeciesListTreeWrangler
+MatchSpeciesListTreeWrangler
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * required
 
   * species_list (str): Input file containing a species list to match
 
-### SubsetTreeWrangler
+SubsetTreeWrangler
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * required
 

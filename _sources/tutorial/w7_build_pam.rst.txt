@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all
+Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
 tutorials work.
 
 Build grid creates a geospatial grid, in vector format.  The grid is used for defining

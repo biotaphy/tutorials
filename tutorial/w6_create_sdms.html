@@ -20,7 +20,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses" href="w7_build_pam.html" />
+    <link rel="next" title="&lt;no title&gt;" href="w7_build_pam.html" />
     <link rel="prev" title="Webinar 5: Split and merge occurrence data by species" href="w5_split_occurrence_data.html" /> 
 </head>
 
@@ -49,19 +49,11 @@
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 6:</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data Preparation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#input-occurrence-records">Input: occurrence records</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#input-ecoregions-file">Input: ecoregions file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#run-tutorial-with-a-list-and-a-directory-containing-occurrence-data-files">Run tutorial with a list and a directory containing occurrence data files.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-tutorial">Run tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -69,6 +61,8 @@
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 
         </div>
@@ -87,7 +81,7 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Webinar 6:</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/w6_create_sdms.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w6_create_sdms.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -97,38 +91,33 @@
              
   <section id="webinar-6">
 <h1>Webinar 6:<a class="headerlink" href="#webinar-6" title="Permalink to this heading"></a></h1>
-<p><strong>Webinar 5</strong>, <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.cny714hbiydb">Species Distribution Modeling</a>
+<p>[Species Distribution Modeling](<a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.cny714hbiydb">https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.cny714hbiydb</a>)
 (Part 1, Creation).  Create one or more Species Distribution Models using Maxent for
-occurrence data with the minimum number of points defined in the configuration file or<br />
-the <code class="docutils literal notranslate"><span class="pre">Rare</span> <span class="pre">Species</span> <span class="pre">Model</span></code> algorithm for data without the required minimum number of
+occurrence data with the minimum number of points defined in the configuration file or
+the <cite>Rare Species Model</cite> algorithm for data without the required minimum number of
 points.  The Rare Species Model intersects the convex hull of the points
 with a raster denoting ecoregions.  For all species data using Maxent, the tool uses the
 Maxent parameters indicated in the configuration file.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
+<p>Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
 tutorials work.</p>
 </section>
 <section id="data-preparation">
 <h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>
-<section id="input-occurrence-records">
-<h3>Input: occurrence records<a class="headerlink" href="#input-occurrence-records" title="Permalink to this heading"></a></h3>
-<p>The create_sdm tool accepts one or more occurrence CSV datasets, defined in two ways in<br />
-the configuration file: either specified by a parent directory in the <code class="docutils literal notranslate"><span class="pre">points_dir</span></code>
-parameter, and/or a list of individual files in the <code class="docutils literal notranslate"><span class="pre">points_layer</span></code> parameter.  Each of
+<p>### Input: occurrence records</p>
+<p>The create_sdm tool accepts one or more occurrence CSV datasets, defined in two ways in
+the configuration file: either specified by a parent directory in the <cite>points_dir</cite>
+parameter, and/or a list of individual files in the <cite>points_layer</cite> parameter.  Each of
 the occurrence datasets must use the same species_key, x_key, and y_key, specified in
 the configuration file.</p>
 <p>More information is in the <strong>Occurrence Data</strong> section of
-<a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">data_wrangle_occurrence</span></a>.</p>
-</section>
-<section id="input-ecoregions-file">
-<h3>Input: ecoregions file<a class="headerlink" href="#input-ecoregions-file" title="Permalink to this heading"></a></h3>
+[data_wrangle_occurrence](data_wrangle_occurrence.md).</p>
+<p>### Input: ecoregions file</p>
 <p>The ecoregions file is a raster file indicating broad ecoregions for the</p>
-</section>
-<section id="input-script-parameter-file">
-<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
+<p>### Input: Script parameter file</p>
 <p>A JSON parameter file is required for this command.  A test tutorial parameter file is:
-<a class="reference download internal" download="" href="../_downloads/790f3b2d107374e0c859255372f0a0ee/create_sdm.json"><span class="xref download myst">create_sdm.json</span></a>,</p>
+[create_sdm.json](../../data/config/create_sdm.json),</p>
 <p>These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -145,26 +134,29 @@ regions to be used for modeling rare species or as a mask for the Maxent algorit
 <ul>
 <li><p><strong>points_dir</strong>: Parent directory containing occurrence data in CSV format.  The tool
 will attempt to model all CSV files in this directory.  Though this parameter is
-optional, one or both of <code class="docutils literal notranslate"><span class="pre">points_dir</span></code> and <code class="docutils literal notranslate"><span class="pre">points_layer</span></code> must be included.</p></li>
+optional, one or both of <cite>points_dir</cite> and <cite>points_layer</cite> must be included.</p></li>
 <li><p><strong>points_layer</strong>: List of filenames containing occurrence data in CSV format.
-Though this parameter is optional, one or both of <code class="docutils literal notranslate"><span class="pre">points_dir</span></code> and <code class="docutils literal notranslate"><span class="pre">points_layer</span></code> must
+Though this parameter is optional, one or both of <cite>points_dir</cite> and <cite>points_layer</cite> must
 be included.</p></li>
 <li><p><strong>species_key</strong>: The field name of the column containing the taxon value in all
 occurrence data files. If this parameter is not specified, it will default to
-<code class="docutils literal notranslate"><span class="pre">species_name</span></code> (which is also the default value created in CSV data output from
+<cite>species_name</cite> (which is also the default value created in CSV data output from
 split_occurrence_data and wrangle_occurrences).</p></li>
 <li><p><strong>x_key</strong>: The field name of the column containing the x/longitude value in all
 occurrence data files. If this parameter is not specified, it will default to
-<code class="docutils literal notranslate"><span class="pre">x</span></code> (which is also the default value created in CSV data output from
+<cite>x</cite> (which is also the default value created in CSV data output from
 split_occurrence_data and wrangle_occurrences).</p></li>
 <li><p><strong>y_key</strong>: The field name of the column containing the y/latitude value in all
 occurrence data files. If this parameter is not specified, it will default to
-<code class="docutils literal notranslate"><span class="pre">y</span></code> (which is also the default value created in CSV data output from
+<cite>y</cite> (which is also the default value created in CSV data output from
 split_occurrence_data and wrangle_occurrences).</p></li>
 <li><p><strong>maxent_params</strong>: Extra options and parameters to be sent to Maxent.</p></li>
-<li><p><strong>min_points</strong>: Minimum number of points in an occurrence dataset for Maxent to be
-used for modeling to.  If the data contains less than the minimum, the
-<code class="docutils literal notranslate"><span class="pre">Rare</span> <span class="pre">Species</span> <span class="pre">Modeling</span></code> algorithm will be used.</p></li>
+<li><dl class="simple">
+<dt><strong>min_points</strong>: Minimum number of points in an occurrence dataset for Maxent to be</dt><dd><p>used for modeling to.  If the data contains less than the minimum, the
+<cite>Rare Species Modeling</cite> algorithm will be used.</p>
+</dd>
+</dl>
+</li>
 <li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
 <li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
 <li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
@@ -172,27 +164,26 @@ used for modeling to.  If the data contains less than the minimum, the
 </li>
 </ul>
 </section>
-</section>
-<section id="run-tutorial-with-a-list-and-a-directory-containing-occurrence-data-files">
-<h2>Run tutorial with a list and a directory containing occurrence data files.<a class="headerlink" href="#run-tutorial-with-a-list-and-a-directory-containing-occurrence-data-files" title="Permalink to this heading"></a></h2>
+<section id="run-tutorial">
+<h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
+<p>with a list and a directory containing occurrence data files.</p>
 <p>Initiate the create_sdm process with the following:</p>
-<p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh create_sdm data/config/create_sdm.json
-</pre></div>
-</div>
 </section>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
 <p>Most outputs are configured in the script parameter file, and may include:</p>
 <ol class="arabic simple">
-<li><p>**If “report_filename” is specified in the script parameter file, a summary of point
+<li><p><a href="#id1"><span class="problematic" id="id2">**</span></a>If “report_filename” is specified in the script parameter file, a summary of point
 manipulations by each wrangler will be written to this file.</p></li>
 <li><p>If “log_filename” is specified in the script parameter file, that will be created.</p></li>
-<li><p>If “log_console” is specified in the script parameter file, logs will be written to the
-command prompt during execution.</p></li>
+<li><dl class="simple">
+<dt>If “log_console” is specified in the script parameter file, logs will be written to the</dt><dd><p>command prompt during execution.</p>
+</dd>
+</dl>
+</li>
 <li><p>A directory named in the out_dir parameter, containing a subdirectory for each
 input occurrence data file.  Each subdirectory will be named by the value in
-the grouping field and contain a predicted distribution raster in ASCII format.<br />
+the grouping field and contain a predicted distribution raster in ASCII format.
 Occurrence data that were modeled with Maxent will also contain Maxent outputs.</p></li>
 </ol>
 </section>
@@ -203,7 +194,7 @@ Occurrence data that were modeled with Maxent will also contain Maxent outputs.<
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="w5_split_occurrence_data.html" class="btn btn-neutral float-left" title="Webinar 5: Split and merge occurrence data by species" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="w7_build_pam.html" class="btn btn-neutral float-right" title="Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="w7_build_pam.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

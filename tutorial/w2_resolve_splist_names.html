@@ -47,9 +47,11 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 2: Resolve taxonomy for a list</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data preparation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#input-species-list">Input: species list</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#input-wrangler-configuration-file">Input: Wrangler configuration file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-species-list">Input: species list</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#input-wrangler-configuration-file">Input: Wrangler configuration file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#hands-on-run-tutorial-with-gbif-service">Hands-on: Run tutorial with ‘gbif’ service</a></li>
@@ -59,9 +61,6 @@
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -69,6 +68,8 @@
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 
         </div>
@@ -87,7 +88,7 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Webinar 2: Resolve taxonomy for a list</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/w2_resolve_splist_names.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w2_resolve_splist_names.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -97,12 +98,11 @@
              
   <section id="webinar-2-resolve-taxonomy-for-a-list">
 <h1>Webinar 2: Resolve taxonomy for a list<a class="headerlink" href="#webinar-2-resolve-taxonomy-for-a-list" title="Permalink to this heading"></a></h1>
-<p><strong>Webinar #2</strong>
-<a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l">Resolving Nomenclature</a>
+<p>[Resolving Nomenclature](<a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l">https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l</a>)
 Create an updated/accepted species list and name-map (original_name –&gt; accepted_name).</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
+<p>Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
 tutorials work.</p>
 </section>
 <section id="data-preparation">
@@ -112,37 +112,36 @@ tutorials work.</p>
 <p>Use an existing or prepare a new species list, a text file with one name per line.  This
 file is specified in the script parameter file described below.</p>
 <ol class="arabic simple">
-<li><p>The tutorial example species list is <a class="reference download internal" download="" href="../_downloads/d4078f4049c6ac84c207522c50c940c4/heuchera.txt"><span class="xref download myst">heuchera.txt</span></a>.</p></li>
+<li><p>The tutorial example species list is [heuchera.txt](../../data/input/heuchera.txt).</p></li>
 <li><p>Some resources:</p>
 <ol class="arabic simple">
-<li><p><a class="reference external" href="http://www.worldfloraonline.org/">World Flora Online, WFO</a></p></li>
+<li><p>[World Flora Online, WFO](<a class="reference external" href="http://www.worldfloraonline.org/">http://www.worldfloraonline.org/</a>)</p></li>
 <li><p>Query GBIF, i.e.
-<a class="reference external" href="https://www.gbif.org/species/search?q=heuchera&amp;rank=SPECIES&amp;qField=SCIENTIFIC">heuchera query</a></p></li>
+[heuchera query](<a class="reference external" href="https://www.gbif.org/species/search?q=heuchera&amp;rank=SPECIES&amp;qField=SCIENTIFIC">https://www.gbif.org/species/search?q=heuchera&amp;rank=SPECIES&amp;qField=SCIENTIFIC</a>)</p></li>
 </ol>
 </li>
 </ol>
-</section>
 <section id="input-wrangler-configuration-file">
-<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
+<h4>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h4>
 <p>A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
-optional parameters for each are <a class="reference internal" href="wrangle_species_list.html"><span class="doc std std-doc">here</span></a>.</p>
+optional parameters for each are [here](wrangle_species_list.md).</p>
 </section>
 <section id="input-script-parameter-file">
-<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
+<h4>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h4>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
-is <a class="reference download internal" download="" href="../_downloads/77189285b6061072a2794e532b25c32c/wrangle_species_list_gbif.json"><span class="xref download myst">wrangle_species_list_gbif.json</span></a>.
+is [wrangle_species_list_gbif.json](../../data/config/wrangle_species_list_gbif.json).
 These are the required and optional parameters:</p>
 <p>Required:</p>
 <ul class="simple">
 <li><p><strong>in_species_list_filename</strong>: Input filename containing species list, described
 in the section above.  The tutorial example species list is
-<a class="reference download internal" download="" href="../_downloads/d4078f4049c6ac84c207522c50c940c4/heuchera.txt"><span class="xref download myst">heuchera.txt</span></a>.</p></li>
+[heuchera.txt](../../data/input/heuchera.txt).</p></li>
 <li><p><strong>wrangler_configuration_file</strong>: species list wrangler configuration file,
 described in the previous input section.  The tutorial example wrangler
 configuration contains one wrangler, the AcceptedNameSpeciesListWrangler, and
-is in <a class="reference download internal" download="" href="../_downloads/07a0ced1602025d50f0eb4ef1ff1475c/splist_wranglers_gbif.json"><span class="xref download myst">splist_wranglers_gbif.json</span></a></p></li>
+is in [splist_wranglers_gbif.json](../../data/wranglers/splist_wranglers_gbif.json)</p></li>
 <li><p><strong>out_species_list_filename</strong>: output filename for resolved species list.</p></li>
 </ul>
 <p>Optional</p>
@@ -153,38 +152,40 @@ is in <a class="reference download internal" download="" href="../_downloads/07a
 </ul>
 </section>
 </section>
+</section>
 <section id="hands-on-run-tutorial-with-gbif-service">
 <h2>Hands-on: Run tutorial with ‘gbif’ service<a class="headerlink" href="#hands-on-run-tutorial-with-gbif-service" title="Permalink to this heading"></a></h2>
 <p>Initiate the process with the following:</p>
-<p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>./run_tutorial.sh  wrangle_species_list  data/config/wrangle_species_list_gbif.json
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span>  <span class="n">wrangle_species_list</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_species_list_gbif</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
 <p>This process outputs files configured in the script parameter file, similar to the
-following:</p>
-<ol class="arabic simple">
-<li><p>text to the console as it processes each name.</p></li>
-<li><p>a log file named in the log_filename parameter, similar to
-<span class="xref myst">wrangle_species_list_gbif.log</span></p></li>
+following:
+1. text to the console as it processes each name.
+2. a log file named in the log_filename parameter, similar to</p>
+<blockquote>
+<div><p>[wrangle_species_list_gbif.log](../../data/easy_bake/wrangle_species_list_gbif.log)</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
 <li><p>a report file named in the report_filename parameter, similar to
-<a class="reference download internal" download="" href="../_downloads/1b8ce3981c5a541439fe4f7612db2e92/wrangle_species_list_gbif.rpt"><span class="xref download myst">wrangle_species_list_gbif.rpt</span></a>
+[wrangle_species_list_gbif.rpt](../../data/easy_bake/wrangle_species_list_gbif.rpt)
 containing a summary of the processing.</p></li>
 <li><p>an output species list named in the out_species_list_filename, similar to
-<a class="reference download internal" download="" href="../_downloads/826234dad0ccfb66c6c7f9922b2406d6/heuchera_accepted_gbif.txt"><span class="xref download myst">heuchera_accepted_gbif.txt</span></a>
+[heuchera_accepted_gbif.txt](../../data/easy_bake/heuchera_accepted_gbif.txt)
 containing the modified species list, one name per line.</p></li>
 </ol>
-<p>The process also produces outputs according to the wrangler configuration file:</p>
-<ol class="arabic simple">
-<li><p>a name-map file named in out_map_filename parameter for the
-AcceptedNameSpeciesListWrangler.  The name-map is a JSON file with pairs of names -
-the original name to the accepted name according to the specified authority.<br />
+<p>The process also produces outputs according to the wrangler configuration file:
+1. a name-map file named in out_map_filename parameter for the</p>
+<blockquote>
+<div><p>AcceptedNameSpeciesListWrangler.  The name-map is a JSON file with pairs of names -
+the original name to the accepted name according to the specified authority.
 This name-map is suitable to use for input when resolving another dataset containing
 a subset of the same original names.  A sample output name-map is
-<a class="reference download internal" download="" href="../_downloads/b208be9571559b0bce1d03a2e341deb7/gbif_splist.namemap"><span class="xref download myst">gbif_splist.namemap</span></a>.</p></li>
-</ol>
+[gbif_splist.namemap](../../data/easy_bake/gbif_splist.namemap).</p>
+</div></blockquote>
 </section>
 </section>
 

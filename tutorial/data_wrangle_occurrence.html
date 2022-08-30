@@ -48,9 +48,6 @@
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Specimen Occurrences: Data and Wrangling</a><ul>
@@ -58,9 +55,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#wrangler-configuration-file">Wrangler configuration file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#occurrence-wrangler-types">Occurrence Wrangler Types</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#acceptednameoccurrencewrangler">AcceptedNameOccurrenceWrangler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#attributefilterwrangler">AttributeFilterWrangler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#attributemodifierwrangler">AttributeModifierWrangler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#boundingboxfilter">BoundingBoxFilter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#attributefilterwrangler">AttributeFilterWrangler</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#attributemodifierwrangler">AttributeModifierWrangler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boundingboxfilter">BoundingBoxFilter</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#commonformatwrangler">CommonFormatWrangler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#coordinateconverterwrangler">CoordinateConverterWrangler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#decimalprecisionfilter">DecimalPrecisionFilter</a></li>
@@ -77,6 +76,8 @@
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 
         </div>
@@ -95,7 +96,7 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Specimen Occurrences: Data and Wrangling</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/data_wrangle_occurrence.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/data_wrangle_occurrence.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -107,8 +108,8 @@
 <h1>Specimen Occurrences: Data and Wrangling<a class="headerlink" href="#specimen-occurrences-data-and-wrangling" title="Permalink to this heading"></a></h1>
 <section id="occurrence-data">
 <h2>Occurrence Data<a class="headerlink" href="#occurrence-data" title="Permalink to this heading"></a></h2>
-<p>Several tools (<a class="reference internal" href="w5_split_occurrence_data.html"><span class="doc std std-doc">split_occurrence_data</span></a>,
-<a class="reference internal" href="w3_wrangle_occurrence_data.html"><span class="doc std std-doc">wrangle_occurrences</span></a>) accept occurrence data.
+<p>Several tools ([split_occurrence_data](w5_split_occurrence_data.rst),
+[wrangle_occurrences](w3_wrangle_occurrence_data.rst)) accept occurrence data.
 The filename must be specified in the script parameter file, described in each tool’s
 documentation and linked above.  Data can be in one of two formats:</p>
 <ol class="arabic simple">
@@ -116,14 +117,14 @@ documentation and linked above.  Data can be in one of two formats:</p>
 including GBIF and iDigBio.</p>
 <ol class="arabic simple">
 <li><p>To download from GBIF, choose your filters in the
-<a class="reference external" href="https://www.gbif.org/occurrence">portal</a>.  For example, the example data was
+[portal](<a class="reference external" href="https://www.gbif.org/occurrence">https://www.gbif.org/occurrence</a>).  For example, the example data was
 downloaded after selecting occurrences where
-<a class="reference external" href="https://www.gbif.org/occurrence/search?taxon_key=3032645&amp;occurrence_status=present">genus=<code class="docutils literal notranslate"><span class="pre">Heuchera</span> <span class="pre">L</span></code></a>
+[genus=`Heuchera L`](<a class="reference external" href="https://www.gbif.org/occurrence/search?taxon_key=3032645&amp;occurrence_status=present">https://www.gbif.org/occurrence/search?taxon_key=3032645&amp;occurrence_status=present</a>)
 Then choose the download link at the upper right column header.</p></li>
 <li><p>To download from iDigBio, instructions for querying and downloading from the
-command prompt are at <a class="reference internal" href="idigbio_download.html"><span class="doc std std-doc">idigbio_download.md</span></a>.</p></li>
+command prompt are at [idigbio_download.md](./idigbio_download.md).</p></li>
 <li><p>The tutorial example DwCA is at
-<span class="xref myst">occ_heuchera_gbif.zip</span>.</p></li>
+[occ_heuchera_gbif.zip](../../data/input/occ_heuchera_gbif.zip).</p></li>
 </ol>
 </li>
 <li><p>CSV file containing records for one or more taxa.</p>
@@ -134,7 +135,7 @@ record/line must contain a species (or other group) identifier, such as
 scientificName or species_name, and x and y coordinates indicating a geographic
 location.  The field names for these 3 columns are specified in the script
 parameter file. The tutorial example occurrence datafile
-is <a class="reference download internal" download="" href="../_downloads/1f89a80e10a14f8c79662e05535eb0c3/heuchera.csv"><span class="xref download myst">heuchera.csv</span></a>.</p></li>
+is [heuchera.csv](../../data/input/heuchera.csv).</p></li>
 </ol>
 </li>
 </ol>
@@ -159,7 +160,7 @@ counts over the entire file/dataset, not subsets within a file.  So if wrangling
 occurrence record file that contains multiple groups of records, the wrangler will not
 assess the minimum number of points or unique localities for each group, it will do that
 for the dataset as a whole.  This is not recommended.</p>
-<p>Currently, wrangler_type names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in
+<p>Currently, wrangler_type names correspond to the wrangler class <cite>name</cite> attribute in
 this module’s files.  Each wrangler’s parameters correspond to the constructor
 arguments for that wrangler.</p>
 <section id="acceptednameoccurrencewrangler">
@@ -168,12 +169,19 @@ arguments for that wrangler.</p>
 as the “species” field with an “accepted name” as defined in a name-map or by a
 taxonomic service.</p>
 <ul class="simple">
-<li><p>optional
-occ_wranglers_w_resolve</p>
-<ul>
-<li><p>name_map (str or dict): A dictionary or filename containing a dictionary of original
-name to accepted name.  Defaults to None, but either this or name_resolver
-<strong>must be</strong> provided.</p></li>
+<li><p>optional</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>name_map (str or dict): A dictionary or filename containing a dictionary of original</dt><dd><p>name to accepted name.  Defaults to None, but either this or name_resolver
+<strong>must be</strong> provided.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<blockquote>
+<div><ul class="simple">
 <li><p>name_resolver (str or Method): Use this method for getting new
 accepted names. If set to ‘gbif’ or ‘otol’, use GBIF or OTOL name resolution
 respectively.  Defaults to None, but either this or name_map must be provided.</p></li>
@@ -185,8 +193,8 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 <li><p>out_map_format (str): Type of file format for out_map_filename, defaults to “json”.</p></li>
 <li><p>store_original_attribute (str): A new attribute to store the original taxon name.</p></li>
 </ul>
-</li>
-</ul>
+</div></blockquote>
+</div></blockquote>
 </section>
 <section id="attributefilterwrangler">
 <h3>AttributeFilterWrangler<a class="headerlink" href="#attributefilterwrangler" title="Permalink to this heading"></a></h3>
@@ -200,9 +208,8 @@ given attribute passes the given function.</p>
 </ul>
 </li>
 </ul>
-</section>
 <section id="attributemodifierwrangler">
-<h3>AttributeModifierWrangler<a class="headerlink" href="#attributemodifierwrangler" title="Permalink to this heading"></a></h3>
+<h4>AttributeModifierWrangler<a class="headerlink" href="#attributemodifierwrangler" title="Permalink to this heading"></a></h4>
 <p>The AttributeModifierWrangler modifies a newly added or existing attribute, computing
 the value with the given function.</p>
 <ul class="simple">
@@ -215,8 +222,8 @@ the value with the given function.</p>
 </ul>
 </section>
 <section id="boundingboxfilter">
-<h3>BoundingBoxFilter<a class="headerlink" href="#boundingboxfilter" title="Permalink to this heading"></a></h3>
-<p>The BoundingBoxFilter filters out occurrence points if they do not fall within the given<br />
+<h4>BoundingBoxFilter<a class="headerlink" href="#boundingboxfilter" title="Permalink to this heading"></a></h4>
+<p>The BoundingBoxFilter filters out occurrence points if they do not fall within the given
 bounding box.</p>
 <ul class="simple">
 <li><p>required</p>
@@ -228,6 +235,7 @@ bounding box.</p>
 </ul>
 </li>
 </ul>
+</section>
 </section>
 <section id="commonformatwrangler">
 <h3>CommonFormatWrangler<a class="headerlink" href="#commonformatwrangler" title="Permalink to this heading"></a></h3>
@@ -268,8 +276,8 @@ or source_epsg MUST be provided.</p></li>
 </section>
 <section id="decimalprecisionfilter">
 <h3>DecimalPrecisionFilter<a class="headerlink" href="#decimalprecisionfilter" title="Permalink to this heading"></a></h3>
-<p>The DecimalPrecisionFilter filters out occurrence points where one or both coordinates<br />
-have values where the number of digits to the right of the decimal point is less than<br />
+<p>The DecimalPrecisionFilter filters out occurrence points where one or both coordinates
+have values where the number of digits to the right of the decimal point is less than
 the given number.</p>
 <ul class="simple">
 <li><p>required:</p>

@@ -1,4 +1,6 @@
-# References
+===============
+References
+===============
 
 Grady, C. J., Beach, J. H., and Stewart, A. M. (in preparation). A parallel,
 heuristic-based fill method for creating presence-absence matrix randomizations.

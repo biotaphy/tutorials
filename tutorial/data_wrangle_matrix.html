@@ -48,9 +48,6 @@
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Matrices: Data and Wrangling</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#matrix-data">Matrix Data</a></li>
@@ -70,6 +67,8 @@
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 
         </div>
@@ -88,7 +87,7 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Matrices: Data and Wrangling</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/data_wrangle_matrix.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/data_wrangle_matrix.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -101,7 +100,7 @@
 <section id="matrix-data">
 <h2>Matrix Data<a class="headerlink" href="#matrix-data" title="Permalink to this heading"></a></h2>
 <p>Matrices may be created by other lmpy processes, primarily “encode_layers” described in
-<a class="reference internal" href="w7_build_pam.html"><span class="doc std std-doc">Tutorial 7: Build PAM</span></a>.  PAMs used in these processes are simply
+[Tutorial 7: Build PAM](./w7_build_pam.rst).  PAMs used in these processes are simply
 standard numpy matrices, with the addition of header metadata indicating the
 species and site labels.</p>
 <p>Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
@@ -123,7 +122,7 @@ specific to each.  Configuration files:</p>
 <h2>Matrix Data Wrangler Types<a class="headerlink" href="#matrix-data-wrangler-types" title="Permalink to this heading"></a></h2>
 <p>When running wranglers on a matrix, wranglers are applied in the order
 that they are listed in the wrangler config file.</p>
-<p>Currently, wrangler_type names correspond to the wrangler class <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute in
+<p>Currently, wrangler_type names correspond to the wrangler class <cite>name</cite> attribute in
 this module’s files.  Each wrangler’s parameters correspond to the constructor
 arguments for that wrangler.</p>
 <section id="acceptednamematrixwrangler">

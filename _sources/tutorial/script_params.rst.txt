@@ -1,4 +1,6 @@
-# Script parameters file
+============================
+Script parameters file
+============================
 
 A :term:`JSON` parameter file is required for all tutorial commands.  There are one or
 more example parameter files for each tutorial.  All of these JSON parameter files

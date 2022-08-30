@@ -48,16 +48,27 @@
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_tree.html">Trees: Data and Wrangling</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Download occurrence data from iDigBio</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Download occurrence data from iDigBio</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#request-data">Request data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">}</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#determine-download-readiness">Determine download readiness</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id10">}</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">}</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#download-data">Download data</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 
         </div>
@@ -76,7 +87,7 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Download occurrence data from iDigBio</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/idigbio_download.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/idigbio_download.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -86,85 +97,115 @@
              
   <section id="download-occurrence-data-from-idigbio">
 <h1>Download occurrence data from iDigBio<a class="headerlink" href="#download-occurrence-data-from-idigbio" title="Permalink to this heading"></a></h1>
+<section id="request-data">
+<h2>Request data<a class="headerlink" href="#request-data" title="Permalink to this heading"></a></h2>
 <p>To download from iDigBio, full instructions are at the
-<a class="reference external" href="https://www.idigbio.org/wiki/index.php/IDigBio_Download_API">Download API reference</a>.</p>
-<p>To pull data from the command prompt, use the <code class="docutils literal notranslate"><span class="pre">curl</span></code> command to pull text response
+[Download API reference](<a class="reference external" href="https://www.idigbio.org/wiki/index.php/IDigBio_Download_API">https://www.idigbio.org/wiki/index.php/IDigBio_Download_API</a>).</p>
+<p>To pull data from the command prompt, use the <cite>curl</cite> command to pull text response
 directly to terminal with the example query_url:
-<a class="reference external" href="https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org">Euphorbia</a></p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/?rq<span class="o">=</span>%7B%22genus%22%3A%22euphorbia%22%7D<span class="p">&amp;</span><span class="nv">email</span><span class="o">=</span>donotreply%40idigbio.org
-<span class="o">[</span><span class="m">1</span><span class="o">]</span> <span class="m">58979</span>
-astewart@murderbot:~/git/tutorials$ <span class="o">{</span>
-  <span class="s2">&quot;complete&quot;</span>: false,
-  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>,
-  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.628063+00:00&quot;</span>,
-  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>,
-  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
-    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>,
-    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>,
-    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>,
-    <span class="s2">&quot;mediarecord_fields&quot;</span>: null,
-    <span class="s2">&quot;mq&quot;</span>: null,
-    <span class="s2">&quot;record_fields&quot;</span>: null,
-    <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
-      <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
-    <span class="o">}</span>
-  <span class="o">}</span>,
-  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>,
-  <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;PENDING&quot;</span>
-<span class="o">}</span>
-</pre></div>
-</div>
-<p>Then use <code class="docutils literal notranslate"><span class="pre">curl</span></code> on the resulting <strong>status_url</strong> field:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
-<span class="o">{</span>
-  <span class="s2">&quot;complete&quot;</span>: false,
-  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>,
-  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.735029+00:00&quot;</span>,
-  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>,
-  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
-    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>,
-    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>,
-    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>,
-    <span class="s2">&quot;mediarecord_fields&quot;</span>: null,
-    <span class="s2">&quot;mq&quot;</span>: null,
-    <span class="s2">&quot;record_fields&quot;</span>: null,
-    <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
-      <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
-    <span class="o">}</span>
-  <span class="o">}</span>,
-  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>,
-  <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;PENDING&quot;</span>
-<span class="o">}</span>
-</pre></div>
-</div>
+[Euphorbia](<a class="reference external" href="https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org">https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org</a>)</p>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>zsh
+$ curl <a class="reference external" href="https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org">https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org</a>
+[1] 58979
+<a class="reference external" href="mailto:astewart&#37;&#52;&#48;murderbot">astewart<span>&#64;</span>murderbot</a>:~/git/tutorials$ {</p>
+<blockquote>
+<div><p>“complete”: false,
+“created”: “2022-05-02T15:28:41.730968+00:00”,
+“expires”: “2022-06-01T15:28:41.628063+00:00”,
+“hash”: “18911492e8517926cb8693fc9f971cf066107016”,
+“query”: {</p>
+<blockquote>
+<div><p>“core_source”: “indexterms”,
+“core_type”: “records”,
+“form”: “dwca-csv”,
+“mediarecord_fields”: null,
+“mq”: null,
+“record_fields”: null,
+“rq”: {</p>
+<blockquote>
+<div><p>“genus”: “euphorbia”</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>},
+“status_url”: “<a class="reference external" href="https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38">https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38</a>”,
+“task_status”: “PENDING”</p>
+</div></blockquote>
+<section id="id5">
+<h3>}<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="determine-download-readiness">
+<h2>Determine download readiness<a class="headerlink" href="#determine-download-readiness" title="Permalink to this heading"></a></h2>
+<p>Then use <cite>curl</cite> on the resulting <strong>status_url</strong> field:</p>
+<p><a href="#id6"><span class="problematic" id="id7">``</span></a><a href="#id8"><span class="problematic" id="id9">`</span></a>zsh
+$ curl <a class="reference external" href="https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38">https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38</a>
+{</p>
+<blockquote>
+<div><p>“complete”: false,
+“created”: “2022-05-02T15:28:41.730968+00:00”,
+“expires”: “2022-06-01T15:28:41.735029+00:00”,
+“hash”: “18911492e8517926cb8693fc9f971cf066107016”,
+“query”: {</p>
+<blockquote>
+<div><p>“core_source”: “indexterms”,
+“core_type”: “records”,
+“form”: “dwca-csv”,
+“mediarecord_fields”: null,
+“mq”: null,
+“record_fields”: null,
+“rq”: {</p>
+<blockquote>
+<div><p>“genus”: “euphorbia”</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>},
+“status_url”: “<a class="reference external" href="https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38">https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38</a>”,
+“task_status”: “PENDING”</p>
+</div></blockquote>
+<section id="id10">
+<h3>}<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h3>
 <p>When the task_status shows “SUCCESS”:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38
-<span class="o">{</span>
-  <span class="s2">&quot;complete&quot;</span>: true,
-  <span class="s2">&quot;created&quot;</span>: <span class="s2">&quot;2022-05-02T15:28:41.730968+00:00&quot;</span>,
-  <span class="s2">&quot;download_url&quot;</span>: <span class="s2">&quot;http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip&quot;</span>,
-  <span class="s2">&quot;expires&quot;</span>: <span class="s2">&quot;2022-06-01T15:28:41.552351+00:00&quot;</span>,
-  <span class="s2">&quot;hash&quot;</span>: <span class="s2">&quot;18911492e8517926cb8693fc9f971cf066107016&quot;</span>,
-  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
-    <span class="s2">&quot;core_source&quot;</span>: <span class="s2">&quot;indexterms&quot;</span>,
-    <span class="s2">&quot;core_type&quot;</span>: <span class="s2">&quot;records&quot;</span>,
-    <span class="s2">&quot;form&quot;</span>: <span class="s2">&quot;dwca-csv&quot;</span>,
-    <span class="s2">&quot;mediarecord_fields&quot;</span>: null,
-    <span class="s2">&quot;mq&quot;</span>: null,
-    <span class="s2">&quot;record_fields&quot;</span>: null,
-    <span class="s2">&quot;rq&quot;</span>: <span class="o">{</span>
-      <span class="s2">&quot;genus&quot;</span>: <span class="s2">&quot;euphorbia&quot;</span>
-    <span class="o">}</span>
-  <span class="o">}</span>,
-  <span class="s2">&quot;status_url&quot;</span>: <span class="s2">&quot;https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38&quot;</span>,
-  <span class="s2">&quot;task_status&quot;</span>: <span class="s2">&quot;SUCCESS&quot;</span>
-<span class="o">}</span>
-</pre></div>
-</div>
-<p>Save the response into a file with the <code class="docutils literal notranslate"><span class="pre">wget</span></code> command and the <strong>download_url</strong> field:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>wget http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip
-</pre></div>
-</div>
+<p><a href="#id11"><span class="problematic" id="id12">``</span></a><a href="#id13"><span class="problematic" id="id14">`</span></a>zsh
+$ curl <a class="reference external" href="https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38">https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38</a>
+{</p>
+<blockquote>
+<div><p>“complete”: true,
+“created”: “2022-05-02T15:28:41.730968+00:00”,
+“download_url”: “<a class="reference external" href="http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip">http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip</a>”,
+“expires”: “2022-06-01T15:28:41.552351+00:00”,
+“hash”: “18911492e8517926cb8693fc9f971cf066107016”,
+“query”: {</p>
+<blockquote>
+<div><p>“core_source”: “indexterms”,
+“core_type”: “records”,
+“form”: “dwca-csv”,
+“mediarecord_fields”: null,
+“mq”: null,
+“record_fields”: null,
+“rq”: {</p>
+<blockquote>
+<div><p>“genus”: “euphorbia”</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>},
+“status_url”: “<a class="reference external" href="https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38">https://api.idigbio.org/v2/download/d54c0ad7-6697-4096-9f11-b2a9a6041a38</a>”,
+“task_status”: “SUCCESS”</p>
+</div></blockquote>
+</section>
+<section id="id15">
+<h3>}<a class="headerlink" href="#id15" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="download-data">
+<h2>Download data<a class="headerlink" href="#download-data" title="Permalink to this heading"></a></h2>
+<p>Save the response into a file with the <cite>wget</cite> command and the <strong>download_url</strong> field:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`zsh</span>
+<span class="pre">wget</span> <span class="pre">http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip</span>
+<span class="pre">`</span></code></p>
+</section>
 </section>
 
 

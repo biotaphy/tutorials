@@ -42,15 +42,16 @@
               <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#install-docker">Install Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#download-tutorial">Download Tutorial</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w1_overview.html">Webinar 1: Tutorial Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w2_resolve_splist_names.html">Webinar 2: Resolve taxonomy for a list</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w6_create_sdms.html">Webinar 6:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial/w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial/w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial/wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -58,6 +59,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 
         </div>
@@ -76,7 +79,7 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Installation</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/pages/installation.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/pages/installation.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -86,12 +89,20 @@
              
   <section id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h1>
-<p>The <a class="reference external" href="https://github.com/biotaphy/tutorials">Biotaphy tutorial</a>  can be installed by
-downloading from Github.  Before installation, your environment must have
-<a class="reference external" href="https://docs.docker.com/get-docker/">Docker</a> installed .</p>
-<div class="highlight-commandline notranslate"><div class="highlight"><pre><span></span>  git clone https://github.com/biotaphy/tutorials.git
-</pre></div>
-</div>
+<section id="install-docker">
+<h2>Install Docker<a class="headerlink" href="#install-docker" title="Permalink to this heading"></a></h2>
+<p>Follow instructions for your operating system at
+[Get Docker](<a class="reference external" href="https://docs.docker.com/get-docker/">https://docs.docker.com/get-docker/</a>)</p>
+</section>
+<section id="download-tutorial">
+<h2>Download Tutorial<a class="headerlink" href="#download-tutorial" title="Permalink to this heading"></a></h2>
+<p>The [Biotaphy tutorial](<a class="reference external" href="https://github.com/biotaphy/tutorials">https://github.com/biotaphy/tutorials</a>)  can be installed by
+downloading from Github.  This code repository contains scripts, Docker composition
+files, and data for the tutorials.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`commandline</span>
+<span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/biotaphy/tutorials.git</span>
+<span class="pre">`</span></code></p>
+</section>
 </section>
 
 

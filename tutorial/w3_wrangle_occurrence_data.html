@@ -59,9 +59,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -69,6 +66,8 @@
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 
         </div>
@@ -87,7 +86,7 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Webinar 3: Wrangle occurrence data</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/w3_wrangle_occurrence_data.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w3_wrangle_occurrence_data.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -97,8 +96,8 @@
              
   <section id="webinar-3-wrangle-occurrence-data">
 <h1>Webinar 3: Wrangle occurrence data<a class="headerlink" href="#webinar-3-wrangle-occurrence-data" title="Permalink to this heading"></a></h1>
-<p><strong>Webinar #3</strong>  <a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi">Clean Your Dirty Data</a>
-Filter occurrence and/or modify data in a single dataset.  The tool allows multiple<br />
+<p>[Clean Your Dirty Data](<a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi">https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi</a>)
+Filter occurrence and/or modify data in a single dataset.  The tool allows multiple
 operations, defined in a configuration file, to be applied to the data at the same time.
 These operations range from filtering points out based on values in certain fields, to
 filtering out all points of a certain species if the group does not match some criteria,
@@ -108,7 +107,7 @@ record to an “accepted” name from some authority, either a provided name-map
 GBIF name resolution service.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read <a class="reference internal" href="w1_overview.html"><span class="doc std std-doc">Tutorial Overview</span></a> for an overview of how all
+<p>Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
 tutorials work.</p>
 </section>
 <section id="data-preparation">
@@ -117,7 +116,7 @@ tutorials work.</p>
 <h3>Input: occurrence records<a class="headerlink" href="#input-occurrence-records" title="Permalink to this heading"></a></h3>
 <p>The wrangle_occurrences tool accepts either a Darwin Core Archive (DwCA) file or a
 CSV file containing records for one or more taxa.  More information is in the
-<strong>Occurrence Data</strong> section of <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">data_wrangle_occurrence</span></a>.</p>
+<strong>Occurrence Data</strong> section of [data_wrangle_occurrence](data_wrangle_occurrence.md).</p>
 </section>
 <section id="input-wrangler-configuration-file">
 <h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
@@ -127,19 +126,19 @@ containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.</p>
 <p>More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the <strong>Occurrence Wrangler Types</strong> section
-of <a class="reference internal" href="data_wrangle_occurrence.html"><span class="doc std std-doc">data_wrangle_occurrence</span></a>.</p>
+of [data_wrangle_occurrence](data_wrangle_occurrence.md).</p>
 <p>In this example, we will
 resolve occurrence data names with GBIF using the AcceptedNameOccurrenceWrangler,
 and also apply the DecimalPrecisionFilter to filter out points with a latitude or
 longitude less than 4 digits past a decimal point.  Our
-<span class="xref myst">wrangler configuration file</span>
+[wrangler configuration file](../data/wranglers/occ_wranglers_w_resolve.json)
 contains these parameters, and the file is specified in the Script parameter file
 described next.</p>
 </section>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file is
-<a class="reference download internal" download="" href="../_downloads/f962aa67454197d9333bae075f6431b5/wrangle_occurrences_w_resolve.json"><span class="xref download myst">wrangle_occurrences_w_resolve.json</span></a>.
+[wrangle_occurrences_w_resolve.json](../../data/config/wrangle_occurrences_w_resolve.json).
 These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -149,7 +148,7 @@ These are the required and optional parameters:</p>
 <li><p><strong>wrangler_configuration_file</strong>: occurrence wrangler configuration file,
 described in the next section.  The tutorial example wrangler configuration
 contains one wrangler, the AcceptedNameOccurrenceWrangler, and is in
-<span class="xref myst">occ_wranglers_w_resolve.json</span></p></li>
+[occ_wranglers_w_resolve.json](../../data/config/occ_wranglers_w_resolve.json)</p></li>
 </ul>
 </li>
 <li><p>Optional</p>
@@ -168,13 +167,12 @@ contains one wrangler, the AcceptedNameOccurrenceWrangler, and is in
 <section id="run-tutorial">
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
 <p>Initiate the process with the following:</p>
-<p>for linux/mac systems</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data cleaning and name resolution</span>
-./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data cleaning and name resolution</span>
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_occurrences_w_resolve</span><span class="o">.</span><span class="n">json</span>
 <span class="c1"># Data cleaning only</span>
-./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_occurrences</span><span class="o">.</span><span class="n">json</span>
 <span class="c1"># Name resolution only</span>
-./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_occurrences_only_resolve</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>

@@ -7,7 +7,7 @@ phylogenetic diversity of a region.
 
 ## Introduction
 
-Read [Tutorial Overview](../tutorial/w1_overview.md) for an overview of how all
+Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
 tutorials work.
 
 ## Step 1: Cleanup the matrix
@@ -36,7 +36,7 @@ required and optional parameters:
 
 ### Data preparation: Input matrix
 
-Use a PAM created in [Tutorial 7](./w7_build_pam.md).  An example PAM is available in 
+Use a PAM created in [Tutorial 7](./w7_build_pam.rst).  An example PAM is available in
 [pam.lmm](../../data/input/pam.lmm).
 
 ### Data preparation: Wrangler configuration file

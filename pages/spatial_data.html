@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Geospatial Data Terms &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -39,7 +39,7 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w1_overview.html">Webinar 1: Tutorial Overview</a></li>
@@ -47,9 +47,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w6_create_sdms.html">Webinar 6:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial/w7_build_pam.html">Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial/w8_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial/wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -57,6 +54,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
 </ul>
 
         </div>
@@ -73,7 +72,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>Geospatial Data Terms</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/pages/spatial_data.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -83,26 +82,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p># Geospatial Data Terms</p>
+  <section id="geospatial-data-terms">
+<h1>Geospatial Data Terms<a class="headerlink" href="#geospatial-data-terms" title="Permalink to this heading"></a></h1>
 <dl class="glossary">
 <dt id="term-Geospatial-data">Geospatial data<a class="headerlink" href="#term-Geospatial-data" title="Permalink to this term"></a></dt><dd><p>Geospatial data is data with geographic location associated with it, i.e. map
 data.  There are two kinds of spatial data, <a class="reference internal" href="#term-Raster-Data"><span class="xref std std-term">Raster Data</span></a> and
 <a class="reference internal" href="#term-Vector-Data"><span class="xref std std-term">Vector Data</span></a>.  Each
 has properties that make it better for representing different information.</p>
 </dd>
-<dt id="term-Line">Line<a class="headerlink" href="#term-Line" title="Permalink to this term"></a></dt><dd><p>Lines are made up of multiple points, ordered.  Roads and rivers are
-usually represented as lines.</p>
+<dt id="term-Raster-Data">Raster Data<a class="headerlink" href="#term-Raster-Data" title="Permalink to this term"></a></dt><dd><p>Geospatial data best represented in raster format generally has one value at
+every point.  The area to be represented is split up into a grid, with each
+grid cell containing a value. Elevation, temperature, precipitation are
+examples of data generally represented as raster.</p>
 </dd>
-<dt id="term-Point">Point<a class="headerlink" href="#term-Point" title="Permalink to this term"></a></dt><dd><p>Points represent a single location on a 2 dimensional surface.
-Depending on the scale, different types of data are appropriate to be
-represented as points. At a very small <a class="reference internal" href="#term-Scale"><span class="xref std std-term">Scale</span></a> (from a very great
+<dt id="term-Vector-Data">Vector Data<a class="headerlink" href="#term-Vector-Data" title="Permalink to this term"></a></dt><dd><p>Geospatial data best represented in vector format can be represented as
+:term:<a href="#id1"><span class="problematic" id="id2">`</span></a>Point`s, :term:<a href="#id3"><span class="problematic" id="id4">`</span></a>Line`s, or :term:<a href="#id5"><span class="problematic" id="id6">`</span></a>Polygon`s.</p>
+</dd>
+<dt id="term-Point">Point<a class="headerlink" href="#term-Point" title="Permalink to this term"></a></dt><dd><p>Points represent a single location on a 2 dimensional surface.  In
+<a class="reference internal" href="#term-Vector-Data"><span class="xref std std-term">Vector Data</span></a>, points are made up of an x (longitude) and a y (latitude)
+coordinate.  Depending on the scale, different types of data are appropriate to
+be represented as points. At a very small <a class="reference internal" href="#term-Scale"><span class="xref std std-term">Scale</span></a> (from a very great
 distance), a city might be represented as a single point.  Species occurrences
 are usually represented as points.</p>
 </dd>
-<dt id="term-Polygon">Polygon<a class="headerlink" href="#term-Polygon" title="Permalink to this term"></a></dt><dd><p>Polygons are made up of multiple points or lines, joined to define
-a discrete area.  At a larger scale (zoomed in), a city, river, or street might
-be represented as a polygon. Administrative boundaries, like country, state, or
-other geo-political units are examples of polygon data.</p>
+<dt id="term-Line">Line<a class="headerlink" href="#term-Line" title="Permalink to this term"></a></dt><dd><p>In <a class="reference internal" href="#term-Vector-Data"><span class="xref std std-term">Vector Data</span></a>, lines are made up of multiple, ordered, points.
+Roads and rivers are usually represented as lines.</p>
+</dd>
+<dt id="term-Polygon">Polygon<a class="headerlink" href="#term-Polygon" title="Permalink to this term"></a></dt><dd><p>In <a class="reference internal" href="#term-Vector-Data"><span class="xref std std-term">Vector Data</span></a>, polygons are made up of multiple points or lines, joined
+to define a discrete area.  At a larger scale (zoomed in), a city, river, or
+street might be represented as a polygon. Administrative boundaries, like
+country, state, or other geo-political units are examples of polygon data.</p>
 </dd>
 <dt id="term-Scale">Scale<a class="headerlink" href="#term-Scale" title="Permalink to this term"></a></dt><dd><p>Large scale maps refer to maps of a small area with a large amount of detail.
 The ratio between distance on the map to distance on the ground is very large.
@@ -114,21 +123,16 @@ be at a scale of 1:100,000 (1 centimeter = 1 kilometer).</p>
 distance on the map to the distance on the ground is much smaller.  For example,
 a map of the country of Indonesia might be at the ratio of 1:2,000,000.</p>
 </dd>
-<dt id="term-Raster-Data">Raster Data<a class="headerlink" href="#term-Raster-Data" title="Permalink to this term"></a></dt><dd><p>Geospatial data best represented in raster format generally has one value at
-every point.  The area to be represented is split up into a grid, with each
-grid cell containing a value. Elevation, temperature, precipitation are
-examples of data generally represented as raster.</p>
-</dd>
-<dt id="term-Vector-Data">Vector Data<a class="headerlink" href="#term-Vector-Data" title="Permalink to this term"></a></dt><dd><p>Geospatial data best represented in vector format can be represented as
-:term:<a href="#id1"><span class="problematic" id="id2">`</span></a>Point`s, :term:<a href="#id3"><span class="problematic" id="id4">`</span></a>Line`s, or :term:<a href="#id5"><span class="problematic" id="id6">`</span></a>Polygon`s.</p>
-</dd>
 </dl>
-<p>## Sample Geospatial Data resources</p>
+</section>
+<section id="sample-geospatial-data-resources">
+<h1>Sample Geospatial Data resources<a class="headerlink" href="#sample-geospatial-data-resources" title="Permalink to this heading"></a></h1>
 <ul class="simple">
 <li><p>[World borders]  (<a class="reference external" href="http://thematicmapping.org/downloads/world_borders.php">http://thematicmapping.org/downloads/world_borders.php</a>)</p></li>
 <li><p>[Global administrative boundaries]  <a class="reference external" href="http://www.gadm.org/country">http://www.gadm.org/country</a>)</p></li>
 <li><p>[Natural earth data] (<a class="reference external" href="http://www.naturalearthdata.com/">http://www.naturalearthdata.com/</a>)</p></li>
 </ul>
+</section>
 
 
            </div>
