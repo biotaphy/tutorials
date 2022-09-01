@@ -96,7 +96,7 @@
              
   <section id="webinar-5-split-and-merge-occurrence-data-by-species">
 <h1>Webinar 5: Split and merge occurrence data by species<a class="headerlink" href="#webinar-5-split-and-merge-occurrence-data-by-species" title="Permalink to this heading"></a></h1>
-<p>[Big Data Munging](<a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1">https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1</a>)
+<p><a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1">Big Data Munging</a>
 (Module 2, Big-Data approaches).  Split one or more occurrence datasets by species.
 If we are splitting more than one dataset, records in different datasets with the same
 species name will be combined into one file.  The tool allows multiple operations,
@@ -106,7 +106,7 @@ in the wrangle_occurrences tool demonstrated in Webinar 3.</p>
 a field with values to be grouped on, generally a species name.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
+<p>Read <a class="reference external" href="../tutorial/w1_overview.rst">Tutorial Overview</a> for an overview of how all
 tutorials work.</p>
 </section>
 <section id="data-preparation">
@@ -116,7 +116,7 @@ tutorials work.</p>
 <p>The split_occurrence_data tool accepts one or more datasets, each must be either a
 Darwin Core Archive (DwCA) file or a CSV file containing records for one or more taxa.</p>
 <p>More information is in the <strong>Occurrence Data</strong> section of
-[data_wrangle_occurrence](data_wrangle_occurrence.md).</p>
+<a class="reference external" href="data_wrangle_occurrence.rst">data_wrangle_occurrence</a>.</p>
 </section>
 <section id="input-wrangler-configuration-file">
 <h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
@@ -124,10 +124,10 @@ Darwin Core Archive (DwCA) file or a CSV file containing records for one or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the <strong>Occurrence Wrangler Types</strong> section
-of [data_wrangle_occurrence](data_wrangle_occurrence.md).  In the first example, we will
-split occurrence data, but not perform any other wrangling on it, so our [wrangler
-configuration file](../data/config/wrangle_nothing.json) contains an empty list.  A
-second example [wrangler configuration file](../data/config/occ_wrangler_resolve.json)
+of <a class="reference external" href="data_wrangle_occurrence.rst">data_wrangle_occurrence</a>.  In the first example, we will
+split occurrence data, but not perform any other wrangling on it, so our <a class="reference external" href="../data/config/wrangle_nothing.json">wrangler
+configuration file</a> contains an empty list.  A
+second example <a class="reference external" href="../data/config/occ_wrangler_resolve.json">wrangler configuration file</a>
 resolves names with GBIF before grouping the data by name.</p>
 <p>If more than one dataset is being processed, it is logical to apply the same wranglers
 to each.</p>
@@ -135,10 +135,10 @@ to each.</p>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  Three tutorial parameter files are
-[split_occurrence_data_dwca.json](../../data/config/split_occurrence_data_dwca.json),
-[split_occurrence_data_csv.json](../../data/config/split_occurrence_data_csv.json),
+<a class="reference external" href="../../data/config/split_occurrence_data_dwca.json">split_occurrence_data_dwca.json</a>,
+<a class="reference external" href="../../data/config/split_occurrence_data_csv.json">split_occurrence_data_csv.json</a>,
 and
-[split_wrangle_occurrence_data.json](../../data/config/split_wrangle_occurrence_data.json).</p>
+<a class="reference external" href="../../data/config/split_wrangle_occurrence_data.json">split_wrangle_occurrence_data.json</a>.</p>
 <p>These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -152,14 +152,14 @@ does not exist, it will be created</p></li>
 <li><p><strong>max_open_writers</strong>: The maximum number of data writers to have open at once.</p></li>
 <li><p><strong>key_field</strong>: <strong>BUGGY - IGNORE THIS FOR NOW</strong> -
 The field name (or names) to use for filenames.  This/these must be
-encased in square brackets, i.e. <cite>“key_field”: [“scientificName”]</cite>. If multiple
+encased in square brackets, i.e. <cite>“key_field”: `”scientificName”]</cite>. If multiple
 fields are provided, the ordered fields specify the sub-directory structure used for
 organizing files.  The first field will specify the directory directly under
 out_dir, and so on.  The final field will be contain the base filename.  These
 fields should be hierarchical.  For example, if grouping records into files by
 species, with a dataset containing 2000 species, using taxonomic grouping fields
 (in order from coarser to finer groups)
-such as <cite>“key_field”: [“family”, “genus”, “species”]</cite> would create a file
+such as <cite>“key_field”: `”family”, “genus”, “species”]</cite> would create a file
 with records for the Giant Panda in
 “&lt;out_dir&gt;/Ursidae/Ailuropoda/Ailuropoda melanoleuca.csv”.
 If this parameter is not specified, it will default to the fieldname for grouping
@@ -176,7 +176,7 @@ List of 0 or more lists, each containing 2 arguments</p>
 <li><p>input DwCA file, and</p></li>
 <li><p>occurrence data wrangler configuration file (described in the next section). The
 example split_occurrence_data wrangler configuration used for this tutorial step
-is [here](../../input/wrangle_occurrences.json)</p></li>
+is <a class="reference external" href="../../input/wrangle_occurrences.json">here</a></p></li>
 </ul>
 </li>
 <li><p><strong>csv</strong>: This is an optional argument, but either this, or <strong>dwca</strong>, must be provided.
@@ -236,7 +236,7 @@ The name-map is a JSON file with pairs of names -
 the original name to the accepted name according to the specified authority.
 This name-map is suitable to use for input when resolving another dataset containing
 a subset of the same original names.  A sample output name-map is
-[gbif_occ.namemap](../../data/easy_bake/gbif_occ.namemap).</p></li>
+<a class="reference external" href="../../data/easy_bake/gbif_occ.namemap">gbif_occ.namemap</a>.</p></li>
 </ol>
 </section>
 </section>

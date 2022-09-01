@@ -16,7 +16,7 @@ Preparation
 --------------------------------
 
 To run Biotaphy tools on any OS, locally through :term:`Docker`, first download and
-install [Docker](https://docs.docker.com/get-started/).
+install `Docker <https://docs.docker.com/get-started/>`_.
 
 --------------------------------------------------
 Host and Container input, output, log directories
@@ -25,7 +25,7 @@ Host and Container input, output, log directories
 A :term:`Volume` "data", is created on the :term:`Host machine`, and the
 tutorials/data/input, tutorials/data/config, and tutorials/data/wranglers directories
 in this repository are copied to it.  These directories are then made available on the
-term:`Container` under the /volumes/data volume (directory).  This volume is read-only,
+:term:`Container` under the /volumes/data volume (directory).  This volume is read-only,
 and can only be modified from the Host machine prior to building your Container.
 If modified, the docker "data" volume must be re-created to propagate those changes to
 the containers.
@@ -58,9 +58,8 @@ the 1) command name and 2) parameters file.  The parameters file will be a path
 on the local machine, in the tutorials/data/config directory.  The script will translate
 that to the container path, and execute the command in the container with the
 container's copy of the file.  For example, the
-**wrangle_species_list** tutorial can be initiated with:
-
-for linux/mac systems
+`wrangle species list <w2_resolve_splist_names>`_ tutorial can be initiated
+with:
 
 .. code-block::
 
@@ -113,23 +112,29 @@ commands with example configurations.
 
         # Webinar 1
         ./run_tutorial.sh list_commands
+
         # Webinar 2
         ./run_tutorial.sh wrangle_species_list  data/config/wrangle_species_list_gbif.json
         ./run_tutorial.sh wrangle_species_list  data/config/wrangle_species_list_namemap.json
+
         # Webinar 3
         ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
         ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
         ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
+
         # Webinar 5
         ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
         ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
         ./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
+
         # Webinar 6
         ./run_tutorial.sh create_sdm data/config/create_sdm.json
+
         # Webinar 7
         ./run_tutorial.sh build_grid  data/config/build_grid.json
         ./run_tutorial.sh encode_layers  data/config/encode_layers.json
         ./run_tutorial.sh calculate_pam_stats  data/config/calculate_pam_stats.json
+
         # Webinar 8
         ./run_tutorial.sh wrangle_tree data/config/wrangle_tree.json
 

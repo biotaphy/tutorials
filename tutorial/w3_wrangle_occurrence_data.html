@@ -96,7 +96,7 @@
              
   <section id="webinar-3-wrangle-occurrence-data">
 <h1>Webinar 3: Wrangle occurrence data<a class="headerlink" href="#webinar-3-wrangle-occurrence-data" title="Permalink to this heading"></a></h1>
-<p>[Clean Your Dirty Data](<a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi">https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi</a>)
+<p><a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi">Clean Your Dirty Data</a>
 Filter occurrence and/or modify data in a single dataset.  The tool allows multiple
 operations, defined in a configuration file, to be applied to the data at the same time.
 These operations range from filtering points out based on values in certain fields, to
@@ -107,7 +107,7 @@ record to an “accepted” name from some authority, either a provided name-map
 GBIF name resolution service.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
+<p>Read <a class="reference external" href="../tutorial/w1_overview.rst">Tutorial Overview</a> for an overview of how all
 tutorials work.</p>
 </section>
 <section id="data-preparation">
@@ -116,7 +116,7 @@ tutorials work.</p>
 <h3>Input: occurrence records<a class="headerlink" href="#input-occurrence-records" title="Permalink to this heading"></a></h3>
 <p>The wrangle_occurrences tool accepts either a Darwin Core Archive (DwCA) file or a
 CSV file containing records for one or more taxa.  More information is in the
-<strong>Occurrence Data</strong> section of [data_wrangle_occurrence](data_wrangle_occurrence.md).</p>
+<strong>Occurrence Data</strong> section of <a class="reference external" href="data_wrangle_occurrence.rst">data_wrangle_occurrence</a>.</p>
 </section>
 <section id="input-wrangler-configuration-file">
 <h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
@@ -126,19 +126,19 @@ containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.</p>
 <p>More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the <strong>Occurrence Wrangler Types</strong> section
-of [data_wrangle_occurrence](data_wrangle_occurrence.md).</p>
+of <a class="reference external" href="data_wrangle_occurrence.rst">data_wrangle_occurrence</a>.</p>
 <p>In this example, we will
 resolve occurrence data names with GBIF using the AcceptedNameOccurrenceWrangler,
 and also apply the DecimalPrecisionFilter to filter out points with a latitude or
 longitude less than 4 digits past a decimal point.  Our
-[wrangler configuration file](../data/wranglers/occ_wranglers_w_resolve.json)
+<a class="reference external" href="../data/wranglers/occ_wranglers_w_resolve.json">wrangler configuration file</a>
 contains these parameters, and the file is specified in the Script parameter file
 described next.</p>
 </section>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file is
-[wrangle_occurrences_w_resolve.json](../../data/config/wrangle_occurrences_w_resolve.json).
+<a class="reference external" href="../../data/config/wrangle_occurrences_w_resolve.json">wrangle_occurrences_w_resolve.json</a>.
 These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -148,7 +148,7 @@ These are the required and optional parameters:</p>
 <li><p><strong>wrangler_configuration_file</strong>: occurrence wrangler configuration file,
 described in the next section.  The tutorial example wrangler configuration
 contains one wrangler, the AcceptedNameOccurrenceWrangler, and is in
-[occ_wranglers_w_resolve.json](../../data/config/occ_wranglers_w_resolve.json)</p></li>
+<a class="reference external" href="../../data/config/occ_wranglers_w_resolve.json">occ_wranglers_w_resolve.json</a></p></li>
 </ul>
 </li>
 <li><p>Optional</p>

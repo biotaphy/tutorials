@@ -98,11 +98,11 @@
              
   <section id="webinar-2-resolve-taxonomy-for-a-list">
 <h1>Webinar 2: Resolve taxonomy for a list<a class="headerlink" href="#webinar-2-resolve-taxonomy-for-a-list" title="Permalink to this heading"></a></h1>
-<p>[Resolving Nomenclature](<a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l">https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l</a>)
+<p><a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.vyth2pntju9l">Resolving Nomenclature</a>
 Create an updated/accepted species list and name-map (original_name –&gt; accepted_name).</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
+<p>Read <a class="reference external" href="../tutorial/w1_overview.rst">Tutorial Overview</a> for an overview of how all
 tutorials work.</p>
 </section>
 <section id="data-preparation">
@@ -112,12 +112,12 @@ tutorials work.</p>
 <p>Use an existing or prepare a new species list, a text file with one name per line.  This
 file is specified in the script parameter file described below.</p>
 <ol class="arabic simple">
-<li><p>The tutorial example species list is [heuchera.txt](../../data/input/heuchera.txt).</p></li>
+<li><p>The tutorial example species list is <a class="reference external" href="../../data/input/heuchera.txt">heuchera.txt</a>.</p></li>
 <li><p>Some resources:</p>
 <ol class="arabic simple">
-<li><p>[World Flora Online, WFO](<a class="reference external" href="http://www.worldfloraonline.org/">http://www.worldfloraonline.org/</a>)</p></li>
+<li><p><a class="reference external" href="http://www.worldfloraonline.org/">World Flora Online, WFO</a></p></li>
 <li><p>Query GBIF, i.e.
-[heuchera query](<a class="reference external" href="https://www.gbif.org/species/search?q=heuchera&amp;rank=SPECIES&amp;qField=SCIENTIFIC">https://www.gbif.org/species/search?q=heuchera&amp;rank=SPECIES&amp;qField=SCIENTIFIC</a>)</p></li>
+<a class="reference external" href="https://www.gbif.org/species/search?q=heuchera&amp;rank=SPECIES&amp;qField=SCIENTIFIC">heuchera query</a></p></li>
 </ol>
 </li>
 </ol>
@@ -126,22 +126,22 @@ file is specified in the script parameter file described below.</p>
 <p>A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
-optional parameters for each are [here](wrangle_species_list.md).</p>
+optional parameters for each are <a class="reference external" href="wrangle_species_list.rst">here</a>.</p>
 </section>
 <section id="input-script-parameter-file">
 <h4>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h4>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
-is [wrangle_species_list_gbif.json](../../data/config/wrangle_species_list_gbif.json).
+is <a class="reference external" href="../../data/config/wrangle_species_list_gbif.json">wrangle_species_list_gbif.json</a>.
 These are the required and optional parameters:</p>
 <p>Required:</p>
 <ul class="simple">
 <li><p><strong>in_species_list_filename</strong>: Input filename containing species list, described
 in the section above.  The tutorial example species list is
-[heuchera.txt](../../data/input/heuchera.txt).</p></li>
+<a class="reference external" href="../../data/input/heuchera.txt">heuchera.txt</a>.</p></li>
 <li><p><strong>wrangler_configuration_file</strong>: species list wrangler configuration file,
 described in the previous input section.  The tutorial example wrangler
 configuration contains one wrangler, the AcceptedNameSpeciesListWrangler, and
-is in [splist_wranglers_gbif.json](../../data/wranglers/splist_wranglers_gbif.json)</p></li>
+is in <a class="reference external" href="../../data/wranglers/splist_wranglers_gbif.json">splist_wranglers_gbif.json</a></p></li>
 <li><p><strong>out_species_list_filename</strong>: output filename for resolved species list.</p></li>
 </ul>
 <p>Optional</p>
@@ -163,18 +163,16 @@ is in [splist_wranglers_gbif.json](../../data/wranglers/splist_wranglers_gbif.js
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
 <p>This process outputs files configured in the script parameter file, similar to the
-following:
-1. text to the console as it processes each name.
-2. a log file named in the log_filename parameter, similar to</p>
-<blockquote>
-<div><p>[wrangle_species_list_gbif.log](../../data/easy_bake/wrangle_species_list_gbif.log)</p>
-</div></blockquote>
-<ol class="arabic simple" start="3">
+following:</p>
+<ol class="arabic simple">
+<li><p>text to the console as it processes each name.</p></li>
+<li><p>a log file named in the log_filename parameter, similar to
+<a class="reference external" href="../../data/easy_bake/wrangle_species_list_gbif.log">wrangle_species_list_gbif.log</a></p></li>
 <li><p>a report file named in the report_filename parameter, similar to
-[wrangle_species_list_gbif.rpt](../../data/easy_bake/wrangle_species_list_gbif.rpt)
+<a class="reference external" href="../../data/easy_bake/wrangle_species_list_gbif.rpt">wrangle_species_list_gbif.rpt</a>
 containing a summary of the processing.</p></li>
 <li><p>an output species list named in the out_species_list_filename, similar to
-[heuchera_accepted_gbif.txt](../../data/easy_bake/heuchera_accepted_gbif.txt)
+<a class="reference external" href="../../data/easy_bake/heuchera_accepted_gbif.txt">heuchera_accepted_gbif.txt</a>
 containing the modified species list, one name per line.</p></li>
 </ol>
 <p>The process also produces outputs according to the wrangler configuration file:
@@ -184,7 +182,7 @@ containing the modified species list, one name per line.</p></li>
 the original name to the accepted name according to the specified authority.
 This name-map is suitable to use for input when resolving another dataset containing
 a subset of the same original names.  A sample output name-map is
-[gbif_splist.namemap](../../data/easy_bake/gbif_splist.namemap).</p>
+<a class="reference external" href="../../data/easy_bake/gbif_splist.namemap">gbif_splist.namemap</a>.</p>
 </div></blockquote>
 </section>
 </section>

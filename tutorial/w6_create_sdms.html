@@ -49,7 +49,12 @@
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 6:</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data Preparation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#input-occurrence-records">Input: occurrence records</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-ecoregions-file">Input: ecoregions file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#run-tutorial">Run tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
 </ul>
@@ -91,8 +96,8 @@
              
   <section id="webinar-6">
 <h1>Webinar 6:<a class="headerlink" href="#webinar-6" title="Permalink to this heading"></a></h1>
-<p>[Species Distribution Modeling](<a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.cny714hbiydb">https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.cny714hbiydb</a>)
-(Part 1, Creation).  Create one or more Species Distribution Models using Maxent for
+<p><a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.cny714hbiydb">Species Distribution Modeling</a>
+(Part 1, Creation&gt;`_.  Create one or more Species Distribution Models using Maxent for
 occurrence data with the minimum number of points defined in the configuration file or
 the <cite>Rare Species Model</cite> algorithm for data without the required minimum number of
 points.  The Rare Species Model intersects the convex hull of the points
@@ -100,24 +105,30 @@ with a raster denoting ecoregions.  For all species data using Maxent, the tool 
 Maxent parameters indicated in the configuration file.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
+<p>Read <a class="reference external" href="../tutorial/w1_overview.rst">Tutorial Overview</a> for an overview of how all
 tutorials work.</p>
 </section>
 <section id="data-preparation">
 <h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading"></a></h2>
-<p>### Input: occurrence records</p>
+<section id="input-occurrence-records">
+<h3>Input: occurrence records<a class="headerlink" href="#input-occurrence-records" title="Permalink to this heading"></a></h3>
 <p>The create_sdm tool accepts one or more occurrence CSV datasets, defined in two ways in
 the configuration file: either specified by a parent directory in the <cite>points_dir</cite>
 parameter, and/or a list of individual files in the <cite>points_layer</cite> parameter.  Each of
 the occurrence datasets must use the same species_key, x_key, and y_key, specified in
 the configuration file.</p>
 <p>More information is in the <strong>Occurrence Data</strong> section of
-[data_wrangle_occurrence](data_wrangle_occurrence.md).</p>
-<p>### Input: ecoregions file</p>
-<p>The ecoregions file is a raster file indicating broad ecoregions for the</p>
-<p>### Input: Script parameter file</p>
+<a class="reference external" href="data_wrangle_occurrence.rst">data_wrangle_occurrence</a>.</p>
+</section>
+<section id="input-ecoregions-file">
+<h3>Input: ecoregions file<a class="headerlink" href="#input-ecoregions-file" title="Permalink to this heading"></a></h3>
+<p>The ecoregions file is a raster file indicating broad ecoregions for the region
+being modeled.</p>
+</section>
+<section id="input-script-parameter-file">
+<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  A test tutorial parameter file is:
-[create_sdm.json](../../data/config/create_sdm.json),</p>
+<a class="reference external" href="../../data/config/create_sdm.json">create_sdm.json</a>,</p>
 <p>These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -150,7 +161,13 @@ split_occurrence_data and wrangle_occurrences).</p></li>
 occurrence data files. If this parameter is not specified, it will default to
 <cite>y</cite> (which is also the default value created in CSV data output from
 split_occurrence_data and wrangle_occurrences).</p></li>
-<li><p><strong>maxent_params</strong>: Extra options and parameters to be sent to Maxent.</p></li>
+<li><dl class="simple">
+<dt><strong>maxent_params</strong>: Extra options and parameters to be sent to Maxent.  A full list</dt><dd><p>of Maxent parameters, long with the value type, and sometimes a valid range of
+values, is available
+<a class="reference external" href="https://github.com/mrmaxent/Maxent/blob/master/density/parameters.csv">here</a>.</p>
+</dd>
+</dl>
+</li>
 <li><dl class="simple">
 <dt><strong>min_points</strong>: Minimum number of points in an occurrence dataset for Maxent to be</dt><dd><p>used for modeling to.  If the data contains less than the minimum, the
 <cite>Rare Species Modeling</cite> algorithm will be used.</p>
@@ -163,6 +180,7 @@ split_occurrence_data and wrangle_occurrences).</p></li>
 </ul>
 </li>
 </ul>
+</section>
 </section>
 <section id="run-tutorial">
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
