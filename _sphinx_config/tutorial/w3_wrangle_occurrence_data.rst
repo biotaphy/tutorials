@@ -2,7 +2,7 @@
 Webinar 3: Wrangle occurrence data
 ============================================
 
-[Clean Your Dirty Data](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi)
+`Clean Your Dirty Data <https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi>`_
 Filter occurrence and/or modify data in a single dataset.  The tool allows multiple  
 operations, defined in a configuration file, to be applied to the data at the same time. 
 These operations range from filtering points out based on values in certain fields, to
@@ -17,7 +17,7 @@ GBIF name resolution service.
 Introduction
 --------------------------------
 
-Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
+Read `Tutorial Overview <../tutorial/w1_overview.rst>`_ for an overview of how all
 tutorials work.
 
 --------------------------------
@@ -28,7 +28,7 @@ Input: occurrence records
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The wrangle_occurrences tool accepts either a Darwin Core Archive (DwCA) file or a
 CSV file containing records for one or more taxa.  More information is in the
-**Occurrence Data** section of [data_wrangle_occurrence](data_wrangle_occurrence.md).
+**Occurrence Data** section of `data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.
 
 Input: Wrangler configuration file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -39,20 +39,20 @@ wranglers - each performs a different operation, and each has its own parameters
 
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the **Occurrence Wrangler Types** section
-of [data_wrangle_occurrence](data_wrangle_occurrence.md).  
+of `data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.
 
 In this example, we will
 resolve occurrence data names with GBIF using the AcceptedNameOccurrenceWrangler, 
 and also apply the DecimalPrecisionFilter to filter out points with a latitude or 
 longitude less than 4 digits past a decimal point.  Our
-[wrangler configuration file](../data/wranglers/occ_wranglers_w_resolve.json) 
+`wrangler configuration file <../data/wranglers/occ_wranglers_w_resolve.json>`_
 contains these parameters, and the file is specified in the Script parameter file 
 described next.
 
 Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 A JSON parameter file is required for this command.  The tutorial parameter file is
-[wrangle_occurrences_w_resolve.json](../../data/config/wrangle_occurrences_w_resolve.json).
+`wrangle_occurrences_w_resolve.json <../../data/config/wrangle_occurrences_w_resolve.json>`_.
 These are the required and optional parameters:
 
 * Required:
@@ -62,7 +62,7 @@ These are the required and optional parameters:
   * **wrangler_configuration_file**: occurrence wrangler configuration file,
     described in the next section.  The tutorial example wrangler configuration
     contains one wrangler, the AcceptedNameOccurrenceWrangler, and is in
-    [occ_wranglers_w_resolve.json](../../data/config/occ_wranglers_w_resolve.json)
+    `occ_wranglers_w_resolve.json <../../data/config/occ_wranglers_w_resolve.json>`_
 
 * Optional
 

@@ -2,8 +2,8 @@
 Webinar 6:
 ==================================
 
-[Species Distribution Modeling](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.cny714hbiydb)
-(Part 1, Creation).  Create one or more Species Distribution Models using Maxent for 
+`Species Distribution Modeling <https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.cny714hbiydb>`_
+(Part 1, Creation>`_.  Create one or more Species Distribution Models using Maxent for
 occurrence data with the minimum number of points defined in the configuration file or  
 the `Rare Species Model` algorithm for data without the required minimum number of 
 points.  The Rare Species Model intersects the convex hull of the points
@@ -14,14 +14,15 @@ Maxent parameters indicated in the configuration file.
 Introduction
 -----------------------------------
 
-Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
+Read `Tutorial Overview <../tutorial/w1_overview.rst>`_ for an overview of how all
 tutorials work.
 
 -----------------------------------
 Data Preparation
 -----------------------------------
 
-### Input: occurrence records
+Input: occurrence records
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The create_sdm tool accepts one or more occurrence CSV datasets, defined in two ways in  
 the configuration file: either specified by a parent directory in the `points_dir` 
@@ -30,17 +31,20 @@ the occurrence datasets must use the same species_key, x_key, and y_key, specifi
 the configuration file. 
 
 More information is in the **Occurrence Data** section of 
-[data_wrangle_occurrence](data_wrangle_occurrence.md).
+`data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.
 
-### Input: ecoregions file
+Input: ecoregions file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The ecoregions file is a raster file indicating broad ecoregions for the  
+The ecoregions file is a raster file indicating broad ecoregions for the region
+being modeled.
 
 
-### Input: Script parameter file
+Input: Script parameter file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A JSON parameter file is required for this command.  A test tutorial parameter file is: 
-[create_sdm.json](../../data/config/create_sdm.json),
+`create_sdm.json <../../data/config/create_sdm.json>`_,
 
 These are the required and optional parameters:
 
@@ -73,7 +77,10 @@ These are the required and optional parameters:
     occurrence data files. If this parameter is not specified, it will default to 
     `y` (which is also the default value created in CSV data output from
     split_occurrence_data and wrangle_occurrences).
-  * **maxent_params**: Extra options and parameters to be sent to Maxent.  
+  * **maxent_params**: Extra options and parameters to be sent to Maxent.  A full list
+     of Maxent parameters, long with the value type, and sometimes a valid range of
+     values, is available
+     `here <https://github.com/mrmaxent/Maxent/blob/master/density/parameters.csv>`_.
   * **min_points**: Minimum number of points in an occurrence dataset for Maxent to be 
      used for modeling to.  If the data contains less than the minimum, the 
      `Rare Species Modeling` algorithm will be used.
