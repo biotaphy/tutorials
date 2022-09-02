@@ -2,7 +2,7 @@
     {
         "wrangler_type": "AcceptedNameSpeciesListWrangler",
         "name_resolver": "gbif",
-        "out_map_filename": "/volumes/output/gbif_splist.namemap",
+        "out_map_filename": "/volumes/output/splist_gbif.namemap",
         "map_write_interval": 100,
         "out_map_format": "json"
     }

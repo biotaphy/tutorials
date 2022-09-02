@@ -1,124 +1,82 @@
-Heuchera aceroides
-Heuchera hemsleyana
-Elmera racemosa
-Heuchera crinita
-Heuchera macrophylla
-Heuchera menziesii
-Heuchera rubescens
-Heuchera tenuifolia
-Heuchera roseola
-Heuchera utahensis
-Heuchera hapemanii
-Heuchera pulverulenta
-Heuchera flabellifolia
-Heuchera grossulariifolia
-Heuchera scapigera
-Heuchera longipetala
-Heuchera alpina
-Heuchera rugelii
-Heuchera californica
-Heuchera barbarossa
-Heuchera abramsii
-Heuchera hirsuta
-Heuchera merriamii
-Heuchera reglensis
-Heuchera bracteata
-Conimitella williamsii
-Heuchera reniformis
-Heuchera arkansana
-Heuchera eastwoodiae
-Heuchera glaberrima
-Heuchera pachypoda
-Heuchera mexicana
-Heuchera nana
-Heuchera lithophila
-Heuchera puberula
-Heuchera grandiflora
-Heuchera parvifolia
-Heuchera obtusissima
-Heuchera glomerulata
-Heuchera longiflora
-Heuchera williamsii
-Heuchera saxicola
-Heuchera brevistaminea
-Heuchera hirsutissima
-Heuchera minutiflora
-Heuchera orizabensis
-Heuchera viscida
-Heuchera sanguinea
-Heuchera suksdorfii
-Heuchera scabra
-Heuchera chlorantha
-Heuchera ovalifolia
-Heuchera richardsonii
+Heuchera rubescens versicolor
+Heuchera micrantha erubescens
 Heuchera caespitosa
-Heuchera flavescens
-Heuchera racemosa
-Heuchera parishii
-Heuchera lucida
-Heuchera cortusa
-Heuchera lancipetala
-Heuchera pilosella
-Heuchera glabra
-Heuchera maxima
-Heuchera dichotoma
-Heuchera wootonii
-Heuchera hartwegii
-Heuchera macrorhiza
-Heuchera missouriensis
-Heuchera nuttallii
-Heuchera gracilis
-Heuchera undulata
-Heuchera villosa
-Heuchera duranii
-Heuchera amoena
-Heuchera hallii
-Heuchera nivalis
-Heuchera sitgreavesii
-Heuchera pubescens
-Heuchera ciliata
-Heuchera glabella
-Heuchera drummondii
-Heuchera portula
-Heuchera elegans
-Heuchera caroliniana
-Heuchera foliosa
-Vahlia dichotoma
-Heuchera cusickii
-Heuchera calycosa
-Heuchera hirtiflora
-Tolmiea menziesii
-Heuchera cuneata
-Heuchera hirsuticaulis
-Heuchera easthamii
-Heuchera diversifolia
-Heuchera woodsiaphila
-Heuchera alpestris
-Heuchera pulchella
-Heuchera acerifolia
-Heuchera caulescens
-Heuchera clutei
-Heuchera parviflora
-Heuchera pringlei
+Conimitella williamsii
+Heuchera macrophylla
+Heuchera parvifolia utahensis
 Heuchera cylindrica
-Heuchera townsendii
-Heuchera leptomeria
+Heuchera micrantha
+Heuchera mexicana
+Heuchera parvifolia nivalis
+Heuchera hemsleyana
+Heuchera villosa
+Heuchera glabra
+Heuchera parviflora
 Heuchera himalayensis
-Heuchera erubescens
-Heuchera americana
-Tiarella californica
-Heuchera acutifolia
-Heuchera curtisii
-Heuchera hemisphaerica
-Heuchera pulchra
-Heuchera halstedii
-Heuchera hispida
-Heuchera pilosissima
-Heuchera columbiana
-Heuchera novamexicana
-Heuchera squamosa
-Heuchera versicolor
-Heuchera ribifolia
 Heuchera alba
+Heuchera sanguinea
+Heuchera pilosella
+Heuchera parishii
+Heuchera alpestris
+Heuchera pilosissima hemisphaerica
+Heuchera lithophila
+Heuchera undulata
+Heuchera micrantha diversifolia
+Heuchera amoena
+Heuchera grossulariifolia tenuifolia
+Tiarella trifoliata unifoliata
+Heuchera wootonii
+Heuchera abramsii
+Heuchera longipetala orizabensis
+Heuchera glomerulata
+Heuchera villosa arkansana
+Vahlia dichotoma
+Heuchera sanguinea pulchra
+Heuchera hirsutissima
+Heuchera longipetala
+Heuchera cylindrica glabella
+Heuchera duranii
+Elmera racemosa
+Heuchera missouriensis
+Heuchera americana
+Heuchera bracteata
+Heuchera pubescens
+Heuchera cylindrica alpina
+Tiarella trifoliata laciniata
+Heuchera woodsiaphila
+Heuchera eastwoodiae
+Heuchera pulchella
+Heuchera elegans
+Heuchera rubescens
+Heuchera novamexicana
+Heuchera maxima
+Heuchera parvifolia
+Tolmiea menziesii
+Heuchera halstedii
+Heuchera americana hirsuticaulis
+Heuchera merriamii
+Heuchera flabellifolia
+Heuchera cuneata
+Heuchera rubescens alpicola
+Heuchera obtusissima
+Heuchera caroliniana
+Heuchera ciliata
+Heuchera reglensis
+Heuchera longiflora
+Heuchera grossulariifolia
+Heuchera chlorantha
+Heuchera easthamii
+Heuchera brevistaminea
+Heuchera americana hispida
+Heuchera micrantha hartwegii
+Heuchera drummondii
+Heuchera richardsonii
+Sullivantia hapemanii
+Heuchera gracilis
+Heuchera roseola
+Heuchera parvifolia flavescens
+Heuchera pilosissima
+Heuchera acutifolia
+Heuchera puberula
 Heuchera lloydii
-Heuchera glauca
+Heuchera hallii

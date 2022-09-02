@@ -61,14 +61,21 @@ These are the required and optional parameters:
   * **writer_filename**: A file location to write cleaned points.
   * **wrangler_configuration_file**: occurrence wrangler configuration file,
     described in the next section.  The tutorial example wrangler configuration
-    contains one wrangler, the AcceptedNameOccurrenceWrangler, and is in
+    contains several wranglers, the DecimalPrecisionFilter, the UniqueLocalitiesFilter,
+    MinimumPointsWrangler, and the AcceptedNameOccurrenceWrangler, and is in
     `occ_wranglers_w_resolve.json <../../data/config/occ_wranglers_w_resolve.json>`_
 
 * Optional
 
   * **species_key**: The field name of the input file column containing species data.
+    The default value is `species_name`, so if the data contains any other column name
+    for the field to group on, this must be specified.
   * **x_key**: The field name of the input file column containing x/longitude coordinate.
+    The default value is `x`, so if the data contains any other column name
+    for the x coordinate, this must be specified.
   * **y_key**: The field name of the input file column containing y/latitude coordinate.
+    The default value is `y`, so if the data contains any other column name
+    for the y coordinate, this must be specified.
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
@@ -81,16 +88,34 @@ Initiate the process with the following:
 
 .. code-block::
 
-        # Data cleaning and name resolution
-        ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
         # Data cleaning only
         ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
-        # Name resolution only
-        ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
+
+        # Data cleaning and name resolution
+        ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
+
 
 --------------------------------
 Output
 --------------------------------
+
+This process outputs files configured in the script parameter file:
+
+2. If `report_filename` is specified in the script parameter file, a summary of name
+   resolutions, like
+   `wrangle_species_list_gbif.log <../../data/easy_bake/wrangle_species_list_gbif.log>`_
+3. If `log_filename` is specified in the script parameter file, a report like
+   `wrangle_species_list_gbif.rpt <../../data/easy_bake/wrangle_species_list_gbif.rpt>`_
+   containing a summary of the processing.
+3. If `log_console` is specified in the script parameter file, logs will be written to
+   the command prompt during execution.
+4. an output species list named in the out_species_list_filename, like
+   `heuchera_accepted_gbif.txt <../../data/easy_bake/heuchera_accepted_gbif.txt>`_
+   containing the modified species list, one name per line.
+
+The process produces one additional file configured in the wrangler configuration file:
+
+
 
 This process outputs a set of CSV files, one per species, to the directory specified in
 the script parameter file.  Each record is annotated with an "accepted name" as defined

@@ -78,12 +78,12 @@ These are the required and optional parameters:
     `y` (which is also the default value created in CSV data output from
     split_occurrence_data and wrangle_occurrences).
   * **maxent_params**: Extra options and parameters to be sent to Maxent.  A full list
-     of Maxent parameters, long with the value type, and sometimes a valid range of
-     values, is available
-     `here <https://github.com/mrmaxent/Maxent/blob/master/density/parameters.csv>`_.
+    of Maxent parameters, long with the value type, and sometimes a valid range of
+    values, is available
+    `here <https://github.com/mrmaxent/Maxent/blob/master/density/parameters.csv>`_.
   * **min_points**: Minimum number of points in an occurrence dataset for Maxent to be 
-     used for modeling to.  If the data contains less than the minimum, the 
-     `Rare Species Modeling` algorithm will be used.
+    used for modeling to.  If the data contains less than the minimum, the
+    `Rare Species Modeling` algorithm will be used.
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
@@ -106,11 +106,11 @@ Output
 
 Most outputs are configured in the script parameter file, and may include:
 
-1. **If "report_filename" is specified in the script parameter file, a summary of point
+1. If "report_filename" is specified in the script parameter file, a summary of point
    manipulations by each wrangler will be written to this file. 
 2. If "log_filename" is specified in the script parameter file, that will be created. 
 3. If "log_console" is specified in the script parameter file, logs will be written to the
-    command prompt during execution.
+   command prompt during execution.
 4. A directory named in the out_dir parameter, containing a subdirectory for each 
    input occurrence data file.  Each subdirectory will be named by the value in 
    the grouping field and contain a predicted distribution raster in ASCII format.  

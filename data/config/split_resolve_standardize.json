@@ -1,0 +1,19 @@
+{
+    "max_open_writers": 100,
+    "report_filename": "/volumes/output/split_resolve_standardize.rpt",
+    "log_filename": "/volumes/output/split_resolve_standardize.log",
+    "log_console": true,
+    "csv":  [
+      ["/volumes/data/input/occ_heuchera_gbif.csv",
+        "/volumes/data/wranglers/occ_resolve_standardize_gbif.json",
+        "acceptedScientificName",
+        "decimalLongitude",
+        "decimalLatitude"
+      ]
+    ],
+    "dwca":  [
+        ["/volumes/data/input/heuchera_idigbio.zip",
+         "/volumes/data/wranglers/occ_resolve_standardize_idigbio.json"
+      ]],
+  "out_dir": "/volumes/output/split_resolve_standardize"
+}

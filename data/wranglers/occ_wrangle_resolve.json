@@ -4,9 +4,16 @@
         "decimal_places" : 4
     },
     {
+        "wrangler_type" : "UniqueLocalitiesFilter"
+    },
+    {
+        "wrangler_type" : "MinimumPointsWrangler",
+        "minimum_count" : 12
+    },
+    {
         "wrangler_type": "AcceptedNameOccurrenceWrangler",
         "name_resolver": "gbif",
-        "out_map_filename": "/volumes/output/gbif_occ.namemap",
+        "out_map_filename": "/volumes/output/split_wrangle_resolve.namemap",
         "map_write_interval": 100,
         "out_map_format": "json"
     }

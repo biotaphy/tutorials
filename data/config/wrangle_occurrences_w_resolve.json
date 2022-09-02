@@ -2,7 +2,7 @@
     "species_key": "species_name",
     "x_key": "x",
     "y_key": "y",
-    "report_filename": "/volumes/output/wrangle_occurrences_w_resolve_report.json",
+    "report_filename": "/volumes/output/wrangle_occurrences_w_resolve.rpt",
     "log_filename": "/volumes/output/wrangle_occurrences_w_resolve.log",
     "log_console": true,
     "reader_filename": "/volumes/data/input/heuchera.csv",
