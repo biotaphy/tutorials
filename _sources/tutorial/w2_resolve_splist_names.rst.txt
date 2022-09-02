@@ -75,23 +75,25 @@ Initiate the process with the following:
 ---------------------------
 Output
 ---------------------------
-This process outputs files configured in the script parameter file, similar to the 
-following:
+This process outputs files configured in the script parameter file:
 
-1. text to the console as it processes each name.
-2. a log file named in the log_filename parameter, similar to 
+2. If `report_filename` is specified in the script parameter file, a summary of name
+   resolutions, like
    `wrangle_species_list_gbif.log <../../data/easy_bake/wrangle_species_list_gbif.log>`_
-3. a report file named in the report_filename parameter, similar to 
+3. If `log_filename` is specified in the script parameter file, a report like
    `wrangle_species_list_gbif.rpt <../../data/easy_bake/wrangle_species_list_gbif.rpt>`_
    containing a summary of the processing.
-4. an output species list named in the out_species_list_filename, similar to 
+3. If `log_console` is specified in the script parameter file, logs will be written to
+   the command prompt during execution.
+4. an output species list named in the out_species_list_filename, like
    `heuchera_accepted_gbif.txt <../../data/easy_bake/heuchera_accepted_gbif.txt>`_
    containing the modified species list, one name per line.
 
-The process also produces outputs according to the wrangler configuration file:
-1. a name-map file named in out_map_filename parameter for the 
-   AcceptedNameSpeciesListWrangler.  The name-map is a JSON file with pairs of names - 
+The process produces one additional file configured in the wrangler configuration file:
+
+*  An `out_map_filename` containing a name-map from the
+   AcceptedNameSpeciesListWrangler.  The name-map is a JSON file with pairs of names -
    the original name to the accepted name according to the specified authority.  
    This name-map is suitable to use for input when resolving another dataset containing 
    a subset of the same original names.  A sample output name-map is 
-   `gbif_splist.namemap <../../data/easy_bake/gbif_splist.namemap>`_.
+   `gbif_splist.namemap <../../data/easy_bake/splist_gbif.namemap>`_.

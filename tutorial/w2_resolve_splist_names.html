@@ -162,28 +162,31 @@ is in <a class="reference external" href="../../data/wranglers/splist_wranglers_
 </section>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
-<p>This process outputs files configured in the script parameter file, similar to the
-following:</p>
-<ol class="arabic simple">
-<li><p>text to the console as it processes each name.</p></li>
-<li><p>a log file named in the log_filename parameter, similar to
+<p>This process outputs files configured in the script parameter file:</p>
+<ol class="arabic simple" start="2">
+<li><p>If <cite>report_filename</cite> is specified in the script parameter file, a summary of name
+resolutions, like
 <a class="reference external" href="../../data/easy_bake/wrangle_species_list_gbif.log">wrangle_species_list_gbif.log</a></p></li>
-<li><p>a report file named in the report_filename parameter, similar to
+<li><p>If <cite>log_filename</cite> is specified in the script parameter file, a report like
 <a class="reference external" href="../../data/easy_bake/wrangle_species_list_gbif.rpt">wrangle_species_list_gbif.rpt</a>
 containing a summary of the processing.</p></li>
-<li><p>an output species list named in the out_species_list_filename, similar to
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>If <cite>log_console</cite> is specified in the script parameter file, logs will be written to
+the command prompt during execution.</p></li>
+<li><p>an output species list named in the out_species_list_filename, like
 <a class="reference external" href="../../data/easy_bake/heuchera_accepted_gbif.txt">heuchera_accepted_gbif.txt</a>
 containing the modified species list, one name per line.</p></li>
 </ol>
-<p>The process also produces outputs according to the wrangler configuration file:
-1. a name-map file named in out_map_filename parameter for the</p>
-<blockquote>
-<div><p>AcceptedNameSpeciesListWrangler.  The name-map is a JSON file with pairs of names -
+<p>The process produces one additional file configured in the wrangler configuration file:</p>
+<ul class="simple">
+<li><p>An <cite>out_map_filename</cite> containing a name-map from the
+AcceptedNameSpeciesListWrangler.  The name-map is a JSON file with pairs of names -
 the original name to the accepted name according to the specified authority.
 This name-map is suitable to use for input when resolving another dataset containing
 a subset of the same original names.  A sample output name-map is
-<a class="reference external" href="../../data/easy_bake/gbif_splist.namemap">gbif_splist.namemap</a>.</p>
-</div></blockquote>
+<a class="reference external" href="../../data/easy_bake/splist_gbif.namemap">gbif_splist.namemap</a>.</p></li>
+</ul>
 </section>
 </section>
 

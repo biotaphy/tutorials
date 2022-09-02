@@ -124,8 +124,8 @@ Darwin Core Archive (DwCA) file or a CSV file containing records for one or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the <strong>Occurrence Wrangler Types</strong> section
-of <a class="reference external" href="data_wrangle_occurrence.rst">data_wrangle_occurrence</a>.  In the first example, we will
-split occurrence data, but not perform any other wrangling on it, so our <a class="reference external" href="../data/config/wrangle_nothing.json">wrangler
+of <a class="reference external" href="data_wrangle_occurrence.rst">data_wrangle_occurrence</a>.  In the first example, we
+will split occurrence data, but not perform any other wrangling on it, so our <a class="reference external" href="../data/config/wrangle_nothing.json">wrangler
 configuration file</a> contains an empty list.  A
 second example <a class="reference external" href="../data/config/occ_wrangler_resolve.json">wrangler configuration file</a>
 resolves names with GBIF before grouping the data by name.</p>
@@ -150,28 +150,11 @@ does not exist, it will be created</p></li>
 <li><p>Optional:</p>
 <ul>
 <li><p><strong>max_open_writers</strong>: The maximum number of data writers to have open at once.</p></li>
-<li><p><strong>key_field</strong>: <strong>BUGGY - IGNORE THIS FOR NOW</strong> -
-The field name (or names) to use for filenames.  This/these must be
-encased in square brackets, i.e. <cite>“key_field”: `”scientificName”]</cite>. If multiple
-fields are provided, the ordered fields specify the sub-directory structure used for
-organizing files.  The first field will specify the directory directly under
-out_dir, and so on.  The final field will be contain the base filename.  These
-fields should be hierarchical.  For example, if grouping records into files by
-species, with a dataset containing 2000 species, using taxonomic grouping fields
-(in order from coarser to finer groups)
-such as <cite>“key_field”: `”family”, “genus”, “species”]</cite> would create a file
-with records for the Giant Panda in
-“&lt;out_dir&gt;/Ursidae/Ailuropoda/Ailuropoda melanoleuca.csv”.
-If this parameter is not specified, it will default to the fieldname for grouping
-data.  This is a required argument for CSV files and defaults to “scientificName”
-in DwCA files.  If there are more groups/files than are allowed in a directory, the
-files will be written to subdirectories by the beginning characters in the species
-name.</p></li>
-<li><p><strong>out_field</strong>: The field name or names of columns to be included in output CSV files.
-If this field is left out, all fields from the first successfully processed record
-will be included in outputs.</p></li>
-<li><p><strong>dwca</strong>: This is an optional argument, but either this, or <strong>csv</strong>, must be provided.
-List of 0 or more lists, each containing 2 arguments</p>
+<li><p><strong>out_field</strong>: The field name or names of columns to be included in output CSV
+files. If this field is left out, all fields from the first successfully processed
+record will be included in outputs.</p></li>
+<li><p><strong>dwca</strong>: This is an optional argument, but either this, or <strong>csv</strong>, must be
+provided.  List of 0 or more lists, each containing 2 arguments</p>
 <ul>
 <li><p>input DwCA file, and</p></li>
 <li><p>occurrence data wrangler configuration file (described in the next section). The
@@ -203,11 +186,14 @@ wrangling).</p></li>
 <h2>Run tutorial with DwCA data<a class="headerlink" href="#run-tutorial-with-dwca-data" title="Permalink to this heading"></a></h2>
 <p>Initiate the split_occurrence_data process with the following:
 .. code-block:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># with CSV data</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># split CSV data on species, no wrangling</span>
 <span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_occurrence_data_csv</span><span class="o">.</span><span class="n">json</span>
-<span class="c1"># with DwCA data</span>
+
+<span class="c1"># split DwCA data on species, no wrangling</span>
 <span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_occurrence_data_dwca</span><span class="o">.</span><span class="n">json</span>
-<span class="c1"># with 1 DwCA and 2 CSV and resolving names with GBIF</span>
+
+<span class="c1"># split and merge 1 iDigBio DwCA and 1 GBIF CSV, resolving names with GBIF,</span>
+<span class="c1"># then mapping fields to a common format</span>
 <span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_wrangle_occurrence_data</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>

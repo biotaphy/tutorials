@@ -161,19 +161,13 @@ split_occurrence_data and wrangle_occurrences).</p></li>
 occurrence data files. If this parameter is not specified, it will default to
 <cite>y</cite> (which is also the default value created in CSV data output from
 split_occurrence_data and wrangle_occurrences).</p></li>
-<li><dl class="simple">
-<dt><strong>maxent_params</strong>: Extra options and parameters to be sent to Maxent.  A full list</dt><dd><p>of Maxent parameters, long with the value type, and sometimes a valid range of
+<li><p><strong>maxent_params</strong>: Extra options and parameters to be sent to Maxent.  A full list
+of Maxent parameters, long with the value type, and sometimes a valid range of
 values, is available
-<a class="reference external" href="https://github.com/mrmaxent/Maxent/blob/master/density/parameters.csv">here</a>.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>min_points</strong>: Minimum number of points in an occurrence dataset for Maxent to be</dt><dd><p>used for modeling to.  If the data contains less than the minimum, the
-<cite>Rare Species Modeling</cite> algorithm will be used.</p>
-</dd>
-</dl>
-</li>
+<a class="reference external" href="https://github.com/mrmaxent/Maxent/blob/master/density/parameters.csv">here</a>.</p></li>
+<li><p><strong>min_points</strong>: Minimum number of points in an occurrence dataset for Maxent to be
+used for modeling to.  If the data contains less than the minimum, the
+<cite>Rare Species Modeling</cite> algorithm will be used.</p></li>
 <li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
 <li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
 <li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
@@ -191,14 +185,11 @@ values, is available
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
 <p>Most outputs are configured in the script parameter file, and may include:</p>
 <ol class="arabic simple">
-<li><p><a href="#id1"><span class="problematic" id="id2">**</span></a>If “report_filename” is specified in the script parameter file, a summary of point
+<li><p>If “report_filename” is specified in the script parameter file, a summary of point
 manipulations by each wrangler will be written to this file.</p></li>
 <li><p>If “log_filename” is specified in the script parameter file, that will be created.</p></li>
-<li><dl class="simple">
-<dt>If “log_console” is specified in the script parameter file, logs will be written to the</dt><dd><p>command prompt during execution.</p>
-</dd>
-</dl>
-</li>
+<li><p>If “log_console” is specified in the script parameter file, logs will be written to the
+command prompt during execution.</p></li>
 <li><p>A directory named in the out_dir parameter, containing a subdirectory for each
 input occurrence data file.  Each subdirectory will be named by the value in
 the grouping field and contain a predicted distribution raster in ASCII format.

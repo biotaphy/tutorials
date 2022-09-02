@@ -35,8 +35,8 @@ A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the **Occurrence Wrangler Types** section
-of `data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.  In the first example, we will
-split occurrence data, but not perform any other wrangling on it, so our `wrangler
+of `data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.  In the first example, we
+will split occurrence data, but not perform any other wrangling on it, so our `wrangler
 configuration file <../data/config/wrangle_nothing.json>`_ contains an empty list.  A
 second example `wrangler configuration file <../data/config/occ_wrangler_resolve.json>`_
 resolves names with GBIF before grouping the data by name.
@@ -51,7 +51,8 @@ A JSON parameter file is required for this command.  Three tutorial parameter fi
 `split_occurrence_data_dwca.json <../../data/config/split_occurrence_data_dwca.json>`_,
 `split_occurrence_data_csv.json <../../data/config/split_occurrence_data_csv.json>`_,
 and 
-`split_wrangle_occurrence_data.json <../../data/config/split_wrangle_occurrence_data.json>`_.
+`split_wrangle_occurrence_data.json
+<../../data/config/split_wrangle_occurrence_data.json>`_.
 
 These are the required and optional parameters:
 
@@ -63,28 +64,11 @@ These are the required and optional parameters:
 * Optional:
 
   * **max_open_writers**: The maximum number of data writers to have open at once.
-  * **key_field**: **BUGGY - IGNORE THIS FOR NOW** -
-    The field name (or names) to use for filenames.  This/these must be
-    encased in square brackets, i.e. `"key_field": `"scientificName"]`. If multiple
-    fields are provided, the ordered fields specify the sub-directory structure used for
-    organizing files.  The first field will specify the directory directly under
-    out_dir, and so on.  The final field will be contain the base filename.  These
-    fields should be hierarchical.  For example, if grouping records into files by
-    species, with a dataset containing 2000 species, using taxonomic grouping fields
-    (in order from coarser to finer groups)
-    such as `"key_field": `"family", "genus", "species"]` would create a file
-    with records for the Giant Panda in
-    "<out_dir>/Ursidae/Ailuropoda/Ailuropoda melanoleuca.csv".
-    If this parameter is not specified, it will default to the fieldname for grouping
-    data.  This is a required argument for CSV files and defaults to "scientificName"
-    in DwCA files.  If there are more groups/files than are allowed in a directory, the
-    files will be written to subdirectories by the beginning characters in the species
-    name.
-  * **out_field**: The field name or names of columns to be included in output CSV files.
-    If this field is left out, all fields from the first successfully processed record
-    will be included in outputs.
-  * **dwca**: This is an optional argument, but either this, or **csv**, must be provided.
-    List of 0 or more lists, each containing 2 arguments
+  * **out_field**: The field name or names of columns to be included in output CSV
+    files. If this field is left out, all fields from the first successfully processed
+    record will be included in outputs.
+  * **dwca**: This is an optional argument, but either this, or **csv**, must be
+    provided.  List of 0 or more lists, each containing 2 arguments
 
     * input DwCA file, and
     * occurrence data wrangler configuration file (described in the next section). The
@@ -112,12 +96,15 @@ Run tutorial with DwCA data
 Initiate the split_occurrence_data process with the following:
 .. code-block::
 
-      # with CSV data
-      ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
-      # with DwCA data
-      ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
-      # with 1 DwCA and 2 CSV and resolving names with GBIF
-      ./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
+  # split CSV data on species, no wrangling
+  ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
+
+  # split DwCA data on species, no wrangling
+  ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
+
+  # split and merge 1 iDigBio DwCA and 1 GBIF CSV, resolving names with GBIF,
+  # then mapping fields to a common format
+  ./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
 
 
 ------------------------------------------------
