@@ -91,8 +91,8 @@ Initiate the process with the following:
         # Data cleaning only
         ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
 
-        # Data cleaning and name resolution
-        ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_w_resolve.json
+        # Name resolution only
+        ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
 
 
 --------------------------------
@@ -103,34 +103,30 @@ This process outputs files configured in the script parameter file:
 
 2. If `report_filename` is specified in the script parameter file, a summary of name
    resolutions, like
-   `wrangle_species_list_gbif.log <../../data/easy_bake/wrangle_species_list_gbif.log>`_
+   `wrangle_occurrences.log <../../data/easy_bake/wrangle_occurrences.log>`_
 3. If `log_filename` is specified in the script parameter file, a report like
-   `wrangle_species_list_gbif.rpt <../../data/easy_bake/wrangle_species_list_gbif.rpt>`_
+   `wrangle_occurrences.rpt <../../data/easy_bake/wrangle_occurrences.rpt>`_
    containing a summary of the processing.
 3. If `log_console` is specified in the script parameter file, logs will be written to
    the command prompt during execution.
-4. an output species list named in the out_species_list_filename, like
-   `heuchera_accepted_gbif.txt <../../data/easy_bake/heuchera_accepted_gbif.txt>`_
-   containing the modified species list, one name per line.
+4. an output file with occurrence records named in the writer_filename, like
+   `heuchera_wrangled.csv <../../data/easy_bake/heuchera_wrangled.csv>`_ or
+   `occurrence_idigbio_resolved.csv
+   <../../data/easy_bake/occurrence_idigbio_resolved.csv>`_
+   containing the occurrence records, one record per line.  Note that the data
+   output from wrangling with the AcceptedNameOccurrenceWrangler,
+   occurrence_idigbio_resolved.csv, contains the original fields, plus fields
+   species_name, x, and y.  The species_name field contains the new taxonomic name
+   resolved for each record, while the original attributes retain the original values.
 
-The process produces one additional file configured in the wrangler configuration file:
+If the wrangler configuration file contains the AcceptedNameOccurrenceWrangler, as in
+the 2nd command above, using the wrangle_occurrences_only_resolve.json configuration
+file, the process produces one additional file configured in that wrangler
+configuration:
 
-
-
-This process outputs a set of CSV files, one per species, to the directory specified in
-the script parameter file.  Each record is annotated with an "accepted name" as defined
-in a name-map or by a taxonomic service. Records are grouped into files by matching
-"accepted name".
-
-If the "accepted name" does not come from a name-map, and a name-map filename is
-specified in the wrangler configuration, that file is also an output.
-
-If "report_filename" is specified in the script parameter file, a summary of point
-manipulations by each wrangler will be written to this file.
-
-If "log_filename" is specified in the script parameter file, that will be created.
-
-If "log_console" is specified in the script parameter file, logs will be written to the
-command prompt during execution.
-
-Current available taxonomic services include only GBIF at this time.
+*  An `out_map_filename` containing a name-map from the
+   AcceptedNameOccurrenceWrangler.  The name-map is a JSON file with pairs of names -
+   the original name to the accepted name according to the specified authority.
+   This name-map is suitable to use for input when resolving another dataset containing
+   a subset of the same original names.  A sample output name-map is
+   `splist_wrangle_gbif.namemap <../../data/easy_bake/splist_wrangle_gbif.namemap>`_.

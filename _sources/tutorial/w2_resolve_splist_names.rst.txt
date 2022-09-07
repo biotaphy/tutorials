@@ -70,7 +70,7 @@ Initiate the process with the following:
 
 .. code-block::
 
-       ./run_tutorial.sh  wrangle_species_list  data/config/wrangle_species_list_gbif.json
+       ./run_tutorial.sh wrangle_spepythcies_list data/config/wrangle_species_list_gbif.json
 
 ---------------------------
 Output
@@ -96,4 +96,4 @@ The process produces one additional file configured in the wrangler configuratio
    the original name to the accepted name according to the specified authority.  
    This name-map is suitable to use for input when resolving another dataset containing 
    a subset of the same original names.  A sample output name-map is 
-   `gbif_splist.namemap <../../data/easy_bake/splist_gbif.namemap>`_.
+   `splist_wrangle_gbif.namemap <../../data/easy_bake/splist_wrangle_gbif.namemap>`_.
