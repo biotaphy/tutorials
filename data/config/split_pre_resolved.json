@@ -1,0 +1,21 @@
+{
+    "log_filename": "/volumes/output/split_pre_resolved.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/split_pre_resolved.rpt",
+    "max_open_writers": 100,
+    "csv":  [
+      ["/volumes/data/easy_bake/occurrence_idigbio_resolved.csv",
+        "/volumes/data/wranglers/no_wranglers",
+        "species_name",
+        "x",
+        "y"
+      ],
+      ["/volumes/data/input/occurrence_gbif.csv",
+        "/volumes/data/wranglers/no_wranglers.json",
+        "scientificName",
+        "decimalLongitude",
+        "decimalLatitude"
+      ]
+    ],
+    "out_dir": "/volumes/output/split_csv"
+}
