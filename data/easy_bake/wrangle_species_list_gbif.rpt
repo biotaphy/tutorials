@@ -1,8 +1,8 @@
 [
     {
-        "unresolved": 4,
-        "duplicates": 41,
         "name": "AcceptedNameSpeciesListWrangler",
-        "version": "1.0"
+        "version": "1.0",
+        "unresolved": 4,
+        "duplicates": 41
     }
 ]

@@ -1,12 +1,20 @@
 {
-    "log_filename": "/volumes/output/split_dwca.log",
+    "log_filename": "/volumes/output/split_resolve_dwca_csv.log",
     "log_console": true,
-    "report_filename": "/volumes/output/split_dwca.rpt",
+    "report_filename": "/volumes/output/split_resolve_dwca_csv.rpt",
     "max_open_writers": 100,
     "dwca":  [
-        ["/volumes/data/input/heuchera_idigbio.zip",
+        ["/volumes/data/input/occurrence_idigbio.zip",
          "/volumes/data/wranglers/occ_resolve.json"
         ]
     ],
-    "out_dir": "/volumes/output/split_dwca"
+    "csv": [
+        ["/volumes/data/input/occurrence_gbif.csv",
+        "/volumes/data/wranglers/occ_resolve.json",
+        "acceptedScientificName",
+        "decimalLongitude",
+        "decimalLatitude"
+        ]
+    ],
+    "out_dir": "/volumes/output/split_resolve_dwca_csv"
 }

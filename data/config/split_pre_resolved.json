@@ -10,12 +10,12 @@
         "x",
         "y"
       ],
-      ["/volumes/data/input/occurrence_gbif.csv",
+      ["/volumes/data/easy_bake/occurrence_gbif_resolved.csv",
         "/volumes/data/wranglers/no_wranglers.json",
-        "scientificName",
-        "decimalLongitude",
-        "decimalLatitude"
+        "species_name",
+        "x",
+        "y"
       ]
     ],
-    "out_dir": "/volumes/output/split_csv"
+    "out_dir": "/volumes/output/split_pre_resolved"
 }
