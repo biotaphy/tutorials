@@ -6,6 +6,6 @@
     "log_filename": "/volumes/output/wrangle_occurrences_resolve.log",
     "log_console": true,
     "reader_filename": "/volumes/data/input/heuchera.csv",
-    "writer_filename":  "/volumes/output/heuchera_resolved.csv",
-    "wrangler_config_filename":   "/volumes/data/wranglers/occ_resolve.json"
+    "writer_filename":  "/volumes/output/heuchera_wrangled.csv",
+    "wrangler_config_filename":   "/volumes/data/wranglers/occ_wrangle_resolve.json"
 }

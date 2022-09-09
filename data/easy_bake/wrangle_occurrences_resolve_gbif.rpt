@@ -1,0 +1,13 @@
+{
+    "input_records": 14425,
+    "output_records": 14425,
+    "wranglers": [
+        {
+            "name": "AcceptedNameOccurrenceWrangler",
+            "version": "1.0",
+            "assessed": 0,
+            "modified": 0,
+            "filtered": 0
+        }
+    ]
+}

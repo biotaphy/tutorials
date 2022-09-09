@@ -4,16 +4,18 @@
     "log_filename": "/volumes/output/split_standardize.log",
     "log_console": true,
     "csv":  [
-      ["/volumes/data/input/occ_heuchera_gbif.csv",
+      ["/volumes/data/input/occurrence_gbif_resolved.csv",
         "/volumes/data/wranglers/occ_standardize_gbif.json",
-        "acceptedScientificName",
-        "decimalLongitude",
-        "decimalLatitude"
+        "species_name",
+        "x",
+        "y"
+      ],
+      ["/volumes/data/input/occurrence_idigbio_resolved.csv",
+       "/volumes/data/wranglers/occ_standardize_idigbio.json",
+        "species_name",
+        "x",
+        "y"
       ]
     ],
-    "dwca":  [
-        ["/volumes/data/input/heuchera_idigbio.zip",
-         "/volumes/data/wranglers/occ_standardize_idigbio.json"
-      ]],
   "out_dir": "/volumes/output/split_standardize"
 }

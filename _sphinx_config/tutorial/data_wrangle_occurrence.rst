@@ -45,6 +45,10 @@ specific to each.  Configuration files:
 * Each dictionary must contain "wrangler_type", with the name of the wrangler type.
 * The dictionary will also contain all required parameters and any optional parameters.
 
+If an operation, such as split_occurrence_data requires a wrangle configuration file,
+and no other data manipuation is requested, the configuration file can contain an empty
+list, such as:  `no_wrangle <../../data/wranglers/no_wrangle.rst>`_.
+
 --------------------------------
 Occurrence Wrangler Types
 --------------------------------
