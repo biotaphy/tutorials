@@ -52,7 +52,7 @@ described next.
 Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 A JSON parameter file is required for this command.  The tutorial parameter file is
-`wrangle_occurrences_w_resolve.json <../../data/config/wrangle_occurrences_w_resolve.json>`_.
+`wrangle_occurrences_resolve.json <../../data/config/wrangle_occurrences_resolve.json>`_.
 These are the required and optional parameters:
 
 * Required:
@@ -76,6 +76,9 @@ These are the required and optional parameters:
   * **y_key**: The field name of the input file column containing y/latitude coordinate.
     The default value is `y`, so if the data contains any other column name
     for the y coordinate, this must be specified.
+  * **geopoint**: The field name of the input file column containing a JSON encoded
+    geopoint, with sub-elements containing the x and y keys with their coordinates.
+    The default value is None.
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
@@ -88,11 +91,8 @@ Initiate the process with the following:
 
 .. code-block::
 
-        # Data cleaning only
-        ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences.json
-
-        # Name resolution only
-        ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_only_resolve.json
+        # Data cleaning and name resolution
+        ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_resolve.json
 
 
 --------------------------------
@@ -103,25 +103,22 @@ This process outputs files configured in the script parameter file:
 
 2. If `report_filename` is specified in the script parameter file, a summary of name
    resolutions, like
-   `wrangle_occurrences.log <../../data/easy_bake/wrangle_occurrences.log>`_
+   `wrangle_occurrences.log <../../data/easy_bake/wrangle_occurrences_resolve.log>`_
 3. If `log_filename` is specified in the script parameter file, a report like
-   `wrangle_occurrences.rpt <../../data/easy_bake/wrangle_occurrences.rpt>`_
+   `wrangle_occurrences.rpt <../../data/easy_bake/wrangle_occurrences_resolve.rpt>`_
    containing a summary of the processing.
 3. If `log_console` is specified in the script parameter file, logs will be written to
    the command prompt during execution.
 4. an output file with occurrence records named in the writer_filename, like
-   `heuchera_wrangled.csv <../../data/easy_bake/heuchera_wrangled.csv>`_ or
-   `occurrence_idigbio_resolved.csv
-   <../../data/easy_bake/occurrence_idigbio_resolved.csv>`_
-   containing the occurrence records, one record per line.  Note that the data
-   output from wrangling with the AcceptedNameOccurrenceWrangler,
-   occurrence_idigbio_resolved.csv, contains the original fields, plus fields
-   species_name, x, and y.  The species_name field contains the new taxonomic name
-   resolved for each record, while the original attributes retain the original values.
+   `heuchera_wrangled.csv <../../data/easy_bake/heuchera_wrangled.csv>`_
+   containing the occurrence records, one record per line.  Note that the species_name
+   field now contains the new taxonomic name resolved for each record.  If the
+   original records contain other attributes, those will be retained with their
+   original values.
 
 If the wrangler configuration file contains the AcceptedNameOccurrenceWrangler, as in
-the 2nd command above, using the wrangle_occurrences_only_resolve.json configuration
-file, the process produces one additional file configured in that wrangler
+the command above, using the wrangle_occurrences_resolve.json configuration
+file, the process produces one additional file as configured in that wrangler
 configuration:
 
 *  An `out_map_filename` containing a name-map from the

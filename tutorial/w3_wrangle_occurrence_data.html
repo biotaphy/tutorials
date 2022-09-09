@@ -138,7 +138,7 @@ described next.</p>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file is
-<a class="reference external" href="../../data/config/wrangle_occurrences_w_resolve.json">wrangle_occurrences_w_resolve.json</a>.
+<a class="reference external" href="../../data/config/wrangle_occurrences_resolve.json">wrangle_occurrences_resolve.json</a>.
 These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -163,6 +163,9 @@ for the x coordinate, this must be specified.</p></li>
 <li><p><strong>y_key</strong>: The field name of the input file column containing y/latitude coordinate.
 The default value is <cite>y</cite>, so if the data contains any other column name
 for the y coordinate, this must be specified.</p></li>
+<li><p><strong>geopoint</strong>: The field name of the input file column containing a JSON encoded
+geopoint, with sub-elements containing the x and y keys with their coordinates.
+The default value is None.</p></li>
 <li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
 <li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
 <li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
@@ -174,11 +177,8 @@ for the y coordinate, this must be specified.</p></li>
 <section id="run-tutorial">
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
 <p>Initiate the process with the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data cleaning only</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_occurrences</span><span class="o">.</span><span class="n">json</span>
-
-<span class="c1"># Name resolution only</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_occurrences_only_resolve</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data cleaning and name resolution</span>
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_occurrences_resolve</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>
@@ -188,26 +188,24 @@ for the y coordinate, this must be specified.</p></li>
 <ol class="arabic simple" start="2">
 <li><p>If <cite>report_filename</cite> is specified in the script parameter file, a summary of name
 resolutions, like
-<a class="reference external" href="../../data/easy_bake/wrangle_occurrences.log">wrangle_occurrences.log</a></p></li>
+<a class="reference external" href="../../data/easy_bake/wrangle_occurrences_resolve.log">wrangle_occurrences.log</a></p></li>
 <li><p>If <cite>log_filename</cite> is specified in the script parameter file, a report like
-<a class="reference external" href="../../data/easy_bake/wrangle_occurrences.rpt">wrangle_occurrences.rpt</a>
+<a class="reference external" href="../../data/easy_bake/wrangle_occurrences_resolve.rpt">wrangle_occurrences.rpt</a>
 containing a summary of the processing.</p></li>
 </ol>
 <ol class="arabic simple" start="3">
 <li><p>If <cite>log_console</cite> is specified in the script parameter file, logs will be written to
 the command prompt during execution.</p></li>
 <li><p>an output file with occurrence records named in the writer_filename, like
-<a class="reference external" href="../../data/easy_bake/heuchera_wrangled.csv">heuchera_wrangled.csv</a> or
-<a class="reference external" href="../../data/easy_bake/occurrence_idigbio_resolved.csv">occurrence_idigbio_resolved.csv</a>
-containing the occurrence records, one record per line.  Note that the data
-output from wrangling with the AcceptedNameOccurrenceWrangler,
-occurrence_idigbio_resolved.csv, contains the original fields, plus fields
-species_name, x, and y.  The species_name field contains the new taxonomic name
-resolved for each record, while the original attributes retain the original values.</p></li>
+<a class="reference external" href="../../data/easy_bake/heuchera_wrangled.csv">heuchera_wrangled.csv</a>
+containing the occurrence records, one record per line.  Note that the species_name
+field now contains the new taxonomic name resolved for each record.  If the
+original records contain other attributes, those will be retained with their
+original values.</p></li>
 </ol>
 <p>If the wrangler configuration file contains the AcceptedNameOccurrenceWrangler, as in
-the 2nd command above, using the wrangle_occurrences_only_resolve.json configuration
-file, the process produces one additional file configured in that wrangler
+the command above, using the wrangle_occurrences_resolve.json configuration
+file, the process produces one additional file as configured in that wrangler
 configuration:</p>
 <ul class="simple">
 <li><p>An <cite>out_map_filename</cite> containing a name-map from the

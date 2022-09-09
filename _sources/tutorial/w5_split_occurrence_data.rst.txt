@@ -2,15 +2,19 @@
 Webinar 5: Split and merge occurrence data by species
 ================================================================
 
-`Big Data Munging <https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1>`_
-(Module 2, Big-Data approaches).  Split one or more occurrence datasets by species.  
+`Big Data Munging
+<https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1>`_
+Split one or more occurrence datasets by species.
 If we are splitting more than one dataset, records in different datasets with the same
 species name will be combined into one file.  The tool allows multiple operations, 
 defined in a configuration file, to be applied to the data at the same time, just like
-in the wrangle_occurrences tool demonstrated in Webinar 3.  
+in the wrangle_occurrences tool demonstrated in Webinar 3.
 
 The tool will group and write out occurrence records into separate CSV files based on 
-a field with values to be grouped on, generally a species name. 
+a field with values to be grouped on, generally a species name.
+
+The tool will add the
+fields `species_name`, `x`, and `y` to every record, and leave other fields unchanged.
 
 ------------------------------------------------
 Introduction
@@ -35,11 +39,18 @@ A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the **Occurrence Wrangler Types** section
-of `data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.  In the first example, we
-will split occurrence data, but not perform any other wrangling on it, so our `wrangler
-configuration file <../data/config/wrangle_nothing.json>`_ contains an empty list.  A
-second example `wrangler configuration file <../data/config/occ_wrangler_resolve.json>`_
+of `data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.
+
+In the first example, we
+will split occurrence data, but not perform any other wrangling on it, so our wrangler
+configuration file `no_wrangle.json <../data/config/no_wrangle.json>`_ contains an empty
+list.  A second example `wrangler configuration file
+<../data/config/occ_wrangler_resolve.json>`_
 resolves names with GBIF before grouping the data by name.
+
+If you wish to split occurrence data without performing additional data wrangling,
+provide a wrangler_configuration_file with no data, like
+`no_wrangle <../../data/wranglers/no_wrangle.rst>`_.
 
 If more than one dataset is being processed, it is logical to apply the same wranglers 
 to each.  
@@ -47,12 +58,13 @@ to each.
 Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A JSON parameter file is required for this command.  Three tutorial parameter files are 
-`split_occurrence_data_dwca.json <../../data/config/split_occurrence_data_dwca.json>`_,
-`split_occurrence_data_csv.json <../../data/config/split_occurrence_data_csv.json>`_,
+A JSON parameter file is required for this command.  Three tutorial parameter files are
+
+`split_resolve_gbif.json <../../data/config/split_resolve_gbif.json>`_,
+`split_resolve_idb.json <../../data/config/split_resolve_idb.json>`_,
 and 
-`split_wrangle_occurrence_data.json
-<../../data/config/split_wrangle_occurrence_data.json>`_.
+`split_occurrence_data_resolve.json
+<../../data/config/split_occurrence_data_resolve.json>`_.
 
 These are the required and optional parameters:
 

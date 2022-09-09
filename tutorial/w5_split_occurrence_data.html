@@ -97,13 +97,15 @@
   <section id="webinar-5-split-and-merge-occurrence-data-by-species">
 <h1>Webinar 5: Split and merge occurrence data by species<a class="headerlink" href="#webinar-5-split-and-merge-occurrence-data-by-species" title="Permalink to this heading"></a></h1>
 <p><a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1">Big Data Munging</a>
-(Module 2, Big-Data approaches).  Split one or more occurrence datasets by species.
+Split one or more occurrence datasets by species.
 If we are splitting more than one dataset, records in different datasets with the same
 species name will be combined into one file.  The tool allows multiple operations,
 defined in a configuration file, to be applied to the data at the same time, just like
 in the wrangle_occurrences tool demonstrated in Webinar 3.</p>
 <p>The tool will group and write out occurrence records into separate CSV files based on
 a field with values to be grouped on, generally a species name.</p>
+<p>The tool will add the
+fields <cite>species_name</cite>, <cite>x</cite>, and <cite>y</cite> to every record, and leave other fields unchanged.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>Read <a class="reference external" href="../tutorial/w1_overview.rst">Tutorial Overview</a> for an overview of how all
@@ -124,21 +126,25 @@ Darwin Core Archive (DwCA) file or a CSV file containing records for one or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the <strong>Occurrence Wrangler Types</strong> section
-of <a class="reference external" href="data_wrangle_occurrence.rst">data_wrangle_occurrence</a>.  In the first example, we
-will split occurrence data, but not perform any other wrangling on it, so our <a class="reference external" href="../data/config/wrangle_nothing.json">wrangler
-configuration file</a> contains an empty list.  A
-second example <a class="reference external" href="../data/config/occ_wrangler_resolve.json">wrangler configuration file</a>
+of <a class="reference external" href="data_wrangle_occurrence.rst">data_wrangle_occurrence</a>.</p>
+<p>In the first example, we
+will split occurrence data, but not perform any other wrangling on it, so our wrangler
+configuration file <a class="reference external" href="../data/config/no_wrangle.json">no_wrangle.json</a> contains an empty
+list.  A second example <a class="reference external" href="../data/config/occ_wrangler_resolve.json">wrangler configuration file</a>
 resolves names with GBIF before grouping the data by name.</p>
+<p>If you wish to split occurrence data without performing additional data wrangling,
+provide a wrangler_configuration_file with no data, like
+<a class="reference external" href="../../data/wranglers/no_wrangle.rst">no_wrangle</a>.</p>
 <p>If more than one dataset is being processed, it is logical to apply the same wranglers
 to each.</p>
 </section>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
-<p>A JSON parameter file is required for this command.  Three tutorial parameter files are
-<a class="reference external" href="../../data/config/split_occurrence_data_dwca.json">split_occurrence_data_dwca.json</a>,
-<a class="reference external" href="../../data/config/split_occurrence_data_csv.json">split_occurrence_data_csv.json</a>,
+<p>A JSON parameter file is required for this command.  Three tutorial parameter files are</p>
+<p><a class="reference external" href="../../data/config/split_resolve_gbif.json">split_resolve_gbif.json</a>,
+<a class="reference external" href="../../data/config/split_resolve_idb.json">split_resolve_idb.json</a>,
 and
-<a class="reference external" href="../../data/config/split_wrangle_occurrence_data.json">split_wrangle_occurrence_data.json</a>.</p>
+<a class="reference external" href="../../data/config/split_occurrence_data_resolve.json">split_occurrence_data_resolve.json</a>.</p>
 <p>These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
