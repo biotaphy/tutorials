@@ -104,32 +104,38 @@ the tools, executes the processes, and returns the outputs to the local machine.
 </section>
 <section id="preparation">
 <h2>Preparation<a class="headerlink" href="#preparation" title="Permalink to this heading"></a></h2>
+<p>Download the github repository for this tutorial, including scripts, data, and
+configuration files.  Go to the <a class="reference external" href="https://github.com/biotaphy/tutorials">https://github.com/biotaphy/tutorials</a> page,
+and click the green button marked “Code”.  In the resulting drop-down menu,
+choose “Download ZIP”.  When the file has downloaded, move the file (or the directory
+resulting from auto-decompress) to your chosen directory.  If the file has not been
+uncompressed, do that.  In Windows, right-click the zip file and choose
+“Extract All…”.  In OSX or Linux, run unzip with the filename.</p>
 <p>To run Biotaphy tools on any OS, locally through <a class="reference internal" href="../pages/glossary.html#term-Docker"><span class="xref std std-term">Docker</span></a>, first download and
 install <a class="reference external" href="https://docs.docker.com/get-started/">Docker</a>.</p>
 </section>
 <section id="host-and-container-input-output-log-directories">
 <h2>Host and Container input, output, log directories<a class="headerlink" href="#host-and-container-input-output-log-directories" title="Permalink to this heading"></a></h2>
-<p>A <span class="xref std std-term">Volume</span> “data”, is created on the <a class="reference internal" href="../pages/glossary.html#term-Host-machine"><span class="xref std std-term">Host machine</span></a>, and the
+<p>A data Docker <span class="xref std std-term">Volume</span>, is created on the <a class="reference internal" href="../pages/glossary.html#term-Host-machine"><span class="xref std std-term">Host machine</span></a>, and the
 tutorials/data/input, tutorials/data/config, and tutorials/data/wranglers directories
 in this repository are copied to it.  These directories are then made available on the
-<a class="reference internal" href="../pages/glossary.html#term-Container"><span class="xref std std-term">Container</span></a> under the /volumes/data volume (directory).  This volume is read-only,
-and can only be modified from the Host machine prior to building your Container.
+Docker <a class="reference internal" href="../pages/glossary.html#term-Container"><span class="xref std std-term">Container</span></a> under the /volumes/data volume (directory).
 If modified, the docker “data” volume must be re-created to propagate those changes to
 the containers.</p>
-<p>A named volume <cite>output</cite> is created on the <a class="reference internal" href="../pages/glossary.html#term-Host-machine"><span class="xref std std-term">Host machine</span></a> and mounted at
-/volumes/output in the <a class="reference internal" href="../pages/glossary.html#term-Container"><span class="xref std std-term">Container</span></a>.  Changes in this directory are saved in the
-volume, and copied back to the host machine, under the data directory.</p>
+<p>Another Docker volume, <cite>output</cite>, is created on the <a class="reference internal" href="../pages/glossary.html#term-Host-machine"><span class="xref std std-term">Host machine</span></a> and mounted at
+/volumes/output in the Docker <a class="reference internal" href="../pages/glossary.html#term-Container"><span class="xref std std-term">Container</span></a>.  Changes in this directory are saved
+in the volume, and copied back to the host machine, under the data directory.</p>
 </section>
 <section id="data-preparation-script-parameters-file">
 <h2>Data preparation: Script parameters File<a class="headerlink" href="#data-preparation-script-parameters-file" title="Permalink to this heading"></a></h2>
 <p>All commands require a parameters file with tool-specific parameters.  The file
 must be in <a class="reference internal" href="../pages/glossary.html#term-JSON"><span class="xref std std-term">JSON</span></a> format.  More information is [here](script_params.rst).</p>
-<p>Each tutorial contains one or more example parameters files in the tutorials/data/config
-directory.  These parameters files reference example data and parameters reasonable for
-that command.  All required and optional parameters are described in individual tutorial
-pages.</p>
+<p>Each tutorial contains one or more example parameters files in the
+tutorials/data/config directory.  These parameters files reference example data and
+parameters reasonable for that command.  All required and optional parameters are
+described in individual tutorial pages.</p>
 <p>Some tools will require an additional <a class="reference internal" href="../pages/glossary.html#term-JSON"><span class="xref std std-term">JSON</span></a> format configuration file.  In these
-cases, the JSON file will be specified in the parameters file.</p>
+cases, the additional JSON file will be named in the parameters file.</p>
 </section>
 <section id="run-tool-tutorials">
 <h2>Run tool tutorials<a class="headerlink" href="#run-tool-tutorials" title="Permalink to this heading"></a></h2>
@@ -138,7 +144,7 @@ the 1) command name and 2) parameters file.  The parameters file will be a path
 on the local machine, in the tutorials/data/config directory.  The script will translate
 that to the container path, and execute the command in the container with the
 container’s copy of the file.  For example, the
-<a class="reference external" href="w2_resolve_splist_names">wrangle species list</a> tutorial can be initiated
+<a class="reference external" href="w2_resolve_splist_names">wrangle_species_list</a> tutorial can be initiated
 with:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_species_list</span> <span class="o">./</span><span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_species_list_gbif</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
@@ -146,20 +152,18 @@ with:</p>
 </section>
 <section id="behind-the-scenes">
 <h2>Behind the scenes<a class="headerlink" href="#behind-the-scenes" title="Permalink to this heading"></a></h2>
-<p>The “run_tutorial” script will:</p>
+<p>The “run_tutorial” script will execute the following functions, unless their outputs
+have already been created:</p>
 <ol class="arabic simple">
-<li><p>Create (if they do not exist) :term:<a href="#id1"><span class="problematic" id="id2">`</span></a>Volume`s to share data between the host and
-container.</p></li>
-<li><p>Build (if it does not exist) a <a class="reference internal" href="../pages/glossary.html#term-Docker-image"><span class="xref std std-term">Docker image</span></a>.</p></li>
-<li><p>Start (if it is not running) a Docker <a class="reference internal" href="../pages/glossary.html#term-Container"><span class="xref std std-term">Container</span></a> from the image, with volumes
-attached.</p></li>
+<li><p>Create several <span class="xref std std-term">Docker Volumes</span> to share data between the host and
+Docker container.</p></li>
+<li><p>Build a <a class="reference internal" href="../pages/glossary.html#term-Docker-image"><span class="xref std std-term">Docker image</span></a>.</p></li>
+<li><p>Start a Docker <a class="reference internal" href="../pages/glossary.html#term-Container"><span class="xref std std-term">Container</span></a> from the image, with volumes attached.  A
+Container is similar to a fully functioning computer with data and applications.</p></li>
 <li><p>Execute the specified command with the parameters in the specified configuration
-file. directory.  The process will:</p>
-<ol class="arabic simple">
-<li><p>read files from the container <strong>/volumes/data</strong> directory</p></li>
-<li><p>write outputs and logs to the container <strong>/volumes/output</strong> directory</p></li>
-</ol>
-</li>
+file.  The process will execute using a parameter file and data in the <cite>data</cite>
+<span class="xref std std-term">data volume</span> and write outputs to the <span class="xref std std-term">output volume</span>,
+executing code in the <a class="reference internal" href="../pages/glossary.html#term-Container"><span class="xref std std-term">Docker container</span></a>.</p></li>
 <li><p>Copy the container <strong>/volumes/output</strong> directory back to the local data directory.</p></li>
 <li><p>Stop and delete the container.  All outputs in the docker volume are preserved and
 accessible the next time it is attached to a container.</p></li>
@@ -176,39 +180,8 @@ will be copied to the data/outputs directory on completion.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span>  <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span>  <span class="o">&lt;</span><span class="n">tool_configuration_file</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Sending the command <strong>list_commands</strong> will print all valid commands.  Below are some
-commands with example configurations.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Webinar 1</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">list_commands</span>
-
-<span class="c1"># Webinar 2</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_species_list</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_species_list_gbif</span><span class="o">.</span><span class="n">json</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_species_list</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_species_list_namemap</span><span class="o">.</span><span class="n">json</span>
-
-<span class="c1"># Webinar 3</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_occurrences</span><span class="o">.</span><span class="n">json</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_occurrences_only_resolve</span><span class="o">.</span><span class="n">json</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_occurrences_w_resolve</span><span class="o">.</span><span class="n">json</span>
-
-<span class="c1"># Webinar 5</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_occurrence_data_csv</span><span class="o">.</span><span class="n">json</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_occurrence_data_dwca</span><span class="o">.</span><span class="n">json</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_wrangle_occurrence_data</span><span class="o">.</span><span class="n">json</span>
-
-<span class="c1"># Webinar 6</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">create_sdm</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">create_sdm</span><span class="o">.</span><span class="n">json</span>
-
-<span class="c1"># Webinar 7</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">build_grid</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">build_grid</span><span class="o">.</span><span class="n">json</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">encode_layers</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">encode_layers</span><span class="o">.</span><span class="n">json</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">calculate_pam_stats</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">calculate_pam_stats</span><span class="o">.</span><span class="n">json</span>
-
-<span class="c1"># Webinar 8</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_tree</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_tree</span><span class="o">.</span><span class="n">json</span>
-
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">clean_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">clean_occurrences</span><span class="o">.</span><span class="n">json</span>
-</pre></div>
-</div>
+<p>Sending the command <strong>list_commands</strong> will print all valid commands.  All Biotaphy
+commands require an additional parameter configuration file.</p>
 </section>
 </section>
 
