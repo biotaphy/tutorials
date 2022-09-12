@@ -47,7 +47,7 @@ Data preparation: Script parameters File
 
 All commands require a parameters file with tool-specific parameters.  The file
 must be in :term:`JSON` format.  More information is in the `Script parameters file
-<script_params.rst>`_ documentation.
+<script_params>`_ documentation.
 
 Each tutorial contains one or more example parameters files in the
 tutorials/data/config directory.  These parameters files reference example data and
