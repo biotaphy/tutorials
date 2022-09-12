@@ -1,20 +1,25 @@
-# Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data
+==============================
+Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data
+==============================
 
-**Webinar #8**  [Phylogenetic diversity: Integrating Phylogenies with Species and 
-Biogeographic Data](https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.z9bjp5mgfgld)
-Analyze the PAM matrix with a tree containing the same species to determine the 
+Analyze the PAM matrix with a tree containing the same species to determine the
 phylogenetic diversity of a region.
 
-## Introduction
+--------------------
+Introduction
+--------------------
 
 Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
 tutorials work.
 
-## Step 1: Cleanup the matrix
+--------------------
+Step 1: Cleanup the matrix
+--------------------
 
 Subset the matrix to the tree species and remove empty (all zeros) rows and columns.
 
-### Data preparation: Script parameter file
+Data preparation: Script parameter file
+******************************************
 
 A JSON parameter file is required for this command.  The tutorial parameter file
 is [resolve_tree_names.json](../../data/config/resolve_tree_names.json). These are the
@@ -34,19 +39,22 @@ required and optional parameters:
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
 
-### Data preparation: Input matrix
+Data preparation: Input matrix
+******************************************
 
-Use a PAM created in [Tutorial 7](./w7_build_pam.rst).  An example PAM is available in
-[pam.lmm](../../data/input/pam.lmm).
+Use a PAM created in `Tutorial 7 <w7_build_pam>`_.  An example PAM is available in
+`pam.lmm <../../data/input/pam.lmm>`_.
 
-### Data preparation: Wrangler configuration file
+Data preparation: Wrangler configuration file
+******************************************
 
 A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in [data_wrangle_matrix](data_wrangle_matrix.md).
 
-## Run tutorial
+Run tutorial
+******************************************
 
 Initiate the process with the following:
 
@@ -54,20 +62,24 @@ Initiate the process with the following:
 ./run_tutorial.sh  wrangle_matrix  data/config/wrangle_matrix.json
 ```
 
-## Output
+Output
+******************************************
 
 This process outputs a file containing the modified matrix and any optional logfiles 
 and reports specified in the Script parameter file. 
 
-## Step 2: Calculate stats with the updated PAM and associated Tree 
+--------------------------------
+Step 2: Calculate stats with the updated PAM and associated Tree
+--------------------------------
 
 Now that a grid has been built, and a PAM has been populated by intersecting species
 distribution models with the grid, we calculate biogeographic statistics on that PAM.
 
-### Data preparation: Script parameter file
+Data preparation: Script parameter file
+******************************************
 
 An example JSON file for running the calculate_pam_stats command is at
-[calculate_pam_stats](../../data/config/calculate_pam_stats.json). These are the 
+`calculate_pam_stats <../../data/config/calculate_pam_stats.json>`_. These are the
 required and optional parameters:
 
 * Required:
@@ -85,7 +97,8 @@ required and optional parameters:
   * **tree_filename**: The full filename to an input tree in Nexus format.
   * **tree_matrix**: The full filename to an input tree encoded as a matrix.
 
-## Run calculate_pam_stats command
+Run calculate_pam_stats command
+******************************************
 
 Initiate the calculate_pam_stats process with the following:
 
@@ -95,7 +108,8 @@ for linux/mac systems
 bash run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
 ```
 
-## Output
+Output
+******************************************
 
 The calculate_pam_stats tool outputs computes various statistics, depending on the 
 output files specified in the command configuration file.  Outputs may include:
