@@ -86,7 +86,7 @@ This process outputs files configured in the script parameter file:
 3. If `log_console` is specified in the script parameter file, logs will be written to
    the command prompt during execution.
 4. an output species list named in the out_species_list_filename, like
-   `heuchera_accepted_gbif.txt <../../data/easy_bake/heuchera_accepted_gbif.txt>`_
+   `heuchera_wrangled.txt <../../data/easy_bake/heuchera_wrangled.txt>`_
    containing the modified species list, one name per line.
 
 The process produces one additional file configured in the wrangler configuration file:

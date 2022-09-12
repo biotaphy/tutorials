@@ -130,21 +130,19 @@ of <a class="reference external" href="data_wrangle_occurrence.rst">data_wrangle
 <p>In the first example, we
 will split occurrence data, but not perform any other wrangling on it, so our wrangler
 configuration file <a class="reference external" href="../data/config/no_wrangle.json">no_wrangle.json</a> contains an empty
-list.  A second example <a class="reference external" href="../data/config/occ_wrangler_resolve.json">wrangler configuration file</a>
-resolves names with GBIF before grouping the data by name.</p>
-<p>If you wish to split occurrence data without performing additional data wrangling,
-provide a wrangler_configuration_file with no data, like
-<a class="reference external" href="../../data/wranglers/no_wrangle.rst">no_wrangle</a>.</p>
+list.</p>
+<p>A second example <a class="reference external" href="../data/config/occ_wrangler_resolve.json">wrangler configuration file</a> resolves names with GBIF before grouping
+the data by name.</p>
 <p>If more than one dataset is being processed, it is logical to apply the same wranglers
 to each.</p>
 </section>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
-<p>A JSON parameter file is required for this command.  Three tutorial parameter files are</p>
-<p><a class="reference external" href="../../data/config/split_resolve_gbif.json">split_resolve_gbif.json</a>,
-<a class="reference external" href="../../data/config/split_resolve_idb.json">split_resolve_idb.json</a>,
-and
-<a class="reference external" href="../../data/config/split_occurrence_data_resolve.json">split_occurrence_data_resolve.json</a>.</p>
+<p>A JSON parameter file is required for this command.  The parameter file in our first
+example is <a class="reference external" href="../../data/config/split_gbif.json">split_gbif.json</a>.  We are splitting
+GBIF data, which already contains accepted names, so we do not need to perform name
+resolution.</p>
+<p><a class="reference external" href="../../data/config/split_occurrence_data_resolve.json">split_occurrence_data_resolve.json</a>.</p>
 <p>These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>

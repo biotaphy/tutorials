@@ -149,7 +149,7 @@ These are the required and optional parameters:</p>
 described in the next section.  The tutorial example wrangler configuration
 contains several wranglers, the DecimalPrecisionFilter, the UniqueLocalitiesFilter,
 MinimumPointsWrangler, and the AcceptedNameOccurrenceWrangler, and is in
-<a class="reference external" href="../../data/config/occ_wranglers_w_resolve.json">occ_wranglers_w_resolve.json</a></p></li>
+<a class="reference external" href="../../data/config/occ_wrangle_resolve.json">occ_wrangle_resolve.json</a></p></li>
 </ul>
 </li>
 <li><p>Optional</p>
@@ -164,8 +164,8 @@ for the x coordinate, this must be specified.</p></li>
 The default value is <cite>y</cite>, so if the data contains any other column name
 for the y coordinate, this must be specified.</p></li>
 <li><p><strong>geopoint</strong>: The field name of the input file column containing a JSON encoded
-geopoint, with sub-elements containing the x and y keys with their coordinates.
-The default value is None.</p></li>
+geopoint (iDigBio data uses this field), with sub-elements containing the x and y
+keys with their coordinates.  The default value is None.</p></li>
 <li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
 <li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
 <li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
@@ -213,7 +213,7 @@ AcceptedNameOccurrenceWrangler.  The name-map is a JSON file with pairs of names
 the original name to the accepted name according to the specified authority.
 This name-map is suitable to use for input when resolving another dataset containing
 a subset of the same original names.  A sample output name-map is
-<a class="reference external" href="../../data/easy_bake/splist_wrangle_gbif.namemap">splist_wrangle_gbif.namemap</a>.</p></li>
+<a class="reference external" href="../../data/easy_bake/occ_wrangle_resolve.namemap">occ_wrangle_resolve.namemap</a>.</p></li>
 </ul>
 </section>
 </section>
