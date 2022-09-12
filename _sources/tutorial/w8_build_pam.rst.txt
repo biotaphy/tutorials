@@ -1,8 +1,8 @@
-# Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses
+# Webinar 8: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses
 
 ## Introduction
 
-Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
+Read `Tutorial Overview <../tutorial/w1_overview>`_ for an overview of how all
 tutorials work.
 
 Build grid creates a geospatial grid, in vector format.  The grid is used for defining
@@ -29,7 +29,7 @@ the species presence or absence in each site.  In the matrix, this is considered
 ### Data preparation: Script parameter file
 
 A JSON parameter file is required for this command.  The tutorial parameter file
-is [build_grid.json](../../data/config/build_grid.json). These are the required and
+is `build_grid.json <../../data/config/build_grid.json>`_. These are the required and
 optional parameters:
 
 * Required:
@@ -77,7 +77,7 @@ configuration file), then aggregate the matrices in another step.
 ### Data preparation: Script parameter file
 
 An example json file for running the encode_layers tutorial is at
-[encode_layers.json](../../data/config/encode_layers.json). These are the required 
+`encode_layers.json <../../data/config/encode_layers.json>`_. These are the required
 and optional parameters:
 
 * Required:
@@ -125,7 +125,7 @@ distribution models with the grid, we calculate biogeographic statistics on that
 ### Data preparation: Script parameter file
 
 An example JSON file for running the calculate_pam_stats command is at
-[calculate_pam_stats](../../data/config/calculate_pam_stats.json). These are the 
+`calculate_pam_stats <../../data/config/calculate_pam_stats.json>`_. These are the
 required and optional parameters:
 
 * Required:

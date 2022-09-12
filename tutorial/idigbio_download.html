@@ -47,7 +47,7 @@
 <li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolve taxonomy for a list</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -100,10 +100,10 @@
 <section id="request-data">
 <h2>Request data<a class="headerlink" href="#request-data" title="Permalink to this heading"></a></h2>
 <p>To download from iDigBio, full instructions are at the
-[Download API reference](<a class="reference external" href="https://www.idigbio.org/wiki/index.php/IDigBio_Download_API">https://www.idigbio.org/wiki/index.php/IDigBio_Download_API</a>).</p>
+<a class="reference external" href="https://www.idigbio.org/wiki/index.php/IDigBio_Download_API">Download API reference</a>.</p>
 <p>To pull data from the command prompt, use the <cite>curl</cite> command to pull text response
 directly to terminal with the example query_url:
-[Euphorbia](<a class="reference external" href="https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org">https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org</a>)</p>
+<a class="reference external" href="https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org">Euphorbia</a></p>
 <p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>zsh
 $ curl <a class="reference external" href="https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org">https://api.idigbio.org/v2/download/?rq=%7B%22genus%22%3A%22euphorbia%22%7D&amp;email=donotreply%40idigbio.org</a>
 [1] 58979
@@ -201,9 +201,10 @@ $ curl <a class="reference external" href="https://api.idigbio.org/v2/download/d
 </section>
 <section id="download-data">
 <h2>Download data<a class="headerlink" href="#download-data" title="Permalink to this heading"></a></h2>
-<p>Save the response into a file with the <cite>wget</cite> command and the <strong>download_url</strong> field:</p>
+<p>Save the response with the <cite>curl</cite> command and the <strong>download_url</strong> field.  Use the
+–output option to save the data to a file.</p>
 <p><code class="docutils literal notranslate"><span class="pre">`zsh</span>
-<span class="pre">wget</span> <span class="pre">http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip</span>
+<span class="pre">curl</span> <span class="pre">--output</span> <span class="pre">idigbio_occurrences.zip</span>&#160; <span class="pre">http://s.idigbio.org/idigbio-downloads/d54c0ad7-6697-4096-9f11-b2a9a6041a38.zip</span>
 <span class="pre">`</span></code></p>
 </section>
 </section>

@@ -8,9 +8,9 @@ Tree Data
 Trees may be created by the user, downloaded from one of various sources, or output by
 another Biotaphy process.  Trees must be in Nexus or Newick format.  The tutorial
 example tree is
-[subtree-ottol-saxifragales.tre](../../data/input/subtree-ottol-saxifragales.tre).
+`subtree-ottol-saxifragales.tre <../../data/input/subtree-ottol-saxifragales.tre>`_.
 
-To download a tree from [OpenTree of Life](https://tree.opentreeoflife.org/), filter for
+To download a tree from `OpenTree of Life <https://tree.opentreeoflife.org/>`_, filter for
 the desired tree, then choose **Download subtree as Newick string** in the upper,
 rightmost panel.
 

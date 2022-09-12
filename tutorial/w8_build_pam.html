@@ -20,8 +20,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="w8_phylo_diversity.html" />
-    <link rel="prev" title="Webinar 6:" href="w6_create_sdms.html" /> 
+    <link rel="next" title="&lt;no title&gt;" href="w9_phylo_diversity.html" />
+    <link rel="prev" title="Webinar 6: Species Distribution Modeling" href="w6_create_sdms.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,7 +47,7 @@
 <li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolve taxonomy for a list</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -75,7 +75,7 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>&lt;no title&gt;</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/w7_build_pam.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w8_build_pam.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -83,9 +83,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p># Webinar 7: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</p>
+  <p># Webinar 8: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</p>
 <p>## Introduction</p>
-<p>Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
+<p>Read <a class="reference external" href="../tutorial/w1_overview">Tutorial Overview</a> for an overview of how all
 tutorials work.</p>
 <p>Build grid creates a geospatial grid, in vector format.  The grid is used for defining
 cells (or “sites”) as polygons.  These sites, or polygonal cells, can then be
@@ -106,7 +106,7 @@ the species presence or absence in each site.  In the matrix, this is considered
 <p>## Step 1: Build a grid to analyze a group of multi-species dataset</p>
 <p>### Data preparation: Script parameter file</p>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
-is [build_grid.json](../../data/config/build_grid.json). These are the required and
+is <a class="reference external" href="../../data/config/build_grid.json">build_grid.json</a>. These are the required and
 optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -145,7 +145,7 @@ share parameters (each matrix created with the same command, called with a diffe
 configuration file), then aggregate the matrices in another step.</p>
 <p>### Data preparation: Script parameter file</p>
 <p>An example json file for running the encode_layers tutorial is at
-[encode_layers.json](../../data/config/encode_layers.json). These are the required
+<a class="reference external" href="../../data/config/encode_layers.json">encode_layers.json</a>. These are the required
 and optional parameters:</p>
 <ul>
 <li><p>Required:
@@ -199,7 +199,7 @@ RuntimeWarning: Mean of empty slice</p>
 distribution models with the grid, we calculate biogeographic statistics on that PAM.</p>
 <p>### Data preparation: Script parameter file</p>
 <p>An example JSON file for running the calculate_pam_stats command is at
-[calculate_pam_stats](../../data/config/calculate_pam_stats.json). These are the
+<a class="reference external" href="../../data/config/calculate_pam_stats.json">calculate_pam_stats</a>. These are the
 required and optional parameters:</p>
 <ul>
 <li><p>Required:
@@ -255,8 +255,8 @@ appended to the end of the base file name.</p></li>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="w6_create_sdms.html" class="btn btn-neutral float-left" title="Webinar 6:" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="w8_phylo_diversity.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="w6_create_sdms.html" class="btn btn-neutral float-left" title="Webinar 6: Species Distribution Modeling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="w9_phylo_diversity.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
