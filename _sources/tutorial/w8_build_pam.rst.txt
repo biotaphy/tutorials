@@ -1,6 +1,10 @@
-# Webinar 8: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses
+==============================
+Webinar 8: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses
+==============================
 
-## Introduction
+--------------------
+Introduction
+--------------------
 
 Read `Tutorial Overview <../tutorial/w1_overview>`_ for an overview of how all
 tutorials work.
@@ -24,9 +28,12 @@ this is considered the "0" axis.  Each column, identified by the x axis, represe
 the species presence or absence in each site.  In the matrix, this is considered the 
 "1" axis. 
 
-## Step 1: Build a grid to analyze a group of multi-species dataset
+--------------------------------
+Step 1: Build a grid
+--------------------------------
 
-### Data preparation: Script parameter file
+Data preparation: Script parameter file
+******************************************
 
 A JSON parameter file is required for this command.  The tutorial parameter file
 is `build_grid.json <../../data/config/build_grid.json>`_. These are the required and
@@ -47,7 +54,8 @@ optional parameters:
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
 
-### Run build_grid command
+Run build_grid command
+******************************************
 
 Initiate the process with the following:
 
@@ -57,14 +65,18 @@ for linux/mac systems
 ./run_tutorial.sh build_grid data/input/build_grid.json
 ```
 
-### Output
+Output
+******************************************
 
 The build_grid tool outputs a grid in shapefile format, conforming to the arguments
 specified in the configuration JSON file.
 
-## Step 2: Encode species layers into a PAM (defined by grid) for multi-species analysis
+--------------------------------
+Step 2: Encode species layers
+--------------------------------
 
-### Data preparation: Layers
+Data preparation: Layers
+******************************************
 
 Layers are specified in the Script parameter file, described fully in the next section.  
 Each layer of a PAM represents the presence or absence of a taxon in the analysis.  
@@ -74,7 +86,8 @@ for computing different layers, you can create a matrix from each set of layers 
 share parameters (each matrix created with the same command, called with a different  
 configuration file), then aggregate the matrices in another step.  
 
-### Data preparation: Script parameter file
+Data preparation: Script parameter file
+******************************************
 
 An example json file for running the encode_layers tutorial is at
 `encode_layers.json <../../data/config/encode_layers.json>`_. These are the required
@@ -101,7 +114,8 @@ and optional parameters:
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
 
-### Run encode_layers command
+Run encode_layers command
+******************************************
 
 Initiate the clean occurrences process with the following for linux/mac systems:
 
@@ -117,12 +131,15 @@ RuntimeWarning: Mean of empty slice
   window_mean = np.nanmean(window[np.where(window != nodata)])
 ```
 
-## Step 3: Calculate statistics for a PAM
+--------------------------------
+Step 3: Calculate statistics for a PAM
+--------------------------------
 
 Now that a grid has been built, and a PAM has been populated by intersecting species
 distribution models with the grid, we calculate biogeographic statistics on that PAM.
 
-### Data preparation: Script parameter file
+Data preparation: Script parameter file
+******************************************
 
 An example JSON file for running the calculate_pam_stats command is at
 `calculate_pam_stats <../../data/config/calculate_pam_stats.json>`_. These are the
@@ -143,7 +160,8 @@ required and optional parameters:
   * **tree_filename**: The full filename to an input tree in Nexus format.
   * **tree_matrix**: The full filename to an input tree encoded as a matrix.
 
-## Run calculate_pam_stats command
+Run calculate_pam_stats command
+******************************************
 
 Initiate the calculate_pam_stats process with the following:
 
@@ -153,7 +171,8 @@ for linux/mac systems
 bash run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
 ```
 
-## Output
+Output
+******************************************
 
 The calculate_pam_stats tool outputs computes various statistics, depending on the 
 output files specified in the command configuration file.  Outputs may include:
