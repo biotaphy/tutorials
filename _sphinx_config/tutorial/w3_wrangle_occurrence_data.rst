@@ -63,7 +63,7 @@ These are the required and optional parameters:
     described in the next section.  The tutorial example wrangler configuration
     contains several wranglers, the DecimalPrecisionFilter, the UniqueLocalitiesFilter,
     MinimumPointsWrangler, and the AcceptedNameOccurrenceWrangler, and is in
-    `occ_wranglers_w_resolve.json <../../data/config/occ_wranglers_w_resolve.json>`_
+    `occ_wrangle_resolve.json <../../data/config/occ_wrangle_resolve.json>`_
 
 * Optional
 
@@ -77,8 +77,8 @@ These are the required and optional parameters:
     The default value is `y`, so if the data contains any other column name
     for the y coordinate, this must be specified.
   * **geopoint**: The field name of the input file column containing a JSON encoded
-    geopoint, with sub-elements containing the x and y keys with their coordinates.
-    The default value is None.
+    geopoint (iDigBio data uses this field), with sub-elements containing the x and y
+    keys with their coordinates.  The default value is None.
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
@@ -126,4 +126,4 @@ configuration:
    the original name to the accepted name according to the specified authority.
    This name-map is suitable to use for input when resolving another dataset containing
    a subset of the same original names.  A sample output name-map is
-   `splist_wrangle_gbif.namemap <../../data/easy_bake/splist_wrangle_gbif.namemap>`_.
+   `occ_wrangle_resolve.namemap <../../data/easy_bake/occ_wrangle_resolve.namemap>`_.

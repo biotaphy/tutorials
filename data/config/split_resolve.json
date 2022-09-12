@@ -1,0 +1,18 @@
+{
+    "max_open_writers": 100,
+    "report_filename": "/volumes/output/split_resolve.rpt",
+    "log_filename": "/volumes/output/split_resolve.log",
+    "log_console": true,
+    "csv":  [
+      ["/volumes/data/input/occurrence_gbif.csv",
+        "/volumes/data/wranglers/occ_resolve.json",
+        "acceptedScientificName",
+        "decimalLongitude",
+        "decimalLatitude"
+      ]],
+    "dwca":  [
+        ["/volumes/data/input/occurrence_idigbio.zip",
+        "/volumes/data/wranglers/occ_resolve.json"
+        ]],
+  "out_dir": "/volumes/output/split_resolve"
+}

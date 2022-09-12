@@ -44,13 +44,11 @@ of `data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.
 In the first example, we
 will split occurrence data, but not perform any other wrangling on it, so our wrangler
 configuration file `no_wrangle.json <../data/config/no_wrangle.json>`_ contains an empty
-list.  A second example `wrangler configuration file
-<../data/config/occ_wrangler_resolve.json>`_
-resolves names with GBIF before grouping the data by name.
+list.
 
-If you wish to split occurrence data without performing additional data wrangling,
-provide a wrangler_configuration_file with no data, like
-`no_wrangle <../../data/wranglers/no_wrangle.rst>`_.
+A second example `wrangler configuration file
+<../data/config/occ_wrangler_resolve.json>`_ resolves names with GBIF before grouping
+the data by name.
 
 If more than one dataset is being processed, it is logical to apply the same wranglers 
 to each.  
@@ -58,11 +56,12 @@ to each.
 Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A JSON parameter file is required for this command.  Three tutorial parameter files are
+A JSON parameter file is required for this command.  The parameter file in our first
+example is `split_gbif.json <../../data/config/split_gbif.json>`_.  We are splitting
+GBIF data, which already contains accepted names, so we do not need to perform name
+resolution.
 
-`split_resolve_gbif.json <../../data/config/split_resolve_gbif.json>`_,
-`split_resolve_idb.json <../../data/config/split_resolve_idb.json>`_,
-and 
+
 `split_occurrence_data_resolve.json
 <../../data/config/split_occurrence_data_resolve.json>`_.
 
