@@ -13,10 +13,10 @@ follow the same pattern, and many have the same options.
 4. Each value may be a double-quoted string, a number, a boolean (true or false, not
    quoted), or a list of these items, separated by commas and enclosed in square
    brackets ( [] ).
-5. Output filenames must be a full path to the file to be created in the
-  :term:`Container`.  Output file must be placed in `/volumes/output` or a
-  subdirectory of that location.  Output files and directories will be copied to the
-  project directory data/output on the :term:`Host machine`.
+5. Output filenames must be a full path to the file (or directory containing files)
+  to be created in the :term:`Container`.  Output file must be placed in
+  `/volumes/output` or a subdirectory of that location.  Output files and directories
+  will be copied to the project directory data/output on the :term:`Host machine`.
 
 Many commands include the optional parameters:
 
