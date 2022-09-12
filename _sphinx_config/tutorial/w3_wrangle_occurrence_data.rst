@@ -28,7 +28,8 @@ Input: occurrence records
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The wrangle_occurrences tool accepts either a Darwin Core Archive (DwCA) file or a
 CSV file containing records for one or more taxa.  More information is in the
-**Occurrence Data** section of `data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.
+**Occurrence Data** section of
+`Specimen Occurrences: Data and Wrangling <data_wrangle_occurrence>`_.
 
 Input: Wrangler configuration file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -5,8 +5,8 @@ Specimen Occurrences: Data and Wrangling
 ----------------
 Occurrence Data
 ----------------
-Several tools ([split_occurrence_data](w5_split_occurrence_data.rst),
-[wrangle_occurrences](w3_wrangle_occurrence_data.rst)) accept occurrence data.
+Several tools (`split_occurrence_data <w5_split_occurrence_data.rst>`_,
+`wrangle_occurrences <w3_wrangle_occurrence_data>`_) accept occurrence data.
 The filename must be specified in the script parameter file, described in each tool's
 documentation and linked above.  Data can be in one of two formats:
 
@@ -14,14 +14,15 @@ documentation and linked above.  Data can be in one of two formats:
    including GBIF and iDigBio.
 
    1) To download from GBIF, choose your filters in the
-      [portal](https://www.gbif.org/occurrence).  For example, the example data was
-      downloaded after selecting occurrences where
-      [genus=`Heuchera L`](https://www.gbif.org/occurrence/search?taxon_key=3032645&occurrence_status=present)
+      `GBIF portal <https://www.gbif.org/occurrence>`_.  For example, the example data
+      was downloaded after selecting occurrences where
+      `genus='Heuchera L'
+      <https://www.gbif.org/occurrence/search?taxon_key=3032645&occurrence_status=present>`_
       Then choose the download link at the upper right column header.
    2) To download from iDigBio, instructions for querying and downloading from the
-      command prompt are at [idigbio_download.md](./idigbio_download.md).
+      command prompt are at `idigbio_download <idigbio_download>`_.
    3) The tutorial example DwCA is at
-      [occ_heuchera_gbif.zip](../../data/input/occ_heuchera_gbif.zip).
+      `occurrence_idigbio.zip <../../data/input/occurrence_idigbio.zip>`_
 
 2) CSV file containing records for one or more taxa.
 
@@ -30,8 +31,11 @@ documentation and linked above.  Data can be in one of two formats:
       record/line must contain a species (or other group) identifier, such as
       scientificName or species_name, and x and y coordinates indicating a geographic
       location.  The field names for these 3 columns are specified in the script
-      parameter file. The tutorial example occurrence datafile
-      is [heuchera.csv](../../data/input/heuchera.csv).
+      parameter file. One simple tutorial example occurrence datafile
+      is `heuchera.csv <../../data/input/heuchera.csv>`_ which contains different
+      heuchera species, grouped by name, with x and y coordinates.  Another tutorial
+      example file is a CSV file containing many fields, downloaded from gbif,
+      `occurrence_gbif.csv <../../data/input/occurrence_gbif.csv>`_.
 
 ----------------------------
 Wrangler configuration file

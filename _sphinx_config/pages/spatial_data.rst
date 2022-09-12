@@ -57,8 +57,8 @@ Geospatial Data Terms
 Sample Geospatial Data resources
 =============================================
 
-* [World borders]  (http://thematicmapping.org/downloads/world_borders.php)
+* `World borders <http://thematicmapping.org/downloads/world_borders.php>`_
 
-* [Global administrative boundaries]  http://www.gadm.org/country)
+* `Global administrative boundaries <http://www.gadm.org/country>`_
 
-* [Natural earth data] (http://www.naturalearthdata.com/)
+* `Natural earth data <http://www.naturalearthdata.com/>`_

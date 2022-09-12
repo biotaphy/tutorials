@@ -1,11 +1,10 @@
 ==================================
-Webinar 6:
+Webinar 6: Species Distribution Modeling
 ==================================
 
-`Species Distribution Modeling <https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.cny714hbiydb>`_
-(Part 1, Creation>`_.  Create one or more Species Distribution Models using Maxent for
-occurrence data with the minimum number of points defined in the configuration file or  
-the `Rare Species Model` algorithm for data without the required minimum number of 
+Create one or more Species Distribution Models using Maxent for
+occurrence data with the minimum number of points defined in the configuration file or
+the `Rare Species Model` algorithm for data without the required minimum number of
 points.  The Rare Species Model intersects the convex hull of the points
 with a raster denoting ecoregions.  For all species data using Maxent, the tool uses the
 Maxent parameters indicated in the configuration file.  

@@ -37,8 +37,8 @@ Biotaphy Tutorial Glossary
     software dependencies and files.
 
   DwCA
-    DwCA (Darwin Core Archive) is a packaged dataset of occurrence records in [Darwin
-    Core standard](https://www.tdwg.org/standards/dwc/) format, along with metadata
+    DwCA (Darwin Core Archive) is a packaged dataset of occurrence records in `Darwin
+    Core standard <https://www.tdwg.org/standards/dwc/>`_ format, along with metadata
     about the contents.
 
   JSON
@@ -48,8 +48,8 @@ Biotaphy Tutorial Glossary
     (true or false, in lowercase and not quoted) or other literals.  Values may also be
     arrays (comma-delimited lists of basic data types, enclosed in square brackets, []),
     or another (nested) group of keys with values.  More information about JSON is
-    [here](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) and
-    you can check your format with an online [validator](https://jsonlint.com/).
+    `here <https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON>`_ and
+    you can check your format with an online `validator <https://jsonlint.com/>`_.
 
   Data Wrangler
     Data wranglers are types of specify-lmpy data modification tools for filtering or
@@ -65,7 +65,8 @@ Biotaphy Tutorial Glossary
     Geospatial data is data with geographic location associated with it, i.e. map
     data.  There are two kinds of spatial data, raster data and vector data.  Each
     has properties that make it better for representing different information.
-    Geospatial data is discussed in more detail [here](./spatial_data.rst)
+    Geospatial data is discussed in more detail on the
+    `Geospatial Data Terms <spatial_data>`_ page.
 
   Host machine
     The local physical machine on which the user will run Docker.
@@ -109,8 +110,8 @@ Biotaphy Tutorial Glossary
     evolutionary patterns.  BiotaPhy uses phylogenetic trees matching species
     data in a :term:`PAM` to correlate evolutionary patterns with species
     distributions and landscape features. Trees are stored in
-    [Newick](https://evolution.genetics.washington.edu/phylip/newicktree.html) or
-    [Nexus](http://wiki.christophchamp.com/index.php?title=NEXUS_file_format) format.
+    `Newick <https://evolution.genetics.washington.edu/phylip/newicktree.html>`_ or
+    `Nexus <http://wiki.christophchamp.com/index.php?title=NEXUS_file_format>`_ format.
 
   SDM
     Species Distribution Modeling (SDM) is also known by several other names, including
