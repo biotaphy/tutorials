@@ -57,11 +57,13 @@ Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A JSON parameter file is required for this command.  The parameter file in our first
-example is `split_gbif.json <../../data/config/split_gbif.json>`_.  This one splits
+example is `split_gbif.json
+<https://github.com/biotaphy/tutorials/data/config/split_gbif.json>`_.  This one splits
 GBIF data, which already contains accepted names, so we can skip name resolution.
 
 The parameter file in our second
-example is `split_resolve.json <../../data/config/split_resolve.json>`_.  This one
+example is `split_resolve.json
+<https://github.com/biotaphy/tutorials/data/config/split_resolve.json>`_.  This one
 splits both iDigBio and GBIF data, and resolves to the canonical form of accepted names
 according to the GBIF taxonomy service.
 
@@ -84,7 +86,7 @@ These are the required and optional parameters:
     * input DwCA file, and
     * occurrence data wrangler configuration file (described in the next section). The
       example split_occurrence_data wrangler configuration used for this tutorial step
-      is `here <../../input/wrangle_occurrences.json>`_
+      is `here <https://github.com/biotaphy/tutorials/input/wrangle_occurrences.json>`_
 
   * **csv**: This is an optional argument, but either this, or **dwca**, must be provided.
     List of 0 or more lists, each containing 5 arguments
@@ -135,4 +137,5 @@ The process also produces outputs according to the wrangler configuration file:
    the original name to the accepted name according to the specified authority.  
    This name-map is suitable to use for input when resolving another dataset containing 
    a subset of the same original names.  A sample output name-map is 
-   `gbif_occ.namemap <../../data/easy_bake/gbif_occ.namemap>`_.
+   `gbif_occ.namemap
+   <https://github.com/biotaphy/tutorials/data/easy_bake/gbif_occ.namemap>`_.

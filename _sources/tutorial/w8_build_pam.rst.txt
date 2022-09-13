@@ -37,8 +37,9 @@ Data preparation: Script parameter file
 ******************************************
 
 A JSON parameter file is required for this command.  The tutorial parameter file
-is `build_grid.json <../../data/config/build_grid.json>`_. These are the required and
-optional parameters:
+is `build_grid.json
+<https://github.com/biotaphy/tutorials/data/config/build_grid.json>`_. These are the
+required and optional parameters:
 
 * Required:
 
@@ -91,8 +92,9 @@ Data preparation: Script parameter file
 ******************************************
 
 An example json file for running the encode_layers tutorial is at
-`encode_layers.json <../../data/config/encode_layers.json>`_. These are the required
-and optional parameters:
+`encode_layers.json
+<https://github.com/biotaphy/tutorials/data/config/encode_layers.json>`_. These are the
+required and optional parameters:
 
 * Required:
   * **grid_filename**: Relative path to shapegrid to use for site geometries
@@ -143,8 +145,9 @@ Data preparation: Script parameter file
 ******************************************
 
 An example JSON file for running the calculate_pam_stats command is at
-`calculate_pam_stats <../../data/config/calculate_pam_stats.json>`_. These are the
-required and optional parameters:
+`calculate_pam_stats
+<https://github.com/biotaphy/tutorials/data/config/calculate_pam_stats.json>`_. These
+are the required and optional parameters:
 
 * Required:
   * **pam_filename**: The full filename to the input PAM file.
@@ -186,6 +189,6 @@ output files specified in the command configuration file.  Outputs may include:
 4. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
    and it is written to the covariance_matrix filename, where the statistic name is 
    appended to the end of the base file name.
-5. A "diversity_matrix" containing different diversity statistics 
-  * **site_stats_matrix**: The full filename for writing the site statistics matrix.
-  * **species_stats_matrix
+5. A "diversity_matrix" containing different diversity statistics.
+6. A "site_stats_matrix" containing site statistics.
+7. A "species_stats_matrix" containing species statistics.

@@ -135,8 +135,8 @@ the species presence or absence in each site.  In the matrix, this is considered
 <section id="data-preparation-script-parameter-file">
 <h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
-is <a class="reference external" href="../../data/config/build_grid.json">build_grid.json</a>. These are the required and
-optional parameters:</p>
+is <a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/build_grid.json">build_grid.json</a>. These are the
+required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
 <ul>
@@ -184,8 +184,8 @@ configuration file), then aggregate the matrices in another step.</p>
 <section id="id1">
 <h3>Data preparation: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <p>An example json file for running the encode_layers tutorial is at
-<a class="reference external" href="../../data/config/encode_layers.json">encode_layers.json</a>. These are the required
-and optional parameters:</p>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/encode_layers.json">encode_layers.json</a>. These are the
+required and optional parameters:</p>
 <ul>
 <li><p>Required:
 * <strong>grid_filename</strong>: Relative path to shapegrid to use for site geometries
@@ -244,8 +244,8 @@ distribution models with the grid, we calculate biogeographic statistics on that
 <section id="id10">
 <h3>Data preparation: Script parameter file<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h3>
 <p>An example JSON file for running the calculate_pam_stats command is at
-<a class="reference external" href="../../data/config/calculate_pam_stats.json">calculate_pam_stats</a>. These are the
-required and optional parameters:</p>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/calculate_pam_stats.json">calculate_pam_stats</a>. These
+are the required and optional parameters:</p>
 <ul>
 <li><p>Required:
 * <strong>pam_filename</strong>: The full filename to the input PAM file.</p></li>
@@ -291,14 +291,10 @@ manipulations by each wrangler will be written to this file.</p></li>
 <li><p>One or more “covariance_matrix” files.  Each covariance statistic produces a matrix
 and it is written to the covariance_matrix filename, where the statistic name is
 appended to the end of the base file name.</p></li>
-<li><p>A “diversity_matrix” containing different diversity statistics</p></li>
+<li><p>A “diversity_matrix” containing different diversity statistics.</p></li>
+<li><p>A “site_stats_matrix” containing site statistics.</p></li>
+<li><p>A “species_stats_matrix” containing species statistics.</p></li>
 </ol>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
-<li><p><a href="#id12"><span class="problematic" id="id13">**</span></a>species_stats_matrix</p></li>
-</ul>
-</div></blockquote>
 </section>
 </section>
 </section>

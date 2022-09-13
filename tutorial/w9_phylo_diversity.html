@@ -109,7 +109,7 @@
 phylogenetic diversity of a region.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
+<p>Read <a class="reference external" href="../tutorial/w1_overview">Tutorial Overview</a> for an overview of how all
 tutorials work.</p>
 </section>
 <section id="step-1-cleanup-the-matrix">
@@ -118,8 +118,8 @@ tutorials work.</p>
 <section id="data-preparation-script-parameter-file">
 <h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
-is [resolve_tree_names.json](../../data/config/resolve_tree_names.json). These are the
-required and optional parameters:</p>
+is <a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/resolve_tree_names.json">resolve_tree_names.json</a>. These
+are the required and optional parameters:</p>
 <ul>
 <li><p>Required:
 * <strong>in_matrix_filename</strong>: input filename containing a PAM matrix.
@@ -141,7 +141,7 @@ PurgeEmptySlicesWrangler, and is in
 <section id="data-preparation-input-matrix">
 <h3>Data preparation: Input matrix<a class="headerlink" href="#data-preparation-input-matrix" title="Permalink to this heading"></a></h3>
 <p>Use a PAM created in <a class="reference external" href="w7_build_pam">Tutorial 7</a>.  An example PAM is available in
-<a class="reference external" href="../../data/input/pam.lmm">pam.lmm</a>.</p>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/input/pam.lmm">pam.lmm</a>.</p>
 </section>
 <section id="data-preparation-wrangler-configuration-file">
 <h3>Data preparation: Wrangler configuration file<a class="headerlink" href="#data-preparation-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
@@ -170,8 +170,8 @@ distribution models with the grid, we calculate biogeographic statistics on that
 <section id="id1">
 <h3>Data preparation: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <p>An example JSON file for running the calculate_pam_stats command is at
-<a class="reference external" href="../../data/config/calculate_pam_stats.json">calculate_pam_stats</a>. These are the
-required and optional parameters:</p>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/calculate_pam_stats.json">calculate_pam_stats</a>. These
+are the required and optional parameters:</p>
 <ul>
 <li><p>Required:
 * <strong>pam_filename</strong>: The full filename to the input PAM file.</p></li>
@@ -217,14 +217,10 @@ manipulations by each wrangler will be written to this file.</p></li>
 <li><p>One or more “covariance_matrix” files.  Each covariance statistic produces a matrix
 and it is written to the covariance_matrix filename, where the statistic name is
 appended to the end of the base file name.</p></li>
-<li><p>A “diversity_matrix” containing different diversity statistics</p></li>
+<li><p>A “diversity_matrix” containing different diversity statistics.</p></li>
+<li><p>A “site_stats_matrix” containing site statistics.</p></li>
+<li><p>A “species_stats_matrix” containing species statistics.</p></li>
 </ol>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
-<li><p><a href="#id3"><span class="problematic" id="id4">**</span></a>species_stats_matrix</p></li>
-</ul>
-</div></blockquote>
 </section>
 </section>
 </section>

@@ -142,10 +142,10 @@ to each.</p>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The parameter file in our first
-example is <a class="reference external" href="../../data/config/split_gbif.json">split_gbif.json</a>.  This one splits
+example is <a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/split_gbif.json">split_gbif.json</a>.  This one splits
 GBIF data, which already contains accepted names, so we can skip name resolution.</p>
 <p>The parameter file in our second
-example is <a class="reference external" href="../../data/config/split_resolve.json">split_resolve.json</a>.  This one
+example is <a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/split_resolve.json">split_resolve.json</a>.  This one
 splits both iDigBio and GBIF data, and resolves to the canonical form of accepted names
 according to the GBIF taxonomy service.</p>
 <p>These are the required and optional parameters:</p>
@@ -168,7 +168,7 @@ provided.  List of 0 or more lists, each containing 2 arguments</p>
 <li><p>input DwCA file, and</p></li>
 <li><p>occurrence data wrangler configuration file (described in the next section). The
 example split_occurrence_data wrangler configuration used for this tutorial step
-is <a class="reference external" href="../../input/wrangle_occurrences.json">here</a></p></li>
+is <a class="reference external" href="https://github.com/biotaphy/tutorials/input/wrangle_occurrences.json">here</a></p></li>
 </ul>
 </li>
 <li><p><strong>csv</strong>: This is an optional argument, but either this, or <strong>dwca</strong>, must be provided.
@@ -227,7 +227,7 @@ The name-map is a JSON file with pairs of names -
 the original name to the accepted name according to the specified authority.
 This name-map is suitable to use for input when resolving another dataset containing
 a subset of the same original names.  A sample output name-map is
-<a class="reference external" href="../../data/easy_bake/gbif_occ.namemap">gbif_occ.namemap</a>.</p></li>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/easy_bake/gbif_occ.namemap">gbif_occ.namemap</a>.</p></li>
 </ol>
 </section>
 </section>

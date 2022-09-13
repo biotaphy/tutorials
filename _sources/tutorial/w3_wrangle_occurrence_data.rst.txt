@@ -53,7 +53,8 @@ described next.
 Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 A JSON parameter file is required for this command.  The tutorial parameter file is
-`wrangle_occurrences_resolve.json <../../data/config/wrangle_occurrences_resolve.json>`_.
+`wrangle_occurrences_resolve.json
+<https://github.com/biotaphy/tutorials/data/config/wrangle_occurrences_resolve.json>`_.
 These are the required and optional parameters:
 
 * Required:
@@ -64,7 +65,8 @@ These are the required and optional parameters:
     described in the next section.  The tutorial example wrangler configuration
     contains several wranglers, the DecimalPrecisionFilter, the UniqueLocalitiesFilter,
     MinimumPointsWrangler, and the AcceptedNameOccurrenceWrangler, and is in
-    `occ_wrangle_resolve.json <../../data/config/occ_wrangle_resolve.json>`_
+    `occ_wrangle_resolve.json
+    <https://github.com/biotaphy/tutorials/data/config/occ_wrangle_resolve.json>`_
 
 * Optional
 
@@ -104,14 +106,17 @@ This process outputs files configured in the script parameter file:
 
 2. If `report_filename` is specified in the script parameter file, a summary of name
    resolutions, like
-   `wrangle_occurrences.log <../../data/easy_bake/wrangle_occurrences_resolve.log>`_
+   `wrangle_occurrences.log
+   <https://github.com/biotaphy/tutorials/data/easy_bake/wrangle_occurrences_resolve.log>`_
 3. If `log_filename` is specified in the script parameter file, a report like
-   `wrangle_occurrences.rpt <../../data/easy_bake/wrangle_occurrences_resolve.rpt>`_
+   `wrangle_occurrences.rpt
+   <https://github.com/biotaphy/tutorials/data/easy_bake/wrangle_occurrences_resolve.rpt>`_
    containing a summary of the processing.
 3. If `log_console` is specified in the script parameter file, logs will be written to
    the command prompt during execution.
 4. an output file with occurrence records named in the writer_filename, like
-   `heuchera_wrangled.csv <../../data/easy_bake/heuchera_wrangled.csv>`_
+   `heuchera_wrangled.csv
+   <https://github.com/biotaphy/tutorials/data/easy_bake/heuchera_wrangled.csv>`_
    containing the occurrence records, one record per line.  Note that the species_name
    field now contains the new taxonomic name resolved for each record.  If the
    original records contain other attributes, those will be retained with their
@@ -127,4 +132,5 @@ configuration:
    the original name to the accepted name according to the specified authority.
    This name-map is suitable to use for input when resolving another dataset containing
    a subset of the same original names.  A sample output name-map is
-   `occ_wrangle_resolve.namemap <../../data/easy_bake/occ_wrangle_resolve.namemap>`_.
+   `occ_wrangle_resolve.namemap
+   <https://github.com/biotaphy/tutorials/data/easy_bake/occ_wrangle_resolve.namemap>`_.

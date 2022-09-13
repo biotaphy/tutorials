@@ -142,7 +142,7 @@ described next.</p>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file is
-<a class="reference external" href="../../data/config/wrangle_occurrences_resolve.json">wrangle_occurrences_resolve.json</a>.
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/wrangle_occurrences_resolve.json">wrangle_occurrences_resolve.json</a>.
 These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -153,7 +153,7 @@ These are the required and optional parameters:</p>
 described in the next section.  The tutorial example wrangler configuration
 contains several wranglers, the DecimalPrecisionFilter, the UniqueLocalitiesFilter,
 MinimumPointsWrangler, and the AcceptedNameOccurrenceWrangler, and is in
-<a class="reference external" href="../../data/config/occ_wrangle_resolve.json">occ_wrangle_resolve.json</a></p></li>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/occ_wrangle_resolve.json">occ_wrangle_resolve.json</a></p></li>
 </ul>
 </li>
 <li><p>Optional</p>
@@ -192,16 +192,16 @@ keys with their coordinates.  The default value is None.</p></li>
 <ol class="arabic simple" start="2">
 <li><p>If <cite>report_filename</cite> is specified in the script parameter file, a summary of name
 resolutions, like
-<a class="reference external" href="../../data/easy_bake/wrangle_occurrences_resolve.log">wrangle_occurrences.log</a></p></li>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/easy_bake/wrangle_occurrences_resolve.log">wrangle_occurrences.log</a></p></li>
 <li><p>If <cite>log_filename</cite> is specified in the script parameter file, a report like
-<a class="reference external" href="../../data/easy_bake/wrangle_occurrences_resolve.rpt">wrangle_occurrences.rpt</a>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/easy_bake/wrangle_occurrences_resolve.rpt">wrangle_occurrences.rpt</a>
 containing a summary of the processing.</p></li>
 </ol>
 <ol class="arabic simple" start="3">
 <li><p>If <cite>log_console</cite> is specified in the script parameter file, logs will be written to
 the command prompt during execution.</p></li>
 <li><p>an output file with occurrence records named in the writer_filename, like
-<a class="reference external" href="../../data/easy_bake/heuchera_wrangled.csv">heuchera_wrangled.csv</a>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/easy_bake/heuchera_wrangled.csv">heuchera_wrangled.csv</a>
 containing the occurrence records, one record per line.  Note that the species_name
 field now contains the new taxonomic name resolved for each record.  If the
 original records contain other attributes, those will be retained with their
@@ -217,7 +217,7 @@ AcceptedNameOccurrenceWrangler.  The name-map is a JSON file with pairs of names
 the original name to the accepted name according to the specified authority.
 This name-map is suitable to use for input when resolving another dataset containing
 a subset of the same original names.  A sample output name-map is
-<a class="reference external" href="../../data/easy_bake/occ_wrangle_resolve.namemap">occ_wrangle_resolve.namemap</a>.</p></li>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/easy_bake/occ_wrangle_resolve.namemap">occ_wrangle_resolve.namemap</a>.</p></li>
 </ul>
 </section>
 </section>
