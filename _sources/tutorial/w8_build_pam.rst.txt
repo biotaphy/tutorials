@@ -1,6 +1,7 @@
 ==============================
-Webinar 8: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses
+Webinar 8: Introducing Presence-Absence Matrices (PAMs)
 ==============================
+
 
 --------------------
 Introduction

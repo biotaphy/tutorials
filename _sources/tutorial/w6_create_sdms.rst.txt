@@ -1,5 +1,5 @@
 ==================================
-Webinar 6: Species Distribution Modeling
+Webinar 6: Species Distribution Modeling ()
 ==================================
 
 Create one or more Species Distribution Models using Maxent for

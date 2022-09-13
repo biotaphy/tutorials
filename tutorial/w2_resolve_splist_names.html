@@ -60,8 +60,8 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8_build_pam.html">Webinar 8: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling ()</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w8_build_pam.html">Webinar 8: Introducing Presence-Absence Matrices (PAMs)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w9_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
@@ -135,17 +135,17 @@ optional parameters for each are at
 <section id="input-script-parameter-file">
 <h4>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h4>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
-is <a class="reference external" href="../../data/config/wrangle_species_list_gbif.json">wrangle_species_list_gbif.json</a>.
+is <a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/wrangle_species_list_gbif.json">wrangle_species_list_gbif.json</a>.
 These are the required and optional parameters:</p>
 <p>Required:</p>
 <ul class="simple">
 <li><p><strong>in_species_list_filename</strong>: Input filename containing species list, described
 in the section above.  The tutorial example species list is
-<a class="reference external" href="../../data/input/heuchera.txt">heuchera.txt</a>.</p></li>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/input/heuchera.txt">heuchera.txt</a>.</p></li>
 <li><p><strong>wrangler_configuration_file</strong>: species list wrangler configuration file,
 described in the previous input section.  The tutorial example wrangler
 configuration contains one wrangler, the AcceptedNameSpeciesListWrangler, and
-is in <a class="reference external" href="../../data/wranglers/splist_wranglers_gbif.json">splist_wranglers_gbif.json</a></p></li>
+is in <a class="reference external" href="https://github.com/biotaphy/tutorials/data/wranglers/splist_wranglers_gbif.json">splist_wranglers_gbif.json</a></p></li>
 <li><p><strong>out_species_list_filename</strong>: output filename for resolved species list.</p></li>
 </ul>
 <p>Optional</p>
@@ -160,7 +160,7 @@ is in <a class="reference external" href="../../data/wranglers/splist_wranglers_
 <section id="hands-on-run-tutorial-with-gbif-service">
 <h2>Hands-on: Run tutorial with ‘gbif’ service<a class="headerlink" href="#hands-on-run-tutorial-with-gbif-service" title="Permalink to this heading"></a></h2>
 <p>Initiate the process with the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_spepythcies_list</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_species_list_gbif</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_species_list</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_species_list_gbif</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>
@@ -170,16 +170,16 @@ is in <a class="reference external" href="../../data/wranglers/splist_wranglers_
 <ol class="arabic simple" start="2">
 <li><p>If <cite>report_filename</cite> is specified in the script parameter file, a summary of name
 resolutions, like
-<a class="reference external" href="../../data/easy_bake/wrangle_species_list_gbif.log">wrangle_species_list_gbif.log</a></p></li>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/easy_bake/wrangle_species_list_gbif.log">wrangle_species_list_gbif.log</a></p></li>
 <li><p>If <cite>log_filename</cite> is specified in the script parameter file, a report like
-<a class="reference external" href="../../data/easy_bake/wrangle_species_list_gbif.rpt">wrangle_species_list_gbif.rpt</a>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/easy_bake/wrangle_species_list_gbif.rpt">wrangle_species_list_gbif.rpt</a>
 containing a summary of the processing.</p></li>
 </ol>
 <ol class="arabic simple" start="3">
 <li><p>If <cite>log_console</cite> is specified in the script parameter file, logs will be written to
 the command prompt during execution.</p></li>
 <li><p>an output species list named in the out_species_list_filename, like
-<a class="reference external" href="../../data/easy_bake/heuchera_wrangled.txt">heuchera_wrangled.txt</a>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/easy_bake/heuchera_wrangled.txt">heuchera_wrangled.txt</a>
 containing the modified species list, one name per line.</p></li>
 </ol>
 <p>The process produces one additional file configured in the wrangler configuration file:</p>
@@ -189,7 +189,7 @@ AcceptedNameSpeciesListWrangler.  The name-map is a JSON file with pairs of name
 the original name to the accepted name according to the specified authority.
 This name-map is suitable to use for input when resolving another dataset containing
 a subset of the same original names.  A sample output name-map is
-<a class="reference external" href="../../data/easy_bake/splist_wrangle_gbif.namemap">splist_wrangle_gbif.namemap</a>.</p></li>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/data/easy_bake/splist_wrangle_gbif.namemap">splist_wrangle_gbif.namemap</a>.</p></li>
 </ul>
 </section>
 </section>
