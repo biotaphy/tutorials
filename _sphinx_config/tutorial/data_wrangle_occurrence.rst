@@ -37,6 +37,12 @@ documentation and linked above.  Data can be in one of two formats:
       example file is a CSV file containing many fields, downloaded from gbif,
       `occurrence_gbif.csv <../../data/input/occurrence_gbif.csv>`_.
 
+All point records will have the fields "species_name", "x", and "y" appended to the
+attributes, and they will be filled with the values from the original fields defined as
+containing these types of data.  When resolving names with the
+AcceptedNameOccurrenceWrangler.
+new resolved name will be updated in the "species_name" field.
+
 ----------------------------
 Wrangler configuration file
 ----------------------------
