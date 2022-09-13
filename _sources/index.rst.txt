@@ -6,6 +6,7 @@ community for learning how to use Biotaphy tools through a script initiating
 computations on a Docker instance.
 
 .. toctree::
+    :glob:
     :maxdepth: 1
 
     pages/about
