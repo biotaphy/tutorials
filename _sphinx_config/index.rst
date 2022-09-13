@@ -5,32 +5,42 @@ The Biotaphy tutorials repository contains data and scripts that can be useful t
 community for learning how to use Biotaphy tools through a script initiating
 computations on a Docker instance.
 
+Get Started
+***********************
+
 .. toctree::
-    :glob:
-    :maxdepth: 2
-    :caption: Overview
+    :maxdepth: 1
 
     pages/about
     pages/installation
     pages/quickstart
 
-    :caption: Tutorial lessons
-    tutorial/w*
+Tutorial lessons
+***********************
 
-    :caption: Command configuration
+.. toctree::
+    :glob:
+    :maxdepth: 2
+    tutorial/w*
     tutorial/script_params
+
+Command configuration
+***********************
+
+.. toctree::
+    :glob:
+    :maxdepth: 2
     tutorial/*wrangle*
 
-    :caption: Data download
-    tutorial/idigbio_download
+Reference
+***********************
 
-    :caption: Reference
+.. toctree::
+    :maxdepth: 1
+    tutorial/idigbio_download
     pages/glossary
     pages/references
     pages/spatial_data
-
-Indices and tables
-==================
 
 * :ref:`genindex`
 * :ref:`modindex`
