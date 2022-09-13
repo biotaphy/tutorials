@@ -13,7 +13,7 @@ Maxent parameters indicated in the configuration file.
 Introduction
 -----------------------------------
 
-Read `Tutorial Overview <../tutorial/w1_overview.rst>`_ for an overview of how all
+Read `Tutorial Overview <../tutorial/w1_overview>`_ for an overview of how all
 tutorials work.
 
 -----------------------------------
@@ -43,7 +43,7 @@ Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A JSON parameter file is required for this command.  A test tutorial parameter file is: 
-`create_sdm.json <https://github.com/biotaphy/tutorials/data/config/create_sdm.json>`_,
+`create_sdm.json <https://github.com/biotaphy/tutorials/blob/main/data/config/create_sdm.json>`_,
 
 These are the required and optional parameters:
 
