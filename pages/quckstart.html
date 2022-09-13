@@ -40,14 +40,14 @@
               <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Tutorial Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w1_overview.html">Webinar 1: Tutorial Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w2_resolve_splist_names.html">Webinar 2: Resolving Nomenclature</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial/w6_create_sdms.html">Webinar 6: Species Distribution Modeling ()</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/w6_create_sdms.html">Webinar 6: Species Distribution Modeling (SDM)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/w8_build_pam.html">Webinar 8: Introducing Presence-Absence Matrices (PAMs)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial/w9_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial/w9_phylo_diversity.html">Webinar 9: Integrating Phylogenies with Species and Biogeographic Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorial/data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -88,8 +88,8 @@
 <h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this heading"></a></h1>
 <section id="install-docker">
 <h2>Install Docker<a class="headerlink" href="#install-docker" title="Permalink to this heading"></a></h2>
-<p>Follow instructions for your operating system at
-<a class="reference external" href="https://docs.docker.com/get-docker/">Get Docker</a></p>
+<p>Download by following instructions for your operating system at
+<a class="reference external" href="https://docs.docker.com/get-docker/">Get Docker</a> , then install <a class="reference external" href="https://docs.docker.com/get-started/">Docker</a>.</p>
 </section>
 <section id="download-tutorial">
 <h2>Download Tutorial<a class="headerlink" href="#download-tutorial" title="Permalink to this heading"></a></h2>
@@ -99,14 +99,18 @@ files, and data for the tutorials.</p>
 </section>
 <section id="initiate-each-tutorial">
 <h2>Initiate each tutorial<a class="headerlink" href="#initiate-each-tutorial" title="Permalink to this heading"></a></h2>
-<p>Choose a command to initiate with the default data.  Commands are in the Hands-on
-section of each tutorial.</p>
+<p>Choose a command to initiate with the default data.  Commands and example configuration
+files referencing test data are in the Hands-on section of each tutorial.  Run the
+tutorial script <cite>run_tutorial</cite> with no parameters to get a list of valid commands and
+required options.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
 </section>
 <section id="examine-results">
 <h2>Examine results<a class="headerlink" href="#examine-results" title="Permalink to this heading"></a></h2>
 <p>All outputs from tutorial exercises are copied to the local system in a newly
-created <cite>output</cite> directory under the <cite>data</cite> directory in the downloaded <cite>tutorials</cite>
-repository.</p>
+created <cite>output</cite> directory under the downloaded <cite>tutorials/data/</cite> directory.</p>
 </section>
 </section>
 

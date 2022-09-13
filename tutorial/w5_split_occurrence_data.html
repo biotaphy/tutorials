@@ -20,7 +20,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Webinar 6: Species Distribution Modeling ()" href="w6_create_sdms.html" />
+    <link rel="next" title="Webinar 6: Species Distribution Modeling (SDM)" href="w6_create_sdms.html" />
     <link rel="prev" title="Webinar 3: Wrangle occurrence data" href="w3_wrangle_occurrence_data.html" /> 
 </head>
 
@@ -42,7 +42,7 @@
               <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolving Nomenclature</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
@@ -58,9 +58,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling ()</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling (SDM)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w8_build_pam.html">Webinar 8: Introducing Presence-Absence Matrices (PAMs)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w9_phylo_diversity.html">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w9_phylo_diversity.html">Webinar 9: Integrating Phylogenies with Species and Biogeographic Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -99,8 +99,7 @@
              
   <section id="webinar-5-split-and-merge-occurrence-data-by-species">
 <h1>Webinar 5: Split and merge occurrence data by species<a class="headerlink" href="#webinar-5-split-and-merge-occurrence-data-by-species" title="Permalink to this heading"></a></h1>
-<p><a class="reference external" href="https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1">Big Data Munging</a>
-Split one or more occurrence datasets by species.
+<p>Split one or more occurrence datasets by species.
 If we are splitting more than one dataset, records in different datasets with the same
 species name will be combined into one file.  The tool allows multiple operations,
 defined in a configuration file, to be applied to the data at the same time, just like
@@ -111,7 +110,7 @@ a field with values to be grouped on, generally a species name.</p>
 fields <cite>species_name</cite>, <cite>x</cite>, and <cite>y</cite> to every record, and leave other fields unchanged.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read <a class="reference external" href="../tutorial/w1_overview.rst">Tutorial Overview</a> for an overview of how all
+<p>Read <a class="reference external" href="../tutorial/w1_overview">Tutorial Overview</a> for an overview of how all
 tutorials work.</p>
 </section>
 <section id="data-preparation">
@@ -121,7 +120,7 @@ tutorials work.</p>
 <p>The split_occurrence_data tool accepts one or more datasets, each must be either a
 Darwin Core Archive (DwCA) file or a CSV file containing records for one or more taxa.</p>
 <p>More information is in the <strong>Occurrence Data</strong> section of
-<a class="reference external" href="data_wrangle_occurrence.rst">data_wrangle_occurrence</a>.</p>
+<a class="reference external" href="data_wrangle_occurrence">data_wrangle_occurrence</a>.</p>
 </section>
 <section id="input-wrangler-configuration-file">
 <h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
@@ -129,25 +128,26 @@ Darwin Core Archive (DwCA) file or a CSV file containing records for one or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the <strong>Occurrence Wrangler Types</strong> section
-of <a class="reference external" href="data_wrangle_occurrence.rst">data_wrangle_occurrence</a>.</p>
+of <a class="reference external" href="data_wrangle_occurrence">data_wrangle_occurrence</a>.</p>
 <p>In the first example, we
 will split occurrence data, but not perform any other wrangling on it, so our wrangler
-configuration file <a class="reference external" href="../data/config/no_wrangle.json">no_wrangle.json</a> contains an empty
-list.</p>
-<p>A second example <a class="reference external" href="../data/config/occ_wrangler_resolve.json">wrangler configuration file</a> resolves names with GBIF before grouping
-the data by name.</p>
+configuration file <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/no_wrangle.json">no_wrangle.json</a>
+contains an empty list.</p>
+<p>A second example <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/occ_wrangler_resolve.json">wrangler configuration file</a>
+resolves names with GBIF before grouping the data by name.</p>
 <p>If more than one dataset is being processed, it is logical to apply the same wranglers
 to each.</p>
 </section>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The parameter file in our first
-example is <a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/split_gbif.json">split_gbif.json</a>.  This one splits
-GBIF data, which already contains accepted names, so we can skip name resolution.</p>
+example is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/split_gbif.json">split_gbif.json</a>.
+This one splits GBIF data, which already contains accepted names, so we can skip name
+resolution.</p>
 <p>The parameter file in our second
-example is <a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/split_resolve.json">split_resolve.json</a>.  This one
-splits both iDigBio and GBIF data, and resolves to the canonical form of accepted names
-according to the GBIF taxonomy service.</p>
+example is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/split_resolve.json">split_resolve.json</a>.
+This one splits both iDigBio and GBIF data, and resolves to the canonical form of
+accepted names according to the GBIF taxonomy service.</p>
 <p>These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -168,7 +168,7 @@ provided.  List of 0 or more lists, each containing 2 arguments</p>
 <li><p>input DwCA file, and</p></li>
 <li><p>occurrence data wrangler configuration file (described in the next section). The
 example split_occurrence_data wrangler configuration used for this tutorial step
-is <a class="reference external" href="https://github.com/biotaphy/tutorials/input/wrangle_occurrences.json">here</a></p></li>
+is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/wrangle_occurrences.json">here</a></p></li>
 </ul>
 </li>
 <li><p><strong>csv</strong>: This is an optional argument, but either this, or <strong>dwca</strong>, must be provided.
@@ -227,7 +227,7 @@ The name-map is a JSON file with pairs of names -
 the original name to the accepted name according to the specified authority.
 This name-map is suitable to use for input when resolving another dataset containing
 a subset of the same original names.  A sample output name-map is
-<a class="reference external" href="https://github.com/biotaphy/tutorials/data/easy_bake/gbif_occ.namemap">gbif_occ.namemap</a>.</p></li>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/occ_resolve.namemap">occ_resolve.namemap</a>.</p></li>
 </ol>
 </section>
 </section>
@@ -237,7 +237,7 @@ a subset of the same original names.  A sample output name-map is
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="w3_wrangle_occurrence_data.html" class="btn btn-neutral float-left" title="Webinar 3: Wrangle occurrence data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="w6_create_sdms.html" class="btn btn-neutral float-right" title="Webinar 6: Species Distribution Modeling ()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="w6_create_sdms.html" class="btn btn-neutral float-right" title="Webinar 6: Species Distribution Modeling (SDM)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

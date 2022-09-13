@@ -1,19 +1,19 @@
 ===============
-Installation
+Tutorial Preparation
 ===============
 
 -----------------------
-Install Docker
+Download and Install Docker
 -----------------------
 
-To run Biotaphy tools on any OS, locally through :term:`Docker`, first download and
-install `Docker <https://docs.docker.com/get-started/>`_.
-
-Follow instructions for your operating system at
+To run Biotaphy tools on any OS, locally through :term:`Docker`, first download
+by following instructions for your operating system at
 `Get Docker <https://docs.docker.com/get-docker/>`_
 
+Then install `Docker <https://docs.docker.com/get-started/>`_.
+
 -----------------------
-Download Tutorial
+Download this Tutorial
 -----------------------
 
 The `Biotaphy tutorial <https://github.com/biotaphy/tutorials>`_  can be installed by

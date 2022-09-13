@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Webinar 9: Integrating Phylogenies with Species and Biogeographic Data &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -42,14 +42,14 @@
               <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolving Nomenclature</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling ()</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling (SDM)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w8_build_pam.html">Webinar 8: Introducing Presence-Absence Matrices (PAMs)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 9: Integrating Phylogenies with Species and Biogeographic Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-1-cleanup-the-matrix">Step 1: Cleanup the matrix</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#data-preparation-script-parameter-file">Data preparation: Script parameter file</a></li>
@@ -93,7 +93,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data</li>
+      <li>Webinar 9: Integrating Phylogenies with Species and Biogeographic Data</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/tutorial/w9_phylo_diversity.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -103,8 +103,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="webinar-8-phylogenetic-diversity-integrating-phylogenies-with-species-and-biogeographic-data">
-<h1>Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data<a class="headerlink" href="#webinar-8-phylogenetic-diversity-integrating-phylogenies-with-species-and-biogeographic-data" title="Permalink to this heading"></a></h1>
+  <section id="webinar-9-integrating-phylogenies-with-species-and-biogeographic-data">
+<h1>Webinar 9: Integrating Phylogenies with Species and Biogeographic Data<a class="headerlink" href="#webinar-9-integrating-phylogenies-with-species-and-biogeographic-data" title="Permalink to this heading"></a></h1>
 <p>Analyze the PAM matrix with a tree containing the same species to determine the
 phylogenetic diversity of a region.</p>
 <section id="introduction">
@@ -118,7 +118,7 @@ tutorials work.</p>
 <section id="data-preparation-script-parameter-file">
 <h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
-is <a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/resolve_tree_names.json">resolve_tree_names.json</a>. These
+is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/resolve_tree_names.json">resolve_tree_names.json</a>. These
 are the required and optional parameters:</p>
 <ul>
 <li><p>Required:
@@ -140,8 +140,8 @@ PurgeEmptySlicesWrangler, and is in
 </section>
 <section id="data-preparation-input-matrix">
 <h3>Data preparation: Input matrix<a class="headerlink" href="#data-preparation-input-matrix" title="Permalink to this heading"></a></h3>
-<p>Use a PAM created in <a class="reference external" href="w7_build_pam">Tutorial 7</a>.  An example PAM is available in
-<a class="reference external" href="https://github.com/biotaphy/tutorials/data/input/pam.lmm">pam.lmm</a>.</p>
+<p>Use a PAM created in <a class="reference external" href="w8_build_pam">Webinar 8</a>.  An example PAM is available in
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/pam.lmm">pam.lmm</a>.</p>
 </section>
 <section id="data-preparation-wrangler-configuration-file">
 <h3>Data preparation: Wrangler configuration file<a class="headerlink" href="#data-preparation-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
@@ -170,7 +170,7 @@ distribution models with the grid, we calculate biogeographic statistics on that
 <section id="id1">
 <h3>Data preparation: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <p>An example JSON file for running the calculate_pam_stats command is at
-<a class="reference external" href="https://github.com/biotaphy/tutorials/data/config/calculate_pam_stats.json">calculate_pam_stats</a>. These
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json">calculate_pam_stats</a>. These
 are the required and optional parameters:</p>
 <ul>
 <li><p>Required:

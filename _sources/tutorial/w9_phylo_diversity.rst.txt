@@ -1,5 +1,5 @@
 ==============================
-Webinar 8: Phylogenetic diversity: Integrating Phylogenies with Species and Biogeographic Data
+Webinar 9: Integrating Phylogenies with Species and Biogeographic Data
 ==============================
 
 Analyze the PAM matrix with a tree containing the same species to determine the
@@ -23,7 +23,7 @@ Data preparation: Script parameter file
 
 A JSON parameter file is required for this command.  The tutorial parameter file
 is `resolve_tree_names.json
-<https://github.com/biotaphy/tutorials/data/config/resolve_tree_names.json>`_. These
+<https://github.com/biotaphy/tutorials/blob/main/data/config/resolve_tree_names.json>`_. These
 are the required and optional parameters:
 
 * Required:
@@ -43,8 +43,8 @@ are the required and optional parameters:
 Data preparation: Input matrix
 ******************************************
 
-Use a PAM created in `Tutorial 7 <w7_build_pam>`_.  An example PAM is available in
-`pam.lmm <https://github.com/biotaphy/tutorials/data/input/pam.lmm>`_.
+Use a PAM created in `Webinar 8 <w8_build_pam>`_.  An example PAM is available in
+`pam.lmm <https://github.com/biotaphy/tutorials/blob/main/data/input/pam.lmm>`_.
 
 Data preparation: Wrangler configuration file
 ******************************************
@@ -81,7 +81,7 @@ Data preparation: Script parameter file
 
 An example JSON file for running the calculate_pam_stats command is at
 `calculate_pam_stats
-<https://github.com/biotaphy/tutorials/data/config/calculate_pam_stats.json>`_. These
+<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json>`_. These
 are the required and optional parameters:
 
 * Required:
