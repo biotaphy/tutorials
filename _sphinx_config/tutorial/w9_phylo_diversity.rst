@@ -9,7 +9,7 @@ phylogenetic diversity of a region.
 Introduction
 --------------------
 
-Read [Tutorial Overview](../tutorial/w1_overview.rst) for an overview of how all
+Read `Tutorial Overview <../tutorial/w1_overview>`_ for an overview of how all
 tutorials work.
 
 --------------------
@@ -22,8 +22,9 @@ Data preparation: Script parameter file
 ******************************************
 
 A JSON parameter file is required for this command.  The tutorial parameter file
-is [resolve_tree_names.json](../../data/config/resolve_tree_names.json). These are the
-required and optional parameters:
+is `resolve_tree_names.json
+<https://github.com/biotaphy/tutorials/data/config/resolve_tree_names.json>`_. These
+are the required and optional parameters:
 
 * Required:
   * **in_matrix_filename**: input filename containing a PAM matrix. 
@@ -43,7 +44,7 @@ Data preparation: Input matrix
 ******************************************
 
 Use a PAM created in `Tutorial 7 <w7_build_pam>`_.  An example PAM is available in
-`pam.lmm <../../data/input/pam.lmm>`_.
+`pam.lmm <https://github.com/biotaphy/tutorials/data/input/pam.lmm>`_.
 
 Data preparation: Wrangler configuration file
 ******************************************
@@ -79,8 +80,9 @@ Data preparation: Script parameter file
 ******************************************
 
 An example JSON file for running the calculate_pam_stats command is at
-`calculate_pam_stats <../../data/config/calculate_pam_stats.json>`_. These are the
-required and optional parameters:
+`calculate_pam_stats
+<https://github.com/biotaphy/tutorials/data/config/calculate_pam_stats.json>`_. These
+are the required and optional parameters:
 
 * Required:
   * **pam_filename**: The full filename to the input PAM file.
@@ -122,6 +124,6 @@ output files specified in the command configuration file.  Outputs may include:
 4. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
    and it is written to the covariance_matrix filename, where the statistic name is 
    appended to the end of the base file name.
-5. A "diversity_matrix" containing different diversity statistics 
-  * **site_stats_matrix**: The full filename for writing the site statistics matrix.
-  * **species_stats_matrix
+5. A "diversity_matrix" containing different diversity statistics.
+6. A "site_stats_matrix" containing site statistics.
+7. A "species_stats_matrix" containing species statistics.

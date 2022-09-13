@@ -43,7 +43,7 @@ Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A JSON parameter file is required for this command.  A test tutorial parameter file is: 
-`create_sdm.json <../../data/config/create_sdm.json>`_,
+`create_sdm.json <https://github.com/biotaphy/tutorials/data/config/create_sdm.json>`_,
 
 These are the required and optional parameters:
 
