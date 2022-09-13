@@ -141,10 +141,12 @@ to each.</p>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The parameter file in our first
-example is <a class="reference external" href="../../data/config/split_gbif.json">split_gbif.json</a>.  We are splitting
-GBIF data, which already contains accepted names, so we do not need to perform name
-resolution.</p>
-<p><a class="reference external" href="../../data/config/split_occurrence_data_resolve.json">split_occurrence_data_resolve.json</a>.</p>
+example is <a class="reference external" href="../../data/config/split_gbif.json">split_gbif.json</a>.  This one splits
+GBIF data, which already contains accepted names, so we can skip name resolution.</p>
+<p>The parameter file in our second
+example is <a class="reference external" href="../../data/config/split_resolve.json">split_resolve.json</a>.  This one
+splits both iDigBio and GBIF data, and resolves to the canonical form of accepted names
+according to the GBIF taxonomy service.</p>
 <p>These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -192,15 +194,11 @@ wrangling).</p></li>
 <h2>Run tutorial with DwCA data<a class="headerlink" href="#run-tutorial-with-dwca-data" title="Permalink to this heading"></a></h2>
 <p>Initiate the split_occurrence_data process with the following:
 .. code-block:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># split CSV data on species, no wrangling</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_occurrence_data_csv</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># split GBIF CSV data on species, no wrangling</span>
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_gbif</span><span class="o">.</span><span class="n">json</span>
 
-<span class="c1"># split DwCA data on species, no wrangling</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_occurrence_data_dwca</span><span class="o">.</span><span class="n">json</span>
-
-<span class="c1"># split and merge 1 iDigBio DwCA and 1 GBIF CSV, resolving names with GBIF,</span>
-<span class="c1"># then mapping fields to a common format</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_wrangle_occurrence_data</span><span class="o">.</span><span class="n">json</span>
+<span class="c1"># resolve GBIF CSV and iDigBio DwCA data by species, and split on the resolved names</span>
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_resolve</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>

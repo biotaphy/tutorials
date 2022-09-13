@@ -57,13 +57,13 @@ Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A JSON parameter file is required for this command.  The parameter file in our first
-example is `split_gbif.json <../../data/config/split_gbif.json>`_.  We are splitting
-GBIF data, which already contains accepted names, so we do not need to perform name
-resolution.
+example is `split_gbif.json <../../data/config/split_gbif.json>`_.  This one splits
+GBIF data, which already contains accepted names, so we can skip name resolution.
 
-
-`split_occurrence_data_resolve.json
-<../../data/config/split_occurrence_data_resolve.json>`_.
+The parameter file in our second
+example is `split_resolve.json <../../data/config/split_resolve.json>`_.  This one
+splits both iDigBio and GBIF data, and resolves to the canonical form of accepted names
+according to the GBIF taxonomy service.
 
 These are the required and optional parameters:
 
@@ -107,16 +107,11 @@ Run tutorial with DwCA data
 Initiate the split_occurrence_data process with the following:
 .. code-block::
 
-  # split CSV data on species, no wrangling
-  ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_csv.json
+  # split GBIF CSV data on species, no wrangling
+  ./run_tutorial.sh split_occurrence_data data/config/split_gbif.json
 
-  # split DwCA data on species, no wrangling
-  ./run_tutorial.sh split_occurrence_data data/config/split_occurrence_data_dwca.json
-
-  # split and merge 1 iDigBio DwCA and 1 GBIF CSV, resolving names with GBIF,
-  # then mapping fields to a common format
-  ./run_tutorial.sh split_occurrence_data data/config/split_wrangle_occurrence_data.json
-
+  # resolve GBIF CSV and iDigBio DwCA data by species, and split on the resolved names
+  ./run_tutorial.sh split_occurrence_data data/config/split_resolve.json
 
 ------------------------------------------------
 Output
