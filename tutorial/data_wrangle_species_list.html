@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Species List: Wrangling &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -40,7 +40,7 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
@@ -53,6 +53,18 @@
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Species List: Wrangling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#wrangler-configuration-file">Wrangler configuration file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#species-list-wrangler-types">Species List Wrangler Types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#acceptednamespecieslistwrangler">AcceptedNameSpeciesListWrangler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intersectionspecieslistwrangler">IntersectionSpeciesListWrangler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#matchmatrixspecieslistwrangler">MatchMatrixSpeciesListWrangler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#matchtreespecieslistwrangler">MatchTreeSpeciesListWrangler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unionspecieslistwrangler">UnionSpeciesListWrangler</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_tree.html">Trees: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
@@ -75,7 +87,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>&lt;no title&gt;</li>
+      <li>Species List: Wrangling</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/tutorial/data_wrangle_species_list.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -85,13 +97,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p># Species List: Wrangling</p>
+  <section id="species-list-wrangling">
+<h1>Species List: Wrangling<a class="headerlink" href="#species-list-wrangling" title="Permalink to this heading"></a></h1>
 <p>When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.</p>
 <p>Currently, wrangler_type names correspond to the wrangler class <cite>name</cite> attribute in
 this module’s files.  Each wrangler’s parameters correspond to the constructor
 arguments for that wrangler.</p>
-<p>## Wrangler configuration file</p>
+<section id="wrangler-configuration-file">
+<h2>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading"></a></h2>
 <p>A file specifying 0 or more wranglers to apply to the species list, and options
 specific to each.  Configuration files:</p>
 <ul class="simple">
@@ -100,8 +114,11 @@ specific to each.  Configuration files:</p>
 <li><p>Each dictionary must contain “wrangler_type”, with the name of the wrangler type.</p></li>
 <li><p>The dictionary will also contain all required parameters and any optional parameters.</p></li>
 </ul>
-<p>## Species List Wrangler Types</p>
-<p>### AcceptedNameSpeciesListWrangler</p>
+</section>
+<section id="species-list-wrangler-types">
+<h2>Species List Wrangler Types<a class="headerlink" href="#species-list-wrangler-types" title="Permalink to this heading"></a></h2>
+<section id="acceptednamespecieslistwrangler">
+<h3>AcceptedNameSpeciesListWrangler<a class="headerlink" href="#acceptednamespecieslistwrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>optional</p>
 <ul>
@@ -120,7 +137,9 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </li>
 </ul>
-<p>### IntersectionSpeciesListWrangler</p>
+</section>
+<section id="intersectionspecieslistwrangler">
+<h3>IntersectionSpeciesListWrangler<a class="headerlink" href="#intersectionspecieslistwrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -128,7 +147,9 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </li>
 </ul>
-<p>### MatchMatrixSpeciesListWrangler</p>
+</section>
+<section id="matchmatrixspecieslistwrangler">
+<h3>MatchMatrixSpeciesListWrangler<a class="headerlink" href="#matchmatrixspecieslistwrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -136,7 +157,9 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </li>
 </ul>
-<p>### MatchTreeSpeciesListWrangler</p>
+</section>
+<section id="matchtreespecieslistwrangler">
+<h3>MatchTreeSpeciesListWrangler<a class="headerlink" href="#matchtreespecieslistwrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -144,7 +167,9 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </li>
 </ul>
-<p>### UnionSpeciesListWrangler</p>
+</section>
+<section id="unionspecieslistwrangler">
+<h3>UnionSpeciesListWrangler<a class="headerlink" href="#unionspecieslistwrangler" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -152,6 +177,9 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </li>
 </ul>
+</section>
+</section>
+</section>
 
 
            </div>
