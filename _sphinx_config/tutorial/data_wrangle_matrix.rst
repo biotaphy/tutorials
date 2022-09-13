@@ -6,7 +6,7 @@ Matrices: Data and Wrangling
 Matrix Data
 ----------------
 Matrices may be created by other lmpy processes, primarily "encode_layers" described in 
-`Tutorial 7: Build PAM <./w7_build_pam.rst>`_.  PAMs used in these processes are simply
+`Tutorial 7: Build PAM <w8_build_pam.rst>`_.  PAMs used in these processes are simply
 standard numpy matrices, with the addition of header metadata indicating the 
 species and site labels.
 

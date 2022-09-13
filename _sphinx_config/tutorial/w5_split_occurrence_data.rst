@@ -2,8 +2,6 @@
 Webinar 5: Split and merge occurrence data by species
 ================================================================
 
-`Big Data Munging
-<https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.eax09dyp58l1>`_
 Split one or more occurrence datasets by species.
 If we are splitting more than one dataset, records in different datasets with the same
 species name will be combined into one file.  The tool allows multiple operations, 
@@ -19,7 +17,7 @@ fields `species_name`, `x`, and `y` to every record, and leave other fields unch
 ------------------------------------------------
 Introduction
 ------------------------------------------------
-Read `Tutorial Overview <../tutorial/w1_overview.rst>`_ for an overview of how all
+Read `Tutorial Overview <../tutorial/w1_overview>`_ for an overview of how all
 tutorials work.
 
 ------------------------------------------------
@@ -31,7 +29,7 @@ The split_occurrence_data tool accepts one or more datasets, each must be either
 Darwin Core Archive (DwCA) file or a CSV file containing records for one or more taxa.
 
 More information is in the **Occurrence Data** section of 
-`data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.
+`data_wrangle_occurrence <data_wrangle_occurrence>`_.
 
 Input: Wrangler configuration file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -39,16 +37,17 @@ A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the **Occurrence Wrangler Types** section
-of `data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.
+of `data_wrangle_occurrence <data_wrangle_occurrence>`_.
 
 In the first example, we
 will split occurrence data, but not perform any other wrangling on it, so our wrangler
-configuration file `no_wrangle.json <../data/config/no_wrangle.json>`_ contains an empty
-list.
+configuration file `no_wrangle.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/no_wrangle.json>`_
+contains an empty list.
 
 A second example `wrangler configuration file
-<../data/config/occ_wrangler_resolve.json>`_ resolves names with GBIF before grouping
-the data by name.
+<https://github.com/biotaphy/tutorials/blob/main/data/config/occ_wrangler_resolve.json>`_
+resolves names with GBIF before grouping the data by name.
 
 If more than one dataset is being processed, it is logical to apply the same wranglers 
 to each.  
@@ -58,14 +57,15 @@ Input: Script parameter file
 
 A JSON parameter file is required for this command.  The parameter file in our first
 example is `split_gbif.json
-<https://github.com/biotaphy/tutorials/data/config/split_gbif.json>`_.  This one splits
-GBIF data, which already contains accepted names, so we can skip name resolution.
+<https://github.com/biotaphy/tutorials/blob/main/data/config/split_gbif.json>`_.
+This one splits GBIF data, which already contains accepted names, so we can skip name
+resolution.
 
 The parameter file in our second
 example is `split_resolve.json
-<https://github.com/biotaphy/tutorials/data/config/split_resolve.json>`_.  This one
-splits both iDigBio and GBIF data, and resolves to the canonical form of accepted names
-according to the GBIF taxonomy service.
+<https://github.com/biotaphy/tutorials/blob/main/data/config/split_resolve.json>`_.
+This one splits both iDigBio and GBIF data, and resolves to the canonical form of
+accepted names according to the GBIF taxonomy service.
 
 These are the required and optional parameters:
 
@@ -86,7 +86,8 @@ These are the required and optional parameters:
     * input DwCA file, and
     * occurrence data wrangler configuration file (described in the next section). The
       example split_occurrence_data wrangler configuration used for this tutorial step
-      is `here <https://github.com/biotaphy/tutorials/input/wrangle_occurrences.json>`_
+      is `here
+      <https://github.com/biotaphy/tutorials/blob/main/data/input/wrangle_occurrences.json>`_
 
   * **csv**: This is an optional argument, but either this, or **dwca**, must be provided.
     List of 0 or more lists, each containing 5 arguments
@@ -137,5 +138,5 @@ The process also produces outputs according to the wrangler configuration file:
    the original name to the accepted name according to the specified authority.  
    This name-map is suitable to use for input when resolving another dataset containing 
    a subset of the same original names.  A sample output name-map is 
-   `gbif_occ.namemap
-   <https://github.com/biotaphy/tutorials/data/easy_bake/gbif_occ.namemap>`_.
+   `occ_resolve.namemap
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/occ_resolve.namemap>`_.

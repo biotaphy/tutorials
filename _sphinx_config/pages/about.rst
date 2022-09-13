@@ -8,5 +8,5 @@ The aim of this repository is to provide instruction for using Biotaphy tools vi
 Docker, either locally, or deployed to locations with more resources.
 
 .. image:: ../.static/lm_logo.png
-  :width: 400
+  :width: 150
   :alt: Lifemapper

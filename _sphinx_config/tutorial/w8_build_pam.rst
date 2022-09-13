@@ -38,7 +38,7 @@ Data preparation: Script parameter file
 
 A JSON parameter file is required for this command.  The tutorial parameter file
 is `build_grid.json
-<https://github.com/biotaphy/tutorials/data/config/build_grid.json>`_. These are the
+<https://github.com/biotaphy/tutorials/blob/main/data/config/build_grid.json>`_. These are the
 required and optional parameters:
 
 * Required:
@@ -93,7 +93,7 @@ Data preparation: Script parameter file
 
 An example json file for running the encode_layers tutorial is at
 `encode_layers.json
-<https://github.com/biotaphy/tutorials/data/config/encode_layers.json>`_. These are the
+<https://github.com/biotaphy/tutorials/blob/main/data/config/encode_layers.json>`_. These are the
 required and optional parameters:
 
 * Required:
@@ -146,7 +146,7 @@ Data preparation: Script parameter file
 
 An example JSON file for running the calculate_pam_stats command is at
 `calculate_pam_stats
-<https://github.com/biotaphy/tutorials/data/config/calculate_pam_stats.json>`_. These
+<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json>`_. These
 are the required and optional parameters:
 
 * Required:

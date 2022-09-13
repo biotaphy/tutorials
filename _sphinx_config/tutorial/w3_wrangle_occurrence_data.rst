@@ -2,8 +2,7 @@
 Webinar 3: Wrangle occurrence data
 ============================================
 
-`Clean Your Dirty Data <https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.1ftkl0rid0gi>`_
-Filter occurrence and/or modify data in a single dataset.  The tool allows multiple  
+Filter occurrence and/or modify data in a single dataset.  The tool allows multiple
 operations, defined in a configuration file, to be applied to the data at the same time. 
 These operations range from filtering points out based on values in certain fields, to
 filtering out all points of a certain species if the group does not match some criteria,
@@ -17,7 +16,7 @@ GBIF name resolution service.
 Introduction
 --------------------------------
 
-Read `Tutorial Overview <../tutorial/w1_overview.rst>`_ for an overview of how all
+Read `Tutorial Overview <../tutorial/w1_overview>`_ for an overview of how all
 tutorials work.
 
 --------------------------------
@@ -40,13 +39,14 @@ wranglers - each performs a different operation, and each has its own parameters
 
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in the **Occurrence Wrangler Types** section
-of `data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.
+of `data_wrangle_occurrence <data_wrangle_occurrence>`_.
 
 In this example, we will
 resolve occurrence data names with GBIF using the AcceptedNameOccurrenceWrangler, 
 and also apply the DecimalPrecisionFilter to filter out points with a latitude or 
 longitude less than 4 digits past a decimal point.  Our
-`wrangler configuration file <../data/wranglers/occ_wranglers_w_resolve.json>`_
+`wrangler configuration file
+<https://github.com/biotaphy/tutorials/blob/main/data/wranglers/occ_wranglers_w_resolve.json>`_
 contains these parameters, and the file is specified in the Script parameter file 
 described next.
 
@@ -54,7 +54,7 @@ Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 A JSON parameter file is required for this command.  The tutorial parameter file is
 `wrangle_occurrences_resolve.json
-<https://github.com/biotaphy/tutorials/data/config/wrangle_occurrences_resolve.json>`_.
+<https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_occurrences_resolve.json>`_.
 These are the required and optional parameters:
 
 * Required:
@@ -66,7 +66,7 @@ These are the required and optional parameters:
     contains several wranglers, the DecimalPrecisionFilter, the UniqueLocalitiesFilter,
     MinimumPointsWrangler, and the AcceptedNameOccurrenceWrangler, and is in
     `occ_wrangle_resolve.json
-    <https://github.com/biotaphy/tutorials/data/config/occ_wrangle_resolve.json>`_
+    <https://github.com/biotaphy/tutorials/blob/main/data/config/occ_wrangle_resolve.json>`_
 
 * Optional
 
@@ -107,16 +107,16 @@ This process outputs files configured in the script parameter file:
 2. If `report_filename` is specified in the script parameter file, a summary of name
    resolutions, like
    `wrangle_occurrences.log
-   <https://github.com/biotaphy/tutorials/data/easy_bake/wrangle_occurrences_resolve.log>`_
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_occurrences_resolve.log>`_
 3. If `log_filename` is specified in the script parameter file, a report like
    `wrangle_occurrences.rpt
-   <https://github.com/biotaphy/tutorials/data/easy_bake/wrangle_occurrences_resolve.rpt>`_
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_occurrences_resolve.rpt>`_
    containing a summary of the processing.
 3. If `log_console` is specified in the script parameter file, logs will be written to
    the command prompt during execution.
 4. an output file with occurrence records named in the writer_filename, like
    `heuchera_wrangled.csv
-   <https://github.com/biotaphy/tutorials/data/easy_bake/heuchera_wrangled.csv>`_
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/heuchera_wrangled.csv>`_
    containing the occurrence records, one record per line.  Note that the species_name
    field now contains the new taxonomic name resolved for each record.  If the
    original records contain other attributes, those will be retained with their
@@ -133,4 +133,4 @@ configuration:
    This name-map is suitable to use for input when resolving another dataset containing
    a subset of the same original names.  A sample output name-map is
    `occ_wrangle_resolve.namemap
-   <https://github.com/biotaphy/tutorials/data/easy_bake/occ_wrangle_resolve.namemap>`_.
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/occ_wrangle_resolve.namemap>`_.

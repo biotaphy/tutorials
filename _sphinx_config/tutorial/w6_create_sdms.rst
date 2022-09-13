@@ -1,5 +1,5 @@
 ==================================
-Webinar 6: Species Distribution Modeling ()
+Webinar 6: Species Distribution Modeling (SDM)
 ==================================
 
 Create one or more Species Distribution Models using Maxent for
@@ -30,7 +30,7 @@ the occurrence datasets must use the same species_key, x_key, and y_key, specifi
 the configuration file. 
 
 More information is in the **Occurrence Data** section of 
-`data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.
+`data_wrangle_occurrence <data_wrangle_occurrence>`_.
 
 Input: ecoregions file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
