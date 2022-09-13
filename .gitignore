@@ -1,15 +1,10 @@
 .idea/
 docker/*/.env
-*.log
 venv/
 data/output/*
 data/log/*
 test.sh
 
-data/input/*.zip
-data/input/flowline*
-data/input/topo*
-data/input/gbif_sax_100k.csv
 data/input/tmp
 meta.xml
 output
