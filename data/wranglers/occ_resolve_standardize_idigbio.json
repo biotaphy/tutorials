@@ -1,0 +1,24 @@
+[
+    {
+        "wrangler_type": "AcceptedNameOccurrenceWrangler",
+        "name_resolver": "gbif",
+        "out_map_filename": "/volumes/output/occ_resolve_standardize_gbif.namemap",
+        "map_write_interval": 100,
+        "out_map_format": "json"
+    },
+    {
+        "wrangler_type": "CommonFormatWrangler",
+        "attribute_map": {
+            "gbifID": "gbif_id",
+            "coreid": "idigbio_id",
+            "collectionID": "dwc_collectionID",
+            "collectionCode": "dwc_collectionCode",
+            "institutionCode": "dwc_institutionCode",
+            "species_name": "species_name",
+            "x": "longitude",
+            "y": "latitude"
+
+        }
+    }
+
+]
