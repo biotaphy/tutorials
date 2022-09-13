@@ -54,7 +54,7 @@ Required:
   `heuchera.txt <https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.txt>`_.
 * **wrangler_configuration_file**: species list wrangler configuration file,
   described in the previous input section.  The tutorial example wrangler
-  configuration contains one wrangler, the AcceptedNameSpeciesListWrangler, and 
+  configuration contains one wrangler, the AcceptedNameSpeciesListWrangler, and
   is in `splist_wrangle_gbif.json
   <https://github.com/biotaphy/tutorials/blob/main/data/wranglers/splist_wrangle_gbif.json>`_
 * **out_species_list_filename**: output filename for resolved species list.
