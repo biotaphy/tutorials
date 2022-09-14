@@ -23,6 +23,7 @@ tutorials work.
 ------------------------------------------------
 Data Preparation
 ------------------------------------------------
+
 Input: occurrence records
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The split_occurrence_data tool accepts one or more datasets, each must be either a 
@@ -30,27 +31,6 @@ Darwin Core Archive (DwCA) file or a CSV file containing records for one or more
 
 More information is in the **Occurrence Data** section of 
 `data_wrangle_occurrence <data_wrangle_occurrence>`_.
-
-Input: Wrangler configuration file
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-A data wrangler configuration is a file containing a JSON list of zero or more
-wranglers - each performs a different operation, and each has its own parameters.
-More information on file format, available wrangler types, and the required and/or
-optional parameters for each are in the **Occurrence Wrangler Types** section
-of `data_wrangle_occurrence <data_wrangle_occurrence>`_.
-
-In the first example, we
-will split occurrence data, but not perform any other wrangling on it, so our wrangler
-configuration file `no_wrangle.json
-<https://github.com/biotaphy/tutorials/blob/main/data/config/no_wrangle.json>`_
-contains an empty list.
-
-A second example `wrangler configuration file
-<https://github.com/biotaphy/tutorials/blob/main/data/config/occ_wrangler_resolve.json>`_
-resolves names with GBIF before grouping the data by name.
-
-If more than one dataset is being processed, it is logical to apply the same wranglers 
-to each.  
 
 Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -84,10 +64,7 @@ These are the required and optional parameters:
     provided.  List of 0 or more lists, each containing 2 arguments
 
     * input DwCA file, and
-    * occurrence data wrangler configuration file (described in the next section). The
-      example split_occurrence_data wrangler configuration used for this tutorial step
-      is `here
-      <https://github.com/biotaphy/tutorials/blob/main/data/input/wrangle_occurrences.json>`_
+    * occurrence data wrangler configuration file (described in the next section).
 
   * **csv**: This is an optional argument, but either this, or **dwca**, must be provided.
     List of 0 or more lists, each containing 5 arguments
@@ -103,6 +80,30 @@ These are the required and optional parameters:
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
+
+
+Input: Wrangler configuration file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+A data wrangler configuration is a file containing a JSON list of zero or more
+wranglers - each performs a different operation, and each has its own parameters.
+More information on file format, available wrangler types, and the required and/or
+optional parameters for each are in the **Occurrence Wrangler Types** section
+of `data_wrangle_occurrence <data_wrangle_occurrence>`_.  The file is specified in the
+Script parameter file described above.
+
+In the first example, we
+will split occurrence data, but not perform any other wrangling on it, so our wrangler
+configuration file `no_wrangle.json
+<https://github.com/biotaphy/tutorials/blob/main/data/wranglers/no_wrangle.json>`_
+contains an empty list.
+
+A second example wrangler configuration file `occ_resolve.json
+<https://github.com/biotaphy/tutorials/blob/main/data/wranglers/occ_resolve.json>`_
+resolves names with GBIF before grouping the data by name.
+
+If more than one dataset is being processed, it is logical to apply the same wranglers
+to each.
+
 
 ------------------------------------------------
 Run tutorial with DwCA data

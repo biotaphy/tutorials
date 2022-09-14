@@ -62,9 +62,9 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#step-3-calculate-statistics-for-a-pam">Step 3: Calculate statistics for a PAM</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id10">Data preparation: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Data preparation: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id11">Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Output</a></li>
 </ul>
 </li>
 </ul>
@@ -158,9 +158,6 @@ required and optional parameters:</p>
 <h3>Run build_grid command<a class="headerlink" href="#run-build-grid-command" title="Permalink to this heading"></a></h3>
 <p>Initiate the process with the following:</p>
 <p>for linux/mac systems</p>
-<p><code class="docutils literal notranslate"><span class="pre">`zsh</span>
-<span class="pre">./run_tutorial.sh</span> <span class="pre">build_grid</span> <span class="pre">data/input/build_grid.json</span>
-<span class="pre">`</span></code></p>
 </section>
 <section id="output">
 <h3>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h3>
@@ -185,31 +182,27 @@ configuration file), then aggregate the matrices in another step.</p>
 <p>An example json file for running the encode_layers tutorial is at
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/encode_layers.json">encode_layers.json</a>. These are the
 required and optional parameters:</p>
-<ul>
-<li><p>Required:
-* <strong>grid_filename</strong>: Relative path to shapegrid to use for site geometries
-* <strong>out_matrix_filename</strong>: Relative path to write the encoded matrix
-* <strong>encode_method</strong>: The only valid option for creating a PAM is “presence_absence”.</p>
-<blockquote>
-<div><p>Other options “biogeo”, “largest_class”, “mean_value”, are used for a different
-types of matrices and operations.</p>
-</div></blockquote>
-</li>
-<li><p>Optional
-* <strong>min_coverage</strong>: Minimum percentage of a cell that has to be covered to encode it
-* <strong>min_presence</strong>: Minimum value to be considered present when encoding presence</p>
-<blockquote>
-<div><p>absence</p>
-</div></blockquote>
-<ul>
-<li><p><strong>max_presence</strong>: Maximum value to be considered present</p></li>
-<li><p><strong>layer</strong>: list of a
-* layer filename
-* (optional) label for the encoded layer in the output matrix. Defaults to file</p>
-<blockquote>
-<div><p>basename</p>
-</div></blockquote>
 <ul class="simple">
+<li><p>Required:</p>
+<ul>
+<li><p><strong>grid_filename</strong>: Relative path to shapegrid to use for site geometries</p></li>
+<li><p><strong>out_matrix_filename</strong>: Relative path to write the encoded matrix</p></li>
+<li><p><strong>encode_method</strong>: The only valid option for creating a PAM is “presence_absence”.
+Other options “biogeo”, “largest_class”, “mean_value”, are used for a different
+types of matrices and operations.</p></li>
+</ul>
+</li>
+<li><p>Optional</p>
+<ul>
+<li><p><strong>min_coverage</strong>: Minimum percentage of a cell that has to be covered to encode it</p></li>
+<li><p><strong>min_presence</strong>: Minimum value to be considered present when encoding presence
+absence</p></li>
+<li><p><strong>max_presence</strong>: Maximum value to be considered present</p></li>
+<li><p><strong>layer</strong>: list of a</p>
+<ul>
+<li><p>layer filename</p></li>
+<li><p>(optional) label for the encoded layer in the output matrix. Defaults to the
+basename of the layer file.</p></li>
 <li><p>(optional) attribute</p></li>
 </ul>
 </li>
@@ -223,43 +216,35 @@ types of matrices and operations.</p>
 <section id="run-encode-layers-command">
 <h3>Run encode_layers command<a class="headerlink" href="#run-encode-layers-command" title="Permalink to this heading"></a></h3>
 <p>Initiate the clean occurrences process with the following for linux/mac systems:</p>
-<p><code class="docutils literal notranslate"><span class="pre">`zsh</span>
-<span class="pre">bash</span> <span class="pre">run_tutorial.sh</span> <span class="pre">encode_layers</span> <span class="pre">data/config/encode_layers.json</span>
-<span class="pre">`</span></code></p>
 <p><strong>Note</strong>: You may get the following warning.  This indicates that there is a window with no
 values, a common occurrence in most datasets, and may be safely ignored.</p>
-<p><a href="#id2"><span class="problematic" id="id3">``</span></a><a href="#id4"><span class="problematic" id="id5">`</span></a>commandline
-RuntimeWarning: Mean of empty slice</p>
-<blockquote>
-<div><p>window_mean = np.nanmean(window[np.where(window != nodata)])</p>
-</div></blockquote>
-<p><a href="#id6"><span class="problematic" id="id7">``</span></a><a href="#id8"><span class="problematic" id="id9">`</span></a></p>
 </section>
 </section>
 <section id="step-3-calculate-statistics-for-a-pam">
 <h2>Step 3: Calculate statistics for a PAM<a class="headerlink" href="#step-3-calculate-statistics-for-a-pam" title="Permalink to this heading"></a></h2>
 <p>Now that a grid has been built, and a PAM has been populated by intersecting species
 distribution models with the grid, we calculate biogeographic statistics on that PAM.</p>
-<section id="id10">
-<h3>Data preparation: Script parameter file<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h3>
+<section id="id2">
+<h3>Data preparation: Script parameter file<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
 <p>An example JSON file for running the calculate_pam_stats command is at
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json">calculate_pam_stats</a>. These
-are the required and optional parameters:</p>
-<ul>
-<li><p>Required:
-* <strong>pam_filename</strong>: The full filename to the input PAM file.</p></li>
-<li><p>Optional
-* <strong>log_filename</strong>: Output filename to write logging data
-* <strong>log_console</strong>: ‘true’ to write log to console
-* <strong>report_filename</strong>: output filename with data modifications made by wranglers
-* <strong>covariance_matrix</strong>: The full filename for writing the covariance matrix.
-* <strong>diversity_matrix</strong>: The full filename for writing the diversity matrix.
-* <strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.
-* <strong>species_stats_matrix</strong>: The full filename for writing the species statistics</p>
-<blockquote>
-<div><p>matrix.</p>
-</div></blockquote>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json">calculate_pam_stats</a>.
+These are the required and optional parameters:</p>
 <ul class="simple">
+<li><p>Required:</p>
+<ul>
+<li><p><strong>pam_filename</strong>: The full filename to the input PAM file.</p></li>
+</ul>
+</li>
+<li><p>Optional</p>
+<ul>
+<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
+<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
+<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+<li><p><strong>covariance_matrix</strong>: The full filename for writing the covariance matrix.</p></li>
+<li><p><strong>diversity_matrix</strong>: The full filename for writing the diversity matrix.</p></li>
+<li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
+<li><p><strong>species_stats_matrix</strong>: The full filename for writing the species statistics
+matrix.</p></li>
 <li><p><strong>tree_filename</strong>: The full filename to an input tree in Nexus format.</p></li>
 <li><p><strong>tree_matrix</strong>: The full filename to an input tree encoded as a matrix.</p></li>
 </ul>
@@ -270,12 +255,9 @@ are the required and optional parameters:</p>
 <h3>Run calculate_pam_stats command<a class="headerlink" href="#run-calculate-pam-stats-command" title="Permalink to this heading"></a></h3>
 <p>Initiate the calculate_pam_stats process with the following:</p>
 <p>for linux/mac systems</p>
-<p><code class="docutils literal notranslate"><span class="pre">`zsh</span>
-<span class="pre">bash</span> <span class="pre">run_tutorial.sh</span> <span class="pre">calculate_pam_stats</span> <span class="pre">data/config/calculate_pam_stats.json</span>
-<span class="pre">`</span></code></p>
 </section>
-<section id="id11">
-<h3>Output<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h3>
+<section id="id3">
+<h3>Output<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
 <p>The calculate_pam_stats tool outputs computes various statistics, depending on the
 output files specified in the command configuration file.  Outputs may include:</p>
 <ol class="arabic simple">
