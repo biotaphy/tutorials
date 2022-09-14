@@ -5,7 +5,7 @@ Specimen Occurrences: Data and Wrangling
 ----------------
 Occurrence Data
 ----------------
-Several tools (`split_occurrence_data <w5_split_occurrence_data.rst>`_,
+Several tools (`split_occurrence_data <w5_split_occurrence_data>`_,
 `wrangle_occurrences <w3_wrangle_occurrence_data>`_) accept occurrence data.
 The filename must be specified in the script parameter file, described in each tool's
 documentation and linked above.  Data can be in one of two formats:
@@ -21,8 +21,8 @@ documentation and linked above.  Data can be in one of two formats:
       Then choose the download link at the upper right column header.
    2) To download from iDigBio, instructions for querying and downloading from the
       command prompt are at `idigbio_download <idigbio_download>`_.
-   3) The tutorial example DwCA is at
-      `occurrence_idigbio.zip <../../data/input/occurrence_idigbio.zip>`_
+   3) The tutorial example DwCA is occurrence_idigbio.zip in the `input data directory
+      <https://github.com/biotaphy/tutorials/tree/main/data/input>`_
 
 2) CSV file containing records for one or more taxa.
 
@@ -32,16 +32,18 @@ documentation and linked above.  Data can be in one of two formats:
       scientificName or species_name, and x and y coordinates indicating a geographic
       location.  The field names for these 3 columns are specified in the script
       parameter file. One simple tutorial example occurrence datafile
-      is `heuchera.csv <../../data/input/heuchera.csv>`_ which contains different
-      heuchera species, grouped by name, with x and y coordinates.  Another tutorial
-      example file is a CSV file containing many fields, downloaded from gbif,
-      `occurrence_gbif.csv <../../data/input/occurrence_gbif.csv>`_.
+      is `heuchera.csv
+      <https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.csv>`_
+      which contains different heuchera species, grouped by name, with x and y
+      coordinates.  Another tutorial example file is a CSV file containing many fields,
+      downloaded from gbif, `occurrence_gbif.csv
+      <../../data/input/occurrence_gbif.csv>`_.
 
 All point records will have the fields "species_name", "x", and "y" appended to the
 attributes, and they will be filled with the values from the original fields defined as
 containing these types of data.  When resolving names with the
-AcceptedNameOccurrenceWrangler.
-new resolved name will be updated in the "species_name" field.
+AcceptedNameOccurrenceWrangler, new resolved name will be updated in the
+"species_name" field.
 
 ----------------------------
 Wrangler configuration file
@@ -57,7 +59,8 @@ specific to each.  Configuration files:
 
 If an operation, such as split_occurrence_data requires a wrangle configuration file,
 and no other data manipuation is requested, the configuration file can contain an empty
-list, such as:  `no_wrangle <../../data/wranglers/no_wrangle.rst>`_.
+list, such as:  `no_wrangle
+<https://github.com/biotaphy/tutorials/blob/main/data/wranglers/no_wrangle>`_.
 
 --------------------------------
 Occurrence Wrangler Types
