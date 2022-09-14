@@ -63,9 +63,8 @@ Initiate the process with the following:
 
 for linux/mac systems
 
-```zsh
-./run_tutorial.sh build_grid data/input/build_grid.json
-```
+.. code-block::
+      ./run_tutorial.sh build_grid data/input/build_grid.json
 
 Output
 ******************************************
@@ -97,6 +96,7 @@ An example json file for running the encode_layers tutorial is at
 required and optional parameters:
 
 * Required:
+
   * **grid_filename**: Relative path to shapegrid to use for site geometries
   * **out_matrix_filename**: Relative path to write the encoded matrix
   * **encode_method**: The only valid option for creating a PAM is "presence_absence".  
@@ -104,15 +104,18 @@ required and optional parameters:
     types of matrices and operations.
 
 * Optional
+
   * **min_coverage**: Minimum percentage of a cell that has to be covered to encode it
   * **min_presence**: Minimum value to be considered present when encoding presence
     absence
   * **max_presence**: Maximum value to be considered present
   * **layer**: list of a
+
     * layer filename
-    * (optional) label for the encoded layer in the output matrix. Defaults to file
-        basename
+    * (optional) label for the encoded layer in the output matrix. Defaults to the
+      basename of the layer file.
     * (optional) attribute
+
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
@@ -122,17 +125,16 @@ Run encode_layers command
 
 Initiate the clean occurrences process with the following for linux/mac systems:
 
-```zsh
-bash run_tutorial.sh encode_layers data/config/encode_layers.json
-```
+.. code-block::
+      .\run_tutorial.sh encode_layers data/config/encode_layers.json
+
 
 **Note**: You may get the following warning.  This indicates that there is a window with no
 values, a common occurrence in most datasets, and may be safely ignored.
 
-```commandline
-RuntimeWarning: Mean of empty slice
-  window_mean = np.nanmean(window[np.where(window != nodata)])
-```
+.. code-block::
+    RuntimeWarning: Mean of empty slice
+        window_mean = np.nanmean(window[np.where(window != nodata)])
 
 --------------------------------
 Step 3: Calculate statistics for a PAM
@@ -146,13 +148,15 @@ Data preparation: Script parameter file
 
 An example JSON file for running the calculate_pam_stats command is at
 `calculate_pam_stats
-<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json>`_. These
-are the required and optional parameters:
+<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json>`_.
+These are the required and optional parameters:
 
 * Required:
+
   * **pam_filename**: The full filename to the input PAM file.
 
-* Optional 
+* Optional
+
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
@@ -171,9 +175,9 @@ Initiate the calculate_pam_stats process with the following:
 
 for linux/mac systems
 
-```zsh
-bash run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
-```
+.. code-block::
+      ./run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
+
 
 Output
 ******************************************
