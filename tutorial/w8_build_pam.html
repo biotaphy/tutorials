@@ -201,11 +201,16 @@ absence</p></li>
 <li><p><strong>layer</strong>: list of a</p>
 <ul>
 <li><p>layer filename</p></li>
-<li><p>(optional) label for the encoded layer in the output matrix. Defaults to the
-basename of the layer file.</p></li>
-<li><p>(optional) attribute</p></li>
+<li><p>(optional) label for the encoded layer in the output matrix. If no label is
+provided for a layer file, the program will first look for another file in the
+same directory with the same basename, and with the extension “.label”.  If this
+Defaults to the the first line of a file in the same directory and with the same
+basename as lyr_filename and a “.label” extension, OR the basename of the layer
+file.</p></li>
+<li><p>(optional) attribute. Defaults to None, using the pixel value for raster data.</p></li>
 </ul>
 </li>
+<li><p><strong>layer_file_pattern</strong>: File pattern that describes one or more input files.</p></li>
 <li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
 <li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
 <li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
