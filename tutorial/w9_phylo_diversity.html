@@ -117,24 +117,27 @@ tutorials work.</p>
 <section id="data-preparation-script-parameter-file">
 <h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
-is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/resolve_tree_names.json">resolve_tree_names.json</a>. These
-are the required and optional parameters:</p>
+is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_tree.json">wrangle_tree.json</a>.
+These are the required and optional parameters:</p>
+<ul class="simple">
+<li><p>Required:</p>
 <ul>
-<li><p>Required:
-* <strong>in_matrix_filename</strong>: input filename containing a PAM matrix.
-* <strong>out_matrix_filename</strong>: output filename for the updated matrix.
-* <strong>wrangler_configuration_file</strong>: matrix wrangler configuration file,</p>
-<blockquote>
-<div><p>described in the next section.  The tutorial example wrangler configuration
+<li><p><strong>in_matrix_filename</strong>: input filename containing a PAM matrix.</p></li>
+<li><p><strong>out_matrix_filename</strong>: output filename for the updated matrix.</p></li>
+<li><p><strong>wrangler_configuration_file</strong>: matrix wrangler configuration file,
+described in the next section.  The tutorial example wrangler configuration
 contains two wranglers, the MatchTreeMatrixWrangler and the
 PurgeEmptySlicesWrangler, and is in
-[matrix_wranglers.json](../../data/wranglers/matrix_wranglers.json)</p>
-</div></blockquote>
+[matrix_wranglers.json](../../data/wranglers/matrix_wranglers.json)</p></li>
+</ul>
 </li>
-<li><p>Optional
-* <strong>log_filename</strong>: Output filename to write logging data
-* <strong>log_console</strong>: ‘true’ to write log to console
-* <strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+<li><p>Optional</p>
+<ul>
+<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
+<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
+<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+</ul>
+</li>
 </ul>
 </section>
 <section id="data-preparation-input-matrix">
@@ -152,9 +155,6 @@ optional parameters for each are in [data_wrangle_matrix](data_wrangle_matrix.md
 <section id="run-tutorial">
 <h3>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h3>
 <p>Initiate the process with the following:</p>
-<p><code class="docutils literal notranslate"><span class="pre">`zsh</span>
-<span class="pre">./run_tutorial.sh</span>&#160; <span class="pre">wrangle_matrix</span>&#160; <span class="pre">data/config/wrangle_matrix.json</span>
-<span class="pre">`</span></code></p>
 </section>
 <section id="output">
 <h3>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h3>
@@ -169,23 +169,24 @@ distribution models with the grid, we calculate biogeographic statistics on that
 <section id="id1">
 <h3>Data preparation: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <p>An example JSON file for running the calculate_pam_stats command is at
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json">calculate_pam_stats</a>. These
-are the required and optional parameters:</p>
-<ul>
-<li><p>Required:
-* <strong>pam_filename</strong>: The full filename to the input PAM file.</p></li>
-<li><p>Optional
-* <strong>log_filename</strong>: Output filename to write logging data
-* <strong>log_console</strong>: ‘true’ to write log to console
-* <strong>report_filename</strong>: output filename with data modifications made by wranglers
-* <strong>covariance_matrix</strong>: The full filename for writing the covariance matrix.
-* <strong>diversity_matrix</strong>: The full filename for writing the diversity matrix.
-* <strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.
-* <strong>species_stats_matrix</strong>: The full filename for writing the species statistics</p>
-<blockquote>
-<div><p>matrix.</p>
-</div></blockquote>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json">calculate_pam_stats.json</a>.
+These are the required and optional parameters:</p>
 <ul class="simple">
+<li><p>Required:</p>
+<ul>
+<li><p><strong>pam_filename</strong>: The full filename to the input PAM file.</p></li>
+</ul>
+</li>
+<li><p>Optional</p>
+<ul>
+<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
+<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
+<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+<li><p><strong>covariance_matrix</strong>: The full filename for writing the covariance matrix.</p></li>
+<li><p><strong>diversity_matrix</strong>: The full filename for writing the diversity matrix.</p></li>
+<li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
+<li><p><strong>species_stats_matrix</strong>: The full filename for writing the species statistics
+matrix.</p></li>
 <li><p><strong>tree_filename</strong>: The full filename to an input tree in Nexus format.</p></li>
 <li><p><strong>tree_matrix</strong>: The full filename to an input tree encoded as a matrix.</p></li>
 </ul>
@@ -196,9 +197,6 @@ are the required and optional parameters:</p>
 <h3>Run calculate_pam_stats command<a class="headerlink" href="#run-calculate-pam-stats-command" title="Permalink to this heading"></a></h3>
 <p>Initiate the calculate_pam_stats process with the following:</p>
 <p>for linux/mac systems</p>
-<p><code class="docutils literal notranslate"><span class="pre">`zsh</span>
-<span class="pre">bash</span> <span class="pre">run_tutorial.sh</span> <span class="pre">calculate_pam_stats</span> <span class="pre">data/config/calculate_pam_stats.json</span>
-<span class="pre">`</span></code></p>
 </section>
 <section id="id2">
 <h3>Output<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
