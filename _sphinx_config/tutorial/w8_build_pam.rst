@@ -112,9 +112,15 @@ These are the required and optional parameters:
   * **layer**: list of a
 
     * layer filename
-    * (optional) label for the encoded layer in the output matrix. Defaults to the
-      basename of the layer file.
-    * (optional) attribute
+    * (optional) label for the encoded layer in the output matrix. If no label is
+      provided for a layer file, the program will first look for another file in the
+      same directory with the same basename, and with the extension ".label".  If this
+      Defaults to the the first line of a file in the same directory and with the same
+      basename as lyr_filename and a ".label" extension, OR the basename of the layer
+      file.
+    * (optional) attribute. Defaults to None, using the pixel value for raster data.
+
+  * **layer_file_pattern**: File pattern that describes one or more input files.
 
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
