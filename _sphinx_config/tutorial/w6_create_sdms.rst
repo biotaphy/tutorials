@@ -29,8 +29,8 @@ parameter, and/or a list of individual files in the `points_layer` parameter.  E
 the occurrence datasets must use the same species_key, x_key, and y_key, specified in
 the configuration file. 
 
-More information is in the **Occurrence Data** section of 
-`data_wrangle_occurrence <data_wrangle_occurrence>`_.
+More information is in the **Occurrence Data** section of `data_wrangle_occurrence
+<data_wrangle_occurrence#occurrence-data>`_.
 
 Input: ecoregions file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -43,7 +43,8 @@ Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A JSON parameter file is required for this command.  A test tutorial parameter file is: 
-`create_sdm.json <https://github.com/biotaphy/tutorials/blob/main/data/config/create_sdm.json>`_,
+`create_sdm.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/create_sdm.json>`_,
 
 These are the required and optional parameters:
 
@@ -114,4 +115,6 @@ Most outputs are configured in the script parameter file, and may include:
 4. A directory named in the out_dir parameter, containing a subdirectory for each 
    input occurrence data file.  Each subdirectory will be named by the value in 
    the grouping field and contain a predicted distribution raster in ASCII format.  
-   Occurrence data that were modeled with Maxent will also contain Maxent outputs.  
+   Occurrence data that were modeled with Maxent will also contain Maxent outputs.
+   A subset of species outputs from the above command are in the directory `heuchera_sdm
+   <https://github.com/biotaphy/tutorials/tree/main/data/easy_bake/heuchera_sdm>`_.

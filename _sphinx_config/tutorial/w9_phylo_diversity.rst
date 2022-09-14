@@ -22,11 +22,12 @@ Data preparation: Script parameter file
 ******************************************
 
 A JSON parameter file is required for this command.  The tutorial parameter file
-is `resolve_tree_names.json
-<https://github.com/biotaphy/tutorials/blob/main/data/config/resolve_tree_names.json>`_. These
-are the required and optional parameters:
+is `wrangle_tree.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_tree.json>`_.
+These are the required and optional parameters:
 
 * Required:
+
   * **in_matrix_filename**: input filename containing a PAM matrix. 
   * **out_matrix_filename**: output filename for the updated matrix.
   * **wrangler_configuration_file**: matrix wrangler configuration file,
@@ -36,6 +37,7 @@ are the required and optional parameters:
     [matrix_wranglers.json](../../data/wranglers/matrix_wranglers.json)
 
 * Optional
+
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
@@ -59,9 +61,8 @@ Run tutorial
 
 Initiate the process with the following:
 
-```zsh
-./run_tutorial.sh  wrangle_matrix  data/config/wrangle_matrix.json
-```
+.. code-block::
+      ./run_tutorial.sh  wrangle_matrix  data/config/wrangle_matrix.json
 
 Output
 ******************************************
@@ -80,14 +81,16 @@ Data preparation: Script parameter file
 ******************************************
 
 An example JSON file for running the calculate_pam_stats command is at
-`calculate_pam_stats
-<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json>`_. These
-are the required and optional parameters:
+`calculate_pam_stats.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json>`_.
+These are the required and optional parameters:
 
 * Required:
+
   * **pam_filename**: The full filename to the input PAM file.
 
-* Optional 
+* Optional
+
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
@@ -106,9 +109,8 @@ Initiate the calculate_pam_stats process with the following:
 
 for linux/mac systems
 
-```zsh
-bash run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
-```
+.. code-block::
+      ./run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
 
 Output
 ******************************************
