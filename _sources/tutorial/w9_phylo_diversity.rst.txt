@@ -54,7 +54,7 @@ Data preparation: Wrangler configuration file
 A data wrangler configuration is a file containing a JSON list of zero or more
 wranglers - each performs a different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
-optional parameters for each are in [data_wrangle_matrix](data_wrangle_matrix.md).
+optional parameters for each are in `data_wrangle_matrix <data_wrangle_matrix>`_
 
 Run tutorial
 ******************************************

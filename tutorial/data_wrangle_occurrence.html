@@ -108,7 +108,7 @@
 <h1>Specimen Occurrences: Data and Wrangling<a class="headerlink" href="#specimen-occurrences-data-and-wrangling" title="Permalink to this heading"></a></h1>
 <section id="occurrence-data">
 <h2>Occurrence Data<a class="headerlink" href="#occurrence-data" title="Permalink to this heading"></a></h2>
-<p>Several tools (<a class="reference external" href="w5_split_occurrence_data.rst">split_occurrence_data</a>,
+<p>Several tools (<a class="reference external" href="w5_split_occurrence_data">split_occurrence_data</a>,
 <a class="reference external" href="w3_wrangle_occurrence_data">wrangle_occurrences</a>) accept occurrence data.
 The filename must be specified in the script parameter file, described in each tool’s
 documentation and linked above.  Data can be in one of two formats:</p>
@@ -123,8 +123,7 @@ was downloaded after selecting occurrences where
 Then choose the download link at the upper right column header.</p></li>
 <li><p>To download from iDigBio, instructions for querying and downloading from the
 command prompt are at <a class="reference external" href="idigbio_download">idigbio_download</a>.</p></li>
-<li><p>The tutorial example DwCA is at
-<a class="reference external" href="../../data/input/occurrence_idigbio.zip">occurrence_idigbio.zip</a></p></li>
+<li><p>The tutorial example DwCA is occurrence_idigbio.zip in the <a class="reference external" href="https://github.com/biotaphy/tutorials/tree/main/data/input">input data directory</a></p></li>
 </ol>
 </li>
 <li><p>CSV file containing records for one or more taxa.</p>
@@ -135,18 +134,18 @@ record/line must contain a species (or other group) identifier, such as
 scientificName or species_name, and x and y coordinates indicating a geographic
 location.  The field names for these 3 columns are specified in the script
 parameter file. One simple tutorial example occurrence datafile
-is <a class="reference external" href="../../data/input/heuchera.csv">heuchera.csv</a> which contains different
-heuchera species, grouped by name, with x and y coordinates.  Another tutorial
-example file is a CSV file containing many fields, downloaded from gbif,
-<a class="reference external" href="../../data/input/occurrence_gbif.csv">occurrence_gbif.csv</a>.</p></li>
+is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.csv">heuchera.csv</a>
+which contains different heuchera species, grouped by name, with x and y
+coordinates.  Another tutorial example file is a CSV file containing many fields,
+downloaded from gbif, <a class="reference external" href="../../data/input/occurrence_gbif.csv">occurrence_gbif.csv</a>.</p></li>
 </ol>
 </li>
 </ol>
 <p>All point records will have the fields “species_name”, “x”, and “y” appended to the
 attributes, and they will be filled with the values from the original fields defined as
 containing these types of data.  When resolving names with the
-AcceptedNameOccurrenceWrangler.
-new resolved name will be updated in the “species_name” field.</p>
+AcceptedNameOccurrenceWrangler, new resolved name will be updated in the
+“species_name” field.</p>
 </section>
 <section id="wrangler-configuration-file">
 <h2>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading"></a></h2>
@@ -160,7 +159,7 @@ specific to each.  Configuration files:</p>
 </ul>
 <p>If an operation, such as split_occurrence_data requires a wrangle configuration file,
 and no other data manipuation is requested, the configuration file can contain an empty
-list, such as:  <a class="reference external" href="../../data/wranglers/no_wrangle.rst">no_wrangle</a>.</p>
+list, such as:  <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/no_wrangle">no_wrangle</a>.</p>
 </section>
 <section id="occurrence-wrangler-types">
 <h2>Occurrence Wrangler Types<a class="headerlink" href="#occurrence-wrangler-types" title="Permalink to this heading"></a></h2>
