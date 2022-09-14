@@ -66,7 +66,7 @@ These are the required and optional parameters:
     contains several wranglers, the DecimalPrecisionFilter, the UniqueLocalitiesFilter,
     MinimumPointsWrangler, and the AcceptedNameOccurrenceWrangler, and is in
     `occ_wrangle_resolve.json
-    <https://github.com/biotaphy/tutorials/blob/main/data/config/occ_wrangle_resolve.json>`_
+    <https://github.com/biotaphy/tutorials/blob/main/data/wranglers/occ_wrangle_resolve.json>`_
 
 * Optional
 
