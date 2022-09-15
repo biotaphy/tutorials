@@ -1,12 +1,12 @@
 {
     "log_filename": "/volumes/output/build_grid.log",
     "log_console": true,
-    "report_filename": "/volumes/output/build_gridS.rpt",
-    "grid_filename": "/volumes/output/global_1deg_grid.shp",
+    "report_filename": "/volumes/output/build_grid.rpt",
+    "grid_filename": "/volumes/output/global_2deg_grid.shp",
     "min_x": -180,
     "min_y": -90,
     "max_x": 180,
     "max_y": 90,
-    "cell_size": 1.0,
+    "cell_size": 2.0,
     "epsg": 4326
 }

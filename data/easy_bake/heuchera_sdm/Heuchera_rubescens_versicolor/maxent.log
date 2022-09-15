@@ -1,4 +1,4 @@
-Tue Sep 13 17:02:16 CDT 2022
+Wed Sep 14 16:20:58 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -60,24 +60,24 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1855167584, used 262955936, increment 241251232
+getSamples: max memory 32178700288, total allocated 2118123520, free 1857265544, used 260857976, increment 239153272
 Making features
-Time since start: 1.12
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1804541440, used 313582080, increment 50626144
+Time since start: 1.161
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1805388680, used 312734840, increment 51876864
 Heuchera_rubescens_versicolor: 
 Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
 135 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1773376608, used 344746912, increment 31164832
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1773376608, used 344746912, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1773376608, used 344746912, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1773376608, used 344746912, increment 0
+Density: max memory 32178700288, total allocated 2118123520, free 1773379464, used 344744056, increment 32009216
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1773379464, used 344744056, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1773379464, used 344744056, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1773379464, used 344744056, increment 0
 Initial loss: 8.870101048785726
-Time since start: 5.766
-500: time = 4.257000 loss = 7.466983
+Time since start: 5.788
+500: time = 4.245000 loss = 7.466983
 Resulting gain: 1.403118213336911
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_rubescens_versicolor/Heuchera_rubescens_versicolor.asc
-Time since start: 7.233
+Time since start: 7.274
 Writing /volumes/output/heuchera_sdm/Heuchera_rubescens_versicolor/plots/Heuchera_rubescens_versicolor.png
-Time since start: 9.272
+Time since start: 9.355
 Ending

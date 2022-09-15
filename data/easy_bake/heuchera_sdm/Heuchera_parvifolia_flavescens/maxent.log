@@ -1,4 +1,4 @@
-Tue Sep 13 17:02:53 CDT 2022
+Wed Sep 14 16:21:36 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -42,8 +42,8 @@ Checking header of /volumes/env/worldclim1.4/bio9.mxe
 Checking header of /volumes/env/worldclim1.4/bio9.mxe
 Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Heuchera parvifolia flavescens.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2104807424, used 13316096, increment 13316096
-Extractor: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 4194304
+Read samples: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 15415296
+Extractor: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 2095104
 Extracting random background and sample data
 968 points with values for all grids
 Adding samples to background in feature space
@@ -60,21 +60,21 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1870099208, used 248024312, increment 230513912
+getSamples: max memory 32178700288, total allocated 2118123520, free 1872197528, used 245925992, increment 228415592
 Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1861710600, used 256412920, increment 8388608
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1863808920, used 254314600, increment 8388608
 Heuchera_parvifolia_flavescens: 
 Regularization values: linear/quadratic/product: 0.462, categorical: 0.250, threshold: 1.810, hinge: 0.500
+Time since start: 1.014
 19 samples
-Time since start: 1.006
-Density: max memory 32178700288, total allocated 2118123520, free 1855421192, used 262702328, increment 6289408
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1855421192, used 262702328, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1855421192, used 262702328, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1855421192, used 262702328, increment 0
+Density: max memory 32178700288, total allocated 2118123520, free 1857513496, used 260610024, increment 6295424
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1857513496, used 260610024, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1857513496, used 260610024, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1857513496, used 260610024, increment 0
 Initial loss: 6.875232087276577
-440: time = 0.634000 loss = 5.489509
+440: time = 0.642000 loss = 5.489509
 Resulting gain: 1.3857230554390982
-Time since start: 2.407
+Time since start: 2.418
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_parvifolia_flavescens/Heuchera_parvifolia_flavescens.asc
 Writing /volumes/output/heuchera_sdm/Heuchera_parvifolia_flavescens/plots/Heuchera_parvifolia_flavescens.png

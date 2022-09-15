@@ -1,4 +1,4 @@
-Tue Sep 13 17:02:26 CDT 2022
+Wed Sep 14 16:21:09 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -60,22 +60,22 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1870047736, used 248075784, increment 230565384
+getSamples: max memory 32178700288, total allocated 2118123520, free 1867952520, used 250171000, increment 232660600
 Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1863758328, used 254365192, increment 6289408
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1863758216, used 254365304, increment 4194304
 Heuchera_parvifolia_nivalis: 
 Regularization values: linear/quadratic/product: 0.346, categorical: 0.250, threshold: 1.750, hinge: 0.500
 25 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1859564024, used 258559496, increment 4194304
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1859564024, used 258559496, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1859564024, used 258559496, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1859564024, used 258559496, increment 0
+Density: max memory 32178700288, total allocated 2118123520, free 1859563912, used 258559608, increment 4194304
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1859563912, used 258559608, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1859563912, used 258559608, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1859563912, used 258559608, increment 0
 Initial loss: 6.472346294500901
-Time since start: 1.427
-360: time = 0.444000 loss = 5.631902
+Time since start: 1.445
+360: time = 0.460000 loss = 5.631902
 Resulting gain: 0.8404440499502837
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_parvifolia_nivalis/Heuchera_parvifolia_nivalis.asc
-Time since start: 2.714
+Time since start: 2.744
 Writing /volumes/output/heuchera_sdm/Heuchera_parvifolia_nivalis/plots/Heuchera_parvifolia_nivalis.png
 Ending

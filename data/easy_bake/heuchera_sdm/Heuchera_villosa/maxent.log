@@ -1,4 +1,4 @@
-Tue Sep 13 17:03:28 CDT 2022
+Wed Sep 14 16:22:11 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -42,8 +42,8 @@ Checking header of /volumes/env/worldclim1.4/bio9.mxe
 Checking header of /volumes/env/worldclim1.4/bio9.mxe
 Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Heuchera villosa.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2100611072, used 17512448, increment 17512448
-Extractor: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 4192256
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
 Extracting random background and sample data
 Warning: Sample at 0.0, 0.0 in Heuchera villosa.csv is missing some environmental data (e.g. alt)
 Warning: Skipping sample at 0.0, 0.0
@@ -62,22 +62,24 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1859105696, used 259017824, increment 237313120
+getSamples: max memory 32178700288, total allocated 2118123520, free 1854965944, used 263157576, increment 243547976
 Making features
-Time since start: 1.178
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1798225136, used 319898384, increment 60880560
+Time since start: 1.166
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1798279688, used 319843832, increment 56686256
 Heuchera_villosa: 
 Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
 168 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1764733856, used 353389664, increment 33491280
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1764733856, used 353389664, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1764733856, used 353389664, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1764733856, used 353389664, increment 0
+Density: max memory 32178700288, total allocated 2118123520, free 1764788408, used 353335112, increment 33491280
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1764788408, used 353335112, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1764788408, used 353335112, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1764788408, used 353335112, increment 0
 Initial loss: 9.005527777346696
-Time since start: 6.299
-500: time = 4.695000 loss = 7.484311
+Time since start: 6.128
+500: time = 4.548000 loss = 7.484311
 Resulting gain: 1.5212168067216583
-Time since start: 7.335
+Time since start: 7.139
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_villosa/Heuchera_villosa.asc
 Writing /volumes/output/heuchera_sdm/Heuchera_villosa/plots/Heuchera_villosa.png
+Time since start: 9.794
+Ending

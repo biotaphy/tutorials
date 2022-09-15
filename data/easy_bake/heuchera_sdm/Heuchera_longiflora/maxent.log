@@ -1,4 +1,4 @@
-Tue Sep 13 17:02:05 CDT 2022
+Wed Sep 14 16:20:47 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -60,22 +60,22 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1867987008, used 250136512, increment 232626112
+getSamples: max memory 32178700288, total allocated 2118123520, free 1867989600, used 250133920, increment 232623520
 Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1863792704, used 254330816, increment 4194304
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1861693256, used 256430264, increment 6296344
 Heuchera_longiflora: 
 Regularization values: linear/quadratic/product: 0.327, categorical: 0.250, threshold: 1.740, hinge: 0.500
 26 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1857499200, used 260624320, increment 6293504
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1857499200, used 260624320, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1857499200, used 260624320, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1857499200, used 260624320, increment 0
+Time since start: 1.006
+Density: max memory 32178700288, total allocated 2118123520, free 1857501792, used 260621728, increment 4191464
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1857501792, used 260621728, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1857501792, used 260621728, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1857501792, used 260621728, increment 0
 Initial loss: 6.411818267709897
-Time since start: 1.479
-500: time = 0.514000 loss = 5.704557
+500: time = 0.516000 loss = 5.704557
 Resulting gain: 0.7072610736477412
+Time since start: 2.294
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_longiflora/Heuchera_longiflora.asc
-Time since start: 2.76
 Writing /volumes/output/heuchera_sdm/Heuchera_longiflora/plots/Heuchera_longiflora.png
 Ending

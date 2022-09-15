@@ -1,4 +1,4 @@
-Tue Sep 13 17:03:23 CDT 2022
+Wed Sep 14 16:22:06 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -42,8 +42,8 @@ Checking header of /volumes/env/worldclim1.4/bio9.mxe
 Checking header of /volumes/env/worldclim1.4/bio9.mxe
 Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Heuchera parishii.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
-Extractor: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 4194304
+Read samples: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 15415296
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098507312, used 19616208, increment 4200912
 Extracting random background and sample data
 170 points with values for all grids
 Adding samples to background in feature space
@@ -60,20 +60,20 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1865727968, used 252395552, increment 230690848
+getSamples: max memory 32178700288, total allocated 2118123520, free 1865730400, used 252393120, increment 232776912
 Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1861533664, used 256589856, increment 4194304
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1859440992, used 258682528, increment 6289408
 Heuchera_parishii: 
 Regularization values: linear/quadratic/product: 0.714, categorical: 0.429, threshold: 1.880, hinge: 0.500
 12 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1861533664, used 256589856, increment 0
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1861533664, used 256589856, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1861533664, used 256589856, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1861533664, used 256589856, increment 0
+Density: max memory 32178700288, total allocated 2118123520, free 1859440992, used 258682528, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1859440992, used 258682528, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1859440992, used 258682528, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1859440992, used 258682528, increment 0
 Initial loss: 5.135798437050262
 180: time = 0.018000 loss = 4.149179
 Resulting gain: 0.9866189720086886
-Time since start: 1.725
+Time since start: 1.706
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_parishii/Heuchera_parishii.asc
 Writing /volumes/output/heuchera_sdm/Heuchera_parishii/plots/Heuchera_parishii.png

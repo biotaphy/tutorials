@@ -1,4 +1,4 @@
-Tue Sep 13 17:03:08 CDT 2022
+Wed Sep 14 16:21:51 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -60,22 +60,22 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1870076088, used 248047432, increment 230537032
+getSamples: max memory 32178700288, total allocated 2118123520, free 1867977776, used 250145744, increment 232635344
 Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1863786680, used 254336840, increment 6289408
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1861680344, used 256443176, increment 6297432
 Heuchera_hemsleyana: 
 Regularization values: linear/quadratic/product: 0.404, categorical: 0.250, threshold: 1.780, hinge: 0.500
 22 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1857493176, used 260630344, increment 6293504
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1857493176, used 260630344, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1857493176, used 260630344, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1857493176, used 260630344, increment 0
+Density: max memory 32178700288, total allocated 2118123520, free 1855394864, used 262728656, increment 6285480
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1855394864, used 262728656, increment 0
+Time since start: 1.004
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1855394864, used 262728656, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1855394864, used 262728656, increment 0
 Initial loss: 6.61338421837956
-Time since start: 1.65
-440: time = 0.658000 loss = 6.080843
+440: time = 0.648000 loss = 6.080843
 Resulting gain: 0.5325407436026088
+Time since start: 2.44
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_hemsleyana/Heuchera_hemsleyana.asc
-Time since start: 2.898
 Writing /volumes/output/heuchera_sdm/Heuchera_hemsleyana/plots/Heuchera_hemsleyana.png
 Ending

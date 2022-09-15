@@ -1,4 +1,4 @@
-Tue Sep 13 17:03:20 CDT 2022
+Wed Sep 14 16:22:03 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -43,7 +43,7 @@ Checking header of /volumes/env/worldclim1.4/bio9.mxe
 Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Heuchera micrantha hartwegii.csv
 Read samples: max memory 32178700288, total allocated 2118123520, free 2104807424, used 13316096, increment 13316096
-Extractor: max memory 32178700288, total allocated 2118123520, free 2102701616, used 15421904, increment 2105808
+Extractor: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 4194304
 Extracting random background and sample data
 317 points with values for all grids
 Adding samples to background in feature space
@@ -60,22 +60,22 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1872163048, used 245960472, increment 230538568
+getSamples: max memory 32178700288, total allocated 2118123520, free 1872160256, used 245963264, increment 228452864
 Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1865869040, used 252254480, increment 6294008
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1867965952, used 250157568, increment 4194304
 Heuchera_micrantha_hartwegii: 
 Regularization values: linear/quadratic/product: 0.481, categorical: 0.250, threshold: 1.820, hinge: 0.500
 18 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1863774440, used 254349080, increment 2094600
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1863774440, used 254349080, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1863774440, used 254349080, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1863774440, used 254349080, increment 0
+Density: max memory 32178700288, total allocated 2118123520, free 1863771648, used 254351872, increment 4194304
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1863771648, used 254351872, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1863771648, used 254351872, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1863771648, used 254351872, increment 0
 Initial loss: 5.75890177387728
-Time since start: 1.357
-440: time = 0.397000 loss = 5.026673
+Time since start: 1.385
+440: time = 0.404000 loss = 5.026673
 Resulting gain: 0.7322292362960319
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_micrantha_hartwegii/Heuchera_micrantha_hartwegii.asc
-Time since start: 2.671
+Time since start: 2.684
 Writing /volumes/output/heuchera_sdm/Heuchera_micrantha_hartwegii/plots/Heuchera_micrantha_hartwegii.png
 Ending

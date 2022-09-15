@@ -1,4 +1,4 @@
-Tue Sep 13 17:02:02 CDT 2022
+Wed Sep 14 16:20:44 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -60,22 +60,22 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1870015624, used 248107896, increment 230597496
+getSamples: max memory 32178700288, total allocated 2118123520, free 1870016632, used 248106888, increment 230596488
 Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1865821320, used 252302200, increment 4194304
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1867919480, used 250204040, increment 2097152
 Heuchera_caespitosa: 
 Regularization values: linear/quadratic/product: 0.404, categorical: 0.250, threshold: 1.780, hinge: 0.500
 22 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1863726216, used 254397304, increment 2095104
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1863726216, used 254397304, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1863726216, used 254397304, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1863726216, used 254397304, increment 0
+Density: max memory 32178700288, total allocated 2118123520, free 1865822328, used 252301192, increment 2097152
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1865822328, used 252301192, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1865822328, used 252301192, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1865822328, used 252301192, increment 0
 Initial loss: 5.043425116919247
-Time since start: 1.19
-360: time = 0.202000 loss = 4.345285
+Time since start: 1.167
+360: time = 0.205000 loss = 4.345285
 Resulting gain: 0.6981405398729743
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_caespitosa/Heuchera_caespitosa.asc
-Time since start: 2.621
+Time since start: 2.441
 Writing /volumes/output/heuchera_sdm/Heuchera_caespitosa/plots/Heuchera_caespitosa.png
 Ending

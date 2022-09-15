@@ -1,4 +1,4 @@
-Tue Sep 13 17:02:09 CDT 2022
+Wed Sep 14 16:20:51 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -42,8 +42,8 @@ Checking header of /volumes/env/worldclim1.4/bio9.mxe
 Checking header of /volumes/env/worldclim1.4/bio9.mxe
 Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Heuchera amoena.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2104807424, used 13316096, increment 13316096
-Extractor: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 2099200
+Read samples: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 15415296
+Extractor: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 2095104
 Extracting random background and sample data
 270 points with values for all grids
 Adding samples to background in feature space
@@ -60,20 +60,20 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1872215424, used 245908096, increment 230492800
+getSamples: max memory 32178700288, total allocated 2118123520, free 1872217808, used 245905712, increment 228395312
 Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1868021120, used 250102400, increment 4194304
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1868023504, used 250100016, increment 4194304
 Heuchera_amoena: 
 Regularization values: linear/quadratic/product: 1.000, categorical: 0.575, threshold: 1.950, hinge: 0.500
 5 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1865921920, used 252201600, increment 2099200
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1865921920, used 252201600, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1865921920, used 252201600, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1865921920, used 252201600, increment 0
+Density: max memory 32178700288, total allocated 2118123520, free 1865924304, used 252199216, increment 2099200
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1865924304, used 252199216, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1865924304, used 252199216, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1865924304, used 252199216, increment 0
 Initial loss: 5.598421958998375
-60: time = 0.010000 loss = 5.446947
+60: time = 0.009000 loss = 5.446947
 Resulting gain: 0.15147483875928813
-Time since start: 1.715
+Time since start: 1.744
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_amoena/Heuchera_amoena.asc
 Writing /volumes/output/heuchera_sdm/Heuchera_amoena/plots/Heuchera_amoena.png

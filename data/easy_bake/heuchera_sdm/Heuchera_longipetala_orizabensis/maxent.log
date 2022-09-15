@@ -1,4 +1,4 @@
-Tue Sep 13 17:03:13 CDT 2022
+Wed Sep 14 16:21:56 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -43,7 +43,7 @@ Checking header of /volumes/env/worldclim1.4/bio9.mxe
 Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Heuchera longipetala orizabensis.csv
 Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
-Extractor: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 4194304
+Extractor: max memory 32178700288, total allocated 2118123520, free 2096416768, used 21706752, increment 4196352
 Extracting random background and sample data
 Warning: Sample at -106.8422222, 23.1644444 in Heuchera longipetala orizabensis.csv is missing some environmental data (e.g. alt)
 Warning: Skipping sample at -106.8422222, 23.1644444
@@ -64,23 +64,23 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1863501944, used 254621576, increment 232916872
+getSamples: max memory 32178700288, total allocated 2118123520, free 1863502760, used 254620760, increment 232914008
 Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1850919032, used 267204488, increment 12582912
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1850919848, used 267203672, increment 12582912
 Heuchera_longipetala_orizabensis: 
 Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
-Time since start: 1.04
+Time since start: 1.049
 107 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1840431224, used 277692296, increment 10487808
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1840431224, used 277692296, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1840431224, used 277692296, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1840431224, used 277692296, increment 0
+Density: max memory 32178700288, total allocated 2118123520, free 1840432040, used 277691480, increment 10487808
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1840432040, used 277691480, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1840432040, used 277691480, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1840432040, used 277691480, increment 0
 Initial loss: 7.518607216815252
-Time since start: 2.78
-500: time = 1.683000 loss = 6.707995
+Time since start: 2.798
+500: time = 1.692000 loss = 6.707995
 Resulting gain: 0.8106119520614783
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_longipetala_orizabensis/Heuchera_longipetala_orizabensis.asc
-Time since start: 4.087
+Time since start: 4.089
 Writing /volumes/output/heuchera_sdm/Heuchera_longipetala_orizabensis/plots/Heuchera_longipetala_orizabensis.png
 Ending

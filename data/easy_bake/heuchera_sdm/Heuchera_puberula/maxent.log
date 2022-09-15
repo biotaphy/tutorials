@@ -1,4 +1,4 @@
-Tue Sep 13 17:02:13 CDT 2022
+Wed Sep 14 16:20:54 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -60,22 +60,22 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1867941784, used 250181736, increment 234766440
+getSamples: max memory 32178700288, total allocated 2118123520, free 1867942984, used 250180536, increment 234765240
 Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1859555224, used 258568296, increment 8386560
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1861644384, used 256479136, increment 6298600
 Heuchera_puberula: 
 Regularization values: linear/quadratic/product: 0.227, categorical: 0.250, threshold: 1.620, hinge: 0.500
 38 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1855360920, used 262762600, increment 4194304
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1855360920, used 262762600, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1855360920, used 262762600, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1853256584, used 264866936, increment 2104336
+Density: max memory 32178700288, total allocated 2118123520, free 1853260872, used 264862648, increment 8383512
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1853260872, used 264862648, increment 0
+Time since start: 1.004
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1853260872, used 264862648, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1853260872, used 264862648, increment 0
 Initial loss: 6.792344427470809
-Time since start: 1.509
-500: time = 0.531000 loss = 6.041913
+500: time = 0.548000 loss = 6.041913
 Resulting gain: 0.7504309578621964
+Time since start: 2.32
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_puberula/Heuchera_puberula.asc
-Time since start: 2.79
 Writing /volumes/output/heuchera_sdm/Heuchera_puberula/plots/Heuchera_puberula.png
 Ending

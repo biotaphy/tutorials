@@ -1,4 +1,4 @@
-Tue Sep 13 17:02:45 CDT 2022
+Wed Sep 14 16:21:28 CDT 2022
 MaxEnt version 3.4.4
 Checking header of /volumes/env/worldclim1.4/alt.mxe
 Checking header of /volumes/env/worldclim1.4/alt.mxe
@@ -60,24 +60,24 @@ autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 32178700288, total allocated 2118123520, free 1857279728, used 260843792, increment 239139088
+getSamples: max memory 32178700288, total allocated 2118123520, free 1859367280, used 258756240, increment 237051536
 Making features
-Time since start: 1.125
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1821630192, used 296493328, increment 35649536
+Time since start: 1.147
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1825814896, used 292308624, increment 33552384
 Heuchera_cylindrica_alpina: 
 Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
 178 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1798559472, used 319564048, increment 23070720
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1798559472, used 319564048, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1798559472, used 319564048, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1798559472, used 319564048, increment 0
+Density: max memory 32178700288, total allocated 2118123520, free 1802744176, used 315379344, increment 23070720
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1802744176, used 315379344, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1802744176, used 315379344, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1802744176, used 315379344, increment 0
 Initial loss: 8.46863300080086
-Time since start: 4.523
-500: time = 3.095000 loss = 7.828596
+Time since start: 4.6
+500: time = 3.125000 loss = 7.828596
 Resulting gain: 0.6400365299581363
 Projecting...
 Writing file /volumes/output/heuchera_sdm/Heuchera_cylindrica_alpina/Heuchera_cylindrica_alpina.asc
-Time since start: 5.945
+Time since start: 6.065
 Writing /volumes/output/heuchera_sdm/Heuchera_cylindrica_alpina/plots/Heuchera_cylindrica_alpina.png
-Time since start: 7.585
+Time since start: 7.841
 Ending
