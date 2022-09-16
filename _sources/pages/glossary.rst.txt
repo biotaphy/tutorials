@@ -62,10 +62,10 @@ Biotaphy Tutorial Glossary
     reference system, latitude and longitude in decimal degrees.
 
   Geospatial data
-    Geospatial data is data with geographic location associated with it, i.e. map
+    Geospatial data are data with geographic location associated with it, i.e. map
     data.  There are two kinds of spatial data, raster data and vector data.  Each
     has properties that make it better for representing different information.
-    Geospatial data is discussed in more detail on the
+    Geospatial data are discussed in more detail on the
     `Geospatial Data Terms <spatial_data>`_ page.
 
   Host machine
@@ -94,7 +94,8 @@ Biotaphy Tutorial Glossary
     specimen and the spatial location where it was found.
 
   Occurrence Data
-    Point data representing specimens collected for a single species or taxa.  Data
+    Point data representing specimens collected for a single species or taxon.  Each
+    data point
     contains a location, x and y, in some known geographic spatial reference system.
     Public data in BiotaPhy installations are in the 'Geographic' spatial
     reference system, latitude and longitude in decimal degrees.
@@ -121,8 +122,8 @@ Biotaphy Tutorial Glossary
     environmental conditions in those locations.
 
   Species Distribution Model
-    A species distribution model (SDM) is a estimation of potential habitat for a particular
-    species.
+    A species distribution model (SDM) is an estimation of potential habitat for a
+    particular species.
 
   Tree
     A Tree is a set of hierarchical data.
