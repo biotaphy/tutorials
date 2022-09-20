@@ -1,5 +1,3 @@
-@echo OFF
-
 ::
 :: This script calls docker commands to create an image, volumes, start a container from
 :: the image, execute commands in that container, then copy outputs to the local
@@ -24,27 +22,19 @@ set CMD=%1
 set HOST_CONFIG_FILE=%2
 set /a arg_count=0
 for %%x in (%*) do Set /A arg_count+=1
-echo arg_count =  %arg_count%
+call:header arg_count = %arg_count%; SCRIPT_NAME = %SCRIPT_NAME%; CMD = %CMD%;  HOST_CONFIG_FILE = %HOST_CONFIG_FILE%
+call:time_stamp
 
 :: Arguments: none
 if %arg_count% == 0 call:usage
 
-call:header SCRIPT_NAME, CMD, HOST_CONFIG_FILE = %SCRIPT_NAME%, %CMD%, %HOST_CONFIG_FILE%
 call:set_defaults
-call:time_stamp Start with LOG = %LOG%
+call:header Defaults IMAGE_NAME, CONTAINER_NAME = %IMAGE_NAME%, %CONTAINER_NAME%
 
-call:set_commands
-for /l %%n in (0,1,16) do (
-    echo !COMMANDS[%%n]!
-)
-call:set_commands2
-for /l %%n in (0,1,16) do (
-    echo !COMMANDS2[%%n]!
-)
+call:set_commands COMMANDS,COMMAND_COUNTER
+call:header Set %COMMAND_COUNTER% elements of array: 0 and 15 are %COMMANDS[0]% and %COMMANDS[15]%
 
 set command_path=/git/lmpy/lmpy/tools
-echo command_path = %command_path%
-
 
 call:time_stamp End
 EXIT /B 0
@@ -56,16 +46,31 @@ EXIT /B 0
 :usage
     :: Commands that are substrings of other commands will match the superstring and
     :: possibly print the wrong Usage string.
-    set n=0
-
-    echo
+    echo.
     echo Usage: %SCRIPT_NAME% cmd
     echo    or:  %SCRIPT_NAME% cmd  parameters_file
-    echo
-    echo This script creates an environment for a biotaphy command to be run with
+    echo.
+    echo This %SCRIPT_NAME% script creates an environment for a BiotaPhy command to be run with
     echo user-configured arguments in a docker container.
-    echo the `cmd` argument can be one of:
-
+    echo The `cmd` argument can be one of the following, without a parameter file
+    echo     build_image
+    echo     rebuild_data
+    echo     cleanup
+    echo     cleanup_most
+    echo     cleanup_all
+    echo     list_commands
+    echo     list_outputs
+    echo     list_volumes
+    echo or one of the following commands requiring a parameters file:
+    echo     wrangle_occurrences
+    echo     split_occurrence_data
+    echo     wrangle_species_list
+    echo     wrangle_tree
+    echo     create_sdm
+    echo     build_grid
+    echo     encode_layers
+    echo     calculate_pam_stats
+    echo.
 exit /b 0
 
 :: -----------------------------------------------------------
@@ -78,14 +83,41 @@ exit /b 0
     set OUT_VOLUME=output
     set VOLUME_SAVE_LABEL=saveme
     set VOLUME_DISCARD_LABEL=discard
-
-    :: Relative host config directory mapped to container config directory
+    :: Linux forward slash path separator for container
     set VOLUME_MOUNT=/volumes
+    set CONTAINER_CONFIG_DIR=%VOLUME_MOUNT%/%IN_VOLUME%/config
+    :: Windows backslash path separator
+    set HOST_CONFIG_DIR=%IN_VOLUME%\config
 
+    SetLocal EnableExtensions EnableDelayedExpansion
+    if Defined HOST_CONFIG_FILE (
+        if Exist %HOST_CONFIG_FILE% (
+            FOR %%i IN ("%HOST_CONFIG_FILE%") DO (
+                set filename=%%~nxi
+            )
+            echo full name is %CONTAINER_CONFIG_DIR%/%filename%
+            set CONTAINER_CONFIG_FILE=%CONTAINER_CONFIG_DIR%/%filename%
+            ::CONTAINER_CONFIG_FILE=$(echo $HOST_CONFIG_FILE | sed "s:^$host_dir:$container_dir:g")
+            echo container file returned as %CONTAINER_CONFIG_FILE%
+
+        ) else (
+            echo File %HOST_CONFIG_FILE% does not exist
+        )
+    ) else (
+        echo File %HOST_CONFIG_FILE% undefined
+    )
+    :: Logfile
     set LOG=%CMD%.log
-    echo LOGFILE is %LOG%
     if EXIST %LOG% DEL %LOG%
 exit /b 0
+
+:: -----------------------------------------------------------
+:: Set 1st specified variable to a concatenated fully qualified drive\path name
+:: from the 2nd and 3rd variables, with no redundant backslashes. Convert all
+:: forward slashes to backslashes.  Removes quotes.
+::set_fqdp
+::set %1=%~f2
+::exit /b %_ERROR_SUCCESS_%
 
 :: -----------------------------------------------------------
 :header
@@ -102,56 +134,38 @@ exit /b 0
 
 :: -----------------------------------------------------------
 :set_commands
-    ::SetLocal EnableDelayedExpansion
-    set COMMANDS=(build_image  rebuild_data
-            cleanup  cleanup_most  cleanup_all
-            list_commands list_outputs  list_volumes
-            wrangle_occurrences  split_occurrence_data
-            wrangle_species_list  wrangle_tree
-            create_sdm
-            build_grid  encode_layers calculate_pam_stats)
-    set COMMANDS[0]=build_image
-    set COMMANDS[1]=rebuild_data
-    set COMMANDS[2]=cleanup
-    set COMMANDS[3]=cleanup_most
-    set COMMANDS[4]=cleanup_all
-    set COMMANDS[5]=list_commands
-    set COMMANDS[6]=list_outputs
-    set COMMANDS[7]=list_volumes
-    set COMMANDS[8]=wrangle_occurrences
-    set COMMANDS[9]=split_occurrence_data
-    set COMMANDS[10]=wrangle_species_list
-    set COMMANDS[11]=wrangle_tree
-    set COMMANDS[12]=create_sdm
-    set COMMANDS[13]=build_grid
-    set COMMANDS[14]=encode_layers
-    set COMMANDS[15]=calculate_pam_stats
-    set /A COMMAND_COUNT=16
-    call:time_stamp Set each of %COMMAND_COUNT% commands
-    for /l %%n in (0,1,16) do (
-        echo !COMMANDS[%%n]!
-    )
-
-    call:time_stamp finished set_commands
+    :: args: COMMANDS, COMMAND_COUNTER
+    set %~1[0]=build_image
+    set %~1[1]=rebuild_data
+    set %~1[2]=cleanup
+    set %~1[3]=cleanup_most
+    set %~1[4]=cleanup_all
+    set %~1[5]=list_commands
+    set %~1[6]=list_outputs
+    set %~1[7]=list_volumes
+    set %~1[8]=wrangle_occurrences
+    set %~1[9]=split_occurrence_data
+    set %~1[10]=wrangle_species_list
+    set %~1[11]=wrangle_tree
+    set %~1[12]=create_sdm
+    set %~1[13]=build_grid
+    set %~1[14]=encode_layers
+    set %~1[15]=calculate_pam_stats
+    set /A %~2=15
+    call:time_stamp finished set_commands3
 exit /b 0
 
-:set_commands2
+:: -----------------------------------------------------------
+:: recreate this linux command
+::      CONTAINER_CONFIG_FILE=$(echo $HOST_CONFIG_FILE | sed "s:^$host_dir:$container_dir:g")
+:: arg1 = CONTAINER_CONFIG_FILE
+:convert_filename
     SetLocal EnableDelayedExpansion
-    set /A n=0
-    for %aa in (build_image rebuild_data cleanup cleanup_most cleanup_all
-        list_commands list_outputs list_volumes wrangle_occurrences
-        split_occurrence_data wrangle_species_list wrangle_tree create_sdm
-        build_grid  encode_layers calculate_pam_stats)
-    do (
-        set COMMANDS2[!n!]=%%a
-        set /A n+=1
+    FOR %%i IN ("%HOST_CONFIG_FILE%") DO (
+        set filename=%%~nxi
+        echo filename is %filename%
     )
-    COMMAND_COUNT2=n
-    call:time_stamp Set with list %COMMAND_COUNT2% commands
-    for /l %%n in (0,1,%COMMAND_COUNT2%) do (
-        echo !COMMANDS2[%%n]!
-    )
-
-    call:time_stamp finished set_commands
+    echo full name is %CONTAINER_CONFIG_DIR%/%filename%
+    set %~1=%CONTAINER_CONFIG_DIR%/%filename%
+    EndLocal
 exit /b 0
-

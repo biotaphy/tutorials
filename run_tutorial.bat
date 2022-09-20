@@ -78,7 +78,7 @@ if %arg_count% == 0 call usage
 @REM         docker system prune -f --all
 @REM         docker volume rm ${IN_VOLUME}
 @REM         docker volume rm ${OUT_VOLUME}
-@REM         echo "System build will take approximately 5 minutes ..." | tee -a "$LOG"
+@REM         echo "System build will take approximately 5 minutes ..." | tee -a "%LOG%"
 @REM         create_volumes
 @REM         build_image_fill_data
 @REM     elif [ "%CMD%" == "test" ]; then
@@ -96,13 +96,13 @@ if %arg_count% == 0 call usage
 @REM         build_image_fill_data
 @REM         start_container
 @REM         if [ "%CMD%" == "create_sdm" ] ; then
-@REM             echo "Container python command:"  | tee -a "$LOG"
-@REM             echo "   $command_path/%CMD%.py --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
+@REM             echo "Container python command:"  | tee -a "%LOG%"
+@REM             echo "   $command_path/%CMD%.py --config_file=$CONTAINER_CONFIG_FILE" | tee -a "%LOG%"
 @REM             execute_python_process $command_path
 @REM             echo "env vol ${VOLUME_MOUNT}/${ENV_VOLUME}:"
 @REM             docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${ENV_VOLUME}
 @REM         else
-@REM             echo "Container command: %CMD% --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
+@REM             echo "Container command: %CMD% --config_file=$CONTAINER_CONFIG_FILE" | tee -a "%LOG%"
 @REM             execute_process
 @REM         fi
 @REM         save_outputs
@@ -189,6 +189,6 @@ exit /b 0
 
 :: -----------------------------------------------------------
 :time_stamp
-    echo %1% %TIME% > "$LOG"
+    echo %1% %TIME% > "%LOG%"
 exit /b 0
 
