@@ -16,24 +16,39 @@
 :: -----------------------------------------------------------
 
 @echo off
-
+:: Script arguments
 set SCRIPT_NAME=%0
 set CMD=%1
 set HOST_CONFIG_FILE=%2
 set /a arg_count=0
-for %%x in (%*) do Set /A arg_count+=1
+for %%x in (%*) do set /a arg_count+=1
 call:header arg_count = %arg_count%; SCRIPT_NAME = %SCRIPT_NAME%; CMD = %CMD%;  HOST_CONFIG_FILE = %HOST_CONFIG_FILE%
-call:time_stamp
 
-:: Arguments: none
-if %arg_count% == 0 call:usage
-if %CMD% == wrangle_species_list call:wrangle_species_list
+:: Logfile
+SetLocal EnableExtensions
+set LOG=%CMD%.log
+if EXIST %LOG% (echo exists %LOG%)
+echo Begin %TIME% > %LOG%
+echo LOG = %LOG%
 
-call:set_defaults
-call:header Defaults IMAGE_NAME, CONTAINER_NAME = %IMAGE_NAME%, %CONTAINER_NAME%
+call:set_global_vars
+call:time_stamp Defaults IMAGE_NAME, CONTAINER_NAME = %IMAGE_NAME%, %CONTAINER_NAME%
+
+:: -----------------------------------------------------------
+:: START TEST
+:: -----------------------------------------------------------
+
+call:time_stamp start test
+call:check_host_config
+call:create_volumes
+call:time_stamp end test
+
+:: -----------------------------------------------------------
+:: END TEST
+:: -----------------------------------------------------------
 
 call:set_commands COMMANDS,COMMAND_COUNTER
-call:header Set %COMMAND_COUNTER% elements of array: 0 and 15 are %COMMANDS[0]% and %COMMANDS[15]%
+call:header Set %COMMAND_COUNTER% elements of array; 0 and 15 are %COMMANDS[0]% and %COMMANDS[15]%
 
 set command_path=/git/lmpy/lmpy/tools
 
@@ -75,7 +90,27 @@ EXIT /B 0
 exit /b 0
 
 :: -----------------------------------------------------------
-:set_defaults
+:check_host_config
+    SetLocal EnableExtensions
+    if Defined HOST_CONFIG_FILE (
+        if Exist %HOST_CONFIG_FILE% (
+            echo File %HOST_CONFIG_FILE% does exist
+            ::set "%~1=0"
+        ) else (
+            echo File %HOST_CONFIG_FILE% does not exist
+            ::set "%~1=2"
+            call:usage
+        )
+    ) else (
+        echo File %HOST_CONFIG_FILE% undefined
+        :: Some commands do not require a config_file, so not always an error
+        ::set "%~1=1"
+    )
+exit /b 0
+
+:: -----------------------------------------------------------
+:set_global_vars
+    call:header set_global_vars
     set IMAGE_NAME=tutor
     set CONTAINER_NAME=tutor_container
     set VOLUME_MOUNT=/volumes
@@ -84,57 +119,36 @@ exit /b 0
     set OUT_VOLUME=output
     set VOLUME_SAVE_LABEL=saveme
     set VOLUME_DISCARD_LABEL=discard
-    :: Linux forward slash path separator for container
+
+    :: Get the fullpath to the config filename for Linux container
+    echo stage1 HOST_CONFIG_FILE %HOST_CONFIG_FILE%
     set VOLUME_MOUNT=/volumes
     set CONTAINER_CONFIG_DIR=%VOLUME_MOUNT%/%IN_VOLUME%/config
-    :: Windows backslash path separator
-    set HOST_CONFIG_DIR=%IN_VOLUME%\config
-
-    SetLocal EnableExtensions EnableDelayedExpansion
-    if Defined HOST_CONFIG_FILE (
-        if Exist %HOST_CONFIG_FILE% (
-            FOR %%i IN ("%HOST_CONFIG_FILE%") DO (
-                set filename=%%~nxi
-            )
-            echo full name is %CONTAINER_CONFIG_DIR%/%filename%
-            set CONTAINER_CONFIG_FILE=%CONTAINER_CONFIG_DIR%/%filename%
-            ::CONTAINER_CONFIG_FILE=$(echo $HOST_CONFIG_FILE | sed "s:^$host_dir:$container_dir:g")
-            echo container file returned as %CONTAINER_CONFIG_FILE%
-
-        ) else (
-            echo File %HOST_CONFIG_FILE% does not exist
-        )
-    ) else (
-        echo File %HOST_CONFIG_FILE% undefined
-    )
-    :: Logfile
-    set LOG=%CMD%.log
-    if EXIST %LOG% DEL %LOG%
+    for %%i in ("%HOST_CONFIG_FILE%") do ( set filename=%%~nxi )
+    echo filename %filename%
+    set CONTAINER_CONFIG_FILE=%CONTAINER_CONFIG_DIR%/%filename%
+    echo stage1 complete: CONTAINER_CONFIG_FILE %CONTAINER_CONFIG_FILE%
 exit /b 0
-
-:: -----------------------------------------------------------
-:: Set 1st specified variable to a concatenated fully qualified drive\path name
-:: from the 2nd and 3rd variables, with no redundant backslashes. Convert all
-:: forward slashes to backslashes.  Removes quotes.
-::set_fqdp
-::set %1=%~f2
-::exit /b %_ERROR_SUCCESS_%
 
 :: -----------------------------------------------------------
 :header
 ECHO =================================================
 ECHO %*
 ECHO =================================================
+ECHO ================================================= >> %LOG%
+ECHO %* >> %LOG%
+ECHO ================================================= >> %LOG%
 EXIT /B 0
 
 :: -----------------------------------------------------------
 :time_stamp
     echo %TIME% %*
-    echo %TIME% %* > %LOG%
+    echo %TIME% %* >> %LOG%
 exit /b 0
 
 :: -----------------------------------------------------------
 :set_commands
+    call:header set_commands
     :: args: COMMANDS, COMMAND_COUNTER
     set %~1[0]=build_image
     set %~1[1]=rebuild_data
@@ -153,46 +167,37 @@ exit /b 0
     set %~1[14]=encode_layers
     set %~1[15]=calculate_pam_stats
     set /A %~2=15
-    call:time_stamp finished set_commands3
-exit /b 0
-
-:: -----------------------------------------------------------
-:: recreate this linux command
-::      CONTAINER_CONFIG_FILE=$(echo $HOST_CONFIG_FILE | sed "s:^$host_dir:$container_dir:g")
-:: arg1 = CONTAINER_CONFIG_FILE
-:convert_filename
-    SetLocal EnableDelayedExpansion
-    FOR %%i IN ("%HOST_CONFIG_FILE%") DO (
-        set filename=%%~nxi
-        echo filename is %filename%
-    )
-    echo full name is %CONTAINER_CONFIG_DIR%/%filename%
-    set %~1=%CONTAINER_CONFIG_DIR%/%filename%
-    EndLocal
+    call:time_stamp finished set_commands
 exit /b 0
 
 :: -----------------------------------------------------------
 :create_volumes
-    # Create named RO input volumes for use by any container
-    # Small input data, part of repository
-    for /f "tokens=3 usebackq" %%i in (`docker volume ls ^| find "%IN_VOLUME%"`) do
+    :: Create named RO input volumes for use by any container
+    :: Small input data, part of repository
+    call:header create_volumes
+    set var=NAME
+    ::for /f "tokens=3 usebackq" %%i in (`docker volume ls ^| find "%IN_VOLUME%"`) do
+    for /f "tokens=3 usebackq" %%i in (`docker volume ls ^| find "%var%"`) do (
         set input_vol=%%i
+    )
+    echo input_vol is %input_vol%
     ::for /f "tokens=* usebackq" %%i in (`docker volume ls ^| find "%IN_VOLUME%"`) do
         ::set input_vol_exists!count!=%%i
         ::set /a count=!count!+1
-    )
-    echo input_vol is %input_vol%
 
 exit /b 0
 
 :: -----------------------------------------------------------
 :build_image_fill_data
+    call:header build_image_fill_data
 exit /b 0
 
 :: -----------------------------------------------------------
 :start_container
+    call:header start_container
 exit /b 0
 
 :: -----------------------------------------------------------
 :wrangle_species_list
+    call:header wrangle_species_list
 exit /b 0
