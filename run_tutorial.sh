@@ -132,7 +132,7 @@ create_volumes() {
     rw_vol_exists=$(docker volume ls | grep $OUT_VOLUME | wc -l )
     if [ "$rw_vol_exists" == "0" ]; then
         echo " - Create volume $OUT_VOLUME"  | tee -a "$LOG"
-        docker volume create --label=$VOLUME_SAVE_LABEL $OUT_VOLUME
+        docker volume create --label=$VOLUME_DISCARD_LABEL $OUT_VOLUME
     else
         echo " - Volume $OUT_VOLUME is already created"  | tee -a "$LOG"
     fi
@@ -245,14 +245,6 @@ list_output_host_contents() {
 }
 
 # -----------------------------------------------------------
-start_console() {
-    # Create, connect to command line
-    start_container
-    echo " - Execute shell on $CONTAINER_NAME" | tee -a "$LOG"
-    docker exec -it $CONTAINER_NAME bash
-}
-
-# -----------------------------------------------------------
 time_stamp () {
     echo "$1" $(/bin/date) | tee -a "$LOG"
 }
@@ -261,8 +253,7 @@ time_stamp () {
 # -----------------------------------------------------------
 ####### Main #######
 COMMANDS=(
-"build_image"  "rebuild_data"
-"cleanup"  "cleanup_most"  "cleanup_all"
+"build_all"  "cleanup"  "cleanup_all"
 "list_commands" "list_outputs"  "list_volumes"
 "wrangle_species_list"  "split_occurrence_data"   "wrangle_occurrences"  "wrangle_tree"
 "create_sdm"
@@ -284,13 +275,11 @@ if [ $arg_count -eq 0 ]; then
 # Arguments: command
 elif [ $arg_count -eq 1 ]; then
     if [ "$CMD" == "cleanup" ] ; then
+        remove_container
         docker system prune -f --all
-        docker volume prune --filter "label!=saveme"
-    elif [ "$CMD" == "cleanup_most" ] ; then
-        docker system prune -f --all
-        docker volume rm ${IN_VOLUME}
-        docker volume rm ${OUT_VOLUME}
+        docker volume prune --filter "label=discard"
     elif [ "$CMD" == "cleanup_all" ] ; then
+        remove_container
         docker system prune -f --all --volumes
     elif [ "$CMD" == "open" ] ; then
         open_container_shell
@@ -298,23 +287,17 @@ elif [ $arg_count -eq 1 ]; then
         usage
     elif [ "$CMD" == "list_outputs" ] ; then
         list_output_volume_contents
-        start_container
-        remove_container
     elif [ "$CMD" == "list_volumes" ] ; then
         list_all_volume_contents
-        start_container
-        remove_container
-    elif [ "$CMD" == "build_image" ] || [ "$CMD" == "rebuild_data" ] ; then
-        docker system prune -f --all
-        docker volume rm ${IN_VOLUME}
-        docker volume rm ${OUT_VOLUME}
+    elif [ "$CMD" == "build_all" ] ; then
+        docker system prune -f --all --volumes
         echo "System build will take approximately 5 minutes ..." | tee -a "$LOG"
         create_volumes
         build_image_fill_data
     elif [ "$CMD" == "test" ]; then
         list_output_volume_contents
         remove_container
-        start_console
+        open_container_shell
         remove_container
     else
         usage

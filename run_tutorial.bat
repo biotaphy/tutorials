@@ -19,36 +19,6 @@
 :: -----------------------------------------------------------
 
 @echo off
-setlocal EnableDelayedExpansion
-set /A n=0
-for %%a in (build_image  rebuild_data
-            cleanup  cleanup_most  cleanup_all
-            list_commands list_outputs  list_volumes
-            wrangle_occurrences  split_occurrence_data
-            wrangle_species_list  wrangle_tree
-            create_sdm
-            build_grid  encode_layers calculate_pam_stats
-) do (
-   set COMMANDS[!n!]=%%a
-   set /A n+=1
-)
-
-set CMD=%1
-set HOST_CONFIG_FILE=%2
-set arg_count=0
-for %%x in (%*) do set /A arg_count+=1
-echo "arg_count = " %arg_count%
-
-set command_path=/git/lmpy/lmpy/tools
-echo %command_path%
-
-call set_defaults
-echo %IMAGE_NAME%
-call time_stamp ":: Start"
-echo ""
-
-:: Arguments: none
-if %arg_count% == 0 call usage
 
 
 @REM :: Arguments: command
