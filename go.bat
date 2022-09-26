@@ -27,33 +27,36 @@ call:header arg_count = %arg_count%; SCRIPT_NAME = %SCRIPT_NAME%; CMD = %CMD%;  
 :: Logfile
 SetLocal EnableExtensions
 set LOG=%CMD%.log
-if EXIST %LOG% (echo exists %LOG%)
+if EXIST %LOG% (echo exists %LOG%) else (echo %LOG% does not exist)
 echo Begin %TIME% > %LOG%
 echo LOG = %LOG%
+call:set_commands COMMANDS,COMMAND_COUNTER
+call:time_stamp Set %COMMAND_COUNTER% elements of array; 0 and 15 are %COMMANDS[0]% and %COMMANDS[15]%
 
 call:set_global_vars
 call:time_stamp Defaults IMAGE_NAME, CONTAINER_NAME = %IMAGE_NAME%, %CONTAINER_NAME%
+
+call:check_host_config
+call:create_volumes
+call:build_image_fill_data
 
 :: -----------------------------------------------------------
 :: START TEST
 :: -----------------------------------------------------------
 
 call:time_stamp start test
-call:check_host_config
-call:create_volumes
+call:start_container
+::call:saveme
+::call:test_something
 call:time_stamp end test
 
 :: -----------------------------------------------------------
 :: END TEST
 :: -----------------------------------------------------------
 
-call:set_commands COMMANDS,COMMAND_COUNTER
-call:header Set %COMMAND_COUNTER% elements of array; 0 and 15 are %COMMANDS[0]% and %COMMANDS[15]%
-
-set command_path=/git/lmpy/lmpy/tools
 
 call:time_stamp End
-EXIT /B 0
+exit /b 0
 
 :: -----------------------------------------------------------
 :: Functions
@@ -91,21 +94,20 @@ exit /b 0
 
 :: -----------------------------------------------------------
 :check_host_config
-    SetLocal EnableExtensions
-    if Defined HOST_CONFIG_FILE (
-        if Exist %HOST_CONFIG_FILE% (
-            echo File %HOST_CONFIG_FILE% does exist
-            ::set "%~1=0"
-        ) else (
-            echo File %HOST_CONFIG_FILE% does not exist
-            ::set "%~1=2"
-            call:usage
-        )
-    ) else (
-        echo File %HOST_CONFIG_FILE% undefined
-        :: Some commands do not require a config_file, so not always an error
-        ::set "%~1=1"
-    )
+    SetLocal EnableExtensions EnableDelayedExpansion
+    call:header check_host_config
+    if not Defined HOST_CONFIG_FILE goto :undef
+
+    call:time_stamp File HOST_CONFIG_FILE defined
+    if not exist %HOST_CONFIG_FILE% goto :missing
+
+    :undef
+    call:time_stamp File HOST_CONFIG_FILE not defined
+    exit /b 0
+
+    :missing
+    call:time_stamp File %HOST_CONFIG_FILE% missing
+    exit /b 1
 exit /b 0
 
 :: -----------------------------------------------------------
@@ -115,10 +117,13 @@ exit /b 0
     set CONTAINER_NAME=tutor_container
     set VOLUME_MOUNT=/volumes
     set IN_VOLUME=data
-    set ENV_VOLUME=env
-    set OUT_VOLUME=output
     set VOLUME_SAVE_LABEL=saveme
     set VOLUME_DISCARD_LABEL=discard
+    :: Option string for volumes
+    set opt1=--volume %IN_VOLUME%:%VOLUME_MOUNT%/%IN_VOLUME%
+    set opt2=--volume %ENV_VOLUME%:%VOLUME_MOUNT%/%ENV_VOLUME%
+    set opt3=--volume %OUT_VOLUME%:%VOLUME_MOUNT%/%OUT_VOLUME%
+    echo opts are %opt1% %opt2% %opt3%
 
     :: Get the fullpath to the config filename for Linux container
     echo stage1 HOST_CONFIG_FILE %HOST_CONFIG_FILE%
@@ -127,18 +132,19 @@ exit /b 0
     for %%i in ("%HOST_CONFIG_FILE%") do ( set filename=%%~nxi )
     echo filename %filename%
     set CONTAINER_CONFIG_FILE=%CONTAINER_CONFIG_DIR%/%filename%
+    set CMD_PATH=/git/lmpy/lmpy/tools
     echo stage1 complete: CONTAINER_CONFIG_FILE %CONTAINER_CONFIG_FILE%
 exit /b 0
 
 :: -----------------------------------------------------------
 :header
-ECHO =================================================
-ECHO %*
-ECHO =================================================
-ECHO ================================================= >> %LOG%
-ECHO %* >> %LOG%
-ECHO ================================================= >> %LOG%
-EXIT /B 0
+echo =================================================
+echo %*
+echo =================================================
+echo ================================================= >> %LOG%
+echo %* >> %LOG%
+echo ================================================= >> %LOG%
+exit /b 0
 
 :: -----------------------------------------------------------
 :time_stamp
@@ -171,30 +177,85 @@ exit /b 0
 exit /b 0
 
 :: -----------------------------------------------------------
-:create_volumes
-    :: Create named RO input volumes for use by any container
+:test_something
+    :: Create named input volumes for use by any container
+    call:header test_something
     :: Small input data, part of repository
-    call:header create_volumes
-    set var=NAME
-    ::for /f "tokens=3 usebackq" %%i in (`docker volume ls ^| find "%IN_VOLUME%"`) do
-    for /f "tokens=3 usebackq" %%i in (`docker volume ls ^| find "%var%"`) do (
-        set input_vol=%%i
-    )
-    echo input_vol is %input_vol%
-    ::for /f "tokens=* usebackq" %%i in (`docker volume ls ^| find "%IN_VOLUME%"`) do
-        ::set input_vol_exists!count!=%%i
-        ::set /a count=!count!+1
+    for /f "tokens=2 usebackq" %%g in ( `docker volume ls ^| find "%IN_VOLUME%"` ) do ( SET tmp=%%g )
+    if %tmp% == %IN_VOLUME% (
+        call:time_stamp - Volume %IN_VOLUME% exists
+    ) else (
+        call:time_stamp - Create volume %IN_VOLUME%
+    set tmp=empty
+exit /b 0
 
+:: -----------------------------------------------------------
+:create_volumes
+    :: Create named input volumes for use by any container
+    call:header create_volumes
+    :: Small input data, part of repository
+    for /f "tokens=2 usebackq" %%g in ( `docker volume ls ^| find "%IN_VOLUME%"` ) do (
+        SET tmp=%%g )
+    if %tmp% == %IN_VOLUME% (
+        call:time_stamp - Volume %IN_VOLUME% exists
+    ) else (
+        call:time_stamp - Create volume %IN_VOLUME%
+        docker volume create --label=%VOLUME_DISCARD_LABEL% %IN_VOLUME%
+    )
+    :: Large environmental data
+    for /f "tokens=2 usebackq" %%g in ( `docker volume ls ^| find "%ENV_VOLUME%"` ) do (
+        SET tmp=%%g )
+    if %tmp% == %ENV_VOLUME% (
+        call:time_stamp - Volume %ENV_VOLUME% exists
+    ) else (
+        call:time_stamp - Create volume %ENV_VOLUME%
+        docker volume create --label=%VOLUME_SAVE_LABEL% %ENV_VOLUME%
+    )
+    :: Output data for use by any container
+    for /f "tokens=2 usebackq" %%g in ( `docker volume ls ^| find "%OUT_VOLUME%"` ) do (
+        SET tmp=%%g )
+    if %tmp% == %OUT_VOLUME% (
+        call:time_stamp - Volume %OUT_VOLUME% exists
+    ) else (
+        call:time_stamp - Create volume %OUT_VOLUME%
+        docker volume create --label=%VOLUME_SAVE_LABEL% %OUT_VOLUME%
+    )
+    set tmp=empty
 exit /b 0
 
 :: -----------------------------------------------------------
 :build_image_fill_data
+    :: Build and name an image from Dockerfile in this directory
+    :: This build also populates the data and env volumes
     call:header build_image_fill_data
+    for /f "tokens=1 usebackq" %%g in ( `docker image ls ^| find "%IMAGE_NAME%"` ) do (
+        SET tmp=%%g )
+    if %tmp% == %IMAGE_NAME% (
+        call:time_stamp - Image %IMAGE_NAME% exists
+    ) else (
+        call:time_stamp - Create image %IMAGE_NAME%
+        docker build . -t %IMAGE_NAME%
+    )
+    set tmp=empty
 exit /b 0
 
 :: -----------------------------------------------------------
 :start_container
     call:header start_container
+    ::call:build_image_fill_data
+    :: Find running container
+    for /f "tokens=1 usebackq" %%g in ( `docker ps ^| find "%CONTAINER_NAME%"` ) do (
+        SET tmp=%%g )
+    call:time_stamp tmp container is %tmp%
+    if %tmp% == %CONTAINER_NAME% (
+        call:time_stamp - Container %CONTAINER_NAME% is running
+    ) else (
+        call:time_stamp - Start container %CONTAINER_NAME% from %IMAGE_NAME%
+        call:build_image_fill_data
+        :: Start the container, leaving it up
+        docker run -td --name %CONTAINER_NAME%  %opt1% %opt2% %opt3%  %IMAGE_NAME%  bash
+    )
+    set tmp=empty
 exit /b 0
 
 :: -----------------------------------------------------------
