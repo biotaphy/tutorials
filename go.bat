@@ -16,27 +16,34 @@
 :: -----------------------------------------------------------
 
 @echo off
-:: Script arguments
-set SCRIPT_NAME=%0
-set CMD=%1
-set HOST_CONFIG_FILE=%2
-set /a arg_count=0
-for %%x in (%*) do set /a arg_count+=1
-call:header arg_count = %arg_count%; SCRIPT_NAME = %SCRIPT_NAME%; CMD = %CMD%;  HOST_CONFIG_FILE = %HOST_CONFIG_FILE%
-
-:: Logfile
-SetLocal EnableExtensions
+:: Init log first
 set LOG=%CMD%.log
+echo set LOG
 if EXIST %LOG% (echo exists %LOG%) else (echo %LOG% does not exist)
 echo Begin %TIME% > %LOG%
 echo LOG = %LOG%
+
+:: Script arguments
+set SCRIPT_NAME=%0
+set CMD=empty
+set HOST_CONFIG_FILE=empty
+set arg_count=0
+for %%x in (%*) do set /a arg_count+=1
+if %arg_count% gtr 0 ( set CMD=%1 )
+if %arg_count% gtr 1 ( set HOST_CONFIG_FILE=%2 )
+call:time_stamp arg_count is %arg_count%, SCRIPT_NAME is %SCRIPT_NAME%, CMD is %CMD%,  HOST_CONFIG_FILE is %HOST_CONFIG_FILE%
+
+:: Set environment
+SetLocal EnableExtensions
+call:set_global_vars
 call:set_commands COMMANDS,COMMAND_COUNTER
 call:time_stamp Set %COMMAND_COUNTER% elements of array; 0 and 15 are %COMMANDS[0]% and %COMMANDS[15]%
-
-call:set_global_vars
 call:time_stamp Defaults IMAGE_NAME, CONTAINER_NAME = %IMAGE_NAME%, %CONTAINER_NAME%
 
+:: Error checking
 call:check_host_config
+
+:: Build docker container
 call:create_volumes
 call:build_image_fill_data
 
@@ -46,7 +53,6 @@ call:build_image_fill_data
 
 call:time_stamp start test
 call:start_container
-::call:saveme
 ::call:test_something
 call:time_stamp end test
 
@@ -117,6 +123,8 @@ exit /b 0
     set CONTAINER_NAME=tutor_container
     set VOLUME_MOUNT=/volumes
     set IN_VOLUME=data
+    set ENV_VOLUME=env
+    set OUT_VOLUME=output
     set VOLUME_SAVE_LABEL=saveme
     set VOLUME_DISCARD_LABEL=discard
     :: Option string for volumes
@@ -138,18 +146,18 @@ exit /b 0
 
 :: -----------------------------------------------------------
 :header
-echo =================================================
-echo %*
-echo =================================================
-echo ================================================= >> %LOG%
-echo %* >> %LOG%
-echo ================================================= >> %LOG%
+    echo =================================================
+    echo %*
+    echo =================================================
+    echo ================================================= >> %LOG%
+    echo %* >> %LOG%
+    echo ================================================= >> %LOG%
 exit /b 0
 
 :: -----------------------------------------------------------
 :time_stamp
     echo %TIME% %*
-    echo %TIME% %* >> %LOG%
+    ::echo %TIME% %* >> %LOG%
 exit /b 0
 
 :: -----------------------------------------------------------
@@ -244,7 +252,7 @@ exit /b 0
     call:header start_container
     ::call:build_image_fill_data
     :: Find running container
-    for /f "tokens=1 usebackq" %%g in ( `docker ps ^| find "%CONTAINER_NAME%"` ) do (
+    for /f "tokens=10 usebackq" %%g in ( `docker ps ^| find "%CONTAINER_NAME%"` ) do (
         SET tmp=%%g )
     call:time_stamp tmp container is %tmp%
     if %tmp% == %CONTAINER_NAME% (
