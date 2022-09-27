@@ -144,7 +144,7 @@ start_container() {
 execute_process() {
     start_container
     # Command to execute in container
-    if [$CMD -eq "create_sdm"]; then
+    if [ "$CMD" == "create_sdm" ]; then
         command="python3 ${command_path}/${CMD}.py --config_file=${CONTAINER_CONFIG_FILE}"
     else
         command="${CMD} --config_file=${CONTAINER_CONFIG_FILE}"
