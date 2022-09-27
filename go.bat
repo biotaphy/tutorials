@@ -287,7 +287,9 @@ exit /b 0
     :: Get the fullpath to the config filename for Linux container
     set CONTAINER_CONFIG_DIR=%VOLUME_MOUNT%/%IN_VOLUME%/config
     echo HOST_CONFIG_FILE is %HOST_CONFIG_FILE%
+    SetLocal EnableDelayedExpansion
     for %%i in ("!HOST_CONFIG_FILE!") do ( set filename=%%~nxi )
+    EndLocal
     echo filename is %filename%
     set CONTAINER_CONFIG_FILE=%CONTAINER_CONFIG_DIR%/%filename%
 exit /b 0

@@ -282,17 +282,6 @@ exit /b 0
 exit /b 0
 
 :: -----------------------------------------------------------
-:set_container_config_file
-    call:header get_container_config_file
-    :: Get the fullpath to the config filename for Linux container
-    set CONTAINER_CONFIG_DIR=%VOLUME_MOUNT%/%IN_VOLUME%/config
-    echo HOST_CONFIG_FILE is %HOST_CONFIG_FILE%
-    for %%i in ("!HOST_CONFIG_FILE!") do ( set filename=%%~nxi )
-    echo filename is %filename%
-    set CONTAINER_CONFIG_FILE=%CONTAINER_CONFIG_DIR%/%filename%
-exit /b 0
-
-:: -----------------------------------------------------------
 :run_biotaphy
     call:header run_biotaphy
     :: Run the command in the container
@@ -315,7 +304,12 @@ exit /b 0
             call:time_stamp File %HOST_CONFIG_FILE% missing
         ) else (
             call:start_container
-            call:set_container_config_file
+            echo HOST_CONFIG_FILE is %HOST_CONFIG_FILE%
+            SetLocal EnableDelayedExpansion
+                for %%i in ("!HOST_CONFIG_FILE!") do ( EndLocal & set filename=%%~nxi )
+            EndLocal
+            echo filename is %filename%
+            set CONTAINER_CONFIG_FILE=%VOLUME_MOUNT%/%IN_VOLUME%/config/%filename%
             echo CONTAINER_CONFIG_FILE is %CONTAINER_CONFIG_FILE%
             call:time_stamp Returned to execute_process
 
