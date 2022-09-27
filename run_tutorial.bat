@@ -235,6 +235,15 @@ exit /b 0
 exit /b 0
 
 :: -----------------------------------------------------------
+:refresh
+    call:header refresh
+    call:remove_container
+    docker volume rm %IN_VOLUME%
+    docker volume rm %ENV_VOLUME%
+    docker volume rm %OUT_VOLUME%
+exit /b 0
+
+:: -----------------------------------------------------------
 :cleanup_all
     call:header cleanup_all
     docker system prune --force --all --volumes
@@ -284,6 +293,15 @@ exit /b 0
 :: -----------------------------------------------------------
 :run_biotaphy
     call:header run_biotaphy
+    echo HOST_CONFIG_FILE is %HOST_CONFIG_FILE%
+    SetLocal EnableDelayedExpansion
+        for %%i in ("!HOST_CONFIG_FILE!") do ( set filename=%%~nxi )
+    echo filename is %filename% or !filename!
+    set CONTAINER_CONFIG_FILE=%VOLUME_MOUNT%/%IN_VOLUME%/config/!filename!
+    echo CONTAINER_CONFIG_FILE is %CONTAINER_CONFIG_FILE% or !CONTAINER_CONFIG_FILE!
+
+    :: Command to execute in container
+    call:time_stamp - Execute on container %CONTAINER_NAME% %CMD% --config_file=%CONTAINER_CONFIG_FILE%
     :: Run the command in the container
     if %CMD% == create_sdm (
         echo Docker command is python3 %CMD_PATH%/%CMD%.py --config_file=%CONTAINER_CONFIG_FILE%
@@ -292,6 +310,7 @@ exit /b 0
         echo Docker command is %CMD% --config_file=%CONTAINER_CONFIG_FILE%
         docker exec -it %CONTAINER_NAME% %CMD% --config_file=%CONTAINER_CONFIG_FILE%
     )
+    EndLocal
 exit /b 0
 
 :: -----------------------------------------------------------
@@ -304,16 +323,6 @@ exit /b 0
             call:time_stamp File %HOST_CONFIG_FILE% missing
         ) else (
             call:start_container
-            echo HOST_CONFIG_FILE is %HOST_CONFIG_FILE%
-            SetLocal EnableDelayedExpansion
-                for %%i in ("!HOST_CONFIG_FILE!") do ( EndLocal & set filename=%%~nxi )
-            echo filename is %filename%
-            set CONTAINER_CONFIG_FILE=%VOLUME_MOUNT%/%IN_VOLUME%/config/%filename%
-            echo CONTAINER_CONFIG_FILE is %CONTAINER_CONFIG_FILE%
-            call:time_stamp Returned to execute_process
-
-            :: Command to execute in container
-            call:time_stamp - Execute on container %CONTAINER_NAME% %CMD% --config_file=%CONTAINER_CONFIG_FILE%
             :: Run the command in the container
             call:run_biotaphy
             call:time_stamp - Completed %CMD% execution on container
