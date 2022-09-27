@@ -36,13 +36,11 @@ echo arg_count is %arg_count%, SCRIPT_NAME is %SCRIPT_NAME%, CMD is %CMD%,  HOST
 :: Set environment
 call:init_log
 call:set_global_vars
-call:set_commands_config COMMANDS_REQ_CONFIG
-call:time_stamp Set elements of COMMANDS_REQ_CONFIG; 0 and 7 are %COMMANDS_REQ_CONFIG[0]% and %COMMANDS_REQ_CONFIG[7]%
 
-:: Error checking
-call:check_host_config
-
+call:time_stamp *** Running Command ***
 call:run_command
+call:time_stamp *** Completed Command ***
+
 call:time_stamp End
 exit /b 0
 
@@ -91,7 +89,7 @@ exit /b 0
 :init_log
     set LOG=%CMD%.log
     echo logfile is %LOG%
-    if EXIST %LOG% (echo exists %LOG%) else (echo %LOG% does not exist)
+    if EXIST %LOG% ( del %LOG% ) else ( echo Create new %LOG% )
     echo Begin %TIME% > %LOG%
 exit /b 0
 
@@ -113,6 +111,7 @@ exit /b 0
 :: -----------------------------------------------------------
 :set_global_vars
     call:header set_global_vars
+    SetLocal EnableDelayedExpansion
     set IMAGE_NAME=tutor
     set CONTAINER_NAME=tutor_container
     set VOLUME_MOUNT=/volumes
@@ -121,23 +120,13 @@ exit /b 0
     set OUT_VOLUME=output
     set VOLUME_SAVE_LABEL=saveme
     set VOLUME_DISCARD_LABEL=discard
+    set CONTAINER_CONFIG_DIR=%VOLUME_MOUNT%/%IN_VOLUME%/config
     :: Option string for volumes
     set opt1=--volume %IN_VOLUME%:%VOLUME_MOUNT%/%IN_VOLUME%
     set opt2=--volume %ENV_VOLUME%:%VOLUME_MOUNT%/%ENV_VOLUME%
     set opt3=--volume %OUT_VOLUME%:%VOLUME_MOUNT%/%OUT_VOLUME%
 
-    :: Get the fullpath to the config filename for Linux container
-    set VOLUME_MOUNT=/volumes
-    set CONTAINER_CONFIG_DIR=%VOLUME_MOUNT%/%IN_VOLUME%/config
-    if %HOST_CONFIG_FILE% == empty (
-        set CONTAINER_CONFIG_FILE=empty
-    ) else (
-        for %%i in ("%HOST_CONFIG_FILE%") do ( set filename=%%~nxi )
-        echo filename %filename%
-        set CONTAINER_CONFIG_FILE=%CONTAINER_CONFIG_DIR%/%filename%
-    )
     set CMD_PATH=/git/lmpy/lmpy/tools
-    call:time_stamp CONTAINER_CONFIG_FILE %CONTAINER_CONFIG_FILE%
 exit /b 0
 
 :: -----------------------------------------------------------
@@ -154,50 +143,7 @@ exit /b 0
 :: -----------------------------------------------------------
 :time_stamp
     echo %TIME% %*
-    ::echo %TIME% %* >> %LOG%
-exit /b 0
-
-:: -----------------------------------------------------------
-:set_commands
-    call:header set_commands
-    :: args: COMMANDS, COMMAND_COUNTER
-    set %~1[0]=build_image
-    set %~1[1]=rebuild_data
-    set %~1[2]=cleanup
-    set %~1[3]=cleanup_most
-    set %~1[4]=cleanup_all
-    set %~1[5]=list_commands
-    set %~1[6]=list_outputs
-    set %~1[7]=list_volumes
-    set %~1[8]=wrangle_occurrences
-    set %~1[9]=split_occurrence_data
-    set %~1[10]=wrangle_species_list
-    set %~1[11]=wrangle_tree
-    set %~1[12]=create_sdm
-    set %~1[13]=build_grid
-    set %~1[14]=encode_layers
-    set %~1[15]=calculate_pam_stats
-    set /A %~2=15
-exit /b 0
-
-:: -----------------------------------------------------------
-:set_commands_config
-    call:header set_commands
-    :: args: COMMANDS_REQ_CONFIG
-    set %~1[0]=wrangle_occurrences
-    set %~1[1]=split_occurrence_data
-    set %~1[2]=wrangle_species_list
-    set %~1[3]=wrangle_tree
-    set %~1[4]=create_sdm
-    set %~1[5]=build_grid
-    set %~1[6]=encode_layers
-    set %~1[7]=calculate_pam_stats
-exit /b 0
-
-:: -----------------------------------------------------------
-:test_something
-    :: Create named input volumes for use by any container
-    call:header test_something
+    echo %TIME% %* >> %LOG%
 exit /b 0
 
 :: -----------------------------------------------------------
@@ -214,6 +160,7 @@ exit /b 0
         call:time_stamp - Create volume %IN_VOLUME%
         docker volume create --label=%VOLUME_DISCARD_LABEL% %IN_VOLUME%
     )
+    call:time_stamp - done with input volume
     :: Large environmental data
     set tmp=empty
     for /f "tokens=2 usebackq" %%g in ( `docker volume ls ^| find "%ENV_VOLUME%"` ) do (
@@ -224,6 +171,7 @@ exit /b 0
         call:time_stamp - Create volume %ENV_VOLUME%
         docker volume create --label=%VOLUME_SAVE_LABEL% %ENV_VOLUME%
     )
+    call:time_stamp - done with env volume
     :: Output data for use by any container
     set tmp=empty
     for /f "tokens=2 usebackq" %%g in ( `docker volume ls ^| find "%OUT_VOLUME%"` ) do (
@@ -234,6 +182,7 @@ exit /b 0
         call:time_stamp - Create volume %OUT_VOLUME%
         docker volume create --label=%VOLUME_DISCARD_LABEL% %OUT_VOLUME%
     )
+    call:time_stamp - done with output volume
 exit /b 0
 
 :: -----------------------------------------------------------
@@ -273,6 +222,8 @@ exit /b 0
 :: -----------------------------------------------------------
 :run_command
     call:header run_command
+    SetLocal EnableDelayedExpansion
+
     if %CMD% == cleanup ( call:cleanup )
     if %CMD% == cleanup_all ( docker system prune -f all --volumes )
     if %CMD% == open ( call:open_container_shell )
@@ -280,12 +231,12 @@ exit /b 0
     if %CMD% == list_outputs ( call:list_output_volume_contents )
     if %CMD% == list_volumes ( call:list_all_volume_contents )
     if %CMD% == build_all ( call:build_all )
+    :: Biotaphy tools
+    if %CMD% == create_sdm ( call:execute_process )
     if %CMD% == wrangle_species_list ( call:execute_process )
     if %CMD% == wrangle_occurrences ( call:execute_process )
     if %CMD% == split_occurrence_data ( call:execute_process )
-    if %CMD% == wrangle_species_list ( call:execute_process )
     if %CMD% == wrangle_tree ( call:execute_process )
-    if %CMD% == create_sdm ( call:time_stamp - execute process on %CMD% )
     if %CMD% == build_grid ( call:execute_process )
     if %CMD% == encode_layers ( call:execute_process )
     if %CMD% == calculate_pam_stats ( call:execute_process )
@@ -356,6 +307,30 @@ exit /b 0
 exit /b 0
 
 :: -----------------------------------------------------------
+:get_container_config_file
+    call:header get_container_config_file
+    :: Get the fullpath to the config filename for Linux container
+    set CONTAINER_CONFIG_DIR=%VOLUME_MOUNT%/%IN_VOLUME%/config
+    echo HOST_CONFIG_FILE is %HOST_CONFIG_FILE%
+    for %%i in ("!HOST_CONFIG_FILE!") do ( set filename=%%~nxi )
+    echo filename is %filename%
+    set CONTAINER_CONFIG_FILE=%CONTAINER_CONFIG_DIR%/%filename%
+exit /b 0
+
+:: -----------------------------------------------------------
+:run_biotaphy
+    call:header run_biotaphy
+    :: Run the command in the container
+    if %CMD% == create_sdm (
+        echo Docker command is python3 %CMD_PATH%/%CMD%.py --config_file=%CONTAINER_CONFIG_FILE%
+        docker exec -it %CONTAINER_NAME% python3 %CMD_PATH%/%CMD%.py --config_file=%CONTAINER_CONFIG_FILE%
+    ) else (
+        echo Docker command is %CMD% --config_file=%CONTAINER_CONFIG_FILE%
+        docker exec -it %CONTAINER_NAME% %CMD% --config_file=%CONTAINER_CONFIG_FILE%
+    )
+exit /b 0
+
+:: -----------------------------------------------------------
 :execute_process
     call:header execute_process %CMD%
     if %HOST_CONFIG_FILE% == empty (
@@ -366,15 +341,40 @@ exit /b 0
         ) else (
             call:time_stamp File %HOST_CONFIG_FILE% exists
             call:start_container
+            call:get_container_config_file
+            echo CONTAINER_CONFIG_FILE is %CONTAINER_CONFIG_FILE%
+            call:time_stamp Returned to execute_process
 
             :: Command to execute in container
-            SetLocal EnableDelayedExpansion
-            echo these are the docker args: %CMD% --config_file=%CONTAINER_CONFIG_FILE%
             call:time_stamp - Execute on container %CONTAINER_NAME% %CMD% --config_file=%CONTAINER_CONFIG_FILE%
             :: Run the command in the container
-            docker exec -it %CONTAINER_NAME% %CMD% --config_file=%CONTAINER_CONFIG_FILE%
+            call:run_biotaphy
+            call:time_stamp - Completed %CMD% execution on container
         )
+        call:save_outputs
+        call:remove_container
+        call:time_stamp - Completed execute_process
     )
+exit /b 0
+
+:: -----------------------------------------------------------
+:save_outputs
+    call:header save_outputs
+    :: TODO: determine if bind-mount is more efficient than this named-volume
+    call:start_container
+    :: Copy container output directory to host (no wildcards)
+    :: If directory does not exist, create, then add contents
+    call:time_stamp - Copy outputs from %OUT_VOLUME% to %IN_VOLUME%
+    docker cp %CONTAINER_NAME%:%VOLUME_MOUNT%/%OUT_VOLUME%  ./%IN_VOLUME%/
+exit /b 0
+
+:: -----------------------------------------------------------
+:remove_container
+    call:header remove_container
+    call:time_stamp - Stop container %CONTAINER_NAME%
+    docker stop %CONTAINER_NAME%
+    call:time_stamp - Remove container %CONTAINER_NAME%
+    docker container rm %CONTAINER_NAME%
 exit /b 0
 
 :: -----------------------------------------------------------
@@ -382,8 +382,4 @@ exit /b 0
     call:header test
 exit /b 0
 
-:: -----------------------------------------------------------
-:create_sdm
-    call:header create_sdm
-exit /b 0
 

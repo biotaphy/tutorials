@@ -164,7 +164,11 @@ start_container() {
 execute_process() {
     start_container
     # Command to execute in container
-    command="${CMD} --config_file=${CONTAINER_CONFIG_FILE}"
+    if [$CMD -eq "create_sdm"]; then
+        command="${CMD} --config_file=${CONTAINER_CONFIG_FILE}"
+    else
+        command="${CMD} --config_file=${CONTAINER_CONFIG_FILE}"
+    fi
     echo " - Execute '${command}' on container $CONTAINER_NAME" | tee -a "$LOG"
     # Run the command in the container
     docker exec -it ${CONTAINER_NAME} ${command}
@@ -308,16 +312,7 @@ else
         create_volumes
         build_image_fill_data
         start_container
-        if [ "$CMD" == "create_sdm" ] ; then
-            echo "Container python command:"  | tee -a "$LOG"
-            echo "   $command_path/$CMD.py --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
-            execute_python_process $command_path
-            echo "env vol ${VOLUME_MOUNT}/${ENV_VOLUME}:"
-            docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${ENV_VOLUME}
-        else
-            echo "Container command: $CMD --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
-            execute_process
-        fi
+        execute_process
         save_outputs
 #        list_all_volume_contents
 #        list_output_host_contents
