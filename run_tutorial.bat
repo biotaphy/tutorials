@@ -307,7 +307,6 @@ exit /b 0
             echo HOST_CONFIG_FILE is %HOST_CONFIG_FILE%
             SetLocal EnableDelayedExpansion
                 for %%i in ("!HOST_CONFIG_FILE!") do ( EndLocal & set filename=%%~nxi )
-            EndLocal
             echo filename is %filename%
             set CONTAINER_CONFIG_FILE=%VOLUME_MOUNT%/%IN_VOLUME%/config/%filename%
             echo CONTAINER_CONFIG_FILE is %CONTAINER_CONFIG_FILE%
