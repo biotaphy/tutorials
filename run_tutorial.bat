@@ -16,8 +16,6 @@
 :: ------------------------------------------------------------------------------------
 
 @echo off
-SetLocal EnableExtensions
-
 :: Script arguments
 set SCRIPT_NAME=%0
 set CMD=empty
@@ -37,9 +35,7 @@ echo arg_count is %arg_count%, SCRIPT_NAME is %SCRIPT_NAME%, CMD is %CMD%,  HOST
 call:init_log
 call:set_global_vars
 
-call:time_stamp *** Running Command ***
 call:run_command
-call:time_stamp *** Completed Command ***
 
 call:time_stamp End
 exit /b 0
@@ -94,24 +90,8 @@ exit /b 0
 exit /b 0
 
 :: -----------------------------------------------------------
-:check_host_config
-    SetLocal EnableExtensions
-    call:header check_host_config
-    if %HOST_CONFIG_FILE% == empty (
-        call:time_stamp File HOST_CONFIG_FILE not defined
-    ) else (
-        if not exist %HOST_CONFIG_FILE% (
-            call:time_stamp File %HOST_CONFIG_FILE% missing
-        ) else (
-            call:time_stamp File %HOST_CONFIG_FILE% exists
-        )
-    )
-exit /b 0
-
-:: -----------------------------------------------------------
 :set_global_vars
     call:header set_global_vars
-    SetLocal EnableDelayedExpansion
     set IMAGE_NAME=tutor
     set CONTAINER_NAME=tutor_container
     set VOLUME_MOUNT=/volumes
@@ -219,10 +199,8 @@ exit /b 0
 :: -----------------------------------------------------------
 :run_command
     call:header run_command
-    SetLocal EnableDelayedExpansion
-
     if %CMD% == cleanup ( call:cleanup )
-    if %CMD% == cleanup_all ( docker system prune -f all --volumes )
+    if %CMD% == cleanup_all ( call:cleanup_all )
     if %CMD% == open ( call:open_container_shell )
     if %CMD% == list_commands ( call:usage )
     if %CMD% == list_outputs ( call:list_output_volume_contents )
@@ -252,14 +230,14 @@ exit /b 0
 :: -----------------------------------------------------------
 :cleanup
     call:header cleanup
-    docker system prune -f --all
+    docker system prune --force --all
     docker volume prune --filter "label=discard"
 exit /b 0
 
 :: -----------------------------------------------------------
 :cleanup_all
     call:header cleanup_all
-    docker system prune -f --all --volumes
+    docker system prune --force --all --volumes
 exit /b 0
 
 :: -----------------------------------------------------------
@@ -304,7 +282,7 @@ exit /b 0
 exit /b 0
 
 :: -----------------------------------------------------------
-:get_container_config_file
+:set_container_config_file
     call:header get_container_config_file
     :: Get the fullpath to the config filename for Linux container
     set CONTAINER_CONFIG_DIR=%VOLUME_MOUNT%/%IN_VOLUME%/config
@@ -336,9 +314,8 @@ exit /b 0
         if not exist %HOST_CONFIG_FILE% (
             call:time_stamp File %HOST_CONFIG_FILE% missing
         ) else (
-            call:time_stamp File %HOST_CONFIG_FILE% exists
             call:start_container
-            call:get_container_config_file
+            call:set_container_config_file
             echo CONTAINER_CONFIG_FILE is %CONTAINER_CONFIG_FILE%
             call:time_stamp Returned to execute_process
 
@@ -378,5 +355,3 @@ exit /b 0
 :test
     call:header test
 exit /b 0
-
-
