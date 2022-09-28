@@ -7,30 +7,21 @@ computations on a Docker instance.
 
 .. toctree::
     :glob:
-    :maxdepth: 2
-    :caption: Overview
+    :maxdepth: 1
 
     pages/about
     pages/installation
     pages/quickstart
 
-    :caption: Tutorial lessons
     tutorial/w*
-
-    :caption: Command configuration
     tutorial/script_params
+
     tutorial/*wrangle*
 
-    :caption: Data download
     tutorial/idigbio_download
-
-    :caption: Reference
     pages/glossary
     pages/references
     pages/spatial_data
-
-Indices and tables
-==================
 
 * :ref:`genindex`
 * :ref:`modindex`

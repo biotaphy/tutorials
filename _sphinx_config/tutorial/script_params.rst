@@ -13,10 +13,10 @@ follow the same pattern, and many have the same options.
 4. Each value may be a double-quoted string, a number, a boolean (true or false, not
    quoted), or a list of these items, separated by commas and enclosed in square
    brackets ( [] ).
-5. Output filenames must be a full path to the file to be created in the
-  :term:`Container`.  Output file must be placed in `/volumes/output` or a
-  subdirectory of that location.  Output files and directories will be copied to the
-  project directory data/output on the :term:`Host machine`.
+5. Output filenames must be a full path to the file (or directory containing files)
+  to be created in the :term:`Container`.  Output file must be placed in
+  `/volumes/output` or a subdirectory of that location.  Output files and directories
+  will be copied to the project directory data/output on the :term:`Host machine`.
 
 Many commands include the optional parameters:
 
@@ -24,7 +24,7 @@ Many commands include the optional parameters:
   print logging lines in the command line window, to show the processes and progress.
 * log_filename: a full path to the output log file to be created.  The file is an
   `Output filename` as described above.  It contains all logging output from the
-  process, and may be useful for identifying what processes were executed and their \
+  process, and may be useful for identifying what processes were executed and their 
   outcomes.
 * report_filename: a full path to the report log file to be created.  The file is an
   `Output filename` as described above.  It contains a summary of the modifications made

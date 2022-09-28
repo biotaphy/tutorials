@@ -41,6 +41,7 @@ usage ()
     exit 0
 }
 
+
 # -----------------------------------------------------------
 set_defaults() {
     IMAGE_NAME="tutor"
@@ -88,27 +89,6 @@ build_image_fill_data() {
 }
 
 
-## -----------------------------------------------------------
-#create_envfile() {
-#    envfile="./.env"
-#    if [ -f "$envfile" ] ; then
-#        /usr/bin/rm "$envfile"
-#    fi
-#    touch "$envfile"
-#
-#    echo " - Created environment to run:"  | tee -a "$LOG"
-#    echo "        with command ${CMD}"  | tee -a "$LOG"
-#
-#    echo "command=${CMD}"  >> "$envfile"
-#    if [ ! "$CONTAINER_CONFIG_FILE" ]  ; then
-#        echo "        without a configuration file argument"  | tee -a "$LOG"
-#    else
-#        echo "config_file=${CONTAINER_CONFIG_FILE}"  >> "$envfile"
-#        echo "        and config_file ${CONTAINER_CONFIG_FILE}"  | tee -a "$LOG"
-#    fi
-#}
-
-
 # -----------------------------------------------------------
 create_volumes() {
     # Create named RO input volumes for use by any container
@@ -132,7 +112,7 @@ create_volumes() {
     rw_vol_exists=$(docker volume ls | grep $OUT_VOLUME | wc -l )
     if [ "$rw_vol_exists" == "0" ]; then
         echo " - Create volume $OUT_VOLUME"  | tee -a "$LOG"
-        docker volume create --label=$VOLUME_SAVE_LABEL $OUT_VOLUME
+        docker volume create --label=$VOLUME_DISCARD_LABEL $OUT_VOLUME
     else
         echo " - Volume $OUT_VOLUME is already created"  | tee -a "$LOG"
     fi
@@ -164,23 +144,16 @@ start_container() {
 execute_process() {
     start_container
     # Command to execute in container
-    command="${CMD} --config_file=${CONTAINER_CONFIG_FILE}"
+    if [ "$CMD" == "create_sdm" ]; then
+        command="python3 ${command_path}/${CMD}.py --config_file=${CONTAINER_CONFIG_FILE}"
+    else
+        command="${CMD} --config_file=${CONTAINER_CONFIG_FILE}"
+    fi
     echo " - Execute '${command}' on container $CONTAINER_NAME" | tee -a "$LOG"
     # Run the command in the container
     docker exec -it ${CONTAINER_NAME} ${command}
 }
 
-
-# -----------------------------------------------------------
-execute_python_process() {
-    command_path=$1
-    start_container
-    # Command to execute in container
-    command="python3 ${command_path}/${CMD}.py --config_file=${CONTAINER_CONFIG_FILE}"
-    echo " - Execute '${command}' on container $CONTAINER_NAME" | tee -a "$LOG"
-    # Run the command in the container
-    docker exec -it ${CONTAINER_NAME} ${command}
-}
 
 # -----------------------------------------------------------
 save_outputs() {
@@ -207,6 +180,7 @@ remove_container() {
     fi
 }
 
+
 # -----------------------------------------------------------
 list_output_volume_contents() {
     # Find an image, start it with output volume, check contents
@@ -214,6 +188,7 @@ list_output_volume_contents() {
     echo " - List output volume contents $CONTAINER_NAME" | tee -a "$LOG"
     docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${OUT_VOLUME}
 }
+
 
 # -----------------------------------------------------------
 list_all_volume_contents() {
@@ -229,6 +204,7 @@ list_all_volume_contents() {
     docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${OUT_VOLUME}
 }
 
+
 # -----------------------------------------------------------
 open_container_shell() {
     # Find an image, start it with output volume, check contents
@@ -237,6 +213,7 @@ open_container_shell() {
     docker exec -it $CONTAINER_NAME bash
 }
 
+
 # -----------------------------------------------------------
 list_output_host_contents() {
     # Find an image, start it with output volume, check contents
@@ -244,13 +221,6 @@ list_output_host_contents() {
     ls -lahtr ${IN_VOLUME}/${OUT_VOLUME}
 }
 
-# -----------------------------------------------------------
-start_console() {
-    # Create, connect to command line
-    start_container
-    echo " - Execute shell on $CONTAINER_NAME" | tee -a "$LOG"
-    docker exec -it $CONTAINER_NAME bash
-}
 
 # -----------------------------------------------------------
 time_stamp () {
@@ -261,9 +231,11 @@ time_stamp () {
 # -----------------------------------------------------------
 ####### Main #######
 COMMANDS=(
-"list_commands"  "build_image"  "cleanup"  "do_little"  "list_outputs"  "list_volumes"  "rebuild_data"
-"create_sdm" "build_grid"  "calculate_pam_stats" "encode_layers"
-"split_occurrence_data" "wrangle_species_list"  "wrangle_occurrences"  "wrangle_tree"
+"build_all"  "cleanup"  "cleanup_all"
+"list_commands" "list_outputs"  "list_volumes"
+"wrangle_species_list"  "split_occurrence_data"   "wrangle_occurrences"  "wrangle_tree"
+"create_sdm"
+"build_grid"  "encode_layers" "calculate_pam_stats"
 )
 
 CMD=$1
@@ -281,13 +253,11 @@ if [ $arg_count -eq 0 ]; then
 # Arguments: command
 elif [ $arg_count -eq 1 ]; then
     if [ "$CMD" == "cleanup" ] ; then
+        remove_container
         docker system prune -f --all
-        docker volume prune --filter "label!=saveme"
-    elif [ "$CMD" == "cleanup_most" ] ; then
-        docker system prune -f --all
-        docker volume rm ${IN_VOLUME}
-        docker volume rm ${OUT_VOLUME}
+        docker volume prune --filter "label=discard"
     elif [ "$CMD" == "cleanup_all" ] ; then
+        remove_container
         docker system prune -f --all --volumes
     elif [ "$CMD" == "open" ] ; then
         open_container_shell
@@ -295,23 +265,17 @@ elif [ $arg_count -eq 1 ]; then
         usage
     elif [ "$CMD" == "list_outputs" ] ; then
         list_output_volume_contents
-        start_container
-        remove_container
     elif [ "$CMD" == "list_volumes" ] ; then
         list_all_volume_contents
-        start_container
-        remove_container
-    elif [ "$CMD" == "build_image" ] || [ "$CMD" == "rebuild_data" ] ; then
-        docker system prune -f --all
-        docker volume rm ${IN_VOLUME}
-        docker volume rm ${OUT_VOLUME}
+    elif [ "$CMD" == "build_all" ] ; then
+        docker system prune -f --all --volumes
         echo "System build will take approximately 5 minutes ..." | tee -a "$LOG"
         create_volumes
         build_image_fill_data
     elif [ "$CMD" == "test" ]; then
         list_output_volume_contents
         remove_container
-        start_console
+        open_container_shell
         remove_container
     else
         usage
@@ -322,19 +286,8 @@ else
         create_volumes
         build_image_fill_data
         start_container
-        if [ "$CMD" == "create_sdm" ] ; then
-            echo "Container python command:"  | tee -a "$LOG"
-            echo "   $command_path/$CMD.py --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
-            execute_python_process $command_path
-            echo "env vol ${VOLUME_MOUNT}/${ENV_VOLUME}:"
-            docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${ENV_VOLUME}
-        else
-            echo "Container command: $CMD --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
-            execute_process
-        fi
+        execute_process
         save_outputs
-#        list_all_volume_contents
-#        list_output_host_contents
         remove_container
     else
         echo "Unrecognized command: $CMD"

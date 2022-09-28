@@ -1,0 +1,15 @@
+{
+    "log_filename": "/volumes/output/split_gbif.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/split_gbif.rpt",
+    "max_open_writers": 100,
+    "csv":  [
+      ["/volumes/data/input/occurrence_gbif.csv",
+        "/volumes/data/wranglers/no_wrangle.json",
+        "acceptedScientificName",
+        "decimalLongitude",
+        "decimalLatitude"
+      ]
+    ],
+    "out_dir": "/volumes/output/split_gbif"
+}

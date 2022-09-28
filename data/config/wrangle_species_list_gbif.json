@@ -3,6 +3,6 @@
   "log_console": true,
   "report_filename": "/volumes/output/wrangle_species_list_gbif.rpt",
   "in_species_list_filename": "/volumes/data/input/heuchera.txt",
-  "wrangler_configuration_file": "/volumes/data/wranglers/splist_wranglers_gbif.json",
-  "out_species_list_filename": "/volumes/output/heuchera_accepted_gbif.txt"
+  "wrangler_configuration_file": "/volumes/data/wranglers/splist_wrangle_gbif.json",
+  "out_species_list_filename": "/volumes/output/heuchera_wrangled.txt"
 }

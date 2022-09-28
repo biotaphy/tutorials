@@ -1,0 +1,80 @@
+Wed Sep 14 16:22:22 CDT 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/mask.asc
+Reading samples from Heuchera flabellifolia.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2102708256, used 15415264, increment 15415264
+Extractor: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 2095136
+Extracting random background and sample data
+723 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_sdm/Heuchera_flabellifolia/Heuchera flabellifolia.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_sdm/Heuchera_flabellifolia nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_sdm/Heuchera_flabellifolia "samplesfile=/volumes/output/heuchera_sdm/Heuchera_flabellifolia/Heuchera flabellifolia.csv" environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Species: Heuchera_flabellifolia
+Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_sdm/Heuchera_flabellifolia
+samplesfile: /volumes/output/heuchera_sdm/Heuchera_flabellifolia/Heuchera flabellifolia.csv
+environmentallayers: /volumes/env/worldclim1.4
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 1870076408, used 248047112, increment 230536712
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1859592696, used 258530824, increment 10483712
+Heuchera_flabellifolia: 
+Regularization values: linear/quadratic/product: 0.757, categorical: 0.464, threshold: 1.890, hinge: 0.500
+11 samples
+Density: max memory 32178700288, total allocated 2118123520, free 1859592696, used 258530824, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1859592696, used 258530824, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1859592696, used 258530824, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1859592696, used 258530824, increment 0
+Initial loss: 6.583409222158765
+80: time = 0.026000 loss = 6.573215
+Resulting gain: 0.010194538626598693
+Time since start: 1.745
+Projecting...
+Writing file /volumes/output/heuchera_sdm/Heuchera_flabellifolia/Heuchera_flabellifolia.asc
+Writing /volumes/output/heuchera_sdm/Heuchera_flabellifolia/plots/Heuchera_flabellifolia.png
+Ending

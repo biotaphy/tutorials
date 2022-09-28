@@ -1,11 +1,10 @@
 ==================================
-Webinar 6:
+Webinar 6: Species Distribution Modeling (SDM)
 ==================================
 
-`Species Distribution Modeling <https://docs.google.com/document/d/1CqYkCUlY40p8NnqM-GtcLju70jrAG45FGejJ26sS3_U/edit#heading=h.cny714hbiydb>`_
-(Part 1, Creation>`_.  Create one or more Species Distribution Models using Maxent for
-occurrence data with the minimum number of points defined in the configuration file or  
-the `Rare Species Model` algorithm for data without the required minimum number of 
+Create one or more Species Distribution Models using Maxent for
+occurrence data with the minimum number of points defined in the configuration file or
+the `Rare Species Model` algorithm for data without the required minimum number of
 points.  The Rare Species Model intersects the convex hull of the points
 with a raster denoting ecoregions.  For all species data using Maxent, the tool uses the
 Maxent parameters indicated in the configuration file.  
@@ -14,7 +13,7 @@ Maxent parameters indicated in the configuration file.
 Introduction
 -----------------------------------
 
-Read `Tutorial Overview <../tutorial/w1_overview.rst>`_ for an overview of how all
+Read `Tutorial Overview <../tutorial/w1_overview>`_ for an overview of how all
 tutorials work.
 
 -----------------------------------
@@ -30,8 +29,8 @@ parameter, and/or a list of individual files in the `points_layer` parameter.  E
 the occurrence datasets must use the same species_key, x_key, and y_key, specified in
 the configuration file. 
 
-More information is in the **Occurrence Data** section of 
-`data_wrangle_occurrence <data_wrangle_occurrence.rst>`_.
+More information is in the **Occurrence Data** section of `data_wrangle_occurrence
+<data_wrangle_occurrence#occurrence-data>`_.
 
 Input: ecoregions file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -44,7 +43,8 @@ Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A JSON parameter file is required for this command.  A test tutorial parameter file is: 
-`create_sdm.json <../../data/config/create_sdm.json>`_,
+`create_sdm.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/create_sdm.json>`_,
 
 These are the required and optional parameters:
 
@@ -78,12 +78,13 @@ These are the required and optional parameters:
     `y` (which is also the default value created in CSV data output from
     split_occurrence_data and wrangle_occurrences).
   * **maxent_params**: Extra options and parameters to be sent to Maxent.  A full list
-     of Maxent parameters, long with the value type, and sometimes a valid range of
-     values, is available
-     `here <https://github.com/mrmaxent/Maxent/blob/master/density/parameters.csv>`_.
+    of Maxent parameters, long with the value type, and sometimes a valid range of
+    values, is available in the
+    `Maxent Github repository
+    <https://github.com/mrmaxent/Maxent/blob/master/density/parameters.csv>`_.
   * **min_points**: Minimum number of points in an occurrence dataset for Maxent to be 
-     used for modeling to.  If the data contains less than the minimum, the 
-     `Rare Species Modeling` algorithm will be used.
+    used for modeling to.  If the data contains less than the minimum, the
+    `Rare Species Modeling` algorithm will be used.
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
@@ -106,12 +107,14 @@ Output
 
 Most outputs are configured in the script parameter file, and may include:
 
-1. **If "report_filename" is specified in the script parameter file, a summary of point
+1. If "report_filename" is specified in the script parameter file, a summary of point
    manipulations by each wrangler will be written to this file. 
 2. If "log_filename" is specified in the script parameter file, that will be created. 
 3. If "log_console" is specified in the script parameter file, logs will be written to the
-    command prompt during execution.
+   command prompt during execution.
 4. A directory named in the out_dir parameter, containing a subdirectory for each 
    input occurrence data file.  Each subdirectory will be named by the value in 
    the grouping field and contain a predicted distribution raster in ASCII format.  
-   Occurrence data that were modeled with Maxent will also contain Maxent outputs.  
+   Occurrence data that were modeled with Maxent will also contain Maxent outputs.
+   A subset of species outputs from the above command are in the directory `heuchera_sdm
+   <https://github.com/biotaphy/tutorials/tree/main/data/easy_bake/heuchera_sdm>`_.

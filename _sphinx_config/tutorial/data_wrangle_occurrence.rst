@@ -5,8 +5,8 @@ Specimen Occurrences: Data and Wrangling
 ----------------
 Occurrence Data
 ----------------
-Several tools ([split_occurrence_data](w5_split_occurrence_data.rst),
-[wrangle_occurrences](w3_wrangle_occurrence_data.rst)) accept occurrence data.
+Several tools (`split_occurrence_data <w5_split_occurrence_data>`_,
+`wrangle_occurrences <w3_wrangle_occurrence_data>`_) accept occurrence data.
 The filename must be specified in the script parameter file, described in each tool's
 documentation and linked above.  Data can be in one of two formats:
 
@@ -14,14 +14,15 @@ documentation and linked above.  Data can be in one of two formats:
    including GBIF and iDigBio.
 
    1) To download from GBIF, choose your filters in the
-      [portal](https://www.gbif.org/occurrence).  For example, the example data was
-      downloaded after selecting occurrences where
-      [genus=`Heuchera L`](https://www.gbif.org/occurrence/search?taxon_key=3032645&occurrence_status=present)
+      `GBIF portal <https://www.gbif.org/occurrence>`_.  For example, the example data
+      was downloaded after selecting occurrences where
+      `genus='Heuchera L'
+      <https://www.gbif.org/occurrence/search?taxon_key=3032645&occurrence_status=present>`_
       Then choose the download link at the upper right column header.
    2) To download from iDigBio, instructions for querying and downloading from the
-      command prompt are at [idigbio_download.md](./idigbio_download.md).
-   3) The tutorial example DwCA is at
-      [occ_heuchera_gbif.zip](../../data/input/occ_heuchera_gbif.zip).
+      command prompt are at `idigbio_download <idigbio_download>`_.
+   3) The tutorial example DwCA is occurrence_idigbio.zip in the `input data directory
+      <https://github.com/biotaphy/tutorials/tree/main/data/input>`_
 
 2) CSV file containing records for one or more taxa.
 
@@ -30,8 +31,19 @@ documentation and linked above.  Data can be in one of two formats:
       record/line must contain a species (or other group) identifier, such as
       scientificName or species_name, and x and y coordinates indicating a geographic
       location.  The field names for these 3 columns are specified in the script
-      parameter file. The tutorial example occurrence datafile
-      is [heuchera.csv](../../data/input/heuchera.csv).
+      parameter file. One simple tutorial example occurrence datafile
+      is `heuchera.csv
+      <https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.csv>`_
+      which contains different heuchera species, grouped by name, with x and y
+      coordinates.  Another tutorial example file is a CSV file containing many fields,
+      downloaded from gbif, `occurrence_gbif.csv
+      <../../data/input/occurrence_gbif.csv>`_.
+
+All point records will have the fields "species_name", "x", and "y" appended to the
+attributes, and they will be filled with the values from the original fields defined as
+containing these types of data.  When resolving names with the
+AcceptedNameOccurrenceWrangler, new resolved name will be updated in the
+"species_name" field.
 
 ----------------------------
 Wrangler configuration file
@@ -45,6 +57,11 @@ specific to each.  Configuration files:
 * Each dictionary must contain "wrangler_type", with the name of the wrangler type.
 * The dictionary will also contain all required parameters and any optional parameters.
 
+If an operation, such as split_occurrence_data requires a wrangle configuration file,
+and no other data manipuation is requested, the configuration file can contain an empty
+list, such as:  `no_wrangle
+<https://github.com/biotaphy/tutorials/blob/main/data/wranglers/no_wrangle>`_.
+
 --------------------------------
 Occurrence Wrangler Types
 --------------------------------
@@ -52,15 +69,17 @@ Occurrence Wrangler Types
 When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.
 
-Note that some wranglers (MinimumPointsWrangler, UniqueLocalitiesFilter) assess the
-counts over the entire file/dataset, not subsets within a file.  So if wrangling an
-occurrence record file that contains multiple groups of records, the wrangler will not
-assess the minimum number of points or unique localities for each group, it will do that
-for the dataset as a whole.  This is not recommended.
-
 Currently, wrangler_type names correspond to the wrangler class `name` attribute in
 this module's files.  Each wrangler's parameters correspond to the constructor
 arguments for that wrangler.
+
+**Note** that two wranglers (MinimumPointsWrangler, UniqueLocalitiesFilter) assess a
+set of points, not individual points.  The set of points is defined by consecutive
+points with the same species key in a file/dataset.
+If points for a single species are not in a single file, or grouped in a file, these
+wranglers will not work as intended.  These wranglers should be
+used when running `split_occurrence_data` or `wrangle_occurrence_data` only with input
+data grouped by species.
 
 AcceptedNameOccurrenceWrangler
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -94,7 +113,6 @@ given attribute passes the given function.
   * attribute_name (str): The name of the attribute to modify.
   * filter_func (Method): A function to be used for the pass condition.
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeModifierWrangler
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The AttributeModifierWrangler modifies a newly added or existing attribute, computing 
@@ -105,7 +123,6 @@ the value with the given function.
   * attribute_name (str): The name of the attribute to modify.
   * attribute_func (Method): A function to generate values for a point.
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 BoundingBoxFilter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The BoundingBoxFilter filters out occurrence points if they do not fall within the given  
@@ -179,13 +196,11 @@ with the given geometries.
 
 MinimumPointsWrangler
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+See the `Note <#Occurrence Wrangler Types>`_ above for important information on the use
+of this wrangler.
+
 The MinimumPointsWrangler filters out groups of points where the number of points in a 
 group does not meet the minimum.
-
-Note: This point must only be used on occurrence data file that is to be used as a
-single group of records, i.e. a file containing only one species or grouping.  When
-wrangling multi-species datasets, this will count the number of points for the entire
-set, not subsets within a file.
 
 * required:
 
@@ -207,14 +222,12 @@ The SpatialIndexFilter filters out points that match some given condition
 
 UniqueLocalitiesFilter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+See the `Note <#Occurrence Wrangler Types>`_ above for important information on the use
+of this wrangler.
+
 The UniqueLocalitiesFilter filters out points from a grouping that do not have unique 
 coordinates.  The filter can operate on one or more groups, and uniqueness is only 
 checked within groups.
-
-Note: This point must only be used on occurrence data file that is to be used as a
-single group of records, i.e. a file containing only one species or grouping.  When
-wrangling multi-species datasets, this will count the unique localities for the entire
-set, not subsets within a file
 
 * optional parameters:
 

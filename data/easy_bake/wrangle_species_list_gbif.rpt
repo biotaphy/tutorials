@@ -1,1 +1,8 @@
-[{"unresolved": 3, "duplicates": 0, "name": "AcceptedNameSpeciesListWrangler", "version": "1.0"}]
+[
+    {
+        "name": "AcceptedNameSpeciesListWrangler",
+        "version": "1.0",
+        "unresolved": 4,
+        "duplicates": 41
+    }
+]
