@@ -1,3 +1,5 @@
+sphinx
+git+https://github.com/rtfd/recommonmark
 sphinx-rtd-theme
 sphinx-autoapi
 myst-parser

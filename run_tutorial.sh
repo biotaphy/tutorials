@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-# This script calls docker-compose after filling the docker-compose-occurrence.yml file
-# with parameters to run a command in a docker container with an input-parameter
-# configuration file
+# This script calls docker commands to create an image, volumes, start a container from
+# the image, execute commands in that container, then copy outputs to the local
+# filesystem.
 #
 # Note: this script uses a provided config file to
 #   1. create the volumes `data` and `output` (if they do not exist)
@@ -45,8 +45,12 @@ usage ()
 set_defaults() {
     IMAGE_NAME="tutor"
     CONTAINER_NAME="tutor_container"
+    VOLUME_MOUNT="/volumes"
     IN_VOLUME="data"
+    ENV_VOLUME="env"
     OUT_VOLUME="output"
+    VOLUME_SAVE_LABEL="saveme"
+    VOLUME_DISCARD_LABEL="discard"
 
     # Relative host config directory mapped to container config directory
     VOLUME_MOUNT="/volumes"
@@ -74,7 +78,7 @@ set_defaults() {
 # -----------------------------------------------------------
 build_image_fill_data() {
     # Build and name an image from Dockerfile in this directory
-    # This build also populates the data volume
+    # This build also populates the data and env volumes
     image_count=$(docker image ls | grep $IMAGE_NAME |  wc -l )
     if [ $image_count -eq 0 ]; then
         docker build . -t $IMAGE_NAME
@@ -105,36 +109,30 @@ build_image_fill_data() {
 #}
 
 
-## -----------------------------------------------------------
-#create_volumes() {
-#    # Create a named volume for use by any container
-#    volumes=($IN_VOLUME $OUT_VOLUME)
-#    for i in "${!volumes[@]}"; do
-#        vol_name=${volumesS[$i]}
-#        vol_exists=$(docker volume ls | grep $vol_name | wc -l )
-#        if [ "$vol_exists" == "0" ]; then
-#            docker volume create $vol_name
-#        else
-#            echo " - Volume $vol_name is already created"  | tee -a "$LOG"
-#        fi
-#    done
-#}
-
 # -----------------------------------------------------------
 create_volumes() {
-    # Create named RO input volume for use by any container
-    ro_vol_exists=$(docker volume ls | grep $IN_VOLUME | wc -l )
-    if [ "$ro_vol_exists" == "0" ]; then
+    # Create named RO input volumes for use by any container
+    # Small input data, part of repository
+    input_vol_exists=$(docker volume ls | grep $IN_VOLUME | wc -l )
+    if [ "$input_vol_exists" == "0" ]; then
         echo " - Create volume $IN_VOLUME"  | tee -a "$LOG"
-        docker volume create $IN_VOLUME
+        docker volume create --label=$VOLUME_DISCARD_LABEL $IN_VOLUME
     else
         echo " - Volume $IN_VOLUME is already created"  | tee -a "$LOG"
+    fi
+    # Large environmental data, external to repository
+    env_vol_exists=$(docker volume ls | grep $ENV_VOLUME | wc -l )
+    if [ "$env_vol_exists" == "0" ]; then
+        echo " - Create volume $ENV_VOLUME"  | tee -a "$LOG"
+        docker volume create --label=$VOLUME_SAVE_LABEL $ENV_VOLUME
+    else
+        echo " - Volume $ENV_VOLUME is already created"  | tee -a "$LOG"
     fi
     # Create named RW output volume for use by any container
     rw_vol_exists=$(docker volume ls | grep $OUT_VOLUME | wc -l )
     if [ "$rw_vol_exists" == "0" ]; then
         echo " - Create volume $OUT_VOLUME"  | tee -a "$LOG"
-        docker volume create $OUT_VOLUME
+        docker volume create --label=$VOLUME_SAVE_LABEL $OUT_VOLUME
     else
         echo " - Volume $OUT_VOLUME is already created"  | tee -a "$LOG"
     fi
@@ -142,7 +140,7 @@ create_volumes() {
 
 
 # -----------------------------------------------------------
-#docker run -td --name tutor_container -v data:/volumes/data:ro -v output:/volumes/output tutor bash
+#docker run -td --name tutor_container -v data:/volumes/data:ro -v env:/volumes/env: -v output:/volumes/output tutor bash
 start_container() {
     # Find running container
     container_count=$(docker ps | grep $CONTAINER_NAME |  wc -l )
@@ -151,6 +149,7 @@ start_container() {
         # Option string for volumes
         # TODO: after debugging, add read-only back to data volume
         vol_opts="--volume ${IN_VOLUME}:${VOLUME_MOUNT}/${IN_VOLUME} \
+                  --volume ${ENV_VOLUME}:${VOLUME_MOUNT}/${ENV_VOLUME} \
                   --volume ${OUT_VOLUME}:${VOLUME_MOUNT}/${OUT_VOLUME}"
         # Start the container, leaving it up
         echo " - Start container $CONTAINER_NAME from $IMAGE_NAME" | tee -a "$LOG"
@@ -171,6 +170,17 @@ execute_process() {
     docker exec -it ${CONTAINER_NAME} ${command}
 }
 
+
+# -----------------------------------------------------------
+execute_python_process() {
+    command_path=$1
+    start_container
+    # Command to execute in container
+    command="python3 ${command_path}/${CMD}.py --config_file=${CONTAINER_CONFIG_FILE}"
+    echo " - Execute '${command}' on container $CONTAINER_NAME" | tee -a "$LOG"
+    # Run the command in the container
+    docker exec -it ${CONTAINER_NAME} ${command}
+}
 
 # -----------------------------------------------------------
 save_outputs() {
@@ -206,6 +216,28 @@ list_output_volume_contents() {
 }
 
 # -----------------------------------------------------------
+list_all_volume_contents() {
+    # Find an image, start it with output volume, check contents
+    start_container
+    echo " - List volume contents $CONTAINER_NAME" | tee -a "$LOG"
+    docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}
+    echo "    - Volume $ENV_VOLUME" | tee -a "$LOG"
+    docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${ENV_VOLUME}
+    echo "    - Volume $IN_VOLUME" | tee -a "$LOG"
+    docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${IN_VOLUME}
+    echo "    - Volume $OUT_VOLUME" | tee -a "$LOG"
+    docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${OUT_VOLUME}
+}
+
+# -----------------------------------------------------------
+open_container_shell() {
+    # Find an image, start it with output volume, check contents
+    start_container
+    echo " - Connect to $CONTAINER_NAME" | tee -a "$LOG"
+    docker exec -it $CONTAINER_NAME bash
+}
+
+# -----------------------------------------------------------
 list_output_host_contents() {
     # Find an image, start it with output volume, check contents
     echo " - List host output directory contents " | tee -a "$LOG"
@@ -229,14 +261,15 @@ time_stamp () {
 # -----------------------------------------------------------
 ####### Main #######
 COMMANDS=(
-"list_commands"  "build_image"  "cleanup"  "list_outputs" "rebuild_data"
-"build_grid"  "calculate_pam_stats" "encode_layers"  "split_occurrence_data"
-"wrangle_species_list"  "wrangle_occurrences"  "wrangle_tree"
+"list_commands"  "build_image"  "cleanup"  "do_little"  "list_outputs"  "list_volumes"  "rebuild_data"
+"create_sdm" "build_grid"  "calculate_pam_stats" "encode_layers"
+"split_occurrence_data" "wrangle_species_list"  "wrangle_occurrences"  "wrangle_tree"
 )
 
 CMD=$1
 HOST_CONFIG_FILE=$2
 arg_count=$#
+command_path=/git/lmpy/lmpy/tools
 
 set_defaults
 time_stamp "# Start"
@@ -248,14 +281,30 @@ if [ $arg_count -eq 0 ]; then
 # Arguments: command
 elif [ $arg_count -eq 1 ]; then
     if [ "$CMD" == "cleanup" ] ; then
+        docker system prune -f --all
+        docker volume prune --filter "label!=saveme"
+    elif [ "$CMD" == "cleanup_most" ] ; then
+        docker system prune -f --all
+        docker volume rm ${IN_VOLUME}
+        docker volume rm ${OUT_VOLUME}
+    elif [ "$CMD" == "cleanup_all" ] ; then
         docker system prune -f --all --volumes
+    elif [ "$CMD" == "open" ] ; then
+        open_container_shell
     elif [ "$CMD" == "list_commands" ] ; then
         usage
     elif [ "$CMD" == "list_outputs" ] ; then
         list_output_volume_contents
+        start_container
+        remove_container
+    elif [ "$CMD" == "list_volumes" ] ; then
+        list_all_volume_contents
+        start_container
         remove_container
     elif [ "$CMD" == "build_image" ] || [ "$CMD" == "rebuild_data" ] ; then
-        docker system prune -f --all --volumes
+        docker system prune -f --all
+        docker volume rm ${IN_VOLUME}
+        docker volume rm ${OUT_VOLUME}
         echo "System build will take approximately 5 minutes ..." | tee -a "$LOG"
         create_volumes
         build_image_fill_data
@@ -270,13 +319,22 @@ elif [ $arg_count -eq 1 ]; then
 # Arguments: command, config file
 else
     if [[ " ${COMMANDS[*]} " =~  ${CMD}  ]]; then
-        echo "Container command: $CMD --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
         create_volumes
         build_image_fill_data
         start_container
-        execute_process
+        if [ "$CMD" == "create_sdm" ] ; then
+            echo "Container python command:"  | tee -a "$LOG"
+            echo "   $command_path/$CMD.py --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
+            execute_python_process $command_path
+            echo "env vol ${VOLUME_MOUNT}/${ENV_VOLUME}:"
+            docker exec -it $CONTAINER_NAME ls -lahtr ${VOLUME_MOUNT}/${ENV_VOLUME}
+        else
+            echo "Container command: $CMD --config_file=$CONTAINER_CONFIG_FILE" | tee -a "$LOG"
+            execute_process
+        fi
         save_outputs
-        list_output_host_contents
+#        list_all_volume_contents
+#        list_output_host_contents
         remove_container
     else
         echo "Unrecognized command: $CMD"

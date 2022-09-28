@@ -1,10 +1,14 @@
 # Biotaphy tutorials
 
-## Setup Steps
+## Setup Steps 
 
 Before we can run the demo, we need to build the container.  This documentation
 assumes that [Docker](https://docs.docker.com/get-docker/) has been installed for your
 environment.
+
+Note that installing Docker on Windows machines requires Administrator privileges.  
+After installation, any user that is a member of the "docker-users" group can run Docker
+Desktop.
 
 1. Clone or download the repository
 
@@ -28,7 +32,7 @@ environment.
    6. copy output files to the host machine
 
    ```zsh
-   ./run_tutorial.sh wrangle_occurrences data/input/clean_occurrences.json
+   ./run_tutorial.sh wrangle_occurrences data/config/wrangle_species_list_gbif.json
    ```
 
 4. Run a bash shell in the container interactively to examine outputs
@@ -116,7 +120,7 @@ To delete all containers, images, networks and volumes, stop any running
 containers:
 
 ```zsh
-docker compose stop
+docker container stop <container_name>
 ```
 
 And run this command (which ignores running container):

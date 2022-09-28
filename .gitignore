@@ -9,10 +9,13 @@ test.sh
 data/input/*.zip
 data/input/flowline*
 data/input/topo*
-data/input/*.tif
 data/input/gbif_sax_100k.csv
 data/input/tmp
 meta.xml
 output
 .env
 lmpy_issues.txt
+data/input/worldclim1.4
+data/input/tree_1.nex
+data/input/tree_2.nex
+data/input/heuchera3.nex

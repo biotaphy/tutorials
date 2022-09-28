@@ -1,4 +1,6 @@
-# Geospatial Data Terms
+=============================================
+Geospatial Data Terms
+=============================================
 
 .. glossary::
 
@@ -8,22 +10,34 @@
         :term:`Vector Data`.  Each
         has properties that make it better for representing different information.
 
-    Line
-        Lines are made up of multiple points, ordered.  Roads and rivers are
-        usually represented as lines.
+
+    Raster Data
+        Geospatial data best represented in raster format generally has one value at
+        every point.  The area to be represented is split up into a grid, with each
+        grid cell containing a value. Elevation, temperature, precipitation are
+        examples of data generally represented as raster.
+
+    Vector Data
+        Geospatial data best represented in vector format can be represented as
+        :term:`Point`s, :term:`Line`s, or :term:`Polygon`s.
 
     Point
-        Points represent a single location on a 2 dimensional surface.
-        Depending on the scale, different types of data are appropriate to be
-        represented as points. At a very small :term:`Scale` (from a very great
+        Points represent a single location on a 2 dimensional surface.  In
+        :term:`Vector Data`, points are made up of an x (longitude) and a y (latitude)
+        coordinate.  Depending on the scale, different types of data are appropriate to
+        be represented as points. At a very small :term:`Scale` (from a very great
         distance), a city might be represented as a single point.  Species occurrences
         are usually represented as points.
 
+    Line
+        In :term:`Vector Data`, lines are made up of multiple, ordered, points.
+        Roads and rivers are usually represented as lines.
+
     Polygon
-        Polygons are made up of multiple points or lines, joined to define
-        a discrete area.  At a larger scale (zoomed in), a city, river, or street might
-        be represented as a polygon. Administrative boundaries, like country, state, or
-        other geo-political units are examples of polygon data.
+        In :term:`Vector Data`, polygons are made up of multiple points or lines, joined
+        to define a discrete area.  At a larger scale (zoomed in), a city, river, or
+        street might be represented as a polygon. Administrative boundaries, like
+        country, state, or other geo-political units are examples of polygon data.
 
     Scale
         Large scale maps refer to maps of a small area with a large amount of detail.
@@ -37,20 +51,11 @@
         distance on the map to the distance on the ground is much smaller.  For example,
         a map of the country of Indonesia might be at the ratio of 1:2,000,000.
 
-    Raster Data
-        Geospatial data best represented in raster format generally has one value at
-        every point.  The area to be represented is split up into a grid, with each
-        grid cell containing a value. Elevation, temperature, precipitation are
-        examples of data generally represented as raster.
-
-    Vector Data
-        Geospatial data best represented in vector format can be represented as
-        :term:`Point`s, :term:`Line`s, or :term:`Polygon`s.
 
 
-
-
-## Sample Geospatial Data resources
+=============================================
+Sample Geospatial Data resources
+=============================================
 
 * [World borders]  (http://thematicmapping.org/downloads/world_borders.php)
 

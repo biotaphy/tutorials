@@ -2,10 +2,10 @@
     "species_key": "species_name",
     "x_key": "x",
     "y_key": "y",
-    "report_filename": "/volumes/output/wrangle_occurrences_w_resolve_report.json",
-    "log_filename": "/volumes/output/wrangle_occurrences_w_resolve.log",
-    "log_output": true,
+    "report_filename": "/volumes/output/wrangle_occurrences_only_resolve.rpt",
+    "log_filename": "/volumes/output/wrangle_occurrences_only_resolve.log",
+    "log_console": true,
     "reader_filename": "/volumes/data/input/heuchera.csv",
     "writer_filename":  "/volumes/output/heuchera_clean_accepted.csv",
-    "wrangler_config_filename":   "/volumes/data/wranglers/occ_wranglers_w_resolve.json"
+    "wrangler_config_filename":   "/volumes/data/wranglers/occ_wrangler_resolve.json"
 }
