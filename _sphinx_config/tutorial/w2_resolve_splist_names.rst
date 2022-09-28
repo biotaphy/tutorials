@@ -71,7 +71,7 @@ Initiate the process with the following:
 
 .. code-block::
 
-       ./run_tutorial.sh wrangle_spepythcies_list data/config/wrangle_species_list_gbif.json
+       ./run_tutorial.sh wrangle_species_list data/config/wrangle_species_list_gbif.json
 
 ---------------------------
 Output
