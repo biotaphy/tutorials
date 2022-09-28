@@ -1,7 +1,7 @@
 [
     {
         "wrangler_type": "AcceptedNameSpeciesListWrangler",
-        "name_map": "/volumes/data/easy_bake/splist_namemap.namemap",
+        "name_map": "/volumes/data/easy_bake/splist_wrangle_gbif.namemap",
         "map_write_interval": 100,
         "out_map_format": "json"
     }
