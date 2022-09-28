@@ -14,14 +14,21 @@ the tools, executes the processes, and returns the outputs to the local machine.
 --------------------------------
 Preparation
 --------------------------------
+All commands will be typed at a command prompt. In Linux or OSX, open a Terminal
+window.  In Windows, go to the Start menu, and type **command** in the Search bar.  Open
+the Command Prompt application that appears.
 
 Download the github repository for this tutorial, including scripts, data, and
-configuration files.  Go to the https://github.com/biotaphy/tutorials page,
-and click the green button marked "Code".  In the resulting drop-down menu,
-choose "Download ZIP".  When the file has downloaded, move the file (or the directory
-resulting from auto-decompress) to your chosen directory.  If the file has not been
-uncompressed, do that.  In Windows, right-click the zip file and choose
-"Extract All...".  In OSX or Linux, run unzip with the filename.
+configuration files.
+
+Type `git` at the command prompt to see if you have git installed.  If you do not,
+download and install git from https://git-scm.com/downloads .
+
+Download the Biotaphy tutorial by typing at the command line:
+
+.. code-block::
+
+   git clone https://github.com/biotaphy/tutorials
 
 To run Biotaphy tools on any OS, locally through :term:`Docker`, first download and
 install `Docker <https://docs.docker.com/get-started/>`_.

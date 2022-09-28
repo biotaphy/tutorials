@@ -1,6 +1,7 @@
 ==============================
-Webinar 8: Introducing Presence-Absence Matrices (PAMs) for Large Scale Analyses
+Webinar 8: Introducing Presence-Absence Matrices (PAMs)
 ==============================
+
 
 --------------------
 Introduction
@@ -36,8 +37,9 @@ Data preparation: Script parameter file
 ******************************************
 
 A JSON parameter file is required for this command.  The tutorial parameter file
-is `build_grid.json <../../data/config/build_grid.json>`_. These are the required and
-optional parameters:
+is `build_grid.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/build_grid.json>`_.
+These are the required and optional parameters:
 
 * Required:
 
@@ -61,9 +63,8 @@ Initiate the process with the following:
 
 for linux/mac systems
 
-```zsh
-./run_tutorial.sh build_grid data/input/build_grid.json
-```
+.. code-block::
+      ./run_tutorial.sh build_grid data/input/build_grid.json
 
 Output
 ******************************************
@@ -90,10 +91,12 @@ Data preparation: Script parameter file
 ******************************************
 
 An example json file for running the encode_layers tutorial is at
-`encode_layers.json <../../data/config/encode_layers.json>`_. These are the required
-and optional parameters:
+`encode_layers.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/encode_layers.json>`_.
+These are the required and optional parameters:
 
 * Required:
+
   * **grid_filename**: Relative path to shapegrid to use for site geometries
   * **out_matrix_filename**: Relative path to write the encoded matrix
   * **encode_method**: The only valid option for creating a PAM is "presence_absence".  
@@ -101,15 +104,24 @@ and optional parameters:
     types of matrices and operations.
 
 * Optional
+
   * **min_coverage**: Minimum percentage of a cell that has to be covered to encode it
   * **min_presence**: Minimum value to be considered present when encoding presence
     absence
   * **max_presence**: Maximum value to be considered present
   * **layer**: list of a
+
     * layer filename
-    * (optional) label for the encoded layer in the output matrix. Defaults to file
-        basename
-    * (optional) attribute
+    * (optional) label for the encoded layer in the output matrix. If no label is
+      provided for a layer file, the program will first look for another file in the
+      same directory with the same basename, and with the extension ".label".  If this
+      Defaults to the the first line of a file in the same directory and with the same
+      basename as lyr_filename and a ".label" extension, OR the basename of the layer
+      file.
+    * (optional) attribute. Defaults to None, using the pixel value for raster data.
+
+  * **layer_file_pattern**: File pattern that describes one or more input files.
+
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
@@ -119,17 +131,16 @@ Run encode_layers command
 
 Initiate the clean occurrences process with the following for linux/mac systems:
 
-```zsh
-bash run_tutorial.sh encode_layers data/config/encode_layers.json
-```
+.. code-block::
+      .\run_tutorial.sh encode_layers data/config/encode_layers.json
+
 
 **Note**: You may get the following warning.  This indicates that there is a window with no
 values, a common occurrence in most datasets, and may be safely ignored.
 
-```commandline
-RuntimeWarning: Mean of empty slice
-  window_mean = np.nanmean(window[np.where(window != nodata)])
-```
+.. code-block::
+    RuntimeWarning: Mean of empty slice
+        window_mean = np.nanmean(window[np.where(window != nodata)])
 
 --------------------------------
 Step 3: Calculate statistics for a PAM
@@ -142,13 +153,16 @@ Data preparation: Script parameter file
 ******************************************
 
 An example JSON file for running the calculate_pam_stats command is at
-`calculate_pam_stats <../../data/config/calculate_pam_stats.json>`_. These are the
-required and optional parameters:
+`calculate_pam_stats.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json>`_.
+These are the required and optional parameters:
 
 * Required:
+
   * **pam_filename**: The full filename to the input PAM file.
 
-* Optional 
+* Optional
+
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
@@ -167,9 +181,9 @@ Initiate the calculate_pam_stats process with the following:
 
 for linux/mac systems
 
-```zsh
-bash run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
-```
+.. code-block::
+      ./run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
+
 
 Output
 ******************************************
@@ -185,6 +199,6 @@ output files specified in the command configuration file.  Outputs may include:
 4. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
    and it is written to the covariance_matrix filename, where the statistic name is 
    appended to the end of the base file name.
-5. A "diversity_matrix" containing different diversity statistics 
-  * **site_stats_matrix**: The full filename for writing the site statistics matrix.
-  * **species_stats_matrix
+5. A "diversity_matrix" containing different diversity statistics.
+6. A "site_stats_matrix" containing site statistics.
+7. A "species_stats_matrix" containing species statistics.

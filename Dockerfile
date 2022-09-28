@@ -3,6 +3,7 @@ FROM osgeo/gdal:ubuntu-small-latest as backend
 RUN apt-get update && \
     apt-get install -y git && \
     apt-get install -y vim && \
+    apt-get install -y python3-rtree && \
     apt-get install -y python3-pip && \
     apt-get install -y default-jdk
 

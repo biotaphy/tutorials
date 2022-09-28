@@ -7,4 +7,6 @@ source project supported by NSF Awards NSF BIO-1458422, OCI-1234983, BIO/CIBR-19
 The aim of this repository is to provide instruction for using Biotaphy tools via
 Docker, either locally, or deployed to locations with more resources.
 
-`Lifemapper <../.static/lm_logo.png>`_
+.. image:: ../.static/lm_logo.png
+  :width: 150
+  :alt: Lifemapper

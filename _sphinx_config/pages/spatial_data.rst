@@ -18,8 +18,8 @@ Geospatial Data Terms
         examples of data generally represented as raster.
 
     Vector Data
-        Geospatial data best represented in vector format can be represented as
-        :term:`Point`s, :term:`Line`s, or :term:`Polygon`s.
+        Geospatial data best represented in vector format can be represented as a
+        :term:`Point`, :term:`Line`, or :term:`Polygon`.
 
     Point
         Points represent a single location on a 2 dimensional surface.  In

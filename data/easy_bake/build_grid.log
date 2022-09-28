@@ -1,0 +1,2 @@
+15 Sep 2022 11:26 INFO     build_grid: Build /volumes/output/global_2deg_grid.shp in EPSG:4326 with 4-sided cells of 2.0 size and x-extent -180 to 180, y-extent -90 to 90.
+15 Sep 2022 11:26 INFO     build_grid: Wrote /volumes/output/global_2deg_grid.shp with 16200 sites.
