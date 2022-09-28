@@ -48,6 +48,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#preparation">Preparation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#host-and-container-input-output-log-directories">Host and Container input, output, log directories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-preparation-script-parameters-file">Data preparation: Script parameters File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#docker-preparation">Docker preparation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#run-tool-tutorials">Run tool tutorials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#behind-the-scenes">Behind the scenes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#outputs">Outputs</a></li>
@@ -143,6 +144,24 @@ parameters reasonable for that command.  All required and optional parameters ar
 described in individual tutorial pages.</p>
 <p>Some tools will require an additional <a class="reference internal" href="../pages/glossary.html#term-JSON"><span class="xref std std-term">JSON</span></a> format configuration file.  In these
 cases, the additional JSON file will be named in the parameters file.</p>
+</section>
+<section id="docker-preparation">
+<h2>Docker preparation<a class="headerlink" href="#docker-preparation" title="Permalink to this heading"></a></h2>
+<p>Start Docker if it is not running. On Mac and Windows, start the Docker application.
+On Linux, check with</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">systemctl</span> <span class="n">status</span> <span class="n">docker</span>
+</pre></div>
+</div>
+<p>and if it is not running, run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">systemctl</span> <span class="n">start</span> <span class="n">docker</span>
+</pre></div>
+</div>
+<p>We can jump-start the process by building the volumes and image in a separate step.
+This step will take some time, approximately 5-7 minutes, depending on your local
+computer hardware and active software.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">build_all</span>
+</pre></div>
+</div>
 </section>
 <section id="run-tool-tutorials">
 <h2>Run tool tutorials<a class="headerlink" href="#run-tool-tutorials" title="Permalink to this heading"></a></h2>

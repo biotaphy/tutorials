@@ -65,8 +65,34 @@ Some tools will require an additional :term:`JSON` format configuration file.  I
 cases, the additional JSON file will be named in the parameters file.
 
 -------------------------------------------
+Docker preparation
+-------------------------------------------
+
+Start Docker if it is not running. On Mac and Windows, start the Docker application.
+On Linux, check with
+
+.. code-block::
+
+   systemctl status docker
+
+and if it is not running, run
+
+.. code-block::
+
+   systemctl start docker
+
+We can jump-start the process by building the volumes and image in a separate step.
+This step will take some time, approximately 5-7 minutes, depending on your local
+computer hardware and active software.
+
+.. code-block::
+
+   ./run_tutorial.sh build_all
+
+-------------------------------------------
 Run tool tutorials
 -------------------------------------------
+
 
 The "run_tutorial" script will run each tutorial with two arguments,
 the 1) command name and 2) parameters file.  The parameters file will be a path
