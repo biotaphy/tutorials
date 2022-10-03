@@ -49,6 +49,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#host-and-container-input-output-log-directories">Host and Container input, output, log directories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-preparation-script-parameters-file">Data preparation: Script parameters File</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#docker-preparation">Docker preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build-docker-volumes-and-image">Build Docker volumes and image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#run-tool-tutorials">Run tool tutorials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#behind-the-scenes">Behind the scenes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#outputs">Outputs</a></li>
@@ -156,10 +157,18 @@ On Linux, check with</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">systemctl</span> <span class="n">start</span> <span class="n">docker</span>
 </pre></div>
 </div>
+</section>
+<section id="build-docker-volumes-and-image">
+<h2>Build Docker volumes and image<a class="headerlink" href="#build-docker-volumes-and-image" title="Permalink to this heading"></a></h2>
 <p>We can jump-start the process by building the volumes and image in a separate step.
 This step will take some time, approximately 5-7 minutes, depending on your local
 computer hardware and active software.</p>
+<p>For MacOSX or Linux systems:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">build_all</span>
+</pre></div>
+</div>
+<p>For Windows systems:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">build_all</span>
 </pre></div>
 </div>
 </section>

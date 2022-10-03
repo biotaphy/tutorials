@@ -53,6 +53,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#input-wrangler-configuration-file">Input: Wrangler configuration file</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#update-tutorial">Update tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#run-tutorial">Run tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
 </ul>
@@ -129,11 +130,13 @@ These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
 <ul>
-<li><p><strong>reader_filename</strong>: The input CSV file of occurrence records.</p></li>
+<li><p><strong>reader_filename</strong>: The input CSV file of occurrence records.  The tutorial input
+input file is <a class="reference external" href="/volumes/data/input/heuchera.csv">heuchera.csv</a>.</p></li>
 <li><p><strong>writer_filename</strong>: A file location to write cleaned points.</p></li>
 <li><p><strong>wrangler_configuration_file</strong>: occurrence wrangler configuration file,
-described in the next section.  The tutorial example wrangler is described in the
-next section.</p></li>
+described in the next section.  The tutorial example wrangler is
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/occ_wrangle_resolve.json">occ_wrangle_resolve.json</a>
+and is described in the next section.</p></li>
 </ul>
 </li>
 <li><p>Optional</p>
@@ -174,11 +177,23 @@ configuration file <a class="reference external" href="https://github.com/biotap
 contains these parameters.</p>
 </section>
 </section>
+<section id="update-tutorial">
+<h2>Update tutorial<a class="headerlink" href="#update-tutorial" title="Permalink to this heading"></a></h2>
+<p>Change directory to the top directory in your cloned tutorials repository on your local
+computer, then update the repository.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>astewart:~/git/tutorials$ git pull
+</pre></div>
+</div>
+</section>
 <section id="run-tutorial">
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
 <p>Initiate the process with the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data cleaning and name resolution</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_occurrences_resolve</span><span class="o">.</span><span class="n">json</span>
+<p>For MacOSX or Linux systems:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_occurrences_resolve</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+<p>For Windows systems:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">wrangle_occurrences</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_occurrences_resolve</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>

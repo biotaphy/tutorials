@@ -39,11 +39,14 @@ These are the required and optional parameters:
 
 * Required:
 
-  * **reader_filename**: The input CSV file of occurrence records.
+  * **reader_filename**: The input CSV file of occurrence records.  The tutorial input
+    input file is `heuchera.csv </volumes/data/input/heuchera.csv>`_.
   * **writer_filename**: A file location to write cleaned points.
   * **wrangler_configuration_file**: occurrence wrangler configuration file,
-    described in the next section.  The tutorial example wrangler is described in the
-    next section.
+    described in the next section.  The tutorial example wrangler is
+    `occ_wrangle_resolve.json
+    <https://github.com/biotaphy/tutorials/blob/main/data/wranglers/occ_wrangle_resolve.json>`_
+    and is described in the next section.
 
 * Optional
 
@@ -84,16 +87,33 @@ contains these parameters.
 
 
 --------------------------------
+Update tutorial
+--------------------------------
+
+Change directory to the top directory in your cloned tutorials repository on your local
+computer, then update the repository.
+
+.. code-block::
+
+    astewart:~/git/tutorials$ git pull
+
+--------------------------------
 Run tutorial
 --------------------------------
 
 Initiate the process with the following:
 
+For MacOSX or Linux systems:
+
 .. code-block::
 
-        # Data cleaning and name resolution
-        ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_resolve.json
+   ./run_tutorial.sh wrangle_occurrences  data/config/wrangle_occurrences_resolve.json
 
+For Windows systems:
+
+.. code-block::
+
+   ./run_tutorial.bat wrangle_occurrences  data/config/wrangle_occurrences_resolve.json
 
 --------------------------------
 Output
