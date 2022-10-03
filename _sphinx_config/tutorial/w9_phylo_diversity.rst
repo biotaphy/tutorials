@@ -22,8 +22,8 @@ Data preparation: Script parameter file
 ******************************************
 
 A JSON parameter file is required for this command.  The tutorial parameter file
-is `wrangle_tree.json
-<https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_tree.json>`_.
+is `wrangle_matrix.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix.json>`_.
 These are the required and optional parameters:
 
 * Required:
@@ -34,7 +34,8 @@ These are the required and optional parameters:
     described in the next section.  The tutorial example wrangler configuration
     contains two wranglers, the MatchTreeMatrixWrangler and the 
     PurgeEmptySlicesWrangler, and is in
-    [matrix_wranglers.json](../../data/wranglers/matrix_wranglers.json)
+    `matrix_wranglers.json
+    <https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json>`_
 
 * Optional
 
@@ -81,8 +82,8 @@ Data preparation: Script parameter file
 ******************************************
 
 An example JSON file for running the calculate_pam_stats command is at
-`calculate_pam_stats.json
-<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json>`_.
+`calculate_pam_stats_pd.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats_pd.json>`_.
 These are the required and optional parameters:
 
 * Required:

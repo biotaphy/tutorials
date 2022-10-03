@@ -81,18 +81,29 @@ and if it is not running, run
 
    systemctl start docker
 
+--------------------------------
+Build Docker volumes and image
+--------------------------------
+
 We can jump-start the process by building the volumes and image in a separate step.
 This step will take some time, approximately 5-7 minutes, depending on your local
 computer hardware and active software.
+
+For MacOSX or Linux systems:
 
 .. code-block::
 
    ./run_tutorial.sh build_all
 
+For Windows systems:
+
+.. code-block::
+
+   ./run_tutorial.bat build_all
+
 -------------------------------------------
 Run tool tutorials
 -------------------------------------------
-
 
 The "run_tutorial" script will run each tutorial with two arguments,
 the 1) command name and 2) parameters file.  The parameters file will be a path
