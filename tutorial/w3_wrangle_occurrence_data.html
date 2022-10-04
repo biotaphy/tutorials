@@ -200,23 +200,21 @@ computer, then update the repository.</p>
 <section id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
 <p>This process outputs files configured in the script parameter file:</p>
-<ol class="arabic simple" start="2">
-<li><p>If <cite>report_filename</cite> is specified in the script parameter file, a summary of name
-resolutions, like
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_occurrences_resolve.log">wrangle_occurrences.log</a></p></li>
-<li><p>If <cite>log_filename</cite> is specified in the script parameter file, a report like
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_occurrences_resolve.rpt">wrangle_occurrences.rpt</a>
-containing a summary of the processing.</p></li>
-</ol>
-<ol class="arabic simple" start="3">
-<li><p>If <cite>log_console</cite> is specified in the script parameter file, logs will be written to
-the command prompt during execution.</p></li>
+<ol class="arabic simple">
 <li><p>an output file with occurrence records named in the writer_filename, like
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/heuchera_wrangled.csv">heuchera_wrangled.csv</a>
 containing the occurrence records, one record per line.  Note that the species_name
 field now contains the new taxonomic name resolved for each record.  If the
 original records contain other attributes, those will be retained with their
 original values.</p></li>
+<li><p>If <cite>report_filename</cite> is specified in the script parameter file, a summary of name
+resolutions, like
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_occurrences_resolve.log">wrangle_occurrences.log</a></p></li>
+<li><p>If <cite>log_filename</cite> is specified in the script parameter file, a report like
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_occurrences_resolve.rpt">wrangle_occurrences.rpt</a>
+containing a summary of the processing.</p></li>
+<li><p>If <cite>log_console</cite> is specified in the script parameter file, logs will be written to
+the command prompt during execution.</p></li>
 </ol>
 <p>If the wrangler configuration file contains the AcceptedNameOccurrenceWrangler, as in
 the command above, using the wrangle_occurrences_resolve.json configuration

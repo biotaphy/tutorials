@@ -121,6 +121,14 @@ Output
 
 This process outputs files configured in the script parameter file:
 
+1. an output file with occurrence records named in the writer_filename, like
+   `heuchera_wrangled.csv
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/heuchera_wrangled.csv>`_
+   containing the occurrence records, one record per line.  Note that the species_name
+   field now contains the new taxonomic name resolved for each record.  If the
+   original records contain other attributes, those will be retained with their
+   original values.
+
 2. If `report_filename` is specified in the script parameter file, a summary of name
    resolutions, like
    `wrangle_occurrences.log
@@ -129,15 +137,8 @@ This process outputs files configured in the script parameter file:
    `wrangle_occurrences.rpt
    <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_occurrences_resolve.rpt>`_
    containing a summary of the processing.
-3. If `log_console` is specified in the script parameter file, logs will be written to
+4. If `log_console` is specified in the script parameter file, logs will be written to
    the command prompt during execution.
-4. an output file with occurrence records named in the writer_filename, like
-   `heuchera_wrangled.csv
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/heuchera_wrangled.csv>`_
-   containing the occurrence records, one record per line.  Note that the species_name
-   field now contains the new taxonomic name resolved for each record.  If the
-   original records contain other attributes, those will be retained with their
-   original values.
 
 If the wrangler configuration file contains the AcceptedNameOccurrenceWrangler, as in
 the command above, using the wrangle_occurrences_resolve.json configuration

@@ -75,8 +75,8 @@ and reports specified in the Script parameter file.
 Step 2: Calculate stats with the updated PAM and associated Tree
 --------------------------------
 
-Now that a grid has been built, and a PAM has been populated by intersecting species
-distribution models with the grid, we calculate biogeographic statistics on that PAM.
+We have our grid and our PAM from Webinar 9 has been built, so we re-calculate
+biogeographic statistics on that PAM including the matching tree data.
 
 Data preparation: Script parameter file
 ******************************************
