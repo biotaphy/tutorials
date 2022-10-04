@@ -31,11 +31,13 @@ if %arg_count% gtr 1 ( set tmp_arg=%2 )
 call :trim HOST_CONFIG_FILE %tmp_arg%
 echo arg_count is %arg_count%, SCRIPT_NAME is %SCRIPT_NAME%, CMD is %CMD%,  HOST_CONFIG_FILE is %HOST_CONFIG_FILE%
 
-:: Set environment
-call:init_log
-call:set_global_vars
-
-call:run_command
+if %arg_count% eq 0 (
+    call:usage
+) else (
+    call:init_log
+    call:set_global_vars
+    call:run_command
+)
 
 call:time_stamp End
 exit /b 0
