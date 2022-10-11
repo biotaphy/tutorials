@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configure Data and Parameters &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Biotaphy Tutorials
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolving Nomenclature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling (SDM)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w8_build_pam.html">Webinar 8: Introducing Presence-Absence Matrices (PAMs)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w9_phylo_diversity.html">Webinar 9: Integrating Phylogenies with Species and Biogeographic Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_wrangle_species_list.html">Species List: Wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_wrangle_tree.html">Trees: Data and Wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Biotaphy Tutorials</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Configure Data and Parameters</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tutorial/configure_inputs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configure-data-and-parameters">
+<h1>Configure Data and Parameters<a class="headerlink" href="#configure-data-and-parameters" title="Permalink to this heading"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<p>The Biotaphy tutorials repository provides a template and structure that make it simple
+to run a Biotaphy tools with your own data and configuration.  The data and
+configuration files are organized into standard locations, and the
+<a class="reference external" href="script_params.rst">Script parameters file</a> aka <cite>The File that Rules them All</cite>,
+names the input data, configuration files, and other parameters for a command.</p>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<p>This tutorials repository may be placed anywhere on your local system where you have
+read/write permission.  The tutorials repository should be cloned using the <cite>git</cite>
+command at the command line:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">biotaphy</span><span class="o">/</span><span class="n">tutorials</span>
+</pre></div>
+</div>
+<p>For more information about setting up your environment, see the
+<a class="reference external" href="w1_overview.rst">Webinar 1: Tutorial Overview</a>.</p>
+<p>Cloning the repository places the contents of the repository in the directory of your
+choosing.  The top level directory is <cite>tutorials</cite>.</p>
+<p>All user-created data and configuration files should be placed in subdirectories of
+the tutorials/data directory, described below.</p>
+</section>
+<section id="primary-script-run-tutorial">
+<h2>Primary script: run_tutorial<a class="headerlink" href="#primary-script-run-tutorial" title="Permalink to this heading"></a></h2>
+<p>The run_tutorial script is in the top-level tutorials directory
+and has 2 versions: run_tutorial.bat is intended for Windows, and run_tutorial.sh
+runs on Linux and MacOSX.</p>
+<p>The run_tutorial script initiates Docker processes to support the Biotaphy tools,
+primarily running commands with user-input contained in a
+configuration file, from the local computer operating system.  The run_tutorial script
+also runs other housekeeping commands related to Biotaphy Docker images, containers,
+and volumes; these are primarily used for resetting after code modification, and
+debugging.</p>
+</section>
+<section id="file-sharing-data-directory">
+<h2>File sharing: data directory<a class="headerlink" href="#file-sharing-data-directory" title="Permalink to this heading"></a></h2>
+<p>Three directories under <cite>/tutorials/data</cite>: <cite>input</cite>, <cite>config</cite>, and <cite>wranglers</cite>, will
+be copied to the Docker volume <cite>data</cite>, then made available to the Docker container in
+the directory /volumes/data.  All files and subdirectories under these directories will
+be copied to the <cite>data</cite> volume and be available to the Docker container.</p>
+<section id="tutorials-data-config">
+<h3>tutorials/data/config<a class="headerlink" href="#tutorials-data-config" title="Permalink to this heading"></a></h3>
+<p><a class="reference external" href="script_params.rst">Script parameters files</a>  are to be placed in the
+tutorials/data/config directory.  These configuration files are used as the second
+argument to run_tutorial Biotaphy commands,
+i.e. <cite>run_tutorial.sh &lt;biotaphy_command&gt;  &lt;data/config/&lt;script_param_file&gt;</cite>.
+When calling a Biotaphy command through the run_tutorial script, the script parameter
+file argument must have the path to the file on the local filesystem.</p>
+<p>Because the Biotaphy command will be run <strong>inside</strong> the Docker container, the
+file parameters within this file will point to the location in the volume, for example,
+input data files will be in the path /volumes/data/input/.</p>
+</section>
+<section id="tutorials-data-easy-bake">
+<h3>tutorials/data/easy_bake<a class="headerlink" href="#tutorials-data-easy-bake" title="Permalink to this heading"></a></h3>
+<p>The tutorials/data/easy_bake directory is simply a placeholder for example outputs for
+the webinar series.  Data under this directory are not available to the Docker
+container.</p>
+</section>
+<section id="tutorials-data-env">
+<h3>tutorials/data/env<a class="headerlink" href="#tutorials-data-env" title="Permalink to this heading"></a></h3>
+<p>Environmental data are to be placed under the tutorials/data/env directory.  Files and
+subdirectories under this directory are available inside the Docker container through
+the /volumes/env directory.  Any environmental data or directories specified in the
+Script parameters file (parameter <cite>env_dir</cite> for create_sdm), should point to that
+location.</p>
+</section>
+<section id="tutorials-data-input">
+<h3>tutorials/data/input<a class="headerlink" href="#tutorials-data-input" title="Permalink to this heading"></a></h3>
+<p>Input data are to be placed in the tutorials/data/input directory.  Input data will be
+available inside the Docker container through the /volumes/data/input directory.  Any
+input data specified in the Script parameters file, should point to that
+location.</p>
+</section>
+<section id="tutorials-data-wranglers">
+<h3>tutorials/data/wranglers<a class="headerlink" href="#tutorials-data-wranglers" title="Permalink to this heading"></a></h3>
+<p>Wrangler files are to be placed in the tutorials/data/input directory.  Wrangler files
+will be available inside the Docker container through the /volumes/data/wranglers
+directory. Any wranglers specified in the Script parameters file, should point to that
+location.</p>
+</section>
+<section id="id1">
+<h3>tutorials/data/input<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<p>Input data are to be placed in the tutorials/data/input directory.  Input data will be
+available inside the Docker container through the /volumes/data/input directory.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Biotaphy Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
