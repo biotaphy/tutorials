@@ -8,5 +8,5 @@
     "max_presence": 1.0,
     "grid_filename": "/volumes/data/input/global_2deg_grid.shp",
     "out_matrix_filename": "/volumes/output/encode_layers.lmm",
-    "layer_file_pattern": "/volumes/data/easy_bake/heuchera_sdm/*/*.asc"
+    "layer_file_pattern": "/volumes/data/input/heuchera_sdm/*/*.asc"
 }
