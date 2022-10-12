@@ -104,8 +104,8 @@
 <h1>User Data and Parameters<a class="headerlink" href="#user-data-and-parameters" title="Permalink to this heading"></a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>The Biotaphy tutorials repository provides a template and structure that make it simple
-to run a Biotaphy tools with your own data and configuration.  The data and
+<p>The BiotaPhy tutorials repository provides a template and structure that make it simple
+to run any BiotaPhy tool with your own data and configuration.  The data and
 configuration files are organized into standard locations, and the
 <a class="reference external" href="../tutorial/script_params.rst">Script parameters file</a> aka <cite>The File that Rules them All</cite>,
 names the input data, configuration files, and other parameters for a command.</p>
@@ -118,63 +118,65 @@ command at the command line:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">biotaphy</span><span class="o">/</span><span class="n">tutorials</span>
 </pre></div>
 </div>
-<p>For more information about setting up your environment, see the
+<p>For more information about setting up your environment, see
 <a class="reference external" href="../tutorial/w1_overview.rst">Webinar 1: Tutorial Overview</a>.</p>
 <p>Cloning the repository places the contents of the repository in the directory of your
-choosing.  The top level directory of the repository is <cite>tutorials</cite>.</p>
+choosing.  The top level directory of the repository is called <cite>tutorials</cite>.</p>
 <p>All user-created data and configuration files should be placed in one of four
-subdirectories, <cite>config</cite>, <cite>env</cite>, <cite>input</cite>, <cite>wranglers</cite>, of the tutorials/data directory,
+subdirectories, <cite>config</cite>, <cite>env</cite>, <cite>input</cite>, <cite>wranglers</cite>, of the <cite>tutorials/data</cite> directory,
 described below.</p>
 </section>
 <section id="primary-script-run-tutorial">
 <h2>Primary script: run_tutorial<a class="headerlink" href="#primary-script-run-tutorial" title="Permalink to this heading"></a></h2>
-<p>The run_tutorial script is in the top-level tutorials directory
-and has 2 versions: run_tutorial.bat is intended for Windows, and run_tutorial.sh
+<p>The <cite>run_tutorial</cite> script is in the top-level <cite>tutorials</cite> directory
+and has 2 versions: <cite>run_tutorial.bat</cite> is intended for Windows, and <cite>run_tutorial.sh</cite>
 runs on Linux and MacOSX.</p>
-<p>The run_tutorial script initiates Docker processes to support the Biotaphy tools,
+<p>The <cite>run_tutorial</cite> script initiates Docker processes to support the BiotaPhy tools,
 primarily running commands with user-input contained in a
-configuration file, from the local computer operating system.  The run_tutorial script
-also runs other housekeeping commands related to Biotaphy Docker images, containers,
+configuration file, from the local computer operating system.  The <cite>run_tutorial</cite> script
+also runs other housekeeping commands related to BiotaPhy Docker images, containers,
 and volumes; these are primarily used for resetting after code modification, and
 debugging.</p>
 </section>
 <section id="file-sharing-user-inputs">
 <h2>File sharing: user inputs<a class="headerlink" href="#file-sharing-user-inputs" title="Permalink to this heading"></a></h2>
-<p>Three directories under <cite>/tutorials/data</cite>: <cite>input</cite>, <cite>config</cite>, and <cite>wranglers</cite>, will
-be copied to the Docker volume <cite>data</cite>, then made available to the Docker container in
-the directory /volumes/data.  All files and subdirectories under these directories will
-be copied to the <cite>data</cite> volume and be available to the Docker container.</p>
+<p>Four directories under <cite>/tutorials/data</cite>: <cite>env</cite>, <cite>input</cite>, <cite>config</cite>, and <cite>wranglers</cite>,
+will be copied to the Docker volume <cite>data</cite>, then made available to the Docker container
+in the directory <cite>/volumes/data</cite>.  All files and subdirectories under these directories
+will be copied to the <cite>data</cite> volume and be available to the Docker container.</p>
 <section id="tutorials-data-config">
 <h3>tutorials/data/config<a class="headerlink" href="#tutorials-data-config" title="Permalink to this heading"></a></h3>
 <p><a class="reference external" href="../tutorial/script_params.rst">Script parameters files</a>  are to be placed in the
-tutorials/data/config directory.  These configuration files are used as the second
-argument to run_tutorial Biotaphy commands,
-i.e. <cite>run_tutorial.sh &lt;biotaphy_command&gt;  &lt;data/config/&lt;script_param_file&gt;</cite>.
-When calling a Biotaphy command through the run_tutorial script, the script parameter
+<cite>tutorials/data/config</cite> directory.  These configuration files are used as the second
+argument to <cite>run_tutorial</cite> BiotaPhy commands, for example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="o">&lt;</span><span class="n">biotaphy_command</span><span class="o">&gt;</span>  <span class="o">&lt;</span><span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/&lt;</span><span class="n">script_param_file</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>When calling a BiotaPhy command through the <cite>run_tutorial</cite> script, the script parameter
 file argument must have the path to the file on the local filesystem.</p>
-<p>Because the Biotaphy command will be run <strong>inside</strong> the Docker container, the
+<p>Because the BiotaPhy command will be run <strong>inside</strong> the Docker container, the
 file parameters within this file will point to the location in the volume, for example,
-input data files will be in the path /volumes/data/input/.</p>
+input data files will be in the path <cite>/volumes/data/input/</cite>.</p>
 </section>
 <section id="tutorials-data-env">
 <h3>tutorials/data/env<a class="headerlink" href="#tutorials-data-env" title="Permalink to this heading"></a></h3>
-<p>Environmental data are to be placed under the tutorials/data/env directory.  Files and
+<p>Environmental data are to be placed under the <cite>tutorials/data/env</cite> directory.  Files and
 subdirectories under this directory are available inside the Docker container through
-the /volumes/env directory.  Any environmental data or directories specified in the
-Script parameters file (parameter <cite>env_dir</cite> for create_sdm), should point to the
-Docker container location.</p>
+the <cite>/volumes/env</cite> directory.  Any environmental data or directories specified in the
+Script parameters file (parameter <cite>env_dir</cite> for the <cite>create_sdm</cite> command), should point
+to the Docker container location.</p>
 </section>
 <section id="tutorials-data-input">
 <h3>tutorials/data/input<a class="headerlink" href="#tutorials-data-input" title="Permalink to this heading"></a></h3>
-<p>Input data are to be placed in the tutorials/data/input directory.  Input data will be
-available inside the Docker container through the /volumes/data/input directory.  Any
+<p>Input data are to be placed in the <cite>tutorials/data/input</cite> directory.  Input data will be
+available inside the Docker container through the <cite>/volumes/data/input</cite> directory.  Any
 input data specified in the Script parameters file, should point to the Docker container
 location.</p>
 </section>
 <section id="tutorials-data-wranglers">
 <h3>tutorials/data/wranglers<a class="headerlink" href="#tutorials-data-wranglers" title="Permalink to this heading"></a></h3>
-<p>Wrangler files are to be placed in the tutorials/data/wranglers directory.  Wrangler files
-will be available inside the Docker container through the /volumes/data/wranglers
+<p>Wrangler files are to be placed in the <cite>tutorials/data/wranglers</cite> directory.  Wrangler files
+will be available inside the Docker container through the <cite>/volumes/data/wranglers</cite>
 directory. Any wranglers specified in the Script parameters file, should point to the
 Docker container location.</p>
 </section>
@@ -183,14 +185,14 @@ Docker container location.</p>
 <h2>File sharing: output data<a class="headerlink" href="#file-sharing-output-data" title="Permalink to this heading"></a></h2>
 <p>Output files specified in the <a class="reference external" href="../tutorial/script_params.rst">Script parameters file</a>, such as
 <cite>report_filename</cite>, <cite>log_filename</cite>, <cite>writer_filename</cite>, should point to the
-Docker container /volumes/output directory.  The <cite>output</cite> Docker volume is created and
-made availble to the Docker container in this directory. Upon command completion,
+Docker container <cite>/volumes/output</cite> directory.  The <cite>output</cite> Docker volume is created and
+made available to the Docker container in this directory. Upon command completion,
 the contents of this directory are copied back to the local computer file system, in the
-tutorials/data/output directory.</p>
+<cite>tutorials/data/output</cite> directory.</p>
 </section>
 <section id="example-pre-computed-output">
 <h2>Example pre-computed output<a class="headerlink" href="#example-pre-computed-output" title="Permalink to this heading"></a></h2>
-<p>The <strong>tutorials/data/easy_bake</strong> directory is simply a placeholder for example outputs for
+<p>The <cite>tutorials/data/easy_bake</cite> directory is simply a placeholder for example outputs for
 the webinar series.  Data under this directory are <strong>not</strong> available to the Docker
 container.</p>
 </section>
