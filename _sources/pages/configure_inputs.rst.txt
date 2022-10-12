@@ -1,6 +1,6 @@
-==============================
-Configure Data and Parameters
-==============================
+==================================
+User Data and Parameters
+==================================
 
 --------------------------------
 Introduction
@@ -9,7 +9,7 @@ Introduction
 The Biotaphy tutorials repository provides a template and structure that make it simple
 to run a Biotaphy tools with your own data and configuration.  The data and
 configuration files are organized into standard locations, and the
-`Script parameters file <script_params.rst>`_ aka `The File that Rules them All`,
+`Script parameters file <../tutorial/script_params.rst>`_ aka `The File that Rules them All`,
 names the input data, configuration files, and other parameters for a command.
 
 --------------------------------
@@ -25,7 +25,7 @@ command at the command line:
    git clone https://github.com/biotaphy/tutorials
 
 For more information about setting up your environment, see the
-`Webinar 1: Tutorial Overview <w1_overview.rst>`_.
+`Webinar 1: Tutorial Overview <../tutorial/w1_overview.rst>`_.
 
 Cloning the repository places the contents of the repository in the directory of your
 choosing.  The top level directory of the repository is `tutorials`.
@@ -61,7 +61,7 @@ be copied to the `data` volume and be available to the Docker container.
 tutorials/data/config
 ^^^^^^^^^^^^^^^^^^^^^^
 
-`Script parameters files <script_params.rst>`_  are to be placed in the
+`Script parameters files <../tutorial/script_params.rst>`_  are to be placed in the
 tutorials/data/config directory.  These configuration files are used as the second
 argument to run_tutorial Biotaphy commands,
 i.e. `run_tutorial.sh <biotaphy_command>  <data/config/<script_param_file>`.
@@ -101,7 +101,7 @@ Docker container location.
 File sharing: output data
 --------------------------------
 
-Output files specified in the `Script parameters file <script_params.rst>`_, such as
+Output files specified in the `Script parameters file <../tutorial/script_params.rst>`_, such as
 `report_filename`, `log_filename`, `writer_filename`, should point to the
 Docker container /volumes/output directory.  The `output` Docker volume is created and
 made availble to the Docker container in this directory. Upon command completion,
