@@ -109,12 +109,9 @@ the contents of this directory are copied back to the local computer file system
 tutorials/data/output directory.
 
 --------------------------------
-Example output files not shared
+Example pre-computed output
 --------------------------------
 
-tutorials/data/easy_bake
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The tutorials/data/easy_bake directory is simply a placeholder for example outputs for
+The **tutorials/data/easy_bake** directory is simply a placeholder for example outputs for
 the webinar series.  Data under this directory are **not** available to the Docker
 container.
