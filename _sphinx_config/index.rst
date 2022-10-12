@@ -22,6 +22,7 @@ computations on a Docker instance.
     pages/glossary
     pages/references
     pages/spatial_data
+    pages/configure_inputs
 
 * :ref:`genindex`
 * :ref:`modindex`
