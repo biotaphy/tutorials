@@ -105,9 +105,10 @@ command at the command line:</p>
 <p>For more information about setting up your environment, see the
 <a class="reference external" href="w1_overview.rst">Webinar 1: Tutorial Overview</a>.</p>
 <p>Cloning the repository places the contents of the repository in the directory of your
-choosing.  The top level directory is <cite>tutorials</cite>.</p>
-<p>All user-created data and configuration files should be placed in subdirectories of
-the tutorials/data directory, described below.</p>
+choosing.  The top level directory of the repository is <cite>tutorials</cite>.</p>
+<p>All user-created data and configuration files should be placed in one of four
+subdirectories, <cite>config</cite>, <cite>env</cite>, <cite>input</cite>, <cite>wranglers</cite>, of the tutorials/data directory,
+described below.</p>
 </section>
 <section id="primary-script-run-tutorial">
 <h2>Primary script: run_tutorial<a class="headerlink" href="#primary-script-run-tutorial" title="Permalink to this heading"></a></h2>
@@ -121,8 +122,8 @@ also runs other housekeeping commands related to Biotaphy Docker images, contain
 and volumes; these are primarily used for resetting after code modification, and
 debugging.</p>
 </section>
-<section id="file-sharing-data-directory">
-<h2>File sharing: data directory<a class="headerlink" href="#file-sharing-data-directory" title="Permalink to this heading"></a></h2>
+<section id="file-sharing-user-inputs">
+<h2>File sharing: user inputs<a class="headerlink" href="#file-sharing-user-inputs" title="Permalink to this heading"></a></h2>
 <p>Three directories under <cite>/tutorials/data</cite>: <cite>input</cite>, <cite>config</cite>, and <cite>wranglers</cite>, will
 be copied to the Docker volume <cite>data</cite>, then made available to the Docker container in
 the directory /volumes/data.  All files and subdirectories under these directories will
@@ -139,38 +140,45 @@ file argument must have the path to the file on the local filesystem.</p>
 file parameters within this file will point to the location in the volume, for example,
 input data files will be in the path /volumes/data/input/.</p>
 </section>
-<section id="tutorials-data-easy-bake">
-<h3>tutorials/data/easy_bake<a class="headerlink" href="#tutorials-data-easy-bake" title="Permalink to this heading"></a></h3>
-<p>The tutorials/data/easy_bake directory is simply a placeholder for example outputs for
-the webinar series.  Data under this directory are not available to the Docker
-container.</p>
-</section>
 <section id="tutorials-data-env">
 <h3>tutorials/data/env<a class="headerlink" href="#tutorials-data-env" title="Permalink to this heading"></a></h3>
 <p>Environmental data are to be placed under the tutorials/data/env directory.  Files and
 subdirectories under this directory are available inside the Docker container through
 the /volumes/env directory.  Any environmental data or directories specified in the
-Script parameters file (parameter <cite>env_dir</cite> for create_sdm), should point to that
-location.</p>
+Script parameters file (parameter <cite>env_dir</cite> for create_sdm), should point to the
+Docker container location.</p>
 </section>
 <section id="tutorials-data-input">
 <h3>tutorials/data/input<a class="headerlink" href="#tutorials-data-input" title="Permalink to this heading"></a></h3>
 <p>Input data are to be placed in the tutorials/data/input directory.  Input data will be
 available inside the Docker container through the /volumes/data/input directory.  Any
-input data specified in the Script parameters file, should point to that
+input data specified in the Script parameters file, should point to the Docker container
 location.</p>
 </section>
 <section id="tutorials-data-wranglers">
 <h3>tutorials/data/wranglers<a class="headerlink" href="#tutorials-data-wranglers" title="Permalink to this heading"></a></h3>
-<p>Wrangler files are to be placed in the tutorials/data/input directory.  Wrangler files
+<p>Wrangler files are to be placed in the tutorials/data/wranglers directory.  Wrangler files
 will be available inside the Docker container through the /volumes/data/wranglers
-directory. Any wranglers specified in the Script parameters file, should point to that
-location.</p>
+directory. Any wranglers specified in the Script parameters file, should point to the
+Docker container location.</p>
 </section>
-<section id="id1">
-<h3>tutorials/data/input<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
-<p>Input data are to be placed in the tutorials/data/input directory.  Input data will be
-available inside the Docker container through the /volumes/data/input directory.</p>
+</section>
+<section id="file-sharing-output-data">
+<h2>File sharing: output data<a class="headerlink" href="#file-sharing-output-data" title="Permalink to this heading"></a></h2>
+<p>Output files specified in the <a class="reference external" href="script_params.rst">Script parameters file</a>, such as
+<cite>report_filename</cite>, <cite>log_filename</cite>, <cite>writer_filename</cite>, should point to the
+Docker container /volumes/output directory.  The <cite>output</cite> Docker volume is created and
+made availble to the Docker container in this directory. Upon command completion,
+the contents of this directory are copied back to the local computer file system, in the
+tutorials/data/output directory.</p>
+</section>
+<section id="example-output-files-not-shared">
+<h2>Example output files not shared<a class="headerlink" href="#example-output-files-not-shared" title="Permalink to this heading"></a></h2>
+<section id="tutorials-data-easy-bake">
+<h3>tutorials/data/easy_bake<a class="headerlink" href="#tutorials-data-easy-bake" title="Permalink to this heading"></a></h3>
+<p>The tutorials/data/easy_bake directory is simply a placeholder for example outputs for
+the webinar series.  Data under this directory are <strong>not</strong> available to the Docker
+container.</p>
 </section>
 </section>
 </section>
