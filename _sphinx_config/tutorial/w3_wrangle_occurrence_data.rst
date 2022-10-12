@@ -85,7 +85,6 @@ configuration file `occ_wrangle_resolve.json
 <https://github.com/biotaphy/tutorials/blob/main/data/wranglers/occ_wrangle_resolve.json>`_
 contains these parameters.
 
-
 --------------------------------
 Update tutorial
 --------------------------------
@@ -133,10 +132,12 @@ This process outputs files configured in the script parameter file:
    resolutions, like
    `wrangle_occurrences.log
    <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_occurrences_resolve.log>`_
+
 3. If `log_filename` is specified in the script parameter file, a report like
    `wrangle_occurrences.rpt
    <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_occurrences_resolve.rpt>`_
    containing a summary of the processing.
+
 4. If `log_console` is specified in the script parameter file, logs will be written to
    the command prompt during execution.
 

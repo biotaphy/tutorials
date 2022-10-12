@@ -28,10 +28,11 @@ For more information about setting up your environment, see the
 `Webinar 1: Tutorial Overview <w1_overview.rst>`_.
 
 Cloning the repository places the contents of the repository in the directory of your
-choosing.  The top level directory is `tutorials`.
+choosing.  The top level directory of the repository is `tutorials`.
 
-All user-created data and configuration files should be placed in subdirectories of
-the tutorials/data directory, described below.
+All user-created data and configuration files should be placed in one of four
+subdirectories, `config`, `env`, `input`, `wranglers`, of the tutorials/data directory,
+described below.
 
 --------------------------------
 Primary script: run_tutorial
@@ -49,7 +50,7 @@ and volumes; these are primarily used for resetting after code modification, and
 debugging.
 
 --------------------------------
-File sharing: data directory
+File sharing: user inputs
 --------------------------------
 
 Three directories under `/tutorials/data`: `input`, `config`, and `wranglers`, will
@@ -71,40 +72,49 @@ Because the Biotaphy command will be run **inside** the Docker container, the
 file parameters within this file will point to the location in the volume, for example,
 input data files will be in the path /volumes/data/input/.
 
-tutorials/data/easy_bake
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The tutorials/data/easy_bake directory is simply a placeholder for example outputs for
-the webinar series.  Data under this directory are not available to the Docker
-container.
-
 tutorials/data/env
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Environmental data are to be placed under the tutorials/data/env directory.  Files and
 subdirectories under this directory are available inside the Docker container through
 the /volumes/env directory.  Any environmental data or directories specified in the
-Script parameters file (parameter `env_dir` for create_sdm), should point to that
-location.
+Script parameters file (parameter `env_dir` for create_sdm), should point to the
+Docker container location.
 
 tutorials/data/input
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Input data are to be placed in the tutorials/data/input directory.  Input data will be
 available inside the Docker container through the /volumes/data/input directory.  Any
-input data specified in the Script parameters file, should point to that
+input data specified in the Script parameters file, should point to the Docker container
 location.
 
 tutorials/data/wranglers
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Wrangler files are to be placed in the tutorials/data/input directory.  Wrangler files
+Wrangler files are to be placed in the tutorials/data/wranglers directory.  Wrangler files
 will be available inside the Docker container through the /volumes/data/wranglers
-directory. Any wranglers specified in the Script parameters file, should point to that
-location.
+directory. Any wranglers specified in the Script parameters file, should point to the
+Docker container location.
 
-tutorials/data/input
-^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------
+File sharing: output data
+--------------------------------
 
-Input data are to be placed in the tutorials/data/input directory.  Input data will be
-available inside the Docker container through the /volumes/data/input directory.
+Output files specified in the `Script parameters file <script_params.rst>`_, such as
+`report_filename`, `log_filename`, `writer_filename`, should point to the
+Docker container /volumes/output directory.  The `output` Docker volume is created and
+made availble to the Docker container in this directory. Upon command completion,
+the contents of this directory are copied back to the local computer file system, in the
+tutorials/data/output directory.
+
+--------------------------------
+Example output files not shared
+--------------------------------
+
+tutorials/data/easy_bake
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The tutorials/data/easy_bake directory is simply a placeholder for example outputs for
+the webinar series.  Data under this directory are **not** available to the Docker
+container.
