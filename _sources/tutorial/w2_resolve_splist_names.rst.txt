@@ -73,13 +73,13 @@ Initiate the process with the following:
 
 .. code-block::
 
-       ./run_tutorial.sh wrangle_species_list data/config/wrangle_species_list_gbif.json
+    ./run_tutorial.sh wrangle_species_list data/config/wrangle_species_list_gbif.json
 
 For Windows systems:
 
 .. code-block::
 
-   ./run_tutorial.bat wrangle_species_list data/config/wrangle_species_list_gbif.json
+    ./run_tutorial.bat wrangle_species_list data/config/wrangle_species_list_gbif.json
 
 ---------------------------
 Output
@@ -88,11 +88,11 @@ This process outputs files configured in the script parameter file:
 
 2. If `report_filename` is specified in the script parameter file, a summary of name
    resolutions, like
-   `wrangle_species_list_gbif.log
-   ll <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_species_list_gbif.log>`_
-3. If `log_filename` is specified in the script parameter file, a report like
    `wrangle_species_list_gbif.rpt
    <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_species_list_gbif.rpt>`_
+3. If `log_filename` is specified in the script parameter file, a report like
+   `wrangle_species_list_gbif.log
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_species_list_gbif.log>`_
    containing a summary of the processing.
 3. If `log_console` is specified in the script parameter file, logs will be written to
    the command prompt during execution.

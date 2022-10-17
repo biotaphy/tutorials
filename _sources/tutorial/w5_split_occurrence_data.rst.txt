@@ -137,13 +137,20 @@ Output
 Most outputs are configured in the script parameter file, and may include:
 
 1. A "report_filename" named in the script parameter file, a summary of point
-   manipulations by each wrangler will be written to this file. 
+   manipulations by each wrangler will be written to this file.
+   `split_resolve.rpt
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/split_resolve.rpt>`_
 2. A "log_filename" named in the script parameter file, that will be created. 
+   `split_resolve.log
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/split_resolve.;pg>`_
 3. A "log_console" named in the script parameter file, logs will be written to the
     command prompt during execution.
 4. A directory, named in the out_dir parameter, of output CSV files, one per species (or 
    other grouping field).  The basename of each CSV file will be named by the value in 
-   the grouping field.  
+   the grouping field.  The tutorial example outputs for this command have been moved to
+   the`data/input` directory, since we will use them in a later exercise.
+   `split_resolve
+   <https://github.com/biotaphy/tutorials/blob/main/data/input/split_resolve>`_
 
 The process also produces outputs according to the wrangler configuration file:
 

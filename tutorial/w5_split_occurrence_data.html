@@ -219,8 +219,10 @@ computer, then update the repository.</p>
 <p>Most outputs are configured in the script parameter file, and may include:</p>
 <ol class="arabic simple">
 <li><p>A “report_filename” named in the script parameter file, a summary of point
-manipulations by each wrangler will be written to this file.</p></li>
-<li><p>A “log_filename” named in the script parameter file, that will be created.</p></li>
+manipulations by each wrangler will be written to this file.
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/split_resolve.rpt">split_resolve.rpt</a></p></li>
+<li><p>A “log_filename” named in the script parameter file, that will be created.
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/split_resolve.;pg">split_resolve.log</a></p></li>
 <li><dl class="simple">
 <dt>A “log_console” named in the script parameter file, logs will be written to the</dt><dd><p>command prompt during execution.</p>
 </dd>
@@ -228,7 +230,9 @@ manipulations by each wrangler will be written to this file.</p></li>
 </li>
 <li><p>A directory, named in the out_dir parameter, of output CSV files, one per species (or
 other grouping field).  The basename of each CSV file will be named by the value in
-the grouping field.</p></li>
+the grouping field.  The tutorial example outputs for this command have been moved to
+the`data/input` directory, since we will use them in a later exercise.
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/split_resolve">split_resolve</a></p></li>
 </ol>
 <p>The process also produces outputs according to the wrangler configuration file:</p>
 <ol class="arabic simple">
