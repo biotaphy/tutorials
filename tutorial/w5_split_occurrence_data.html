@@ -54,7 +54,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#input-wrangler-configuration-file">Input: Wrangler configuration file</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#run-tutorial-with-dwca-data">Run tutorial with DwCA data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-tutorial">Update tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-tutorial">Run tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
 </ul>
 </li>
@@ -100,7 +101,8 @@
              
   <section id="webinar-5-split-and-merge-occurrence-data-by-species">
 <h1>Webinar 5: Split and merge occurrence data by species<a class="headerlink" href="#webinar-5-split-and-merge-occurrence-data-by-species" title="Permalink to this heading"></a></h1>
-<p>Split one or more occurrence datasets by species.
+<p>Split one or more occurrence datasets by species.  This tool will split a large dataset
+into separate files, grouped by species name.
 If we are splitting more than one dataset, records in different datasets with the same
 species name will be combined into one file.  The tool allows multiple operations,
 defined in a configuration file, to be applied to the data at the same time, just like
@@ -119,13 +121,15 @@ tutorials work.</p>
 <section id="input-occurrence-records">
 <h3>Input: occurrence records<a class="headerlink" href="#input-occurrence-records" title="Permalink to this heading"></a></h3>
 <p>The split_occurrence_data tool accepts one or more datasets, each must be either a
-Darwin Core Archive (DwCA) file or a CSV file containing records for one or more taxa.</p>
-<p>More information is in the <strong>Occurrence Data</strong> section of
-<a class="reference external" href="data_wrangle_occurrence">data_wrangle_occurrence</a>.</p>
+Darwin Core Archive (DwCA) file or a CSV file containing records for one or more taxa.
+More information is in the <strong>Occurrence Data</strong> section of
+<a class="reference external" href="data_wrangle_occurrence">Specimen Occurrences: Data and Wrangling</a>.  In our tutorial
+example, we will specify a CSV file downloaded from GBIF, and a DwCA file from iDigbio,
+so the output will be data merged from both data sources, and split by species name.</p>
 </section>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
-<p>A JSON parameter file is required for this command.  The parameter file in our first
+<p>A JSON parameter file is required for this command.  The parameter file in our
 example is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/split_gbif.json">split_gbif.json</a>.
 This one splits GBIF data, which already contains accepted names, so we can skip name
 resolution.</p>
@@ -148,20 +152,22 @@ does not exist, it will be created</p></li>
 files. If this field is left out, all fields from the first successfully processed
 record will be included in outputs.</p></li>
 <li><p><strong>dwca</strong>: This is an optional argument, but either this, or <strong>csv</strong>, must be
-provided.  List of 0 or more lists, each containing 2 arguments</p>
+provided.  List of 0 or more lists, each containing 2 arguments.</p>
 <ul>
 <li><p>input DwCA file, and</p></li>
-<li><p>occurrence data wrangler configuration file (described in the next section).</p></li>
+<li><p>occurrence data wrangler configuration file (described in the previous section).</p></li>
 </ul>
 </li>
-<li><p><strong>csv</strong>: This is an optional argument, but either this, or <strong>dwca</strong>, must be provided.
-List of 0 or more lists, each containing 5 arguments</p>
+<li><p><strong>csv</strong>: This is an optional argument, but either this, or <strong>dwca</strong>, must be
+provided.  List of 0 or more lists, each containing 5 arguments.</p>
 <ul>
 <li><p>input CSV file</p></li>
 <li><p>occurrence data wrangler configuration file (described in the next section).</p></li>
 <li><p>fieldname for grouping data (often a taxonomic designation such as scientificName)</p></li>
 <li><p>fieldname for the longitude/x coordinate</p></li>
 <li><p>fieldname for the latitude/y coordinate</p></li>
+<li><p>fieldname for the JSON-encoded geopoint (iDigBio data uses this field), with
+sub-elements containing the x and y fieldnames.</p></li>
 </ul>
 </li>
 <li><p><strong>species_list_filename</strong>: File location to write list of species seen (after
@@ -181,25 +187,30 @@ More information on file format, available wrangler types, and the required and/
 optional parameters for each are in the <strong>Occurrence Wrangler Types</strong> section
 of <a class="reference external" href="data_wrangle_occurrence">data_wrangle_occurrence</a>.  The file is specified in the
 Script parameter file described above.</p>
-<p>In the first example, we
-will split occurrence data, but not perform any other wrangling on it, so our wrangler
-configuration file <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/no_wrangle.json">no_wrangle.json</a>
-contains an empty list.</p>
-<p>A second example wrangler configuration file <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/occ_resolve.json">occ_resolve.json</a>
+<p>An example wrangler configuration file <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/occ_resolve.json">occ_resolve.json</a>
 resolves names with GBIF before grouping the data by name.</p>
 <p>If more than one dataset is being processed, it is logical to apply the same wranglers
 to each.</p>
 </section>
 </section>
-<section id="run-tutorial-with-dwca-data">
-<h2>Run tutorial with DwCA data<a class="headerlink" href="#run-tutorial-with-dwca-data" title="Permalink to this heading"></a></h2>
-<p>Initiate the split_occurrence_data process with the following:
+<section id="update-tutorial">
+<h2>Update tutorial<a class="headerlink" href="#update-tutorial" title="Permalink to this heading"></a></h2>
+<p>Change directory to the top directory in your cloned tutorials repository on your local
+computer, then update the repository.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>astewart:~/git/tutorials$ git pull
+</pre></div>
+</div>
+</section>
+<section id="run-tutorial">
+<h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
+<p>Initiate the split_occurrence_data process with the following:</p>
+<p>For MacOSX or Linux systems:
 .. code-block:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># split GBIF CSV data on species, no wrangling</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_gbif</span><span class="o">.</span><span class="n">json</span>
-
-<span class="c1"># resolve GBIF CSV and iDigBio DwCA data by species, and split on the resolved names</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_resolve</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_resolve</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+<p>For Windows systems:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_resolve</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>

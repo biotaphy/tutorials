@@ -148,6 +148,12 @@ attributes, and they will be filled with the values from the original fields def
 containing these types of data.  When resolving names with the
 AcceptedNameOccurrenceWrangler, new resolved name will be updated in the
 “species_name” field.</p>
+<p><strong>Note</strong>: iDigBio DwCA files contain the geographic
+coordinates within a JSON encoded field named <cite>geopoint</cite>, with internal coordinate
+fields <cite>lat</cite> and <cite>lon</cite>.  GBIF DwCA files use the DwC standard fields <cite>decimalLatitude</cite>
+and <cite>decimalLongitude</cite>.  Both schemas are handled automatically when providing
+occurrence data as DwCA files.  If providing iDigBio sourced data as a CSV file, the
+<cite>geopoint</cite> parameter must be specified, as well as the <cite>x_key</cite> and <cite>y_key</cite>.</p>
 </section>
 <section id="wrangler-configuration-file">
 <h2>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading"></a></h2>

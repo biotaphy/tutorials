@@ -2,7 +2,8 @@
 Webinar 5: Split and merge occurrence data by species
 ================================================================
 
-Split one or more occurrence datasets by species.
+Split one or more occurrence datasets by species.  This tool will split a large dataset
+into separate files, grouped by species name.
 If we are splitting more than one dataset, records in different datasets with the same
 species name will be combined into one file.  The tool allows multiple operations, 
 defined in a configuration file, to be applied to the data at the same time, just like
@@ -28,14 +29,15 @@ Input: occurrence records
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The split_occurrence_data tool accepts one or more datasets, each must be either a 
 Darwin Core Archive (DwCA) file or a CSV file containing records for one or more taxa.
-
 More information is in the **Occurrence Data** section of 
-`data_wrangle_occurrence <data_wrangle_occurrence>`_.
+`Specimen Occurrences: Data and Wrangling <data_wrangle_occurrence>`_.  In our tutorial
+example, we will specify a CSV file downloaded from GBIF, and a DwCA file from iDigbio,
+so the output will be data merged from both data sources, and split by species name.
 
 Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A JSON parameter file is required for this command.  The parameter file in our first
+A JSON parameter file is required for this command.  The parameter file in our
 example is `split_gbif.json
 <https://github.com/biotaphy/tutorials/blob/main/data/config/split_gbif.json>`_.
 This one splits GBIF data, which already contains accepted names, so we can skip name
@@ -61,19 +63,21 @@ These are the required and optional parameters:
     files. If this field is left out, all fields from the first successfully processed
     record will be included in outputs.
   * **dwca**: This is an optional argument, but either this, or **csv**, must be
-    provided.  List of 0 or more lists, each containing 2 arguments
+    provided.  List of 0 or more lists, each containing 2 arguments.
 
     * input DwCA file, and
-    * occurrence data wrangler configuration file (described in the next section).
+    * occurrence data wrangler configuration file (described in the previous section).
 
-  * **csv**: This is an optional argument, but either this, or **dwca**, must be provided.
-    List of 0 or more lists, each containing 5 arguments
+  * **csv**: This is an optional argument, but either this, or **dwca**, must be
+    provided.  List of 0 or more lists, each containing 5 arguments.
 
     * input CSV file
     * occurrence data wrangler configuration file (described in the next section).
     * fieldname for grouping data (often a taxonomic designation such as scientificName)
     * fieldname for the longitude/x coordinate
     * fieldname for the latitude/y coordinate
+    * fieldname for the JSON-encoded geopoint (iDigBio data uses this field), with
+      sub-elements containing the x and y fieldnames.
 
   * **species_list_filename**: File location to write list of species seen (after
     wrangling).
@@ -91,31 +95,41 @@ optional parameters for each are in the **Occurrence Wrangler Types** section
 of `data_wrangle_occurrence <data_wrangle_occurrence>`_.  The file is specified in the
 Script parameter file described above.
 
-In the first example, we
-will split occurrence data, but not perform any other wrangling on it, so our wrangler
-configuration file `no_wrangle.json
-<https://github.com/biotaphy/tutorials/blob/main/data/wranglers/no_wrangle.json>`_
-contains an empty list.
-
-A second example wrangler configuration file `occ_resolve.json
+An example wrangler configuration file `occ_resolve.json
 <https://github.com/biotaphy/tutorials/blob/main/data/wranglers/occ_resolve.json>`_
 resolves names with GBIF before grouping the data by name.
 
 If more than one dataset is being processed, it is logical to apply the same wranglers
 to each.
 
+--------------------------------
+Update tutorial
+--------------------------------
 
-------------------------------------------------
-Run tutorial with DwCA data
-------------------------------------------------
-Initiate the split_occurrence_data process with the following:
+Change directory to the top directory in your cloned tutorials repository on your local
+computer, then update the repository.
+
 .. code-block::
 
-  # split GBIF CSV data on species, no wrangling
-  ./run_tutorial.sh split_occurrence_data data/config/split_gbif.json
+    astewart:~/git/tutorials$ git pull
 
-  # resolve GBIF CSV and iDigBio DwCA data by species, and split on the resolved names
+--------------------------------
+Run tutorial
+--------------------------------
+
+Initiate the split_occurrence_data process with the following:
+
+For MacOSX or Linux systems:
+.. code-block::
+
   ./run_tutorial.sh split_occurrence_data data/config/split_resolve.json
+
+For Windows systems:
+
+.. code-block::
+
+   ./run_tutorial.bat split_occurrence_data data/config/split_resolve.json
+
 
 ------------------------------------------------
 Output
