@@ -78,7 +78,7 @@ These are the required and optional parameters:
     `y` (which is also the default value created in CSV data output from
     split_occurrence_data and wrangle_occurrences).
   * **maxent_params**: Extra options and parameters to be sent to Maxent.  A full list
-    of Maxent parameters, long with the value type, and sometimes a valid range of
+    of Maxent parameters, along with the value type, and sometimes a valid range of
     values, is available in the
     `Maxent Github repository
     <https://github.com/mrmaxent/Maxent/blob/master/density/parameters.csv>`_.
@@ -100,6 +100,12 @@ Initiate the create_sdm process with the following:
 .. code-block::
       ./run_tutorial.sh create_sdm data/config/create_sdm.json
 
+
+For Windows systems:
+
+.. code-block::
+
+   ./run_tutorial.bat  create_sdm  data/config/create_sdm.json
 
 -----------------------------------
 Output
