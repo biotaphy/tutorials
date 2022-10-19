@@ -59,9 +59,7 @@ These are the required and optional parameters:
 * Optional:
 
   * **max_open_writers**: The maximum number of data writers to have open at once.
-  * **out_field**: The field name or names of columns to be included in output CSV
-    files. If this field is left out, all fields from the first successfully processed
-    record will be included in outputs.
+  * **out_field**: IGNORE THIS FOR NOW
   * **dwca**: This is an optional argument, but either this, or **csv**, must be
     provided.  List of 0 or more lists, each containing 2 arguments.
 
