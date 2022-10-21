@@ -16,7 +16,10 @@ tutorials work.
 Step 1: Cleanup the matrix
 --------------------
 
-Subset the matrix to the tree species and remove empty (all zeros) rows and columns.
+Subset the matrix to the tree species, so that statistics can be built on the
+intersection of species between the phylogentic tree and the matrix.  We will trim the
+matrix of all species that do not occur in the tree. We will also remove any empty
+(all zeros) rows and columns.
 
 Data preparation: Script parameter file
 ******************************************
@@ -76,7 +79,8 @@ Step 2: Calculate stats with the updated PAM and associated Tree
 --------------------------------
 
 We have our grid and our PAM from Webinar 9 has been built, so we re-calculate
-biogeographic statistics on that PAM including the matching tree data.
+biogeographic statistics on that PAM including phylogenetic diversity statistics
+which employ the matching tree data.
 
 Data preparation: Script parameter file
 ******************************************

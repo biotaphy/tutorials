@@ -122,5 +122,8 @@ Most outputs are configured in the script parameter file, and may include:
    input occurrence data file.  Each subdirectory will be named by the value in 
    the grouping field and contain a predicted distribution raster in ASCII format.  
    Occurrence data that were modeled with Maxent will also contain Maxent outputs.
-   A subset of species outputs from the above command are in the directory `heuchera_sdm
-   <https://github.com/biotaphy/tutorials/tree/main/data/easy_bake/heuchera_sdm>`_.
+   Species outputs from the above command are in the directory `heuchera_rfolk_sdm
+   <https://github.com/biotaphy/tutorials/tree/main/data/input/heuchera_rfolk_sdm>`_.
+   The data are in the `input` directory instead of `easy_bake` because we will use these
+   data as input to `encode_layers` which builds a Presence-Absence Matrix, described
+   in `Webinar 8 <w8_build_pam>`_.

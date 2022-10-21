@@ -115,7 +115,10 @@ tutorials work.</p>
 </section>
 <section id="step-1-cleanup-the-matrix">
 <h2>Step 1: Cleanup the matrix<a class="headerlink" href="#step-1-cleanup-the-matrix" title="Permalink to this heading"></a></h2>
-<p>Subset the matrix to the tree species and remove empty (all zeros) rows and columns.</p>
+<p>Subset the matrix to the tree species, so that statistics can be built on the
+intersection of species between the phylogentic tree and the matrix.  We will trim the
+matrix of all species that do not occur in the tree. We will also remove any empty
+(all zeros) rows and columns.</p>
 <section id="data-preparation-script-parameter-file">
 <h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
@@ -167,7 +170,8 @@ and reports specified in the Script parameter file.</p>
 <section id="step-2-calculate-stats-with-the-updated-pam-and-associated-tree">
 <h2>Step 2: Calculate stats with the updated PAM and associated Tree<a class="headerlink" href="#step-2-calculate-stats-with-the-updated-pam-and-associated-tree" title="Permalink to this heading"></a></h2>
 <p>We have our grid and our PAM from Webinar 9 has been built, so we re-calculate
-biogeographic statistics on that PAM including the matching tree data.</p>
+biogeographic statistics on that PAM including phylogenetic diversity statistics
+which employ the matching tree data.</p>
 <section id="id1">
 <h3>Data preparation: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <p>An example JSON file for running the calculate_pam_stats command is at
