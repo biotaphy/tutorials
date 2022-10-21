@@ -9,5 +9,5 @@
     "points_dir": "/volumes/data/input/heuchera_rfolk",
     "env_dir":  "/volumes/env/worldclim1.4",
     "ecoregions_filename":  "/volumes/data/input/ecoreg_10min_global.tif",
-    "out_dir": "/volumes/output/heuchera_rfolk"
+    "out_dir": "/volumes/output/heuchera_rfolk_sdm"
 }
