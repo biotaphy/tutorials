@@ -51,6 +51,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data Preparation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#input-occurrence-records">Input: occurrence records</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-environmental-layers">Input: environmental layers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#input-ecoregions-file">Input: ecoregions file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
 </ul>
@@ -122,10 +123,17 @@ the occurrence datasets must use the same species_key, x_key, and y_key, specifi
 the configuration file.</p>
 <p>More information is in the <strong>Occurrence Data</strong> section of <a class="reference external" href="data_wrangle_occurrence#occurrence-data">data_wrangle_occurrence</a>.</p>
 </section>
+<section id="input-environmental-layers">
+<h3>Input: environmental layers<a class="headerlink" href="#input-environmental-layers" title="Permalink to this heading"></a></h3>
+<p>The environmental layers files are raster files of environmental data relevant to the
+species being modeled.  Maxent, the only SDM algorithm offered in Biotaphy tools,
+requires environmental layers in ASCII format.  Environmental layers are identified in
+the script parameter file by their parent directory.</p>
+</section>
 <section id="input-ecoregions-file">
 <h3>Input: ecoregions file<a class="headerlink" href="#input-ecoregions-file" title="Permalink to this heading"></a></h3>
 <p>The ecoregions file is a raster file indicating broad ecoregions for the region
-being modeled.</p>
+being modeled.  This file can be in ASCII or GeoTiff format.</p>
 </section>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
@@ -138,8 +146,9 @@ being modeled.</p>
 <li><p><strong>out_dir</strong>: Parent directory where the output species directories containing output
 data should be written.  If the directory does not exist, it will be created</p></li>
 <li><p><strong>env_dir</strong>: Directory containing the environmental raster files for modeling and
-projecting species distributions.</p></li>
-<li><p><strong>ecoregions_filename</strong>: Raster file denoting ecologically and geographically defined
+projecting species distributions.  These files must be in ASCII format.</p></li>
+<li><p><strong>ecoregions_filename</strong>: Raster file, in ASCII or GeoTiff format, denoting
+ecologically and geographically defined
 regions to be used for modeling rare species or as a mask for the Maxent algorithm.</p></li>
 </ul>
 </li>
@@ -200,7 +209,7 @@ command prompt during execution.</p></li>
 input occurrence data file.  Each subdirectory will be named by the value in
 the grouping field and contain a predicted distribution raster in ASCII format.
 Occurrence data that were modeled with Maxent will also contain Maxent outputs.
-Species outputs from the above command are in the directory <a class="reference external" href="https://github.com/biotaphy/tutorials/tree/main/data/input/heuchera_rfolk_sdm">heuchera_rfolk_sdm</a>.
+Sample outputs from the above command are in the directory <a class="reference external" href="https://github.com/biotaphy/tutorials/tree/main/data/input/heuchera_rfolk_sdm">heuchera_rfolk_sdm</a>.
 The data are in the <cite>input</cite> directory instead of <cite>easy_bake</cite> because we will use these
 data as input to <cite>encode_layers</cite> which builds a Presence-Absence Matrix, described
 in <a class="reference external" href="w8_build_pam">Webinar 8</a>.</p></li>
