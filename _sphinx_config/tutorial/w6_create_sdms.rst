@@ -32,11 +32,19 @@ the configuration file.
 More information is in the **Occurrence Data** section of `data_wrangle_occurrence
 <data_wrangle_occurrence#occurrence-data>`_.
 
+Input: environmental layers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The environmental layers files are raster files of environmental data relevant to the
+species being modeled.  Maxent, the only SDM algorithm offered in Biotaphy tools,
+requires environmental layers in ASCII format.  Environmental layers are identified in
+the script parameter file by their parent directory.
+
 Input: ecoregions file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The ecoregions file is a raster file indicating broad ecoregions for the region
-being modeled.
+being modeled.  This file can be in ASCII or GeoTiff format.
 
 
 Input: Script parameter file
@@ -53,8 +61,9 @@ These are the required and optional parameters:
   * **out_dir**: Parent directory where the output species directories containing output 
     data should be written.  If the directory does not exist, it will be created
   * **env_dir**: Directory containing the environmental raster files for modeling and 
-    projecting species distributions.
-  * **ecoregions_filename**: Raster file denoting ecologically and geographically defined 
+    projecting species distributions.  These files must be in ASCII format.
+  * **ecoregions_filename**: Raster file, in ASCII or GeoTiff format, denoting
+    ecologically and geographically defined
     regions to be used for modeling rare species or as a mask for the Maxent algorithm.
 
 * Optional:
@@ -122,7 +131,7 @@ Most outputs are configured in the script parameter file, and may include:
    input occurrence data file.  Each subdirectory will be named by the value in 
    the grouping field and contain a predicted distribution raster in ASCII format.  
    Occurrence data that were modeled with Maxent will also contain Maxent outputs.
-   Species outputs from the above command are in the directory `heuchera_rfolk_sdm
+   Sample outputs from the above command are in the directory `heuchera_rfolk_sdm
    <https://github.com/biotaphy/tutorials/tree/main/data/input/heuchera_rfolk_sdm>`_.
    The data are in the `input` directory instead of `easy_bake` because we will use these
    data as input to `encode_layers` which builds a Presence-Absence Matrix, described
