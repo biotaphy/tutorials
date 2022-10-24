@@ -1,83 +1,74 @@
-Fri Oct 21 20:05:08 GMT 2022
+Mon Oct 24 19:49:55 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
+Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Heuchera_hirsutissima.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 15415296
-Extractor: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 2095104
+Read samples: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 19609600
+Extractor: max memory 32178700288, total allocated 2118123520, free 2090125312, used 27998208, increment 8388608
 Extracting random background and sample data
-27 points with values for all grids
-Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk/heuchera_hirsutissima/Heuchera_hirsutissima.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk/heuchera_hirsutissima nowarnings nocache autorun -z togglelayertype=mask
-Time since start: 1.001
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk/heuchera_hirsutissima samplesfile=/volumes/output/heuchera_rfolk/heuchera_hirsutissima/Heuchera_hirsutissima.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
-Species: Heuchera_hirsutissima
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
-outputdirectory: /volumes/output/heuchera_rfolk/heuchera_hirsutissima
-samplesfile: /volumes/output/heuchera_rfolk/heuchera_hirsutissima/Heuchera_hirsutissima.csv
-environmentallayers: /volumes/env/worldclim1.4
-warnings: false
-autorun: true
-visible: false
-cache: false
-
-getSamples: max memory 32178700288, total allocated 2118123520, free 1870055816, used 248067704, increment 230557304
-Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1863766408, used 254357112, increment 6289408
-Heuchera_hirsutissima: 
-Regularization values: linear/quadratic/product: 1.000, categorical: 0.605, threshold: 1.970, hinge: 0.500
-3 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1863766408, used 254357112, increment 0
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1863766408, used 254357112, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1863766408, used 254357112, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1863766408, used 254357112, increment 0
-Initial loss: 3.295836866004329
-20: time = 0.002000 loss = 3.295837
-Resulting gain: 0.0
-Leaving out Fixed cumulative value 5 from threshold table, as uninitialized
-Leaving out Fixed cumulative value 10 from threshold table, as uninitialized
-Projecting...
-Writing file /volumes/output/heuchera_rfolk/heuchera_hirsutissima/Heuchera_hirsutissima.asc
-Writing /volumes/output/heuchera_rfolk/heuchera_hirsutissima/plots/Heuchera_hirsutissima.png
-Time since start: 2.047
+Warning: Sample at -116.6746, 33.8358 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.6746, 33.8358
+Warning: Sample at -116.66667, 33.86667 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.66667, 33.86667
+Warning: Sample at -116.6824, 33.8681 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.6824, 33.8681
+Warning: Sample at -116.74167, 33.81667 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.74167, 33.81667
+Warning: Sample at -116.6793, 33.8145 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.6793, 33.8145
+Warning: Sample at -116.67944, 33.81472 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.67944, 33.81472
+Warning: Sample at -116.67942, 33.81473 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.67942, 33.81473
+Warning: Sample at -116.6782, 33.8135 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.6782, 33.8135
+Warning: Sample at -116.69722, 33.80889 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.69722, 33.80889
+Warning: Sample at -116.67917, 33.81472 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.67917, 33.81472
+Warning: Sample at -116.6794, 33.8147 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.6794, 33.8147
+Warning: Sample at -116.6794, 33.8146 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.6794, 33.8146
+Warning: Sample at -116.67954, 33.81473 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.67954, 33.81473
+Warning: Sample at -116.6733, 33.7569 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.6733, 33.7569
+Warning: Sample at -116.6745, 33.7515 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.6745, 33.7515
+Warning: Sample at -116.675, 33.75833 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.675, 33.75833
+Warning: Sample at -116.67714, 33.75554 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.67714, 33.75554
+Warning: Sample at -116.6768311, 33.7554555 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.6768311, 33.7554555
+Warning: Sample at -116.67623, 33.75547 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.67623, 33.75547
+Warning: Sample at -116.63737, 33.78008 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.63737, 33.78008
+Warning: Sample at -116.63389, 33.70694 in Heuchera_hirsutissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.63389, 33.70694
+Time since start: 1.878
+0 points with values for all grids
+No background points with data in all layers
+java.lang.Exception
+	at density.Utils.logError(Utils.java:218)
+	at density.Utils.popupError(Utils.java:224)
+	at density.Runner.popupError(Runner.java:107)
+	at density.Runner.start(Runner.java:328)
+	at density.MaxEnt.main(MaxEnt.java:59)
 Ending

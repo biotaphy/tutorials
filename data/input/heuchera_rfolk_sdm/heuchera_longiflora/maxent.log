@@ -1,81 +1,156 @@
-Fri Oct 21 20:03:38 GMT 2022
+Mon Oct 24 19:49:06 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
+Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Heuchera_longiflora.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2104807424, used 13316096, increment 13316096
-Extractor: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 2099200
+Read samples: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 21704704
+Extractor: max memory 32178700288, total allocated 2118123520, free 2088030208, used 30093312, increment 8388608
 Extracting random background and sample data
-752 points with values for all grids
-Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk/heuchera_longiflora/Heuchera_longiflora.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk/heuchera_longiflora nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk/heuchera_longiflora samplesfile=/volumes/output/heuchera_rfolk/heuchera_longiflora/Heuchera_longiflora.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
-Species: Heuchera_longiflora
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
-outputdirectory: /volumes/output/heuchera_rfolk/heuchera_longiflora
-samplesfile: /volumes/output/heuchera_rfolk/heuchera_longiflora/Heuchera_longiflora.csv
-environmentallayers: /volumes/env/worldclim1.4
-warnings: false
-autorun: true
-visible: false
-cache: false
-
-getSamples: max memory 32178700288, total allocated 2118123520, free 1870013704, used 248109816, increment 232694520
-Making features
-Time since start: 1.033
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1861625096, used 256498424, increment 8388608
-Heuchera_longiflora: 
-Regularization values: linear/quadratic/product: 0.239, categorical: 0.250, threshold: 1.660, hinge: 0.500
-34 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1857430792, used 260692728, increment 4194304
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1857430792, used 260692728, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1857430792, used 260692728, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1857430792, used 260692728, increment 0
-Initial loss: 6.62273632394984
-500: time = 0.524000 loss = 5.513517
-Resulting gain: 1.1092188786321922
-Projecting...
-Writing file /volumes/output/heuchera_rfolk/heuchera_longiflora/Heuchera_longiflora.asc
-Time since start: 2.386
-Writing /volumes/output/heuchera_rfolk/heuchera_longiflora/plots/Heuchera_longiflora.png
+Warning: Sample at -83.39583333, 38.78861111 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.39583333, 38.78861111
+Warning: Sample at -83.40777778, 38.70416667 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.40777778, 38.70416667
+Warning: Sample at -83.34721111, 38.66141111 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.34721111, 38.66141111
+Warning: Sample at -83.34555627, 38.66595236 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.34555627, 38.66595236
+Warning: Sample at -83.11386634, 38.35498908 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.11386634, 38.35498908
+Warning: Sample at -83.46536, 38.109446 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.46536, 38.109446
+Warning: Sample at -83.237625, 38.120321 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.237625, 38.120321
+Warning: Sample at -82.689296, 38.120298 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.689296, 38.120298
+Warning: Sample at -83.713053, 38.024256 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.713053, 38.024256
+Warning: Sample at -82.868289, 37.945645 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.868289, 37.945645
+Warning: Sample at -83.66698204, 37.82016669 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.66698204, 37.82016669
+Warning: Sample at -83.68094214, 37.77398085 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.68094214, 37.77398085
+Warning: Sample at -82.913271, 37.669838 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.913271, 37.669838
+Warning: Sample at -83.770767, 37.630466 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.770767, 37.630466
+Warning: Sample at -82.552182, 37.571918 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.552182, 37.571918
+Warning: Sample at -82.469045, 37.402118 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.469045, 37.402118
+Warning: Sample at -82.321779, 37.30031 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.321779, 37.30031
+Warning: Sample at -86.384603, 37.14044 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -86.384603, 37.14044
+Warning: Sample at -82.968671, 37.102275 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.968671, 37.102275
+Warning: Sample at -82.668385, 37.103742 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.668385, 37.103742
+Warning: Sample at -82.855198, 37.03199 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.855198, 37.03199
+Warning: Sample at -82.88166, 36.951195 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.88166, 36.951195
+Warning: Sample at -82.451286, 36.923512 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.451286, 36.923512
+Warning: Sample at -82.747757, 36.855818 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.747757, 36.855818
+Warning: Sample at -82.777372, 36.704114 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.777372, 36.704114
+Warning: Sample at -83.38428747, 36.58929173 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.38428747, 36.58929173
+Warning: Sample at -83.36261235, 36.58473187 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.36261235, 36.58473187
+Warning: Sample at -83.37254913, 36.58389548 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.37254913, 36.58389548
+Warning: Sample at -83.59121918, 36.55404278 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.59121918, 36.55404278
+Warning: Sample at -83.42268204, 36.5586294 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.42268204, 36.5586294
+Warning: Sample at -83.35781289, 36.5811953 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.35781289, 36.5811953
+Warning: Sample at -83.47539178, 36.51913251 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.47539178, 36.51913251
+Warning: Sample at -82.76671446, 36.46325491 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.76671446, 36.46325491
+Warning: Sample at -82.68940144, 36.46199205 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.68940144, 36.46199205
+Warning: Sample at -82.70285274, 36.48435073 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.70285274, 36.48435073
+Warning: Sample at -82.83108223, 36.42701311 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.83108223, 36.42701311
+Warning: Sample at -82.80260671, 36.44318158 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.80260671, 36.44318158
+Warning: Sample at -82.79909968, 36.44492122 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.79909968, 36.44492122
+Warning: Sample at -82.78053789, 36.45535289 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.78053789, 36.45535289
+Warning: Sample at -82.8543708, 36.37718803 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.8543708, 36.37718803
+Warning: Sample at -82.73379771, 36.38928499 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.73379771, 36.38928499
+Warning: Sample at -82.98008389, 36.35571437 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.98008389, 36.35571437
+Warning: Sample at -82.92731448, 36.350544 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.92731448, 36.350544
+Warning: Sample at -82.8670702, 36.35969055 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.8670702, 36.35969055
+Warning: Sample at -82.80082515, 36.3567087 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.80082515, 36.3567087
+Warning: Sample at -83.02440243, 36.3170532 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.02440243, 36.3170532
+Warning: Sample at -82.96545149, 36.30068141 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.96545149, 36.30068141
+Warning: Sample at -82.93708472, 36.32246643 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.93708472, 36.32246643
+Warning: Sample at -83.00342436, 36.29074808 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.00342436, 36.29074808
+Warning: Sample at -82.72077954, 36.03200129 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.72077954, 36.03200129
+Warning: Sample at -82.96138386, 35.97016588 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.96138386, 35.97016588
+Warning: Sample at -82.94241001, 35.91887453 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.94241001, 35.91887453
+Warning: Sample at -82.750078, 35.928649 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.750078, 35.928649
+Warning: Sample at -82.717192, 35.952358 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.717192, 35.952358
+Warning: Sample at -83.12670335, 35.88403159 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -83.12670335, 35.88403159
+Warning: Sample at -82.756719, 35.912885 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.756719, 35.912885
+Warning: Sample at -82.84305556, 35.85416667 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.84305556, 35.85416667
+Warning: Sample at -82.85666667, 35.83583333 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.85666667, 35.83583333
+Warning: Sample at -82.871331, 35.78443 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.871331, 35.78443
+Warning: Sample at -82.87247788, 35.74671514 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -82.87247788, 35.74671514
+Warning: Sample at -86.359859, 33.226985 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -86.359859, 33.226985
+Warning: Sample at -86.25417, 33.14584 in Heuchera_longiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -86.25417, 33.14584
+Time since start: 1.884
+0 points with values for all grids
+No background points with data in all layers
+java.lang.Exception
+	at density.Utils.logError(Utils.java:218)
+	at density.Utils.popupError(Utils.java:224)
+	at density.Runner.popupError(Runner.java:107)
+	at density.Runner.start(Runner.java:328)
+	at density.MaxEnt.main(MaxEnt.java:59)
 Ending

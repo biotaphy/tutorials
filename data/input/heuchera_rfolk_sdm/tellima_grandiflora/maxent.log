@@ -1,83 +1,1035 @@
-Fri Oct 21 20:04:16 GMT 2022
+Mon Oct 24 19:49:32 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
+Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Tellima_grandiflora.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 21704704
-Extractor: max memory 32178700288, total allocated 2118123520, free 2090125312, used 27998208, increment 6293504
+Read samples: max memory 32178700288, total allocated 2118123520, free 2090125312, used 27998208, increment 27998208
+Warning: Sample at -145.01, 60.98 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -153.53333, 57.78333 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -153.05, 58.15 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -158.7, 56.26 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -153.77, 58.62 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -152.36, 58.23 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -143.76, 60.09 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -152.66667, 58.42778 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -153.83, 57.72 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -162.71, 55.15 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -149.75, 61.05 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -151.7, 59.43 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -158.5, 56.33 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -149.43, 60.1 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -145.66, 60.56 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -149.45, 60.1 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -149.66, 60.2 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -157.28, 57.16 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -152.97, 59.95 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -154.3433, 57.0702 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -153.01, 59.93 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -152.36667, 58.23333 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -153.03, 59.88 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -153.07417, 57.17223 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -152.564, 58.342 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -163.42996, 54.84892 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -141.4858, 60.1039 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -149.2, 60.56 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -143.84, 60.04 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -140.2765278, 60.04142521 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -144.38, 60.18 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -146.26, 61.11 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -154.037, 57.644 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -158.0637109, 56.78143681 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -144.38, 59.93 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -152.41, 57.83 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at -151.33, 59.55 in Tellima_grandiflora.csv is outside the bounding box of environmental data, skipping
+Extractor: max memory 32178700288, total allocated 2118123520, free 2079641600, used 38481920, increment 10483712
 Extracting random background and sample data
-Time since start: 1.018
-7266 points with values for all grids
-Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk/tellima_grandiflora/Tellima_grandiflora.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk/tellima_grandiflora nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk/tellima_grandiflora samplesfile=/volumes/output/heuchera_rfolk/tellima_grandiflora/Tellima_grandiflora.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
-Species: Tellima_grandiflora
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
-outputdirectory: /volumes/output/heuchera_rfolk/tellima_grandiflora
-samplesfile: /volumes/output/heuchera_rfolk/tellima_grandiflora/Tellima_grandiflora.csv
-environmentallayers: /volumes/env/worldclim1.4
-warnings: false
-autorun: true
-visible: false
-cache: false
-
-getSamples: max memory 32178700288, total allocated 2118123520, free 1849999352, used 268124168, increment 240125960
-Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1796826584, used 321296936, increment 53172768
-Tellima_grandiflora: 
-Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
-294 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1761918968, used 356204552, increment 34907616
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1761918968, used 356204552, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1761918968, used 356204552, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1761918968, used 356204552, increment 0
-Initial loss: 8.890961212781146
-Time since start: 6.32
-500: time = 4.608000 loss = 7.906359
-Resulting gain: 0.9846024681558827
-Projecting...
-Writing file /volumes/output/heuchera_rfolk/tellima_grandiflora/Tellima_grandiflora.asc
-Time since start: 7.395
-Writing /volumes/output/heuchera_rfolk/tellima_grandiflora/plots/Tellima_grandiflora.png
-Time since start: 10.095
+Warning: Sample at -135.32, 59.58 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -135.32, 59.58
+Warning: Sample at -139.25, 59.5 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -139.25, 59.5
+Warning: Sample at -136.38333, 59.46667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -136.38333, 59.46667
+Warning: Sample at -138.93, 59.43 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -138.93, 59.43
+Warning: Sample at -136.367, 59.45 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -136.367, 59.45
+Warning: Sample at -138.1, 59.39 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -138.1, 59.39
+Warning: Sample at -136.11, 59.28 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -136.11, 59.28
+Warning: Sample at -134.5095, 58.7962 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -134.5095, 58.7962
+Warning: Sample at -136.33, 58.63 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -136.33, 58.63
+Warning: Sample at -134.38, 58.31 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -134.38, 58.31
+Warning: Sample at -134.41, 58.3 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -134.41, 58.3
+Warning: Sample at -134.4, 58.3 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -134.4, 58.3
+Warning: Sample at -135.05, 57.83 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -135.05, 57.83
+Warning: Sample at -135.33, 57.05 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -135.33, 57.05
+Warning: Sample at -134.38, 56.71 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -134.38, 56.71
+Warning: Sample at -130.5, 56.5 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -130.5, 56.5
+Warning: Sample at -129.4, 56.45 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -129.4, 56.45
+Warning: Sample at -134.32, 55.92 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -134.32, 55.92
+Warning: Sample at -134.25, 55.88 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -134.25, 55.88
+Warning: Sample at -130.13, 55.91 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -130.13, 55.91
+Warning: Sample at -133.56, 55.71 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -133.56, 55.71
+Warning: Sample at -122.66667, 55.45 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.66667, 55.45
+Warning: Sample at -130.5, 55.4 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -130.5, 55.4
+Warning: Sample at -131.65, 55.33 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -131.65, 55.33
+Warning: Sample at -133.25, 55.18 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -133.25, 55.18
+Warning: Sample at -127.583, 55.117 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -127.583, 55.117
+Warning: Sample at -127.4, 55.1 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -127.4, 55.1
+Warning: Sample at -128.61667, 54.76667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -128.61667, 54.76667
+Warning: Sample at -129.33333, 54.33333 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -129.33333, 54.33333
+Warning: Sample at -121.66667, 54.06667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.66667, 54.06667
+Warning: Sample at -121.53333, 53.85 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.53333, 53.85
+Warning: Sample at -132.13333, 53.15 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -132.13333, 53.15
+Warning: Sample at -126.75, 52.383 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -126.75, 52.383
+Warning: Sample at -120.06667, 52.4 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.06667, 52.4
+Warning: Sample at -126.717, 52.367 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -126.717, 52.367
+Warning: Sample at -125.08333, 50.86667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -125.08333, 50.86667
+Warning: Sample at -117.86667, 50.61667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.86667, 50.61667
+Warning: Sample at -119.2, 50.45 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.2, 50.45
+Warning: Sample at -118.8, 50.45 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.8, 50.45
+Warning: Sample at -117.21667, 50.06667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.21667, 50.06667
+Warning: Sample at -117.13333, 50.03333 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.13333, 50.03333
+Warning: Sample at -114.96667, 49.66667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -114.96667, 49.66667
+Warning: Sample at -123.3, 49.51667 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.3, 49.51667
+Warning: Sample at -122.83333, 49.5 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.83333, 49.5
+Warning: Sample at -122.7, 49.51667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.7, 49.51667
+Warning: Sample at -117.28333, 49.46667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.28333, 49.46667
+Warning: Sample at -123.25, 49.33333 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.25, 49.33333
+Warning: Sample at -123.13333, 49.3 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.13333, 49.3
+Warning: Sample at -123.25, 49.25 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.25, 49.25
+Warning: Sample at -123.26667, 49.28333 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.26667, 49.28333
+Warning: Sample at -123.21667, 49.28333 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.21667, 49.28333
+Warning: Sample at -123.16667, 49.25 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.16667, 49.25
+Warning: Sample at -123.16667, 49.26667 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.16667, 49.26667
+Warning: Sample at -123.2, 49.26667 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.2, 49.26667
+Warning: Sample at -123.15, 49.25 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.15, 49.25
+Warning: Sample at -123.15, 49.28333 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.15, 49.28333
+Warning: Sample at -123.11667, 49.25 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.11667, 49.25
+Warning: Sample at -122.93333, 49.25 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.93333, 49.25
+Warning: Sample at -122.88333, 49.25 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.88333, 49.25
+Warning: Sample at -122.8343205, 49.26638234 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.8343205, 49.26638234
+Warning: Sample at -122.83333, 49.25 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.83333, 49.25
+Warning: Sample at -122.41667, 49.2 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.41667, 49.2
+Warning: Sample at -121.75, 49.18333 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.75, 49.18333
+Warning: Sample at -121.7176269, 49.09972337 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.7176269, 49.09972337
+Warning: Sample at -124.35, 49.08333 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.35, 49.08333
+Warning: Sample at -122.35, 49.08333 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.35, 49.08333
+Warning: Sample at -122.2, 49.06667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2, 49.06667
+Warning: Sample at -121.98333, 49.05 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.98333, 49.05
+Warning: Sample at -117.8, 49.08333 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.8, 49.08333
+Warning: Sample at -121.98412, 49.04055 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.98412, 49.04055
+Warning: Sample at -120.93333, 49.0 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.93333, 49.0
+Warning: Sample at -123.05, 48.98333 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.05, 48.98333
+Warning: Sample at -123.48332, 48.93249 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.48332, 48.93249
+Warning: Sample at -123.48298, 48.9331 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.48298, 48.9331
+Warning: Sample at -124.48788, 48.91263 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.48788, 48.91263
+Warning: Sample at -123.34488, 48.87002 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.34488, 48.87002
+Warning: Sample at -123.7, 48.78333 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.7, 48.78333
+Warning: Sample at -123.36667, 48.76667 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.36667, 48.76667
+Warning: Sample at -123.21667, 48.75 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.21667, 48.75
+Warning: Sample at -123.21667, 48.76667 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.21667, 48.76667
+Warning: Sample at -122.91997, 48.75472 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.91997, 48.75472
+Warning: Sample at -122.84196, 48.74791 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.84196, 48.74791
+Warning: Sample at -121.1557, 48.72972 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.1557, 48.72972
+Warning: Sample at -123.21056, 48.67472 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.21056, 48.67472
+Warning: Sample at -123.28333, 48.63333 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.28333, 48.63333
+Warning: Sample at -123.1729, 48.66315 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.1729, 48.66315
+Warning: Sample at -124.35028, 48.58722 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.35028, 48.58722
+Warning: Sample at -122.75284, 48.61003 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.75284, 48.61003
+Warning: Sample at -122.614, 48.6129 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.614, 48.6129
+Warning: Sample at -122.55555, 48.53528 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.55555, 48.53528
+Warning: Sample at -123.33417, 48.49514 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.33417, 48.49514
+Warning: Sample at -123.34167, 48.49167 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.34167, 48.49167
+Warning: Sample at -123.02445, 48.46216 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.02445, 48.46216
+Warning: Sample at -121.62528, 48.475 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.62528, 48.475
+Warning: Sample at -121.06523, 48.47713 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.06523, 48.47713
+Warning: Sample at -123.73333, 48.43333 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.73333, 48.43333
+Warning: Sample at -122.96278, 48.45028 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.96278, 48.45028
+Warning: Sample at -122.89444, 48.42222 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.89444, 48.42222
+Warning: Sample at -123.725, 48.375 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.725, 48.375
+Warning: Sample at -122.7175, 48.19694 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.7175, 48.19694
+Warning: Sample at -122.52694, 48.17417 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.52694, 48.17417
+Warning: Sample at -122.6775, 48.16444 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.6775, 48.16444
+Warning: Sample at -122.49111, 48.14389 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.49111, 48.14389
+Warning: Sample at -122.7877, 48.07642 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.7877, 48.07642
+Warning: Sample at -122.76954, 48.05785 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.76954, 48.05785
+Warning: Sample at -121.50778, 48.06611 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.50778, 48.06611
+Warning: Sample at -121.47068, 48.06829 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.47068, 48.06829
+Warning: Sample at -121.39278, 47.98583 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.39278, 47.98583
+Warning: Sample at -122.7086, 47.91765 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.7086, 47.91765
+Warning: Sample at -122.34349, 47.83762 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.34349, 47.83762
+Warning: Sample at -121.69706, 47.85677 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.69706, 47.85677
+Warning: Sample at -121.67736, 47.85476 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.67736, 47.85476
+Warning: Sample at -122.37611, 47.81083 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.37611, 47.81083
+Warning: Sample at -122.26392, 47.76384 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.26392, 47.76384
+Warning: Sample at -120.91719, 47.76582 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.91719, 47.76582
+Warning: Sample at -123.13168, 47.73075 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.13168, 47.73075
+Warning: Sample at -122.36975, 47.71162 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.36975, 47.71162
+Warning: Sample at -122.36864, 47.71157 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.36864, 47.71157
+Warning: Sample at -122.29915, 47.74932 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.29915, 47.74932
+Warning: Sample at -122.30804, 47.67246 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.30804, 47.67246
+Warning: Sample at -122.12028, 47.67417 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.12028, 47.67417
+Warning: Sample at -122.7745, 47.65681 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.7745, 47.65681
+Warning: Sample at -122.42169, 47.66267 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.42169, 47.66267
+Warning: Sample at -122.41781, 47.6613 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.41781, 47.6613
+Warning: Sample at -122.31079, 47.63542 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.31079, 47.63542
+Warning: Sample at -122.30919, 47.6527 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.30919, 47.6527
+Warning: Sample at -122.30223, 47.66032 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.30223, 47.66032
+Warning: Sample at -122.30898, 47.65223 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.30898, 47.65223
+Warning: Sample at -122.29567, 47.6375 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.29567, 47.6375
+Warning: Sample at -122.3084, 47.63547 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.3084, 47.63547
+Warning: Sample at -122.33083, 47.60639 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.33083, 47.60639
+Warning: Sample at -122.40861, 47.57639 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.40861, 47.57639
+Warning: Sample at -122.40179, 47.57578 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.40179, 47.57578
+Warning: Sample at -122.39703, 47.57398 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.39703, 47.57398
+Warning: Sample at -122.39954, 47.57421 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.39954, 47.57421
+Warning: Sample at -122.40295, 47.57102 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.40295, 47.57102
+Warning: Sample at -123.74556, 47.48889 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.74556, 47.48889
+Warning: Sample at -122.38111, 47.45056 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.38111, 47.45056
+Warning: Sample at -122.20412, 47.44251 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.20412, 47.44251
+Warning: Sample at -122.17026, 47.42304 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.17026, 47.42304
+Warning: Sample at -122.31842, 47.37522 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.31842, 47.37522
+Warning: Sample at -121.8755, 47.398 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8755, 47.398
+Warning: Sample at -121.88262, 47.38911 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.88262, 47.38911
+Warning: Sample at -122.32473, 47.37377 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.32473, 47.37377
+Warning: Sample at -122.17883, 47.31083 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.17883, 47.31083
+Warning: Sample at -122.88333, 47.06667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.88333, 47.06667
+Warning: Sample at -122.70133, 47.05675 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.70133, 47.05675
+Warning: Sample at -122.28278, 46.89809 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.28278, 46.89809
+Warning: Sample at -122.7675, 46.86467 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.7675, 46.86467
+Warning: Sample at -122.29514, 46.83894 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.29514, 46.83894
+Warning: Sample at -122.30944, 46.84139 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.30944, 46.84139
+Warning: Sample at -122.95306, 46.71639 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.95306, 46.71639
+Warning: Sample at -122.18639, 46.65083 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.18639, 46.65083
+Warning: Sample at -123.95012, 46.38346 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.95012, 46.38346
+Warning: Sample at -123.66906, 46.26742 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.66906, 46.26742
+Warning: Sample at -123.81624, 46.1814 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.81624, 46.1814
+Warning: Sample at -123.81375, 46.18116 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.81375, 46.18116
+Warning: Sample at -123.82509, 46.17721 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.82509, 46.17721
+Warning: Sample at -122.18888, 46.19893 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.18888, 46.19893
+Warning: Sample at -123.9314, 46.1349 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.9314, 46.1349
+Warning: Sample at -123.87688, 46.12653 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.87688, 46.12653
+Warning: Sample at -123.01171, 46.14689 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.01171, 46.14689
+Warning: Sample at -123.7233, 45.9888 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.7233, 45.9888
+Warning: Sample at -123.6842, 45.9692 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.6842, 45.9692
+Warning: Sample at -123.68, 45.9597 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.68, 45.9597
+Warning: Sample at -123.68893, 45.96216 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.68893, 45.96216
+Warning: Sample at -123.8528, 45.8609 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.8528, 45.8609
+Warning: Sample at -121.41433, 45.8377 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.41433, 45.8377
+Warning: Sample at -122.66028, 45.75472 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.66028, 45.75472
+Warning: Sample at -123.90302, 45.71575 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.90302, 45.71575
+Warning: Sample at -122.8192, 45.7223 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.8192, 45.7223
+Warning: Sample at -121.8091, 45.689 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8091, 45.689
+Warning: Sample at -121.8102, 45.6908 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8102, 45.6908
+Warning: Sample at -121.5203, 45.7056 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.5203, 45.7056
+Warning: Sample at -123.6115, 45.6272 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.6115, 45.6272
+Warning: Sample at -121.7706, 45.6476 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.7706, 45.6476
+Warning: Sample at -122.76566, 45.59428 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.76566, 45.59428
+Warning: Sample at -122.00065, 45.60937 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.00065, 45.60937
+Warning: Sample at -123.9422, 45.57 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.9422, 45.57
+Warning: Sample at -122.25, 45.5439 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.25, 45.5439
+Warning: Sample at -122.25639, 45.56 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.25639, 45.56
+Warning: Sample at -122.176, 45.5553 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -122.176, 45.5553
+Warning: Sample at -122.1742, 45.5592 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -122.1742, 45.5592
+Warning: Sample at -122.1153, 45.5685 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.1153, 45.5685
+Warning: Sample at -122.10887, 45.5731 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.10887, 45.5731
+Warning: Sample at -123.7167, 45.5167 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.7167, 45.5167
+Warning: Sample at -123.00864, 45.51501 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.00864, 45.51501
+Warning: Sample at -123.03726, 45.52094 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.03726, 45.52094
+Warning: Sample at -122.71623, 45.53247 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.71623, 45.53247
+Warning: Sample at -122.7084, 45.5407 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.7084, 45.5407
+Warning: Sample at -122.68387, 45.50338 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.68387, 45.50338
+Warning: Sample at -122.69074, 45.5023 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.69074, 45.5023
+Warning: Sample at -122.675, 45.5236 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.675, 45.5236
+Warning: Sample at -122.62774, 45.53996 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.62774, 45.53996
+Warning: Sample at -122.59689, 45.51613 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.59689, 45.51613
+Warning: Sample at -122.2386, 45.5397 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2386, 45.5397
+Warning: Sample at -122.0892, 45.5311 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.0892, 45.5311
+Warning: Sample at -122.84426, 45.49891 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.84426, 45.49891
+Warning: Sample at -122.65356, 45.47221 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.65356, 45.47221
+Warning: Sample at -122.67949, 45.43846 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.67949, 45.43846
+Warning: Sample at -122.77348, 45.39412 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.77348, 45.39412
+Warning: Sample at -122.75726, 45.30258 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.75726, 45.30258
+Warning: Sample at -121.7408, 45.3011 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.7408, 45.3011
+Warning: Sample at -123.9831, 45.1069 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.9831, 45.1069
+Warning: Sample at -122.04155, 45.08021 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.04155, 45.08021
+Warning: Sample at -123.1984, 44.9431 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.1984, 44.9431
+Warning: Sample at -123.0339, 44.9431 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.0339, 44.9431
+Warning: Sample at -123.42, 44.9 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.42, 44.9
+Warning: Sample at -123.2249, 44.8759 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2249, 44.8759
+Warning: Sample at -124.0667, 44.8083 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -124.0667, 44.8083
+Warning: Sample at -123.2328, 44.7651 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2328, 44.7651
+Warning: Sample at -123.2659, 44.7145 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2659, 44.7145
+Warning: Sample at -122.3203, 44.695 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.3203, 44.695
+Warning: Sample at -122.8969, 44.6353 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.8969, 44.6353
+Warning: Sample at -121.8192, 44.6289 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8192, 44.6289
+Warning: Sample at -123.3986, 44.5898 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.3986, 44.5898
+Warning: Sample at -123.2411, 44.6 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2411, 44.6
+Warning: Sample at -123.2419, 44.6196 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2419, 44.6196
+Warning: Sample at -121.9619, 44.6037 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.9619, 44.6037
+Warning: Sample at -123.3639, 44.5717 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.3639, 44.5717
+Warning: Sample at -123.2725, 44.5542 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2725, 44.5542
+Warning: Sample at -123.2608, 44.5647 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2608, 44.5647
+Warning: Sample at -123.24514, 44.54448 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.24514, 44.54448
+Warning: Sample at -123.3014, 44.5402 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.3014, 44.5402
+Warning: Sample at -123.2928, 44.5285 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2928, 44.5285
+Warning: Sample at -123.2492, 44.5386 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2492, 44.5386
+Warning: Sample at -123.1612, 44.5129 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.1612, 44.5129
+Warning: Sample at -123.1362, 44.5269 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.1362, 44.5269
+Warning: Sample at -122.1827, 44.5346 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.1827, 44.5346
+Warning: Sample at -123.5025, 44.4669 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.5025, 44.4669
+Warning: Sample at -123.4167, 44.4997 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.4167, 44.4997
+Warning: Sample at -123.4392, 44.4741 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.4392, 44.4741
+Warning: Sample at -123.2622, 44.469 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2622, 44.469
+Warning: Sample at -124.0675, 44.4269 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -124.0675, 44.4269
+Warning: Sample at -123.346, 44.4318 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.346, 44.4318
+Warning: Sample at -122.4806, 44.3975 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.4806, 44.3975
+Warning: Sample at -123.2719, 44.3472 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2719, 44.3472
+Warning: Sample at -123.14, 44.36 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.14, 44.36
+Warning: Sample at -124.0913, 44.3133 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -124.0913, 44.3133
+Warning: Sample at -124.0833, 44.3 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.0833, 44.3
+Warning: Sample at -124.08, 44.3 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.08, 44.3
+Warning: Sample at -124.0926, 44.2856 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -124.0926, 44.2856
+Warning: Sample at -122.2309, 44.2045 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2309, 44.2045
+Warning: Sample at -121.8665, 44.172 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8665, 44.172
+Warning: Sample at -124.1264, 44.1389 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -124.1264, 44.1389
+Warning: Sample at -124.1225, 44.1289 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.1225, 44.1289
+Warning: Sample at -123.8592, 44.0909 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.8592, 44.0909
+Warning: Sample at -123.0442, 44.1108 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.0442, 44.1108
+Warning: Sample at -123.0071, 44.1085 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.0071, 44.1085
+Warning: Sample at -122.1112, 44.1209 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.1112, 44.1209
+Warning: Sample at -123.8561, 44.0775 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.8561, 44.0775
+Warning: Sample at -123.4824, 44.0641 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.4824, 44.0641
+Warning: Sample at -123.0744, 44.0453 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.0744, 44.0453
+Warning: Sample at -123.8414, 44.0346 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.8414, 44.0346
+Warning: Sample at -122.4927, 44.0054 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.4927, 44.0054
+Warning: Sample at -122.4286, 44.0194 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.4286, 44.0194
+Warning: Sample at -124.0431, 43.9858 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.0431, 43.9858
+Warning: Sample at -124.0757, 43.9927 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.0757, 43.9927
+Warning: Sample at -123.0967, 43.9836 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.0967, 43.9836
+Warning: Sample at -122.8358, 43.9896 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.8358, 43.9896
+Warning: Sample at -122.0182, 43.9433 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.0182, 43.9433
+Warning: Sample at -124.15237, 43.81521 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.15237, 43.81521
+Warning: Sample at -122.5141, 43.7475 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.5141, 43.7475
+Warning: Sample at -122.4084, 43.7087 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.4084, 43.7087
+Warning: Sample at -123.759, 43.6953 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.759, 43.6953
+Warning: Sample at -123.8156, 43.6542 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.8156, 43.6542
+Warning: Sample at -122.6519, 43.5858 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.6519, 43.5858
+Warning: Sample at -122.6639, 43.5817 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.6639, 43.5817
+Warning: Sample at -123.4727, 43.5005 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.4727, 43.5005
+Warning: Sample at -123.9311, 43.4847 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.9311, 43.4847
+Warning: Sample at -123.929, 43.4822 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.929, 43.4822
+Warning: Sample at -123.5431, 43.475 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.5431, 43.475
+Warning: Sample at -123.4967, 43.4831 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.4967, 43.4831
+Warning: Sample at -122.6868, 43.3073 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.6868, 43.3073
+Warning: Sample at -124.0916, 43.0284 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.0916, 43.0284
+Warning: Sample at -123.859, 43.0303 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.859, 43.0303
+Warning: Sample at -122.5217, 42.9284 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.5217, 42.9284
+Warning: Sample at -122.1328, 42.8997 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.1328, 42.8997
+Warning: Sample at -123.7169, 42.8275 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.7169, 42.8275
+Warning: Sample at -122.8442, 42.7883 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.8442, 42.7883
+Warning: Sample at -123.8878, 42.7125 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.8878, 42.7125
+Warning: Sample at -124.0788, 42.6782 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.0788, 42.6782
+Warning: Sample at -124.00333, 42.65722 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.00333, 42.65722
+Warning: Sample at -123.136, 42.5856 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.136, 42.5856
+Warning: Sample at -123.6396, 42.5556 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.6396, 42.5556
+Warning: Sample at -123.4186, 42.5175 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.4186, 42.5175
+Warning: Sample at -123.458, 42.5175 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.458, 42.5175
+Warning: Sample at -123.1583, 42.4401 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.1583, 42.4401
+Warning: Sample at -123.4157, 42.0893 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.4157, 42.0893
+Warning: Sample at -123.3117, 42.11 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.3117, 42.11
+Warning: Sample at -123.2382, 42.0693 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2382, 42.0693
+Warning: Sample at -123.1021, 42.0464 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.1021, 42.0464
+Warning: Sample at -124.1419, 42.0256 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.1419, 42.0256
+Warning: Sample at -123.272, 42.0209 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.272, 42.0209
+Warning: Sample at -123.52887, 41.99104 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.52887, 41.99104
+Warning: Sample at -123.528864, 41.92375635 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.528864, 41.92375635
+Warning: Sample at -124.122647, 41.87353166 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.122647, 41.87353166
+Warning: Sample at -124.1168768, 41.87075175 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.1168768, 41.87075175
+Warning: Sample at -124.0088739, 41.84325314 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.0088739, 41.84325314
+Warning: Sample at -123.66561, 41.78961 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.66561, 41.78961
+Warning: Sample at -123.5893612, 41.66735952 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.5893612, 41.66735952
+Warning: Sample at -123.6938124, 41.58789975 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.6938124, 41.58789975
+Warning: Sample at -123.2647219, 41.55869405 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2647219, 41.55869405
+Warning: Sample at -123.1796598, 41.55493486 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.1796598, 41.55493486
+Warning: Sample at -123.4062741, 41.4902438 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.4062741, 41.4902438
+Warning: Sample at -123.1863378, 41.41622689 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.1863378, 41.41622689
+Warning: Sample at -123.0104326, 41.34403955 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.0104326, 41.34403955
+Warning: Sample at -123.41208, 41.17261 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.41208, 41.17261
+Warning: Sample at -123.51092, 41.12675 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.51092, 41.12675
+Warning: Sample at -123.47839, 41.13469 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.47839, 41.13469
+Warning: Sample at -122.32194, 41.13083 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.32194, 41.13083
+Warning: Sample at -123.47056, 41.08458 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.47056, 41.08458
+Warning: Sample at -123.48806, 41.11317 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.48806, 41.11317
+Warning: Sample at -123.48994, 41.11317 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.48994, 41.11317
+Warning: Sample at -123.46572, 41.08544 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.46572, 41.08544
+Warning: Sample at -123.472149, 41.06906972 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.472149, 41.06906972
+Warning: Sample at -122.26694, 41.03444 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.26694, 41.03444
+Warning: Sample at -123.0251471, 40.97275522 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.0251471, 40.97275522
+Warning: Sample at -123.2304616, 40.95058376 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2304616, 40.95058376
+Warning: Sample at -122.2153872, 40.90695337 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2153872, 40.90695337
+Warning: Sample at -122.44444, 40.85306 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.44444, 40.85306
+Warning: Sample at -122.4490819, 40.85518216 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.4490819, 40.85518216
+Warning: Sample at -123.7575, 40.74083 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.7575, 40.74083
+Warning: Sample at -123.70342, 40.69975 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.70342, 40.69975
+Warning: Sample at -124.1523, 40.6013 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.1523, 40.6013
+Warning: Sample at -124.0225, 40.31972 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.0225, 40.31972
+Warning: Sample at -121.50389, 40.20472 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.50389, 40.20472
+Warning: Sample at -122.83028, 40.14944 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.83028, 40.14944
+Warning: Sample at -122.8279202, 40.14999075 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.8279202, 40.14999075
+Warning: Sample at -120.98, 40.0072 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.98, 40.0072
+Warning: Sample at -123.96167, 39.95361 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.96167, 39.95361
+Warning: Sample at -121.3077817, 39.94180737 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.3077817, 39.94180737
+Warning: Sample at -121.22278, 39.92194 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.22278, 39.92194
+Warning: Sample at -121.50278, 39.85389 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.50278, 39.85389
+Warning: Sample at -121.41389, 39.84611 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.41389, 39.84611
+Warning: Sample at -121.43056, 39.80944 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.43056, 39.80944
+Warning: Sample at -121.452503, 39.79528877 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.452503, 39.79528877
+Warning: Sample at -121.446783, 39.80280869 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.446783, 39.80280869
+Warning: Sample at -121.42944, 39.82694 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.42944, 39.82694
+Warning: Sample at -120.87167, 39.8 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.87167, 39.8
+Warning: Sample at -121.46472, 39.77111 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.46472, 39.77111
+Warning: Sample at -123.6439228, 39.72974122 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.6439228, 39.72974122
+Warning: Sample at -121.40333, 39.73361 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.40333, 39.73361
+Warning: Sample at -121.32389, 39.70889 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.32389, 39.70889
+Warning: Sample at -121.28917, 39.71778 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.28917, 39.71778
+Warning: Sample at -121.36028, 39.68639 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.36028, 39.68639
+Warning: Sample at -120.9831, 39.6822 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.9831, 39.6822
+Warning: Sample at -121.27056, 39.63083 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.27056, 39.63083
+Warning: Sample at -121.0653715, 39.61951519 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.0653715, 39.61951519
+Warning: Sample at -121.07778, 39.61611 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.07778, 39.61611
+Warning: Sample at -121.22333, 39.54167 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.22333, 39.54167
+Warning: Sample at -121.21889, 39.5375 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.21889, 39.5375
+Warning: Sample at -121.05403, 39.52233 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.05403, 39.52233
+Warning: Sample at -121.01667, 39.51028 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.01667, 39.51028
+Warning: Sample at -121.04556, 39.47083 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.04556, 39.47083
+Warning: Sample at -123.35216, 39.43095 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.35216, 39.43095
+Warning: Sample at -121.14056, 39.40917 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.14056, 39.40917
+Warning: Sample at -121.143, 39.409 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.143, 39.409
+Warning: Sample at -120.96583, 39.40194 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.96583, 39.40194
+Warning: Sample at -123.81667, 39.36667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.81667, 39.36667
+Warning: Sample at -120.92797, 39.34637 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.92797, 39.34637
+Warning: Sample at -120.82081, 39.35548 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.82081, 39.35548
+Warning: Sample at -120.79556, 39.34556 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.79556, 39.34556
+Warning: Sample at -120.98445, 39.33025 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.98445, 39.33025
+Warning: Sample at -120.6723, 39.3005 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.6723, 39.3005
+Warning: Sample at -120.65555, 39.31986 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.65555, 39.31986
+Warning: Sample at -120.64645, 39.3085 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.64645, 39.3085
+Warning: Sample at -123.77, 39.27 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.77, 39.27
+Warning: Sample at -123.5264163, 38.76149104 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.5264163, 38.76149104
+Warning: Sample at -120.6595507, 38.78843435 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.6595507, 38.78843435
+Warning: Sample at -120.9397563, 38.71483354 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.9397563, 38.71483354
+Warning: Sample at -120.6230893, 38.74609548 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.6230893, 38.74609548
+Warning: Sample at -122.7, 38.56667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.7, 38.56667
+Warning: Sample at -123.2425, 38.51417 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2425, 38.51417
+Warning: Sample at -123.2439, 38.5152 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2439, 38.5152
+Warning: Sample at -122.9175, 38.50889 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.9175, 38.50889
+Warning: Sample at -122.74637, 38.52748 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.74637, 38.52748
+Warning: Sample at -123.07334, 38.42627 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.07334, 38.42627
+Warning: Sample at -122.98722, 38.40889 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.98722, 38.40889
+Warning: Sample at -122.9745781, 38.34523433 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.9745781, 38.34523433
+Warning: Sample at -122.96667, 38.25083 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.96667, 38.25083
+Warning: Sample at -122.875, 38.16667 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.875, 38.16667
+Warning: Sample at -122.89413, 38.1324 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.89413, 38.1324
+Warning: Sample at -122.89658, 38.13532 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.89658, 38.13532
+Warning: Sample at -122.89743, 38.13497 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.89743, 38.13497
+Warning: Sample at -122.77033, 38.16433 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.77033, 38.16433
+Warning: Sample at -122.8741, 38.09015 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.8741, 38.09015
+Warning: Sample at -122.86285, 38.10113 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.86285, 38.10113
+Warning: Sample at -122.85484, 38.10004 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.85484, 38.10004
+Warning: Sample at -122.8438817, 38.09018084 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.8438817, 38.09018084
+Warning: Sample at -122.8604, 38.10157 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.8604, 38.10157
+Warning: Sample at -122.82384, 38.11874 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.82384, 38.11874
+Warning: Sample at -122.78472, 38.095 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.78472, 38.095
+Warning: Sample at -122.84967, 38.06098 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.84967, 38.06098
+Warning: Sample at -122.84182, 38.05299 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.84182, 38.05299
+Warning: Sample at -122.86083, 38.07961 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.86083, 38.07961
+Warning: Sample at -122.83258, 38.04829 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.83258, 38.04829
+Warning: Sample at -122.68859, 38.05106 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.68859, 38.05106
+Warning: Sample at -122.80132, 38.02669 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.80132, 38.02669
+Warning: Sample at -122.80205, 38.03408 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.80205, 38.03408
+Warning: Sample at -122.8025, 38.03067 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.8025, 38.03067
+Warning: Sample at -122.79692, 38.00192 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.79692, 38.00192
+Warning: Sample at -122.7866797, 38.04074238 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.7866797, 38.04074238
+Warning: Sample at -122.70908, 38.00214 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.70908, 38.00214
+Warning: Sample at -122.74347, 38.03439 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.74347, 38.03439
+Warning: Sample at -122.72167, 38.02639 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.72167, 38.02639
+Warning: Sample at -122.70915, 38.00201 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.70915, 38.00201
+Warning: Sample at -122.74956, 38.0416 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.74956, 38.0416
+Warning: Sample at -122.70739, 38.00265 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.70739, 38.00265
+Warning: Sample at -122.6440361, 38.01268417 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.6440361, 38.01268417
+Warning: Sample at -123.000794, 37.99983149 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.000794, 37.99983149
+Warning: Sample at -122.57991, 37.97798 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.57991, 37.97798
+Warning: Sample at -122.6463, 37.94317 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.6463, 37.94317
+Warning: Sample at -122.5924739, 37.92713645 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.5924739, 37.92713645
+Warning: Sample at -122.57294, 37.94794 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.57294, 37.94794
+Warning: Sample at -122.5704, 37.9509 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.5704, 37.9509
+Warning: Sample at -122.5707, 37.95066 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.5707, 37.95066
+Warning: Sample at -122.57063, 37.95095 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.57063, 37.95095
+Warning: Sample at -122.56933, 37.89195 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.56933, 37.89195
+Warning: Sample at -122.57583, 37.89917 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.57583, 37.89917
+Warning: Sample at -122.5788631, 37.89588725 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.5788631, 37.89588725
+Warning: Sample at -122.26577, 37.909 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.26577, 37.909
+Warning: Sample at -122.2375, 37.88306 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2375, 37.88306
+Warning: Sample at -122.56202, 37.87495 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.56202, 37.87495
+Warning: Sample at -122.53288, 37.84457 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.53288, 37.84457
+Warning: Sample at -122.52945, 37.84386 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.52945, 37.84386
+Warning: Sample at -122.48638, 37.83375 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.48638, 37.83375
+Warning: Sample at -122.48822, 37.83731 in Tellima_grandiflora.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.48822, 37.83731
+Warning: Sample at -122.25083, 37.86967 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.25083, 37.86967
+Warning: Sample at -122.2298246, 37.8460712 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2298246, 37.8460712
+Warning: Sample at -122.19251, 37.84158 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.19251, 37.84158
+Warning: Sample at -122.19449, 37.84248 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.19449, 37.84248
+Warning: Sample at -122.19021, 37.84348 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.19021, 37.84348
+Warning: Sample at -122.19663, 37.84653 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.19663, 37.84653
+Warning: Sample at -122.19438, 37.84232 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.19438, 37.84232
+Warning: Sample at -122.19269, 37.84134 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.19269, 37.84134
+Warning: Sample at -122.19556, 37.84278 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.19556, 37.84278
+Warning: Sample at -122.4961, 37.82859 in Tellima_grandiflora.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.4961, 37.82859
+Warning: Sample at -122.18152, 37.81114 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.18152, 37.81114
+Warning: Sample at -122.1822, 37.82887 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.1822, 37.82887
+Warning: Sample at -122.16615, 37.81385 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.16615, 37.81385
+Warning: Sample at -122.16609, 37.81388 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.16609, 37.81388
+Warning: Sample at -122.16383, 37.81733 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.16383, 37.81733
+Warning: Sample at -122.15648, 37.8111 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.15648, 37.8111
+Warning: Sample at -122.14584, 37.80304 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.14584, 37.80304
+Warning: Sample at -122.45472, 37.75982 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.45472, 37.75982
+Warning: Sample at -122.45407, 37.76081 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.45407, 37.76081
+Warning: Sample at -122.2229, 37.7808 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2229, 37.7808
+Warning: Sample at -122.13514, 37.77927 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.13514, 37.77927
+Warning: Sample at -122.44101, 37.73793 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.44101, 37.73793
+Warning: Sample at -122.41744, 37.72011 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.41744, 37.72011
+Warning: Sample at -122.444, 37.69764 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.444, 37.69764
+Warning: Sample at -122.4434, 37.6981 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.4434, 37.6981
+Warning: Sample at -122.45242, 37.61394 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.45242, 37.61394
+Warning: Sample at -122.46458, 37.57135 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.46458, 37.57135
+Warning: Sample at -122.46604, 37.56799 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.46604, 37.56799
+Warning: Sample at -122.45842, 37.50494 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.45842, 37.50494
+Warning: Sample at -122.4, 37.525 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.4, 37.525
+Warning: Sample at -122.37056, 37.43722 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.37056, 37.43722
+Warning: Sample at -122.34443, 37.42939 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.34443, 37.42939
+Warning: Sample at -122.36083, 37.40194 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.36083, 37.40194
+Warning: Sample at -122.37495, 37.3795 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.37495, 37.3795
+Warning: Sample at -122.37443, 37.3811 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.37443, 37.3811
+Warning: Sample at -122.23333, 37.40833 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.23333, 37.40833
+Warning: Sample at -122.2739, 37.3192 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2739, 37.3192
+Warning: Sample at -122.2362676, 37.29605346 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2362676, 37.29605346
+Warning: Sample at -122.3824, 37.2521 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.3824, 37.2521
+Warning: Sample at -122.3753103, 37.25490327 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.3753103, 37.25490327
+Warning: Sample at -122.3, 37.27333 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.3, 37.27333
+Warning: Sample at -122.31028, 37.26917 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.31028, 37.26917
+Warning: Sample at -122.04299, 37.21123 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.04299, 37.21123
+Warning: Sample at -122.35341, 37.17574 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.35341, 37.17574
+Warning: Sample at -122.35525, 37.17123 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.35525, 37.17123
+Warning: Sample at -122.35208, 37.17929 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.35208, 37.17929
+Warning: Sample at -122.35752, 37.16946 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.35752, 37.16946
+Warning: Sample at -122.3528, 37.17653 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.3528, 37.17653
+Warning: Sample at -122.35101, 37.18207 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.35101, 37.18207
+Warning: Sample at -122.0776324, 37.16226781 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.0776324, 37.16226781
+Warning: Sample at -122.078861, 37.04954042 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.078861, 37.04954042
+Warning: Sample at -121.9283, 37.01459 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.9283, 37.01459
+Warning: Sample at -122.0212, 36.9709 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.0212, 36.9709
+Warning: Sample at -121.89972, 36.97694 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.89972, 36.97694
+Warning: Sample at -120.7017, 35.5315 in Tellima_grandiflora.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.7017, 35.5315
+Time since start: 1.727
+0 points with values for all grids
+No background points with data in all layers
+java.lang.Exception
+	at density.Utils.logError(Utils.java:218)
+	at density.Utils.popupError(Utils.java:224)
+	at density.Runner.popupError(Runner.java:107)
+	at density.Runner.start(Runner.java:328)
+	at density.MaxEnt.main(MaxEnt.java:59)
 Ending

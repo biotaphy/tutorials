@@ -1,81 +1,110 @@
-Fri Oct 21 20:05:59 GMT 2022
+Mon Oct 24 19:50:20 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
+Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Mitella_japonica.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 15415296
-Extractor: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 2095104
+Read samples: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 21704704
+Warning: Sample at 131.7, 33.0 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.4, 33.5 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.2, 31.7 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.880774, 34.268446 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.742, 34.4618 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.9, 34.5 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.74875, 35.423139 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.718, 34.4929 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.615, 34.4416 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.79779, 32.70971 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.951, 34.4916 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.881, 34.2684 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.635657, 33.315352 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.434712, 33.243874 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.73318, 34.4429 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.875, 34.428 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.95116, 34.49162 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.5, 33.6 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.853889, 33.706667 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.435, 33.2439 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.86116, 34.46801 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.513056, 33.197778 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.182, 32.8198 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.2, 32.7 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.79846, 34.40693 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.84929, 34.45812 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.733, 34.4429 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.109, 32.9572 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.70021, 34.35019 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.0, 32.5 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.1, 33.2 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.866, 34.4964 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.7, 34.5 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.798, 32.7097 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.1, 33.0 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.0, 34.3 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.8, 34.9 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.87537, 34.42802 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.7, 32.4 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.7, 34.3502 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.6666667, 34.4 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.869, 34.4627 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.9, 34.2 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.249567, 33.470483 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.849, 34.4581 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.861, 34.468 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.71767, 34.49286 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.101, 32.3117 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.86604, 34.49641 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.5, 33.3 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.91069, 34.45196 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.21, 31.8513 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.798, 34.4069 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.210109, 31.851256 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.3, 33.4 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.182314, 32.819848 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.3, 32.7 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.7424, 34.46184 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.749, 35.4231 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.2, 33.8 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.6, 34.4 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.8, 32.5 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.253806, 33.484167 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.86885, 34.46267 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.614965, 34.441584 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.171444, 32.702333 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.215, 33.1758 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.2, 32.9 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.9, 33.5 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.8, 31.1 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.015, 33.480556 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.7, 34.4 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.05, 34.516667 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.636, 33.3154 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.254, 33.4842 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.101071, 32.311678 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.109218, 32.957224 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.911, 34.452 in Mitella_japonica.csv is outside the bounding box of environmental data, skipping
+Extractor: max memory 32178700288, total allocated 2118123520, free 2088030208, used 30093312, increment 8388608
 Extracting random background and sample data
-530 points with values for all grids
-Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk/mitella_japonica/Mitella_japonica.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk/mitella_japonica nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk/mitella_japonica samplesfile=/volumes/output/heuchera_rfolk/mitella_japonica/Mitella_japonica.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
-Species: Mitella_japonica
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
-outputdirectory: /volumes/output/heuchera_rfolk/mitella_japonica
-samplesfile: /volumes/output/heuchera_rfolk/mitella_japonica/Mitella_japonica.csv
-environmentallayers: /volumes/env/worldclim1.4
-warnings: false
-autorun: true
-visible: false
-cache: false
-
-getSamples: max memory 32178700288, total allocated 2118123520, free 1870006400, used 248117120, increment 230606720
-Making features
-Time since start: 1.005
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1863716992, used 254406528, increment 6289408
-Mitella_japonica: 
-Regularization values: linear/quadratic/product: 0.247, categorical: 0.250, threshold: 1.690, hinge: 0.500
-31 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1857423488, used 260700032, increment 6293504
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1857423488, used 260700032, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1857423488, used 260700032, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1857423488, used 260700032, increment 0
-Initial loss: 6.272877006546167
-500: time = 0.589000 loss = 5.519821
-Resulting gain: 0.7530557196857837
-Projecting...
-Writing file /volumes/output/heuchera_rfolk/mitella_japonica/Mitella_japonica.asc
-Time since start: 2.404
-Writing /volumes/output/heuchera_rfolk/mitella_japonica/plots/Mitella_japonica.png
+Time since start: 1.647
+0 points with values for all grids
+No background points with data in all layers
+java.lang.Exception
+	at density.Utils.logError(Utils.java:218)
+	at density.Utils.popupError(Utils.java:224)
+	at density.Runner.popupError(Runner.java:107)
+	at density.Runner.start(Runner.java:328)
+	at density.MaxEnt.main(MaxEnt.java:59)
 Ending

@@ -1,80 +1,88 @@
-Fri Oct 21 20:07:34 GMT 2022
+Mon Oct 24 19:51:02 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
+Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Heuchera_abramsii.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2104807424, used 13316096, increment 13316096
-Extractor: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 4194304
+Read samples: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 21704704
+Extractor: max memory 32178700288, total allocated 2118123520, free 2088030208, used 30093312, increment 8388608
 Extracting random background and sample data
-19 points with values for all grids
-Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk/heuchera_abramsii/Heuchera_abramsii.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk/heuchera_abramsii nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk/heuchera_abramsii samplesfile=/volumes/output/heuchera_rfolk/heuchera_abramsii/Heuchera_abramsii.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
-Species: Heuchera_abramsii
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
-outputdirectory: /volumes/output/heuchera_rfolk/heuchera_abramsii
-samplesfile: /volumes/output/heuchera_rfolk/heuchera_abramsii/Heuchera_abramsii.csv
-environmentallayers: /volumes/env/worldclim1.4
-warnings: false
-autorun: true
-visible: false
-cache: false
-
-getSamples: max memory 32178700288, total allocated 2118123520, free 1870050256, used 248073264, increment 230562864
-Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1867955152, used 250168368, increment 2095104
-Heuchera_abramsii: 
-Regularization values: linear/quadratic/product: 1.000, categorical: 0.620, threshold: 1.980, hinge: 0.500
-2 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1867955152, used 250168368, increment 0
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1867955152, used 250168368, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1867955152, used 250168368, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1867955152, used 250168368, increment 0
-Initial loss: 2.9444389791664403
-100: time = 0.006000 loss = 1.607324
-Resulting gain: 1.3371153729150298
-Time since start: 1.132
-Projecting...
-Writing file /volumes/output/heuchera_rfolk/heuchera_abramsii/Heuchera_abramsii.asc
-Writing /volumes/output/heuchera_rfolk/heuchera_abramsii/plots/Heuchera_abramsii.png
+Warning: Sample at -117.64444, 34.31361 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.64444, 34.31361
+Warning: Sample at -117.6438, 34.2966 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6438, 34.2966
+Warning: Sample at -117.6469, 34.2925 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6469, 34.2925
+Warning: Sample at -117.64569, 34.292 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.64569, 34.292
+Warning: Sample at -117.64369, 34.31453 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.64369, 34.31453
+Warning: Sample at -117.6467, 34.2954 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6467, 34.2954
+Warning: Sample at -117.64486, 34.30525 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.64486, 34.30525
+Warning: Sample at -117.63603, 34.30329 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.63603, 34.30329
+Warning: Sample at -117.6443, 34.3137 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6443, 34.3137
+Warning: Sample at -117.6444444, 34.3136111 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6444444, 34.3136111
+Warning: Sample at -117.6442, 34.3136 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6442, 34.3136
+Warning: Sample at -117.6684, 34.2881 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6684, 34.2881
+Warning: Sample at -117.6527, 34.2869 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6527, 34.2869
+Warning: Sample at -117.65052, 34.2878 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.65052, 34.2878
+Warning: Sample at -117.6438889, 34.2886111 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6438889, 34.2886111
+Warning: Sample at -117.64611, 34.28944 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.64611, 34.28944
+Warning: Sample at -117.6514, 34.287 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6514, 34.287
+Warning: Sample at -117.65452, 34.28682 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.65452, 34.28682
+Warning: Sample at -117.64617, 34.28917 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.64617, 34.28917
+Warning: Sample at -117.64389, 34.28861 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.64389, 34.28861
+Warning: Sample at -117.6507, 34.2878 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6507, 34.2878
+Warning: Sample at -117.655, 34.28694 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.655, 34.28694
+Warning: Sample at -117.6468, 34.2888 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6468, 34.2888
+Warning: Sample at -117.64616, 34.28917 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.64616, 34.28917
+Warning: Sample at -117.6461, 34.28921 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6461, 34.28921
+Warning: Sample at -117.646, 34.2891 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.646, 34.2891
+Warning: Sample at -117.6458, 34.2892 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6458, 34.2892
+Warning: Sample at -117.6462, 34.2892 in Heuchera_abramsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.6462, 34.2892
+Time since start: 1.873
+0 points with values for all grids
+No background points with data in all layers
+java.lang.Exception
+	at density.Utils.logError(Utils.java:218)
+	at density.Utils.popupError(Utils.java:224)
+	at density.Runner.popupError(Runner.java:107)
+	at density.Runner.start(Runner.java:328)
+	at density.MaxEnt.main(MaxEnt.java:59)
 Ending

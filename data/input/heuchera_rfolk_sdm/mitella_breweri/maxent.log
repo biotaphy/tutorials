@@ -1,82 +1,596 @@
-Fri Oct 21 20:03:13 GMT 2022
+Mon Oct 24 19:48:50 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
+Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Mitella_breweri.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
-Extractor: max memory 32178700288, total allocated 2118123520, free 2098511872, used 19611648, increment 2101248
+Read samples: max memory 32178700288, total allocated 2118123520, free 2094305264, used 23818256, increment 23818256
+Extractor: max memory 32178700288, total allocated 2118123520, free 2083835904, used 34287616, increment 10469360
 Extracting random background and sample data
-3004 points with values for all grids
-Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk/mitella_breweri/Mitella_breweri.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk/mitella_breweri nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk/mitella_breweri samplesfile=/volumes/output/heuchera_rfolk/mitella_breweri/Mitella_breweri.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
-Species: Mitella_breweri
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
-outputdirectory: /volumes/output/heuchera_rfolk/mitella_breweri
-samplesfile: /volumes/output/heuchera_rfolk/mitella_breweri/Mitella_breweri.csv
-environmentallayers: /volumes/env/worldclim1.4
-warnings: false
-autorun: true
-visible: false
-cache: false
-
-getSamples: max memory 32178700288, total allocated 2118123520, free 1859332168, used 258791352, increment 239179704
-Time since start: 1.004
-Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1838360648, used 279762872, increment 20971520
-Mitella_breweri: 
-Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
-154 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1821583432, used 296540088, increment 16777216
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1821583432, used 296540088, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1821583432, used 296540088, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1821583432, used 296540088, increment 0
-Initial loss: 8.007700012884026
-Time since start: 3.656
-500: time = 2.340000 loss = 7.016797
-Resulting gain: 0.9909025172016355
-Projecting...
-Writing file /volumes/output/heuchera_rfolk/mitella_breweri/Mitella_breweri.asc
-Writing /volumes/output/heuchera_rfolk/mitella_breweri/plots/Mitella_breweri.png
-Time since start: 5.61
+Warning: Sample at -119.88333, 51.96667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.88333, 51.96667
+Warning: Sample at -119.88333, 51.91667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.88333, 51.91667
+Warning: Sample at -119.86667, 51.8 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.86667, 51.8
+Warning: Sample at -119.9325, 51.7775 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.9325, 51.7775
+Warning: Sample at -117.51667, 51.3 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.51667, 51.3
+Warning: Sample at -117.41667, 51.33333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.41667, 51.33333
+Warning: Sample at -118.13333, 51.05 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.13333, 51.05
+Warning: Sample at -118.2, 50.98333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.2, 50.98333
+Warning: Sample at -118.86667, 50.75 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.86667, 50.75
+Warning: Sample at -122.93333, 50.53333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.93333, 50.53333
+Warning: Sample at -118.33333, 50.45 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.33333, 50.45
+Warning: Sample at -122.86667, 50.08333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.86667, 50.08333
+Warning: Sample at -117.16667, 49.98333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.16667, 49.98333
+Warning: Sample at -123.03333, 49.93333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.03333, 49.93333
+Warning: Sample at -122.96768, 49.9330417 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.96768, 49.9330417
+Warning: Sample at -122.06667, 49.95 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.06667, 49.95
+Warning: Sample at -121.9343126, 49.94972213 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.9343126, 49.94972213
+Warning: Sample at -121.21667, 49.95 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.21667, 49.95
+Warning: Sample at -123.01667, 49.81667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.01667, 49.81667
+Warning: Sample at -116.58333, 49.76667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.58333, 49.76667
+Warning: Sample at -114.6454, 49.76938 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -114.6454, 49.76938
+Warning: Sample at -121.16667, 49.5 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.16667, 49.5
+Warning: Sample at -120.9, 49.53333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.9, 49.53333
+Warning: Sample at -117.3, 49.41667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.3, 49.41667
+Warning: Sample at -123.06667, 49.38333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.06667, 49.38333
+Warning: Sample at -120.56667, 49.36667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.56667, 49.36667
+Warning: Sample at -123.25081, 49.25408 in Mitella_breweri.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.25081, 49.25408
+Warning: Sample at -123.15, 49.25 in Mitella_breweri.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.15, 49.25
+Warning: Sample at -121.65, 49.16667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.65, 49.16667
+Warning: Sample at -120.35, 49.16667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.35, 49.16667
+Warning: Sample at -114.15, 49.13333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -114.15, 49.13333
+Warning: Sample at -114.1, 49.15 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -114.1, 49.15
+Warning: Sample at -124.33333, 49.06667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.33333, 49.06667
+Warning: Sample at -114.08333, 49.06667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -114.08333, 49.06667
+Warning: Sample at -121.85, 49.03333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.85, 49.03333
+Warning: Sample at -117.03667, 49.01 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.03667, 49.01
+Warning: Sample at -114.05, 49.01667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -114.05, 49.01667
+Warning: Sample at -114.026, 49.0077 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -114.026, 49.0077
+Warning: Sample at -114.013, 49.0202 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -114.013, 49.0202
+Warning: Sample at -113.91667, 49.03333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -113.91667, 49.03333
+Warning: Sample at -117.33854, 48.96652 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -117.33854, 48.96652
+Warning: Sample at -121.64389, 48.95222 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.64389, 48.95222
+Warning: Sample at -120.2055, 48.92899 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.2055, 48.92899
+Warning: Sample at -121.50315, 48.89827 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.50315, 48.89827
+Warning: Sample at -121.46262, 48.90853 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.46262, 48.90853
+Warning: Sample at -121.71167, 48.86639 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.71167, 48.86639
+Warning: Sample at -116.70799, 48.61326 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.70799, 48.61326
+Warning: Sample at -120.82092, 48.57427 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.82092, 48.57427
+Warning: Sample at -121.06598, 48.50057 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.06598, 48.50057
+Warning: Sample at -121.04825, 48.46173 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.04825, 48.46173
+Warning: Sample at -124.675, 48.26667 in Mitella_breweri.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -124.675, 48.26667
+Warning: Sample at -121.37278, 48.14306 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.37278, 48.14306
+Warning: Sample at -120.73758, 48.10554 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.73758, 48.10554
+Warning: Sample at -121.50746, 48.0651 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.50746, 48.0651
+Warning: Sample at -121.47068, 48.06829 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.47068, 48.06829
+Warning: Sample at -123.46784, 47.99538 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.46784, 47.99538
+Warning: Sample at -121.35417, 47.97639 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.35417, 47.97639
+Warning: Sample at -123.40833, 47.93333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.40833, 47.93333
+Warning: Sample at -123.41224, 47.93852 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.41224, 47.93852
+Warning: Sample at -123.78472, 47.89889 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.78472, 47.89889
+Warning: Sample at -123.72227, 47.88151 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.72227, 47.88151
+Warning: Sample at -123.70896, 47.80167 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.70896, 47.80167
+Warning: Sample at -121.07166, 47.80285 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.07166, 47.80285
+Warning: Sample at -123.12014, 47.77561 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.12014, 47.77561
+Warning: Sample at -120.96105, 47.7894 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.96105, 47.7894
+Warning: Sample at -123.39389, 47.6675 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.39389, 47.6675
+Warning: Sample at -121.42556, 47.61028 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.42556, 47.61028
+Warning: Sample at -123.42528, 47.56 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.42528, 47.56
+Warning: Sample at -115.10851, 47.55826 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -115.10851, 47.55826
+Warning: Sample at -115.78702, 47.52028 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -115.78702, 47.52028
+Warning: Sample at -123.74556, 47.48889 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.74556, 47.48889
+Warning: Sample at -121.86538, 47.47242 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.86538, 47.47242
+Warning: Sample at -115.31218, 47.44351 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -115.31218, 47.44351
+Warning: Sample at -121.62573, 47.39124 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.62573, 47.39124
+Warning: Sample at -120.57672, 47.32405 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.57672, 47.32405
+Warning: Sample at -121.06326, 47.07017 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.06326, 47.07017
+Warning: Sample at -115.9441, 47.01042 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -115.9441, 47.01042
+Warning: Sample at -120.94306, 46.96611 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.94306, 46.96611
+Warning: Sample at -121.82444, 46.91556 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.82444, 46.91556
+Warning: Sample at -121.75306, 46.91361 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.75306, 46.91361
+Warning: Sample at -121.76092, 46.85163 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.76092, 46.85163
+Warning: Sample at -121.58125, 46.8659 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.58125, 46.8659
+Warning: Sample at -121.5158, 46.87175 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.5158, 46.87175
+Warning: Sample at -121.50833, 46.87306 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.50833, 46.87306
+Warning: Sample at -121.70281, 46.80203 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.70281, 46.80203
+Warning: Sample at -121.76777, 46.76638 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.76777, 46.76638
+Warning: Sample at -121.7154, 46.76987 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.7154, 46.76987
+Warning: Sample at -121.74528, 46.77528 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.74528, 46.77528
+Warning: Sample at -122.18333, 46.24583 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.18333, 46.24583
+Warning: Sample at -121.65012, 46.09327 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.65012, 46.09327
+Warning: Sample at -122.66028, 45.75472 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.66028, 45.75472
+Warning: Sample at -114.88085, 45.64793 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -114.88085, 45.64793
+Warning: Sample at -121.8214, 45.49 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8214, 45.49
+Warning: Sample at -121.668, 45.4537 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.668, 45.4537
+Warning: Sample at -121.6525, 45.405 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.6525, 45.405
+Warning: Sample at -121.6161, 45.3442 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.6161, 45.3442
+Warning: Sample at -116.02556, 45.15455 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.02556, 45.15455
+Warning: Sample at -121.7967, 44.7635 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.7967, 44.7635
+Warning: Sample at -121.8041, 44.7125 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8041, 44.7125
+Warning: Sample at -121.7872, 44.6738 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.7872, 44.6738
+Warning: Sample at -121.9472, 44.6192 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.9472, 44.6192
+Warning: Sample at -116.04166, 44.51638 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -116.04166, 44.51638
+Warning: Sample at -122.5833, 44.4997 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.5833, 44.4997
+Warning: Sample at -122.4163, 44.3974 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.4163, 44.3974
+Warning: Sample at -122.1369, 44.3953 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.1369, 44.3953
+Warning: Sample at -122.1349, 44.399 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.1349, 44.399
+Warning: Sample at -121.9188, 44.3237 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.9188, 44.3237
+Warning: Sample at -122.138, 44.2618 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.138, 44.2618
+Warning: Sample at -121.7853, 44.2556 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.7853, 44.2556
+Warning: Sample at -121.9596, 44.2209 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.9596, 44.2209
+Warning: Sample at -121.8319, 44.2111 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8319, 44.2111
+Warning: Sample at -124.0325, 44.19972 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.0325, 44.19972
+Warning: Sample at -121.8173, 44.1751 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8173, 44.1751
+Warning: Sample at -121.7937, 44.1663 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.7937, 44.1663
+Warning: Sample at -122.1112, 44.1209 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.1112, 44.1209
+Warning: Sample at -122.091, 44.1209 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.091, 44.1209
+Warning: Sample at -122.0867, 44.1161 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.0867, 44.1161
+Warning: Sample at -121.8912, 44.1207 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8912, 44.1207
+Warning: Sample at -121.8054, 44.0547 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8054, 44.0547
+Warning: Sample at -121.8269, 44.0408 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8269, 44.0408
+Warning: Sample at -121.6842, 44.03 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.6842, 44.03
+Warning: Sample at -115.8, 43.8 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -115.8, 43.8
+Warning: Sample at -119.3052, 43.501 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.3052, 43.501
+Warning: Sample at -122.5533, 43.4125 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.5533, 43.4125
+Warning: Sample at -122.7061, 43.1914 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.7061, 43.1914
+Warning: Sample at -122.4715, 43.1647 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.4715, 43.1647
+Warning: Sample at -122.3985, 42.9875 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.3985, 42.9875
+Warning: Sample at -122.3377, 42.9657 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.3377, 42.9657
+Warning: Sample at -122.1328, 42.8997 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.1328, 42.8997
+Warning: Sample at -122.2178, 42.6566 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2178, 42.6566
+Warning: Sample at -122.1881, 42.5203 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.1881, 42.5203
+Warning: Sample at -122.295, 42.4394 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.295, 42.4394
+Warning: Sample at -122.36694, 42.30666 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.36694, 42.30666
+Warning: Sample at -123.37, 42.085 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.37, 42.085
+Warning: Sample at -123.3748, 42.085 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.3748, 42.085
+Warning: Sample at -123.3495, 42.0546 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.3495, 42.0546
+Warning: Sample at -121.4188855, 40.02380499 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.4188855, 40.02380499
+Warning: Sample at -121.42667, 40.02472 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.42667, 40.02472
+Warning: Sample at -121.46972, 39.98889 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.46972, 39.98889
+Warning: Sample at -121.45806, 39.99333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.45806, 39.99333
+Warning: Sample at -121.47833, 39.95194 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.47833, 39.95194
+Warning: Sample at -121.25667, 39.88889 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.25667, 39.88889
+Warning: Sample at -121.22028, 39.87556 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.22028, 39.87556
+Warning: Sample at -121.22111, 39.8975 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.22111, 39.8975
+Warning: Sample at -121.23306, 39.85806 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.23306, 39.85806
+Warning: Sample at -121.2328788, 39.86500936 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.2328788, 39.86500936
+Warning: Sample at -121.19889, 39.83583 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.19889, 39.83583
+Warning: Sample at -120.81167, 39.8525 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.81167, 39.8525
+Warning: Sample at -120.97167, 39.75056 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.97167, 39.75056
+Warning: Sample at -120.97153, 39.75064 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.97153, 39.75064
+Warning: Sample at -120.88556, 39.77389 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.88556, 39.77389
+Warning: Sample at -120.89444, 39.77111 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.89444, 39.77111
+Warning: Sample at -120.8951495, 39.763034 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.8951495, 39.763034
+Warning: Sample at -120.83556, 39.76333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.83556, 39.76333
+Warning: Sample at -120.8420678, 39.73501494 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.8420678, 39.73501494
+Warning: Sample at -120.85333, 39.73583 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.85333, 39.73583
+Warning: Sample at -120.83333, 39.74722 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.83333, 39.74722
+Warning: Sample at -120.8234676, 39.74951483 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.8234676, 39.74951483
+Warning: Sample at -120.6383624, 39.69031743 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.6383624, 39.69031743
+Warning: Sample at -120.66472, 39.69694 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.66472, 39.69694
+Warning: Sample at -120.6715611, 39.54081988 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.6715611, 39.54081988
+Warning: Sample at -120.66472, 39.5375 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.66472, 39.5375
+Warning: Sample at -120.46722, 39.50139 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.46722, 39.50139
+Warning: Sample at -120.47722, 39.50417 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.47722, 39.50417
+Warning: Sample at -123.06186, 39.49905 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.06186, 39.49905
+Warning: Sample at -120.6372, 39.454 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.6372, 39.454
+Warning: Sample at -120.65028, 39.43444 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.65028, 39.43444
+Warning: Sample at -120.28203, 39.43449 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.28203, 39.43449
+Warning: Sample at -120.2412, 39.4321 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.2412, 39.4321
+Warning: Sample at -120.65, 39.38333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.65, 39.38333
+Warning: Sample at -120.60048, 39.41071 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.60048, 39.41071
+Warning: Sample at -120.66972, 39.37 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.66972, 39.37
+Warning: Sample at -120.6715587, 39.3673231 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.6715587, 39.3673231
+Warning: Sample at -120.35015, 39.34467 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.35015, 39.34467
+Warning: Sample at -120.33356, 39.35138 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.33356, 39.35138
+Warning: Sample at -120.3787, 39.3225 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.3787, 39.3225
+Warning: Sample at -120.34972, 39.30722 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.34972, 39.30722
+Warning: Sample at -120.33833, 39.29389 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.33833, 39.29389
+Warning: Sample at -120.3166497, 39.31712693 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.3166497, 39.31712693
+Warning: Sample at -120.29983, 39.2923 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.29983, 39.2923
+Warning: Sample at -120.32253, 39.30691 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.32253, 39.30691
+Warning: Sample at -120.26528, 39.3225 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.26528, 39.3225
+Warning: Sample at -120.3572, 39.2511 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.3572, 39.2511
+Warning: Sample at -120.2155, 39.1821 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.2155, 39.1821
+Warning: Sample at -120.25, 39.13333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.25, 39.13333
+Warning: Sample at -120.2418, 39.0842 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.2418, 39.0842
+Warning: Sample at -120.1695, 39.0833 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.1695, 39.0833
+Warning: Sample at -120.1924, 39.0515 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.1924, 39.0515
+Warning: Sample at -120.13612, 39.04947 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.13612, 39.04947
+Warning: Sample at -120.3051444, 38.94389416 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.3051444, 38.94389416
+Warning: Sample at -120.14807, 38.9299 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.14807, 38.9299
+Warning: Sample at -120.1200101, 38.94397564 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.1200101, 38.94397564
+Warning: Sample at -120.20792, 38.89103 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.20792, 38.89103
+Warning: Sample at -120.18703, 38.90779 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.18703, 38.90779
+Warning: Sample at -120.09517, 38.87721 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.09517, 38.87721
+Warning: Sample at -120.0627382, 38.90175692 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.0627382, 38.90175692
+Warning: Sample at -120.44781, 38.84682 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.44781, 38.84682
+Warning: Sample at -120.2072609, 38.8489168 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.2072609, 38.8489168
+Warning: Sample at -120.0640578, 38.87235749 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.0640578, 38.87235749
+Warning: Sample at -120.0741577, 38.84467795 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.0741577, 38.84467795
+Warning: Sample at -120.07194, 38.85694 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.07194, 38.85694
+Warning: Sample at -120.02722, 38.86861 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.02722, 38.86861
+Warning: Sample at -120.02369, 38.86136 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.02369, 38.86136
+Warning: Sample at -120.02722, 38.86472 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.02722, 38.86472
+Warning: Sample at -120.04056, 38.83389 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.04056, 38.83389
+Warning: Sample at -120.0437566, 38.8187787 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.0437566, 38.8187787
+Warning: Sample at -120.0511969, 38.82181858 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.0511969, 38.82181858
+Warning: Sample at -120.02917, 38.81306 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.02917, 38.81306
+Warning: Sample at -120.0330663, 38.81408888 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.0330663, 38.81408888
+Warning: Sample at -120.03719, 38.74152 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -120.03719, 38.74152
+Warning: Sample at -119.99045, 38.69353 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.99045, 38.69353
+Warning: Sample at -119.9988338, 38.67863183 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.9988338, 38.67863183
+Warning: Sample at -119.8118076, 38.54438601 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.8118076, 38.54438601
+Warning: Sample at -119.9030294, 38.51684584 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.9030294, 38.51684584
+Warning: Sample at -119.7976, 38.2709 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.7976, 38.2709
+Warning: Sample at -119.4387, 38.1398 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.4387, 38.1398
+Warning: Sample at -119.34298, 38.0621 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.34298, 38.0621
+Warning: Sample at -119.3553, 38.0461 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.3553, 38.0461
+Warning: Sample at -119.34299, 38.0621 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.34299, 38.0621
+Warning: Sample at -119.24402, 37.91922 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.24402, 37.91922
+Warning: Sample at -119.22722, 37.95444 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.22722, 37.95444
+Warning: Sample at -119.6518, 37.9009 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.6518, 37.9009
+Warning: Sample at -119.37667, 37.87722 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.37667, 37.87722
+Warning: Sample at -119.3461083, 37.8815634 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.3461083, 37.8815634
+Warning: Sample at -119.2385, 37.9166 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.2385, 37.9166
+Warning: Sample at -119.573, 37.8515 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.573, 37.8515
+Warning: Sample at -119.51053, 37.84692 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.51053, 37.84692
+Warning: Sample at -119.4600104, 37.83138359 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.4600104, 37.83138359
+Warning: Sample at -119.3379572, 37.80625507 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.3379572, 37.80625507
+Warning: Sample at -119.26271, 37.79584 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.26271, 37.79584
+Warning: Sample at -119.5977, 37.7591 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.5977, 37.7591
+Warning: Sample at -119.4652, 37.7585 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.4652, 37.7585
+Warning: Sample at -119.16667, 37.75 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.16667, 37.75
+Warning: Sample at -119.5907124, 37.74486444 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.5907124, 37.74486444
+Warning: Sample at -119.5738, 37.7287 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.5738, 37.7287
+Warning: Sample at -119.5745118, 37.72856492 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.5745118, 37.72856492
+Warning: Sample at -119.13333, 37.71667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.13333, 37.71667
+Warning: Sample at -119.1332, 37.6958 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.1332, 37.6958
+Warning: Sample at -119.11611, 37.69389 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.11611, 37.69389
+Warning: Sample at -119.059, 37.6989 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.059, 37.6989
+Warning: Sample at -119.0694, 37.704 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.0694, 37.704
+Warning: Sample at -119.1605012, 37.65138978 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.1605012, 37.65138978
+Warning: Sample at -119.0872592, 37.62975081 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.0872592, 37.62975081
+Warning: Sample at -118.99694, 37.62722 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.99694, 37.62722
+Warning: Sample at -118.99689, 37.62733 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.99689, 37.62733
+Warning: Sample at -119.01167, 37.605 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.01167, 37.605
+Warning: Sample at -119.0119, 37.6028 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.0119, 37.6028
+Warning: Sample at -119.003, 37.6027 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.003, 37.6027
+Warning: Sample at -119.0086, 37.618 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.0086, 37.618
+Warning: Sample at -119.00889, 37.60528 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.00889, 37.60528
+Warning: Sample at -118.9927, 37.5884 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.9927, 37.5884
+Warning: Sample at -118.98861, 37.59181 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.98861, 37.59181
+Warning: Sample at -118.9907, 37.59 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.9907, 37.59
+Warning: Sample at -118.9766, 37.58 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.9766, 37.58
+Warning: Sample at -118.88333, 37.55 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.88333, 37.55
+Warning: Sample at -119.46667, 37.48333 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.46667, 37.48333
+Warning: Sample at -118.95229, 37.3774 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.95229, 37.3774
+Warning: Sample at -118.7786, 37.2664 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.7786, 37.2664
+Warning: Sample at -119.4261525, 37.24709669 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.4261525, 37.24709669
+Warning: Sample at -119.235, 37.23167 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.235, 37.23167
+Warning: Sample at -119.1992571, 37.24022858 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.1992571, 37.24022858
+Warning: Sample at -119.1992971, 37.24017858 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.1992971, 37.24017858
+Warning: Sample at -119.1616663, 37.2475387 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.1616663, 37.2475387
+Warning: Sample at -119.1303, 37.1999 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.1303, 37.1999
+Warning: Sample at -119.07611, 37.15778 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.07611, 37.15778
+Warning: Sample at -118.848, 37.1518 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.848, 37.1518
+Warning: Sample at -118.5587612, 37.16194518 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.5587612, 37.16194518
+Warning: Sample at -118.95917, 37.07694 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.95917, 37.07694
+Warning: Sample at -119.04111, 37.02194 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -119.04111, 37.02194
+Warning: Sample at -118.88611, 36.95111 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.88611, 36.95111
+Warning: Sample at -118.491, 36.7733 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.491, 36.7733
+Warning: Sample at -118.4031628, 36.75703562 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.4031628, 36.75703562
+Warning: Sample at -118.3907126, 36.75904567 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.3907126, 36.75904567
+Warning: Sample at -118.88333, 36.71667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.88333, 36.71667
+Warning: Sample at -118.7416, 36.71744 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.7416, 36.71744
+Warning: Sample at -118.875, 36.66667 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.875, 36.66667
+Warning: Sample at -118.7681692, 36.56765736 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.7681692, 36.56765736
+Warning: Sample at -118.7503087, 36.56238762 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.7503087, 36.56238762
+Warning: Sample at -118.7472486, 36.55877772 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.7472486, 36.55877772
+Warning: Sample at -118.6536743, 36.37390283 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.6536743, 36.37390283
+Warning: Sample at -118.6536243, 36.37386283 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.6536243, 36.37386283
+Warning: Sample at -118.4461, 36.3362 in Mitella_breweri.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -118.4461, 36.3362
+Time since start: 1.881
+0 points with values for all grids
+No background points with data in all layers
+java.lang.Exception
+	at density.Utils.logError(Utils.java:218)
+	at density.Utils.popupError(Utils.java:224)
+	at density.Runner.popupError(Runner.java:107)
+	at density.Runner.start(Runner.java:328)
+	at density.MaxEnt.main(MaxEnt.java:59)
 Ending

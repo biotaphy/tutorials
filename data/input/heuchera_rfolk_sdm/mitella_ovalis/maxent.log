@@ -1,84 +1,254 @@
-Fri Oct 21 20:08:16 GMT 2022
+Mon Oct 24 19:51:20 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
+Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Mitella_ovalis.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 15415296
-Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 4194304
+Read samples: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 21704704
+Extractor: max memory 32178700288, total allocated 2118123520, free 2085931008, used 32192512, increment 10487808
 Extracting random background and sample data
-Warning: Sample at -124.20056, 41.61115 in Mitella_ovalis.csv is missing some environmental data (e.g. alt)
+Warning: Sample at -125.93333, 49.3 in Mitella_ovalis.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -125.93333, 49.3
+Warning: Sample at -125.86667, 49.33333 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -125.86667, 49.33333
+Warning: Sample at -123.95, 49.2 in Mitella_ovalis.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.95, 49.2
+Warning: Sample at -122.05, 49.2 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.05, 49.2
+Warning: Sample at -124.31667, 49.1 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.31667, 49.1
+Warning: Sample at -124.33333, 49.08333 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.33333, 49.08333
+Warning: Sample at -124.71957, 48.86185 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.71957, 48.86185
+Warning: Sample at -124.26667, 48.48333 in Mitella_ovalis.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -124.26667, 48.48333
+Warning: Sample at -123.55, 48.48333 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.55, 48.48333
+Warning: Sample at -123.73333, 48.43333 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.73333, 48.43333
+Warning: Sample at -123.55, 48.45 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.55, 48.45
+Warning: Sample at -123.35, 48.41667 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.35, 48.41667
+Warning: Sample at -123.46784, 47.99538 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.46784, 47.99538
+Warning: Sample at -124.34052, 47.75031 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.34052, 47.75031
+Warning: Sample at -124.35318, 47.75015 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.35318, 47.75015
+Warning: Sample at -122.88348, 47.74381 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.88348, 47.74381
+Warning: Sample at -123.67417, 47.56611 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.67417, 47.56611
+Warning: Sample at -124.05829, 47.46702 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.05829, 47.46702
+Warning: Sample at -123.74556, 47.48889 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.74556, 47.48889
+Warning: Sample at -123.21435, 47.47218 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.21435, 47.47218
+Warning: Sample at -123.13875, 47.32155 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.13875, 47.32155
+Warning: Sample at -123.11194, 47.22232 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.11194, 47.22232
+Warning: Sample at -123.09667, 47.13056 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.09667, 47.13056
+Warning: Sample at -123.92583, 47.0575 in Mitella_ovalis.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.92583, 47.0575
+Warning: Sample at -121.4908, 46.20255 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.4908, 46.20255
+Warning: Sample at -122.176, 45.5553 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -122.176, 45.5553
+Warning: Sample at -122.244, 45.5396 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.244, 45.5396
+Warning: Sample at -123.0105, 45.0348 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.0105, 45.0348
+Warning: Sample at -123.5962, 44.8385 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.5962, 44.8385
+Warning: Sample at -122.651, 44.867 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.651, 44.867
+Warning: Sample at -124.0667, 44.8083 in Mitella_ovalis.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -124.0667, 44.8083
+Warning: Sample at -122.08333, 44.81666 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.08333, 44.81666
+Warning: Sample at -121.9581, 44.7786 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.9581, 44.7786
+Warning: Sample at -124.0564, 44.7206 in Mitella_ovalis.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -124.0564, 44.7206
+Warning: Sample at -123.4333, 44.7069 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.4333, 44.7069
+Warning: Sample at -122.0028, 44.6476 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.0028, 44.6476
+Warning: Sample at -121.9619, 44.6037 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.9619, 44.6037
+Warning: Sample at -123.55, 44.5044 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.55, 44.5044
+Warning: Sample at -123.4159, 44.5362 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.4159, 44.5362
+Warning: Sample at -123.5071, 44.4693 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.5071, 44.4693
+Warning: Sample at -123.5025, 44.4669 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.5025, 44.4669
+Warning: Sample at -121.9005, 44.4673 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.9005, 44.4673
+Warning: Sample at -124.0675, 44.4269 in Mitella_ovalis.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -124.0675, 44.4269
+Warning: Sample at -122.4163, 44.3974 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.4163, 44.3974
+Warning: Sample at -122.1369, 44.3953 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.1369, 44.3953
+Warning: Sample at -122.0324, 44.3975 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.0324, 44.3975
+Warning: Sample at -121.9967, 44.3499 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.9967, 44.3499
+Warning: Sample at -124.0718, 44.3134 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.0718, 44.3134
+Warning: Sample at -121.813, 44.257 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.813, 44.257
+Warning: Sample at -122.2369, 44.232 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2369, 44.232
+Warning: Sample at -121.8433, 44.2468 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.8433, 44.2468
+Warning: Sample at -122.3344, 44.2033 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.3344, 44.2033
+Warning: Sample at -122.3292, 44.1722 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.3292, 44.1722
+Warning: Sample at -122.2524, 44.2045 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2524, 44.2045
+Warning: Sample at -122.2107, 44.2045 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2107, 44.2045
+Warning: Sample at -124.0678, 44.14 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.0678, 44.14
+Warning: Sample at -122.4812, 44.1322 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.4812, 44.1322
+Warning: Sample at -122.34, 44.1547 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.34, 44.1547
+Warning: Sample at -122.0975, 44.1542 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.0975, 44.1542
+Warning: Sample at -121.9304, 44.1613 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -121.9304, 44.1613
+Warning: Sample at -124.0544, 44.1059 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.0544, 44.1059
+Warning: Sample at -123.462, 44.1219 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.462, 44.1219
+Warning: Sample at -122.615, 44.1202 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.615, 44.1202
+Warning: Sample at -123.9573, 44.0772 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.9573, 44.0772
+Warning: Sample at -123.5439, 44.049 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.5439, 44.049
+Warning: Sample at -122.3624, 44.0193 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.3624, 44.0193
+Warning: Sample at -122.593, 43.9653 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.593, 43.9653
+Warning: Sample at -123.3777, 43.9263 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.3777, 43.9263
+Warning: Sample at -122.8294, 43.9429 in Mitella_ovalis.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -122.8294, 43.9429
+Warning: Sample at -122.0609, 43.9216 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.0609, 43.9216
+Warning: Sample at -122.0182, 43.9433 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.0182, 43.9433
+Warning: Sample at -122.4446, 43.9119 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.4446, 43.9119
+Warning: Sample at -122.612, 43.8586 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.612, 43.8586
+Warning: Sample at -123.0583, 43.7978 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.0583, 43.7978
+Warning: Sample at -124.1736, 43.6772 in Mitella_ovalis.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -124.1736, 43.6772
+Warning: Sample at -122.861, 43.6886 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.861, 43.6886
+Warning: Sample at -123.929, 43.4822 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.929, 43.4822
+Warning: Sample at -124.2168, 43.4564 in Mitella_ovalis.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -124.2168, 43.4564
+Warning: Sample at -124.3472, 43.3456 in Mitella_ovalis.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -124.3472, 43.3456
+Warning: Sample at -124.3289, 43.3403 in Mitella_ovalis.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -124.3289, 43.3403
+Warning: Sample at -124.3289, 43.3257 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.3289, 43.3257
+Warning: Sample at -124.2127, 43.2961 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.2127, 43.2961
+Warning: Sample at -122.6273, 43.3218 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.6273, 43.3218
+Warning: Sample at -123.4828, 43.2614 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.4828, 43.2614
+Warning: Sample at -123.2698, 43.2591 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.2698, 43.2591
+Warning: Sample at -122.6074, 43.2203 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.6074, 43.2203
+Warning: Sample at -123.7932, 43.1965 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.7932, 43.1965
+Warning: Sample at -123.9234, 43.0806 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.9234, 43.0806
+Warning: Sample at -122.55, 42.9471 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.55, 42.9471
+Warning: Sample at -123.7169, 42.8275 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.7169, 42.8275
+Warning: Sample at -122.2708, 42.8036 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.2708, 42.8036
+Warning: Sample at -124.4961, 42.7458 in Mitella_ovalis.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -124.4961, 42.7458
+Warning: Sample at -123.4222, 42.7364 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.4222, 42.7364
+Warning: Sample at -123.6418, 42.557 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.6418, 42.557
+Warning: Sample at -122.9117, 42.4514 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.9117, 42.4514
+Warning: Sample at -124.0592, 42.36 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.0592, 42.36
+Warning: Sample at -123.4383, 42.1782 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.4383, 42.1782
+Warning: Sample at -124.1678, 42.1452 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -124.1678, 42.1452
+Warning: Sample at -123.5913, 42.0266 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.5913, 42.0266
+Warning: Sample at -123.8039413, 41.97509312 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.8039413, 41.97509312
+Warning: Sample at -123.8438505, 41.87474419 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.8438505, 41.87474419
+Warning: Sample at -123.7325, 41.76806 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.7325, 41.76806
+Warning: Sample at -124.20056, 41.61115 in Mitella_ovalis.csv is missing some environmental data (e.g. BIOCLIM_1)
 Warning: Skipping sample at -124.20056, 41.61115
-Time since start: 1.02
-1165 points with values for all grids
-Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk/mitella_ovalis/Mitella_ovalis.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk/mitella_ovalis nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk/mitella_ovalis samplesfile=/volumes/output/heuchera_rfolk/mitella_ovalis/Mitella_ovalis.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
-Species: Mitella_ovalis
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
-outputdirectory: /volumes/output/heuchera_rfolk/mitella_ovalis
-samplesfile: /volumes/output/heuchera_rfolk/mitella_ovalis/Mitella_ovalis.csv
-environmentallayers: /volumes/env/worldclim1.4
-warnings: false
-autorun: true
-visible: false
-cache: false
-
-getSamples: max memory 32178700288, total allocated 2118123520, free 1863684040, used 254439480, increment 234829880
-Making features
-makeFeatures: max memory 32178700288, total allocated 2118123520, free 1855295432, used 262828088, increment 8388608
-Mitella_ovalis: 
-Regularization values: linear/quadratic/product: 0.136, categorical: 0.250, threshold: 1.120, hinge: 0.500
-88 samples
-Density: max memory 32178700288, total allocated 2118123520, free 1844807624, used 273315896, increment 10487808
-linearPredictor: max memory 32178700288, total allocated 2118123520, free 1844807624, used 273315896, increment 0
-FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1844807624, used 273315896, increment 0
-Sequential: max memory 32178700288, total allocated 2118123520, free 1844807624, used 273315896, increment 0
-Initial loss: 7.060476365999801
-Time since start: 2.23
-360: time = 1.046000 loss = 6.642260
-Resulting gain: 0.4182163883611052
-Projecting...
-Writing file /volumes/output/heuchera_rfolk/mitella_ovalis/Mitella_ovalis.asc
-Writing /volumes/output/heuchera_rfolk/mitella_ovalis/plots/Mitella_ovalis.png
-Time since start: 3.431
+Warning: Sample at -123.70778, 41.54278 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.70778, 41.54278
+Warning: Sample at -123.9372, 40.0171 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.9372, 40.0171
+Warning: Sample at -123.803622, 39.42425558 in Mitella_ovalis.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
+Warning: Skipping sample at -123.803622, 39.42425558
+Warning: Sample at -123.81, 39.36 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.81, 39.36
+Warning: Sample at -123.7643294, 39.31181808 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.7643294, 39.31181808
+Warning: Sample at -123.6891432, 38.99646492 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -123.6891432, 38.99646492
+Warning: Sample at -122.7343783, 38.0230132 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.7343783, 38.0230132
+Warning: Sample at -122.7161278, 38.01435354 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
+Warning: Skipping sample at -122.7161278, 38.01435354
+Time since start: 1.851
+0 points with values for all grids
+No background points with data in all layers
+java.lang.Exception
+	at density.Utils.logError(Utils.java:218)
+	at density.Utils.popupError(Utils.java:224)
+	at density.Runner.popupError(Runner.java:107)
+	at density.Runner.start(Runner.java:328)
+	at density.MaxEnt.main(MaxEnt.java:59)
 Ending
