@@ -25,9 +25,10 @@ Input: occurrence records
 
 The create_sdm tool accepts one or more occurrence CSV datasets, defined in two ways in  
 the configuration file: either specified by a parent directory in the `points_dir` 
-parameter, and/or a list of individual files in the `points_layer` parameter.  Each of 
-the occurrence datasets must use the same species_key, x_key, and y_key, specified in
-the configuration file. 
+parameter, and/or a list of individual files in the `points_layer` parameter.  The
+first line of each CSV file must contain fieldnames.  Each of
+the occurrence datasets must use the same fieldnames for the species_key, x_key, and
+y_key, specified in the configuration file.
 
 More information is in the **Occurrence Data** section of `data_wrangle_occurrence
 <data_wrangle_occurrence#occurrence-data>`_.
@@ -44,7 +45,10 @@ Input: ecoregions file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The ecoregions file is a raster file indicating broad ecoregions for the region
-being modeled.  This file can be in ASCII or GeoTiff format.
+being modeled.  Ecoregions data can be used to compute a simple Rare Species Model
+for species without sufficient points for a Maxent model, by intersecting the convex
+hull of the points with the ecoregions.  These data are available from coarse to fine
+scales, at global and regional extents.  This file can be in ASCII or GeoTiff format.
 
 
 Input: Script parameter file
