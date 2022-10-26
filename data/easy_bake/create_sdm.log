@@ -1,0 +1,649 @@
+24 Oct 2022 19:48 INFO     create_sdm: 
+
+***Create SDMs for 67 species occurrence CSVs
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Starting SDM for heuchera_chlorantha, file 1 of 67
+24 Oct 2022 19:48 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:48 INFO     model: Create Maxent model
+24 Oct 2022 19:48 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_chlorantha.csv
+24 Oct 2022 19:48 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_chlorantha.csv
+24 Oct 2022 19:48 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_chlorantha
+
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Starting SDM for heuchera_eastwoodiae, file 2 of 67
+24 Oct 2022 19:48 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:48 INFO     model: Create Maxent model
+24 Oct 2022 19:48 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_eastwoodiae.csv
+24 Oct 2022 19:48 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_eastwoodiae.csv
+24 Oct 2022 19:48 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_eastwoodiae
+
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Starting SDM for mitella_acerina, file 3 of 67
+24 Oct 2022 19:48 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:48 INFO     model: Create Maxent model
+24 Oct 2022 19:48 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_acerina.csv
+24 Oct 2022 19:48 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_acerina.csv
+24 Oct 2022 19:48 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Completed SDM computation for mitella_acerina
+
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Starting SDM for mitella_breweri, file 4 of 67
+24 Oct 2022 19:48 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:48 INFO     model: Create Maxent model
+24 Oct 2022 19:48 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_breweri.csv
+24 Oct 2022 19:48 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_breweri.csv
+24 Oct 2022 19:48 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Completed SDM computation for mitella_breweri
+
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Starting SDM for tolmiea_menziesii, file 5 of 67
+24 Oct 2022 19:48 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:48 INFO     model: Create Maxent model
+24 Oct 2022 19:48 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/tolmiea_menziesii.csv
+24 Oct 2022 19:48 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/tolmiea_menziesii.csv
+24 Oct 2022 19:48 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Completed SDM computation for tolmiea_menziesii
+
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Starting SDM for telesonix_jamesii, file 6 of 67
+24 Oct 2022 19:48 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:48 INFO     model: Create Maxent model
+24 Oct 2022 19:48 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/telesonix_jamesii.csv
+24 Oct 2022 19:48 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/telesonix_jamesii.csv
+24 Oct 2022 19:48 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Completed SDM computation for telesonix_jamesii
+
+24 Oct 2022 19:48 INFO     create_sdm: 
+*** Starting SDM for elmera_racemosa, file 7 of 67
+24 Oct 2022 19:48 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:48 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/elmera_racemosa.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/elmera_racemosa.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for elmera_racemosa
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_caroliniana, file 8 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_caroliniana.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_caroliniana.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_caroliniana
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_acutifolia, file 9 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_acutifolia.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_acutifolia.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_acutifolia
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_longiflora, file 10 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_longiflora.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_longiflora.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_longiflora
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_brevistaminea, file 11 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_brevistaminea.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_brevistaminea.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_brevistaminea
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for conimitella_williamsii, file 12 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/conimitella_williamsii.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/conimitella_williamsii.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for conimitella_williamsii
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_merriamii, file 13 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_merriamii.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_merriamii.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_merriamii
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for mitella_stauropetala, file 14 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_stauropetala.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_stauropetala.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for mitella_stauropetala
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_novomexicana, file 15 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_novomexicana.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_novomexicana.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_novomexicana
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_missouriensis, file 16 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_missouriensis.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_missouriensis.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_missouriensis
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_lakelae, file 17 of 67
+24 Oct 2022 19:49 INFO     model: Create rare species model and map
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_lakelae
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_versicolor, file 18 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_versicolor.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_versicolor.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_versicolor
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_pubescens, file 19 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_pubescens.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_pubescens.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_pubescens
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_alba, file 20 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_alba.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_alba.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_alba
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for tellima_grandiflora, file 21 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/tellima_grandiflora.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/tellima_grandiflora.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for tellima_grandiflora
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_elegans, file 22 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_elegans.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_elegans.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_elegans
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for mitella_nuda, file 23 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_nuda.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_nuda.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for mitella_nuda
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_rubescens, file 24 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_rubescens.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_rubescens.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_rubescens
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for tolmiea_diplomenziesii, file 25 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/tolmiea_diplomenziesii.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/tolmiea_diplomenziesii.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for tolmiea_diplomenziesii
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_soltisii, file 26 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_soltisii.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_soltisii.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_soltisii
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_pilosissima, file 27 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_pilosissima.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_pilosissima.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_pilosissima
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for mitella_stylosa, file 28 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_stylosa.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_stylosa.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for mitella_stylosa
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_parishii, file 29 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_parishii.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_parishii.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_parishii
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_hirsutissima, file 30 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_hirsutissima.csv
+24 Oct 2022 19:49 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_hirsutissima.csv
+24 Oct 2022 19:49 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_hirsutissima
+
+24 Oct 2022 19:49 INFO     create_sdm: 
+*** Starting SDM for heuchera_parvifolia, file 31 of 67
+24 Oct 2022 19:49 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:49 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_parvifolia.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_parvifolia.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_parvifolia
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_pulchella, file 32 of 67
+24 Oct 2022 19:50 INFO     model: Create rare species model and map
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_pulchella
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_woodsiaphila, file 33 of 67
+24 Oct 2022 19:50 INFO     model: Create rare species model and map
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_woodsiaphila
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_puberula, file 34 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_puberula.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_puberula.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_puberula
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_villosa, file 35 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_villosa.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_villosa.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_villosa
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_sanguinea, file 36 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_sanguinea.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_sanguinea.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_sanguinea
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_wootonii, file 37 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_wootonii.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_wootonii.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_wootonii
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for mitella_caulescens, file 38 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_caulescens.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_caulescens.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for mitella_caulescens
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_caespitosa, file 39 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_caespitosa.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_caespitosa.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_caespitosa
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for mitella_pentandra, file 40 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_pentandra.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_pentandra.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for mitella_pentandra
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for mitella_japonica, file 41 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_japonica.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_japonica.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for mitella_japonica
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_longipetala, file 42 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_longipetala.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_longipetala.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_longipetala
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_micrantha, file 43 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_micrantha.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_micrantha.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_micrantha
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_hallii, file 44 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_hallii.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_hallii.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_hallii
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_parviflora, file 45 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_parviflora.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_parviflora.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_parviflora
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_rosendahlii, file 46 of 67
+24 Oct 2022 19:50 INFO     model: Create rare species model and map
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_rosendahlii
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_cylindrica, file 47 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_cylindrica.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_cylindrica.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_cylindrica
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_richardsonii, file 48 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_richardsonii.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_richardsonii.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_richardsonii
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for bensoniella_oregona, file 49 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/bensoniella_oregona.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/bensoniella_oregona.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for bensoniella_oregona
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_glabra, file 50 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_glabra.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_glabra.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_glabra
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for mitella_diphylla, file 51 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_diphylla.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_diphylla.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for mitella_diphylla
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_grossulariifolia, file 52 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_grossulariifolia.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_grossulariifolia.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_grossulariifolia
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_bracteata, file 53 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_bracteata.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_bracteata.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_bracteata
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for lithophragma_parviflorum, file 54 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/lithophragma_parviflorum.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/lithophragma_parviflorum.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for lithophragma_parviflorum
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for test, file 55 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/test.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/test.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for test
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for heuchera_mexicana, file 56 of 67
+24 Oct 2022 19:50 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:50 INFO     model: Create Maxent model
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_mexicana.csv
+24 Oct 2022 19:50 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_mexicana.csv
+24 Oct 2022 19:50 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_mexicana
+
+24 Oct 2022 19:50 INFO     create_sdm: 
+*** Starting SDM for mitella_pauciflora, file 57 of 67
+24 Oct 2022 19:51 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:51 INFO     model: Create Maxent model
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_pauciflora.csv
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_pauciflora.csv
+24 Oct 2022 19:51 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Completed SDM computation for mitella_pauciflora
+
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Starting SDM for heuchera_abramsii, file 58 of 67
+24 Oct 2022 19:51 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:51 INFO     model: Create Maxent model
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_abramsii.csv
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_abramsii.csv
+24 Oct 2022 19:51 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_abramsii
+
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Starting SDM for heuchera_maxima, file 59 of 67
+24 Oct 2022 19:51 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:51 INFO     model: Create Maxent model
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_maxima.csv
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_maxima.csv
+24 Oct 2022 19:51 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_maxima
+
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Starting SDM for mitella_furusei, file 60 of 67
+24 Oct 2022 19:51 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:51 INFO     model: Create Maxent model
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_furusei.csv
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_furusei.csv
+24 Oct 2022 19:51 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Completed SDM computation for mitella_furusei
+
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Starting SDM for tiarella_polyphylla, file 61 of 67
+24 Oct 2022 19:51 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:51 INFO     model: Create Maxent model
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/tiarella_polyphylla.csv
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/tiarella_polyphylla.csv
+24 Oct 2022 19:51 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Completed SDM computation for tiarella_polyphylla
+
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Starting SDM for peltoboykinia_watanabei, file 62 of 67
+24 Oct 2022 19:51 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:51 INFO     model: Create Maxent model
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/peltoboykinia_watanabei.csv
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/peltoboykinia_watanabei.csv
+24 Oct 2022 19:51 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Completed SDM computation for peltoboykinia_watanabei
+
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Starting SDM for heuchera_inconstans, file 63 of 67
+24 Oct 2022 19:51 INFO     model: Create rare species model and map
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_inconstans
+
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Starting SDM for heuchera_americana, file 64 of 67
+24 Oct 2022 19:51 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:51 INFO     model: Create Maxent model
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_americana.csv
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_americana.csv
+24 Oct 2022 19:51 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_americana
+
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Starting SDM for heuchera_wellsiae, file 65 of 67
+24 Oct 2022 19:51 INFO     model: Create rare species model and map
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_wellsiae
+
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Starting SDM for heuchera_glomerulata, file 66 of 67
+24 Oct 2022 19:51 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:51 INFO     model: Create Maxent model
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_glomerulata.csv
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/heuchera_glomerulata.csv
+24 Oct 2022 19:51 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_glomerulata
+
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Starting SDM for mitella_ovalis, file 67 of 67
+24 Oct 2022 19:51 INFO     model: Created mask /volumes/env/na_2.5min/mask.asc for current SDM
+24 Oct 2022 19:51 INFO     model: Create Maxent model
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_ovalis.csv
+24 Oct 2022 19:51 INFO     model: Failed to produce Maxent model for /volumes/data/input/heuchera_rfolk/mitella_ovalis.csv
+24 Oct 2022 19:51 INFO     model: Delete mask /volumes/env/na_2.5min/mask.asc
+24 Oct 2022 19:51 INFO     create_sdm: 
+*** Completed SDM computation for mitella_ovalis
+
