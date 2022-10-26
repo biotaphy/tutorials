@@ -45,6 +45,9 @@ COPY ./data/config    /volumes/data/config
 # COPY ./data/easy_bake /volumes/data/easy_bake
 COPY ./data/wranglers /volumes/data/wranglers
 # Populate big data volume
+COPY ./data/env/worldclim1.4  /volumes/env/worldclim1.4
+COPY ./data/env/ecoreg_10min_global.tif /volumes/env/ecoreg_10min_global.tif
+
 COPY ./data/env/na_2.5min  /volumes/env/na_2.5min
 COPY ./data/env/ecoreg_na_2.5min.tif /volumes/env/ecoreg_na_2.5min.tif
 SHELL ["/bin/bash", "-c"]
