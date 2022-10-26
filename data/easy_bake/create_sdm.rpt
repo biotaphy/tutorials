@@ -1,0 +1,343 @@
+{
+    "/volumes/data/input/heuchera_rfolk/heuchera_chlorantha.csv": {
+        "species": "Heuchera_chlorantha",
+        "num_points": 33,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_eastwoodiae.csv": {
+        "species": "Heuchera_eastwoodiae",
+        "num_points": 31,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/mitella_acerina.csv": {
+        "species": "Mitella_acerina",
+        "num_points": 26,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/mitella_breweri.csv": {
+        "species": "Mitella_breweri",
+        "num_points": 282,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/tolmiea_menziesii.csv": {
+        "species": "Tolmiea_menziesii",
+        "num_points": 224,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/telesonix_jamesii.csv": {
+        "species": "Telesonix_jamesii",
+        "num_points": 37,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/elmera_racemosa.csv": {
+        "species": "Elmera_racemosa",
+        "num_points": 62,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_caroliniana.csv": {
+        "species": "Heuchera_caroliniana",
+        "num_points": 29,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_acutifolia.csv": {
+        "species": "Heuchera_acutifolia",
+        "num_points": 19,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_longiflora.csv": {
+        "species": "Heuchera_longiflora",
+        "num_points": 62,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_brevistaminea.csv": {
+        "species": "Heuchera_brevistaminea",
+        "num_points": 14,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/conimitella_williamsii.csv": {
+        "species": "Conimitella_williamsii",
+        "num_points": 41,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_merriamii.csv": {
+        "species": "Heuchera_merriamii",
+        "num_points": 46,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/mitella_stauropetala.csv": {
+        "species": "Mitella_stauropetala",
+        "num_points": 134,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_novomexicana.csv": {
+        "species": "Heuchera_novomexicana",
+        "num_points": 45,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_missouriensis.csv": {
+        "species": "Heuchera_missouriensis",
+        "num_points": 23,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_lakelae.csv": {
+        "species": "Heuchera_lakelae",
+        "num_points": 4,
+        "method": "rare_species_model",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_sdm/heuchera_lakelae/Heuchera_lakelae.asc"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_versicolor.csv": {
+        "species": "Heuchera_versicolor",
+        "num_points": 262,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_pubescens.csv": {
+        "species": "Heuchera_pubescens",
+        "num_points": 37,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_alba.csv": {
+        "species": "Heuchera_alba",
+        "num_points": 21,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/tellima_grandiflora.csv": {
+        "species": "Tellima_grandiflora",
+        "num_points": 520,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_elegans.csv": {
+        "species": "Heuchera_elegans",
+        "num_points": 115,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/mitella_nuda.csv": {
+        "species": "Mitella_nuda",
+        "num_points": 273,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_rubescens.csv": {
+        "species": "Heuchera_rubescens",
+        "num_points": 422,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/tolmiea_diplomenziesii.csv": {
+        "species": "Tolmiea_diplomenziesii",
+        "num_points": 85,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_soltisii.csv": {
+        "species": "Heuchera_soltisii",
+        "num_points": 14,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_pilosissima.csv": {
+        "species": "Heuchera_pilosissima",
+        "num_points": 48,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/mitella_stylosa.csv": {
+        "species": "Mitella_stylosa",
+        "num_points": 89,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_parishii.csv": {
+        "species": "Heuchera_parishii",
+        "num_points": 103,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_hirsutissima.csv": {
+        "species": "Heuchera_hirsutissima",
+        "num_points": 21,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_parvifolia.csv": {
+        "species": "Heuchera_parvifolia",
+        "num_points": 1344,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_pulchella.csv": {
+        "species": "Heuchera_pulchella",
+        "num_points": 7,
+        "method": "rare_species_model",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_sdm/heuchera_pulchella/Heuchera_pulchella.asc"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_woodsiaphila.csv": {
+        "species": "Heuchera_woodsiaphila",
+        "num_points": 4,
+        "method": "rare_species_model",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_sdm/heuchera_woodsiaphila/Heuchera_woodsiaphila.asc"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_puberula.csv": {
+        "species": "Heuchera_puberula",
+        "num_points": 51,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_villosa.csv": {
+        "species": "Heuchera_villosa",
+        "num_points": 97,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_sanguinea.csv": {
+        "species": "Heuchera_sanguinea",
+        "num_points": 81,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_wootonii.csv": {
+        "species": "Heuchera_wootonii",
+        "num_points": 22,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/mitella_caulescens.csv": {
+        "species": "Mitella_caulescens",
+        "num_points": 109,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_caespitosa.csv": {
+        "species": "Heuchera_caespitosa",
+        "num_points": 12,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/mitella_pentandra.csv": {
+        "species": "Mitella_pentandra",
+        "num_points": 458,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/mitella_japonica.csv": {
+        "species": "Mitella_japonica",
+        "num_points": 78,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_longipetala.csv": {
+        "species": "Heuchera_longipetala",
+        "num_points": 83,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_micrantha.csv": {
+        "species": "Heuchera_micrantha",
+        "num_points": 527,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_hallii.csv": {
+        "species": "Heuchera_hallii",
+        "num_points": 48,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_parviflora.csv": {
+        "species": "Heuchera_parviflora",
+        "num_points": 28,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_rosendahlii.csv": {
+        "species": "Heuchera_rosendahlii",
+        "num_points": 2,
+        "method": "rare_species_model",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_sdm/heuchera_rosendahlii/Heuchera_rosendahlii.asc"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_cylindrica.csv": {
+        "species": "Heuchera_cylindrica",
+        "num_points": 436,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_richardsonii.csv": {
+        "species": "Heuchera_richardsonii",
+        "num_points": 266,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/bensoniella_oregona.csv": {
+        "species": "Bensoniella_oregona",
+        "num_points": 28,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_glabra.csv": {
+        "species": "Heuchera_glabra",
+        "num_points": 192,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/mitella_diphylla.csv": {
+        "species": "Mitella_diphylla",
+        "num_points": 318,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_grossulariifolia.csv": {
+        "species": "Heuchera_grossulariifolia",
+        "num_points": 69,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_bracteata.csv": {
+        "species": "Heuchera_bracteata",
+        "num_points": 86,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/lithophragma_parviflorum.csv": {
+        "species": "Lithophragma_parviflorum",
+        "num_points": 274,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/test.csv": {
+        "species": "Test",
+        "num_points": 28,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_mexicana.csv": {
+        "species": "Heuchera_mexicana",
+        "num_points": 85,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/mitella_pauciflora.csv": {
+        "species": "Mitella_pauciflora",
+        "num_points": 162,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_abramsii.csv": {
+        "species": "Heuchera_abramsii",
+        "num_points": 28,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_maxima.csv": {
+        "species": "Heuchera_maxima",
+        "num_points": 22,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/mitella_furusei.csv": {
+        "species": "Mitella_furusei",
+        "num_points": 95,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/tiarella_polyphylla.csv": {
+        "species": "Tiarella_polyphylla",
+        "num_points": 281,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/peltoboykinia_watanabei.csv": {
+        "species": "Peltoboykinia_watanabei",
+        "num_points": 19,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_inconstans.csv": {
+        "species": "Heuchera_inconstans",
+        "num_points": 11,
+        "method": "rare_species_model",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_sdm/heuchera_inconstans/Heuchera_inconstans.asc"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_americana.csv": {
+        "species": "Heuchera_americana",
+        "num_points": 421,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_wellsiae.csv": {
+        "species": "Heuchera_wellsiae",
+        "num_points": 4,
+        "method": "rare_species_model",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_sdm/heuchera_wellsiae/Heuchera_wellsiae.asc"
+    },
+    "/volumes/data/input/heuchera_rfolk/heuchera_glomerulata.csv": {
+        "species": "Heuchera_glomerulata",
+        "num_points": 59,
+        "method": "maxent"
+    },
+    "/volumes/data/input/heuchera_rfolk/mitella_ovalis.csv": {
+        "species": "Mitella_ovalis",
+        "num_points": 111,
+        "method": "maxent"
+    }
+}
