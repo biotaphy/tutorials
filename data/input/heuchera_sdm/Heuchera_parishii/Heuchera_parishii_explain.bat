@@ -1,1 +1,0 @@
-java -mx30688m -cp "/home/astewart/git/Maxent/ArchivedReleases/3.4.4/maxent.jar:/git/Maxent/ArchivedReleases/3.4.4/maxent.jar" density.Explain -l /volumes/output/heuchera_sdm/Heuchera_parishii/Heuchera_parishii.lambdas -c /volumes/output/heuchera_sdm/Heuchera_parishii/Heuchera_parishii.asc /volumes/env/worldclim1.4
