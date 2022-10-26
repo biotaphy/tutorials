@@ -1,122 +1,80 @@
-Mon Oct 24 19:49:18 GMT 2022
+Wed Oct 26 16:47:21 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
-Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
-Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
-Checking header of /volumes/env/na_2.5min/mask.asc
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Heuchera_novomexicana.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 19609600
-Extractor: max memory 32178700288, total allocated 2118123520, free 2090125312, used 27998208, increment 8388608
+Read samples: max memory 522190848, total allocated 33554432, free 22469448, used 11084984, increment 11084984
+Extractor: max memory 522190848, total allocated 33554432, free 20971520, used 12582912, increment 1497928
 Extracting random background and sample data
-Warning: Sample at -107.0843566, 34.43435046 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.0843566, 34.43435046
-Warning: Sample at -108.22, 33.77 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.22, 33.77
-Warning: Sample at -105.27, 33.6 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -105.27, 33.6
-Warning: Sample at -108.968557, 33.578649 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.968557, 33.578649
-Warning: Sample at -107.5935363, 33.53214095 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.5935363, 33.53214095
-Warning: Sample at -108.59, 33.49 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.59, 33.49
-Warning: Sample at -108.1116, 33.42576 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.1116, 33.42576
-Warning: Sample at -108.1116006, 33.42576168 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.1116006, 33.42576168
-Warning: Sample at -107.82334, 33.44079 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.82334, 33.44079
-Warning: Sample at -107.8233354, 33.44078729 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.8233354, 33.44078729
-Warning: Sample at -108.59456, 33.40205 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.59456, 33.40205
-Warning: Sample at -108.5945593, 33.40205327 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.5945593, 33.40205327
-Warning: Sample at -107.94, 33.415 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.94, 33.415
-Warning: Sample at -107.95632, 33.33964 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.95632, 33.33964
-Warning: Sample at -107.92, 33.37 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.92, 33.37
-Warning: Sample at -107.91803, 33.33994 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.91803, 33.33994
-Warning: Sample at -107.9563157, 33.33964452 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.9563157, 33.33964452
-Warning: Sample at -107.9048333, 33.33491667 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.9048333, 33.33491667
-Warning: Sample at -107.822, 33.35367 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.822, 33.35367
-Warning: Sample at -107.8126, 33.3379 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.8126, 33.3379
-Warning: Sample at -107.8256, 33.3561 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.8256, 33.3561
-Warning: Sample at -106.53477, 33.29462 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -106.53477, 33.29462
-Warning: Sample at -106.53911, 33.30204 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -106.53911, 33.30204
-Warning: Sample at -106.53, 33.3 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -106.53, 33.3
-Warning: Sample at -108.07271, 33.2891 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.07271, 33.2891
-Warning: Sample at -108.0727087, 33.2890954 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.0727087, 33.2890954
-Warning: Sample at -107.945, 33.204 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.945, 33.204
-Warning: Sample at -108.207533, 33.159154 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.207533, 33.159154
-Warning: Sample at -108.00725, 33.09416667 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.00725, 33.09416667
-Warning: Sample at -107.8343, 33.0698 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.8343, 33.0698
-Warning: Sample at -108.155, 33.02718 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.155, 33.02718
-Warning: Sample at -107.90565, 33.008 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.90565, 33.008
-Warning: Sample at -108.3, 32.97 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.3, 32.97
-Warning: Sample at -108.2980729, 32.96876283 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.2980729, 32.96876283
-Warning: Sample at -108.21, 32.93 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.21, 32.93
-Warning: Sample at -108.179087, 32.924474 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.179087, 32.924474
-Warning: Sample at -107.76978, 32.92337 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.76978, 32.92337
-Warning: Sample at -107.769783, 32.923367 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.769783, 32.923367
-Warning: Sample at -107.7717111, 32.93353198 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.7717111, 32.93353198
-Warning: Sample at -107.77171, 32.93353 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.77171, 32.93353
-Warning: Sample at -107.78465, 32.9428333 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.78465, 32.9428333
-Warning: Sample at -108.2345766, 32.89611283 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.2345766, 32.89611283
-Warning: Sample at -107.727458, 32.768789 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.727458, 32.768789
-Warning: Sample at -108.428656, 32.585654 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.428656, 32.585654
-Warning: Sample at -108.413943, 32.611826 in Heuchera_novomexicana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.413943, 32.611826
-Time since start: 1.88
-0 points with values for all grids
-No background points with data in all layers
-java.lang.Exception
-	at density.Utils.logError(Utils.java:218)
-	at density.Utils.popupError(Utils.java:224)
-	at density.Runner.popupError(Runner.java:107)
-	at density.Runner.start(Runner.java:328)
-	at density.MaxEnt.main(MaxEnt.java:59)
+275 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_novomexicana/Heuchera_novomexicana.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/heuchera_novomexicana nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/heuchera_novomexicana samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_novomexicana/Heuchera_novomexicana.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Species: Heuchera_novomexicana
+Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_sdm/heuchera_novomexicana
+samplesfile: /volumes/output/heuchera_rfolk_sdm/heuchera_novomexicana/Heuchera_novomexicana.csv
+environmentallayers: /volumes/env/worldclim1.4
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 522190848, total allocated 40894464, free 21612648, used 19281816, increment 6698904
+Making features
+makeFeatures: max memory 522190848, total allocated 40894464, free 19052832, used 21841632, increment 2559816
+Heuchera_novomexicana: 
+Regularization values: linear/quadratic/product: 0.462, categorical: 0.250, threshold: 1.810, hinge: 0.500
+19 samples
+Density: max memory 522190848, total allocated 40894464, free 16495384, used 24399080, increment 2557448
+linearPredictor: max memory 522190848, total allocated 40894464, free 16495384, used 24399080, increment 0
+FeaturedSpace: max memory 522190848, total allocated 40894464, free 16495384, used 24399080, increment 0
+Sequential: max memory 522190848, total allocated 40894464, free 16495384, used 24399080, increment 0
+Initial loss: 5.616771097666572
+Time since start: 1.175
+500: time = 0.317000 loss = 4.864343
+Resulting gain: 0.7524279000289749
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_sdm/heuchera_novomexicana/Heuchera_novomexicana.asc
+Writing /volumes/output/heuchera_rfolk_sdm/heuchera_novomexicana/plots/Heuchera_novomexicana.png
 Ending

@@ -1,98 +1,80 @@
-Mon Oct 24 19:48:43 GMT 2022
+Wed Oct 26 16:45:15 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
-Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
-Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
-Checking header of /volumes/env/na_2.5min/mask.asc
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Heuchera_chlorantha.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 21704704
-Extractor: max memory 32178700288, total allocated 2118123520, free 2088030208, used 30093312, increment 8388608
+Read samples: max memory 522190848, total allocated 33554432, free 22479368, used 11075064, increment 11075064
+Extractor: max memory 522190848, total allocated 33554432, free 21121928, used 12432504, increment 1357440
 Extracting random background and sample data
-Warning: Sample at -122.91667, 49.35 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.91667, 49.35
-Warning: Sample at -124.25139, 48.12639 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -124.25139, 48.12639
-Warning: Sample at -123.79104, 48.03914 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -123.79104, 48.03914
-Warning: Sample at -122.33889, 47.6 in Heuchera_chlorantha.csv is missing some environmental data (e.g. BIOCLIM_1)
-Warning: Skipping sample at -122.33889, 47.6
-Warning: Sample at -122.33083, 47.60639 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.33083, 47.60639
-Warning: Sample at -121.66944, 46.60667 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.66944, 46.60667
-Warning: Sample at -121.30818, 45.97682 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.30818, 45.97682
-Warning: Sample at -121.46333, 45.715 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.46333, 45.715
-Warning: Sample at -121.5419, 45.6272 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.5419, 45.6272
-Warning: Sample at -122.675, 45.5236 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.675, 45.5236
-Warning: Sample at -122.7522, 45.4661 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.7522, 45.4661
-Warning: Sample at -122.7824, 45.4844 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.7824, 45.4844
-Warning: Sample at -122.6694, 45.4208 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.6694, 45.4208
-Warning: Sample at -123.3296, 45.354 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -123.3296, 45.354
-Warning: Sample at -121.7417, 45.0964 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.7417, 45.0964
-Warning: Sample at -122.9407, 45.0258 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.9407, 45.0258
-Warning: Sample at -121.4739, 44.976 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.4739, 44.976
-Warning: Sample at -122.3028, 44.7547 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.3028, 44.7547
-Warning: Sample at -122.0028, 44.6476 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.0028, 44.6476
-Warning: Sample at -121.6268, 44.547 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.6268, 44.547
-Warning: Sample at -121.6355, 44.3981 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.6355, 44.3981
-Warning: Sample at -122.9625, 44.0719 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.9625, 44.0719
-Warning: Sample at -121.3142, 43.9564 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.3142, 43.9564
-Warning: Sample at -121.6333, 43.7677 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.6333, 43.7677
-Warning: Sample at -122.1445, 43.7467 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.1445, 43.7467
-Warning: Sample at -121.8126, 43.552 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.8126, 43.552
-Warning: Sample at -121.9669, 43.5014 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.9669, 43.5014
-Warning: Sample at -121.9529, 43.5223 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.9529, 43.5223
-Warning: Sample at -121.933, 43.5368 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.933, 43.5368
-Warning: Sample at -123.1639, 42.8486 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -123.1639, 42.8486
-Warning: Sample at -121.97222, 42.68556 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.97222, 42.68556
-Warning: Sample at -121.9722, 42.6856 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.9722, 42.6856
-Warning: Sample at -122.4912, 42.4975 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.4912, 42.4975
-Time since start: 1.79
-0 points with values for all grids
-No background points with data in all layers
-java.lang.Exception
-	at density.Utils.logError(Utils.java:218)
-	at density.Utils.popupError(Utils.java:224)
-	at density.Runner.popupError(Runner.java:107)
-	at density.Runner.start(Runner.java:328)
-	at density.MaxEnt.main(MaxEnt.java:59)
+738 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_chlorantha/Heuchera_chlorantha.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/heuchera_chlorantha nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/heuchera_chlorantha samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_chlorantha/Heuchera_chlorantha.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Species: Heuchera_chlorantha
+Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_sdm/heuchera_chlorantha
+samplesfile: /volumes/output/heuchera_rfolk_sdm/heuchera_chlorantha/Heuchera_chlorantha.csv
+environmentallayers: /volumes/env/worldclim1.4
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 522190848, total allocated 40894464, free 24693512, used 16200952, increment 3768448
+Making features
+makeFeatures: max memory 522190848, total allocated 40894464, free 18392296, used 22502168, increment 6301216
+Heuchera_chlorantha: 
+Regularization values: linear/quadratic/product: 0.288, categorical: 0.250, threshold: 1.720, hinge: 0.500
+28 samples
+Density: max memory 522190848, total allocated 40894464, free 28605952, used 12288512, increment -10213656
+linearPredictor: max memory 522190848, total allocated 40894464, free 28605952, used 12288512, increment 0
+FeaturedSpace: max memory 522190848, total allocated 40894464, free 28605952, used 12288512, increment 0
+Sequential: max memory 522190848, total allocated 40894464, free 28605952, used 12288512, increment 0
+Initial loss: 6.6039438246004725
+Time since start: 1.282
+500: time = 0.384000 loss = 6.207132
+Resulting gain: 0.3968121970741292
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_sdm/heuchera_chlorantha/Heuchera_chlorantha.asc
+Writing /volumes/output/heuchera_rfolk_sdm/heuchera_chlorantha/plots/Heuchera_chlorantha.png
 Ending

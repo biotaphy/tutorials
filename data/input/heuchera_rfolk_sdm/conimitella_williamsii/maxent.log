@@ -1,114 +1,80 @@
-Mon Oct 24 19:49:11 GMT 2022
+Wed Oct 26 16:44:45 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
-Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
-Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
-Checking header of /volumes/env/na_2.5min/mask.asc
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Conimitella_williamsii.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 19609600
-Extractor: max memory 32178700288, total allocated 2118123520, free 2090125312, used 27998208, increment 8388608
+Read samples: max memory 522190848, total allocated 33554432, free 22477328, used 11077104, increment 11077104
+Extractor: max memory 522190848, total allocated 33554432, free 21104648, used 12449784, increment 1372680
 Extracting random background and sample data
-Warning: Sample at -114.33333, 50.13333 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -114.33333, 50.13333
-Warning: Sample at -114.26311, 49.99752 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -114.26311, 49.99752
-Warning: Sample at -113.95, 49.483 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -113.95, 49.483
-Warning: Sample at -113.01667, 49.01667 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -113.01667, 49.01667
-Warning: Sample at -110.5042, 47.4765 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.5042, 47.4765
-Warning: Sample at -110.6273, 47.4316 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.6273, 47.4316
-Warning: Sample at -109.3326, 46.7321 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.3326, 46.7321
-Warning: Sample at -111.2644, 46.4541 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.2644, 46.4541
-Warning: Sample at -110.7564, 45.488 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.7564, 45.488
-Warning: Sample at -110.1896, 45.4369 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.1896, 45.4369
-Warning: Sample at -110.9392, 45.3046 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.9392, 45.3046
-Warning: Sample at -110.8972, 45.3109 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.8972, 45.3109
-Warning: Sample at -110.9963, 45.2231 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.9963, 45.2231
-Warning: Sample at -109.454, 45.2414 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.454, 45.2414
-Warning: Sample at -109.638, 45.1912 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.638, 45.1912
-Warning: Sample at -111.2401, 45.1531 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.2401, 45.1531
-Warning: Sample at -111.1984, 45.1057 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.1984, 45.1057
-Warning: Sample at -111.1853, 45.1098 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.1853, 45.1098
-Warning: Sample at -110.8143, 45.1103 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.8143, 45.1103
-Warning: Sample at -108.2817, 45.1242 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.2817, 45.1242
-Warning: Sample at -111.1532937, 45.07072485 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.1532937, 45.07072485
-Warning: Sample at -110.5862, 45.0077 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.5862, 45.0077
-Warning: Sample at -110.4506, 44.9649 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.4506, 44.9649
-Warning: Sample at -110.5117, 44.9504 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.5117, 44.9504
-Warning: Sample at -110.4099, 44.9223 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.4099, 44.9223
-Warning: Sample at -110.247, 44.9504 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.247, 44.9504
-Warning: Sample at -111.4266, 44.8028 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.4266, 44.8028
-Warning: Sample at -107.12, 44.6436 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.12, 44.6436
-Warning: Sample at -109.8254, 44.5053 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.8254, 44.5053
-Warning: Sample at -109.7644, 44.4473 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.7644, 44.4473
-Warning: Sample at -109.2446, 44.3198 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.2446, 44.3198
-Warning: Sample at -106.81139, 44.33139 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -106.81139, 44.33139
-Warning: Sample at -106.952, 44.2172 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -106.952, 44.2172
-Warning: Sample at -108.9228, 43.8655 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.9228, 43.8655
-Warning: Sample at -110.6156, 43.5618 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.6156, 43.5618
-Warning: Sample at -110.5957, 43.5618 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.5957, 43.5618
-Warning: Sample at -110.58333, 43.285 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.58333, 43.285
-Warning: Sample at -110.4923, 43.2421 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.4923, 43.2421
-Warning: Sample at -110.9797, 42.4694 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.9797, 42.4694
-Warning: Sample at -106.1189, 40.0432 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -106.1189, 40.0432
-Warning: Sample at -106.1461, 39.8049 in Conimitella_williamsii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -106.1461, 39.8049
-Time since start: 1.833
-0 points with values for all grids
-No background points with data in all layers
-java.lang.Exception
-	at density.Utils.logError(Utils.java:218)
-	at density.Utils.popupError(Utils.java:224)
-	at density.Runner.popupError(Runner.java:107)
-	at density.Runner.start(Runner.java:328)
-	at density.MaxEnt.main(MaxEnt.java:59)
+1181 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/conimitella_williamsii/Conimitella_williamsii.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/conimitella_williamsii nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/conimitella_williamsii samplesfile=/volumes/output/heuchera_rfolk_sdm/conimitella_williamsii/Conimitella_williamsii.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Species: Conimitella_williamsii
+Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_sdm/conimitella_williamsii
+samplesfile: /volumes/output/heuchera_rfolk_sdm/conimitella_williamsii/Conimitella_williamsii.csv
+environmentallayers: /volumes/env/worldclim1.4
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 522190848, total allocated 40894464, free 20164376, used 20730088, increment 8280304
+Making features
+makeFeatures: max memory 522190848, total allocated 40894464, free 29185352, used 11709112, increment -9020976
+Conimitella_williamsii: 
+Regularization values: linear/quadratic/product: 0.239, categorical: 0.250, threshold: 1.660, hinge: 0.500
+34 samples
+Density: max memory 522190848, total allocated 40894464, free 22142048, used 18752416, increment 7043304
+linearPredictor: max memory 522190848, total allocated 40894464, free 22142048, used 18752416, increment 0
+FeaturedSpace: max memory 522190848, total allocated 40894464, free 22142048, used 18752416, increment 0
+Sequential: max memory 522190848, total allocated 40894464, free 22142048, used 18752416, increment 0
+Initial loss: 7.074116816197362
+Time since start: 1.56
+500: time = 0.617000 loss = 6.243211
+Resulting gain: 0.8309060160698492
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_sdm/conimitella_williamsii/Conimitella_williamsii.asc
+Writing /volumes/output/heuchera_rfolk_sdm/conimitella_williamsii/plots/Conimitella_williamsii.png
 Ending

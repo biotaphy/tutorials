@@ -1,580 +1,82 @@
-Mon Oct 24 19:50:52 GMT 2022
+Wed Oct 26 16:44:21 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
-Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
-Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
-Checking header of /volumes/env/na_2.5min/mask.asc
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Lithophragma_parviflorum.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2094301648, used 23821872, increment 23821872
-Extractor: max memory 32178700288, total allocated 2118123520, free 2085931008, used 32192512, increment 8370640
+Read samples: max memory 522190848, total allocated 33554432, free 21102200, used 12452232, increment 12452232
+Extractor: max memory 522190848, total allocated 33554432, free 29754200, used 3800232, increment -8652000
 Extracting random background and sample data
-Warning: Sample at -119.2, 50.45 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.2, 50.45
-Warning: Sample at -118.8, 50.45 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.8, 50.45
-Warning: Sample at -119.0, 50.0 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.0, 50.0
-Warning: Sample at -116.68333, 49.75 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.68333, 49.75
-Warning: Sample at -115.31667, 49.75 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -115.31667, 49.75
-Warning: Sample at -124.19697, 49.49271 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -124.19697, 49.49271
-Warning: Sample at -117.70829, 49.34015 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.70829, 49.34015
-Warning: Sample at -123.70467, 49.1486 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
-Warning: Skipping sample at -123.70467, 49.1486
-Warning: Sample at -123.06667, 49.08333 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -123.06667, 49.08333
-Warning: Sample at -122.9343189, 49.0830413 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
-Warning: Skipping sample at -122.9343189, 49.0830413
-Warning: Sample at -122.85, 49.05 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -122.85, 49.05
-Warning: Sample at -121.1509405, 49.04972888 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.1509405, 49.04972888
-Warning: Sample at -116.3841373, 48.99977256 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.3841373, 48.99977256
-Warning: Sample at -121.01951, 48.87638 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.01951, 48.87638
-Warning: Sample at -118.76667, 48.88333 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.76667, 48.88333
-Warning: Sample at -123.3408, 48.86811 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
-Warning: Skipping sample at -123.3408, 48.86811
-Warning: Sample at -122.6125, 48.795 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.6125, 48.795
-Warning: Sample at -122.88718, 48.76435 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -122.88718, 48.76435
-Warning: Sample at -119.34529, 48.76664 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.34529, 48.76664
-Warning: Sample at -118.13282, 48.7661 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.13282, 48.7661
-Warning: Sample at -118.47444, 48.71861 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.47444, 48.71861
-Warning: Sample at -118.4375, 48.71306 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.4375, 48.71306
-Warning: Sample at -122.98613, 48.63905 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -122.98613, 48.63905
-Warning: Sample at -123.18525, 48.6249 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -123.18525, 48.6249
-Warning: Sample at -122.97453, 48.61385 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -122.97453, 48.61385
-Warning: Sample at -123.01417, 48.54417 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -123.01417, 48.54417
-Warning: Sample at -122.8539, 48.54536 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
-Warning: Skipping sample at -122.8539, 48.54536
-Warning: Sample at -118.08705, 48.57334 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.08705, 48.57334
-Warning: Sample at -122.55555, 48.53528 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
-Warning: Skipping sample at -122.55555, 48.53528
-Warning: Sample at -122.55352, 48.53402 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
-Warning: Skipping sample at -122.55352, 48.53402
-Warning: Sample at -122.5469, 48.52037 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
-Warning: Skipping sample at -122.5469, 48.52037
-Warning: Sample at -123.336, 48.48752 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -123.336, 48.48752
-Warning: Sample at -122.70273, 48.49269 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
-Warning: Skipping sample at -122.70273, 48.49269
-Warning: Sample at -122.69472, 48.49833 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
-Warning: Skipping sample at -122.69472, 48.49833
-Warning: Sample at -123.41667, 48.45 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
-Warning: Skipping sample at -123.41667, 48.45
-Warning: Sample at -123.43333, 48.43333 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
-Warning: Skipping sample at -123.43333, 48.43333
-Warning: Sample at -122.63861, 48.40194 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.63861, 48.40194
-Warning: Sample at -123.10056, 48.07972 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -123.10056, 48.07972
-Warning: Sample at -119.25, 48.083 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.25, 48.083
-Warning: Sample at -118.97907, 47.88418 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.97907, 47.88418
-Warning: Sample at -118.65773, 47.8983 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.65773, 47.8983
-Warning: Sample at -118.33306, 47.89389 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.33306, 47.89389
-Warning: Sample at -119.07389, 47.87028 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.07389, 47.87028
-Warning: Sample at -119.60233, 47.6671 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.60233, 47.6671
-Warning: Sample at -118.85323, 47.6852 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.85323, 47.6852
-Warning: Sample at -119.33154, 47.62542 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.33154, 47.62542
-Warning: Sample at -117.425, 47.65889 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.425, 47.65889
-Warning: Sample at -120.66028, 47.59639 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.66028, 47.59639
-Warning: Sample at -119.30667, 47.61 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.30667, 47.61
-Warning: Sample at -122.40861, 47.57639 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -122.40861, 47.57639
-Warning: Sample at -120.34889, 47.57611 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.34889, 47.57611
-Warning: Sample at -119.49588, 47.53092 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.49588, 47.53092
-Warning: Sample at -119.88069, 47.46965 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.88069, 47.46965
-Warning: Sample at -120.65198, 47.17804 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.65198, 47.17804
-Warning: Sample at -120.92215, 47.13653 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.92215, 47.13653
-Warning: Sample at -120.06065, 47.13102 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.06065, 47.13102
-Warning: Sample at -120.0138, 47.14745 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.0138, 47.14745
-Warning: Sample at -120.74962, 47.08675 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.74962, 47.08675
-Warning: Sample at -120.05197, 47.07845 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.05197, 47.07845
-Warning: Sample at -122.53964, 47.00752 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.53964, 47.00752
-Warning: Sample at -118.01333, 47.03188 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.01333, 47.03188
-Warning: Sample at -122.86278, 46.89722 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.86278, 46.89722
-Warning: Sample at -121.15223, 46.90679 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.15223, 46.90679
-Warning: Sample at -122.43589, 46.81797 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.43589, 46.81797
-Warning: Sample at -120.9893, 46.72399 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.9893, 46.72399
-Warning: Sample at -117.38033, 46.63692 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.38033, 46.63692
-Warning: Sample at -120.48911, 46.60743 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.48911, 46.60743
-Warning: Sample at -119.71667, 46.5 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.71667, 46.5
-Warning: Sample at -117.58167, 46.20833 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.58167, 46.20833
-Warning: Sample at -117.69472, 46.18111 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.69472, 46.18111
-Warning: Sample at -117.25562, 46.1137 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.25562, 46.1137
-Warning: Sample at -122.8657, 46.07151 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.8657, 46.07151
-Warning: Sample at -120.5655, 46.06196 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.5655, 46.06196
-Warning: Sample at -117.00338, 46.06928 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.00338, 46.06928
-Warning: Sample at -121.21954, 45.74364 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.21954, 45.74364
-Warning: Sample at -120.33947, 45.72992 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.33947, 45.72992
-Warning: Sample at -121.742, 45.3009 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.742, 45.3009
-Warning: Sample at -116.73111, 45.09009 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.73111, 45.09009
-Warning: Sample at -116.70179, 45.05444 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.70179, 45.05444
-Warning: Sample at -116.30049, 44.85141 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.30049, 44.85141
-Warning: Sample at -116.37048, 44.6846 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.37048, 44.6846
-Warning: Sample at -118.617, 44.5563 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.617, 44.5563
-Warning: Sample at -116.04166, 44.51638 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.04166, 44.51638
-Warning: Sample at -103.94061, 44.51251 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -103.94061, 44.51251
-Warning: Sample at -103.3418831, 44.46355731 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -103.3418831, 44.46355731
-Warning: Sample at -120.18267, 44.43567 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.18267, 44.43567
-Warning: Sample at -104.4298645, 44.44674153 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -104.4298645, 44.44674153
-Warning: Sample at -103.92992, 44.33838 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -103.92992, 44.33838
-Warning: Sample at -118.66513, 44.30411 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.66513, 44.30411
-Warning: Sample at -103.83472, 44.3275 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -103.83472, 44.3275
-Warning: Sample at -120.2, 44.26667 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.2, 44.26667
-Warning: Sample at -111.4333, 44.2167 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.4333, 44.2167
-Warning: Sample at -104.05676, 44.17287 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -104.05676, 44.17287
-Warning: Sample at -104.00444, 44.19927 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -104.00444, 44.19927
-Warning: Sample at -116.07, 44.1 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.07, 44.1
-Warning: Sample at -103.95451, 44.04612 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -103.95451, 44.04612
-Warning: Sample at -103.82906, 44.0172 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -103.82906, 44.0172
-Warning: Sample at -103.78362, 44.01776 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -103.78362, 44.01776
-Warning: Sample at -110.50384, 43.88302 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.50384, 43.88302
-Warning: Sample at -103.72211, 43.77967 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -103.72211, 43.77967
-Warning: Sample at -116.15, 43.6 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.15, 43.6
-Warning: Sample at -112.36863, 42.85246 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -112.36863, 42.85246
-Warning: Sample at -112.43244, 42.71447 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -112.43244, 42.71447
-Warning: Sample at -112.44844, 42.70106 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -112.44844, 42.70106
-Warning: Sample at -111.58, 42.35 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.58, 42.35
-Warning: Sample at -111.66833, 42.20667 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.66833, 42.20667
-Warning: Sample at -111.66, 42.2 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.66, 42.2
-Warning: Sample at -122.40806, 41.97444 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.40806, 41.97444
-Warning: Sample at -117.35792, 41.95869 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.35792, 41.95869
-Warning: Sample at -117.35, 41.95 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.35, 41.95
-Warning: Sample at -120.27722, 41.90139 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.27722, 41.90139
-Warning: Sample at -123.9448723, 41.8377538 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -123.9448723, 41.8377538
-Warning: Sample at -123.94444, 41.83889 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -123.94444, 41.83889
-Warning: Sample at -122.13194, 41.865 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.13194, 41.865
-Warning: Sample at -120.1532, 41.8607 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.1532, 41.8607
-Warning: Sample at -120.1686, 41.7847 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.1686, 41.7847
-Warning: Sample at -115.44, 41.75 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -115.44, 41.75
-Warning: Sample at -116.0476, 41.73347 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.0476, 41.73347
-Warning: Sample at -112.01, 41.71 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -112.01, 41.71
-Warning: Sample at -111.9928, 41.6925 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.9928, 41.6925
-Warning: Sample at -112.54, 41.62 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -112.54, 41.62
-Warning: Sample at -122.9730054, 41.58107632 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.9730054, 41.58107632
-Warning: Sample at -120.65417, 41.56083 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.65417, 41.56083
-Warning: Sample at -120.2678, 41.5625 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.2678, 41.5625
-Warning: Sample at -121.14861, 41.53417 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.14861, 41.53417
-Warning: Sample at -120.9382, 41.3783 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.9382, 41.3783
-Warning: Sample at -121.1428, 41.3366 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.1428, 41.3366
-Warning: Sample at -122.3088255, 41.31293622 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.3088255, 41.31293622
-Warning: Sample at -120.9033, 41.3189 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.9033, 41.3189
-Warning: Sample at -120.84926, 41.301 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.84926, 41.301
-Warning: Sample at -121.42417, 41.25194 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.42417, 41.25194
-Warning: Sample at -121.4075, 41.25333 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.4075, 41.25333
-Warning: Sample at -121.0178, 41.2608 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.0178, 41.2608
-Warning: Sample at -106.5727, 41.2612 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -106.5727, 41.2612
-Warning: Sample at -121.361, 41.1881 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.361, 41.1881
-Warning: Sample at -122.939, 41.076 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.939, 41.076
-Warning: Sample at -123.16167, 40.92111 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -123.16167, 40.92111
-Warning: Sample at -106.7639, 40.775 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -106.7639, 40.775
-Warning: Sample at -106.7442, 40.7678 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -106.7442, 40.7678
-Warning: Sample at -111.7297, 40.6297 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.7297, 40.6297
-Warning: Sample at -107.16035, 40.64517 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.16035, 40.64517
-Warning: Sample at -106.98277, 40.51485 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -106.98277, 40.51485
-Warning: Sample at -108.6548, 40.4423 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.6548, 40.4423
-Warning: Sample at -122.16833, 40.39083 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.16833, 40.39083
-Warning: Sample at -120.65194, 40.41639 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.65194, 40.41639
-Warning: Sample at -106.61804, 40.40006 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -106.61804, 40.40006
-Warning: Sample at -123.3390748, 40.33641304 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -123.3390748, 40.33641304
-Warning: Sample at -122.05917, 40.33833 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.05917, 40.33833
-Warning: Sample at -121.82528, 40.34583 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.82528, 40.34583
-Warning: Sample at -122.1313061, 40.29549422 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.1313061, 40.29549422
-Warning: Sample at -122.13417, 40.29333 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.13417, 40.29333
-Warning: Sample at -122.09417, 40.30222 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.09417, 40.30222
-Warning: Sample at -121.89778, 40.30472 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.89778, 40.30472
-Warning: Sample at -121.2308, 40.3064 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.2308, 40.3064
-Warning: Sample at -122.17111, 40.22278 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.17111, 40.22278
-Warning: Sample at -122.33889, 40.15972 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.33889, 40.15972
-Warning: Sample at -121.88111, 39.90778 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.88111, 39.90778
-Warning: Sample at -121.59139, 39.88583 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.59139, 39.88583
-Warning: Sample at -121.7756212, 39.83995525 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.7756212, 39.83995525
-Warning: Sample at -121.74528, 39.83917 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.74528, 39.83917
-Warning: Sample at -121.5747867, 39.85080675 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.5747867, 39.85080675
-Warning: Sample at -121.81417, 39.82972 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.81417, 39.82972
-Warning: Sample at -121.71333, 39.82389 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.71333, 39.82389
-Warning: Sample at -121.48694, 39.82722 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.48694, 39.82722
-Warning: Sample at -121.77889, 39.77611 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.77889, 39.77611
-Warning: Sample at -121.75306, 39.78611 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.75306, 39.78611
-Warning: Sample at -121.74389, 39.78306 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.74389, 39.78306
-Warning: Sample at -121.74167, 39.78583 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.74167, 39.78583
-Warning: Sample at -121.62083, 39.75972 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.62083, 39.75972
-Warning: Sample at -120.2926, 39.7591 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.2926, 39.7591
-Warning: Sample at -122.8664949, 39.72627802 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.8664949, 39.72627802
-Warning: Sample at -121.77861, 39.73972 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.77861, 39.73972
-Warning: Sample at -121.76417, 39.74861 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.76417, 39.74861
-Warning: Sample at -121.76833, 39.74444 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.76833, 39.74444
-Warning: Sample at -121.70333, 39.72917 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.70333, 39.72917
-Warning: Sample at -121.76083, 39.70333 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.76083, 39.70333
-Warning: Sample at -121.75556, 39.70361 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.75556, 39.70361
-Warning: Sample at -121.74861, 39.70389 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.74861, 39.70389
-Warning: Sample at -121.561784, 39.68080993 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.561784, 39.68080993
-Warning: Sample at -121.6925, 39.61639 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.6925, 39.61639
-Warning: Sample at -121.54472, 39.59056 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.54472, 39.59056
-Warning: Sample at -121.55044, 39.59218 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.55044, 39.59218
-Warning: Sample at -121.55, 39.61667 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.55, 39.61667
-Warning: Sample at -121.55385, 39.59328 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.55385, 39.59328
-Warning: Sample at -121.5575, 39.5983 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.5575, 39.5983
-Warning: Sample at -121.55944, 39.61056 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.55944, 39.61056
-Warning: Sample at -121.55351, 39.5979 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.55351, 39.5979
-Warning: Sample at -121.54806, 39.58333 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.54806, 39.58333
-Warning: Sample at -121.53944, 39.59611 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.53944, 39.59611
-Warning: Sample at -122.5436653, 39.57500359 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.5436653, 39.57500359
-Warning: Sample at -120.86667, 39.5 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.86667, 39.5
-Warning: Sample at -105.19718, 39.53589 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -105.19718, 39.53589
-Warning: Sample at -105.15789, 39.54136 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -105.15789, 39.54136
-Warning: Sample at -121.39028, 39.44778 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.39028, 39.44778
-Warning: Sample at -121.39694, 39.40444 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.39694, 39.40444
-Warning: Sample at -121.48083, 39.34667 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.48083, 39.34667
-Warning: Sample at -121.49806, 39.35889 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.49806, 39.35889
-Warning: Sample at -121.49056, 39.34389 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.49056, 39.34389
-Warning: Sample at -120.6723, 39.3005 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.6723, 39.3005
-Warning: Sample at -120.3572, 39.2511 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.3572, 39.2511
-Warning: Sample at -121.7723826, 39.22971661 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.7723826, 39.22971661
-Warning: Sample at -123.20667, 39.15028 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -123.20667, 39.15028
-Warning: Sample at -122.4532, 39.0281 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.4532, 39.0281
-Warning: Sample at -122.4516, 39.0287 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.4516, 39.0287
-Warning: Sample at -122.3892, 39.0174 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.3892, 39.0174
-Warning: Sample at -122.79222, 38.9425 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.79222, 38.9425
-Warning: Sample at -122.65972, 38.90778 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.65972, 38.90778
-Warning: Sample at -122.42306, 38.87639 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.42306, 38.87639
-Warning: Sample at -121.0693617, 38.89512891 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.0693617, 38.89512891
-Warning: Sample at -122.37278, 38.85667 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.37278, 38.85667
-Warning: Sample at -120.66611, 38.65361 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.66611, 38.65361
-Warning: Sample at -120.65306, 38.59806 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.65306, 38.59806
-Warning: Sample at -121.08667, 38.45194 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.08667, 38.45194
-Warning: Sample at -121.05, 38.4 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.05, 38.4
-Warning: Sample at -120.57778, 38.1475 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.57778, 38.1475
-Warning: Sample at -120.6625, 38.08722 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.6625, 38.08722
-Warning: Sample at -122.62194, 37.91222 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -122.62194, 37.91222
-Warning: Sample at -120.46861, 37.84028 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.46861, 37.84028
-Warning: Sample at -120.46249, 37.8555 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.46249, 37.8555
-Warning: Sample at -120.4525239, 37.85499531 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.4525239, 37.85499531
-Warning: Sample at -119.6116, 37.7264 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.6116, 37.7264
-Warning: Sample at -121.76694, 37.68194 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.76694, 37.68194
-Warning: Sample at -121.6269382, 37.6458005 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.6269382, 37.6458005
-Warning: Sample at -121.5040853, 37.63252179 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.5040853, 37.63252179
-Warning: Sample at -121.5872564, 37.5748524 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.5872564, 37.5748524
-Warning: Sample at -121.2484962, 37.37942949 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.2484962, 37.37942949
-Warning: Sample at -119.27806, 37.03389 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.27806, 37.03389
-Warning: Sample at -121.09667, 36.97194 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.09667, 36.97194
-Warning: Sample at -120.98639, 36.97111 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.98639, 36.97111
-Warning: Sample at -121.10639, 36.93444 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.10639, 36.93444
-Warning: Sample at -107.26397, 36.95409 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -107.26397, 36.95409
-Warning: Sample at -120.96051, 36.84195 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.96051, 36.84195
-Warning: Sample at -121.1950554, 36.59264824 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -121.1950554, 36.59264824
-Warning: Sample at -120.82569, 36.53578 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.82569, 36.53578
-Warning: Sample at -120.6442202, 36.36948792 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -120.6442202, 36.36948792
-Warning: Sample at -119.24639, 36.34 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.24639, 36.34
-Warning: Sample at -118.66389, 36.19111 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.66389, 36.19111
-Warning: Sample at -118.7826, 35.7124 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.7826, 35.7124
-Warning: Sample at -118.7075, 35.7372 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.7075, 35.7372
-Warning: Sample at -118.54583, 35.72694 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.54583, 35.72694
-Warning: Sample at -118.5831, 35.7489 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.5831, 35.7489
-Warning: Sample at -118.6283, 35.6332 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.6283, 35.6332
-Warning: Sample at -118.42083, 35.65 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.42083, 35.65
-Warning: Sample at -118.79417, 35.54611 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.79417, 35.54611
-Warning: Sample at -118.97222, 35.53056 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.97222, 35.53056
-Warning: Sample at -118.6836, 35.515 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.6836, 35.515
-Warning: Sample at -118.6666853, 35.52795372 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.6666853, 35.52795372
-Warning: Sample at -118.66389, 35.52603 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.66389, 35.52603
-Warning: Sample at -118.5298314, 35.46299638 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.5298314, 35.46299638
-Warning: Sample at -118.7285357, 35.43818557 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.7285357, 35.43818557
-Warning: Sample at -118.4236587, 35.43692781 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.4236587, 35.43692781
-Warning: Sample at -118.58694, 35.24083 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.58694, 35.24083
-Warning: Sample at -118.5611696, 35.22351235 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.5611696, 35.22351235
-Warning: Sample at -118.5626, 35.2232 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.5626, 35.2232
-Warning: Sample at -118.57583, 35.24083 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.57583, 35.24083
-Warning: Sample at -118.51222, 35.17639 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.51222, 35.17639
-Warning: Sample at -118.28361, 35.10222 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.28361, 35.10222
-Warning: Sample at -119.18472, 34.98528 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.18472, 34.98528
-Warning: Sample at -119.38396, 34.91876 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.38396, 34.91876
-Warning: Sample at -119.3418, 34.8778 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.3418, 34.8778
-Warning: Sample at -118.8423625, 34.89483901 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.8423625, 34.89483901
-Warning: Sample at -118.76278, 34.88194 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.76278, 34.88194
-Warning: Sample at -118.98478, 34.84886 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.98478, 34.84886
-Warning: Sample at -118.75206, 34.8523408 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.75206, 34.8523408
-Warning: Sample at -118.78711, 34.85239 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.78711, 34.85239
-Warning: Sample at -118.55, 34.69167 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.55, 34.69167
-Warning: Sample at -118.56667, 34.70056 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.56667, 34.70056
-Warning: Sample at -118.51667, 34.69167 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -118.51667, 34.69167
-Warning: Sample at -119.338, 34.642 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -119.338, 34.642
-Warning: Sample at -116.79861, 34.15806 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.79861, 34.15806
-Warning: Sample at -116.66667, 33.66667 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.66667, 33.66667
-Warning: Sample at -117.407617, 33.65198353 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.407617, 33.65198353
-Warning: Sample at -117.01667, 33.63333 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.01667, 33.63333
-Warning: Sample at -117.05, 33.60833 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.05, 33.60833
-Time since start: 1.911
-0 points with values for all grids
-No background points with data in all layers
-java.lang.Exception
-	at density.Utils.logError(Utils.java:218)
-	at density.Utils.popupError(Utils.java:224)
-	at density.Runner.popupError(Runner.java:107)
-	at density.Runner.start(Runner.java:328)
-	at density.MaxEnt.main(MaxEnt.java:59)
+7941 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum/Lithophragma_parviflorum.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum samplesfile=/volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum/Lithophragma_parviflorum.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Species: Lithophragma_parviflorum
+Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum
+samplesfile: /volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum/Lithophragma_parviflorum.csv
+environmentallayers: /volumes/env/worldclim1.4
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 522190848, total allocated 40894464, free 27972360, used 12922104, increment 9121872
+Making features
+Time since start: 1.165
+makeFeatures: max memory 522190848, total allocated 89128960, free 25982000, used 63146960, increment 50224856
+Lithophragma_parviflorum: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+195 samples
+Density: max memory 522190848, total allocated 176160768, free 85032960, used 91127808, increment 27980848
+linearPredictor: max memory 522190848, total allocated 176160768, free 85032960, used 91127808, increment 0
+FeaturedSpace: max memory 522190848, total allocated 176160768, free 85032960, used 91127808, increment 0
+Sequential: max memory 522190848, total allocated 176160768, free 85032960, used 91127808, increment 0
+Initial loss: 8.97979449089521
+Time since start: 5.582
+500: time = 4.004000 loss = 8.106947
+Resulting gain: 0.8728473265422032
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum/Lithophragma_parviflorum.asc
+Writing /volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum/plots/Lithophragma_parviflorum.png
+Time since start: 9.181
 Ending

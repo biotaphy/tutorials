@@ -1,238 +1,80 @@
-Mon Oct 24 19:49:53 GMT 2022
+Wed Oct 26 16:44:56 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
-Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
-Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
-Checking header of /volumes/env/na_2.5min/mask.asc
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Heuchera_parishii.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 21704704
-Extractor: max memory 32178700288, total allocated 2118123520, free 2085931008, used 32192512, increment 10487808
+Read samples: max memory 522190848, total allocated 33554432, free 22185240, used 11369192, increment 11369192
+Extractor: max memory 522190848, total allocated 33554432, free 20382216, used 13172216, increment 1803024
 Extracting random background and sample data
-Warning: Sample at -116.90833, 34.33333 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.90833, 34.33333
-Warning: Sample at -116.95179, 34.33043 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.95179, 34.33043
-Warning: Sample at -116.95178, 34.33042 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.95178, 34.33042
-Warning: Sample at -117.18182, 34.25823 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.18182, 34.25823
-Warning: Sample at -117.1289, 34.2683 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.1289, 34.2683
-Warning: Sample at -117.0086, 34.2566 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.0086, 34.2566
-Warning: Sample at -116.92408, 34.25392 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.92408, 34.25392
-Warning: Sample at -116.927, 34.2538 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.927, 34.2538
-Warning: Sample at -117.06186, 34.22098 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.06186, 34.22098
-Warning: Sample at -116.9776, 34.2424 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.9776, 34.2424
-Warning: Sample at -116.96667, 34.23333 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.96667, 34.23333
-Warning: Sample at -116.98236, 34.24176 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.98236, 34.24176
-Warning: Sample at -116.9796128, 34.24096984 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.9796128, 34.24096984
-Warning: Sample at -116.96911, 34.2201 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.96911, 34.2201
-Warning: Sample at -116.981, 34.2405 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.981, 34.2405
-Warning: Sample at -116.9839, 34.2171 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.9839, 34.2171
-Warning: Sample at -116.8118, 34.2144 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.8118, 34.2144
-Warning: Sample at -116.80128, 34.21202 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.80128, 34.21202
-Warning: Sample at -116.79186, 34.21092 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.79186, 34.21092
-Warning: Sample at -116.8058, 34.2317 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.8058, 34.2317
-Warning: Sample at -116.7925, 34.2125 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.7925, 34.2125
-Warning: Sample at -116.79194, 34.21083 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.79194, 34.21083
-Warning: Sample at -116.75842, 34.2143 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.75842, 34.2143
-Warning: Sample at -116.78806, 34.21022 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.78806, 34.21022
-Warning: Sample at -116.9242, 34.2083 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.9242, 34.2083
-Warning: Sample at -116.795, 34.20306 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.795, 34.20306
-Warning: Sample at -116.79583, 34.20194 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.79583, 34.20194
-Warning: Sample at -116.80873, 34.20219 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.80873, 34.20219
-Warning: Sample at -116.80767, 34.19825 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.80767, 34.19825
-Warning: Sample at -116.80766, 34.19826 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.80766, 34.19826
-Warning: Sample at -116.82321, 34.16859 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.82321, 34.16859
-Warning: Sample at -116.79389, 34.20008 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.79389, 34.20008
-Warning: Sample at -116.75339, 34.16789 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.75339, 34.16789
-Warning: Sample at -116.7534, 34.1679 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.7534, 34.1679
-Warning: Sample at -116.75508, 34.17094 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.75508, 34.17094
-Warning: Sample at -116.76667, 34.16667 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.76667, 34.16667
-Warning: Sample at -116.75507, 34.17094 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.75507, 34.17094
-Warning: Sample at -116.70833, 34.2 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.70833, 34.2
-Warning: Sample at -116.74754, 34.20356 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.74754, 34.20356
-Warning: Sample at -116.7482, 34.167 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.7482, 34.167
-Warning: Sample at -116.74167, 34.18333 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.74167, 34.18333
-Warning: Sample at -116.93144, 34.1574 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.93144, 34.1574
-Warning: Sample at -116.85146, 34.15157 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.85146, 34.15157
-Warning: Sample at -116.85212, 34.15132 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.85212, 34.15132
-Warning: Sample at -116.85069, 34.15247 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.85069, 34.15247
-Warning: Sample at -116.84387, 34.12851 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.84387, 34.12851
-Warning: Sample at -116.8544, 34.1507 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.8544, 34.1507
-Warning: Sample at -116.85069, 34.15246 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.85069, 34.15246
-Warning: Sample at -116.83431, 34.15219 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.83431, 34.15219
-Warning: Sample at -116.85194, 34.15111 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.85194, 34.15111
-Warning: Sample at -116.79439, 34.15529 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.79439, 34.15529
-Warning: Sample at -116.8082, 34.152 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.8082, 34.152
-Warning: Sample at -116.82066, 34.13325 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.82066, 34.13325
-Warning: Sample at -116.80516, 34.1513 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.80516, 34.1513
-Warning: Sample at -116.8028, 34.1589 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.8028, 34.1589
-Warning: Sample at -116.79656, 34.155 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.79656, 34.155
-Warning: Sample at -116.83294, 34.15422 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.83294, 34.15422
-Warning: Sample at -116.79653, 34.156 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.79653, 34.156
-Warning: Sample at -116.75263, 34.13291 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.75263, 34.13291
-Warning: Sample at -116.76283, 34.13167 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.76283, 34.13167
-Warning: Sample at -116.78417, 34.14722 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.78417, 34.14722
-Warning: Sample at -116.78028, 34.12553 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.78028, 34.12553
-Warning: Sample at -116.76189, 34.15186 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.76189, 34.15186
-Warning: Sample at -116.7516, 34.14248 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.7516, 34.14248
-Warning: Sample at -116.78982, 34.15411 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.78982, 34.15411
-Warning: Sample at -116.76386, 34.13763 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.76386, 34.13763
-Warning: Sample at -116.75053, 34.12689 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.75053, 34.12689
-Warning: Sample at -116.78983, 34.15411 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.78983, 34.15411
-Warning: Sample at -116.76371, 34.15649 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.76371, 34.15649
-Warning: Sample at -116.75893, 34.14345 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.75893, 34.14345
-Warning: Sample at -116.7619, 34.15187 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.7619, 34.15187
-Warning: Sample at -116.76386, 34.13764 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.76386, 34.13764
-Warning: Sample at -116.77972, 34.12583 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.77972, 34.12583
-Warning: Sample at -116.74194, 34.15603 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.74194, 34.15603
-Warning: Sample at -116.73599, 34.14573 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.73599, 34.14573
-Warning: Sample at -116.74767, 34.14073 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.74767, 34.14073
-Warning: Sample at -116.74911, 34.12761 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.74911, 34.12761
-Warning: Sample at -116.74912, 34.12761 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.74912, 34.12761
-Warning: Sample at -116.74194, 34.15602 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.74194, 34.15602
-Warning: Sample at -116.74733, 34.15581 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.74733, 34.15581
-Warning: Sample at -116.74733, 34.1558 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.74733, 34.1558
-Warning: Sample at -116.7405, 34.15099 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.7405, 34.15099
-Warning: Sample at -116.7462, 34.1588 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.7462, 34.1588
-Warning: Sample at -116.74248, 34.15639 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.74248, 34.15639
-Warning: Sample at -116.6936, 34.15512 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.6936, 34.15512
-Warning: Sample at -117.0103, 34.0912 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -117.0103, 34.0912
-Warning: Sample at -116.95833, 34.09167 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.95833, 34.09167
-Warning: Sample at -116.97917, 34.11722 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.97917, 34.11722
-Warning: Sample at -116.9277, 34.0987 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.9277, 34.0987
-Warning: Sample at -116.9577, 34.0907 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.9577, 34.0907
-Warning: Sample at -116.9059, 34.0855 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.9059, 34.0855
-Warning: Sample at -116.89618, 34.08389 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.89618, 34.08389
-Warning: Sample at -116.85367, 34.12208 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.85367, 34.12208
-Warning: Sample at -116.85366, 34.12209 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.85366, 34.12209
-Warning: Sample at -116.85336, 34.10554 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.85336, 34.10554
-Warning: Sample at -116.8279, 34.1 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.8279, 34.1
-Warning: Sample at -116.79502, 34.11961 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.79502, 34.11961
-Warning: Sample at -116.8282, 34.1005 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.8282, 34.1005
-Warning: Sample at -116.8202, 34.09304 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.8202, 34.09304
-Warning: Sample at -116.8279, 34.1001 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.8279, 34.1001
-Warning: Sample at -116.75076, 34.12335 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.75076, 34.12335
-Warning: Sample at -116.9055, 34.0791 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.9055, 34.0791
-Warning: Sample at -116.88701, 34.08125 in Heuchera_parishii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -116.88701, 34.08125
-Time since start: 1.882
-0 points with values for all grids
-No background points with data in all layers
-java.lang.Exception
-	at density.Utils.logError(Utils.java:218)
-	at density.Utils.popupError(Utils.java:224)
-	at density.Runner.popupError(Runner.java:107)
-	at density.Runner.start(Runner.java:328)
-	at density.MaxEnt.main(MaxEnt.java:59)
+25 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_parishii/Heuchera_parishii.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/heuchera_parishii nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/heuchera_parishii samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_parishii/Heuchera_parishii.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Species: Heuchera_parishii
+Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_sdm/heuchera_parishii
+samplesfile: /volumes/output/heuchera_rfolk_sdm/heuchera_parishii/Heuchera_parishii.csv
+environmentallayers: /volumes/env/worldclim1.4
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 522190848, total allocated 40894464, free 24339216, used 16555248, increment 3383032
+Making features
+makeFeatures: max memory 522190848, total allocated 40894464, free 23753112, used 17141352, increment 586104
+Heuchera_parishii: 
+Regularization values: linear/quadratic/product: 1.000, categorical: 0.545, threshold: 1.930, hinge: 0.500
+7 samples
+Density: max memory 522190848, total allocated 40894464, free 23290640, used 17603824, increment 462472
+linearPredictor: max memory 522190848, total allocated 40894464, free 23290640, used 17603824, increment 0
+FeaturedSpace: max memory 522190848, total allocated 40894464, free 23290640, used 17603824, increment 0
+Sequential: max memory 522190848, total allocated 40894464, free 23290640, used 17603824, increment 0
+Initial loss: 3.2188758248682006
+140: time = 0.009000 loss = 2.845608
+Resulting gain: 0.37326768373485786
+Time since start: 1.008
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_sdm/heuchera_parishii/Heuchera_parishii.asc
+Writing /volumes/output/heuchera_rfolk_sdm/heuchera_parishii/plots/Heuchera_parishii.png
 Ending

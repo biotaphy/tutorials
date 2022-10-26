@@ -1,150 +1,80 @@
-Mon Oct 24 19:51:18 GMT 2022
+Wed Oct 26 16:43:49 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
-Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
-Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
-Checking header of /volumes/env/na_2.5min/mask.asc
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Heuchera_glomerulata.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 21704704
-Extractor: max memory 32178700288, total allocated 2118123520, free 2088030208, used 30093312, increment 8388608
+Read samples: max memory 522190848, total allocated 33554432, free 22185192, used 11369240, increment 11369240
+Extractor: max memory 522190848, total allocated 33554432, free 20675840, used 12878592, increment 1509352
 Extracting random background and sample data
-Warning: Sample at -110.04306, 33.936672 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.04306, 33.936672
-Warning: Sample at -109.324, 33.6423 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.324, 33.6423
-Warning: Sample at -109.122501, 33.562495 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.122501, 33.562495
-Warning: Sample at -109.1222842, 33.56374512 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.1222842, 33.56374512
-Warning: Sample at -111.216, 33.4732 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.216, 33.4732
-Warning: Sample at -109.37028, 33.43972 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.37028, 33.43972
-Warning: Sample at -109.3709, 33.4398 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.3709, 33.4398
-Warning: Sample at -110.927953, 33.397883 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.927953, 33.397883
-Warning: Sample at -110.817, 33.3751 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.817, 33.3751
-Warning: Sample at -108.7788198, 33.38831666 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.7788198, 33.38831666
-Warning: Sample at -108.7497694, 33.39783714 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.7497694, 33.39783714
-Warning: Sample at -111.0111, 33.3 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.0111, 33.3
-Warning: Sample at -111.01, 33.2999 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -111.01, 33.2999
-Warning: Sample at -110.801, 33.3179 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.801, 33.3179
-Warning: Sample at -110.821, 33.2822 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.821, 33.2822
-Warning: Sample at -109.3052, 33.2749 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.3052, 33.2749
-Warning: Sample at -109.861, 33.1802 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.861, 33.1802
-Warning: Sample at -109.0150225, 33.11409566 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.0150225, 33.11409566
-Warning: Sample at -110.301, 32.9834 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.301, 32.9834
-Warning: Sample at -110.3006, 32.9834 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.3006, 32.9834
-Warning: Sample at -110.267, 32.9836 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.267, 32.9836
-Warning: Sample at -110.2642321, 32.97806255 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.2642321, 32.97806255
-Warning: Sample at -110.266, 32.9834 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.266, 32.9834
-Warning: Sample at -109.0047416, 32.98560386 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.0047416, 32.98560386
-Warning: Sample at -110.3332111, 32.95103611 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.3332111, 32.95103611
-Warning: Sample at -109.8355764, 32.75037153 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.8355764, 32.75037153
-Warning: Sample at -109.8345, 32.7537 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.8345, 32.7537
-Warning: Sample at -109.8335, 32.75239 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.8335, 32.75239
-Warning: Sample at -109.8325, 32.75278 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.8325, 32.75278
-Warning: Sample at -109.7542, 32.7145 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.7542, 32.7145
-Warning: Sample at -109.8715, 32.7017 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.8715, 32.7017
-Warning: Sample at -109.8715233, 32.70173797 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.8715233, 32.70173797
-Warning: Sample at -109.863, 32.69 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.863, 32.69
-Warning: Sample at -109.773333, 32.706667 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.773333, 32.706667
-Warning: Sample at -109.768, 32.6817 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.768, 32.6817
-Warning: Sample at -109.7852778, 32.70083333 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.7852778, 32.70083333
-Warning: Sample at -109.843, 32.6408 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.843, 32.6408
-Warning: Sample at -109.8627, 32.6493 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.8627, 32.6493
-Warning: Sample at -109.82, 32.65 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.82, 32.65
-Warning: Sample at -109.813697, 32.65144654 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.813697, 32.65144654
-Warning: Sample at -109.80543, 32.65316 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.80543, 32.65316
-Warning: Sample at -109.819522, 32.648679 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.819522, 32.648679
-Warning: Sample at -109.819, 32.6486 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.819, 32.6486
-Warning: Sample at -109.8212, 32.6309 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.8212, 32.6309
-Warning: Sample at -109.794, 32.6652 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.794, 32.6652
-Warning: Sample at -109.8190442, 32.64907797 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.8190442, 32.64907797
-Warning: Sample at -109.7915, 32.6651 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.7915, 32.6651
-Warning: Sample at -109.855813, 32.572051 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.855813, 32.572051
-Warning: Sample at -108.4948565, 32.56572831 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.4948565, 32.56572831
-Warning: Sample at -110.2933, 32.4622 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -110.2933, 32.4622
-Warning: Sample at -109.0410643, 32.36940217 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.0410643, 32.36940217
-Warning: Sample at -109.356, 32.0044 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.356, 32.0044
-Warning: Sample at -109.2817, 31.8915 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.2817, 31.8915
-Warning: Sample at -109.3359009, 31.86555654 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.3359009, 31.86555654
-Warning: Sample at -109.3494, 31.8662 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.3494, 31.8662
-Warning: Sample at -108.4525285, 31.84147831 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.4525285, 31.84147831
-Warning: Sample at -109.4298, 31.7529 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.4298, 31.7529
-Warning: Sample at -109.308922, 31.78034169 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -109.308922, 31.78034169
-Warning: Sample at -108.7888521, 31.5695956 in Heuchera_glomerulata.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -108.7888521, 31.5695956
-Time since start: 1.901
-0 points with values for all grids
-No background points with data in all layers
-java.lang.Exception
-	at density.Utils.logError(Utils.java:218)
-	at density.Utils.popupError(Utils.java:224)
-	at density.Runner.popupError(Runner.java:107)
-	at density.Runner.start(Runner.java:328)
-	at density.MaxEnt.main(MaxEnt.java:59)
+292 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_glomerulata/Heuchera_glomerulata.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/heuchera_glomerulata nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/heuchera_glomerulata samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_glomerulata/Heuchera_glomerulata.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Species: Heuchera_glomerulata
+Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_sdm/heuchera_glomerulata
+samplesfile: /volumes/output/heuchera_rfolk_sdm/heuchera_glomerulata/Heuchera_glomerulata.csv
+environmentallayers: /volumes/env/worldclim1.4
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 522190848, total allocated 40894464, free 24747344, used 16147120, increment 3268528
+Making features
+makeFeatures: max memory 522190848, total allocated 40894464, free 22159272, used 18735192, increment 2588072
+Heuchera_glomerulata: 
+Regularization values: linear/quadratic/product: 0.250, categorical: 0.250, threshold: 1.700, hinge: 0.500
+30 samples
+Density: max memory 522190848, total allocated 40894464, free 19476344, used 21418120, increment 2682928
+linearPredictor: max memory 522190848, total allocated 40894464, free 19476344, used 21418120, increment 0
+FeaturedSpace: max memory 522190848, total allocated 40894464, free 19476344, used 21418120, increment 0
+Sequential: max memory 522190848, total allocated 40894464, free 19476344, used 21418120, increment 0
+Initial loss: 5.676753802268282
+Time since start: 1.231
+500: time = 0.331000 loss = 5.225650
+Resulting gain: 0.4511042053332286
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_sdm/heuchera_glomerulata/Heuchera_glomerulata.asc
+Writing /volumes/output/heuchera_rfolk_sdm/heuchera_glomerulata/plots/Heuchera_glomerulata.png
 Ending

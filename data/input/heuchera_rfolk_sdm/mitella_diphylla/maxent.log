@@ -1,668 +1,83 @@
-Mon Oct 24 19:50:45 GMT 2022
+Wed Oct 26 16:47:36 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_10.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_18.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_19.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_6.asc
-Checking header of /volumes/env/na_2.5min/BIOCLIM_8.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ASPECT_reduced.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
-Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_siltpercent_reduced.asc
-Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
-Checking header of /volumes/env/na_2.5min/LandCover_4_Mixedtrees.asc
-Checking header of /volumes/env/na_2.5min/LandCover_5_Shrubs.asc
-Checking header of /volumes/env/na_2.5min/mask.asc
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/mask.asc
 Reading samples from Mitella_diphylla.csv
-Read samples: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 21704704
-Extractor: max memory 32178700288, total allocated 2118123520, free 2088030208, used 30093312, increment 8388608
+Read samples: max memory 522190848, total allocated 33554432, free 21136144, used 12418288, increment 12418288
+Extractor: max memory 522190848, total allocated 33554432, free 30043336, used 3511096, increment -8907192
 Extracting random background and sample data
-Warning: Sample at -92.81014, 47.25009 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -92.81014, 47.25009
-Warning: Sample at -71.21667, 46.81667 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -71.21667, 46.81667
-Warning: Sample at -71.35, 46.75 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -71.35, 46.75
-Warning: Sample at -72.6525, 46.255 in Mitella_diphylla.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -72.6525, 46.255
-Warning: Sample at -92.35796, 46.01204 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -92.35796, 46.01204
-Warning: Sample at -76.96667, 45.91667 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -76.96667, 45.91667
-Warning: Sample at -74.0128, 45.8061 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -74.0128, 45.8061
-Warning: Sample at -92.77858, 45.77806 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -92.77858, 45.77806
-Warning: Sample at -75.32083, 45.63061 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -75.32083, 45.63061
-Warning: Sample at -75.31397, 45.62636 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -75.31397, 45.62636
-Warning: Sample at -74.79787, 45.65305 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -74.79787, 45.65305
-Warning: Sample at -73.16389, 45.55222 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.16389, 45.55222
-Warning: Sample at -73.65, 45.51667 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.65, 45.51667
-Warning: Sample at -73.6, 45.5 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.6, 45.5
-Warning: Sample at -73.16317, 45.54157 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.16317, 45.54157
-Warning: Sample at -75.7, 45.417 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -75.7, 45.417
-Warning: Sample at -73.3, 45.45 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.3, 45.45
-Warning: Sample at -75.5833, 45.3667 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -75.5833, 45.3667
-Warning: Sample at -76.367, 45.317 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -76.367, 45.317
-Warning: Sample at -75.55, 45.3 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -75.55, 45.3
-Warning: Sample at -90.64219, 45.25088 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -90.64219, 45.25088
-Warning: Sample at -91.39473, 45.21959 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -91.39473, 45.21959
-Warning: Sample at -91.3034, 45.22152 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -91.3034, 45.22152
-Warning: Sample at -78.25, 45.117 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -78.25, 45.117
-Warning: Sample at -72.3, 45.09111 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.3, 45.09111
-Warning: Sample at -72.15639, 45.11361 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.15639, 45.11361
-Warning: Sample at -78.31667, 45.05 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -78.31667, 45.05
-Warning: Sample at -75.883, 45.083 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -75.883, 45.083
-Warning: Sample at -75.167, 45.033 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -75.167, 45.033
-Warning: Sample at -75.25, 44.883 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -75.25, 44.883
-Warning: Sample at -73.29623, 44.87909 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.29623, 44.87909
-Warning: Sample at -91.94557, 44.8507 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -91.94557, 44.8507
-Warning: Sample at -79.33333, 44.85 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.33333, 44.85
-Warning: Sample at -79.35, 44.78333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.35, 44.78333
-Warning: Sample at -73.34196, 44.69355 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.34196, 44.69355
-Warning: Sample at -73.34149, 44.69143 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.34149, 44.69143
-Warning: Sample at -92.16667, 44.65917 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -92.16667, 44.65917
-Warning: Sample at -73.19056, 44.58738 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.19056, 44.58738
-Warning: Sample at -73.19278, 44.58518 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.19278, 44.58518
-Warning: Sample at -76.25, 44.583 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -76.25, 44.583
-Warning: Sample at -72.79583, 44.55527 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.79583, 44.55527
-Warning: Sample at -73.24484, 44.49868 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.24484, 44.49868
-Warning: Sample at -73.18459, 44.47781 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.18459, 44.47781
-Warning: Sample at -73.1864, 44.47964 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.1864, 44.47964
-Warning: Sample at -79.8, 44.4 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.8, 44.4
-Warning: Sample at -72.8944, 44.34108 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.8944, 44.34108
-Warning: Sample at -72.75611, 44.33777 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.75611, 44.33777
-Warning: Sample at -72.68953, 44.33417 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.68953, 44.33417
-Warning: Sample at -72.47072, 44.36247 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.47072, 44.36247
-Warning: Sample at -79.32193, 44.32707 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.32193, 44.32707
-Warning: Sample at -79.19832, 44.31349 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.19832, 44.31349
-Warning: Sample at -72.48019, 44.32792 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.48019, 44.32792
-Warning: Sample at -72.4795, 44.32841 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.4795, 44.32841
-Warning: Sample at -79.66667, 44.28333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.66667, 44.28333
-Warning: Sample at -73.22023, 44.27703 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.22023, 44.27703
-Warning: Sample at -72.58054, 44.25568 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.58054, 44.25568
-Warning: Sample at -72.4084, 44.28366 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.4084, 44.28366
-Warning: Sample at -72.41094, 44.28248 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.41094, 44.28248
-Warning: Sample at -78.56667, 44.18333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -78.56667, 44.18333
-Warning: Sample at -73.43555, 44.18388 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.43555, 44.18388
-Warning: Sample at -79.49312, 44.12703 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.49312, 44.12703
-Warning: Sample at -73.63032, 44.15009 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.63032, 44.15009
-Warning: Sample at -73.14056, 44.15236 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.14056, 44.15236
-Warning: Sample at -73.12066, 44.1355 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.12066, 44.1355
-Warning: Sample at -78.88333, 44.08333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -78.88333, 44.08333
-Warning: Sample at -79.57346, 44.00627 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.57346, 44.00627
-Warning: Sample at -79.51578, 44.03664 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.51578, 44.03664
-Warning: Sample at -79.51972, 44.03611 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.51972, 44.03611
-Warning: Sample at -79.52, 44.04 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.52, 44.04
-Warning: Sample at -79.60333, 43.96329 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.60333, 43.96329
-Warning: Sample at -79.6114, 43.97738 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.6114, 43.97738
-Warning: Sample at -79.61037, 43.9791 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.61037, 43.9791
-Warning: Sample at -79.62461, 43.9964 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.62461, 43.9964
-Warning: Sample at -79.52514, 43.96552 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.52514, 43.96552
-Warning: Sample at -79.61208, 43.95736 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.61208, 43.95736
-Warning: Sample at -79.43333, 43.925 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.43333, 43.925
-Warning: Sample at -79.49583, 43.90417 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.49583, 43.90417
-Warning: Sample at -73.14284, 43.90557 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.14284, 43.90557
-Warning: Sample at -85.851, 43.858 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -85.851, 43.858
-Warning: Sample at -79.58256, 43.86003 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.58256, 43.86003
-Warning: Sample at -79.51139, 43.84842 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.51139, 43.84842
-Warning: Sample at -78.95, 43.85 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -78.95, 43.85
-Warning: Sample at -72.58617, 43.855 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.58617, 43.855
-Warning: Sample at -72.22995, 43.83907 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.22995, 43.83907
-Warning: Sample at -79.18472, 43.82222 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.18472, 43.82222
-Warning: Sample at -79.15, 43.8 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.15, 43.8
-Warning: Sample at -72.25883, 43.80793 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.25883, 43.80793
-Warning: Sample at -72.25379, 43.81749 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.25379, 43.81749
-Warning: Sample at -72.25686, 43.80914 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.25686, 43.80914
-Warning: Sample at -72.25648, 43.79799 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.25648, 43.79799
-Warning: Sample at -72.27128, 43.80935 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.27128, 43.80935
-Warning: Sample at -72.25369, 43.81739 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.25369, 43.81739
-Warning: Sample at -79.38194, 43.76944 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.38194, 43.76944
-Warning: Sample at -79.11667, 43.78333 in Mitella_diphylla.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -79.11667, 43.78333
-Warning: Sample at -73.05629, 43.76562 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.05629, 43.76562
-Warning: Sample at -72.25388, 43.79111 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.25388, 43.79111
-Warning: Sample at -79.733, 43.7 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.733, 43.7
-Warning: Sample at -73.3546, 43.68972 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.3546, 43.68972
-Warning: Sample at -73.35611, 43.69078 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.35611, 43.69078
-Warning: Sample at -73.2155, 43.67689 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.2155, 43.67689
-Warning: Sample at -73.05107, 43.68559 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.05107, 43.68559
-Warning: Sample at -73.06156, 43.64637 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.06156, 43.64637
-Warning: Sample at -72.83283, 43.64917 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.83283, 43.64917
-Warning: Sample at -72.5525, 43.6355 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.5525, 43.6355
-Warning: Sample at -88.17254, 43.61488 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -88.17254, 43.61488
-Warning: Sample at -73.15016, 43.62099 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.15016, 43.62099
-Warning: Sample at -72.91934, 43.592 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.91934, 43.592
-Warning: Sample at -72.91609, 43.58619 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.91609, 43.58619
-Warning: Sample at -84.85078, 43.57847 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -84.85078, 43.57847
-Warning: Sample at -73.38914, 43.57948 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.38914, 43.57948
-Warning: Sample at -84.54833, 43.50972 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -84.54833, 43.50972
-Warning: Sample at -79.97739, 43.5111 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.97739, 43.5111
-Warning: Sample at -72.42693, 43.52835 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.42693, 43.52835
-Warning: Sample at -89.95, 43.45 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -89.95, 43.45
-Warning: Sample at -73.01934, 43.45357 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.01934, 43.45357
-Warning: Sample at -84.65972, 43.37889 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -84.65972, 43.37889
-Warning: Sample at -87.89369, 43.36701 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -87.89369, 43.36701
-Warning: Sample at -73.01449, 43.28207 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.01449, 43.28207
-Warning: Sample at -91.18317, 43.22493 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -91.18317, 43.22493
-Warning: Sample at -90.7375, 43.23306 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -90.7375, 43.23306
-Warning: Sample at -85.672, 43.226 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -85.672, 43.226
-Warning: Sample at -79.16639, 43.23333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.16639, 43.23333
-Warning: Sample at -91.1581, 43.20226 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -91.1581, 43.20226
-Warning: Sample at -73.07222, 43.16361 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.07222, 43.16361
-Warning: Sample at -84.784, 43.08667 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -84.784, 43.08667
-Warning: Sample at -72.66759, 43.0473 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.66759, 43.0473
-Warning: Sample at -73.80389, 42.91333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.80389, 42.91333
-Warning: Sample at -73.19666, 42.87805 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.19666, 42.87805
-Warning: Sample at -79.11667, 42.86667 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.11667, 42.86667
-Warning: Sample at -84.38633, 42.76344 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -84.38633, 42.76344
-Warning: Sample at -92.39314, 42.69113 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -92.39314, 42.69113
-Warning: Sample at -80.49167, 42.66667 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.49167, 42.66667
-Warning: Sample at -80.49861, 42.66389 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.49861, 42.66389
-Warning: Sample at -73.01111, 42.66666 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.01111, 42.66666
-Warning: Sample at -72.60555, 42.54444 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.60555, 42.54444
-Warning: Sample at -81.667, 42.483 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -81.667, 42.483
-Warning: Sample at -72.5375, 42.48805 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.5375, 42.48805
-Warning: Sample at -76.49666, 42.44055 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -76.49666, 42.44055
-Warning: Sample at -76.49661, 42.44063 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -76.49661, 42.44063
-Warning: Sample at -76.4667, 42.45 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -76.4667, 42.45
-Warning: Sample at -76.51884, 42.41428 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -76.51884, 42.41428
-Warning: Sample at -72.67777, 42.4 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.67777, 42.4
-Warning: Sample at -72.52305, 42.41361 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.52305, 42.41361
-Warning: Sample at -71.03351, 42.38269 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -71.03351, 42.38269
-Warning: Sample at -78.2275, 42.34916 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -78.2275, 42.34916
-Warning: Sample at -72.54527, 42.30583 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.54527, 42.30583
-Warning: Sample at -87.68245, 42.18787 in Mitella_diphylla.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -87.68245, 42.18787
-Warning: Sample at -87.75, 42.1333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -87.75, 42.1333
-Warning: Sample at -74.20125, 42.16513 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -74.20125, 42.16513
-Warning: Sample at -87.7667, 42.0333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -87.7667, 42.0333
-Warning: Sample at -87.6833, 42.0333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -87.6833, 42.0333
-Warning: Sample at -80.35099, 42.00796 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.35099, 42.00796
-Warning: Sample at -73.35277, 42.02861 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.35277, 42.02861
-Warning: Sample at -73.2936, 42.0223 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.2936, 42.0223
-Warning: Sample at -73.285, 42.03555 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.285, 42.03555
-Warning: Sample at -73.0808, 42.0015 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.0808, 42.0015
-Warning: Sample at -72.9489, 42.0043 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.9489, 42.0043
-Warning: Sample at -89.47057, 41.98919 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -89.47057, 41.98919
-Warning: Sample at -73.656, 41.9798 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.656, 41.9798
-Warning: Sample at -73.4257, 41.986 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.4257, 41.986
-Warning: Sample at -73.42111, 41.98333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.42111, 41.98333
-Warning: Sample at -73.37948, 41.98635 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.37948, 41.98635
-Warning: Sample at -73.33388, 41.96166 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.33388, 41.96166
-Warning: Sample at -73.3425, 41.9925 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.3425, 41.9925
-Warning: Sample at -73.345, 41.98888 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.345, 41.98888
-Warning: Sample at -73.30833, 41.96166 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.30833, 41.96166
-Warning: Sample at -73.3101, 41.9599 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.3101, 41.9599
-Warning: Sample at -73.28194, 41.98472 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.28194, 41.98472
-Warning: Sample at -73.20194, 41.99388 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.20194, 41.99388
-Warning: Sample at -73.09583, 41.98944 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.09583, 41.98944
-Warning: Sample at -73.02111, 41.96555 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.02111, 41.96555
-Warning: Sample at -72.97944, 41.99611 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.97944, 41.99611
-Warning: Sample at -88.4333, 41.95 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -88.4333, 41.95
-Warning: Sample at -73.01027, 41.93611 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.01027, 41.93611
-Warning: Sample at -72.9729, 41.9316 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.9729, 41.9316
-Warning: Sample at -72.78861, 41.95388 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.78861, 41.95388
-Warning: Sample at -72.69305, 41.91805 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.69305, 41.91805
-Warning: Sample at -73.30972, 41.91611 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.30972, 41.91611
-Warning: Sample at -72.80111, 41.87583 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.80111, 41.87583
-Warning: Sample at -72.76, 41.90861 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.76, 41.90861
-Warning: Sample at -72.7025, 41.905 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.7025, 41.905
-Warning: Sample at -72.67916, 41.90027 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.67916, 41.90027
-Warning: Sample at -72.66055, 41.89277 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.66055, 41.89277
-Warning: Sample at -72.171, 41.8911 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.171, 41.8911
-Warning: Sample at -87.65, 41.85 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -87.65, 41.85
-Warning: Sample at -78.93898, 41.84147 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -78.93898, 41.84147
-Warning: Sample at -73.33194, 41.84527 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.33194, 41.84527
-Warning: Sample at -73.3298, 41.8475 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.3298, 41.8475
-Warning: Sample at -72.6737, 41.8713 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.6737, 41.8713
-Warning: Sample at -73.47833, 41.75472 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.47833, 41.75472
-Warning: Sample at -73.40972, 41.77583 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.40972, 41.77583
-Warning: Sample at -73.0583, 41.755 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.0583, 41.755
-Warning: Sample at -72.7539, 41.7669 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.7539, 41.7669
-Warning: Sample at -72.74194, 41.76194 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.74194, 41.76194
-Warning: Sample at -73.47694, 41.72472 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.47694, 41.72472
-Warning: Sample at -73.1931, 41.7413 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.1931, 41.7413
-Warning: Sample at -77.4833, 41.7083 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -77.4833, 41.7083
-Warning: Sample at -72.8571, 41.6741 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.8571, 41.6741
-Warning: Sample at -76.5972, 41.6403 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -76.5972, 41.6403
-Warning: Sample at -73.48416, 41.64638 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.48416, 41.64638
-Warning: Sample at -73.31888, 41.65333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.31888, 41.65333
-Warning: Sample at -73.31055, 41.63138 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.31055, 41.63138
-Warning: Sample at -88.65045, 41.60759 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -88.65045, 41.60759
-Warning: Sample at -73.4216, 41.6041 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.4216, 41.6041
-Warning: Sample at -73.40833, 41.58694 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.40833, 41.58694
-Warning: Sample at -72.88, 41.6049 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.88, 41.6049
-Warning: Sample at -72.776, 41.6112 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.776, 41.6112
-Warning: Sample at -72.74555, 41.62138 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.74555, 41.62138
-Warning: Sample at -84.36078, 41.55417 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -84.36078, 41.55417
-Warning: Sample at -73.49555, 41.57916 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.49555, 41.57916
-Warning: Sample at -73.036, 41.5583 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.036, 41.5583
-Warning: Sample at -72.7945, 41.5368 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.7945, 41.5368
-Warning: Sample at -72.7149, 41.5177 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.7149, 41.5177
-Warning: Sample at -74.67, 41.47 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -74.67, 41.47
-Warning: Sample at -73.4883, 41.4878 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.4883, 41.4878
-Warning: Sample at -87.9667, 41.4333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -87.9667, 41.4333
-Warning: Sample at -81.41556, 41.45577 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -81.41556, 41.45577
-Warning: Sample at -73.61594, 41.4519 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.61594, 41.4519
-Warning: Sample at -73.1351, 41.4313 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.1351, 41.4313
-Warning: Sample at -72.9054, 41.4243 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.9054, 41.4243
-Warning: Sample at -72.88694, 41.43027 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.88694, 41.43027
-Warning: Sample at -73.4705, 41.4014 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.4705, 41.4014
-Warning: Sample at -73.45388, 41.39472 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.45388, 41.39472
-Warning: Sample at -73.2928, 41.3989 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.2928, 41.3989
-Warning: Sample at -72.9316, 41.407 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.9316, 41.407
-Warning: Sample at -72.7912, 41.3937 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.7912, 41.3937
-Warning: Sample at -73.2249, 41.3379 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.2249, 41.3379
-Warning: Sample at -72.7767, 41.3645 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.7767, 41.3645
-Warning: Sample at -72.717, 41.367 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -72.717, 41.367
-Warning: Sample at -71.96694, 41.35416 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -71.96694, 41.35416
-Warning: Sample at -77.74861, 41.32861 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -77.74861, 41.32861
-Warning: Sample at -73.5019, 41.3062 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.5019, 41.3062
-Warning: Sample at -73.4343, 41.3265 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.4343, 41.3265
-Warning: Sample at -73.43416, 41.32638 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.43416, 41.32638
-Warning: Sample at -73.3914, 41.305 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.3914, 41.305
-Warning: Sample at -73.1382, 41.3061 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.1382, 41.3061
-Warning: Sample at -73.09305, 41.31638 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.09305, 41.31638
-Warning: Sample at -81.4647, 41.2902 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -81.4647, 41.2902
-Warning: Sample at -73.49805, 41.28138 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.49805, 41.28138
-Warning: Sample at -81.53865, 41.24404 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -81.53865, 41.24404
-Warning: Sample at -73.3726, 41.2284 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.3726, 41.2284
-Warning: Sample at -81.69834, 41.19545 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -81.69834, 41.19545
-Warning: Sample at -81.6989, 41.19512 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -81.6989, 41.19512
-Warning: Sample at -81.64575, 41.17887 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -81.64575, 41.17887
-Warning: Sample at -81.59117, 41.16794 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -81.59117, 41.16794
-Warning: Sample at -81.59209, 41.16853 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -81.59209, 41.16853
-Warning: Sample at -73.6175, 41.1774 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.6175, 41.1774
-Warning: Sample at -87.8667, 41.15 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -87.8667, 41.15
-Warning: Sample at -81.38812, 41.13787 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -81.38812, 41.13787
-Warning: Sample at -73.6387, 41.0692 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -73.6387, 41.0692
-Warning: Sample at -80.00454, 41.00773 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.00454, 41.00773
-Warning: Sample at -80.00434, 41.00773 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.00434, 41.00773
-Warning: Sample at -74.749, 41.00809 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -74.749, 41.00809
-Warning: Sample at -80.222, 40.92452 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.222, 40.92452
-Warning: Sample at -80.17568, 40.94297 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.17568, 40.94297
-Warning: Sample at -80.17642, 40.93956 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.17642, 40.93956
-Warning: Sample at -82.43327, 40.79356 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -82.43327, 40.79356
-Warning: Sample at -80.53757, 40.74534 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.53757, 40.74534
-Warning: Sample at -89.58, 40.66611 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -89.58, 40.66611
-Warning: Sample at -80.16645, 40.59007 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.16645, 40.59007
-Warning: Sample at -80.03411, 40.61819 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.03411, 40.61819
-Warning: Sample at -80.41916, 40.50014 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.41916, 40.50014
-Warning: Sample at -80.45598, 40.51473 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.45598, 40.51473
-Warning: Sample at -80.35868, 40.50834 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.35868, 40.50834
-Warning: Sample at -79.89923, 40.5194 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.89923, 40.5194
-Warning: Sample at -79.89826, 40.51901 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.89826, 40.51901
-Warning: Sample at -80.80921, 40.38237 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -80.80921, 40.38237
-Warning: Sample at -84.99638, 39.95083 in Mitella_diphylla.csv is missing some environmental data (e.g. GTOPO30_ASPECT_reduced)
-Warning: Skipping sample at -84.99638, 39.95083
-Warning: Sample at -91.61027, 39.8525 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -91.61027, 39.8525
-Warning: Sample at -83.83434, 39.79941 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -83.83434, 39.79941
-Warning: Sample at -83.83183, 39.7955 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -83.83183, 39.7955
-Warning: Sample at -75.79437, 39.61317 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -75.79437, 39.61317
-Warning: Sample at -81.1625, 39.51889 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -81.1625, 39.51889
-Warning: Sample at -77.78895, 39.44065 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -77.78895, 39.44065
-Warning: Sample at -76.7903, 39.2961 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -76.7903, 39.2961
-Warning: Sample at -76.6267, 39.2686 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -76.6267, 39.2686
-Warning: Sample at -77.8342, 39.1111 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -77.8342, 39.1111
-Warning: Sample at -76.8486, 39.0992 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -76.8486, 39.0992
-Warning: Sample at -77.96194, 39.01344 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -77.96194, 39.01344
-Warning: Sample at -83.35361, 38.94028 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -83.35361, 38.94028
-Warning: Sample at -79.74694, 38.92138 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -79.74694, 38.92138
-Warning: Sample at -77.0528, 38.9253 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -77.0528, 38.9253
-Warning: Sample at -77.0575, 38.8994 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -77.0575, 38.8994
-Warning: Sample at -77.0367, 38.895 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -77.0367, 38.895
-Warning: Sample at -77.7064, 38.8664 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -77.7064, 38.8664
-Warning: Sample at -91.88194, 38.78833 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -91.88194, 38.78833
-Warning: Sample at -92.4075, 38.54972 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -92.4075, 38.54972
-Warning: Sample at -78.36903, 38.54317 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -78.36903, 38.54317
-Warning: Sample at -90.67583, 38.50361 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -90.67583, 38.50361
-Warning: Sample at -90.7186, 38.4683 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -90.7186, 38.4683
-Warning: Sample at -78.43329, 38.49841 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -78.43329, 38.49841
-Warning: Sample at -90.6842, 38.4458 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -90.6842, 38.4458
-Warning: Sample at -83.82, 37.83 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -83.82, 37.83
-Warning: Sample at -89.40542, 37.68313 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -89.40542, 37.68313
-Warning: Sample at -89.39472, 37.68028 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -89.39472, 37.68028
-Warning: Sample at -90.93333, 37.65 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -90.93333, 37.65
-Warning: Sample at -89.41666, 37.63333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -89.41666, 37.63333
-Warning: Sample at -91.01861, 37.45555 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -91.01861, 37.45555
-Warning: Sample at -90.15388, 37.42861 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -90.15388, 37.42861
-Warning: Sample at -91.71805, 37.07111 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -91.71805, 37.07111
-Warning: Sample at -91.68194, 37.04111 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -91.68194, 37.04111
-Warning: Sample at -84.31889, 37.025 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -84.31889, 37.025
-Warning: Sample at -92.15388, 36.96277 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -92.15388, 36.96277
-Warning: Sample at -83.18135, 36.94811 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -83.18135, 36.94811
-Warning: Sample at -92.35861, 36.77361 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -92.35861, 36.77361
-Warning: Sample at -91.34805, 36.78694 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -91.34805, 36.78694
-Warning: Sample at -91.23472, 36.78972 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -91.23472, 36.78972
-Warning: Sample at -81.77861, 36.20917 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -81.77861, 36.20917
-Warning: Sample at -82.81666, 35.86666 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -82.81666, 35.86666
-Warning: Sample at -83.79268, 35.70281 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -83.79268, 35.70281
-Warning: Sample at -83.71161, 35.6616 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -83.71161, 35.6616
-Warning: Sample at -83.49306, 35.63534 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -83.49306, 35.63534
-Warning: Sample at -82.84517, 35.58635 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -82.84517, 35.58635
-Warning: Sample at -83.94904, 35.45382 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -83.94904, 35.45382
-Warning: Sample at -84.625, 35.317 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -84.625, 35.317
-Warning: Sample at -85.91007, 35.11929 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -85.91007, 35.11929
-Warning: Sample at -86.09361, 34.98139 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -86.09361, 34.98139
-Warning: Sample at -87.91528, 34.88389 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_siltpercent_reduced)
-Warning: Skipping sample at -87.91528, 34.88389
-Time since start: 1.697
-0 points with values for all grids
-No background points with data in all layers
-java.lang.Exception
-	at density.Utils.logError(Utils.java:218)
-	at density.Utils.popupError(Utils.java:224)
-	at density.Runner.popupError(Runner.java:107)
-	at density.Runner.start(Runner.java:328)
-	at density.MaxEnt.main(MaxEnt.java:59)
+8534 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_diphylla/Mitella_diphylla.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/mitella_diphylla nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/mitella_diphylla samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_diphylla/Mitella_diphylla.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Species: Mitella_diphylla
+Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_sdm/mitella_diphylla
+samplesfile: /volumes/output/heuchera_rfolk_sdm/mitella_diphylla/Mitella_diphylla.csv
+environmentallayers: /volumes/env/worldclim1.4
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 522190848, total allocated 40894464, free 30816928, used 10077536, increment 6566440
+Making features
+Time since start: 1.158
+makeFeatures: max memory 522190848, total allocated 123731968, free 56409928, used 67322040, increment 57244504
+Mitella_diphylla: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+217 samples
+Density: max memory 522190848, total allocated 123731968, free 37051824, used 86680144, increment 19358104
+linearPredictor: max memory 522190848, total allocated 123731968, free 36983536, used 86748432, increment 68288
+FeaturedSpace: max memory 522190848, total allocated 123731968, free 36915360, used 86816608, increment 68176
+Sequential: max memory 522190848, total allocated 123731968, free 36708584, used 87023384, increment 206776
+Initial loss: 9.051813463747946
+Time since start: 5.752
+500: time = 4.150000 loss = 8.379284
+Resulting gain: 0.6725291247661236
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_sdm/mitella_diphylla/Mitella_diphylla.asc
+Time since start: 6.763
+Writing /volumes/output/heuchera_rfolk_sdm/mitella_diphylla/plots/Mitella_diphylla.png
+Time since start: 9.037
 Ending
