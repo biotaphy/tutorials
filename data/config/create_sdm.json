@@ -7,7 +7,7 @@
     "x_key": "x",
     "y_key": "y",
     "points_dir": "/volumes/data/input/heuchera_rfolk",
-    "env_dir":  "/volumes/env/worldclim1.4",
-    "ecoregions_filename":  "/volumes/env/ecoreg_10min_global.tif",
+    "env_dir":  "/volumes/env/na_2.5min",
+    "ecoregions_filename":  "/volumes/env/ecoreg_na_2.5min.tif",
     "out_dir": "/volumes/output/heuchera_rfolk_sdm"
 }
