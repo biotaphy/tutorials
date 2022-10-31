@@ -1,83 +1,59 @@
-Wed Oct 26 16:47:36 GMT 2022
+Mon Oct 31 19:37:14 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Mitella_diphylla.csv
-Read samples: max memory 522190848, total allocated 33554432, free 21136144, used 12418288, increment 12418288
-Extractor: max memory 522190848, total allocated 33554432, free 30043336, used 3511096, increment -8907192
+Read samples: max memory 32178700288, total allocated 2118123520, free 2094319616, used 23803904, increment 23803904
+Extractor: max memory 32178700288, total allocated 2118123520, free 2083835904, used 34287616, increment 10483712
 Extracting random background and sample data
-8534 points with values for all grids
+Warning: Sample at -79.11667, 43.78333 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -79.11667, 43.78333
+Warning: Sample at -87.68245, 42.18787 in Mitella_diphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -87.68245, 42.18787
+Time since start: 2.518
+1219428 points with values for all grids
 Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_diphylla/Mitella_diphylla.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/mitella_diphylla nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/mitella_diphylla samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_diphylla/Mitella_diphylla.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_diphylla/Mitella_diphylla.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_sdm/mitella_diphylla nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/mitella_diphylla samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_diphylla/Mitella_diphylla.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
 Species: Mitella_diphylla
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
 outputdirectory: /volumes/output/heuchera_rfolk_sdm/mitella_diphylla
 samplesfile: /volumes/output/heuchera_rfolk_sdm/mitella_diphylla/Mitella_diphylla.csv
-environmentallayers: /volumes/env/worldclim1.4
+environmentallayers: /volumes/env/na_2.5min
 warnings: false
 autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 522190848, total allocated 40894464, free 30816928, used 10077536, increment 6566440
+getSamples: max memory 32178700288, total allocated 2118123520, free 1953845584, used 164277936, increment 129990320
 Making features
-Time since start: 1.158
-makeFeatures: max memory 522190848, total allocated 123731968, free 56409928, used 67322040, increment 57244504
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1944141136, used 173982384, increment 9704448
 Mitella_diphylla: 
 Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
-217 samples
-Density: max memory 522190848, total allocated 123731968, free 37051824, used 86680144, increment 19358104
-linearPredictor: max memory 522190848, total allocated 123731968, free 36983536, used 86748432, increment 68288
-FeaturedSpace: max memory 522190848, total allocated 123731968, free 36915360, used 86816608, increment 68176
-Sequential: max memory 522190848, total allocated 123731968, free 36708584, used 87023384, increment 206776
-Initial loss: 9.051813463747946
-Time since start: 5.752
-500: time = 4.150000 loss = 8.379284
-Resulting gain: 0.6725291247661236
+281 samples
+Density: max memory 32178700288, total allocated 2118123520, free 1930774864, used 187348656, increment 13366272
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1930774864, used 187348656, increment 0
+Deactivating (mask=-9999.0)
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1930774864, used 187348656, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1930774864, used 187348656, increment 0
+Initial loss: 9.237760967552175
+Time since start: 3.762
+500: time = 1.025000 loss = 6.852335
+Resulting gain: 2.3854256174294033
 Projecting...
 Writing file /volumes/output/heuchera_rfolk_sdm/mitella_diphylla/Mitella_diphylla.asc
-Time since start: 6.763
+Time since start: 8.137
 Writing /volumes/output/heuchera_rfolk_sdm/mitella_diphylla/plots/Mitella_diphylla.png
-Time since start: 9.037
 Ending

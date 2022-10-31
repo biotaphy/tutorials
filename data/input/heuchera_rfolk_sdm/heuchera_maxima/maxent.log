@@ -1,80 +1,64 @@
-Wed Oct 26 16:45:39 GMT 2022
+Mon Oct 31 19:38:23 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Heuchera_maxima.csv
-Read samples: max memory 522190848, total allocated 33554432, free 22479368, used 11075064, increment 11075064
-Extractor: max memory 522190848, total allocated 33554432, free 21429776, used 12124656, increment 1049592
+Read samples: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 19609600
+Extractor: max memory 32178700288, total allocated 2118123520, free 2090119152, used 28004368, increment 8394768
 Extracting random background and sample data
-23 points with values for all grids
+Warning: Sample at -119.5676, 34.046 in Heuchera_maxima.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -119.5676, 34.046
+Warning: Sample at -120.0942, 34.0107 in Heuchera_maxima.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -120.0942, 34.0107
+Warning: Sample at -120.0885, 34.001 in Heuchera_maxima.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -120.0885, 34.001
+Warning: Sample at -119.998, 33.969 in Heuchera_maxima.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -119.998, 33.969
+Warning: Sample at -119.6995, 33.9913 in Heuchera_maxima.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -119.6995, 33.9913
+Time since start: 2.515
+1219428 points with values for all grids
 Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_maxima/Heuchera_maxima.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/heuchera_maxima nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/heuchera_maxima samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_maxima/Heuchera_maxima.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_maxima/Heuchera_maxima.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_sdm/heuchera_maxima nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/heuchera_maxima samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_maxima/Heuchera_maxima.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
 Species: Heuchera_maxima
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
 outputdirectory: /volumes/output/heuchera_rfolk_sdm/heuchera_maxima
 samplesfile: /volumes/output/heuchera_rfolk_sdm/heuchera_maxima/Heuchera_maxima.csv
-environmentallayers: /volumes/env/worldclim1.4
+environmentallayers: /volumes/env/na_2.5min
 warnings: false
 autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 522190848, total allocated 33554432, free 16480336, used 17074096, increment 4949440
+getSamples: max memory 32178700288, total allocated 2118123520, free 1958173120, used 159950400, increment 131946032
 Making features
-makeFeatures: max memory 522190848, total allocated 33554432, free 15724544, used 17829888, increment 755792
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1949784512, used 168339008, increment 8388608
 Heuchera_maxima: 
-Regularization values: linear/quadratic/product: 1.000, categorical: 0.545, threshold: 1.930, hinge: 0.500
-7 samples
-Density: max memory 522190848, total allocated 33554432, free 15431760, used 18122672, increment 292784
-linearPredictor: max memory 522190848, total allocated 33554432, free 15431760, used 18122672, increment 0
-FeaturedSpace: max memory 522190848, total allocated 33554432, free 15431760, used 18122672, increment 0
-Sequential: max memory 522190848, total allocated 33554432, free 15431760, used 18122672, increment 0
-Initial loss: 3.1354942159291497
-100: time = 0.007000 loss = 2.800823
-Resulting gain: 0.33467148767273214
-Time since start: 1.081
+Regularization values: linear/quadratic/product: 1.000, categorical: 0.530, threshold: 1.920, hinge: 0.500
+8 samples
+Density: max memory 32178700288, total allocated 2118123520, free 1949784512, used 168339008, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1949784512, used 168339008, increment 0
+Deactivating (mask=-9999.0)
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1949784512, used 168339008, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1949784512, used 168339008, increment 0
+Initial loss: 9.211140052146748
+140: time = 0.072000 loss = 2.584165
+Resulting gain: 6.626975533650825
 Projecting...
 Writing file /volumes/output/heuchera_rfolk_sdm/heuchera_maxima/Heuchera_maxima.asc
+Time since start: 6.449
 Writing /volumes/output/heuchera_rfolk_sdm/heuchera_maxima/plots/Heuchera_maxima.png
 Ending

@@ -1,80 +1,54 @@
-Wed Oct 26 16:45:27 GMT 2022
+Mon Oct 31 19:30:29 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Heuchera_eastwoodiae.csv
-Read samples: max memory 522190848, total allocated 33554432, free 22479368, used 11075064, increment 11075064
-Extractor: max memory 522190848, total allocated 33554432, free 21136656, used 12417776, increment 1342712
+Read samples: max memory 32178700288, total allocated 2118123520, free 2094317576, used 23805944, increment 23805944
+Extractor: max memory 32178700288, total allocated 2118123520, free 2088030208, used 30093312, increment 6287368
 Extracting random background and sample data
-150 points with values for all grids
+Time since start: 2.521
+1219428 points with values for all grids
 Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_eastwoodiae/Heuchera_eastwoodiae.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/heuchera_eastwoodiae nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/heuchera_eastwoodiae samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_eastwoodiae/Heuchera_eastwoodiae.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_eastwoodiae/Heuchera_eastwoodiae.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_sdm/heuchera_eastwoodiae nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/heuchera_eastwoodiae samplesfile=/volumes/output/heuchera_rfolk_sdm/heuchera_eastwoodiae/Heuchera_eastwoodiae.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
 Species: Heuchera_eastwoodiae
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
 outputdirectory: /volumes/output/heuchera_rfolk_sdm/heuchera_eastwoodiae
 samplesfile: /volumes/output/heuchera_rfolk_sdm/heuchera_eastwoodiae/Heuchera_eastwoodiae.csv
-environmentallayers: /volumes/env/worldclim1.4
+environmentallayers: /volumes/env/na_2.5min
 warnings: false
 autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 522190848, total allocated 40894464, free 25406184, used 15488280, increment 3070504
+getSamples: max memory 32178700288, total allocated 2118123520, free 1954032904, used 164090616, increment 133997304
 Making features
-makeFeatures: max memory 522190848, total allocated 40894464, free 23308944, used 17585520, increment 2097240
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1945644296, used 172479224, increment 8388608
 Heuchera_eastwoodiae: 
-Regularization values: linear/quadratic/product: 0.543, categorical: 0.286, threshold: 1.840, hinge: 0.500
-16 samples
-Density: max memory 522190848, total allocated 40894464, free 21798816, used 19095648, increment 1510128
-linearPredictor: max memory 522190848, total allocated 40894464, free 21798816, used 19095648, increment 0
-FeaturedSpace: max memory 522190848, total allocated 40894464, free 21798816, used 19095648, increment 0
-Sequential: max memory 522190848, total allocated 40894464, free 21798816, used 19095648, increment 0
-Initial loss: 5.0106352940962555
-Time since start: 1.122
-420: time = 0.236000 loss = 4.399030
-Resulting gain: 0.6116048962271448
+Regularization values: linear/quadratic/product: 0.365, categorical: 0.250, threshold: 1.760, hinge: 0.500
+24 samples
+Density: max memory 32178700288, total allocated 2118123520, free 1935078328, used 183045192, increment 10565968
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1935078328, used 183045192, increment 0
+Deactivating (mask=-9999.0)
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1935078328, used 183045192, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1935078328, used 183045192, increment 0
+Initial loss: 9.212737496575905
+100: time = 0.226000 loss = 3.614888
+Resulting gain: 5.597849601462099
 Projecting...
 Writing file /volumes/output/heuchera_rfolk_sdm/heuchera_eastwoodiae/Heuchera_eastwoodiae.asc
+Time since start: 6.919
 Writing /volumes/output/heuchera_rfolk_sdm/heuchera_eastwoodiae/plots/Heuchera_eastwoodiae.png
 Ending

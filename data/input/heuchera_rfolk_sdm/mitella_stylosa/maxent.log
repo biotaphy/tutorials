@@ -1,80 +1,126 @@
-Wed Oct 26 16:44:50 GMT 2022
+Mon Oct 31 19:34:14 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Mitella_stylosa.csv
-Read samples: max memory 522190848, total allocated 33554432, free 22170504, used 11383928, increment 11383928
-Extractor: max memory 522190848, total allocated 33554432, free 20675840, used 12878592, increment 1494664
+Read samples: max memory 32178700288, total allocated 2118123520, free 2094319616, used 23803904, increment 23803904
+Warning: Sample at 139.107, 35.8507 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.541, 35.0587 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.547183, 35.172576 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.8666667, 33.65 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.95, 33.3 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.5, 33.7 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.8666667, 33.68333333 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.3, 35.2 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 131.288611, 34.352778 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.106822, 35.850703 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.1, 34.0 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.2, 33.6 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.14, 33.9133 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.701, 35.4304 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.882561, 33.680795 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.359176, 33.826259 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.073727, 33.896328 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.471255, 34.927985 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.895299, 33.936931 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.3, 35.3 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.3, 33.9667 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.2833333, 33.8 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.40625, 33.79583333 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.7666667, 33.8 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.541461, 35.058671 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.4333333, 33.66666667 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.5333333, 33.75 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.4, 35.1 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.4166667, 33.75 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.6, 35.3 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.245, 34.0175 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.27, 33.9734 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.056, 33.4958 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.335491, 33.950377 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.140157, 33.913321 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.87681, 34.801842 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.992482, 34.024199 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.8333333, 33.81666667 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.056, 33.3625 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.547, 35.1726 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.4, 35.3 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.5333333, 33.73333333 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.450363, 35.115083 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.270128, 33.815426 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.81803, 33.893688 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 130.249567, 33.470483 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.877, 34.8018 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.373447, 34.056506 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.471, 34.928 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.45, 35.1151 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.760785, 34.053692 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.229961, 33.972041 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.701404, 35.430365 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.999759, 33.990508 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.1, 34.1 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.9333333, 33.28333333 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.0333333, 33.76666667 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.0, 33.8 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.2, 33.5 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.351758, 33.875863 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.1, 33.53333333 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.5166667, 33.83333333 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.080531, 33.973733 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.4833333, 33.83333333 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 135.883, 33.6808 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.244586, 34.017512 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.481111, 35.006389 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.05625, 33.3625 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.0, 33.5 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.195991, 34.017258 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.05625, 33.49583333 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.0034, 33.918102 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.2, 34.2 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.269946, 33.973397 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.4, 35.2 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.5833333, 33.85 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.303982, 33.982097 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.406, 33.7958 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.7, 34.0 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.4, 35.5 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.4, 33.9 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.865996, 33.992229 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.024785, 33.973812 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 132.226972, 34.474833 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 134.102973, 34.082194 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.4, 35.4 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.302719, 33.610103 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.025, 33.9738 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 133.1, 33.6 in Mitella_stylosa.csv is outside the bounding box of environmental data, skipping
+Extractor: max memory 32178700288, total allocated 2118123520, free 2088030208, used 30093312, increment 6289408
 Extracting random background and sample data
-594 points with values for all grids
+Time since start: 2.601
+1219428 points with values for all grids
 Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_stylosa/Mitella_stylosa.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/mitella_stylosa nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/mitella_stylosa samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_stylosa/Mitella_stylosa.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_stylosa/Mitella_stylosa.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_sdm/mitella_stylosa nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/mitella_stylosa samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_stylosa/Mitella_stylosa.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
 Species: Mitella_stylosa
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
 outputdirectory: /volumes/output/heuchera_rfolk_sdm/mitella_stylosa
 samplesfile: /volumes/output/heuchera_rfolk_sdm/mitella_stylosa/Mitella_stylosa.csv
-environmentallayers: /volumes/env/worldclim1.4
+environmentallayers: /volumes/env/na_2.5min
 warnings: false
 autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 522190848, total allocated 40894464, free 23968792, used 16925672, increment 4047080
-Making features
-makeFeatures: max memory 522190848, total allocated 40894464, free 19338696, used 21555768, increment 4630096
-Mitella_stylosa: 
-Regularization values: linear/quadratic/product: 0.199, categorical: 0.250, threshold: 1.520, hinge: 0.500
-48 samples
-Density: max memory 522190848, total allocated 40894464, free 31565048, used 9329416, increment -12226352
-linearPredictor: max memory 522190848, total allocated 40894464, free 31565048, used 9329416, increment 0
-FeaturedSpace: max memory 522190848, total allocated 40894464, free 31565048, used 9329416, increment 0
-Sequential: max memory 522190848, total allocated 40894464, free 31145968, used 9748496, increment 419080
-Initial loss: 6.386879319362645
-Time since start: 1.229
-440: time = 0.297000 loss = 5.393117
-Resulting gain: 0.9937619973877574
-Projecting...
-Writing file /volumes/output/heuchera_rfolk_sdm/mitella_stylosa/Mitella_stylosa.asc
-Writing /volumes/output/heuchera_rfolk_sdm/mitella_stylosa/plots/Mitella_stylosa.png
+Warning: Skipping Mitella_stylosa because it has 0 training samples
 Ending

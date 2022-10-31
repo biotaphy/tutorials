@@ -1,82 +1,318 @@
-Wed Oct 26 16:47:25 GMT 2022
+Mon Oct 31 19:38:34 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Tiarella_polyphylla.csv
-Read samples: max memory 522190848, total allocated 33554432, free 21128544, used 12425888, increment 12425888
-Extractor: max memory 522190848, total allocated 33554432, free 30047448, used 3506984, increment -8918904
+Read samples: max memory 32178700288, total allocated 2118123520, free 2094319616, used 23803904, increment 23803904
+Warning: Sample at 138.540833, 35.621667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 110.34076, 31.04233 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 141.46875, 40.3625 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.154, 36.8664 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.070833, 36.781111 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.505833, 42.420556 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.41, 35.5786 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.346111, 36.856111 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.201, 36.9192 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.841389, 37.278333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.466667, 36.65 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.60506, 26.07814 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.236111, 36.8 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.37746, 37.02807 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.162, 36.8911 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.78086, 27.16578 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.76706, 27.17342 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.566667, 36.783333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.3956, 40.61702 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 114.51424, 26.32496 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.7711, 27.1689 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.533333, 36.566667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.533056, 36.638056 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.191, 36.8053 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 113.18444, 24.81378 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 99.92854, 24.58045 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.201111, 36.919167 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.151944, 36.787222 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.092, 36.9764 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.73969, 36.80775 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.7727, 27.16873 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.711207, 37.121375 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.360556, 36.824444 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.325278, 36.585278 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 108.24604, 29.33086 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.78083, 27.16583 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.489, 43.7645 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 108.18501, 30.0234 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.495, 35.558889 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.76694, 27.17333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.174, 36.9033 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.85773, 25.84192 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 99.28717, 27.17717 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 102.8073, 27.71143 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.9, 36.15 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 141.65367, 39.31542 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 101.96483, 30.0553 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.56706, 39.59456 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.908333, 35.592222 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 102.1031, 28.9403 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.484722, 44.336667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.0, 36.9 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.781, 36.6864 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.179, 36.8858 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.70833, 25.77722 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.091944, 36.976389 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.10654, 36.38635 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.4, 36.55 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 121.48833, 24.46861 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 100.01667, 25.76667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.215556, 36.935 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.197, 36.9158 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.190556, 36.805278 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.304722, 36.916111 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 141.20628, 40.61333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.131111, 36.805556 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.383333, 36.433333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 141.166897, 42.9688 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 141.722, 39.436 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 86.72083, 27.78917 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.174, 36.8353 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 143.4, 43.6 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.1, 36.8 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.251, 43.0966 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.77161, 27.1675 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.61944, 27.99833 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.325, 36.5853 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.452, 36.7528 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.455, 36.55 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.633333, 36.483333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 115.82203, 29.12445 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.616667, 36.216667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 117.862, 29.24799 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.208, 36.9556 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 104.25509, 25.67426 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.0, 36.283333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 88.75194, 27.71972 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.711, 37.1214 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.9, 42.9 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.203056, 36.918333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 100.03333, 25.71667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.31245, 36.66252 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 107.09928, 29.15785 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.58397, 36.75782 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.5632, 36.49758 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.165556, 36.814167 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.61834, 26.01 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 99.70601, 27.82308 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.37, 36.7967 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.360556, 36.673333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 121.65, 24.30833 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 141.1, 41.3 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.1, 36.9 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.565339, 35.977643 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.514, 36.8252 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 114.37098, 28.52075 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 100.85195, 27.2822 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.616667, 36.566667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.6194, 27.9983 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.250675, 43.096637 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.565, 35.9776 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.031, 36.9008 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.584, 36.7578 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.58623, 36.75233 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 102.54611, 30.91194 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.364, 37.40598 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.26141, 36.33999 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 103.57846, 25.42813 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 106.25927, 29.29019 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 103.23188, 29.73797 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.928889, 36.809167 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 143.1, 42.7 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 104.25073, 23.363 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.6, 36.033333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 112.80556, 27.22152 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 106.2899, 32.22892 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.173889, 36.903333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 113.81421, 29.24358 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.509, 36.6206 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 102.84267, 28.01416 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.596667, 36.758333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.365556, 36.893611 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.7086, 42.841615 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 103.39859, 29.49612 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 102.75831, 30.06671 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.76936, 27.17139 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.2, 35.5 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.016667, 36.333333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 141.047778, 39.158056 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.76944, 27.17139 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.508611, 36.620556 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.33139, 28.08472 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.77882, 37.20166 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.419, 36.5436 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.780833, 36.686389 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.4, 35.9 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.45, 36.045 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.416667, 35.916667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.419, 36.7978 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.533, 36.6381 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 103.89135, 27.74804 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.524251, 43.302734 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.17799, 35.8853 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.91154, 28.48611 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.443, 36.7875 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.77278, 27.16861 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.0079, 42.99821 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.174, 36.8347 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.33145, 28.08466 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.64466, 25.97809 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.346, 36.8561 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.4, 36.483333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 103.95402, 28.53963 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 115.98922, 29.67178 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.162222, 36.891111 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.418889, 36.543611 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.61633, 25.78278 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.419444, 36.797778 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.516667, 36.566667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.597, 36.7583 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.19655, 38.37773 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.488782, 43.764458 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 100.017, 25.7667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.410256, 35.578583 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 94.86667, 29.36667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 113.85468, 27.62287 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.0, 37.1 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 136.95, 36.216667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 110.23409, 28.81224 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 112.57416, 26.89805 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 141.4951, 40.51077 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.929, 36.8092 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.152, 36.7872 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 102.81464, 30.36812 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.197222, 36.915833 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.131, 36.8056 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.80586, 27.15642 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 103.267, 31.084 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.178889, 36.885833 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.78639, 28.1775 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.196, 36.9175 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 141.23145, 39.37525 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.216, 36.935 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.1, 36.4 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.834444, 36.771389 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.195833, 36.9175 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.461667, 36.538611 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 107.24499, 31.91185 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.1263, 39.72535 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.462, 36.5386 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.361, 36.6733 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.23277, 40.20629 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.995234, 43.02105 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.702361, 35.778 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.22222, 25.54333 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.946389, 35.975278 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 99.41669, 26.4536 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 110.58569, 25.60168 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.443333, 36.7875 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.524, 43.3027 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 108.6295, 31.8241 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.314444, 36.926944 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.85, 36.916667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.61833, 26.01 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.154444, 36.866389 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 100.22995, 26.8761 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.031389, 36.900833 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 110.78372, 31.3316 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 103.57174, 28.26272 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 111.00995, 25.89794 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 99.95801, 25.67015 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 83.93855, 28.25301 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.463611, 44.371667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.361, 36.8244 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.64472, 25.97806 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 110.04001, 25.74215 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.709, 42.8416 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.4969, 27.7078 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.86861, 40.67619 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 121.62889, 24.27889 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.9239, 37.52877 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 100.033, 25.7167 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.1, 44.7 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.314, 36.9269 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 105.33467, 24.68123 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.513533, 36.825215 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 108.0416, 32.06814 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.683333, 36.816667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.38199, 40.20682 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 103.85348, 31.68115 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 114.41263, 29.0101 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.37, 36.796667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 107.61685, 29.35123 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.207778, 36.955556 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 94.75, 29.45 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.605, 26.07806 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.995, 43.021 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.69803, 36.71997 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 99.95105, 26.11116 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 141.02855, 38.7588 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.56667, 38.06667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 140.0, 37.0 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.203, 36.9183 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 110.59994, 26.00537 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.466667, 36.466667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.178, 36.834 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.071, 36.7811 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 137.8625, 36.698056 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.174183, 36.83527 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 141.075954, 40.2277 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.66582, 27.74074 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 106.84204, 32.35291 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 94.88, 29.93 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 102.17708, 28.54981 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.178354, 36.833954 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.2315, 36.0503 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.174167, 36.834722 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 102.23462, 29.91416 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 102.103, 28.9403 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 94.83333, 29.96667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 100.22212, 25.58423 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 86.72833, 27.6925 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.62181, 25.79439 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 121.73333, 24.26667 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 106.083, 30.79126 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 98.76972, 28.09083 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.4185, 36.79986 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 143.34, 43.62 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.305, 36.9161 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.452311, 36.752823 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 139.366, 36.8936 in Tiarella_polyphylla.csv is outside the bounding box of environmental data, skipping
+Extractor: max memory 32178700288, total allocated 2118123520, free 2083835904, used 34287616, increment 10483712
 Extracting random background and sample data
-11226 points with values for all grids
+Time since start: 2.524
+1219428 points with values for all grids
 Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/tiarella_polyphylla/Tiarella_polyphylla.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/tiarella_polyphylla nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/tiarella_polyphylla samplesfile=/volumes/output/heuchera_rfolk_sdm/tiarella_polyphylla/Tiarella_polyphylla.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/tiarella_polyphylla/Tiarella_polyphylla.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_sdm/tiarella_polyphylla nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/tiarella_polyphylla samplesfile=/volumes/output/heuchera_rfolk_sdm/tiarella_polyphylla/Tiarella_polyphylla.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
 Species: Tiarella_polyphylla
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
 outputdirectory: /volumes/output/heuchera_rfolk_sdm/tiarella_polyphylla
 samplesfile: /volumes/output/heuchera_rfolk_sdm/tiarella_polyphylla/Tiarella_polyphylla.csv
-environmentallayers: /volumes/env/worldclim1.4
+environmentallayers: /volumes/env/na_2.5min
 warnings: false
 autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 522190848, total allocated 40894464, free 28111024, used 12783440, increment 9276456
-Making features
-Time since start: 1.363
-makeFeatures: max memory 522190848, total allocated 171966464, free 94060664, used 77905800, increment 65122360
-Tiarella_polyphylla: 
-Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
-169 samples
-Density: max memory 522190848, total allocated 171966464, free 73910080, used 98056384, increment 20150584
-linearPredictor: max memory 522190848, total allocated 171966464, free 73910080, used 98056384, increment 0
-FeaturedSpace: max memory 522190848, total allocated 171966464, free 73910080, used 98056384, increment 0
-Sequential: max memory 522190848, total allocated 171966464, free 73688064, used 98278400, increment 222016
-Initial loss: 9.211839248099919
-Time since start: 6.892
-500: time = 5.040000 loss = 8.162620
-Resulting gain: 1.0492192712142074
-Projecting...
-Writing file /volumes/output/heuchera_rfolk_sdm/tiarella_polyphylla/Tiarella_polyphylla.asc
-Writing /volumes/output/heuchera_rfolk_sdm/tiarella_polyphylla/plots/Tiarella_polyphylla.png
-Time since start: 10.182
+Warning: Skipping Tiarella_polyphylla because it has 0 training samples
 Ending

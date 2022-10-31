@@ -1,83 +1,71 @@
-Wed Oct 26 16:45:43 GMT 2022
+Mon Oct 31 19:35:40 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Mitella_pentandra.csv
-Read samples: max memory 522190848, total allocated 33554432, free 20365840, used 13188592, increment 13188592
-Extractor: max memory 522190848, total allocated 33554432, free 28689576, used 4864856, increment -8323736
+Read samples: max memory 32178700288, total allocated 2118123520, free 2094319616, used 23803904, increment 23803904
+Extractor: max memory 32178700288, total allocated 2118123520, free 2083835904, used 34287616, increment 10483712
 Extracting random background and sample data
-13569 points with values for all grids
+Warning: Sample at -151.33, 59.55 in Mitella_pentandra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -151.33, 59.55
+Warning: Sample at -134.5, 58.61 in Mitella_pentandra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -134.5, 58.61
+Warning: Sample at -152.53, 58.11 in Mitella_pentandra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -152.53, 58.11
+Warning: Sample at -152.27092, 57.4942 in Mitella_pentandra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -152.27092, 57.4942
+Warning: Sample at -123.0009887, 48.99971063 in Mitella_pentandra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.0009887, 48.99971063
+Warning: Sample at -122.44306, 47.25306 in Mitella_pentandra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.44306, 47.25306
+Warning: Sample at -122.1064, 42.942 in Mitella_pentandra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -122.1064, 42.942
+Warning: Sample at -120.120051, 39.01628424 in Mitella_pentandra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -120.120051, 39.01628424
+Time since start: 2.508
+1219428 points with values for all grids
 Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_pentandra/Mitella_pentandra.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/mitella_pentandra nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/mitella_pentandra samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_pentandra/Mitella_pentandra.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_pentandra/Mitella_pentandra.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_sdm/mitella_pentandra nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/mitella_pentandra samplesfile=/volumes/output/heuchera_rfolk_sdm/mitella_pentandra/Mitella_pentandra.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
 Species: Mitella_pentandra
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
 outputdirectory: /volumes/output/heuchera_rfolk_sdm/mitella_pentandra
 samplesfile: /volumes/output/heuchera_rfolk_sdm/mitella_pentandra/Mitella_pentandra.csv
-environmentallayers: /volumes/env/worldclim1.4
+environmentallayers: /volumes/env/na_2.5min
 warnings: false
 autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 522190848, total allocated 49283072, free 16704120, used 32578952, increment 27714096
+getSamples: max memory 32178700288, total allocated 2118123520, free 1945479720, used 172643800, increment 138356184
 Making features
-Time since start: 1.267
-makeFeatures: max memory 522190848, total allocated 117440512, free 35629608, used 81810904, increment 49231952
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1934912704, used 183210816, increment 10567016
 Mitella_pentandra: 
 Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
-338 samples
-Density: max memory 522190848, total allocated 170917888, free 65252104, used 105665784, increment 23854880
-linearPredictor: max memory 522190848, total allocated 170917888, free 65252104, used 105665784, increment 0
-FeaturedSpace: max memory 522190848, total allocated 170917888, free 65252104, used 105665784, increment 0
-Sequential: max memory 522190848, total allocated 170917888, free 65252104, used 105665784, increment 0
-Initial loss: 9.217713126305595
-Time since start: 7.107
-500: time = 5.312000 loss = 8.514435
-Resulting gain: 0.7032784159804635
+418 samples
+Density: max memory 32178700288, total allocated 2118123520, free 1922411048, used 195712472, increment 12501656
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1922411048, used 195712472, increment 0
+Deactivating (mask=-9999.0)
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1922411048, used 195712472, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1922411048, used 195712472, increment 0
+Initial loss: 9.250618218474752
+Time since start: 3.869
+500: time = 1.113000 loss = 7.134277
+Resulting gain: 2.116340950958614
 Projecting...
 Writing file /volumes/output/heuchera_rfolk_sdm/mitella_pentandra/Mitella_pentandra.asc
-Time since start: 8.206
+Time since start: 8.815
 Writing /volumes/output/heuchera_rfolk_sdm/mitella_pentandra/plots/Mitella_pentandra.png
-Time since start: 10.865
 Ending

@@ -1,82 +1,93 @@
-Wed Oct 26 16:44:21 GMT 2022
+Mon Oct 31 19:37:42 GMT 2022
 MaxEnt version 3.4.4
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/alt.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio1.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio10.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio11.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio12.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio13.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio14.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio15.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio16.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio17.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio18.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio19.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio2.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio3.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio4.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio5.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio6.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio7.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio8.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/bio9.mxe
-Checking header of /volumes/env/worldclim1.4/mask.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
 Reading samples from Lithophragma_parviflorum.csv
-Read samples: max memory 522190848, total allocated 33554432, free 21102200, used 12452232, increment 12452232
-Extractor: max memory 522190848, total allocated 33554432, free 29754200, used 3800232, increment -8652000
+Read samples: max memory 32178700288, total allocated 2118123520, free 2094319616, used 23803904, increment 23803904
+Extractor: max memory 32178700288, total allocated 2118123520, free 2081736704, used 36386816, increment 12582912
 Extracting random background and sample data
-7941 points with values for all grids
+Warning: Sample at -124.19697, 49.49271 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -124.19697, 49.49271
+Warning: Sample at -123.70467, 49.1486 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.70467, 49.1486
+Warning: Sample at -122.9343189, 49.0830413 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.9343189, 49.0830413
+Warning: Sample at -122.85, 49.05 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -122.85, 49.05
+Warning: Sample at -123.3408, 48.86811 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.3408, 48.86811
+Warning: Sample at -122.88718, 48.76435 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -122.88718, 48.76435
+Warning: Sample at -122.98613, 48.63905 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -122.98613, 48.63905
+Warning: Sample at -123.18525, 48.6249 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -123.18525, 48.6249
+Warning: Sample at -122.97453, 48.61385 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -122.97453, 48.61385
+Warning: Sample at -123.01417, 48.54417 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -123.01417, 48.54417
+Warning: Sample at -122.8539, 48.54536 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.8539, 48.54536
+Warning: Sample at -122.55555, 48.53528 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.55555, 48.53528
+Warning: Sample at -122.55352, 48.53402 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.55352, 48.53402
+Warning: Sample at -122.5469, 48.52037 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.5469, 48.52037
+Warning: Sample at -122.70273, 48.49269 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.70273, 48.49269
+Warning: Sample at -122.69472, 48.49833 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.69472, 48.49833
+Warning: Sample at -123.41667, 48.45 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.41667, 48.45
+Warning: Sample at -123.43333, 48.43333 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.43333, 48.43333
+Warning: Sample at -122.40861, 47.57639 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -122.40861, 47.57639
+Time since start: 2.639
+1219428 points with values for all grids
 Adding samples to background in feature space
-Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum/Lithophragma_parviflorum.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum nowarnings nocache autorun -z togglelayertype=mask
-Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum samplesfile=/volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum/Lithophragma_parviflorum.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum/Lithophragma_parviflorum.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum samplesfile=/volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum/Lithophragma_parviflorum.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
 Species: Lithophragma_parviflorum
-Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
-Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
 outputdirectory: /volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum
 samplesfile: /volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum/Lithophragma_parviflorum.csv
-environmentallayers: /volumes/env/worldclim1.4
+environmentallayers: /volumes/env/na_2.5min
 warnings: false
 autorun: true
 visible: false
 cache: false
 
-getSamples: max memory 522190848, total allocated 40894464, free 27972360, used 12922104, increment 9121872
+getSamples: max memory 32178700288, total allocated 2118123520, free 1945505528, used 172617992, increment 136231176
 Making features
-Time since start: 1.165
-makeFeatures: max memory 522190848, total allocated 89128960, free 25982000, used 63146960, increment 50224856
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1934336952, used 183786568, increment 11168576
 Lithophragma_parviflorum: 
 Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
-195 samples
-Density: max memory 522190848, total allocated 176160768, free 85032960, used 91127808, increment 27980848
-linearPredictor: max memory 522190848, total allocated 176160768, free 85032960, used 91127808, increment 0
-FeaturedSpace: max memory 522190848, total allocated 176160768, free 85032960, used 91127808, increment 0
-Sequential: max memory 522190848, total allocated 176160768, free 85032960, used 91127808, increment 0
-Initial loss: 8.97979449089521
-Time since start: 5.582
-500: time = 4.004000 loss = 8.106947
-Resulting gain: 0.8728473265422032
+231 samples
+Density: max memory 32178700288, total allocated 2118123520, free 1922436856, used 195686664, increment 11900096
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1922436856, used 195686664, increment 0
+Deactivating (mask=-9999.0)
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1922436856, used 195686664, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1922436856, used 195686664, increment 0
+Initial loss: 9.232688775639945
+Time since start: 3.806
+500: time = 0.920000 loss = 6.586453
+Resulting gain: 2.646236080616031
 Projecting...
 Writing file /volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum/Lithophragma_parviflorum.asc
+Time since start: 8.567
 Writing /volumes/output/heuchera_rfolk_sdm/lithophragma_parviflorum/plots/Lithophragma_parviflorum.png
-Time since start: 9.181
 Ending
