@@ -64,9 +64,9 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#step-3-calculate-statistics-for-a-pam">Step 3: Calculate statistics for a PAM</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#data-preparation-script-parameter-file">Data preparation: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Input: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Output</a></li>
 </ul>
 </li>
 </ul>
@@ -161,7 +161,7 @@ These are the required and optional parameters:</p>
 <li><p>Optional
 * <strong>log_filename</strong>: Output filename to write logging data
 * <strong>log_console</strong>: ‘true’ to write log to console
-* <strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+* <strong>report_filename</strong>: output filename with grid summary.</p></li>
 </ul>
 </section>
 <section id="run-build-grid-command">
@@ -240,7 +240,7 @@ file.</p></li>
 <li><p><strong>layer_file_pattern</strong>: File pattern that describes one or more input files.</p></li>
 <li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
 <li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
-<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+<li><p><strong>report_filename</strong>: output filename with encoding summary.</p></li>
 </ul>
 </li>
 </ul>
@@ -282,8 +282,8 @@ like the grid_na_5deg shapefile in the <a class="reference external" href="https
 <h2>Step 3: Calculate statistics for a PAM<a class="headerlink" href="#step-3-calculate-statistics-for-a-pam" title="Permalink to this heading"></a></h2>
 <p>Now that a grid has been built, and a PAM has been populated by intersecting species
 distribution models with the grid, we calculate biogeographic statistics on that PAM.</p>
-<section id="data-preparation-script-parameter-file">
-<h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
+<section id="id4">
+<h3>Input: Script parameter file<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
 <p>An example JSON file for running the calculate_pam_stats command is at
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json">calculate_pam_stats.json</a>.
 These are the required and optional parameters:</p>
@@ -297,7 +297,7 @@ These are the required and optional parameters:</p>
 <ul>
 <li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
 <li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
-<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+<li><p><strong>report_filename</strong>: output filename with summary</p></li>
 <li><p><strong>covariance_matrix</strong>: The full filename for writing the covariance matrix.</p></li>
 <li><p><strong>diversity_matrix</strong>: The full filename for writing the diversity matrix.</p></li>
 <li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
@@ -321,8 +321,8 @@ matrix.</p></li>
 </pre></div>
 </div>
 </section>
-<section id="id4">
-<h3>Output<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
+<section id="id5">
+<h3>Output<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
 <p>The calculate_pam_stats tool outputs computes various statistics, depending on the
 output files specified in the command configuration file.  Outputs may include:</p>
 <ol class="arabic simple">
