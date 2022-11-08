@@ -168,6 +168,7 @@ For Linux/Mac systems:
 For Windows systems:
 
 .. code-block::
+
       ./run_tutorial.bat encode_layers data/config/encode_layers.json
 
 **Note**: You may get the following warning.  This indicates that there is a window with no
