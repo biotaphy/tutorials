@@ -252,14 +252,21 @@ Output
 The calculate_pam_stats tool outputs computes various statistics, depending on the 
 output files specified in the command configuration file.  Outputs may include:
 
-1. A "report_filename" named in the script parameter file, a summary of point
-   manipulations by each wrangler will be written to this file. 
-2. A "log_filename" named in the script parameter file, that will be created. 
-3. A "log_console" named in the script parameter file, logs will be written to the
-    command prompt during execution.
-4. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
+1. A "report_filename" named in the script parameter file, a summary of statistics
+   calculations will be written to this file, like `calculate_pam_stats.rpt
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/calculate_pam_stats.rpt>`_.
+2. A "log_filename" named in the script parameter file, that will be created, like `calculate_pam_stats.log
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/calculate_pam_stats.log>`_.
+3. If "log_console" is specified in the script parameter file, logs will be written to the
+   command prompt during execution.
+
+Examples of output statistics are in the `easy_bake directory
+<https://github.com/biotaphy/tutorials/blob/main/data/easy_bake>`_.
+
+1. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
    and it is written to the covariance_matrix filename, where the statistic name is 
-   appended to the end of the base file name.
-5. A "diversity_matrix" containing different diversity statistics.
-6. A "site_stats_matrix" containing site statistics.
-7. A "species_stats_matrix" containing species statistics.
+   appended to the end of the base file name, examples are covariance_sigma_species.lmm and
+   covariance_sigma_sites.lmm.
+2. A "diversity_matrix" containing different diversity statistics, like diversity.lmm.
+3. A "site_stats_matrix" containing site statistics, like site_stats.lmm.
+4. A "species_stats_matrix" containing species statistics, like species_stats.lmm.

@@ -326,20 +326,21 @@ matrix.</p></li>
 <p>The calculate_pam_stats tool outputs computes various statistics, depending on the
 output files specified in the command configuration file.  Outputs may include:</p>
 <ol class="arabic simple">
-<li><p>A “report_filename” named in the script parameter file, a summary of point
-manipulations by each wrangler will be written to this file.</p></li>
-<li><p>A “log_filename” named in the script parameter file, that will be created.</p></li>
-<li><dl class="simple">
-<dt>A “log_console” named in the script parameter file, logs will be written to the</dt><dd><p>command prompt during execution.</p>
-</dd>
-</dl>
-</li>
+<li><p>A “report_filename” named in the script parameter file, a summary of statistics
+calculations will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/calculate_pam_stats.rpt">calculate_pam_stats.rpt</a>.</p></li>
+<li><p>A “log_filename” named in the script parameter file, that will be created, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/calculate_pam_stats.log">calculate_pam_stats.log</a>.</p></li>
+<li><p>If “log_console” is specified in the script parameter file, logs will be written to the
+command prompt during execution.</p></li>
+</ol>
+<p>Examples of output statistics are in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake">easy_bake directory</a>.</p>
+<ol class="arabic simple">
 <li><p>One or more “covariance_matrix” files.  Each covariance statistic produces a matrix
 and it is written to the covariance_matrix filename, where the statistic name is
-appended to the end of the base file name.</p></li>
-<li><p>A “diversity_matrix” containing different diversity statistics.</p></li>
-<li><p>A “site_stats_matrix” containing site statistics.</p></li>
-<li><p>A “species_stats_matrix” containing species statistics.</p></li>
+appended to the end of the base file name, examples are covariance_sigma_species.lmm and
+covariance_sigma_sites.lmm.</p></li>
+<li><p>A “diversity_matrix” containing different diversity statistics, like diversity.lmm.</p></li>
+<li><p>A “site_stats_matrix” containing site statistics, like site_stats.lmm.</p></li>
+<li><p>A “species_stats_matrix” containing species statistics, like species_stats.lmm.</p></li>
 </ol>
 </section>
 </section>
