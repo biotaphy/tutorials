@@ -247,11 +247,18 @@ file.</p></li>
 </section>
 <section id="run-encode-layers-command">
 <h3>Run encode_layers command<a class="headerlink" href="#run-encode-layers-command" title="Permalink to this heading"></a></h3>
-<p>Initiate the clean occurrences process with the following</p>
+<p>Initiate the process with the following:</p>
 <p>For Linux/Mac systems:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">encode_layers</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">encode_layers</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
 <p>For Windows systems:</p>
 <p><strong>Note</strong>: You may get the following warning.  This indicates that there is a window with no
 values, a common occurrence in most datasets, and may be safely ignored.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ne">RuntimeWarning</span><span class="p">:</span> <span class="n">Mean</span> <span class="n">of</span> <span class="n">empty</span> <span class="nb">slice</span>
+    <span class="n">window_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">window</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">window</span> <span class="o">!=</span> <span class="n">nodata</span><span class="p">)])</span>
+</pre></div>
+</div>
 </section>
 <section id="id2">
 <h3>Output<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
