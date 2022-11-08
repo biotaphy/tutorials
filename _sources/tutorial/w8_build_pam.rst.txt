@@ -71,6 +71,7 @@ Initiate the process with the following:
 For Linux/Mac systems:
 
 .. code-block::
+
       ./run_tutorial.sh build_grid data/config/build_grid.json
 
 For Windows systems:
