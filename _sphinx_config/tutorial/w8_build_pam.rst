@@ -233,10 +233,17 @@ Run calculate_pam_stats command
 
 Initiate the calculate_pam_stats process with the following:
 
-for linux/mac systems
+For Linux/Mac systems
 
 .. code-block::
+
       ./run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
+
+For Windows systems
+
+.. code-block::
+
+      ./run_tutorial.bat calculate_pam_stats data/config/calculate_pam_stats.json
 
 
 Output
