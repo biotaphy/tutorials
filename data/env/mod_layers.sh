@@ -1,4 +1,4 @@
-
+# -projwin ulx uly lrx lry
 gdal_translate -projwin  -164  64  -53  15 ryan_2.5_global/BIOCLIM_1.tif   ryan_2.5_na/BIOCLIM_1.tif
 gdal_translate -projwin  -164  64  -53  15 ryan_2.5_global/BIOCLIM_7.tif   ryan_2.5_na/BIOCLIM_7.tif
 gdal_translate -projwin  -164  64  -53  15 ryan_2.5_global/BIOCLIM_12.tif   ryan_2.5_na/BIOCLIM_12.tif

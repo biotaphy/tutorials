@@ -2,6 +2,13 @@
 Webinar 8: Introducing Presence-Absence Matrices (PAMs)
 ==============================
 
+Create a Presence-Absence Matrix (PAM) from species distribution prediction layers.
+This exercise contains 3 steps.  First, we define and build a grid of our area of
+interest.  This will define the size and location of grid cells used for analyzing a
+set of species layers.  Second, we encode all included layers by intersecting them
+with the grid, and determining whether each species is present (1) or absent (0), in
+each cell.  The encoded layers are assembled into a Presence-Absence Matrix.  Finally,
+we will compute statistics on the resulting PAM.
 
 --------------------
 Introduction
@@ -33,7 +40,7 @@ the species presence or absence in each site.  In the matrix, this is considered
 Step 1: Build a grid
 --------------------------------
 
-Data preparation: Script parameter file
+Input: Script parameter file
 ******************************************
 
 A JSON parameter file is required for this command.  The tutorial parameter file
@@ -61,33 +68,53 @@ Run build_grid command
 
 Initiate the process with the following:
 
-for linux/mac systems
+For Linux/Mac systems:
 
 .. code-block::
-      ./run_tutorial.sh build_grid data/input/build_grid.json
+      ./run_tutorial.sh build_grid data/config/build_grid.json
+
+For Windows systems:
+
+.. code-block::
+
+   ./run_tutorial.bat  build_grid  data/config/build_grid.json
+
 
 Output
 ******************************************
 
-The build_grid tool outputs a grid in shapefile format, conforming to the arguments
-specified in the configuration JSON file.
+Outputs are configured in the script parameter file, and may include:
+
+1. If "report_filename" is specified in the script parameter file, a summary of the
+   grid will be written to this file, like `build_grid.rpt
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid.rpt>`_.
+2. If "log_filename" is specified in the script parameter file, that will be created,
+   like , like `build_grid.log
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid.log>`_.
+3. If "log_console" is specified in the script parameter file, logs will be written to the
+   command prompt during execution.
+4. A shapefile format grid, conforming to the arguments specified in the configuration JSON file,
+   like the grid_na_5deg shapefile in the `easy_bake directory
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/>`_.
 
 --------------------------------
 Step 2: Encode species layers
 --------------------------------
 
-Data preparation: Layers
+Input: Layers
 ******************************************
 
 Layers are specified in the Script parameter file, described fully in the next section.  
-Each layer of a PAM represents the presence or absence of a taxon in the analysis.  
-Presence or absence is calculated with the min_coverage, min_presence, and  max_presence
-parameters also detailed in the Script parameter file.  If you define different values
-for computing different layers, you can create a matrix from each set of layers that
-share parameters (each matrix created with the same command, called with a different  
-configuration file), then aggregate the matrices in another step.  
+Each layer of a PAM represents the presence or absence of a taxon in the set of gridcells
+used in the analysis.  Presence or absence is calculated with the min_coverage,
+min_presence, and  max_presence parameters also detailed in the Script parameter file.
 
-Data preparation: Script parameter file
+If you want to define different values
+for computing different layers, you can create a matrix from each set of layers that
+share parameters (each matrix created with a different configuration file containing
+different parameters and the same grid), then aggregate the matrices in another step.
+
+Input: Script parameter file
 ******************************************
 
 An example json file for running the encode_layers tutorial is at
@@ -129,10 +156,17 @@ These are the required and optional parameters:
 Run encode_layers command
 ******************************************
 
-Initiate the clean occurrences process with the following for linux/mac systems:
+Initiate the clean occurrences process with the following
+
+For Linux/Mac systems:
 
 .. code-block::
-      .\run_tutorial.sh encode_layers data/config/encode_layers.json
+      ./run_tutorial.sh encode_layers data/config/encode_layers.json
+
+For Windows systems:
+
+.. code-block::
+      ./run_tutorial.bat encode_layers data/config/encode_layers.json
 
 
 **Note**: You may get the following warning.  This indicates that there is a window with no
@@ -141,6 +175,23 @@ values, a common occurrence in most datasets, and may be safely ignored.
 .. code-block::
     RuntimeWarning: Mean of empty slice
         window_mean = np.nanmean(window[np.where(window != nodata)])
+
+Output
+******************************************
+
+Most outputs are configured in the script parameter file, and may include:
+
+1. If "report_filename" is specified in the script parameter file, a summary of the
+   encoded layers will be written to this file, like `encode_layers.rpt
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers.rpt>`_.
+2. If "log_filename" is specified in the script parameter file, that will be created,
+   like , like `encode_layers.log
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers.log>`_.
+3. If "log_console" is specified in the script parameter file, logs will be written to the
+   command prompt during execution.
+4. A matrix containing one column to the arguments specified in the configuration JSON file,
+   like the grid_na_5deg shapefile in the `easy_bake directory
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/>`_.
 
 --------------------------------
 Step 3: Calculate statistics for a PAM
