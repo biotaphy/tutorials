@@ -1,0 +1,8 @@
+{
+    "pam_filename": "/volumes/data/input/heuchera_pam.lmm",
+    "output covariance matrix sigma sites": "/volumes/output/covariance_sigma_sites.lmm",
+    "output covariance matrix sigma species": "/volumes/output/covariance_sigma_species.lmm",
+    "output diversity_matrix": "/volumes/output/diversity.lmm",
+    "output site_stats_matrix": "/volumes/output/site_stats.lmm",
+    "output species_stats_matrix": "/volumes/output/species_stats.lmm"
+}
