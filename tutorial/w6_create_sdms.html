@@ -88,8 +88,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Webinar 6: Species Distribution Modeling (SDM)</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Webinar 6: Species Distribution Modeling (SDM)</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/tutorial/w6_create_sdms.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -195,6 +195,7 @@ used for modeling to.  If the data contains less than the minimum, the
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
 <p>with a list and a directory containing occurrence data files.</p>
 <p>Initiate the create_sdm process with the following:</p>
+<p>For Linux/Mac systems:</p>
 <p>For Windows systems:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">create_sdm</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">create_sdm</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
@@ -204,9 +205,10 @@ used for modeling to.  If the data contains less than the minimum, the
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h2>
 <p>Most outputs are configured in the script parameter file, and may include:</p>
 <ol class="arabic simple">
-<li><p>If “report_filename” is specified in the script parameter file, a summary of point
-manipulations by each wrangler will be written to this file.</p></li>
-<li><p>If “log_filename” is specified in the script parameter file, that will be created.</p></li>
+<li><p>If “report_filename” is specified in the script parameter file, a summary of SDM results
+for each species, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/create_sdm.rpt">create_sdm.rpt</a></p></li>
+<li><p>If “log_filename” is specified in the script parameter file, that will be created, , like
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/create_sdm.log">create_sdm.log</a></p></li>
 <li><p>If “log_console” is specified in the script parameter file, logs will be written to the
 command prompt during execution.</p></li>
 <li><p>A directory named in the out_dir parameter, containing a subdirectory for each

@@ -51,21 +51,22 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 8: Introducing Presence-Absence Matrices (PAMs)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-1-build-a-grid">Step 1: Build a grid</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#data-preparation-script-parameter-file">Data preparation: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-build-grid-command">Run build_grid command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#step-2-encode-species-layers">Step 2: Encode species layers</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#data-preparation-layers">Data preparation: Layers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Data preparation: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-layers">Input: Layers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Input: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-encode-layers-command">Run encode_layers command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Output</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#step-3-calculate-statistics-for-a-pam">Step 3: Calculate statistics for a PAM</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Data preparation: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-preparation-script-parameter-file">Data preparation: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Output</a></li>
 </ul>
 </li>
 </ul>
@@ -97,8 +98,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Webinar 8: Introducing Presence-Absence Matrices (PAMs)</li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Webinar 8: Introducing Presence-Absence Matrices (PAMs)</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/tutorial/w8_build_pam.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -110,6 +111,13 @@
              
   <section id="webinar-8-introducing-presence-absence-matrices-pams">
 <h1>Webinar 8: Introducing Presence-Absence Matrices (PAMs)<a class="headerlink" href="#webinar-8-introducing-presence-absence-matrices-pams" title="Permalink to this heading"></a></h1>
+<p>Create a Presence-Absence Matrix (PAM) from species distribution prediction layers.
+This exercise contains 3 steps.  First, we define and build a grid of our area of
+interest.  This will define the size and location of grid cells used for analyzing a
+set of species layers.  Second, we encode all included layers by intersecting them
+with the grid, and determining whether each species is present (1) or absent (0), in
+each cell.  The encoded layers are assembled into a Presence-Absence Matrix.  Finally,
+we will compute statistics on the resulting PAM.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>Read <a class="reference external" href="../tutorial/w1_overview">Tutorial Overview</a> for an overview of how all
@@ -133,8 +141,8 @@ the species presence or absence in each site.  In the matrix, this is considered
 </section>
 <section id="step-1-build-a-grid">
 <h2>Step 1: Build a grid<a class="headerlink" href="#step-1-build-a-grid" title="Permalink to this heading"></a></h2>
-<section id="data-preparation-script-parameter-file">
-<h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
+<section id="input-script-parameter-file">
+<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
 is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/build_grid.json">build_grid.json</a>.
 These are the required and optional parameters:</p>
@@ -159,28 +167,42 @@ These are the required and optional parameters:</p>
 <section id="run-build-grid-command">
 <h3>Run build_grid command<a class="headerlink" href="#run-build-grid-command" title="Permalink to this heading"></a></h3>
 <p>Initiate the process with the following:</p>
-<p>for linux/mac systems</p>
+<p>For Linux/Mac systems:</p>
+<p>For Windows systems:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">build_grid</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">build_grid</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
 </section>
 <section id="output">
 <h3>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h3>
-<p>The build_grid tool outputs a grid in shapefile format, conforming to the arguments
-specified in the configuration JSON file.</p>
+<p>Outputs are configured in the script parameter file, and may include:</p>
+<ol class="arabic simple">
+<li><p>If “report_filename” is specified in the script parameter file, a summary of the
+grid will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid.rpt">build_grid.rpt</a>.</p></li>
+<li><p>If “log_filename” is specified in the script parameter file, that will be created,
+like , like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid.log">build_grid.log</a>.</p></li>
+<li><p>If “log_console” is specified in the script parameter file, logs will be written to the
+command prompt during execution.</p></li>
+<li><p>A shapefile format grid, conforming to the arguments specified in the configuration JSON file,
+like the grid_na_5deg shapefile in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/">easy_bake directory</a>.</p></li>
+</ol>
 </section>
 </section>
 <section id="step-2-encode-species-layers">
 <h2>Step 2: Encode species layers<a class="headerlink" href="#step-2-encode-species-layers" title="Permalink to this heading"></a></h2>
-<section id="data-preparation-layers">
-<h3>Data preparation: Layers<a class="headerlink" href="#data-preparation-layers" title="Permalink to this heading"></a></h3>
+<section id="input-layers">
+<h3>Input: Layers<a class="headerlink" href="#input-layers" title="Permalink to this heading"></a></h3>
 <p>Layers are specified in the Script parameter file, described fully in the next section.
-Each layer of a PAM represents the presence or absence of a taxon in the analysis.
-Presence or absence is calculated with the min_coverage, min_presence, and  max_presence
-parameters also detailed in the Script parameter file.  If you define different values
+Each layer of a PAM represents the presence or absence of a taxon in the set of gridcells
+used in the analysis.  Presence or absence is calculated with the min_coverage,
+min_presence, and  max_presence parameters also detailed in the Script parameter file.</p>
+<p>If you want to define different values
 for computing different layers, you can create a matrix from each set of layers that
-share parameters (each matrix created with the same command, called with a different
-configuration file), then aggregate the matrices in another step.</p>
+share parameters (each matrix created with a different configuration file containing
+different parameters and the same grid), then aggregate the matrices in another step.</p>
 </section>
 <section id="id1">
-<h3>Data preparation: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<h3>Input: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <p>An example json file for running the encode_layers tutorial is at
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/encode_layers.json">encode_layers.json</a>.
 These are the required and optional parameters:</p>
@@ -222,17 +244,33 @@ file.</p></li>
 </section>
 <section id="run-encode-layers-command">
 <h3>Run encode_layers command<a class="headerlink" href="#run-encode-layers-command" title="Permalink to this heading"></a></h3>
-<p>Initiate the clean occurrences process with the following for linux/mac systems:</p>
+<p>Initiate the clean occurrences process with the following</p>
+<p>For Linux/Mac systems:</p>
+<p>For Windows systems:</p>
 <p><strong>Note</strong>: You may get the following warning.  This indicates that there is a window with no
 values, a common occurrence in most datasets, and may be safely ignored.</p>
+</section>
+<section id="id2">
+<h3>Output<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<p>Most outputs are configured in the script parameter file, and may include:</p>
+<ol class="arabic simple">
+<li><p>If “report_filename” is specified in the script parameter file, a summary of the
+encoded layers will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers.rpt">encode_layers.rpt</a>.</p></li>
+<li><p>If “log_filename” is specified in the script parameter file, that will be created,
+like , like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers.log">encode_layers.log</a>.</p></li>
+<li><p>If “log_console” is specified in the script parameter file, logs will be written to the
+command prompt during execution.</p></li>
+<li><p>A matrix containing one column to the arguments specified in the configuration JSON file,
+like the grid_na_5deg shapefile in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/">easy_bake directory</a>.</p></li>
+</ol>
 </section>
 </section>
 <section id="step-3-calculate-statistics-for-a-pam">
 <h2>Step 3: Calculate statistics for a PAM<a class="headerlink" href="#step-3-calculate-statistics-for-a-pam" title="Permalink to this heading"></a></h2>
 <p>Now that a grid has been built, and a PAM has been populated by intersecting species
 distribution models with the grid, we calculate biogeographic statistics on that PAM.</p>
-<section id="id2">
-<h3>Data preparation: Script parameter file<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<section id="data-preparation-script-parameter-file">
+<h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>An example JSON file for running the calculate_pam_stats command is at
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json">calculate_pam_stats.json</a>.
 These are the required and optional parameters:</p>
@@ -263,8 +301,8 @@ matrix.</p></li>
 <p>Initiate the calculate_pam_stats process with the following:</p>
 <p>for linux/mac systems</p>
 </section>
-<section id="id3">
-<h3>Output<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
+<section id="id4">
+<h3>Output<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
 <p>The calculate_pam_stats tool outputs computes various statistics, depending on the
 output files specified in the command configuration file.  Outputs may include:</p>
 <ol class="arabic simple">

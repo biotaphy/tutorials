@@ -110,6 +110,8 @@ with a list and a directory containing occurrence data files.
 
 Initiate the create_sdm process with the following:
 
+For Linux/Mac systems:
+
 .. code-block::
       ./run_tutorial.sh create_sdm data/config/create_sdm.json
 
@@ -126,9 +128,12 @@ Output
 
 Most outputs are configured in the script parameter file, and may include:
 
-1. If "report_filename" is specified in the script parameter file, a summary of point
-   manipulations by each wrangler will be written to this file. 
-2. If "log_filename" is specified in the script parameter file, that will be created. 
+1. If "report_filename" is specified in the script parameter file, a summary of SDM results
+   for each species, like `create_sdm.rpt
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/create_sdm.rpt>`_
+2. If "log_filename" is specified in the script parameter file, that will be created, , like
+   `create_sdm.log
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/create_sdm.log>`_
 3. If "log_console" is specified in the script parameter file, logs will be written to the
    command prompt during execution.
 4. A directory named in the out_dir parameter, containing a subdirectory for each 
