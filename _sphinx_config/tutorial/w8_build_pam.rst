@@ -61,7 +61,7 @@ These are the required and optional parameters:
 * Optional 
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
-  * **report_filename**: output filename with data modifications made by wranglers
+  * **report_filename**: output filename with grid summary.
 
 Run build_grid command
 ******************************************
@@ -152,7 +152,7 @@ These are the required and optional parameters:
 
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
-  * **report_filename**: output filename with data modifications made by wranglers
+  * **report_filename**: output filename with encoding summary.
 
 Run encode_layers command
 ******************************************
@@ -203,7 +203,7 @@ Step 3: Calculate statistics for a PAM
 Now that a grid has been built, and a PAM has been populated by intersecting species
 distribution models with the grid, we calculate biogeographic statistics on that PAM.
 
-Data preparation: Script parameter file
+Input: Script parameter file
 ******************************************
 
 An example JSON file for running the calculate_pam_stats command is at
@@ -219,7 +219,7 @@ These are the required and optional parameters:
 
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
-  * **report_filename**: output filename with data modifications made by wranglers
+  * **report_filename**: output filename with summary
   * **covariance_matrix**: The full filename for writing the covariance matrix.
   * **diversity_matrix**: The full filename for writing the diversity matrix.
   * **site_stats_matrix**: The full filename for writing the site statistics matrix.
