@@ -157,11 +157,12 @@ These are the required and optional parameters:
 Run encode_layers command
 ******************************************
 
-Initiate the clean occurrences process with the following
+Initiate the process with the following:
 
 For Linux/Mac systems:
 
 .. code-block::
+
       ./run_tutorial.sh encode_layers data/config/encode_layers.json
 
 For Windows systems:
@@ -169,11 +170,11 @@ For Windows systems:
 .. code-block::
       ./run_tutorial.bat encode_layers data/config/encode_layers.json
 
-
 **Note**: You may get the following warning.  This indicates that there is a window with no
 values, a common occurrence in most datasets, and may be safely ignored.
 
 .. code-block::
+
     RuntimeWarning: Mean of empty slice
         window_mean = np.nanmean(window[np.where(window != nodata)])
 
