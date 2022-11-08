@@ -220,7 +220,7 @@ These are the required and optional parameters:
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with summary
-  * **covariance_matrix**: The full filename for writing the covariance matrix.
+  * **covariance_matrix**: The full path and base filename for writing covariance matrices.
   * **diversity_matrix**: The full filename for writing the diversity matrix.
   * **site_stats_matrix**: The full filename for writing the site statistics matrix.
   * **species_stats_matrix**: The full filename for writing the species statistics 
