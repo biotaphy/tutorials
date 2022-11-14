@@ -37,11 +37,18 @@ This requires an input tree, `heuchera.nex
 also remove any empty slices, rows or columns that are all zeros, using the
 **PurgeEmptySlicesWrangler**.
 
+**Note**: It is important when matching species between a matrix and a tree, that the
+species names match when possible.  The example PAM was created from re-named species
+layers (using spaces instead of underscores between the genus and species) so they
+will match the tree.
+
 Input: PAM matrix
 ******************************************
 
-Use a PAM created in `Webinar 8 <w8_build_pam>`_.  An example PAM is available in
-`heuchera_pam.lmm <https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera_pam.lmm>`_.
+Use a pre-created PAM, similar to that created in `Webinar 8 <w8_build_pam>`_.
+An example PAM is available in
+`heuchera_pam_rn.lmm
+<https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera_pam_rn.lmm>`_.
 
 Input: Script parameter file
 ******************************************
@@ -74,8 +81,17 @@ Run tutorial
 
 Initiate the process with the following:
 
+For Linux/Mac systems:
+
 .. code-block::
       ./run_tutorial.sh  wrangle_matrix  data/config/wrangle_matrix.json
+
+
+For Windows systems:
+
+.. code-block::
+
+   ./run_tutorial.bat  wrangle_matrix  data/config/wrangle_matrix.json
 
 Output
 ******************************************
@@ -91,7 +107,14 @@ We have our grid and our PAM from Webinar 9 has been built, so we re-calculate
 biogeographic statistics on that PAM including phylogenetic diversity statistics
 which employ the matching tree data.
 
-Data preparation: Script parameter file
+Input: trimmed PAM matrix
+******************************************
+
+Use the PAM wrangled in the previous step.  The  PAM is available in
+`heuchera_pam_rn_wrangled.lmm
+<https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera_pam_rn_wrangled.lmm>`_.
+
+Input: Script parameter file
 ******************************************
 
 An example JSON file for running the calculate_pam_stats command is at
@@ -107,7 +130,7 @@ These are the required and optional parameters:
 
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
-  * **report_filename**: output filename with data modifications made by wranglers
+  * **report_filename**: output filename with process summary
   * **covariance_matrix**: The full filename for writing the covariance matrix.
   * **diversity_matrix**: The full filename for writing the diversity matrix.
   * **site_stats_matrix**: The full filename for writing the site statistics matrix.
@@ -121,10 +144,15 @@ Run calculate_pam_stats command
 
 Initiate the calculate_pam_stats process with the following:
 
-for linux/mac systems
+For Linux/Mac systems
 
 .. code-block::
       ./run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
+
+For Windows systems
+
+.. code-block::
+      ./run_tutorial.bat calculate_pam_stats data/config/calculate_pam_stats.json
 
 Output
 ******************************************
@@ -132,9 +160,8 @@ Output
 The calculate_pam_stats tool outputs computes various statistics, depending on the 
 output files specified in the command configuration file.  Outputs may include:
 
-1. A "report_filename" named in the script parameter file, a summary of point
-   manipulations by each wrangler will be written to this file. 
-2. A "log_filename" named in the script parameter file, that will be created. 
+1. A "report_filename" named in the script parameter file.
+2. A "log_filename" named in the script parameter file.
 3. A "log_console" named in the script parameter file, logs will be written to the
     command prompt during execution.
 4. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
