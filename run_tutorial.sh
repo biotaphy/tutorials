@@ -113,7 +113,8 @@ create_volumes() {
     if [ "$rw_vol_exists" == "0" ]; then
         echo " - Create volume $OUT_VOLUME"  | tee -a "$LOG"
         docker volume create --label=$VOLUME_DISCARD_LABEL $OUT_VOLUME
-    else
+    else./run_tutorial.sh  wrangle_matrix  data/config/wrangle_matrix.json
+
         echo " - Volume $OUT_VOLUME is already created"  | tee -a "$LOG"
     fi
 }
@@ -197,9 +198,18 @@ remove_image() {
 remove_volumes() {
     remove_container
     echo " - Remove volumes $IN_VOLUME, $OUT_VOLUME, $ENV_VOLUME" | tee -a "$LOG"
-    docker volume rm $IN_VOLUME
-    docker volume rm $OUT_VOLUME
-    docker volume rm $ENV_VOLUME
+    input_vol_exists=$(docker volume ls | grep $IN_VOLUME | wc -l )
+    if [ "$input_vol_exists" != "0" ]; then
+        docker volume rm $IN_VOLUME
+    fi
+    output_vol_exists=$(docker volume ls | grep $OUT_VOLUME | wc -l )
+    if [ "$output_vol_exists" != "0" ]; then
+        docker volume rm $OUT_VOLUME
+    fi
+    env_vol_exists=$(docker volume ls | grep $ENV_VOLUME | wc -l )
+    if [ "$env_vol_exists" != "0" ]; then
+        docker volume rm $ENV_VOLUME
+    fi
 }
 
 # -----------------------------------------------------------
@@ -254,7 +264,8 @@ time_stamp () {
 COMMANDS=(
 "build_all"  "cleanup"  "cleanup_all"
 "list_commands" "list_outputs"  "list_volumes"
-"wrangle_species_list"  "split_occurrence_data"   "wrangle_occurrences"  "wrangle_tree"
+"wrangle_species_list"  "split_occurrence_data"   "wrangle_occurrences"
+"wrangle_matrix"  "wrangle_tree"
 "create_sdm"
 "build_grid"  "encode_layers" "calculate_pam_stats"
 )

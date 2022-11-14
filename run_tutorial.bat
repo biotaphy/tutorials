@@ -213,6 +213,7 @@ exit /b 0
     if %CMD% == wrangle_species_list ( call:execute_process )
     if %CMD% == wrangle_occurrences ( call:execute_process )
     if %CMD% == split_occurrence_data ( call:execute_process )
+    if %CMD% == wrangle_matrix ( call:execute_process )
     if %CMD% == wrangle_tree ( call:execute_process )
     if %CMD% == build_grid ( call:execute_process )
     if %CMD% == encode_layers ( call:execute_process )
@@ -244,9 +245,33 @@ exit /b 0
     call:header remove_volumes
     call:remove_container
     call:time_stamp - Remove volumes %IN_VOLUME%, %OUT_VOLUME%, %ENV_VOLUME%
-    docker volume rm %IN_VOLUME%
-    docker volume rm %OUT_VOLUME%
-    docker volume rm %ENV_VOLUME%
+    :: Input
+    set tmp=empty
+    for /f "tokens=2 usebackq" %%g in ( `docker volume ls ^| find "%IN_VOLUME%"` ) do (
+        SET tmp=%%g )
+    if %tmp% == %IN_VOLUME% (
+        docker volume rm %IN_VOLUME%
+    ) else (
+        call:time_stamp - No volume %IN_VOLUME%
+    )
+    :: Output
+    set tmp=empty
+    for /f "tokens=2 usebackq" %%g in ( `docker volume ls ^| find "%OUT_VOLUME%"` ) do (
+        SET tmp=%%g )
+    if %tmp% == %OUT_VOLUME% (
+        docker volume rm %OUT_VOLUME%
+    ) else (
+        call:time_stamp - No volume %OUT_VOLUME%
+    )
+    :: Environmental data
+    set tmp=empty
+    for /f "tokens=2 usebackq" %%g in ( `docker volume ls ^| find "%OUT_VOLUME%"` ) do (
+        SET tmp=%%g )
+    if %tmp% == %ENV_VOLUME% (
+        docker volume rm %ENV_VOLUME%
+    ) else (
+        call:time_stamp - No volume %ENV_VOLUME%
+    )
 }
 
 :: -----------------------------------------------------------
