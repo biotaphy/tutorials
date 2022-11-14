@@ -100,7 +100,7 @@ These are the required and optional parameters:
     `Rare Species Modeling` algorithm will be used.
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
-  * **report_filename**: output filename with data modifications made by wranglers
+  * **report_filename**: output filename with process summary
 
 -----------------------------------
 Run tutorial
