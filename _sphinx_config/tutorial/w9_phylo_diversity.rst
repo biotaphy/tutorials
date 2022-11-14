@@ -21,21 +21,44 @@ intersection of species between the phylogentic tree and the matrix.  We will tr
 matrix of all species that do not occur in the tree. We will also remove any empty
 (all zeros) rows and columns.
 
-Data preparation: Script parameter file
+Input: Wrangler configuration file
 ******************************************
 
-A JSON parameter file is required for this command.  The tutorial parameter file
-is `wrangle_matrix.json
+A data wrangler configuration is a file containing a JSON list of zero or more
+wranglers - each performs a different operation, and each has its own parameters.
+More information on file format, available wrangler types, and the required and/or
+optional parameters for each are in `data_wrangle_matrix <data_wrangle_matrix>`_
+
+We will use the wrangler configuration file `matrix_wranglers.json
+<https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json>`_.
+We will match our matrix to a phylogenetic tree, using the **MatchTreeMatrixWrangler**.
+This requires an input tree, `heuchera.nex
+<https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.nex>`_.  We will
+also remove any empty slices, rows or columns that are all zeros, using the
+**PurgeEmptySlicesWrangler**.
+
+Input: PAM matrix
+******************************************
+
+Use a PAM created in `Webinar 8 <w8_build_pam>`_.  An example PAM is available in
+`heuchera_pam.lmm <https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera_pam.lmm>`_.
+
+Input: Script parameter file
+******************************************
+
+A JSON parameter file is required for this command, and pulls together all of the input,
+and output files, and any additional configuration.  The script parameter file
+for this exercise is `wrangle_matrix.json
 <https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix.json>`_.
 These are the required and optional parameters:
 
 * Required:
 
-  * **in_matrix_filename**: input filename containing a PAM matrix. 
+  * **in_matrix_filename**: input filename containing a PAM matrix.
   * **out_matrix_filename**: output filename for the updated matrix.
   * **wrangler_configuration_file**: matrix wrangler configuration file,
     described in the next section.  The tutorial example wrangler configuration
-    contains two wranglers, the MatchTreeMatrixWrangler and the 
+    contains two wranglers, the MatchTreeMatrixWrangler and the
     PurgeEmptySlicesWrangler, and is in
     `matrix_wranglers.json
     <https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json>`_
@@ -45,20 +68,6 @@ These are the required and optional parameters:
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with data modifications made by wranglers
-
-Data preparation: Input matrix
-******************************************
-
-Use a PAM created in `Webinar 8 <w8_build_pam>`_.  An example PAM is available in
-`pam.lmm <https://github.com/biotaphy/tutorials/blob/main/data/input/pam.lmm>`_.
-
-Data preparation: Wrangler configuration file
-******************************************
-
-A data wrangler configuration is a file containing a JSON list of zero or more
-wranglers - each performs a different operation, and each has its own parameters.
-More information on file format, available wrangler types, and the required and/or
-optional parameters for each are in `data_wrangle_matrix <data_wrangle_matrix>`_
 
 Run tutorial
 ******************************************
