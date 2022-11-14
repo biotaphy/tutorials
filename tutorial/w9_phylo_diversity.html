@@ -52,15 +52,15 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 9: Integrating Phylogenies with Species and Biogeographic Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-1-cleanup-the-matrix">Step 1: Cleanup the matrix</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#data-preparation-script-parameter-file">Data preparation: Script parameter file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-preparation-input-matrix">Data preparation: Input matrix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-preparation-wrangler-configuration-file">Data preparation: Wrangler configuration file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-wrangler-configuration-file">Input: Wrangler configuration file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-pam-matrix">Input: PAM matrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-tutorial">Run tutorial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#step-2-calculate-stats-with-the-updated-pam-and-associated-tree">Step 2: Calculate stats with the updated PAM and associated Tree</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Data preparation: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-preparation-script-parameter-file">Data preparation: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id2">Output</a></li>
 </ul>
@@ -119,10 +119,28 @@ tutorials work.</p>
 intersection of species between the phylogentic tree and the matrix.  We will trim the
 matrix of all species that do not occur in the tree. We will also remove any empty
 (all zeros) rows and columns.</p>
-<section id="data-preparation-script-parameter-file">
-<h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
-<p>A JSON parameter file is required for this command.  The tutorial parameter file
-is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix.json">wrangle_matrix.json</a>.
+<section id="input-wrangler-configuration-file">
+<h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
+<p>A data wrangler configuration is a file containing a JSON list of zero or more
+wranglers - each performs a different operation, and each has its own parameters.
+More information on file format, available wrangler types, and the required and/or
+optional parameters for each are in <a class="reference external" href="data_wrangle_matrix">data_wrangle_matrix</a></p>
+<p>We will use the wrangler configuration file <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json">matrix_wranglers.json</a>.
+We will match our matrix to a phylogenetic tree, using the <strong>MatchTreeMatrixWrangler</strong>.
+This requires an input tree, <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.nex">heuchera.nex</a>.  We will
+also remove any empty slices, rows or columns that are all zeros, using the
+<strong>PurgeEmptySlicesWrangler</strong>.</p>
+</section>
+<section id="input-pam-matrix">
+<h3>Input: PAM matrix<a class="headerlink" href="#input-pam-matrix" title="Permalink to this heading"></a></h3>
+<p>Use a PAM created in <a class="reference external" href="w8_build_pam">Webinar 8</a>.  An example PAM is available in
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera_pam.lmm">heuchera_pam.lmm</a>.</p>
+</section>
+<section id="input-script-parameter-file">
+<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
+<p>A JSON parameter file is required for this command, and pulls together all of the input,
+and output files, and any additional configuration.  The script parameter file
+for this exercise is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix.json">wrangle_matrix.json</a>.
 These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -140,22 +158,10 @@ PurgeEmptySlicesWrangler, and is in
 <ul>
 <li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
 <li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
-<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+<li><p><strong>report_filename</strong>: output filename with process summary</p></li>
 </ul>
 </li>
 </ul>
-</section>
-<section id="data-preparation-input-matrix">
-<h3>Data preparation: Input matrix<a class="headerlink" href="#data-preparation-input-matrix" title="Permalink to this heading"></a></h3>
-<p>Use a PAM created in <a class="reference external" href="w8_build_pam">Webinar 8</a>.  An example PAM is available in
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/pam.lmm">pam.lmm</a>.</p>
-</section>
-<section id="data-preparation-wrangler-configuration-file">
-<h3>Data preparation: Wrangler configuration file<a class="headerlink" href="#data-preparation-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
-<p>A data wrangler configuration is a file containing a JSON list of zero or more
-wranglers - each performs a different operation, and each has its own parameters.
-More information on file format, available wrangler types, and the required and/or
-optional parameters for each are in <a class="reference external" href="data_wrangle_matrix">data_wrangle_matrix</a></p>
 </section>
 <section id="run-tutorial">
 <h3>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h3>
@@ -172,8 +178,8 @@ and reports specified in the Script parameter file.</p>
 <p>We have our grid and our PAM from Webinar 9 has been built, so we re-calculate
 biogeographic statistics on that PAM including phylogenetic diversity statistics
 which employ the matching tree data.</p>
-<section id="id1">
-<h3>Data preparation: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<section id="data-preparation-script-parameter-file">
+<h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>An example JSON file for running the calculate_pam_stats command is at
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats_pd.json">calculate_pam_stats_pd.json</a>.
 These are the required and optional parameters:</p>

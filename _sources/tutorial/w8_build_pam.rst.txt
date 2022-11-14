@@ -61,7 +61,7 @@ These are the required and optional parameters:
 * Optional 
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
-  * **report_filename**: output filename with grid summary.
+  * **report_filename**: output filename with process summary
 
 Run build_grid command
 ******************************************
