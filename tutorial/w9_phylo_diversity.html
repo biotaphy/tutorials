@@ -60,9 +60,10 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#step-2-calculate-stats-with-the-updated-pam-and-associated-tree">Step 2: Calculate stats with the updated PAM and associated Tree</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#data-preparation-script-parameter-file">Data preparation: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-trimmed-pam-matrix">Input: trimmed PAM matrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Input: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Output</a></li>
 </ul>
 </li>
 </ul>
@@ -130,11 +131,16 @@ We will match our matrix to a phylogenetic tree, using the <strong>MatchTreeMatr
 This requires an input tree, <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.nex">heuchera.nex</a>.  We will
 also remove any empty slices, rows or columns that are all zeros, using the
 <strong>PurgeEmptySlicesWrangler</strong>.</p>
+<p><strong>Note</strong>: It is important when matching species between a matrix and a tree, that the
+species names match when possible.  The example PAM was created from re-named species
+layers (using spaces instead of underscores between the genus and species) so they
+will match the tree.</p>
 </section>
 <section id="input-pam-matrix">
 <h3>Input: PAM matrix<a class="headerlink" href="#input-pam-matrix" title="Permalink to this heading"></a></h3>
-<p>Use a PAM created in <a class="reference external" href="w8_build_pam">Webinar 8</a>.  An example PAM is available in
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera_pam.lmm">heuchera_pam.lmm</a>.</p>
+<p>Use a pre-created PAM, similar to that created in <a class="reference external" href="w8_build_pam">Webinar 8</a>.
+An example PAM is available in
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera_pam_rn.lmm">heuchera_pam_rn.lmm</a>.</p>
 </section>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
@@ -166,6 +172,11 @@ PurgeEmptySlicesWrangler, and is in
 <section id="run-tutorial">
 <h3>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h3>
 <p>Initiate the process with the following:</p>
+<p>For Linux/Mac systems:</p>
+<p>For Windows systems:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">wrangle_matrix</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_matrix</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
 </section>
 <section id="output">
 <h3>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h3>
@@ -178,8 +189,13 @@ and reports specified in the Script parameter file.</p>
 <p>We have our grid and our PAM from Webinar 9 has been built, so we re-calculate
 biogeographic statistics on that PAM including phylogenetic diversity statistics
 which employ the matching tree data.</p>
-<section id="data-preparation-script-parameter-file">
-<h3>Data preparation: Script parameter file<a class="headerlink" href="#data-preparation-script-parameter-file" title="Permalink to this heading"></a></h3>
+<section id="input-trimmed-pam-matrix">
+<h3>Input: trimmed PAM matrix<a class="headerlink" href="#input-trimmed-pam-matrix" title="Permalink to this heading"></a></h3>
+<p>Use the PAM wrangled in the previous step.  The  PAM is available in
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera_pam_rn_wrangled.lmm">heuchera_pam_rn_wrangled.lmm</a>.</p>
+</section>
+<section id="id2">
+<h3>Input: Script parameter file<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
 <p>An example JSON file for running the calculate_pam_stats command is at
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats_pd.json">calculate_pam_stats_pd.json</a>.
 These are the required and optional parameters:</p>
@@ -193,7 +209,7 @@ These are the required and optional parameters:</p>
 <ul>
 <li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
 <li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
-<li><p><strong>report_filename</strong>: output filename with data modifications made by wranglers</p></li>
+<li><p><strong>report_filename</strong>: output filename with process summary</p></li>
 <li><p><strong>covariance_matrix</strong>: The full filename for writing the covariance matrix.</p></li>
 <li><p><strong>diversity_matrix</strong>: The full filename for writing the diversity matrix.</p></li>
 <li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
@@ -208,16 +224,16 @@ matrix.</p></li>
 <section id="run-calculate-pam-stats-command">
 <h3>Run calculate_pam_stats command<a class="headerlink" href="#run-calculate-pam-stats-command" title="Permalink to this heading"></a></h3>
 <p>Initiate the calculate_pam_stats process with the following:</p>
-<p>for linux/mac systems</p>
+<p>For Linux/Mac systems</p>
+<p>For Windows systems</p>
 </section>
-<section id="id2">
-<h3>Output<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<section id="id3">
+<h3>Output<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
 <p>The calculate_pam_stats tool outputs computes various statistics, depending on the
 output files specified in the command configuration file.  Outputs may include:</p>
 <ol class="arabic simple">
-<li><p>A “report_filename” named in the script parameter file, a summary of point
-manipulations by each wrangler will be written to this file.</p></li>
-<li><p>A “log_filename” named in the script parameter file, that will be created.</p></li>
+<li><p>A “report_filename” named in the script parameter file.</p></li>
+<li><p>A “log_filename” named in the script parameter file.</p></li>
 <li><dl class="simple">
 <dt>A “log_console” named in the script parameter file, logs will be written to the</dt><dd><p>command prompt during execution.</p>
 </dd>
