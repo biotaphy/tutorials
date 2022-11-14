@@ -219,6 +219,7 @@ exit /b 0
     if %CMD% == calculate_pam_stats ( call:execute_process )
 exit /b 0
 
+
 :: -----------------------------------------------------------
 :remove_container
     :: Find container, running or stopped
@@ -230,9 +231,29 @@ exit /b 0
 exit /b 0
 
 :: -----------------------------------------------------------
+:remove_image
+    call:header remove_image
+    call:remove_container
+    :: Delete image and volumes
+    call:time_stamp - Remove container %IMAGE_NAME%
+    docker image rm %IMAGE_NAME%
+}
+
+:: -----------------------------------------------------------
+:remove_volumes
+    call:header remove_volumes
+    call:remove_container
+    call:time_stamp - Remove volumes %IN_VOLUME%, %OUT_VOLUME%, %ENV_VOLUME%
+    docker volume rm %IN_VOLUME%
+    docker volume rm %OUT_VOLUME%
+    docker volume rm %ENV_VOLUME%
+}
+
+:: -----------------------------------------------------------
 :cleanup
     call:header cleanup
-    docker system prune --force --all
+    call:remove_container
+    call:remove_image
     docker volume prune --filter "label=discard"
 exit /b 0
 
@@ -248,7 +269,9 @@ exit /b 0
 :: -----------------------------------------------------------
 :cleanup_all
     call:header cleanup_all
-    docker system prune --force --all --volumes
+    call:remove_container
+    call:remove_image
+    call:remove_volumes
 exit /b 0
 
 :: -----------------------------------------------------------
@@ -344,15 +367,6 @@ exit /b 0
     :: If directory does not exist, create, then add contents
     call:time_stamp - Copy outputs from %OUT_VOLUME% to %IN_VOLUME%
     docker cp %CONTAINER_NAME%:%VOLUME_MOUNT%/%OUT_VOLUME%  ./%IN_VOLUME%/
-exit /b 0
-
-:: -----------------------------------------------------------
-:remove_container
-    call:header remove_container
-    call:time_stamp - Stop container %CONTAINER_NAME%
-    docker stop %CONTAINER_NAME%
-    call:time_stamp - Remove container %CONTAINER_NAME%
-    docker container rm %CONTAINER_NAME%
 exit /b 0
 
 :: -----------------------------------------------------------

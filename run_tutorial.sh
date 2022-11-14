@@ -180,6 +180,27 @@ remove_container() {
     fi
 }
 
+# -----------------------------------------------------------
+remove_image() {
+    remove_container
+    # Delete image and volumes
+    image_count=$(docker image ls | grep $IMAGE_NAME |  wc -l )
+    if [ $image_count -eq 1 ]; then
+        echo " - Remove image $IMAGE_NAME" | tee -a "$LOG"
+        docker image rm $IMAGE_NAME
+    else
+        echo " - Image $IMAGE_NAME does not exist" | tee -a "$LOG"
+    fi
+}
+
+# -----------------------------------------------------------
+remove_volumes() {
+    remove_container
+    echo " - Remove volumes $IN_VOLUME, $OUT_VOLUME, $ENV_VOLUME" | tee -a "$LOG"
+    docker volume rm $IN_VOLUME
+    docker volume rm $OUT_VOLUME
+    docker volume rm $ENV_VOLUME
+}
 
 # -----------------------------------------------------------
 list_output_volume_contents() {
@@ -254,11 +275,12 @@ if [ $arg_count -eq 0 ]; then
 elif [ $arg_count -eq 1 ]; then
     if [ "$CMD" == "cleanup" ] ; then
         remove_container
-        docker system prune -f --all
+        remove_image
         docker volume prune --filter "label=discard"
     elif [ "$CMD" == "cleanup_all" ] ; then
         remove_container
-        docker system prune -f --all --volumes
+        remove_image
+        remove_volumes
     elif [ "$CMD" == "open" ] ; then
         open_container_shell
     elif [ "$CMD" == "list_commands" ] ; then
@@ -268,7 +290,9 @@ elif [ $arg_count -eq 1 ]; then
     elif [ "$CMD" == "list_volumes" ] ; then
         list_all_volume_contents
     elif [ "$CMD" == "build_all" ] ; then
-        docker system prune -f --all --volumes
+        remove_container
+        remove_image
+        remove_volumes
         echo "System build will take approximately 5 minutes ..." | tee -a "$LOG"
         create_volumes
         build_image_fill_data
