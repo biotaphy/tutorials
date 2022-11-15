@@ -62,10 +62,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#step-2-calculate-stats-with-the-updated-pam-and-associated-tree">Step 2: Calculate stats with the updated PAM and associated Tree</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#input-trimmed-pam-matrix">Input: trimmed PAM matrix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Input: Phylogenetic tree</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">Input: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Input: Phylogenetic tree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Input: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Output</a></li>
 </ul>
 </li>
 </ul>
@@ -193,6 +193,13 @@ contains two wranglers, the <strong>MatchTreeMatrixWrangler</strong> and the
 <h3>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h3>
 <p>This process outputs a file containing the modified matrix and any optional logfiles
 and reports specified in the Script parameter file.</p>
+<p>The <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_matrix.rpt">report file</a>
+shows a summary of the processes executed, including the species purged from the matrix because
+they didn’t appear in the phylogenetic tree, and the number of sites (rows) and species (columns)
+removed because they were all zeros (no presence).</p>
+<p>The resulting trimmed matrix, The resulting trimmed matrix, heuchera_pam_rn_wrangled.lmm, is in the
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input">input directory</a> so we can use it in
+the next step.</p>
 </section>
 </section>
 <section id="step-2-calculate-stats-with-the-updated-pam-and-associated-tree">
@@ -205,13 +212,13 @@ which employ the matching tree data.</p>
 <p>Use the PAM wrangled in the and created as an output in the previous step.  The
 wrangled PAM is available as heuchera_pam_rn_wrangled.lmm in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input">input directory</a>.</p>
 </section>
-<section id="id2">
-<h3>Input: Phylogenetic tree<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
-<p>Use the phylogenetic tree we matched in the previous step.  The tree is available at
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.nex">heuchera.nex</a>.</p>
+<section id="id3">
+<h3>Input: Phylogenetic tree<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
+<p>Use the same phylogenetic tree that we matched to the matrix in the previous step.
+The tree is available at <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.nex">heuchera.nex</a>.</p>
 </section>
-<section id="id4">
-<h3>Input: Script parameter file<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
+<section id="id5">
+<h3>Input: Script parameter file<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
 <p>A test JSON Script parameter file for running the calculate_pam_stats command is at
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats_pd.json">calculate_pam_stats_pd.json</a>.
 These are the required and optional parameters:</p>
@@ -249,8 +256,8 @@ matrix.</p></li>
 </pre></div>
 </div>
 </section>
-<section id="id5">
-<h3>Output<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
+<section id="id6">
+<h3>Output<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
 <p>The calculate_pam_stats tool outputs computes various statistics, depending on the
 output files specified in the command configuration file.  Example outputs are in the
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake">easy_bake directory</a>.
