@@ -92,6 +92,7 @@ Initiate the process with the following:
 For Linux/Mac systems:
 
 .. code-block::
+
       ./run_tutorial.sh  wrangle_matrix  data/config/wrangle_matrix.json
 
 
@@ -162,11 +163,13 @@ Initiate the calculate_pam_stats process with the following:
 For Linux/Mac systems
 
 .. code-block::
+
       ./run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
 
 For Windows systems
 
 .. code-block::
+
       ./run_tutorial.bat calculate_pam_stats data/config/calculate_pam_stats.json
 
 Output
