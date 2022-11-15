@@ -52,8 +52,9 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 9: Integrating Phylogenies with Species and Biogeographic Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-1-cleanup-the-matrix">Step 1: Cleanup the matrix</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#input-wrangler-configuration-file">Input: Wrangler configuration file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#input-pam-matrix">Input: PAM matrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-wrangler-configuration-file">Input: Wrangler configuration file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-phylogenetic-tree">Input: Phylogenetic tree</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-tutorial">Run tutorial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
@@ -61,9 +62,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#step-2-calculate-stats-with-the-updated-pam-and-associated-tree">Step 2: Calculate stats with the updated PAM and associated Tree</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#input-trimmed-pam-matrix">Input: trimmed PAM matrix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Input: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Input: Phylogenetic tree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Input: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Output</a></li>
 </ul>
 </li>
 </ul>
@@ -111,7 +113,7 @@
 phylogenetic diversity of a region.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Read <a class="reference external" href="../tutorial/w1_overview">Tutorial Overview</a> for an overview of how all
+<p>Read the <a class="reference external" href="../tutorial/w1_overview">Tutorial Overview</a> for an overview of how all
 tutorials work.</p>
 </section>
 <section id="step-1-cleanup-the-matrix">
@@ -120,33 +122,40 @@ tutorials work.</p>
 intersection of species between the phylogentic tree and the matrix.  We will trim the
 matrix of all species that do not occur in the tree. We will also remove any empty
 (all zeros) rows and columns.</p>
+<section id="input-pam-matrix">
+<h3>Input: PAM matrix<a class="headerlink" href="#input-pam-matrix" title="Permalink to this heading"></a></h3>
+<p>Use a pre-created PAM, similar to that created in <a class="reference external" href="w8_build_pam">Webinar 8</a>.
+We will use the example PAM heuchera_pam_rn.lmm, available in the
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input">input directory</a>.</p>
+</section>
 <section id="input-wrangler-configuration-file">
 <h3>Input: Wrangler configuration file<a class="headerlink" href="#input-wrangler-configuration-file" title="Permalink to this heading"></a></h3>
-<p>A data wrangler configuration is a file containing a JSON list of zero or more
-wranglers - each performs a different operation, and each has its own parameters.
+<p>The data wrangler configuration file names the wranglers we will use to modify the
+input matrix.  This is a file containing a JSON list of wranglers - each performs a
+different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in <a class="reference external" href="data_wrangle_matrix">data_wrangle_matrix</a></p>
-<p>We will use the wrangler configuration file <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json">matrix_wranglers.json</a>.
+<p>We will use the wrangler configuration file <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json">matrix_wrangle.json</a>.
 We will match our matrix to a phylogenetic tree, using the <strong>MatchTreeMatrixWrangler</strong>.
-This requires an input tree, <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.nex">heuchera.nex</a>.  We will
-also remove any empty slices, rows or columns that are all zeros, using the
+This requires an input tree, described below.  We will also remove any empty slices,
+rows/sites with no species or columns/species with no present sites, using the
 <strong>PurgeEmptySlicesWrangler</strong>.</p>
 <p><strong>Note</strong>: It is important when matching species between a matrix and a tree, that the
 species names match when possible.  The example PAM was created from re-named species
 layers (using spaces instead of underscores between the genus and species) so they
 will match the tree.</p>
 </section>
-<section id="input-pam-matrix">
-<h3>Input: PAM matrix<a class="headerlink" href="#input-pam-matrix" title="Permalink to this heading"></a></h3>
-<p>Use a pre-created PAM, similar to that created in <a class="reference external" href="w8_build_pam">Webinar 8</a>.
-An example PAM is available in
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera_pam_rn.lmm">heuchera_pam_rn.lmm</a>.</p>
+<section id="input-phylogenetic-tree">
+<h3>Input: Phylogenetic tree<a class="headerlink" href="#input-phylogenetic-tree" title="Permalink to this heading"></a></h3>
+<p>The <strong>MatchTreeMatrixWrangler</strong> requires a phylogenetic tree to match with the matrix.
+This is named in the parameters for that wrangler in the Wrangler configuration
+file.  The tree is available at  <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.nex">heuchera.nex</a>.</p>
 </section>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
-<p>A JSON parameter file is required for this command, and pulls together all of the input,
-and output files, and any additional configuration.  The script parameter file
-for this exercise is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix.json">wrangle_matrix.json</a>.
+<p>As with all other Biotaphy commands, a JSON parameter file is required to pull together
+all of the input, and output files, and any additional parameters.  The script
+parameter file for this exercise is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix.json">wrangle_matrix.json</a>.
 These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -154,10 +163,9 @@ These are the required and optional parameters:</p>
 <li><p><strong>in_matrix_filename</strong>: input filename containing a PAM matrix.</p></li>
 <li><p><strong>out_matrix_filename</strong>: output filename for the updated matrix.</p></li>
 <li><p><strong>wrangler_configuration_file</strong>: matrix wrangler configuration file,
-described in the next section.  The tutorial example wrangler configuration
-contains two wranglers, the MatchTreeMatrixWrangler and the
-PurgeEmptySlicesWrangler, and is in
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json">matrix_wranglers.json</a></p></li>
+described in the previous section.  The tutorial example wrangler configuration
+contains two wranglers, the <strong>MatchTreeMatrixWrangler</strong> and the
+<strong>PurgeEmptySlicesWrangler</strong>.</p></li>
 </ul>
 </li>
 <li><p>Optional</p>
@@ -186,17 +194,22 @@ and reports specified in the Script parameter file.</p>
 </section>
 <section id="step-2-calculate-stats-with-the-updated-pam-and-associated-tree">
 <h2>Step 2: Calculate stats with the updated PAM and associated Tree<a class="headerlink" href="#step-2-calculate-stats-with-the-updated-pam-and-associated-tree" title="Permalink to this heading"></a></h2>
-<p>We have our grid and our PAM from Webinar 9 has been built, so we re-calculate
-biogeographic statistics on that PAM including phylogenetic diversity statistics
+<p>Now our PAM has been pruned to contain only species in the phylogenetic tree, so we
+re-calculate biogeographic statistics on it, including phylogenetic diversity statistics
 which employ the matching tree data.</p>
 <section id="input-trimmed-pam-matrix">
 <h3>Input: trimmed PAM matrix<a class="headerlink" href="#input-trimmed-pam-matrix" title="Permalink to this heading"></a></h3>
-<p>Use the PAM wrangled in the previous step.  The  PAM is available in
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera_pam_rn_wrangled.lmm">heuchera_pam_rn_wrangled.lmm</a>.</p>
+<p>Use the PAM wrangled in the and created as an output in the previous step.  The
+wrangled PAM is available as heuchera_pam_rn_wrangled.lmm in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input">input directory</a>.</p>
 </section>
 <section id="id2">
-<h3>Input: Script parameter file<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
-<p>An example JSON file for running the calculate_pam_stats command is at
+<h3>Input: Phylogenetic tree<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<p>Use the phylogenetic tree we matched in the previous step.  The tree is available at
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.nex">heuchera.nex</a>.</p>
+</section>
+<section id="id4">
+<h3>Input: Script parameter file<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
+<p>A test JSON Script parameter file for running the calculate_pam_stats command is at
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats_pd.json">calculate_pam_stats_pd.json</a>.
 These are the required and optional parameters:</p>
 <ul class="simple">
@@ -207,16 +220,16 @@ These are the required and optional parameters:</p>
 </li>
 <li><p>Optional</p>
 <ul>
-<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
-<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
-<li><p><strong>report_filename</strong>: output filename with process summary</p></li>
+<li><p><strong>tree_filename</strong>: The full filename to an input tree in Nexus format.</p></li>
+<li><p><strong>tree_matrix</strong>: The full filename to an input tree encoded as a matrix.</p></li>
 <li><p><strong>covariance_matrix</strong>: The full filename for writing the covariance matrix.</p></li>
 <li><p><strong>diversity_matrix</strong>: The full filename for writing the diversity matrix.</p></li>
 <li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
 <li><p><strong>species_stats_matrix</strong>: The full filename for writing the species statistics
 matrix.</p></li>
-<li><p><strong>tree_filename</strong>: The full filename to an input tree in Nexus format.</p></li>
-<li><p><strong>tree_matrix</strong>: The full filename to an input tree encoded as a matrix.</p></li>
+<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
+<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
+<li><p><strong>report_filename</strong>: output filename with process summary</p></li>
 </ul>
 </li>
 </ul>
@@ -227,10 +240,12 @@ matrix.</p></li>
 <p>For Linux/Mac systems</p>
 <p>For Windows systems</p>
 </section>
-<section id="id3">
-<h3>Output<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
+<section id="id5">
+<h3>Output<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
 <p>The calculate_pam_stats tool outputs computes various statistics, depending on the
-output files specified in the command configuration file.  Outputs may include:</p>
+output files specified in the command configuration file.  Example outputs are in the
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake">easy_bake directory</a>.
+Outputs include:</p>
 <ol class="arabic simple">
 <li><p>A “report_filename” named in the script parameter file.</p></li>
 <li><p>A “log_filename” named in the script parameter file.</p></li>
