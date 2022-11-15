@@ -192,7 +192,7 @@ Outputs include:
 1. A "report_filename" named in the script parameter file.
 2. A "log_filename" named in the script parameter file.
 3. A "log_console" named in the script parameter file, logs will be written to the
-    command prompt during execution.
+   command prompt during execution.
 4. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
    and it is written to the covariance_matrix filename, where the statistic name is 
    appended to the end of the base file name.
