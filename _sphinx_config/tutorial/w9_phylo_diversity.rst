@@ -106,7 +106,16 @@ Output
 ******************************************
 
 This process outputs a file containing the modified matrix and any optional logfiles 
-and reports specified in the Script parameter file. 
+and reports specified in the Script parameter file.
+
+The `report file <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_matrix.rpt>`_
+shows a summary of the processes executed, including the species purged from the matrix because
+they didn't appear in the phylogenetic tree, and the number of sites (rows) and species (columns)
+removed because they were all zeros (no presence).
+
+The resulting trimmed matrix, The resulting trimmed matrix, heuchera_pam_rn_wrangled.lmm, is in the
+`input directory <https://github.com/biotaphy/tutorials/blob/main/data/input>`_ so we can use it in
+the next step.
 
 --------------------------------
 Step 2: Calculate stats with the updated PAM and associated Tree
@@ -126,8 +135,8 @@ wrangled PAM is available as heuchera_pam_rn_wrangled.lmm in the `input director
 Input: Phylogenetic tree
 ******************************************
 
-Use the phylogenetic tree we matched in the previous step.  The tree is available at
-`heuchera.nex
+Use the same phylogenetic tree that we matched to the matrix in the previous step.
+The tree is available at `heuchera.nex
 <https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.nex>`_.
 
 Input: Script parameter file
