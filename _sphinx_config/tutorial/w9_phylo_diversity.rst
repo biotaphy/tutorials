@@ -9,7 +9,7 @@ phylogenetic diversity of a region.
 Introduction
 --------------------
 
-Read `Tutorial Overview <../tutorial/w1_overview>`_ for an overview of how all
+Read the `Tutorial Overview <../tutorial/w1_overview>`_ for an overview of how all
 tutorials work.
 
 --------------------
@@ -21,20 +21,29 @@ intersection of species between the phylogentic tree and the matrix.  We will tr
 matrix of all species that do not occur in the tree. We will also remove any empty
 (all zeros) rows and columns.
 
+
+Input: PAM matrix
+******************************************
+
+Use a pre-created PAM, similar to that created in `Webinar 8 <w8_build_pam>`_.
+We will use the example PAM heuchera_pam_rn.lmm, available in the
+`input directory
+<https://github.com/biotaphy/tutorials/tree/main/data/input>`_.
+
 Input: Wrangler configuration file
 ******************************************
 
-A data wrangler configuration is a file containing a JSON list of zero or more
-wranglers - each performs a different operation, and each has its own parameters.
+The data wrangler configuration file names the wranglers we will use to modify the
+input matrix.  This is a file containing a JSON list of wranglers - each performs a
+different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in `data_wrangle_matrix <data_wrangle_matrix>`_
 
-We will use the wrangler configuration file `matrix_wranglers.json
+We will use the wrangler configuration file `matrix_wrangle.json
 <https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json>`_.
 We will match our matrix to a phylogenetic tree, using the **MatchTreeMatrixWrangler**.
-This requires an input tree, `heuchera.nex
-<https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.nex>`_.  We will
-also remove any empty slices, rows or columns that are all zeros, using the
+This requires an input tree, described below.  We will also remove any empty slices,
+rows/sites with no species or columns/species with no present sites, using the
 **PurgeEmptySlicesWrangler**.
 
 **Note**: It is important when matching species between a matrix and a tree, that the
@@ -42,20 +51,21 @@ species names match when possible.  The example PAM was created from re-named sp
 layers (using spaces instead of underscores between the genus and species) so they
 will match the tree.
 
-Input: PAM matrix
+Input: Phylogenetic tree
 ******************************************
 
-Use a pre-created PAM, similar to that created in `Webinar 8 <w8_build_pam>`_.
-An example PAM is available in
-`heuchera_pam_rn.lmm
-<https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera_pam_rn.lmm>`_.
+The **MatchTreeMatrixWrangler** requires a phylogenetic tree to match with the matrix.
+This is named in the parameters for that wrangler in the Wrangler configuration
+file.  The tree is available at  `heuchera.nex
+<https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.nex>`_.
+
 
 Input: Script parameter file
 ******************************************
 
-A JSON parameter file is required for this command, and pulls together all of the input,
-and output files, and any additional configuration.  The script parameter file
-for this exercise is `wrangle_matrix.json
+As with all other Biotaphy commands, a JSON parameter file is required to pull together
+all of the input, and output files, and any additional parameters.  The script
+parameter file for this exercise is `wrangle_matrix.json
 <https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix.json>`_.
 These are the required and optional parameters:
 
@@ -64,11 +74,9 @@ These are the required and optional parameters:
   * **in_matrix_filename**: input filename containing a PAM matrix.
   * **out_matrix_filename**: output filename for the updated matrix.
   * **wrangler_configuration_file**: matrix wrangler configuration file,
-    described in the next section.  The tutorial example wrangler configuration
-    contains two wranglers, the MatchTreeMatrixWrangler and the
-    PurgeEmptySlicesWrangler, and is in
-    `matrix_wranglers.json
-    <https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json>`_
+    described in the previous section.  The tutorial example wrangler configuration
+    contains two wranglers, the **MatchTreeMatrixWrangler** and the
+    **PurgeEmptySlicesWrangler**.
 
 * Optional
 
@@ -84,6 +92,7 @@ Initiate the process with the following:
 For Linux/Mac systems:
 
 .. code-block::
+
       ./run_tutorial.sh  wrangle_matrix  data/config/wrangle_matrix.json
 
 
@@ -97,27 +106,43 @@ Output
 ******************************************
 
 This process outputs a file containing the modified matrix and any optional logfiles 
-and reports specified in the Script parameter file. 
+and reports specified in the Script parameter file.
+
+The `report file <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_matrix.rpt>`_
+shows a summary of the processes executed, including the species purged from the matrix because
+they didn't appear in the phylogenetic tree, and the number of sites (rows) and species (columns)
+removed because they were all zeros (no presence).
+
+The resulting trimmed matrix, The resulting trimmed matrix, heuchera_pam_rn_wrangled.lmm, is in the
+`input directory <https://github.com/biotaphy/tutorials/tree/main/data/input>`_ so we can use it in
+the next step.
 
 --------------------------------
 Step 2: Calculate stats with the updated PAM and associated Tree
 --------------------------------
 
-We have our grid and our PAM from Webinar 9 has been built, so we re-calculate
-biogeographic statistics on that PAM including phylogenetic diversity statistics
+Now our PAM has been pruned to contain only species in the phylogenetic tree, so we
+re-calculate biogeographic statistics on it, including phylogenetic diversity statistics
 which employ the matching tree data.
 
 Input: trimmed PAM matrix
 ******************************************
 
-Use the PAM wrangled in the previous step.  The  PAM is available in
-`heuchera_pam_rn_wrangled.lmm
-<https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera_pam_rn_wrangled.lmm>`_.
+Use the PAM wrangled in the and created as an output in the previous step.  The
+wrangled PAM is available as heuchera_pam_rn_wrangled.lmm in the `input directory
+<https://github.com/biotaphy/tutorials/tree/main/data/input>`_.
+
+Input: Phylogenetic tree
+******************************************
+
+Use the same phylogenetic tree that we matched to the matrix in the previous step.
+The tree is available at `heuchera.nex
+<https://github.com/biotaphy/tutorials/blob/main/data/input/heuchera.nex>`_.
 
 Input: Script parameter file
 ******************************************
 
-An example JSON file for running the calculate_pam_stats command is at
+A test JSON Script parameter file for running the calculate_pam_stats command is at
 `calculate_pam_stats_pd.json
 <https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats_pd.json>`_.
 These are the required and optional parameters:
@@ -128,16 +153,16 @@ These are the required and optional parameters:
 
 * Optional
 
-  * **log_filename**: Output filename to write logging data
-  * **log_console**: 'true' to write log to console
-  * **report_filename**: output filename with process summary
+  * **tree_filename**: The full filename to an input tree in Nexus format.
+  * **tree_matrix**: The full filename to an input tree encoded as a matrix.
   * **covariance_matrix**: The full filename for writing the covariance matrix.
   * **diversity_matrix**: The full filename for writing the diversity matrix.
   * **site_stats_matrix**: The full filename for writing the site statistics matrix.
   * **species_stats_matrix**: The full filename for writing the species statistics 
     matrix.
-  * **tree_filename**: The full filename to an input tree in Nexus format.
-  * **tree_matrix**: The full filename to an input tree encoded as a matrix.
+  * **log_filename**: Output filename to write logging data
+  * **log_console**: 'true' to write log to console
+  * **report_filename**: output filename with process summary
 
 Run calculate_pam_stats command
 ******************************************
@@ -147,26 +172,31 @@ Initiate the calculate_pam_stats process with the following:
 For Linux/Mac systems
 
 .. code-block::
+
       ./run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
 
 For Windows systems
 
 .. code-block::
+
       ./run_tutorial.bat calculate_pam_stats data/config/calculate_pam_stats.json
 
 Output
 ******************************************
 
 The calculate_pam_stats tool outputs computes various statistics, depending on the 
-output files specified in the command configuration file.  Outputs may include:
+output files specified in the command configuration file.  Example outputs are in the
+`easy_bake directory <https://github.com/biotaphy/tutorials/tree/main/data/easy_bake>`_.
+Outputs include:
 
-1. A "report_filename" named in the script parameter file.
-2. A "log_filename" named in the script parameter file.
+1. A "report_filename", calculate_pam_stats_pd.rpt, named in the script parameter file.
+2. A "log_filename", calculate_pam_stats_pd.log, named in the script parameter file.
 3. A "log_console" named in the script parameter file, logs will be written to the
-    command prompt during execution.
-4. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
+   command prompt during execution.
+4. One or more "covariance_matrix" files, covariance_pd_sigma_sites.lmm, covariance_pd_sigma_species.lmm.
+   Each covariance statistic produces a matrix
    and it is written to the covariance_matrix filename, where the statistic name is 
    appended to the end of the base file name.
-5. A "diversity_matrix" containing different diversity statistics.
-6. A "site_stats_matrix" containing site statistics.
-7. A "species_stats_matrix" containing species statistics.
+5. A "diversity_matrix", diversity_pd.lmm, containing different diversity statistics.
+6. A "site_stats_matrix", site_stats_pd.lmm,  containing site statistics.
+7. A "species_stats_matrix", species_stats_pd.lmm containing species statistics.
