@@ -74,6 +74,7 @@ exit /b 0
     echo or one of the following commands requiring a parameters file:
     echo     wrangle_occurrences
     echo     split_occurrence_data
+    echo     wrangle_matrix
     echo     wrangle_species_list
     echo     wrangle_tree
     echo     create_sdm
@@ -213,6 +214,7 @@ exit /b 0
     if %CMD% == wrangle_species_list ( call:execute_process )
     if %CMD% == wrangle_occurrences ( call:execute_process )
     if %CMD% == split_occurrence_data ( call:execute_process )
+    if %CMD% == wrangle_matrix ( call:execute_process )
     if %CMD% == wrangle_tree ( call:execute_process )
     if %CMD% == build_grid ( call:execute_process )
     if %CMD% == encode_layers ( call:execute_process )
