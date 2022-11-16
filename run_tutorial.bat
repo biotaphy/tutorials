@@ -48,6 +48,29 @@ exit /b 0
 :: -----------------------------------------------------------
 :: Functions
 :: -----------------------------------------------------------
+:: -----------------------------------------------------------
+:run_command
+    call:header run_command
+    if %CMD% == cleanup ( call:cleanup )
+    if %CMD% == cleanup_all ( call:cleanup_all )
+    if %CMD% == open ( call:open_container_shell )
+    if %CMD% == list_commands ( call:usage )
+    if %CMD% == list_outputs ( call:list_output_volume_contents )
+    if %CMD% == list_volumes ( call:list_all_volume_contents )
+    if %CMD% == build_all ( call:build_all )
+    :: Biotaphy tools
+    if %CMD% == create_sdm ( call:execute_process )
+    if %CMD% == wrangle_species_list ( call:execute_process )
+    if %CMD% == wrangle_occurrences ( call:execute_process )
+    if %CMD% == split_occurrence_data ( call:execute_process )
+    if %CMD% == wrangle_matrix ( call:execute_process )
+    if %CMD% == wrangle_tree ( call:execute_process )
+    if %CMD% == build_grid ( call:execute_process )
+    if %CMD% == encode_layers ( call:execute_process )
+    if %CMD% == calculate_pam_stats ( call:execute_process )
+exit /b 0
+
+:: -----------------------------------------------------------
 :trim
     SetLocal EnableDelayedExpansion
     set Params=%*
@@ -130,6 +153,23 @@ exit /b 0
 exit /b 0
 
 :: -----------------------------------------------------------
+:build_image_fill_data
+    :: Build and name an image from Dockerfile in this directory
+    :: This build also populates the data and env volumes
+    call:header build_image_fill_data
+    call:create_volumes
+    set tmp=empty
+    for /f "tokens=1 usebackq" %%g in ( `docker image ls ^| find "%IMAGE_NAME%"` ) do (
+        SET tmp=%%g )
+    if %tmp% == %IMAGE_NAME% (
+        call:time_stamp - Image %IMAGE_NAME% exists
+    ) else (
+        call:time_stamp - Create image %IMAGE_NAME%
+        docker build . -t %IMAGE_NAME%
+    )
+exit /b 0
+
+:: -----------------------------------------------------------
 :create_volumes
     :: Create named input volumes for use by any container
     :: Small input data, part of repository
@@ -166,23 +206,6 @@ exit /b 0
 exit /b 0
 
 :: -----------------------------------------------------------
-:build_image_fill_data
-    :: Build and name an image from Dockerfile in this directory
-    :: This build also populates the data and env volumes
-    call:header build_image_fill_data
-    call:create_volumes
-    set tmp=empty
-    for /f "tokens=1 usebackq" %%g in ( `docker image ls ^| find "%IMAGE_NAME%"` ) do (
-        SET tmp=%%g )
-    if %tmp% == %IMAGE_NAME% (
-        call:time_stamp - Image %IMAGE_NAME% exists
-    ) else (
-        call:time_stamp - Create image %IMAGE_NAME%
-        docker build . -t %IMAGE_NAME%
-    )
-exit /b 0
-
-:: -----------------------------------------------------------
 :start_container
     call:header start_container
     :: If needed, create volumes, image, fill data
@@ -199,27 +222,6 @@ exit /b 0
     )
 exit /b 0
 
-:: -----------------------------------------------------------
-:run_command
-    call:header run_command
-    if %CMD% == cleanup ( call:cleanup )
-    if %CMD% == cleanup_all ( call:cleanup_all )
-    if %CMD% == open ( call:open_container_shell )
-    if %CMD% == list_commands ( call:usage )
-    if %CMD% == list_outputs ( call:list_output_volume_contents )
-    if %CMD% == list_volumes ( call:list_all_volume_contents )
-    if %CMD% == build_all ( call:build_all )
-    :: Biotaphy tools
-    if %CMD% == create_sdm ( call:execute_process )
-    if %CMD% == wrangle_species_list ( call:execute_process )
-    if %CMD% == wrangle_occurrences ( call:execute_process )
-    if %CMD% == split_occurrence_data ( call:execute_process )
-    if %CMD% == wrangle_matrix ( call:execute_process )
-    if %CMD% == wrangle_tree ( call:execute_process )
-    if %CMD% == build_grid ( call:execute_process )
-    if %CMD% == encode_layers ( call:execute_process )
-    if %CMD% == calculate_pam_stats ( call:execute_process )
-exit /b 0
 
 :: -----------------------------------------------------------
 :remove_container
