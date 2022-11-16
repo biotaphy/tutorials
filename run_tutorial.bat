@@ -234,16 +234,14 @@ exit /b 0
 :: -----------------------------------------------------------
 :remove_image
     call:header remove_image
-    call:remove_container
     :: Delete image and volumes
     call:time_stamp - Remove container %IMAGE_NAME%
     docker image rm %IMAGE_NAME%
-}
+exit /b 0
 
 :: -----------------------------------------------------------
 :remove_volumes
     call:header remove_volumes
-    call:remove_container
     call:time_stamp - Remove volumes %IN_VOLUME%, %OUT_VOLUME%, %ENV_VOLUME%
     :: Input
     set tmp=empty
@@ -272,7 +270,7 @@ exit /b 0
     ) else (
         call:time_stamp - No volume %ENV_VOLUME%
     )
-}
+exit /b 0
 
 :: -----------------------------------------------------------
 :cleanup
