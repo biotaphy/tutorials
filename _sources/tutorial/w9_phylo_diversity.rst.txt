@@ -28,7 +28,7 @@ Input: PAM matrix
 Use a pre-created PAM, similar to that created in `Webinar 8 <w8_build_pam>`_.
 We will use the example PAM heuchera_pam_rn.lmm, available in the
 `input directory
-<https://github.com/biotaphy/tutorials/blob/main/data/input>`_.
+<https://github.com/biotaphy/tutorials/tree/main/data/input>`_.
 
 Input: Wrangler configuration file
 ******************************************
@@ -114,7 +114,7 @@ they didn't appear in the phylogenetic tree, and the number of sites (rows) and 
 removed because they were all zeros (no presence).
 
 The resulting trimmed matrix, The resulting trimmed matrix, heuchera_pam_rn_wrangled.lmm, is in the
-`input directory <https://github.com/biotaphy/tutorials/blob/main/data/input>`_ so we can use it in
+`input directory <https://github.com/biotaphy/tutorials/tree/main/data/input>`_ so we can use it in
 the next step.
 
 --------------------------------
@@ -130,7 +130,7 @@ Input: trimmed PAM matrix
 
 Use the PAM wrangled in the and created as an output in the previous step.  The
 wrangled PAM is available as heuchera_pam_rn_wrangled.lmm in the `input directory
-<https://github.com/biotaphy/tutorials/blob/main/data/input>`_.
+<https://github.com/biotaphy/tutorials/tree/main/data/input>`_.
 
 Input: Phylogenetic tree
 ******************************************
@@ -186,16 +186,17 @@ Output
 
 The calculate_pam_stats tool outputs computes various statistics, depending on the 
 output files specified in the command configuration file.  Example outputs are in the
-`easy_bake directory <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake>`_.
+`easy_bake directory <https://github.com/biotaphy/tutorials/tree/main/data/easy_bake>`_.
 Outputs include:
 
-1. A "report_filename" named in the script parameter file.
-2. A "log_filename" named in the script parameter file.
+1. A "report_filename", calculate_pam_stats_pd.rpt, named in the script parameter file.
+2. A "log_filename", calculate_pam_stats_pd.log, named in the script parameter file.
 3. A "log_console" named in the script parameter file, logs will be written to the
    command prompt during execution.
-4. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
+4. One or more "covariance_matrix" files, covariance_pd_sigma_sites.lmm, covariance_pd_sigma_species.lmm.
+   Each covariance statistic produces a matrix
    and it is written to the covariance_matrix filename, where the statistic name is 
    appended to the end of the base file name.
-5. A "diversity_matrix" containing different diversity statistics.
-6. A "site_stats_matrix" containing site statistics.
-7. A "species_stats_matrix" containing species statistics.
+5. A "diversity_matrix", diversity_pd.lmm, containing different diversity statistics.
+6. A "site_stats_matrix", site_stats_pd.lmm,  containing site statistics.
+7. A "species_stats_matrix", species_stats_pd.lmm containing species statistics.
