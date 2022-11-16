@@ -213,13 +213,11 @@ exit /b 0
     if %CMD% == wrangle_species_list ( call:execute_process )
     if %CMD% == wrangle_occurrences ( call:execute_process )
     if %CMD% == split_occurrence_data ( call:execute_process )
-    if %CMD% == wrangle_matrix ( call:execute_process )
     if %CMD% == wrangle_tree ( call:execute_process )
     if %CMD% == build_grid ( call:execute_process )
     if %CMD% == encode_layers ( call:execute_process )
     if %CMD% == calculate_pam_stats ( call:execute_process )
 exit /b 0
-
 
 :: -----------------------------------------------------------
 :remove_container
@@ -232,51 +230,9 @@ exit /b 0
 exit /b 0
 
 :: -----------------------------------------------------------
-:remove_image
-    call:header remove_image
-    :: Delete image and volumes
-    call:time_stamp - Remove container %IMAGE_NAME%
-    docker image rm %IMAGE_NAME%
-exit /b 0
-
-:: -----------------------------------------------------------
-:remove_volumes
-    call:header remove_volumes
-    call:time_stamp - Remove volumes %IN_VOLUME%, %OUT_VOLUME%, %ENV_VOLUME%
-    :: Input
-    set tmp=empty
-    for /f "tokens=2 usebackq" %%g in ( `docker volume ls ^| find "%IN_VOLUME%"` ) do (
-        SET tmp=%%g )
-    if %tmp% == %IN_VOLUME% (
-        docker volume rm %IN_VOLUME%
-    ) else (
-        call:time_stamp - No volume %IN_VOLUME%
-    )
-    :: Output
-    set tmp=empty
-    for /f "tokens=2 usebackq" %%g in ( `docker volume ls ^| find "%OUT_VOLUME%"` ) do (
-        SET tmp=%%g )
-    if %tmp% == %OUT_VOLUME% (
-        docker volume rm %OUT_VOLUME%
-    ) else (
-        call:time_stamp - No volume %OUT_VOLUME%
-    )
-    :: Environmental data
-    set tmp=empty
-    for /f "tokens=2 usebackq" %%g in ( `docker volume ls ^| find "%OUT_VOLUME%"` ) do (
-        SET tmp=%%g )
-    if %tmp% == %ENV_VOLUME% (
-        docker volume rm %ENV_VOLUME%
-    ) else (
-        call:time_stamp - No volume %ENV_VOLUME%
-    )
-exit /b 0
-
-:: -----------------------------------------------------------
 :cleanup
     call:header cleanup
-    call:remove_container
-    call:remove_image
+    docker system prune --force --all
     docker volume prune --filter "label=discard"
 exit /b 0
 
@@ -292,9 +248,7 @@ exit /b 0
 :: -----------------------------------------------------------
 :cleanup_all
     call:header cleanup_all
-    call:remove_container
-    call:remove_image
-    call:remove_volumes
+    docker system prune --force --all --volumes
 exit /b 0
 
 :: -----------------------------------------------------------
@@ -390,6 +344,15 @@ exit /b 0
     :: If directory does not exist, create, then add contents
     call:time_stamp - Copy outputs from %OUT_VOLUME% to %IN_VOLUME%
     docker cp %CONTAINER_NAME%:%VOLUME_MOUNT%/%OUT_VOLUME%  ./%IN_VOLUME%/
+exit /b 0
+
+:: -----------------------------------------------------------
+:remove_container
+    call:header remove_container
+    call:time_stamp - Stop container %CONTAINER_NAME%
+    docker stop %CONTAINER_NAME%
+    call:time_stamp - Remove container %CONTAINER_NAME%
+    docker container rm %CONTAINER_NAME%
 exit /b 0
 
 :: -----------------------------------------------------------
