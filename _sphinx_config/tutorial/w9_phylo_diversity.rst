@@ -100,7 +100,7 @@ For Windows systems:
 
 .. code-block::
 
-   ./run_tutorial.bat  wrangle_matrix  data/config/wrangle_matrix.json
+      ./run_tutorial.bat  wrangle_matrix  data/config/wrangle_matrix.json
 
 Output
 ******************************************
