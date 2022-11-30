@@ -1,0 +1,8 @@
+{
+    "log_filename": "/volumes/output/randomize_pam.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/randomize_pam.rpt",
+    "input_pam_filename": "/volumes/data/input/heuchera_pam_rn.lmm",
+    "output_pam_basefilename": "/volumes/output/random_pams/rnd_pam",
+    "output_pam_count": 5
+}
