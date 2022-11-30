@@ -268,6 +268,7 @@ COMMANDS=(
 "wrangle_matrix"  "wrangle_tree"
 "create_sdm"
 "build_grid"  "encode_layers" "calculate_pam_stats"
+"convert_lmm_to_geojson"  "convert_lmm_to_csv"
 )
 
 CMD=$1
