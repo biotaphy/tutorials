@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Script parameters file &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Output visualizations &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -20,9 +20,7 @@
         <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Matrices: Data and Wrangling" href="data_wrangle_matrix.html" />
-    <link rel="prev" title="Webinar 9: Integrating Phylogenies with Species and Biogeographic Data" href="w9_phylo_diversity.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,7 +38,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul class="current">
+              <ul>
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
@@ -50,7 +48,7 @@
 <li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling (SDM)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w8_build_pam.html">Webinar 8: Introducing Presence-Absence Matrices (PAMs)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w9_phylo_diversity.html">Webinar 9: Integrating Phylogenies with Species and Biogeographic Data</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Script parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_species_list.html">Species List: Wrangling</a></li>
@@ -77,9 +75,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Script parameters file</li>
+      <li class="breadcrumb-item active">Output visualizations</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/tutorial/script_params.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/visualization.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -87,47 +85,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="script-parameters-file">
-<h1>Script parameters file<a class="headerlink" href="#script-parameters-file" title="Permalink to this heading"></a></h1>
-<p>A <a class="reference internal" href="../pages/glossary.html#term-JSON"><span class="xref std std-term">JSON</span></a> parameter file is required for all tutorial commands.  There are one or
-more example parameter files for each tutorial.  All of these JSON parameter files
-follow the same pattern, and many have the same options.</p>
-<ol class="arabic simple">
-<li><p>Each command has required and/or optional parameters.</p></li>
-<li><p>The group of options are enclosed in curly braces ( {} ).</p></li>
-<li><p>Each option keyword is quoted with double quotes ( ” ), is followed by a colon ( : )
-and a value.</p></li>
-<li><p>Each value may be a double-quoted string, a number, a boolean (true or false, not
-quoted), or a list of these items, separated by commas and enclosed in square
-brackets ( [] ).</p></li>
-<li><p>Output filenames must be a full path to the file (or directory containing files)</p></li>
-</ol>
-<blockquote>
-<div><p>to be created in the <a class="reference internal" href="../pages/glossary.html#term-Container"><span class="xref std std-term">Container</span></a>.  Output file must be placed in
-<cite>/volumes/output</cite> or a subdirectory of that location.  Output files and directories
-will be copied to the project directory data/output on the <a class="reference internal" href="../pages/glossary.html#term-Host-machine"><span class="xref std std-term">Host machine</span></a>.</p>
-</div></blockquote>
-<p>Many commands include the optional parameters:</p>
-<ul class="simple">
-<li><p>log_console: this is a boolean value.  The value <cite>true</cite>, causes the command to
-print logging lines in the command line window, to show the processes and progress.</p></li>
-<li><p>log_filename: a full path to the output log file to be created.  The file is an
-<cite>Output filename</cite> as described above.  It contains all logging output from the
-process, and may be useful for identifying what processes were executed and their
-outcomes.</p></li>
-<li><p>report_filename: a full path to the report log file to be created.  The file is an
-<cite>Output filename</cite> as described above.  It contains a summary of the modifications made
-to the output data, and may be useful for quantifying or comparing them.</p></li>
-</ul>
+  <section id="output-visualizations">
+<h1>Output visualizations<a class="headerlink" href="#output-visualizations" title="Permalink to this heading"></a></h1>
+<section id="matrix-column-visualizations">
+<h2>Matrix column visualizations<a class="headerlink" href="#matrix-column-visualizations" title="Permalink to this heading"></a></h2>
+<p>Many Biotaphy matrices encode sites (cells representing a gridcell in an area of
+interest).  Any column in these</p>
+</section>
+<section id="output-statistics">
+<h2>Output Statistics<a class="headerlink" href="#output-statistics" title="Permalink to this heading"></a></h2>
+<p>Individual statistics from a site-statistics matrix (created with calculate_pam_stats)
+may be mapped as a heatmap, and plotted as …</p>
+<p>create_stat_heatmap</p>
+<dl class="simple">
+<dt>A file path to write the generated plot image.  Available formats are: ” +</dt><dd><p>“eps, pdf, pgf, png, ps, raw, rgba, svg, svgz</p>
+</dd>
+</dl>
+</section>
 </section>
 
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="w9_phylo_diversity.html" class="btn btn-neutral float-left" title="Webinar 9: Integrating Phylogenies with Species and Biogeographic Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="data_wrangle_matrix.html" class="btn btn-neutral float-right" title="Matrices: Data and Wrangling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 

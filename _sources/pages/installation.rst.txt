@@ -2,6 +2,8 @@
 Tutorial Preparation
 ===============
 
+All commands will be typed at a command prompt.
+
 -----------------------
 Download and Install Docker
 -----------------------
@@ -18,13 +20,20 @@ Download this Tutorial
 
 The `Biotaphy tutorial <https://github.com/biotaphy/tutorials>`_  can be installed by
 downloading from Github.  This code repository contains scripts, Docker composition
-files, configuration files, and data for the tutorials.  Go to the
-https://github.com/biotaphy/tutorials page, and click the green button marked "Code".
-In the resulting drop-down menu,
-choose "Download ZIP".
+files, configuration files, and data for the tutorials.
 
-When the file has downloaded, move the file (or the directory
-resulting from auto-decompress) to your chosen directory.  If the file has not been
-uncompressed, do that.  In Windows, right-click the zip file and choose
-"Extract All...".  In OSX or Linux, run unzip with the filename.
+Type `git` at the command prompt to see if you have git installed.  If you do not,
+download and install git from https://git-scm.com/downloads .
 
+Download the Biotaphy tutorial, containing test data and configurations, by typing at
+the command line:
+
+.. code-block::
+
+   git clone https://github.com/biotaphy/tutorials
+
+When the clone is complete, move to the top directory of the repository, `tutorials`.
+All hands-on commands will be executed in a command prompt window from this
+directory location.  In Linux or OSX, open a Terminal
+window.  In Windows, go to the Start menu, and type **command** in the Search bar.  Open
+the Command Prompt application that appears.
