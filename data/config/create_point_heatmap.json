@@ -1,0 +1,20 @@
+{
+    "log_console": true,
+    "log_filename": "/volumes/output/create_point_heatmap.log",
+    "report_filename": "/volumes/output/create_point_heatmap.rpt",
+    "csv":  [
+      ["/volumes/data/input/occurrence_gbif.csv",
+        "acceptedScientificName",
+        "decimalLongitude",
+        "decimalLatitude"
+      ]],
+    "dwca":  ["/volumes/data/input/occurrence_idigbio.zip"],
+    "raster_filename": "/volumes/output/points_heatmap.gtiff",
+    "vmin": 0.0,
+    "vmax": 1.0,
+    "min_x": -164,
+    "min_y": 15,
+    "max_x": -53,
+    "max_y": 64,
+    "resolution": 5.0
+}

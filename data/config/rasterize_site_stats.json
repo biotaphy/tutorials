@@ -1,0 +1,7 @@
+{
+    "log_filename": "/volumes/output/rasterize_site_stats.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/rasterize_site_stats.rpt",
+    "raster_filename": "/volumes/output/site_stats.gtif",
+    "matrix_filename": "/volumes/data/easy_bake/site_stats.lmm"
+}

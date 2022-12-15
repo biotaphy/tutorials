@@ -1,11 +1,11 @@
-08 Nov 2022 22:19 INFO     calculate_pam_stats: Calculate statistics for PAM /volumes/data/input/heuchera_pam.lmm.
-08 Nov 2022 22:19 INFO     PamStats: Calculate ['sigma sites', 'sigma species'] covariance stats for PAM
-08 Nov 2022 22:19 INFO     calculate_pam_stats: Wrote covariance sigma sites statistics to /volumes/output/covariance_sigma_sites.lmm.
-08 Nov 2022 22:19 INFO     calculate_pam_stats: Wrote covariance sigma species statistics to /volumes/output/covariance_sigma_species.lmm.
-08 Nov 2022 22:19 INFO     PamStats: Calculate ['c-score', 'lande', 'legendre', 'num sites', 'num species', 'whittaker'] diversity stats for PAM resulting in [8.016129032258064, 29.67105263157895, 140.2763157894737, 76, 32, 13.740112994350282]
-08 Nov 2022 22:19 INFO     calculate_pam_stats: Wrote diversity statistics to /volumes/output/diversity.lmm.
-08 Nov 2022 22:19 INFO     PamStats: Calculate ['alpha', 'alpha proportional', 'phi', 'phi average proportional'] site stats for PAM
-08 Nov 2022 22:19 DEBUG    PamStats: Start site stats
-08 Nov 2022 22:19 INFO     calculate_pam_stats: Wrote site statistics to /volumes/output/site_stats.lmm.
-08 Nov 2022 22:19 INFO     PamStats: Calculate ['omega', 'omega_proportional', 'psi', 'psi_average_proportional'] species stats for PAM
-08 Nov 2022 22:19 INFO     calculate_pam_stats: Wrote species statistics to /volumes/output/species_stats.lmm.
+12 Dec 2022 16:56 INFO     calculate_pam_stats: Calculate statistics for PAM /volumes/data/input/heuchera_pam.lmm.
+12 Dec 2022 16:56 INFO     PamStats: Calculate ['sigma sites', 'sigma species'] covariance stats for PAM
+12 Dec 2022 16:56 INFO     calculate_pam_stats: Wrote covariance sigma sites statistics to /volumes/output/covariance_sigma_sites.lmm.
+12 Dec 2022 16:56 INFO     calculate_pam_stats: Wrote covariance sigma species statistics to /volumes/output/covariance_sigma_species.lmm.
+12 Dec 2022 16:56 INFO     PamStats: Calculate ['c-score', 'lande', 'legendre', 'num sites', 'num species', 'whittaker'] diversity stats for PAM resulting in [8.016129032258064, 29.67105263157895, 140.2763157894737, 76, 32, 13.740112994350282]
+12 Dec 2022 16:56 INFO     calculate_pam_stats: Wrote diversity statistics to /volumes/output/diversity.lmm.
+12 Dec 2022 16:56 INFO     PamStats: Calculate ['alpha', 'alpha proportional', 'phi', 'phi average proportional'] site stats for PAM
+12 Dec 2022 16:56 INFO     PamStats: Start site stats
+12 Dec 2022 17:01 INFO     calculate_pam_stats: Wrote site statistics to /volumes/output/site_stats.lmm.
+12 Dec 2022 17:01 INFO     PamStats: Calculate ['omega', 'omega_proportional', 'psi', 'psi_average_proportional'] species stats for PAM
+12 Dec 2022 17:02 INFO     calculate_pam_stats: Wrote species statistics to /volumes/output/species_stats.lmm.
