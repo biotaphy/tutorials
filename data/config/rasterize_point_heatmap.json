@@ -1,7 +1,7 @@
 {
     "log_console": true,
-    "log_filename": "/volumes/output/create_point_heatmap.log",
-    "report_filename": "/volumes/output/create_point_heatmap.rpt",
+    "log_filename": "/volumes/output/rasterize_point_heatmap.log",
+    "report_filename": "/volumes/output/rasterize_point_heatmap.rpt",
     "csv":  [
       ["/volumes/data/input/occurrence_gbif.csv",
         "acceptedScientificName",
