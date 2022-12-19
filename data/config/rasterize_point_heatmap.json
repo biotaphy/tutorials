@@ -9,7 +9,7 @@
         "decimalLatitude"
       ]],
     "dwca":  ["/volumes/data/input/occurrence_idigbio.zip"],
-    "raster_filename": "/volumes/output/points_heatmap.gtiff",
+    "raster_filename": "/volumes/output/points_heatmap.tiff",
     "vmin": 0.0,
     "vmax": 1.0,
     "min_x": -164,

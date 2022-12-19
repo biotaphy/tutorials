@@ -1,0 +1,6 @@
+19 Dec 2022 11:22 INFO     rasterize_site_stats: ***Create raster image for matrix /volumes/data/easy_bake/site_stats.lmm
+19 Dec 2022 11:22 INFO     rasterize_site_stats: Create matrix for alpha
+19 Dec 2022 11:22 INFO     rasterize_site_stats: Create matrix for alpha proportional
+19 Dec 2022 11:22 INFO     rasterize_site_stats: Create matrix for phi
+19 Dec 2022 11:22 INFO     rasterize_site_stats: Create matrix for phi average proportional
+19 Dec 2022 11:22 INFO     rasterize_site_stats: Wrote report file to /volumes/output/rasterize_site_stats.rpt
