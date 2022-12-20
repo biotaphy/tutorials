@@ -1,0 +1,8 @@
+{
+    "log_console": true,
+    "log_filename": "/volumes/output/convert_lmm_to_raster.log",
+    "report_filename": "/volumes/output/convert_lmm_to_raster.rpt",
+    "in_lmm_filename": "/volumes/data/input/heuchera_pam_rn.lmm",
+    "is_pam": true,
+    "out_geotiff_filename": "/volumes/output/heuchera_pam_rn.tiff"
+}
