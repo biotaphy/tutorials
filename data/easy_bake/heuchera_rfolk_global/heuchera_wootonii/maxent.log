@@ -1,0 +1,81 @@
+Thu Dec 22 16:01:15 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/mask.asc
+Reading samples from Heuchera_wootonii.csv
+Read samples: max memory 12612272128, total allocated 792723456, free 779982800, used 12740656, increment 12740656
+Extractor: max memory 12612272128, total allocated 792723456, free 779407360, used 13316096, increment 575440
+Extracting random background and sample data
+Time since start: 2.404
+42 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_global/heuchera_wootonii/Heuchera_wootonii.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_global/heuchera_wootonii nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_global/heuchera_wootonii samplesfile=/volumes/output/heuchera_rfolk_global/heuchera_wootonii/Heuchera_wootonii.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Species: Heuchera_wootonii
+Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_global/heuchera_wootonii
+samplesfile: /volumes/output/heuchera_rfolk_global/heuchera_wootonii/Heuchera_wootonii.csv
+environmentallayers: /volumes/env/worldclim1.4
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 12612272128, total allocated 792723456, free 482852456, used 309871000, increment 296554904
+Making features
+makeFeatures: max memory 12612272128, total allocated 792723456, free 481805928, used 310917528, increment 1046528
+Heuchera_wootonii: 
+Regularization values: linear/quadratic/product: 1.000, categorical: 0.515, threshold: 1.910, hinge: 0.500
+9 samples
+Density: max memory 12612272128, total allocated 792723456, free 481805928, used 310917528, increment 0
+linearPredictor: max memory 12612272128, total allocated 792723456, free 481805928, used 310917528, increment 0
+FeaturedSpace: max memory 12612272128, total allocated 792723456, free 481805928, used 310917528, increment 0
+Sequential: max memory 12612272128, total allocated 792723456, free 480741976, used 311981480, increment 1063952
+Initial loss: 3.7376696182833684
+100: time = 0.019000 loss = 3.559309
+Resulting gain: 0.17836061434027117
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_global/heuchera_wootonii/Heuchera_wootonii.asc
+Time since start: 4.25
+Writing /volumes/output/heuchera_rfolk_global/heuchera_wootonii/plots/Heuchera_wootonii.png
+Ending

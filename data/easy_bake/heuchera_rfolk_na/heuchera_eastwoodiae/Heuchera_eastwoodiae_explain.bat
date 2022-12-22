@@ -1,0 +1,1 @@
+java -mx12028m -cp "/git/Maxent/ArchivedReleases/3.4.4/maxent.jar:/git/Maxent/ArchivedReleases/3.4.4/maxent.jar" density.Explain -l /volumes/output/heuchera_rfolk_na/heuchera_eastwoodiae/Heuchera_eastwoodiae.lambdas -c /volumes/output/heuchera_rfolk_na/heuchera_eastwoodiae/Heuchera_eastwoodiae.asc /volumes/env/na_2.5min

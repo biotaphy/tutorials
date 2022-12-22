@@ -1,2 +1,0 @@
-08 Nov 2022 19:56 INFO     build_grid: Build /volumes/output/grid_na_5deg.shp in EPSG:4326 with 4-sided cells of 5.0 size and x-extent -164 to -53, y-extent 15 to 64.
-08 Nov 2022 19:56 INFO     build_grid: Wrote /volumes/output/grid_na_5deg.shp with 230 sites.

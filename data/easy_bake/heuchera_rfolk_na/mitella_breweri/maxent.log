@@ -1,0 +1,61 @@
+Thu Dec 22 15:52:12 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Mitella_breweri.csv
+Read samples: max memory 12612272128, total allocated 792723456, free 772358856, used 20364600, increment 20364600
+Extractor: max memory 12612272128, total allocated 792723456, free 763215264, used 29508192, increment 9143592
+Extracting random background and sample data
+Warning: Sample at -123.25081, 49.25408 in Mitella_breweri.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.25081, 49.25408
+Warning: Sample at -123.15, 49.25 in Mitella_breweri.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -123.15, 49.25
+Warning: Sample at -124.675, 48.26667 in Mitella_breweri.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -124.675, 48.26667
+Time since start: 5.065
+67553 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_na/mitella_breweri/Mitella_breweri.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_na/mitella_breweri nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_na/mitella_breweri samplesfile=/volumes/output/heuchera_rfolk_na/mitella_breweri/Mitella_breweri.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Mitella_breweri
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_na/mitella_breweri
+samplesfile: /volumes/output/heuchera_rfolk_na/mitella_breweri/Mitella_breweri.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 12612272128, total allocated 952107008, free 834054112, used 118052896, increment 88544704
+Making features
+makeFeatures: max memory 12612272128, total allocated 952107008, free 825151968, used 126955040, increment 8902144
+Mitella_breweri: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+229 samples
+Density: max memory 12612272128, total allocated 952107008, free 812031968, used 140075040, increment 13120000
+linearPredictor: max memory 12612272128, total allocated 952107008, free 812031968, used 140075040, increment 0
+FeaturedSpace: max memory 12612272128, total allocated 952107008, free 812031968, used 140075040, increment 0
+Sequential: max memory 12612272128, total allocated 952107008, free 812031968, used 140075040, increment 0
+Initial loss: 9.229750765496005
+Time since start: 8.249
+500: time = 2.526000 loss = 7.666703
+Resulting gain: 1.563047375787864
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_na/mitella_breweri/Mitella_breweri.asc
+Time since start: 14.388
+Writing /volumes/output/heuchera_rfolk_na/mitella_breweri/plots/Mitella_breweri.png
+Time since start: 16.13
+Ending

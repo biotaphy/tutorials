@@ -1,0 +1,55 @@
+Thu Dec 22 15:49:11 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Telesonix_jamesii.csv
+Read samples: max memory 12612272128, total allocated 792723456, free 773701024, used 19022432, increment 19022432
+Extractor: max memory 12612272128, total allocated 792723456, free 766067408, used 26656048, increment 7633616
+Extracting random background and sample data
+Time since start: 5.19
+11891 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_na/telesonix_jamesii/Telesonix_jamesii.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_na/telesonix_jamesii nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_na/telesonix_jamesii samplesfile=/volumes/output/heuchera_rfolk_na/telesonix_jamesii/Telesonix_jamesii.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Telesonix_jamesii
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_na/telesonix_jamesii
+samplesfile: /volumes/output/heuchera_rfolk_na/telesonix_jamesii/Telesonix_jamesii.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 12612272128, total allocated 1151336448, free 724158304, used 427178144, increment 400522096
+Making features
+makeFeatures: max memory 12612272128, total allocated 1151336448, free 715956288, used 435380160, increment 8202016
+Telesonix_jamesii: 
+Regularization values: linear/quadratic/product: 0.500, categorical: 0.250, threshold: 1.830, hinge: 0.500
+17 samples
+Density: max memory 12612272128, total allocated 1151336448, free 704237408, used 447099040, increment 11718880
+linearPredictor: max memory 12612272128, total allocated 1151336448, free 704237408, used 447099040, increment 0
+FeaturedSpace: max memory 12612272128, total allocated 1151336448, free 704237408, used 447099040, increment 0
+Sequential: max memory 12612272128, total allocated 1151336448, free 704237408, used 447099040, increment 0
+Initial loss: 9.21054035197885
+Time since start: 7.61
+500: time = 1.910000 loss = 6.965006
+Resulting gain: 2.245534643217969
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_na/telesonix_jamesii/Telesonix_jamesii.asc
+Time since start: 13.183
+Writing /volumes/output/heuchera_rfolk_na/telesonix_jamesii/plots/Telesonix_jamesii.png
+Time since start: 14.405
+Ending

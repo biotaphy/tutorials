@@ -1,0 +1,6 @@
+22 Dec 2022 11:06 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera micrantha Douglas ex Lindl..
+22 Dec 2022 11:06 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera divaricata Fisch. ex Ser..
+22 Dec 2022 11:06 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera × rosea L.Möller.
+22 Dec 2022 11:06 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera scapigera Moench.
+22 Dec 2022 11:06 DEBUG    AcceptedNameSpeciesListWrangler: Returned 82 accepted species with 41 duplicates.
+22 Dec 2022 11:06 DEBUG    AcceptedNameSpeciesListWrangler: Failed to resolve 4 names.

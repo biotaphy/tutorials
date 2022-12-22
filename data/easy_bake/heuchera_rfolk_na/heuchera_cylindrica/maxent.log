@@ -1,0 +1,55 @@
+Thu Dec 22 15:41:47 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Heuchera_cylindrica.csv
+Read samples: max memory 12612272128, total allocated 792723456, free 771603872, used 21119584, increment 21119584
+Extractor: max memory 12612272128, total allocated 792723456, free 762630144, used 30093312, increment 8973728
+Extracting random background and sample data
+Time since start: 5.174
+69224 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_na/heuchera_cylindrica/Heuchera_cylindrica.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_na/heuchera_cylindrica nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_na/heuchera_cylindrica samplesfile=/volumes/output/heuchera_rfolk_na/heuchera_cylindrica/Heuchera_cylindrica.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Heuchera_cylindrica
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_na/heuchera_cylindrica
+samplesfile: /volumes/output/heuchera_rfolk_na/heuchera_cylindrica/Heuchera_cylindrica.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 12612272128, total allocated 1142947840, free 574036368, used 568911472, increment 538818160
+Making features
+makeFeatures: max memory 12612272128, total allocated 1142947840, free 564851760, used 578096080, increment 9184608
+Heuchera_cylindrica: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+398 samples
+Density: max memory 12612272128, total allocated 1142947840, free 552016272, used 590931568, increment 12835488
+linearPredictor: max memory 12612272128, total allocated 1142947840, free 552016272, used 590931568, increment 0
+FeaturedSpace: max memory 12612272128, total allocated 1142947840, free 550969744, used 591978096, increment 1046528
+Sequential: max memory 12612272128, total allocated 1142947840, free 550969744, used 591978096, increment 0
+Initial loss: 9.243581705755984
+Time since start: 8.559
+500: time = 2.757000 loss = 8.775240
+Resulting gain: 0.46834165384230353
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_na/heuchera_cylindrica/Heuchera_cylindrica.asc
+Time since start: 14.785
+Writing /volumes/output/heuchera_rfolk_na/heuchera_cylindrica/plots/Heuchera_cylindrica.png
+Time since start: 16.978
+Ending

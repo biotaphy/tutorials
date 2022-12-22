@@ -1,0 +1,650 @@
+22 Dec 2022 16:01 INFO     create_sdm: 
+
+***Create SDMs for 67 species occurrence CSVs
+22 Dec 2022 16:01 INFO     create_sdm: 
+*** Starting SDM for heuchera_pubescens, file 1 of 67
+22 Dec 2022 16:01 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:01 INFO     model: Create Maxent model
+22 Dec 2022 16:01 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_pubescens/Heuchera_pubescens.lambdas
+22 Dec 2022 16:01 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_pubescens/Heuchera_pubescens.asc
+22 Dec 2022 16:01 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:01 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_pubescens
+
+22 Dec 2022 16:01 INFO     create_sdm: 
+*** Starting SDM for heuchera_wootonii, file 2 of 67
+22 Dec 2022 16:01 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:01 INFO     model: Create Maxent model
+22 Dec 2022 16:01 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_wootonii/Heuchera_wootonii.lambdas
+22 Dec 2022 16:01 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_wootonii/Heuchera_wootonii.asc
+22 Dec 2022 16:01 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:01 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_wootonii
+
+22 Dec 2022 16:01 INFO     create_sdm: 
+*** Starting SDM for peltoboykinia_watanabei, file 3 of 67
+22 Dec 2022 16:01 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:01 INFO     model: Create Maxent model
+22 Dec 2022 16:01 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/peltoboykinia_watanabei/Peltoboykinia_watanabei.lambdas
+22 Dec 2022 16:01 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/peltoboykinia_watanabei/Peltoboykinia_watanabei.asc
+22 Dec 2022 16:01 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:01 INFO     create_sdm: 
+*** Completed SDM computation for peltoboykinia_watanabei
+
+22 Dec 2022 16:01 INFO     create_sdm: 
+*** Starting SDM for heuchera_hallii, file 4 of 67
+22 Dec 2022 16:01 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:01 INFO     model: Create Maxent model
+22 Dec 2022 16:01 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_hallii/Heuchera_hallii.lambdas
+22 Dec 2022 16:01 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_hallii/Heuchera_hallii.asc
+22 Dec 2022 16:01 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:01 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_hallii
+
+22 Dec 2022 16:01 INFO     create_sdm: 
+*** Starting SDM for heuchera_acutifolia, file 5 of 67
+22 Dec 2022 16:01 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:01 INFO     model: Create Maxent model
+22 Dec 2022 16:01 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_acutifolia/Heuchera_acutifolia.lambdas
+22 Dec 2022 16:01 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_acutifolia/Heuchera_acutifolia.asc
+22 Dec 2022 16:01 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:01 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_acutifolia
+
+22 Dec 2022 16:01 INFO     create_sdm: 
+*** Starting SDM for mitella_pentandra, file 6 of 67
+22 Dec 2022 16:01 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:01 INFO     model: Create Maxent model
+22 Dec 2022 16:02 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/mitella_pentandra/Mitella_pentandra.lambdas
+22 Dec 2022 16:02 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/mitella_pentandra/Mitella_pentandra.asc
+22 Dec 2022 16:02 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:02 INFO     create_sdm: 
+*** Completed SDM computation for mitella_pentandra
+
+22 Dec 2022 16:02 INFO     create_sdm: 
+*** Starting SDM for heuchera_caroliniana, file 7 of 67
+22 Dec 2022 16:02 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:02 INFO     model: Create Maxent model
+22 Dec 2022 16:02 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_caroliniana/Heuchera_caroliniana.lambdas
+22 Dec 2022 16:02 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_caroliniana/Heuchera_caroliniana.asc
+22 Dec 2022 16:02 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:02 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_caroliniana
+
+22 Dec 2022 16:02 INFO     create_sdm: 
+*** Starting SDM for heuchera_longipetala, file 8 of 67
+22 Dec 2022 16:02 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:02 INFO     model: Create Maxent model
+22 Dec 2022 16:02 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_longipetala/Heuchera_longipetala.lambdas
+22 Dec 2022 16:02 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_longipetala/Heuchera_longipetala.asc
+22 Dec 2022 16:02 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:02 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_longipetala
+
+22 Dec 2022 16:02 INFO     create_sdm: 
+*** Starting SDM for heuchera_versicolor, file 9 of 67
+22 Dec 2022 16:02 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:02 INFO     model: Create Maxent model
+22 Dec 2022 16:02 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_versicolor/Heuchera_versicolor.lambdas
+22 Dec 2022 16:02 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_versicolor/Heuchera_versicolor.asc
+22 Dec 2022 16:02 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:02 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_versicolor
+
+22 Dec 2022 16:02 INFO     create_sdm: 
+*** Starting SDM for mitella_caulescens, file 10 of 67
+22 Dec 2022 16:02 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:02 INFO     model: Create Maxent model
+22 Dec 2022 16:03 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/mitella_caulescens/Mitella_caulescens.lambdas
+22 Dec 2022 16:03 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/mitella_caulescens/Mitella_caulescens.asc
+22 Dec 2022 16:03 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:03 INFO     create_sdm: 
+*** Completed SDM computation for mitella_caulescens
+
+22 Dec 2022 16:03 INFO     create_sdm: 
+*** Starting SDM for tolmiea_diplomenziesii, file 11 of 67
+22 Dec 2022 16:03 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:03 INFO     model: Create Maxent model
+22 Dec 2022 16:03 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/tolmiea_diplomenziesii/Tolmiea_diplomenziesii.lambdas
+22 Dec 2022 16:03 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/tolmiea_diplomenziesii/Tolmiea_diplomenziesii.asc
+22 Dec 2022 16:03 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:03 INFO     create_sdm: 
+*** Completed SDM computation for tolmiea_diplomenziesii
+
+22 Dec 2022 16:03 INFO     create_sdm: 
+*** Starting SDM for heuchera_pulchella, file 12 of 67
+22 Dec 2022 16:03 INFO     model: Create rare species model and map
+22 Dec 2022 16:03 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_pulchella
+
+22 Dec 2022 16:03 INFO     create_sdm: 
+*** Starting SDM for heuchera_mexicana, file 13 of 67
+22 Dec 2022 16:03 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:03 INFO     model: Create Maxent model
+22 Dec 2022 16:03 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_mexicana/Heuchera_mexicana.lambdas
+22 Dec 2022 16:03 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_mexicana/Heuchera_mexicana.asc
+22 Dec 2022 16:03 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:03 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_mexicana
+
+22 Dec 2022 16:03 INFO     create_sdm: 
+*** Starting SDM for mitella_diphylla, file 14 of 67
+22 Dec 2022 16:03 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:03 INFO     model: Create Maxent model
+22 Dec 2022 16:03 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/mitella_diphylla/Mitella_diphylla.lambdas
+22 Dec 2022 16:03 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/mitella_diphylla/Mitella_diphylla.asc
+22 Dec 2022 16:03 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:03 INFO     create_sdm: 
+*** Completed SDM computation for mitella_diphylla
+
+22 Dec 2022 16:03 INFO     create_sdm: 
+*** Starting SDM for conimitella_williamsii, file 15 of 67
+22 Dec 2022 16:03 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:03 INFO     model: Create Maxent model
+22 Dec 2022 16:04 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/conimitella_williamsii/Conimitella_williamsii.lambdas
+22 Dec 2022 16:04 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/conimitella_williamsii/Conimitella_williamsii.asc
+22 Dec 2022 16:04 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Completed SDM computation for conimitella_williamsii
+
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Starting SDM for bensoniella_oregona, file 16 of 67
+22 Dec 2022 16:04 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:04 INFO     model: Create Maxent model
+22 Dec 2022 16:04 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/bensoniella_oregona/Bensoniella_oregona.lambdas
+22 Dec 2022 16:04 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/bensoniella_oregona/Bensoniella_oregona.asc
+22 Dec 2022 16:04 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Completed SDM computation for bensoniella_oregona
+
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Starting SDM for heuchera_glomerulata, file 17 of 67
+22 Dec 2022 16:04 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:04 INFO     model: Create Maxent model
+22 Dec 2022 16:04 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_glomerulata/Heuchera_glomerulata.lambdas
+22 Dec 2022 16:04 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_glomerulata/Heuchera_glomerulata.asc
+22 Dec 2022 16:04 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_glomerulata
+
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Starting SDM for heuchera_puberula, file 18 of 67
+22 Dec 2022 16:04 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:04 INFO     model: Create Maxent model
+22 Dec 2022 16:04 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_puberula/Heuchera_puberula.lambdas
+22 Dec 2022 16:04 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_puberula/Heuchera_puberula.asc
+22 Dec 2022 16:04 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_puberula
+
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Starting SDM for heuchera_cylindrica, file 19 of 67
+22 Dec 2022 16:04 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:04 INFO     model: Create Maxent model
+22 Dec 2022 16:04 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_cylindrica/Heuchera_cylindrica.lambdas
+22 Dec 2022 16:04 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_cylindrica/Heuchera_cylindrica.asc
+22 Dec 2022 16:04 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_cylindrica
+
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Starting SDM for heuchera_hirsutissima, file 20 of 67
+22 Dec 2022 16:04 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:04 INFO     model: Create Maxent model
+22 Dec 2022 16:04 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_hirsutissima/Heuchera_hirsutissima.lambdas
+22 Dec 2022 16:04 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_hirsutissima/Heuchera_hirsutissima.asc
+22 Dec 2022 16:04 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_hirsutissima
+
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Starting SDM for heuchera_abramsii, file 21 of 67
+22 Dec 2022 16:04 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:04 INFO     model: Create Maxent model
+22 Dec 2022 16:04 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_abramsii/Heuchera_abramsii.lambdas
+22 Dec 2022 16:04 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_abramsii/Heuchera_abramsii.asc
+22 Dec 2022 16:04 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_abramsii
+
+22 Dec 2022 16:04 INFO     create_sdm: 
+*** Starting SDM for heuchera_caespitosa, file 22 of 67
+22 Dec 2022 16:04 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:04 INFO     model: Create Maxent model
+22 Dec 2022 16:05 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_caespitosa/Heuchera_caespitosa.lambdas
+22 Dec 2022 16:05 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_caespitosa/Heuchera_caespitosa.asc
+22 Dec 2022 16:05 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:05 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_caespitosa
+
+22 Dec 2022 16:05 INFO     create_sdm: 
+*** Starting SDM for heuchera_sanguinea, file 23 of 67
+22 Dec 2022 16:05 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:05 INFO     model: Create Maxent model
+22 Dec 2022 16:05 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_sanguinea/Heuchera_sanguinea.lambdas
+22 Dec 2022 16:05 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_sanguinea/Heuchera_sanguinea.asc
+22 Dec 2022 16:05 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:05 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_sanguinea
+
+22 Dec 2022 16:05 INFO     create_sdm: 
+*** Starting SDM for mitella_stylosa, file 24 of 67
+22 Dec 2022 16:05 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:05 INFO     model: Create Maxent model
+22 Dec 2022 16:05 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/mitella_stylosa/Mitella_stylosa.lambdas
+22 Dec 2022 16:05 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/mitella_stylosa/Mitella_stylosa.asc
+22 Dec 2022 16:05 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:05 INFO     create_sdm: 
+*** Completed SDM computation for mitella_stylosa
+
+22 Dec 2022 16:05 INFO     create_sdm: 
+*** Starting SDM for heuchera_rubescens, file 25 of 67
+22 Dec 2022 16:05 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:05 INFO     model: Create Maxent model
+22 Dec 2022 16:05 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_rubescens/Heuchera_rubescens.lambdas
+22 Dec 2022 16:05 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_rubescens/Heuchera_rubescens.asc
+22 Dec 2022 16:05 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:05 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_rubescens
+
+22 Dec 2022 16:05 INFO     create_sdm: 
+*** Starting SDM for heuchera_lakelae, file 26 of 67
+22 Dec 2022 16:05 INFO     model: Create rare species model and map
+22 Dec 2022 16:05 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_lakelae
+
+22 Dec 2022 16:05 INFO     create_sdm: 
+*** Starting SDM for heuchera_glabra, file 27 of 67
+22 Dec 2022 16:05 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:05 INFO     model: Create Maxent model
+22 Dec 2022 16:06 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_glabra/Heuchera_glabra.lambdas
+22 Dec 2022 16:06 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_glabra/Heuchera_glabra.asc
+22 Dec 2022 16:06 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:06 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_glabra
+
+22 Dec 2022 16:06 INFO     create_sdm: 
+*** Starting SDM for heuchera_missouriensis, file 28 of 67
+22 Dec 2022 16:06 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:06 INFO     model: Create Maxent model
+22 Dec 2022 16:06 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_missouriensis/Heuchera_missouriensis.lambdas
+22 Dec 2022 16:06 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_missouriensis/Heuchera_missouriensis.asc
+22 Dec 2022 16:06 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:06 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_missouriensis
+
+22 Dec 2022 16:06 INFO     create_sdm: 
+*** Starting SDM for tolmiea_menziesii, file 29 of 67
+22 Dec 2022 16:06 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:06 INFO     model: Create Maxent model
+22 Dec 2022 16:06 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/tolmiea_menziesii/Tolmiea_menziesii.lambdas
+22 Dec 2022 16:06 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/tolmiea_menziesii/Tolmiea_menziesii.asc
+22 Dec 2022 16:06 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:06 INFO     create_sdm: 
+*** Completed SDM computation for tolmiea_menziesii
+
+22 Dec 2022 16:06 INFO     create_sdm: 
+*** Starting SDM for mitella_stauropetala, file 30 of 67
+22 Dec 2022 16:06 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:06 INFO     model: Create Maxent model
+22 Dec 2022 16:06 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/mitella_stauropetala/Mitella_stauropetala.lambdas
+22 Dec 2022 16:06 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/mitella_stauropetala/Mitella_stauropetala.asc
+22 Dec 2022 16:06 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:06 INFO     create_sdm: 
+*** Completed SDM computation for mitella_stauropetala
+
+22 Dec 2022 16:06 INFO     create_sdm: 
+*** Starting SDM for heuchera_rosendahlii, file 31 of 67
+22 Dec 2022 16:06 INFO     model: Create rare species model and map
+22 Dec 2022 16:06 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_rosendahlii
+
+22 Dec 2022 16:06 INFO     create_sdm: 
+*** Starting SDM for tiarella_polyphylla, file 32 of 67
+22 Dec 2022 16:07 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:07 INFO     model: Create Maxent model
+22 Dec 2022 16:07 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/tiarella_polyphylla/Tiarella_polyphylla.lambdas
+22 Dec 2022 16:07 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/tiarella_polyphylla/Tiarella_polyphylla.asc
+22 Dec 2022 16:07 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:07 INFO     create_sdm: 
+*** Completed SDM computation for tiarella_polyphylla
+
+22 Dec 2022 16:07 INFO     create_sdm: 
+*** Starting SDM for heuchera_bracteata, file 33 of 67
+22 Dec 2022 16:07 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:07 INFO     model: Create Maxent model
+22 Dec 2022 16:07 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_bracteata/Heuchera_bracteata.lambdas
+22 Dec 2022 16:07 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_bracteata/Heuchera_bracteata.asc
+22 Dec 2022 16:07 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:07 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_bracteata
+
+22 Dec 2022 16:07 INFO     create_sdm: 
+*** Starting SDM for heuchera_soltisii, file 34 of 67
+22 Dec 2022 16:07 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:07 INFO     model: Create Maxent model
+22 Dec 2022 16:07 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_soltisii/Heuchera_soltisii.lambdas
+22 Dec 2022 16:07 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_soltisii/Heuchera_soltisii.asc
+22 Dec 2022 16:07 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:07 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_soltisii
+
+22 Dec 2022 16:07 INFO     create_sdm: 
+*** Starting SDM for heuchera_longiflora, file 35 of 67
+22 Dec 2022 16:07 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:07 INFO     model: Create Maxent model
+22 Dec 2022 16:07 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_longiflora/Heuchera_longiflora.lambdas
+22 Dec 2022 16:07 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_longiflora/Heuchera_longiflora.asc
+22 Dec 2022 16:07 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:07 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_longiflora
+
+22 Dec 2022 16:07 INFO     create_sdm: 
+*** Starting SDM for mitella_ovalis, file 36 of 67
+22 Dec 2022 16:08 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:08 INFO     model: Create Maxent model
+22 Dec 2022 16:08 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/mitella_ovalis/Mitella_ovalis.lambdas
+22 Dec 2022 16:08 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/mitella_ovalis/Mitella_ovalis.asc
+22 Dec 2022 16:08 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:08 INFO     create_sdm: 
+*** Completed SDM computation for mitella_ovalis
+
+22 Dec 2022 16:08 INFO     create_sdm: 
+*** Starting SDM for heuchera_woodsiaphila, file 37 of 67
+22 Dec 2022 16:08 INFO     model: Create rare species model and map
+22 Dec 2022 16:08 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_woodsiaphila
+
+22 Dec 2022 16:08 INFO     create_sdm: 
+*** Starting SDM for tellima_grandiflora, file 38 of 67
+22 Dec 2022 16:08 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:08 INFO     model: Create Maxent model
+22 Dec 2022 16:08 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/tellima_grandiflora/Tellima_grandiflora.lambdas
+22 Dec 2022 16:08 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/tellima_grandiflora/Tellima_grandiflora.asc
+22 Dec 2022 16:08 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:08 INFO     create_sdm: 
+*** Completed SDM computation for tellima_grandiflora
+
+22 Dec 2022 16:08 INFO     create_sdm: 
+*** Starting SDM for heuchera_inconstans, file 39 of 67
+22 Dec 2022 16:08 INFO     model: Create rare species model and map
+22 Dec 2022 16:08 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_inconstans
+
+22 Dec 2022 16:08 INFO     create_sdm: 
+*** Starting SDM for heuchera_wellsiae, file 40 of 67
+22 Dec 2022 16:08 INFO     model: Create rare species model and map
+22 Dec 2022 16:08 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_wellsiae
+
+22 Dec 2022 16:08 INFO     create_sdm: 
+*** Starting SDM for heuchera_elegans, file 41 of 67
+22 Dec 2022 16:08 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:08 INFO     model: Create Maxent model
+22 Dec 2022 16:08 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_elegans/Heuchera_elegans.lambdas
+22 Dec 2022 16:08 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_elegans/Heuchera_elegans.asc
+22 Dec 2022 16:08 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:08 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_elegans
+
+22 Dec 2022 16:08 INFO     create_sdm: 
+*** Starting SDM for heuchera_richardsonii, file 42 of 67
+22 Dec 2022 16:08 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:08 INFO     model: Create Maxent model
+22 Dec 2022 16:09 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_richardsonii/Heuchera_richardsonii.lambdas
+22 Dec 2022 16:09 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_richardsonii/Heuchera_richardsonii.asc
+22 Dec 2022 16:09 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:09 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_richardsonii
+
+22 Dec 2022 16:09 INFO     create_sdm: 
+*** Starting SDM for mitella_pauciflora, file 43 of 67
+22 Dec 2022 16:09 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:09 INFO     model: Create Maxent model
+22 Dec 2022 16:09 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/mitella_pauciflora/Mitella_pauciflora.lambdas
+22 Dec 2022 16:09 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/mitella_pauciflora/Mitella_pauciflora.asc
+22 Dec 2022 16:09 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:09 INFO     create_sdm: 
+*** Completed SDM computation for mitella_pauciflora
+
+22 Dec 2022 16:09 INFO     create_sdm: 
+*** Starting SDM for heuchera_pilosissima, file 44 of 67
+22 Dec 2022 16:09 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:09 INFO     model: Create Maxent model
+22 Dec 2022 16:09 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_pilosissima/Heuchera_pilosissima.lambdas
+22 Dec 2022 16:09 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_pilosissima/Heuchera_pilosissima.asc
+22 Dec 2022 16:09 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:09 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_pilosissima
+
+22 Dec 2022 16:09 INFO     create_sdm: 
+*** Starting SDM for heuchera_grossulariifolia, file 45 of 67
+22 Dec 2022 16:09 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:09 INFO     model: Create Maxent model
+22 Dec 2022 16:09 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_grossulariifolia/Heuchera_grossulariifolia.lambdas
+22 Dec 2022 16:09 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_grossulariifolia/Heuchera_grossulariifolia.asc
+22 Dec 2022 16:09 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:09 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_grossulariifolia
+
+22 Dec 2022 16:09 INFO     create_sdm: 
+*** Starting SDM for heuchera_parishii, file 46 of 67
+22 Dec 2022 16:09 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:09 INFO     model: Create Maxent model
+22 Dec 2022 16:10 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_parishii/Heuchera_parishii.lambdas
+22 Dec 2022 16:10 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_parishii/Heuchera_parishii.asc
+22 Dec 2022 16:10 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:10 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_parishii
+
+22 Dec 2022 16:10 INFO     create_sdm: 
+*** Starting SDM for heuchera_americana, file 47 of 67
+22 Dec 2022 16:10 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:10 INFO     model: Create Maxent model
+22 Dec 2022 16:10 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_americana/Heuchera_americana.lambdas
+22 Dec 2022 16:10 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_americana/Heuchera_americana.asc
+22 Dec 2022 16:10 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:10 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_americana
+
+22 Dec 2022 16:10 INFO     create_sdm: 
+*** Starting SDM for heuchera_novomexicana, file 48 of 67
+22 Dec 2022 16:10 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:10 INFO     model: Create Maxent model
+22 Dec 2022 16:10 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_novomexicana/Heuchera_novomexicana.lambdas
+22 Dec 2022 16:10 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_novomexicana/Heuchera_novomexicana.asc
+22 Dec 2022 16:10 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:10 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_novomexicana
+
+22 Dec 2022 16:10 INFO     create_sdm: 
+*** Starting SDM for telesonix_jamesii, file 49 of 67
+22 Dec 2022 16:10 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:10 INFO     model: Create Maxent model
+22 Dec 2022 16:10 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/telesonix_jamesii/Telesonix_jamesii.lambdas
+22 Dec 2022 16:10 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/telesonix_jamesii/Telesonix_jamesii.asc
+22 Dec 2022 16:10 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:10 INFO     create_sdm: 
+*** Completed SDM computation for telesonix_jamesii
+
+22 Dec 2022 16:10 INFO     create_sdm: 
+*** Starting SDM for test, file 50 of 67
+22 Dec 2022 16:10 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:10 INFO     model: Create Maxent model
+22 Dec 2022 16:10 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/test/Test.lambdas
+22 Dec 2022 16:10 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/test/Test.asc
+22 Dec 2022 16:10 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:10 INFO     create_sdm: 
+*** Completed SDM computation for test
+
+22 Dec 2022 16:10 INFO     create_sdm: 
+*** Starting SDM for heuchera_chlorantha, file 51 of 67
+22 Dec 2022 16:10 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:10 INFO     model: Create Maxent model
+22 Dec 2022 16:10 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_chlorantha/Heuchera_chlorantha.lambdas
+22 Dec 2022 16:10 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_chlorantha/Heuchera_chlorantha.asc
+22 Dec 2022 16:10 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:10 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_chlorantha
+
+22 Dec 2022 16:10 INFO     create_sdm: 
+*** Starting SDM for heuchera_maxima, file 52 of 67
+22 Dec 2022 16:10 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:10 INFO     model: Create Maxent model
+22 Dec 2022 16:11 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_maxima/Heuchera_maxima.lambdas
+22 Dec 2022 16:11 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_maxima/Heuchera_maxima.asc
+22 Dec 2022 16:11 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:11 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_maxima
+
+22 Dec 2022 16:11 INFO     create_sdm: 
+*** Starting SDM for mitella_acerina, file 53 of 67
+22 Dec 2022 16:11 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:11 INFO     model: Create Maxent model
+22 Dec 2022 16:11 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/mitella_acerina/Mitella_acerina.lambdas
+22 Dec 2022 16:11 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/mitella_acerina/Mitella_acerina.asc
+22 Dec 2022 16:11 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:11 INFO     create_sdm: 
+*** Completed SDM computation for mitella_acerina
+
+22 Dec 2022 16:11 INFO     create_sdm: 
+*** Starting SDM for heuchera_brevistaminea, file 54 of 67
+22 Dec 2022 16:11 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:11 INFO     model: Create Maxent model
+22 Dec 2022 16:11 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_brevistaminea/Heuchera_brevistaminea.lambdas
+22 Dec 2022 16:11 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_brevistaminea/Heuchera_brevistaminea.asc
+22 Dec 2022 16:11 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:11 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_brevistaminea
+
+22 Dec 2022 16:11 INFO     create_sdm: 
+*** Starting SDM for heuchera_micrantha, file 55 of 67
+22 Dec 2022 16:11 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:11 INFO     model: Create Maxent model
+22 Dec 2022 16:11 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_micrantha/Heuchera_micrantha.lambdas
+22 Dec 2022 16:11 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_micrantha/Heuchera_micrantha.asc
+22 Dec 2022 16:11 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:11 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_micrantha
+
+22 Dec 2022 16:11 INFO     create_sdm: 
+*** Starting SDM for heuchera_parvifolia, file 56 of 67
+22 Dec 2022 16:11 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:11 INFO     model: Create Maxent model
+22 Dec 2022 16:12 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_parvifolia/Heuchera_parvifolia.lambdas
+22 Dec 2022 16:12 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_parvifolia/Heuchera_parvifolia.asc
+22 Dec 2022 16:12 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:12 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_parvifolia
+
+22 Dec 2022 16:12 INFO     create_sdm: 
+*** Starting SDM for mitella_japonica, file 57 of 67
+22 Dec 2022 16:12 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:12 INFO     model: Create Maxent model
+22 Dec 2022 16:12 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/mitella_japonica/Mitella_japonica.lambdas
+22 Dec 2022 16:12 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/mitella_japonica/Mitella_japonica.asc
+22 Dec 2022 16:12 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:12 INFO     create_sdm: 
+*** Completed SDM computation for mitella_japonica
+
+22 Dec 2022 16:12 INFO     create_sdm: 
+*** Starting SDM for heuchera_villosa, file 58 of 67
+22 Dec 2022 16:12 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:12 INFO     model: Create Maxent model
+22 Dec 2022 16:12 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_villosa/Heuchera_villosa.lambdas
+22 Dec 2022 16:12 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_villosa/Heuchera_villosa.asc
+22 Dec 2022 16:12 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:12 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_villosa
+
+22 Dec 2022 16:12 INFO     create_sdm: 
+*** Starting SDM for elmera_racemosa, file 59 of 67
+22 Dec 2022 16:12 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:12 INFO     model: Create Maxent model
+22 Dec 2022 16:12 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/elmera_racemosa/Elmera_racemosa.lambdas
+22 Dec 2022 16:12 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/elmera_racemosa/Elmera_racemosa.asc
+22 Dec 2022 16:12 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:12 INFO     create_sdm: 
+*** Completed SDM computation for elmera_racemosa
+
+22 Dec 2022 16:12 INFO     create_sdm: 
+*** Starting SDM for mitella_breweri, file 60 of 67
+22 Dec 2022 16:12 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:12 INFO     model: Create Maxent model
+22 Dec 2022 16:12 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/mitella_breweri/Mitella_breweri.lambdas
+22 Dec 2022 16:12 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/mitella_breweri/Mitella_breweri.asc
+22 Dec 2022 16:12 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:12 INFO     create_sdm: 
+*** Completed SDM computation for mitella_breweri
+
+22 Dec 2022 16:12 INFO     create_sdm: 
+*** Starting SDM for mitella_furusei, file 61 of 67
+22 Dec 2022 16:12 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:12 INFO     model: Create Maxent model
+22 Dec 2022 16:13 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/mitella_furusei/Mitella_furusei.lambdas
+22 Dec 2022 16:13 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/mitella_furusei/Mitella_furusei.asc
+22 Dec 2022 16:13 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:13 INFO     create_sdm: 
+*** Completed SDM computation for mitella_furusei
+
+22 Dec 2022 16:13 INFO     create_sdm: 
+*** Starting SDM for mitella_nuda, file 62 of 67
+22 Dec 2022 16:13 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:13 INFO     model: Create Maxent model
+22 Dec 2022 16:13 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/mitella_nuda/Mitella_nuda.lambdas
+22 Dec 2022 16:13 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/mitella_nuda/Mitella_nuda.asc
+22 Dec 2022 16:13 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:13 INFO     create_sdm: 
+*** Completed SDM computation for mitella_nuda
+
+22 Dec 2022 16:13 INFO     create_sdm: 
+*** Starting SDM for heuchera_alba, file 63 of 67
+22 Dec 2022 16:13 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:13 INFO     model: Create Maxent model
+22 Dec 2022 16:13 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_alba/Heuchera_alba.lambdas
+22 Dec 2022 16:13 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_alba/Heuchera_alba.asc
+22 Dec 2022 16:13 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:13 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_alba
+
+22 Dec 2022 16:13 INFO     create_sdm: 
+*** Starting SDM for heuchera_parviflora, file 64 of 67
+22 Dec 2022 16:13 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:13 INFO     model: Create Maxent model
+22 Dec 2022 16:13 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_parviflora/Heuchera_parviflora.lambdas
+22 Dec 2022 16:13 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_parviflora/Heuchera_parviflora.asc
+22 Dec 2022 16:13 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:13 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_parviflora
+
+22 Dec 2022 16:13 INFO     create_sdm: 
+*** Starting SDM for heuchera_eastwoodiae, file 65 of 67
+22 Dec 2022 16:13 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:13 INFO     model: Create Maxent model
+22 Dec 2022 16:13 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_eastwoodiae/Heuchera_eastwoodiae.lambdas
+22 Dec 2022 16:13 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_eastwoodiae/Heuchera_eastwoodiae.asc
+22 Dec 2022 16:13 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:13 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_eastwoodiae
+
+22 Dec 2022 16:13 INFO     create_sdm: 
+*** Starting SDM for heuchera_merriamii, file 66 of 67
+22 Dec 2022 16:13 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:13 INFO     model: Create Maxent model
+22 Dec 2022 16:14 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/heuchera_merriamii/Heuchera_merriamii.lambdas
+22 Dec 2022 16:14 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/heuchera_merriamii/Heuchera_merriamii.asc
+22 Dec 2022 16:14 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:14 INFO     create_sdm: 
+*** Completed SDM computation for heuchera_merriamii
+
+22 Dec 2022 16:14 INFO     create_sdm: 
+*** Starting SDM for lithophragma_parviflorum, file 67 of 67
+22 Dec 2022 16:14 INFO     model: Created mask /volumes/env/worldclim1.4/mask.asc for current SDM
+22 Dec 2022 16:14 INFO     model: Create Maxent model
+22 Dec 2022 16:14 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_global/lithophragma_parviflorum/Lithophragma_parviflorum.lambdas
+22 Dec 2022 16:14 INFO     model: Completed Maxent map with file /volumes/output/heuchera_rfolk_global/lithophragma_parviflorum/Lithophragma_parviflorum.asc
+22 Dec 2022 16:14 INFO     model: Delete mask /volumes/env/worldclim1.4/mask.asc
+22 Dec 2022 16:14 INFO     create_sdm: 
+*** Completed SDM computation for lithophragma_parviflorum
+
+22 Dec 2022 16:14 INFO     create_sdm: Wrote report file to /volumes/output/create_sdm_global.rpt

@@ -19,6 +19,7 @@ usage ()
     # possibly print the wrong Usage string.
     config_required=(
     "build_grid"  "calculate_pam_stats" "encode_layers"  "split_occurrence_data"
+    "rasterize_point_heatmap"  "rasterize_site_stats"
     "wrangle_species_list"  "wrangle_occurrences"  "wrangle_tree"
     )
     echo ""
@@ -113,7 +114,7 @@ create_volumes() {
     if [ "$rw_vol_exists" == "0" ]; then
         echo " - Create volume $OUT_VOLUME"  | tee -a "$LOG"
         docker volume create --label=$VOLUME_DISCARD_LABEL $OUT_VOLUME
-    else./run_tutorial.sh  wrangle_matrix  data/config/wrangle_matrix.json
+    else
 
         echo " - Volume $OUT_VOLUME is already created"  | tee -a "$LOG"
     fi
@@ -268,6 +269,7 @@ COMMANDS=(
 "wrangle_matrix"  "wrangle_tree"
 "create_sdm"
 "build_grid"  "encode_layers" "calculate_pam_stats"
+"rasterize_point_heatmap"  "rasterize_site_stats"
 "convert_lmm_to_geojson"  "convert_lmm_to_csv"
 )
 

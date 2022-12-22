@@ -1,0 +1,8 @@
+{
+    "log_filename": "/volumes/output/wrangle_matrix_na.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/wrangle_matrix_na.rpt",
+    "in_matrix_filename": "/volumes/data/easy_bake/heuchera_rfolk_na.lmm",
+    "out_matrix_filename": "/volumes/output/heuchera_rfolk_na_wrangled.lmm",
+    "wrangler_configuration_file": "/volumes/data/wranglers/matrix_wrangle.json"
+}

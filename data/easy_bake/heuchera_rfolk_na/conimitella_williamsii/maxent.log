@@ -1,0 +1,55 @@
+Thu Dec 22 15:40:45 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Conimitella_williamsii.csv
+Read samples: max memory 12612272128, total allocated 792723456, free 773681032, used 19042424, increment 19042424
+Extractor: max memory 12612272128, total allocated 792723456, free 766067408, used 26656048, increment 7613624
+Extracting random background and sample data
+Time since start: 5.119
+18871 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_na/conimitella_williamsii/Conimitella_williamsii.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_na/conimitella_williamsii nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_na/conimitella_williamsii samplesfile=/volumes/output/heuchera_rfolk_na/conimitella_williamsii/Conimitella_williamsii.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Conimitella_williamsii
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_na/conimitella_williamsii
+samplesfile: /volumes/output/heuchera_rfolk_na/conimitella_williamsii/Conimitella_williamsii.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 12612272128, total allocated 1161822208, free 1118400968, used 43421240, increment 16765192
+Making features
+makeFeatures: max memory 12612272128, total allocated 1161822208, free 1109934248, used 51887960, increment 8466720
+Conimitella_williamsii: 
+Regularization values: linear/quadratic/product: 0.224, categorical: 0.250, threshold: 1.610, hinge: 0.500
+39 samples
+Density: max memory 12612272128, total allocated 1161822208, free 1098480072, used 63342136, increment 11454176
+linearPredictor: max memory 12612272128, total allocated 1161822208, free 1098480072, used 63342136, increment 0
+FeaturedSpace: max memory 12612272128, total allocated 1161822208, free 1098480072, used 63342136, increment 0
+Sequential: max memory 12612272128, total allocated 1161822208, free 1098480072, used 63342136, increment 0
+Initial loss: 9.212138753917563
+Time since start: 7.394
+500: time = 1.767000 loss = 8.126772
+Resulting gain: 1.0853665291847232
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_na/conimitella_williamsii/Conimitella_williamsii.asc
+Time since start: 13.177
+Writing /volumes/output/heuchera_rfolk_na/conimitella_williamsii/plots/Conimitella_williamsii.png
+Time since start: 14.429
+Ending

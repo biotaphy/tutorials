@@ -1,0 +1,57 @@
+Thu Dec 22 15:43:14 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Heuchera_rubescens.csv
+Read samples: max memory 12612272128, total allocated 792723456, free 771603872, used 21119584, increment 21119584
+Extractor: max memory 12612272128, total allocated 792723456, free 761873104, used 30850352, increment 9730768
+Extracting random background and sample data
+Warning: Sample at -120.00981, 38.98403 in Heuchera_rubescens.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -120.00981, 38.98403
+Time since start: 5.382
+65431 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_na/heuchera_rubescens/Heuchera_rubescens.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_na/heuchera_rubescens nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_na/heuchera_rubescens samplesfile=/volumes/output/heuchera_rfolk_na/heuchera_rubescens/Heuchera_rubescens.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Heuchera_rubescens
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_na/heuchera_rubescens
+samplesfile: /volumes/output/heuchera_rfolk_na/heuchera_rubescens/Heuchera_rubescens.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 12612272128, total allocated 1163919360, free 550898832, used 613020528, increment 582170176
+Making features
+makeFeatures: max memory 12612272128, total allocated 1163919360, free 542952328, used 620967032, increment 7946504
+Heuchera_rubescens: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+278 samples
+Density: max memory 12612272128, total allocated 1163919360, free 530893760, used 633025600, increment 12058568
+linearPredictor: max memory 12612272128, total allocated 1163919360, free 529929360, used 633990000, increment 964400
+FeaturedSpace: max memory 12612272128, total allocated 1163919360, free 529929360, used 633990000, increment 0
+Sequential: max memory 12612272128, total allocated 1163919360, free 529929360, used 633990000, increment 0
+Initial loss: 9.233959237574817
+Time since start: 8.445
+500: time = 2.578000 loss = 7.406378
+Resulting gain: 1.8275812639544018
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_na/heuchera_rubescens/Heuchera_rubescens.asc
+Time since start: 14.751
+Writing /volumes/output/heuchera_rfolk_na/heuchera_rubescens/plots/Heuchera_rubescens.png
+Time since start: 16.849
+Ending

@@ -1,0 +1,55 @@
+Thu Dec 22 15:42:49 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Heuchera_sanguinea.csv
+Read samples: max memory 12612272128, total allocated 792723456, free 773115904, used 19607552, increment 19607552
+Extractor: max memory 12612272128, total allocated 792723456, free 765312400, used 27411056, increment 7803504
+Extracting random background and sample data
+Time since start: 5.128
+20467 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_na/heuchera_sanguinea/Heuchera_sanguinea.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_na/heuchera_sanguinea nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_na/heuchera_sanguinea samplesfile=/volumes/output/heuchera_rfolk_na/heuchera_sanguinea/Heuchera_sanguinea.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Heuchera_sanguinea
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_na/heuchera_sanguinea
+samplesfile: /volumes/output/heuchera_rfolk_na/heuchera_sanguinea/Heuchera_sanguinea.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 12612272128, total allocated 966787072, free 925416728, used 41370344, increment 13959288
+Making features
+makeFeatures: max memory 12612272128, total allocated 966787072, free 915981592, used 50805480, increment 9435136
+Heuchera_sanguinea: 
+Regularization values: linear/quadratic/product: 0.153, categorical: 0.250, threshold: 1.360, hinge: 0.500
+64 samples
+Density: max memory 12612272128, total allocated 966787072, free 905495832, used 61291240, increment 10485760
+linearPredictor: max memory 12612272128, total allocated 966787072, free 905495832, used 61291240, increment 0
+FeaturedSpace: max memory 12612272128, total allocated 966787072, free 905495832, used 61291240, increment 0
+Sequential: max memory 12612272128, total allocated 966787072, free 904444168, used 62342904, increment 1051664
+Initial loss: 9.213236175088209
+Time since start: 7.377
+500: time = 1.752000 loss = 7.725532
+Resulting gain: 1.487704387476227
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_na/heuchera_sanguinea/Heuchera_sanguinea.asc
+Time since start: 13.176
+Writing /volumes/output/heuchera_rfolk_na/heuchera_sanguinea/plots/Heuchera_sanguinea.png
+Time since start: 14.527
+Ending

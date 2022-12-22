@@ -1,0 +1,475 @@
+{
+    "grid_filename": "/volumes/data/easy_bake/grid_global_1deg.shp",
+    "layers": {
+        "Heuchera_parishii": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_parishii/Heuchera_parishii.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Mitella_ovalis": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/mitella_ovalis/Mitella_ovalis.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_versicolor": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_versicolor/Heuchera_versicolor.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_inconstans": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_inconstans/Heuchera_inconstans.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Tellima_grandiflora": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/tellima_grandiflora/Tellima_grandiflora.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Mitella_diphylla": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/mitella_diphylla/Mitella_diphylla.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_merriamii": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_merriamii/Heuchera_merriamii.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Mitella_breweri": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/mitella_breweri/Mitella_breweri.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_abramsii": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_abramsii/Heuchera_abramsii.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Lithophragma_parviflorum": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/lithophragma_parviflorum/Lithophragma_parviflorum.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_alba": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_alba/Heuchera_alba.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_lakelae": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_lakelae/Heuchera_lakelae.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_longipetala": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_longipetala/Heuchera_longipetala.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Mitella_nuda": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/mitella_nuda/Mitella_nuda.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_elegans": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_elegans/Heuchera_elegans.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Mitella_pauciflora": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/mitella_pauciflora/Mitella_pauciflora.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Mitella_stylosa": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/mitella_stylosa/Mitella_stylosa.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_hirsutissima": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_hirsutissima/Heuchera_hirsutissima.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_mexicana": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_mexicana/Heuchera_mexicana.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_soltisii": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_soltisii/Heuchera_soltisii.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_novomexicana": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_novomexicana/Heuchera_novomexicana.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Mitella_japonica": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/mitella_japonica/Mitella_japonica.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_pilosissima": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_pilosissima/Heuchera_pilosissima.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_eastwoodiae": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_eastwoodiae/Heuchera_eastwoodiae.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_chlorantha": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_chlorantha/Heuchera_chlorantha.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_brevistaminea": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_brevistaminea/Heuchera_brevistaminea.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_sanguinea": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_sanguinea/Heuchera_sanguinea.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_missouriensis": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_missouriensis/Heuchera_missouriensis.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Conimitella_williamsii": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/conimitella_williamsii/Conimitella_williamsii.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Tiarella_polyphylla": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/tiarella_polyphylla/Tiarella_polyphylla.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Mitella_caulescens": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/mitella_caulescens/Mitella_caulescens.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_richardsonii": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_richardsonii/Heuchera_richardsonii.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_caespitosa": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_caespitosa/Heuchera_caespitosa.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_acutifolia": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_acutifolia/Heuchera_acutifolia.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_pulchella": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_pulchella/Heuchera_pulchella.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Mitella_pentandra": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/mitella_pentandra/Mitella_pentandra.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_wootonii": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_wootonii/Heuchera_wootonii.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_cylindrica": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_cylindrica/Heuchera_cylindrica.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_bracteata": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_bracteata/Heuchera_bracteata.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_longiflora": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_longiflora/Heuchera_longiflora.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_parvifolia": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_parvifolia/Heuchera_parvifolia.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_maxima": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_maxima/Heuchera_maxima.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Bensoniella_oregona": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/bensoniella_oregona/Bensoniella_oregona.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Test": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/test/Test.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Mitella_furusei": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/mitella_furusei/Mitella_furusei.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_wellsiae": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_wellsiae/Heuchera_wellsiae.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_rosendahlii": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_rosendahlii/Heuchera_rosendahlii.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_parviflora": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_parviflora/Heuchera_parviflora.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Mitella_stauropetala": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/mitella_stauropetala/Mitella_stauropetala.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_grossulariifolia": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_grossulariifolia/Heuchera_grossulariifolia.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Elmera_racemosa": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/elmera_racemosa/Elmera_racemosa.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Mitella_acerina": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/mitella_acerina/Mitella_acerina.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_villosa": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_villosa/Heuchera_villosa.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_caroliniana": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_caroliniana/Heuchera_caroliniana.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_americana": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_americana/Heuchera_americana.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_puberula": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_puberula/Heuchera_puberula.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_glomerulata": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_glomerulata/Heuchera_glomerulata.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Peltoboykinia_watanabei": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/peltoboykinia_watanabei/Peltoboykinia_watanabei.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Tolmiea_menziesii": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/tolmiea_menziesii/Tolmiea_menziesii.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_micrantha": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_micrantha/Heuchera_micrantha.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Tolmiea_diplomenziesii": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/tolmiea_diplomenziesii/Tolmiea_diplomenziesii.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_rubescens": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_rubescens/Heuchera_rubescens.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_hallii": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_hallii/Heuchera_hallii.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_woodsiaphila": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_woodsiaphila/Heuchera_woodsiaphila.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_glabra": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_glabra/Heuchera_glabra.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Heuchera_pubescens": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/heuchera_pubescens/Heuchera_pubescens.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        },
+        "Telesonix_jamesii": {
+            "filename": "/volumes/data/easy_bake/heuchera_rfolk_global/telesonix_jamesii/Telesonix_jamesii.asc",
+            "encode_method": "presence_absence",
+            "min_presence": 0.1,
+            "max_presence": 1.0,
+            "min_coverage": 25
+        }
+    },
+    "out_matrix_filename": "/volumes/output/heuchera_rfolk_global.lmm"
+}

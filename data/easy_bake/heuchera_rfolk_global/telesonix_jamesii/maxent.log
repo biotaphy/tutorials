@@ -1,0 +1,81 @@
+Thu Dec 22 16:10:32 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/mask.asc
+Reading samples from Telesonix_jamesii.csv
+Read samples: max memory 12612272128, total allocated 792723456, free 779985856, used 12737600, increment 12737600
+Extractor: max memory 12612272128, total allocated 792723456, free 778650320, used 14073136, increment 1335536
+Extracting random background and sample data
+Time since start: 2.371
+748 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_global/telesonix_jamesii/Telesonix_jamesii.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_global/telesonix_jamesii nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_global/telesonix_jamesii samplesfile=/volumes/output/heuchera_rfolk_global/telesonix_jamesii/Telesonix_jamesii.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Species: Telesonix_jamesii
+Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_global/telesonix_jamesii
+samplesfile: /volumes/output/heuchera_rfolk_global/telesonix_jamesii/Telesonix_jamesii.csv
+environmentallayers: /volumes/env/worldclim1.4
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 12612272128, total allocated 792723456, free 481793048, used 310930408, increment 296857272
+Making features
+makeFeatures: max memory 12612272128, total allocated 792723456, free 475501592, used 317221864, increment 6291456
+Telesonix_jamesii: 
+Regularization values: linear/quadratic/product: 0.714, categorical: 0.429, threshold: 1.880, hinge: 0.500
+12 samples
+Density: max memory 12612272128, total allocated 792723456, free 475501592, used 317221864, increment 0
+linearPredictor: max memory 12612272128, total allocated 792723456, free 475501592, used 317221864, increment 0
+FeaturedSpace: max memory 12612272128, total allocated 792723456, free 475501592, used 317221864, increment 0
+Sequential: max memory 12612272128, total allocated 792723456, free 475501592, used 317221864, increment 0
+Initial loss: 6.617402977974478
+160: time = 0.082000 loss = 6.010381
+Resulting gain: 0.6070218912299348
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_global/telesonix_jamesii/Telesonix_jamesii.asc
+Time since start: 4.418
+Writing /volumes/output/heuchera_rfolk_global/telesonix_jamesii/plots/Telesonix_jamesii.png
+Ending

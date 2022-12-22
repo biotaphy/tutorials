@@ -1,0 +1,93 @@
+Thu Dec 22 15:54:08 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Lithophragma_parviflorum.csv
+Read samples: max memory 12612272128, total allocated 792723456, free 772358864, used 20364592, increment 20364592
+Extractor: max memory 12612272128, total allocated 792723456, free 763970256, used 28753200, increment 8388608
+Extracting random background and sample data
+Warning: Sample at -124.19697, 49.49271 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -124.19697, 49.49271
+Warning: Sample at -123.70467, 49.1486 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.70467, 49.1486
+Warning: Sample at -122.9343189, 49.0830413 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.9343189, 49.0830413
+Warning: Sample at -122.85, 49.05 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -122.85, 49.05
+Warning: Sample at -123.3408, 48.86811 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.3408, 48.86811
+Warning: Sample at -122.88718, 48.76435 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -122.88718, 48.76435
+Warning: Sample at -122.98613, 48.63905 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -122.98613, 48.63905
+Warning: Sample at -123.18525, 48.6249 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -123.18525, 48.6249
+Warning: Sample at -122.97453, 48.61385 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -122.97453, 48.61385
+Warning: Sample at -123.01417, 48.54417 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -123.01417, 48.54417
+Warning: Sample at -122.8539, 48.54536 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.8539, 48.54536
+Warning: Sample at -122.55555, 48.53528 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.55555, 48.53528
+Warning: Sample at -122.55352, 48.53402 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.55352, 48.53402
+Warning: Sample at -122.5469, 48.52037 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.5469, 48.52037
+Warning: Sample at -122.70273, 48.49269 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.70273, 48.49269
+Warning: Sample at -122.69472, 48.49833 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -122.69472, 48.49833
+Warning: Sample at -123.41667, 48.45 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.41667, 48.45
+Warning: Sample at -123.43333, 48.43333 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -123.43333, 48.43333
+Warning: Sample at -122.40861, 47.57639 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -122.40861, 47.57639
+Time since start: 6.309
+127856 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_na/lithophragma_parviflorum/Lithophragma_parviflorum.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_na/lithophragma_parviflorum nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_na/lithophragma_parviflorum samplesfile=/volumes/output/heuchera_rfolk_na/lithophragma_parviflorum/Lithophragma_parviflorum.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Lithophragma_parviflorum
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_na/lithophragma_parviflorum
+samplesfile: /volumes/output/heuchera_rfolk_na/lithophragma_parviflorum/Lithophragma_parviflorum.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 12612272128, total allocated 1142947840, free 689309104, used 453638736, increment 424885536
+Making features
+makeFeatures: max memory 12612272128, total allocated 1142947840, free 680906400, used 462041440, increment 8402704
+Lithophragma_parviflorum: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+231 samples
+Density: max memory 12612272128, total allocated 1142947840, free 668339632, used 474608208, increment 12566768
+linearPredictor: max memory 12612272128, total allocated 1142947840, free 668339632, used 474608208, increment 0
+FeaturedSpace: max memory 12612272128, total allocated 1142947840, free 668339632, used 474608208, increment 0
+Sequential: max memory 12612272128, total allocated 1142947840, free 668339632, used 474608208, increment 0
+Initial loss: 9.231710397712375
+Time since start: 9.966
+500: time = 2.941000 loss = 8.257019
+Resulting gain: 0.9746915260423208
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_na/lithophragma_parviflorum/Lithophragma_parviflorum.asc
+Time since start: 16.373
+Writing /volumes/output/heuchera_rfolk_na/lithophragma_parviflorum/plots/Lithophragma_parviflorum.png
+Time since start: 18.292
+Ending

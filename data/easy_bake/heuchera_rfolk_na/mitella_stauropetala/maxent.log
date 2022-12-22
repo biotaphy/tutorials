@@ -1,0 +1,55 @@
+Thu Dec 22 15:44:49 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Mitella_stauropetala.csv
+Read samples: max memory 12612272128, total allocated 792723456, free 773115904, used 19607552, increment 19607552
+Extractor: max memory 12612272128, total allocated 792723456, free 766067408, used 26656048, increment 7048496
+Extracting random background and sample data
+Time since start: 5.188
+52587 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_na/mitella_stauropetala/Mitella_stauropetala.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_na/mitella_stauropetala nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_na/mitella_stauropetala samplesfile=/volumes/output/heuchera_rfolk_na/mitella_stauropetala/Mitella_stauropetala.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Mitella_stauropetala
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_na/mitella_stauropetala
+samplesfile: /volumes/output/heuchera_rfolk_na/mitella_stauropetala/Mitella_stauropetala.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 12612272128, total allocated 1142947840, free 813303104, used 329644736, increment 302988688
+Making features
+makeFeatures: max memory 12612272128, total allocated 1142947840, free 805393104, used 337554736, increment 7910000
+Mitella_stauropetala: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+125 samples
+Density: max memory 12612272128, total allocated 1142947840, free 793378112, used 349569728, increment 12014992
+linearPredictor: max memory 12612272128, total allocated 1142947840, free 793378112, used 349569728, increment 0
+FeaturedSpace: max memory 12612272128, total allocated 1142947840, free 792331584, used 350616256, increment 1046528
+Sequential: max memory 12612272128, total allocated 1142947840, free 792331584, used 350616256, increment 0
+Initial loss: 9.219795530746937
+Time since start: 8.144
+500: time = 2.393000 loss = 8.090646
+Resulting gain: 1.1291493189626944
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_na/mitella_stauropetala/Mitella_stauropetala.asc
+Time since start: 14.45
+Writing /volumes/output/heuchera_rfolk_na/mitella_stauropetala/plots/Mitella_stauropetala.png
+Time since start: 16.671
+Ending

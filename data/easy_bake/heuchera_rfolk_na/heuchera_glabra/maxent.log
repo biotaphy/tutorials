@@ -1,0 +1,115 @@
+Thu Dec 22 15:43:43 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Heuchera_glabra.csv
+Read samples: max memory 12612272128, total allocated 792723456, free 773115904, used 19607552, increment 19607552
+Extractor: max memory 12612272128, total allocated 792723456, free 765312400, used 27411056, increment 7803504
+Extracting random background and sample data
+Warning: Sample at -146.26, 61.11 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -146.26, 61.11
+Warning: Sample at -149.83, 61.06 in Heuchera_glabra.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -149.83, 61.06
+Warning: Sample at -149.46, 60.96 in Heuchera_glabra.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -149.46, 60.96
+Warning: Sample at -146.18, 60.73 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -146.18, 60.73
+Warning: Sample at -145.75, 60.55 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -145.75, 60.55
+Warning: Sample at -145.86667, 60.5 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -145.86667, 60.5
+Warning: Sample at -146.61, 60.33 in Heuchera_glabra.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -146.61, 60.33
+Warning: Sample at -152.55, 60.21 in Heuchera_glabra.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -152.55, 60.21
+Warning: Sample at -152.58, 60.13 in Heuchera_glabra.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -152.58, 60.13
+Warning: Sample at -144.38, 59.93 in Heuchera_glabra.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -144.38, 59.93
+Warning: Sample at -149.7, 59.86 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -149.7, 59.86
+Warning: Sample at -141.4, 59.8625 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -141.4, 59.8625
+Warning: Sample at -150.53, 59.48 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -150.53, 59.48
+Warning: Sample at -135.41, 59.21 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -135.41, 59.21
+Warning: Sample at -152.66, 58.56 in Heuchera_glabra.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -152.66, 58.56
+Warning: Sample at -134.88, 58.41 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -134.88, 58.41
+Warning: Sample at -152.43, 58.36 in Heuchera_glabra.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -152.43, 58.36
+Warning: Sample at -152.53, 58.11 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -152.53, 58.11
+Warning: Sample at -153.88, 57.7 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -153.88, 57.7
+Warning: Sample at -133.18, 57.61 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -133.18, 57.61
+Warning: Sample at -157.03, 56.78 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -157.03, 56.78
+Warning: Sample at -132.66, 56.79 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -132.66, 56.79
+Warning: Sample at -134.38, 56.71 in Heuchera_glabra.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -134.38, 56.71
+Warning: Sample at -132.41, 56.58 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -132.41, 56.58
+Warning: Sample at -132.45, 56.53 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -132.45, 56.53
+Warning: Sample at -134.32, 55.92 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -134.32, 55.92
+Warning: Sample at -131.65, 55.33 in Heuchera_glabra.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -131.65, 55.33
+Warning: Sample at -131.51, 55.25 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -131.51, 55.25
+Warning: Sample at -159.55, 55.1 in Heuchera_glabra.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -159.55, 55.1
+Warning: Sample at -130.317, 54.317 in Heuchera_glabra.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -130.317, 54.317
+Time since start: 6.048
+111056 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_na/heuchera_glabra/Heuchera_glabra.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_na/heuchera_glabra nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_na/heuchera_glabra samplesfile=/volumes/output/heuchera_rfolk_na/heuchera_glabra/Heuchera_glabra.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Heuchera_glabra
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_na/heuchera_glabra
+samplesfile: /volumes/output/heuchera_rfolk_na/heuchera_glabra/Heuchera_glabra.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 12612272128, total allocated 958398464, free 672689776, used 285708688, increment 258297632
+Making features
+makeFeatures: max memory 12612272128, total allocated 958398464, free 665657760, used 292740704, increment 7032016
+Heuchera_glabra: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+151 samples
+Density: max memory 12612272128, total allocated 958398464, free 652766832, used 305631632, increment 12890928
+linearPredictor: max memory 12612272128, total allocated 958398464, free 652766832, used 305631632, increment 0
+FeaturedSpace: max memory 12612272128, total allocated 958398464, free 652766832, used 305631632, increment 0
+Sequential: max memory 12612272128, total allocated 958398464, free 652766832, used 305631632, increment 0
+Initial loss: 9.224243277145174
+Time since start: 9.874
+500: time = 3.181000 loss = 8.363250
+Resulting gain: 0.8609936587788578
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_na/heuchera_glabra/Heuchera_glabra.asc
+Time since start: 16.215
+Writing /volumes/output/heuchera_rfolk_na/heuchera_glabra/plots/Heuchera_glabra.png
+Time since start: 18.241
+Ending

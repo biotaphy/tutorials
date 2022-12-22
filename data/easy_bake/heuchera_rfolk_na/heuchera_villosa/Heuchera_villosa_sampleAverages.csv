@@ -1,0 +1,14 @@
+Predictor variable,Categorical,Sample average
+BIOCLIM_1,false,124.57954545454545
+BIOCLIM_12,false,1386.9772727272727
+BIOCLIM_17,false,295.5113636363636
+BIOCLIM_7,false,339.22727272727275
+GTOPO30_ELEVATION,false,565.1022727272727
+GTOPO30_SLOPE_reduced,false,3.034090909090909
+ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced,false,12.272727272727273
+ISRICSOILGRIDS_new_average_phx10percent_reduced,false,52.19318181818182
+ISRICSOILGRIDS_new_average_sandpercent_reduced,false,35.36363636363637
+ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced,false,37.02272727272727
+LandCover_1_Needleleaf,false,7.875
+LandCover_6_Herbaceous,false,2.2386363636363638
+mask,true,50.0

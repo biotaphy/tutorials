@@ -68,6 +68,8 @@ exit /b 0
     if %CMD% == build_grid ( call:execute_process )
     if %CMD% == encode_layers ( call:execute_process )
     if %CMD% == calculate_pam_stats ( call:execute_process )
+    if %CMD% == rasterize_point_heatmap ( call:execute_process )
+    if %CMD% == rasterize_site_stats ( call:execute_process )
     if %CMD% == convert_lmm_to_csv ( call:execute_process )
     if %CMD% == convert_lmm_to_geojson ( call:execute_process )
 exit /b 0

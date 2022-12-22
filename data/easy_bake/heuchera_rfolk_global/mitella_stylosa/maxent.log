@@ -1,0 +1,82 @@
+Thu Dec 22 16:05:17 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/alt.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio1.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio10.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio11.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio12.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio13.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio14.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio15.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio16.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio17.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio18.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio19.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio2.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio3.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio4.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio5.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio6.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio7.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio8.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/bio9.mxe
+Checking header of /volumes/env/worldclim1.4/mask.asc
+Reading samples from Mitella_stylosa.csv
+Read samples: max memory 12612272128, total allocated 792723456, free 779985864, used 12737592, increment 12737592
+Extractor: max memory 12612272128, total allocated 792723456, free 778643704, used 14079752, increment 1342160
+Extracting random background and sample data
+Time since start: 2.518
+594 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_global/mitella_stylosa/Mitella_stylosa.csv -e /volumes/env/worldclim1.4 -o /volumes/output/heuchera_rfolk_global/mitella_stylosa nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_global/mitella_stylosa samplesfile=/volumes/output/heuchera_rfolk_global/mitella_stylosa/Mitella_stylosa.csv environmentallayers=/volumes/env/worldclim1.4 nowarnings autorun novisible nocache -t mask
+Species: Mitella_stylosa
+Layers: alt alt bio1 bio1 bio10 bio10 bio11 bio11 bio12 bio12 bio13 bio13 bio14 bio14 bio15 bio15 bio16 bio16 bio17 bio17 bio18 bio18 bio19 bio19 bio2 bio2 bio3 bio3 bio4 bio4 bio5 bio5 bio6 bio6 bio7 bio7 bio8 bio8 bio9 bio9 mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_global/mitella_stylosa
+samplesfile: /volumes/output/heuchera_rfolk_global/mitella_stylosa/Mitella_stylosa.csv
+environmentallayers: /volumes/env/worldclim1.4
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 12612272128, total allocated 792723456, free 481740360, used 310983096, increment 296903344
+Making features
+makeFeatures: max memory 12612272128, total allocated 792723456, free 476492712, used 316230744, increment 5247648
+Mitella_stylosa: 
+Regularization values: linear/quadratic/product: 0.199, categorical: 0.250, threshold: 1.520, hinge: 0.500
+48 samples
+Density: max memory 12612272128, total allocated 792723456, free 472301128, used 320422328, increment 4191584
+linearPredictor: max memory 12612272128, total allocated 792723456, free 472301128, used 320422328, increment 0
+FeaturedSpace: max memory 12612272128, total allocated 792723456, free 472301128, used 320422328, increment 0
+Sequential: max memory 12612272128, total allocated 792723456, free 472301128, used 320422328, increment 0
+Initial loss: 6.386879319362645
+Time since start: 3.938
+480: time = 1.193000 loss = 5.393289
+Resulting gain: 0.9935900510935323
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_global/mitella_stylosa/Mitella_stylosa.asc
+Time since start: 5.653
+Writing /volumes/output/heuchera_rfolk_global/mitella_stylosa/plots/Mitella_stylosa.png
+Ending

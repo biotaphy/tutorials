@@ -1,0 +1,12 @@
+{
+    "log_filename": "/volumes/output/encode_layers_global.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/encode_layers_global.rpt",
+    "encode_method": "presence_absence",
+    "min_coverage": 25,
+    "min_presence": 0.1,
+    "max_presence": 1.0,
+    "grid_filename": "/volumes/data/easy_bake/grid_global_1deg.shp",
+    "out_matrix_filename": "/volumes/output/heuchera_rfolk_global.lmm",
+    "layer_file_pattern": "/volumes/data/easy_bake/heuchera_rfolk_global/*/*.asc"
+}
