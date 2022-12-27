@@ -263,14 +263,17 @@ time_stamp () {
 # -----------------------------------------------------------
 ####### Main #######
 COMMANDS=(
+# No command-line parameters
 "build_all"  "cleanup"  "cleanup_all"
 "list_commands" "list_outputs"  "list_volumes"
-"wrangle_species_list"  "split_occurrence_data"   "wrangle_occurrences"
-"wrangle_matrix"  "wrangle_tree"
-"create_sdm"
-"build_grid"  "encode_layers" "calculate_pam_stats"
-"rasterize_point_heatmap"  "rasterize_site_stats"
+# Need configuration file parameter
+"build_grid"  "calculate_pam_stats"
 "convert_lmm_to_geojson"  "convert_lmm_to_csv"
+"create_sdm"    "encode_layers"
+"randomize_pam"
+"rasterize_point_heatmap"  "rasterize_site_stats"
+"split_occurrence_data"
+"wrangle_matrix"   "wrangle_occurrences"  "wrangle_species_list"   "wrangle_tree"
 )
 
 CMD=$1

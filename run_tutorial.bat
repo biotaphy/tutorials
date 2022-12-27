@@ -51,6 +51,7 @@ exit /b 0
 :: -----------------------------------------------------------
 :run_command
     call:header run_command
+    # Docker commands with no command-line parameters
     if %CMD% == cleanup ( call:cleanup )
     if %CMD% == cleanup_all ( call:cleanup_all )
     if %CMD% == open ( call:open_container_shell )
@@ -58,20 +59,23 @@ exit /b 0
     if %CMD% == list_outputs ( call:list_output_volume_contents )
     if %CMD% == list_volumes ( call:list_all_volume_contents )
     if %CMD% == build_all ( call:build_all )
-    :: Biotaphy tools
-    if %CMD% == create_sdm ( call:execute_process )
-    if %CMD% == wrangle_species_list ( call:execute_process )
-    if %CMD% == wrangle_occurrences ( call:execute_process )
-    if %CMD% == split_occurrence_data ( call:execute_process )
-    if %CMD% == wrangle_matrix ( call:execute_process )
-    if %CMD% == wrangle_tree ( call:execute_process )
+    :: Biotaphy tools needing config_file parameter
     if %CMD% == build_grid ( call:execute_process )
-    if %CMD% == encode_layers ( call:execute_process )
     if %CMD% == calculate_pam_stats ( call:execute_process )
     if %CMD% == rasterize_point_heatmap ( call:execute_process )
     if %CMD% == rasterize_site_stats ( call:execute_process )
     if %CMD% == convert_lmm_to_csv ( call:execute_process )
     if %CMD% == convert_lmm_to_geojson ( call:execute_process )
+    if %CMD% == create_sdm ( call:execute_process )
+    if %CMD% == encode_layers ( call:execute_process )
+    if %CMD% == randomize_pam ( call:execute_process )
+    if %CMD% == rasterize_point_heatmap ( call:execute_process )
+    if %CMD% == rasterize_site_stats ( call:execute_process )
+    if %CMD% == split_occurrence_data ( call:execute_process )
+    if %CMD% == wrangle_matrix ( call:execute_process )
+    if %CMD% == wrangle_occurrences ( call:execute_process )
+    if %CMD% == wrangle_species_list ( call:execute_process )
+    if %CMD% == wrangle_tree ( call:execute_process )
 exit /b 0
 
 :: -----------------------------------------------------------
