@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial 10: Create Visualizations for Outputs &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Webinar 1: Tutorial Overview" href="w1_overview.html" />
+    <link rel="prev" title="Tutorial Preparation" href="../pages/installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Biotaphy Tutorials
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial 10: Create Visualizations for Outputs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rasterize-a-matrix-containing-site-statistics">Rasterize a matrix containing site statistics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-build-grid-command">Run build_grid command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolving Nomenclature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling (SDM)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w8_build_pam.html">Webinar 8: Introducing Presence-Absence Matrices (PAMs)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w9_phylo_diversity.html">Webinar 9: Integrating Phylogenies with Species and Biogeographic Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_wrangle_species_list.html">Species List: Wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_wrangle_tree.html">Trees: Data and Wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html">Geospatial Data Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/spatial_data.html#sample-geospatial-data-resources">Sample Geospatial Data resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pages/configure_inputs.html">User Data and Parameters</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Biotaphy Tutorials</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Tutorial 10: Create Visualizations for Outputs</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tutorial/w10_visualizations.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tutorial-10-create-visualizations-for-outputs">
+<h1>Tutorial 10: Create Visualizations for Outputs<a class="headerlink" href="#tutorial-10-create-visualizations-for-outputs" title="Permalink to this heading"></a></h1>
+<p>Site statistics created in Webinars 8 and 9 are saved into one or more matrix files with
+sites along the 0 axis (rows).  Axis headers for the 0 axis contain the x and y
+coordinates for the centroid of each grid cell.  The 1 axis contains a different
+statistic in every column.</p>
+<p>These</p>
+<blockquote>
+<div><p>“covariance_stats”, “site_matrix_stats”, “site_tree_stats”,
+“site_tree_distance_matrix_stats”, “site_pam_dist_mtx_stats”]</p>
+</div></blockquote>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<p>Read <a class="reference external" href="../tutorial/w1_overview">Tutorial Overview</a> for an overview of how all
+tutorials work.</p>
+</section>
+<section id="rasterize-a-matrix-containing-site-statistics">
+<h2>Rasterize a matrix containing site statistics<a class="headerlink" href="#rasterize-a-matrix-containing-site-statistics" title="Permalink to this heading"></a></h2>
+<section id="input-script-parameter-file">
+<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
+<p>A JSON parameter file is required for this command.  The tutorial parameter file
+is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/build_grid_1deg_global.json">rasterize_site_stats.json</a>.
+These are the required and optional parameters:</p>
+<ul>
+<li><p>Required:</p>
+<ul class="simple">
+<li><p><strong>matrix_filename</strong>: The relative or absolute path for the input matrix.</p></li>
+<li><p><strong>raster_filename</strong>: The relative or absolute path for the output geotiff.</p></li>
+</ul>
+</li>
+<li><p>Optional
+* <strong>statistic</strong>: Optional single statistic to rasterize.  If none is provided, each</p>
+<blockquote>
+<div><p>statistic in the matrix will be in a separate band.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
+<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
+<li><p><strong>report_filename</strong>: output filename with process summary</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="run-build-grid-command">
+<h3>Run build_grid command<a class="headerlink" href="#run-build-grid-command" title="Permalink to this heading"></a></h3>
+<p>Initiate the process with the following:</p>
+<p>For Linux/Mac systems:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">rasterize_site_stats</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">rasterize_site_stats</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+<p>For Windows systems:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">rasterize_site_stats</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">rasterize_site_stats</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+</section>
+<section id="output">
+<h3>Output<a class="headerlink" href="#output" title="Permalink to this heading"></a></h3>
+<p>Outputs are configured in the script parameter file, and may include:</p>
+<ol class="arabic simple">
+<li><p>If “report_filename” is specified in the script parameter file, a summary of the
+grid will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid_1deg_global.rpt">build_grid_1deg_global.rpt</a>.</p></li>
+<li><p>If “log_filename” is specified in the script parameter file, that will be created,
+like , like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid_1deg_global.log">build_grid_1deg_global</a>.</p></li>
+<li><p>If “log_console” is specified in the script parameter file, logs will be written to the
+command prompt during execution.</p></li>
+<li><p>A geotiff format raster file with one or more bands, one for each statistic desired., such as the site_stats.lmm file in the
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/">input directory</a> .</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../pages/installation.html" class="btn btn-neutral float-left" title="Tutorial Preparation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="w1_overview.html" class="btn btn-neutral float-right" title="Webinar 1: Tutorial Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Biotaphy Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

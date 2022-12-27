@@ -43,6 +43,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w10_visualizations.html">Tutorial 10: Create Visualizations for Outputs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolving Nomenclature</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
@@ -130,7 +131,7 @@ so the output will be data merged from both data sources, and split by species n
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The parameter file in our
-example is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/split_gbif.json">split_gbif.json</a>.
+first example is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/split_gbif.json">split_gbif.json</a>.
 This one splits GBIF data, which already contains accepted names, so we can skip name
 resolution.</p>
 <p>The parameter file in our second
@@ -185,7 +186,7 @@ More information on file format, available wrangler types, and the required and/
 optional parameters for each are in the <strong>Occurrence Wrangler Types</strong> section
 of <a class="reference external" href="data_wrangle_occurrence">data_wrangle_occurrence</a>.  The file is specified in the
 Script parameter file described above.</p>
-<p>An example wrangler configuration file <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/occ_resolve.json">occ_resolve.json</a>
+<p>An example wrangler configuration file <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/split_resolve.json">split_resolve.json</a>
 resolves names with GBIF before grouping the data by name.</p>
 <p>If more than one dataset is being processed, it is logical to apply the same wranglers
 to each.</p>
@@ -220,7 +221,7 @@ computer, then update the repository.</p>
 manipulations by each wrangler will be written to this file.
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/split_resolve.rpt">split_resolve.rpt</a></p></li>
 <li><p>A “log_filename” named in the script parameter file, that will be created.
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/split_resolve.;pg">split_resolve.log</a></p></li>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/split_resolve.log">split_resolve.log</a></p></li>
 <li><dl class="simple">
 <dt>A “log_console” named in the script parameter file, logs will be written to the</dt><dd><p>command prompt during execution.</p>
 </dd>
@@ -228,9 +229,7 @@ manipulations by each wrangler will be written to this file.
 </li>
 <li><p>A directory, named in the out_dir parameter, of output CSV files, one per species (or
 other grouping field).  The basename of each CSV file will be named by the value in
-the grouping field.  The tutorial example outputs for this command have been moved to
-the`data/input` directory, since we will use them in a later exercise.
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/split_resolve">split_resolve</a></p></li>
+the grouping field.  <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/split_resolve">split_resolve</a></p></li>
 </ol>
 <p>The process also produces outputs according to the wrangler configuration file:</p>
 <ol class="arabic simple">

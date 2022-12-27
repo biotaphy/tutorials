@@ -43,6 +43,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w10_visualizations.html">Tutorial 10: Create Visualizations for Outputs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolving Nomenclature</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
@@ -144,7 +145,7 @@ the species presence or absence in each site.  In the matrix, this is considered
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
-is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/build_grid.json">build_grid.json</a>.
+is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/build_grid_1deg_global.json">build_grid_1deg_global.json</a>.
 These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -181,13 +182,15 @@ These are the required and optional parameters:</p>
 <p>Outputs are configured in the script parameter file, and may include:</p>
 <ol class="arabic simple">
 <li><p>If “report_filename” is specified in the script parameter file, a summary of the
-grid will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid.rpt">build_grid.rpt</a>.</p></li>
+grid will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid_1deg_global.rpt">build_grid_1deg_global.rpt</a>.</p></li>
 <li><p>If “log_filename” is specified in the script parameter file, that will be created,
-like , like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid.log">build_grid.log</a>.</p></li>
+like , like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid_1deg_global.log">build_grid_1deg_global</a>.</p></li>
 <li><p>If “log_console” is specified in the script parameter file, logs will be written to the
 command prompt during execution.</p></li>
 <li><p>A shapefile format grid, conforming to the arguments specified in the configuration JSON file,
-like the grid_na_5deg shapefile in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/">easy_bake directory</a>.</p></li>
+like the grid_1deg_global shapefile. It was moved from the output to the
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/">input directory</a> because we will
+use it as an input in Step 2.</p></li>
 </ol>
 </section>
 </section>
@@ -207,7 +210,7 @@ different parameters and the same grid), then aggregate the matrices in another 
 <section id="id1">
 <h3>Input: Script parameter file<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <p>An example json file for running the encode_layers tutorial is at
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/encode_layers.json">encode_layers.json</a>.
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/encode_layers_global.json">encode_layers_global.json</a>.
 These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -268,13 +271,14 @@ values, a common occurrence in most datasets, and may be safely ignored.</p>
 <p>Most outputs are configured in the script parameter file, and may include:</p>
 <ol class="arabic simple">
 <li><p>If “report_filename” is specified in the script parameter file, a summary of the
-encoded layers will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers.rpt">encode_layers.rpt</a>.</p></li>
+encoded layers will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers_1deg_global.rpt">encode_layers_1deg_global.rpt</a>.</p></li>
 <li><p>If “log_filename” is specified in the script parameter file, that will be created,
-like , like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers.log">encode_layers.log</a>.</p></li>
+like , like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers_1deg_global.log">encode_layers_1deg_global.log</a>.</p></li>
 <li><p>If “log_console” is specified in the script parameter file, logs will be written to the
 command prompt during execution.</p></li>
 <li><p>A matrix containing one column to the arguments specified in the configuration JSON file,
-like the grid_na_5deg shapefile in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/">easy_bake directory</a>.</p></li>
+like the heuchera_rfolk_1deg_global.lmm matrix. The file is in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input/">input directory</a> because we will use
+it as input in Step 3.</p></li>
 </ol>
 </section>
 </section>
@@ -332,7 +336,8 @@ calculations will be written to this file, like <a class="reference external" hr
 <li><p>If “log_console” is specified in the script parameter file, logs will be written to the
 command prompt during execution.</p></li>
 </ol>
-<p>Examples of output statistics are in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake">easy_bake directory</a>.</p>
+<p>Examples of output statistics are in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input">input directory</a> because they will be
+used as input for visualizations later.</p>
 <ol class="arabic simple">
 <li><p>One or more “covariance_matrix” files.  Each covariance statistic produces a matrix
 and it is written to the covariance_matrix filename, where the statistic name is

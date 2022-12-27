@@ -43,6 +43,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w10_visualizations.html">Tutorial 10: Create Visualizations for Outputs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolving Nomenclature</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
@@ -142,7 +143,7 @@ scales, at global and regional extents.  This file can be in ASCII or GeoTiff fo
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  A test tutorial parameter file is:
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/create_sdm.json">create_sdm.json</a>,</p>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/create_sdm_global.json">create_sdm_global.json</a>,</p>
 <p>These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -206,16 +207,16 @@ used for modeling to.  If the data contains less than the minimum, the
 <p>Most outputs are configured in the script parameter file, and may include:</p>
 <ol class="arabic simple">
 <li><p>If “report_filename” is specified in the script parameter file, a summary of SDM results
-for each species, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/create_sdm.rpt">create_sdm.rpt</a></p></li>
+for each species, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/create_sdm_global.rpt">create_sdm_global.rpt</a></p></li>
 <li><p>If “log_filename” is specified in the script parameter file, that will be created, , like
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/create_sdm.log">create_sdm.log</a></p></li>
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/create_sdm_global.log">create_sdm_global.log</a></p></li>
 <li><p>If “log_console” is specified in the script parameter file, logs will be written to the
 command prompt during execution.</p></li>
 <li><p>A directory named in the out_dir parameter, containing a subdirectory for each
 input occurrence data file.  Each subdirectory will be named by the value in
 the grouping field and contain a predicted distribution raster in ASCII format.
 Occurrence data that were modeled with Maxent will also contain Maxent outputs.
-Sample outputs from the above command are in the directory <a class="reference external" href="https://github.com/biotaphy/tutorials/tree/main/data/input/heuchera_rfolk_sdm">heuchera_rfolk_sdm</a>.
+Sample outputs from the above command are in the directory <a class="reference external" href="https://github.com/biotaphy/tutorials/tree/main/data/input/heuchera_rfolk_5min_global">heuchera_rfolk_5min_global</a>.
 The data are in the <cite>input</cite> directory instead of <cite>easy_bake</cite> because we will use these
 data as input to <cite>encode_layers</cite> which builds a Presence-Absence Matrix, described
 in <a class="reference external" href="w8_build_pam">Webinar 8</a>.</p></li>

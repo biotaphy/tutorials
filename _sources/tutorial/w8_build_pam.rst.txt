@@ -44,8 +44,8 @@ Input: Script parameter file
 ******************************************
 
 A JSON parameter file is required for this command.  The tutorial parameter file
-is `build_grid.json
-<https://github.com/biotaphy/tutorials/blob/main/data/config/build_grid.json>`_.
+is `build_grid_1deg_global.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/build_grid_1deg_global.json>`_.
 These are the required and optional parameters:
 
 * Required:
@@ -87,16 +87,18 @@ Output
 Outputs are configured in the script parameter file, and may include:
 
 1. If "report_filename" is specified in the script parameter file, a summary of the
-   grid will be written to this file, like `build_grid.rpt
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid.rpt>`_.
+   grid will be written to this file, like `build_grid_1deg_global.rpt
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid_1deg_global.rpt>`_.
 2. If "log_filename" is specified in the script parameter file, that will be created,
-   like , like `build_grid.log
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid.log>`_.
+   like , like `build_grid_1deg_global
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/build_grid_1deg_global.log>`_.
 3. If "log_console" is specified in the script parameter file, logs will be written to the
    command prompt during execution.
 4. A shapefile format grid, conforming to the arguments specified in the configuration JSON file,
-   like the grid_na_5deg shapefile in the `easy_bake directory
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/>`_.
+   like the grid_1deg_global shapefile. It was moved from the output to the
+   `input directory
+   <https://github.com/biotaphy/tutorials/blob/main/data/input/>`_ because we will
+   use it as an input in Step 2.
 
 --------------------------------
 Step 2: Encode species layers
@@ -119,8 +121,8 @@ Input: Script parameter file
 ******************************************
 
 An example json file for running the encode_layers tutorial is at
-`encode_layers.json
-<https://github.com/biotaphy/tutorials/blob/main/data/config/encode_layers.json>`_.
+`encode_layers_global.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/encode_layers_global.json>`_.
 These are the required and optional parameters:
 
 * Required:
@@ -185,16 +187,17 @@ Output
 Most outputs are configured in the script parameter file, and may include:
 
 1. If "report_filename" is specified in the script parameter file, a summary of the
-   encoded layers will be written to this file, like `encode_layers.rpt
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers.rpt>`_.
+   encoded layers will be written to this file, like `encode_layers_1deg_global.rpt
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers_1deg_global.rpt>`_.
 2. If "log_filename" is specified in the script parameter file, that will be created,
-   like , like `encode_layers.log
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers.log>`_.
+   like , like `encode_layers_1deg_global.log
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers_1deg_global.log>`_.
 3. If "log_console" is specified in the script parameter file, logs will be written to the
    command prompt during execution.
 4. A matrix containing one column to the arguments specified in the configuration JSON file,
-   like the grid_na_5deg shapefile in the `easy_bake directory
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/>`_.
+   like the heuchera_rfolk_1deg_global.lmm matrix. The file is in the `input directory
+   <https://github.com/biotaphy/tutorials/blob/main/data/input/>`_ because we will use
+   it as input in Step 3.
 
 --------------------------------
 Step 3: Calculate statistics for a PAM
@@ -260,8 +263,9 @@ output files specified in the command configuration file.  Outputs may include:
 3. If "log_console" is specified in the script parameter file, logs will be written to the
    command prompt during execution.
 
-Examples of output statistics are in the `easy_bake directory
-<https://github.com/biotaphy/tutorials/blob/main/data/easy_bake>`_.
+Examples of output statistics are in the `input directory
+<https://github.com/biotaphy/tutorials/blob/main/data/input>`_ because they will be
+used as input for visualizations later.
 
 1. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
    and it is written to the covariance_matrix filename, where the statistic name is 

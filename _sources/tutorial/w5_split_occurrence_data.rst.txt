@@ -38,7 +38,7 @@ Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A JSON parameter file is required for this command.  The parameter file in our
-example is `split_gbif.json
+first example is `split_gbif.json
 <https://github.com/biotaphy/tutorials/blob/main/data/config/split_gbif.json>`_.
 This one splits GBIF data, which already contains accepted names, so we can skip name
 resolution.
@@ -93,8 +93,8 @@ optional parameters for each are in the **Occurrence Wrangler Types** section
 of `data_wrangle_occurrence <data_wrangle_occurrence>`_.  The file is specified in the
 Script parameter file described above.
 
-An example wrangler configuration file `occ_resolve.json
-<https://github.com/biotaphy/tutorials/blob/main/data/wranglers/occ_resolve.json>`_
+An example wrangler configuration file `split_resolve.json
+<https://github.com/biotaphy/tutorials/blob/main/data/wranglers/split_resolve.json>`_
 resolves names with GBIF before grouping the data by name.
 
 If more than one dataset is being processed, it is logical to apply the same wranglers
@@ -140,15 +140,13 @@ Most outputs are configured in the script parameter file, and may include:
    <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/split_resolve.rpt>`_
 2. A "log_filename" named in the script parameter file, that will be created. 
    `split_resolve.log
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/split_resolve.;pg>`_
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/split_resolve.log>`_
 3. A "log_console" named in the script parameter file, logs will be written to the
     command prompt during execution.
 4. A directory, named in the out_dir parameter, of output CSV files, one per species (or 
    other grouping field).  The basename of each CSV file will be named by the value in 
-   the grouping field.  The tutorial example outputs for this command have been moved to
-   the`data/input` directory, since we will use them in a later exercise.
-   `split_resolve
-   <https://github.com/biotaphy/tutorials/blob/main/data/input/split_resolve>`_
+   the grouping field.  `split_resolve
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/split_resolve>`_
 
 The process also produces outputs according to the wrangler configuration file:
 

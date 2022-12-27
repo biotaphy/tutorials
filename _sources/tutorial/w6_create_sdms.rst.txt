@@ -55,8 +55,8 @@ Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A JSON parameter file is required for this command.  A test tutorial parameter file is: 
-`create_sdm.json
-<https://github.com/biotaphy/tutorials/blob/main/data/config/create_sdm.json>`_,
+`create_sdm_global.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/create_sdm_global.json>`_,
 
 These are the required and optional parameters:
 
@@ -129,19 +129,19 @@ Output
 Most outputs are configured in the script parameter file, and may include:
 
 1. If "report_filename" is specified in the script parameter file, a summary of SDM results
-   for each species, like `create_sdm.rpt
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/create_sdm.rpt>`_
+   for each species, like `create_sdm_global.rpt
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/create_sdm_global.rpt>`_
 2. If "log_filename" is specified in the script parameter file, that will be created, , like
-   `create_sdm.log
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/create_sdm.log>`_
+   `create_sdm_global.log
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/create_sdm_global.log>`_
 3. If "log_console" is specified in the script parameter file, logs will be written to the
    command prompt during execution.
 4. A directory named in the out_dir parameter, containing a subdirectory for each 
    input occurrence data file.  Each subdirectory will be named by the value in 
    the grouping field and contain a predicted distribution raster in ASCII format.  
    Occurrence data that were modeled with Maxent will also contain Maxent outputs.
-   Sample outputs from the above command are in the directory `heuchera_rfolk_sdm
-   <https://github.com/biotaphy/tutorials/tree/main/data/input/heuchera_rfolk_sdm>`_.
+   Sample outputs from the above command are in the directory `heuchera_rfolk_5min_global
+   <https://github.com/biotaphy/tutorials/tree/main/data/input/heuchera_rfolk_5min_global>`_.
    The data are in the `input` directory instead of `easy_bake` because we will use these
    data as input to `encode_layers` which builds a Presence-Absence Matrix, described
    in `Webinar 8 <w8_build_pam>`_.
