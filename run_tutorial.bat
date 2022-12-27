@@ -62,6 +62,8 @@ exit /b 0
     :: Biotaphy tools needing config_file parameter
     if %CMD% == build_grid ( call:execute_process )
     if %CMD% == calculate_pam_stats ( call:execute_process )
+    if %CMD% == rasterize_point_heatmap ( call:execute_process )
+    if %CMD% == rasterize_site_stats ( call:execute_process )
     if %CMD% == convert_lmm_to_csv ( call:execute_process )
     if %CMD% == convert_lmm_to_geojson ( call:execute_process )
     if %CMD% == create_sdm ( call:execute_process )
