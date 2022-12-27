@@ -1,0 +1,10 @@
+(mask=50.0), 0.0, 0.0, 1.0
+ISRICSOILGRIDS_new_average_phx10percent_reduced, 0.06328483576912174, 40.0, 71.0
+`ISRICSOILGRIDS_new_average_phx10percent_reduced, -1.3801267545841136, 40.0, 50.5
+`ISRICSOILGRIDS_new_average_phx10percent_reduced, -0.5643553234398765, 40.0, 53.5
+'ISRICSOILGRIDS_new_average_phx10percent_reduced, 1.081017178660601, 66.5, 71.0
+`ISRICSOILGRIDS_new_average_phx10percent_reduced, -0.02567423503074628, 40.0, 55.5
+linearPredictorNormalizer, 1.1443020144297227
+densityNormalizer, 3093.2356446965473
+numBackgroundPoints, 10000
+entropy, 9.198580143645078

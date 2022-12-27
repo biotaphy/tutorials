@@ -1,0 +1,42 @@
+Tue Dec 27 14:32:20 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_mexicana.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
+Extracting random background and sample data
+Time since start: 1.032
+11027 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_mexicana/Heuchera_mexicana.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/heuchera_mexicana nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/heuchera_mexicana samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_mexicana/Heuchera_mexicana.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_mexicana
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/heuchera_mexicana
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/heuchera_mexicana/Heuchera_mexicana.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 919758088, used 1198365432, increment 1178755832
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 917658888, used 1200464632, increment 2099200
+Heuchera_mexicana: 
+Regularization values: linear/quadratic/product: 0.116, categorical: 0.250, threshold: 1.230, hinge: 0.500
+77 samples
+Density: max memory 32178700288, total allocated 2118123520, free 917658888, used 1200464632, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 917658888, used 1200464632, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 917658888, used 1200464632, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 917658888, used 1200464632, increment 0
+Initial loss: 9.210340371976184
+120: time = 0.117000 loss = 8.836737
+Resulting gain: 0.3736035765816812
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/heuchera_mexicana/Heuchera_mexicana.asc
+Time since start: 3.009
+Writing /volumes/output/heuchera_rfolk_5min_global/heuchera_mexicana/plots/Heuchera_mexicana.png
+Ending

@@ -1,0 +1,50 @@
+Tue Dec 27 14:33:18 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_americana.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 19609600
+Extractor: max memory 32178700288, total allocated 2118123520, free 2094319616, used 23803904, increment 4194304
+Extracting random background and sample data
+Warning: Sample at -82.767, 42.017 in Heuchera_americana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -82.767, 42.017
+Warning: Sample at -82.617, 41.8 in Heuchera_americana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -82.617, 41.8
+Warning: Sample at -73.20472, 41.16694 in Heuchera_americana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -73.20472, 41.16694
+Warning: Sample at -80.4347, 33.4742 in Heuchera_americana.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -80.4347, 33.4742
+Time since start: 1.035
+24809 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_americana/Heuchera_americana.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/heuchera_americana nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/heuchera_americana samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_americana/Heuchera_americana.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_americana
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/heuchera_americana
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/heuchera_americana/Heuchera_americana.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 911224888, used 1206898632, increment 1183094728
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 911142824, used 1206980696, increment 82064
+Heuchera_americana: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+350 samples
+Density: max memory 32178700288, total allocated 2118123520, free 909045672, used 1209077848, increment 2097152
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 909045672, used 1209077848, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 909045672, used 1209077848, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 909045672, used 1209077848, increment 0
+Initial loss: 9.210340371976184
+80: time = 0.098000 loss = 9.198560
+Resulting gain: 0.01178023074633927
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/heuchera_americana/Heuchera_americana.asc
+Time since start: 2.945
+Writing /volumes/output/heuchera_rfolk_5min_global/heuchera_americana/plots/Heuchera_americana.png
+Ending

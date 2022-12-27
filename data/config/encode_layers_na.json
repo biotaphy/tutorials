@@ -1,0 +1,12 @@
+{
+    "log_filename": "/volumes/output/encode_layers_1deg_na.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/encode_layers_1deg_na.rpt",
+    "encode_method": "presence_absence",
+    "min_coverage": 25,
+    "min_presence": 0.1,
+    "max_presence": 1.0,
+    "grid_filename": "/volumes/data/input/grid_1deg_na.shp",
+    "out_matrix_filename": "/volumes/output/heuchera_rfolk_1deg_na.lmm",
+    "layer_file_pattern": "/volumes/data/input/heuchera_rfolk_2.5min_na/*/*.asc"
+}

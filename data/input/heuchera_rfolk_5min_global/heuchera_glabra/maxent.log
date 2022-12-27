@@ -1,0 +1,62 @@
+Tue Dec 27 14:31:44 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_glabra.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
+Extracting random background and sample data
+Warning: Sample at -146.18, 60.73 in Heuchera_glabra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -146.18, 60.73
+Warning: Sample at -146.61, 60.33 in Heuchera_glabra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -146.61, 60.33
+Warning: Sample at -159.16, 60.18 in Heuchera_glabra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -159.16, 60.18
+Warning: Sample at -154.31, 60.2 in Heuchera_glabra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -154.31, 60.2
+Warning: Sample at -144.38, 59.93 in Heuchera_glabra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -144.38, 59.93
+Warning: Sample at -151.7, 59.43 in Heuchera_glabra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -151.7, 59.43
+Warning: Sample at -150.53, 59.48 in Heuchera_glabra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -150.53, 59.48
+Warning: Sample at -157.03, 56.78 in Heuchera_glabra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -157.03, 56.78
+Warning: Sample at -132.45, 56.53 in Heuchera_glabra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -132.45, 56.53
+Warning: Sample at -132.41, 56.58 in Heuchera_glabra.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -132.41, 56.58
+Time since start: 1.036
+28874 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_glabra/Heuchera_glabra.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/heuchera_glabra nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/heuchera_glabra samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_glabra/Heuchera_glabra.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_glabra
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/heuchera_glabra
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/heuchera_glabra/Heuchera_glabra.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 913416608, used 1204706912, increment 1185097312
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 911321504, used 1206802016, increment 2095104
+Heuchera_glabra: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+165 samples
+Density: max memory 32178700288, total allocated 2118123520, free 911321504, used 1206802016, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 911321504, used 1206802016, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 911321504, used 1206802016, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 911321504, used 1206802016, increment 0
+Initial loss: 9.210340371976184
+60: time = 0.105000 loss = 9.182926
+Resulting gain: 0.027414228845705324
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/heuchera_glabra/Heuchera_glabra.asc
+Time since start: 3.05
+Writing /volumes/output/heuchera_rfolk_5min_global/heuchera_glabra/plots/Heuchera_glabra.png
+Ending

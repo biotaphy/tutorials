@@ -1,0 +1,13 @@
+(mask=50.0), 0.0, 0.0, 1.0
+ISRICSOILGRIDS_new_average_phx10percent_reduced, 0.0, 56.0, 89.0
+ISRICSOILGRIDS_new_average_phx10percent_reduced^2, -0.5628198112506222, 3136.0, 7921.0
+'ISRICSOILGRIDS_new_average_phx10percent_reduced, -4.694734724302788, 67.5, 89.0
+`ISRICSOILGRIDS_new_average_phx10percent_reduced, -1.6051677110307991, 56.0, 61.5
+'ISRICSOILGRIDS_new_average_phx10percent_reduced, -0.09985561011902705, 74.5, 89.0
+`ISRICSOILGRIDS_new_average_phx10percent_reduced, -0.03078469780383334, 56.0, 65.5
+'ISRICSOILGRIDS_new_average_phx10percent_reduced, -0.28642415253704556, 73.5, 89.0
+`ISRICSOILGRIDS_new_average_phx10percent_reduced, -0.022164731884059836, 56.0, 64.5
+linearPredictorNormalizer, -0.10113692971922936
+densityNormalizer, 1591.7753967100832
+numBackgroundPoints, 5114
+entropy, 7.940349873121183

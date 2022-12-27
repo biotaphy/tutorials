@@ -1,0 +1,138 @@
+27 Dec 2022 15:30 INFO     encode_layers: Encode 67 layers for matrix /volumes/output/heuchera_rfolk_1deg_global.lmm
+27 Dec 2022 15:30 INFO     encode_layers: Start encoding 67 layers to matrix /volumes/output/heuchera_rfolk_1deg_global.lmm with presence_absence
+27 Dec 2022 15:30 INFO     LayerEncoder: Encode layer to Heuchera novomexicana with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:30 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_novomexicana/Heuchera_novomexicana.asc with label Heuchera novomexicana using presence_absence method
+27 Dec 2022 15:30 INFO     LayerEncoder: Encode layer to Mitella stauropetala with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:30 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/mitella_stauropetala/Mitella_stauropetala.asc with label Mitella stauropetala using presence_absence method
+27 Dec 2022 15:30 INFO     LayerEncoder: Encode layer to Tolmiea menziesii with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:30 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/tolmiea_menziesii/Tolmiea_menziesii.asc with label Tolmiea menziesii using presence_absence method
+27 Dec 2022 15:30 INFO     LayerEncoder: Encode layer to Heuchera chlorantha with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:30 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_chlorantha/Heuchera_chlorantha.asc with label Heuchera chlorantha using presence_absence method
+27 Dec 2022 15:30 INFO     LayerEncoder: Encode layer to Heuchera americana with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_americana/Heuchera_americana.asc with label Heuchera americana using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera pubescens with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_pubescens/Heuchera_pubescens.asc with label Heuchera pubescens using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera bracteata with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_bracteata/Heuchera_bracteata.asc with label Heuchera bracteata using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera rubescens with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_rubescens/Heuchera_rubescens.asc with label Heuchera rubescens using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera puberula with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_puberula/Heuchera_puberula.asc with label Heuchera puberula using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Mitella pentandra with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/mitella_pentandra/Mitella_pentandra.asc with label Mitella pentandra using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera missouriensis with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_missouriensis/Heuchera_missouriensis.asc with label Heuchera missouriensis using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera eastwoodiae with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_eastwoodiae/Heuchera_eastwoodiae.asc with label Heuchera eastwoodiae using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera longipetala with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_longipetala/Heuchera_longipetala.asc with label Heuchera longipetala using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera mexicana with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_mexicana/Heuchera_mexicana.asc with label Heuchera mexicana using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera parvifolia with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_parvifolia/Heuchera_parvifolia.asc with label Heuchera parvifolia using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Mitella caulescens with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/mitella_caulescens/Mitella_caulescens.asc with label Mitella caulescens using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Mitella breweri with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/mitella_breweri/Mitella_breweri.asc with label Mitella breweri using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera brevistaminea with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_brevistaminea/Heuchera_brevistaminea.asc with label Heuchera brevistaminea using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera richardsonii with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_richardsonii/Heuchera_richardsonii.asc with label Heuchera richardsonii using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera parishii with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_parishii/Heuchera_parishii.asc with label Heuchera parishii using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera glomerulata with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_glomerulata/Heuchera_glomerulata.asc with label Heuchera glomerulata using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Heuchera_inconstans with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_inconstans/Heuchera_inconstans.asc with label Heuchera_inconstans using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Tellima grandiflora with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/tellima_grandiflora/Tellima_grandiflora.asc with label Tellima grandiflora using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Mitella stylosa with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/mitella_stylosa/Mitella_stylosa.asc with label Mitella stylosa using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Conimitella williamsii with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:31 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/conimitella_williamsii/Conimitella_williamsii.asc with label Conimitella williamsii using presence_absence method
+27 Dec 2022 15:31 INFO     LayerEncoder: Encode layer to Mitella acerina with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/mitella_acerina/Mitella_acerina.asc with label Mitella acerina using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Heuchera villosa with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_villosa/Heuchera_villosa.asc with label Heuchera villosa using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Heuchera micrantha with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_micrantha/Heuchera_micrantha.asc with label Heuchera micrantha using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Heuchera sanguinea with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_sanguinea/Heuchera_sanguinea.asc with label Heuchera sanguinea using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Heuchera longiflora with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_longiflora/Heuchera_longiflora.asc with label Heuchera longiflora using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Heuchera_wellsiae with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_wellsiae/Heuchera_wellsiae.asc with label Heuchera_wellsiae using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Heuchera caroliniana with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_caroliniana/Heuchera_caroliniana.asc with label Heuchera caroliniana using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Mitella furusei with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/mitella_furusei/Mitella_furusei.asc with label Mitella furusei using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Mitella nuda with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/mitella_nuda/Mitella_nuda.asc with label Mitella nuda using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Heuchera pilosissima with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_pilosissima/Heuchera_pilosissima.asc with label Heuchera pilosissima using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Elmera racemosa with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/elmera_racemosa/Elmera_racemosa.asc with label Elmera racemosa using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Heuchera alba with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_alba/Heuchera_alba.asc with label Heuchera alba using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Heuchera elegans with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_elegans/Heuchera_elegans.asc with label Heuchera elegans using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Tiarella polyphylla with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/tiarella_polyphylla/Tiarella_polyphylla.asc with label Tiarella polyphylla using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Mitella diphylla with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/mitella_diphylla/Mitella_diphylla.asc with label Mitella diphylla using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Heuchera glabra with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_glabra/Heuchera_glabra.asc with label Heuchera glabra using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Tolmiea diplomenziesii with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/tolmiea_diplomenziesii/Tolmiea_diplomenziesii.asc with label Tolmiea diplomenziesii using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Heuchera caespitosa with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_caespitosa/Heuchera_caespitosa.asc with label Heuchera caespitosa using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Mitella japonica with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/mitella_japonica/Mitella_japonica.asc with label Mitella japonica using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Heuchera_lakelae with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_lakelae/Heuchera_lakelae.asc with label Heuchera_lakelae using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Bensoniella oregona with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:32 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/bensoniella_oregona/Bensoniella_oregona.asc with label Bensoniella oregona using presence_absence method
+27 Dec 2022 15:32 INFO     LayerEncoder: Encode layer to Mitella ovalis with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/mitella_ovalis/Mitella_ovalis.asc with label Mitella ovalis using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera_pulchella with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_pulchella/Heuchera_pulchella.asc with label Heuchera_pulchella using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera merriamii with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_merriamii/Heuchera_merriamii.asc with label Heuchera merriamii using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Telesonix jamesii with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/telesonix_jamesii/Telesonix_jamesii.asc with label Telesonix jamesii using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera acutifolia with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_acutifolia/Heuchera_acutifolia.asc with label Heuchera acutifolia using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera grossulariifolia with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_grossulariifolia/Heuchera_grossulariifolia.asc with label Heuchera grossulariifolia using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Mitella pauciflora with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/mitella_pauciflora/Mitella_pauciflora.asc with label Mitella pauciflora using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Peltoboykinia watanabei with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/peltoboykinia_watanabei/Peltoboykinia_watanabei.asc with label Peltoboykinia watanabei using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera_rosendahlii with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_rosendahlii/Heuchera_rosendahlii.asc with label Heuchera_rosendahlii using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera hirsutissima with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_hirsutissima/Heuchera_hirsutissima.asc with label Heuchera hirsutissima using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera parviflora with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_parviflora/Heuchera_parviflora.asc with label Heuchera parviflora using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera cylindrica with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_cylindrica/Heuchera_cylindrica.asc with label Heuchera cylindrica using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera wootonii with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_wootonii/Heuchera_wootonii.asc with label Heuchera wootonii using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera versicolor with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_versicolor/Heuchera_versicolor.asc with label Heuchera versicolor using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Test with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/test/Test.asc with label Test using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera maxima with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_maxima/Heuchera_maxima.asc with label Heuchera maxima using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Lithophragma parviflorum with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/lithophragma_parviflorum/Lithophragma_parviflorum.asc with label Lithophragma parviflorum using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera hallii with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_hallii/Heuchera_hallii.asc with label Heuchera hallii using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera soltisii with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_soltisii/Heuchera_soltisii.asc with label Heuchera soltisii using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera abramsii with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_abramsii/Heuchera_abramsii.asc with label Heuchera abramsii using presence_absence method
+27 Dec 2022 15:33 INFO     LayerEncoder: Encode layer to Heuchera_woodsiaphila with min_coverage=0.1, max_coverage=1.0, min_coverage=25
+27 Dec 2022 15:33 INFO     encode_layers: Encoded /volumes/data/input/heuchera_rfolk_5min_global/heuchera_woodsiaphila/Heuchera_woodsiaphila.asc with label Heuchera_woodsiaphila using presence_absence method
+27 Dec 2022 15:33 INFO     encode_layers: ***Completed matrix /volumes/output/heuchera_rfolk_1deg_global.lmm
+27 Dec 2022 15:33 INFO     encode_layers: Wrote report file to /volumes/output/encode_layers_1deg_global.rpt

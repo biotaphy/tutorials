@@ -1,0 +1,60 @@
+Tue Dec 27 14:29:20 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_pilosissima.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
+Extracting random background and sample data
+Warning: Sample at -124.1139, 44.2872 in Heuchera_pilosissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -124.1139, 44.2872
+Warning: Sample at -123.7283334, 38.94688557 in Heuchera_pilosissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -123.7283334, 38.94688557
+Warning: Sample at -123.7378237, 38.95380535 in Heuchera_pilosissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -123.7378237, 38.95380535
+Warning: Sample at -122.9515952, 38.16964824 in Heuchera_pilosissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -122.9515952, 38.16964824
+Warning: Sample at -121.9468515, 36.52157404 in Heuchera_pilosissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -121.9468515, 36.52157404
+Warning: Sample at -121.94083, 36.49361 in Heuchera_pilosissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -121.94083, 36.49361
+Warning: Sample at -121.9421, 36.5156 in Heuchera_pilosissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -121.9421, 36.5156
+Warning: Sample at -120.8682, 35.3712 in Heuchera_pilosissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -120.8682, 35.3712
+Warning: Sample at -120.6226998, 34.60393391 in Heuchera_pilosissima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -120.6226998, 34.60393391
+Time since start: 1.034
+1478 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_pilosissima/Heuchera_pilosissima.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/heuchera_pilosissima nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/heuchera_pilosissima samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_pilosissima/Heuchera_pilosissima.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_pilosissima
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/heuchera_pilosissima
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/heuchera_pilosissima/Heuchera_pilosissima.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 918202272, used 1199921248, increment 1180311648
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 918202272, used 1199921248, increment 0
+Heuchera_pilosissima: 
+Regularization values: linear/quadratic/product: 0.346, categorical: 0.250, threshold: 1.750, hinge: 0.500
+25 samples
+Density: max memory 32178700288, total allocated 2118123520, free 918202272, used 1199921248, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 918202272, used 1199921248, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 918202272, used 1199921248, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 918202272, used 1199921248, increment 0
+Initial loss: 7.298445101508147
+240: time = 0.057000 loss = 7.106386
+Resulting gain: 0.19205877808381455
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/heuchera_pilosissima/Heuchera_pilosissima.asc
+Time since start: 2.885
+Writing /volumes/output/heuchera_rfolk_5min_global/heuchera_pilosissima/plots/Heuchera_pilosissima.png
+Ending

@@ -1,0 +1,20 @@
+(mask=50.0), 0.0, 0.0, 1.0
+BIOCLIM_1, 0.0, 47.0, 193.0
+BIOCLIM_12, 0.0, 138.0, 976.0
+BIOCLIM_17, 0.0, 0.0, 37.0
+BIOCLIM_7, 0.0, 171.0, 371.0
+GTOPO30_ELEVATION, 0.0, 1.0, 2740.0
+GTOPO30_SLOPE_reduced, 0.0, 0.0, 22.0
+ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced, 0.0, 1.0, 31.0
+ISRICSOILGRIDS_new_average_phx10percent_reduced, 0.0, 56.0, 85.0
+ISRICSOILGRIDS_new_average_sandpercent_reduced, 0.0, 24.0, 68.0
+ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced, 0.0, 1.0, 64.0
+LandCover_1_Needleleaf, 0.0, 0.0, 100.0
+LandCover_6_Herbaceous, 0.0, 0.0, 89.0
+BIOCLIM_1^2, -5.105095686872029, 2209.0, 37249.0
+BIOCLIM_7^2, -2.1496805240995465, 29241.0, 137641.0
+LandCover_6_Herbaceous^2, 2.629924237307007, 0.0, 7921.0
+linearPredictorNormalizer, -0.5815044465698426
+densityNormalizer, 78.45577792554671
+numBackgroundPoints, 1161
+entropy, 6.310622065135801

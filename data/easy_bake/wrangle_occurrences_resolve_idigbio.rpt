@@ -1,6 +1,6 @@
 {
     "input_records": 9036,
-    "output_records": 8969,
+    "output_records": 8966,
     "wranglers": [
         {
             "name": "AcceptedNameOccurrenceWrangler",

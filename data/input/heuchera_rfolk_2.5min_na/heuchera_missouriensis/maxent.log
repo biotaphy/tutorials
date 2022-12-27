@@ -1,0 +1,54 @@
+Tue Dec 27 15:02:37 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Heuchera_missouriensis.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 21704704
+Extractor: max memory 32178700288, total allocated 2118123520, free 2088030208, used 30093312, increment 8388608
+Extracting random background and sample data
+Time since start: 2.138
+10572 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_2.5min_na/heuchera_missouriensis/Heuchera_missouriensis.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_2.5min_na/heuchera_missouriensis nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_2.5min_na/heuchera_missouriensis samplesfile=/volumes/output/heuchera_rfolk_2.5min_na/heuchera_missouriensis/Heuchera_missouriensis.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Heuchera_missouriensis
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_2.5min_na/heuchera_missouriensis
+samplesfile: /volumes/output/heuchera_rfolk_2.5min_na/heuchera_missouriensis/Heuchera_missouriensis.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 1962532312, used 155591208, increment 125497896
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1955150472, used 162973048, increment 7381840
+Heuchera_missouriensis: 
+Regularization values: linear/quadratic/product: 0.385, categorical: 0.250, threshold: 1.770, hinge: 0.500
+23 samples
+Density: max memory 32178700288, total allocated 2118123520, free 1941560792, used 176562728, increment 13589680
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1941560792, used 176562728, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1941560792, used 176562728, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1941560792, used 176562728, increment 0
+Initial loss: 9.21064032698518
+500: time = 0.633000 loss = 8.239886
+Resulting gain: 0.9707545348791644
+Time since start: 3.742
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_2.5min_na/heuchera_missouriensis/Heuchera_missouriensis.asc
+Time since start: 5.814
+Writing /volumes/output/heuchera_rfolk_2.5min_na/heuchera_missouriensis/plots/Heuchera_missouriensis.png
+Ending

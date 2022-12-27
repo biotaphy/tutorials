@@ -1,0 +1,46 @@
+Tue Dec 27 14:33:04 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Tiarella_polyphylla.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2094319616, used 23803904, increment 6293504
+Extracting random background and sample data
+Warning: Sample at 98.78639, 28.1775 in Tiarella_polyphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at 98.78639, 28.1775
+Warning: Sample at 121.73333, 24.26667 in Tiarella_polyphylla.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at 121.73333, 24.26667
+Time since start: 1.034
+41811 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/tiarella_polyphylla/Tiarella_polyphylla.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/tiarella_polyphylla nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/tiarella_polyphylla samplesfile=/volumes/output/heuchera_rfolk_5min_global/tiarella_polyphylla/Tiarella_polyphylla.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Tiarella_polyphylla
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/tiarella_polyphylla
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/tiarella_polyphylla/Tiarella_polyphylla.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 909199560, used 1208923960, increment 1185120056
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 907104456, used 1211019064, increment 2095104
+Tiarella_polyphylla: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+185 samples
+Density: max memory 32178700288, total allocated 2118123520, free 907104456, used 1211019064, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 907024440, used 1211099080, increment 80016
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 907024440, used 1211099080, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 907024440, used 1211099080, increment 0
+Initial loss: 9.210340371976184
+180: time = 0.154000 loss = 8.961385
+Resulting gain: 0.24895520180117003
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/tiarella_polyphylla/Tiarella_polyphylla.asc
+Time since start: 3.04
+Writing /volumes/output/heuchera_rfolk_5min_global/tiarella_polyphylla/plots/Tiarella_polyphylla.png
+Ending

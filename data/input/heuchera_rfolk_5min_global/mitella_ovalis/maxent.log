@@ -1,0 +1,44 @@
+Tue Dec 27 14:33:31 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Mitella_ovalis.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
+Extracting random background and sample data
+Warning: Sample at -124.20056, 41.61115 in Mitella_ovalis.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -124.20056, 41.61115
+Time since start: 1.03
+3893 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/mitella_ovalis/Mitella_ovalis.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/mitella_ovalis nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/mitella_ovalis samplesfile=/volumes/output/heuchera_rfolk_5min_global/mitella_ovalis/Mitella_ovalis.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Mitella_ovalis
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/mitella_ovalis
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/mitella_ovalis/Mitella_ovalis.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 915922352, used 1202201168, increment 1182591568
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 915922352, used 1202201168, increment 0
+Mitella_ovalis: 
+Regularization values: linear/quadratic/product: 0.071, categorical: 0.250, threshold: 1.030, hinge: 0.500
+97 samples
+Density: max memory 32178700288, total allocated 2118123520, free 915922352, used 1202201168, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 915922352, used 1202201168, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 915922352, used 1202201168, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 915922352, used 1202201168, increment 0
+Initial loss: 8.266935347610456
+120: time = 0.080000 loss = 8.176402
+Resulting gain: 0.09053285928819221
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/mitella_ovalis/Mitella_ovalis.asc
+Time since start: 2.908
+Writing /volumes/output/heuchera_rfolk_5min_global/mitella_ovalis/plots/Mitella_ovalis.png
+Ending

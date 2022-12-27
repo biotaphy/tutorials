@@ -1,0 +1,54 @@
+Tue Dec 27 15:07:06 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Heuchera_mexicana.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2094319616, used 23803904, increment 23803904
+Extractor: max memory 32178700288, total allocated 2118123520, free 2085931008, used 32192512, increment 8388608
+Extracting random background and sample data
+Time since start: 2.122
+44059 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_2.5min_na/heuchera_mexicana/Heuchera_mexicana.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_2.5min_na/heuchera_mexicana nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_2.5min_na/heuchera_mexicana samplesfile=/volumes/output/heuchera_rfolk_2.5min_na/heuchera_mexicana/Heuchera_mexicana.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Heuchera_mexicana
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_2.5min_na/heuchera_mexicana
+samplesfile: /volumes/output/heuchera_rfolk_2.5min_na/heuchera_mexicana/Heuchera_mexicana.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 1962545896, used 155577624, increment 123385112
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1956175992, used 161947528, increment 6369904
+Heuchera_mexicana: 
+Regularization values: linear/quadratic/product: 0.164, categorical: 0.250, threshold: 1.160, hinge: 0.500
+84 samples
+Density: max memory 32178700288, total allocated 2118123520, free 1943671528, used 174451992, increment 12504464
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1943671528, used 174451992, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1943671528, used 174451992, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1943671528, used 174451992, increment 0
+Initial loss: 9.21632244365373
+Time since start: 3.282
+500: time = 0.939000 loss = 7.984201
+Resulting gain: 1.2321215935004641
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_2.5min_na/heuchera_mexicana/Heuchera_mexicana.asc
+Time since start: 6.225
+Writing /volumes/output/heuchera_rfolk_2.5min_na/heuchera_mexicana/plots/Heuchera_mexicana.png
+Ending

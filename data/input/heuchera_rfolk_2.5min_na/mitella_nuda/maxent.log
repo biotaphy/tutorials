@@ -1,0 +1,128 @@
+Tue Dec 27 15:03:25 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Mitella_nuda.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2094319616, used 23803904, increment 23803904
+Warning: Sample at 143.295923, 43.693732 in Mitella_nuda.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.186087, 35.854924 in Mitella_nuda.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 143.176871, 43.733091 in Mitella_nuda.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.770678, 43.84714 in Mitella_nuda.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 143.5864, 43.676335 in Mitella_nuda.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 143.553892, 43.244936 in Mitella_nuda.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.233014, 43.288187 in Mitella_nuda.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 144.025055, 43.706488 in Mitella_nuda.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 142.189956, 43.518316 in Mitella_nuda.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 144.008745, 43.386348 in Mitella_nuda.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 143.586584, 43.676314 in Mitella_nuda.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 138.174707, 35.81444 in Mitella_nuda.csv is outside the bounding box of environmental data, skipping
+Extractor: max memory 32178700288, total allocated 2118123520, free 2085931008, used 32192512, increment 8388608
+Extracting random background and sample data
+Warning: Sample at -94.18724, 58.78115 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -94.18724, 58.78115
+Warning: Sample at -77.35, 53.56667 in Mitella_nuda.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -77.35, 53.56667
+Warning: Sample at -79.63333, 51.40278 in Mitella_nuda.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -79.63333, 51.40278
+Warning: Sample at -57.19944, 51.41444 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -57.19944, 51.41444
+Warning: Sample at -57.16167, 51.415 in Mitella_nuda.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -57.16167, 51.415
+Warning: Sample at -57.13972, 51.39083 in Mitella_nuda.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -57.13972, 51.39083
+Warning: Sample at -64.12444, 50.21083 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -64.12444, 50.21083
+Warning: Sample at -63.99028, 50.22361 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -63.99028, 50.22361
+Warning: Sample at -63.81694, 50.2125 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -63.81694, 50.2125
+Warning: Sample at -63.74917, 50.21194 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -63.74917, 50.21194
+Warning: Sample at -63.62576, 50.22073 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -63.62576, 50.22073
+Warning: Sample at -63.62472, 50.22167 in Mitella_nuda.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -63.62472, 50.22167
+Warning: Sample at -63.55806, 50.20944 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -63.55806, 50.20944
+Warning: Sample at -63.54861, 50.22028 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -63.54861, 50.22028
+Warning: Sample at -57.75, 49.91667 in Mitella_nuda.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -57.75, 49.91667
+Warning: Sample at -64.34001, 49.83201 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -64.34001, 49.83201
+Warning: Sample at -62.96667, 49.73333 in Mitella_nuda.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -62.96667, 49.73333
+Warning: Sample at -67.23444, 49.49417 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -67.23444, 49.49417
+Warning: Sample at -63.3, 49.31667 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -63.3, 49.31667
+Warning: Sample at -63.25, 49.31667 in Mitella_nuda.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -63.25, 49.31667
+Warning: Sample at -123.95, 49.2 in Mitella_nuda.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -123.95, 49.2
+Warning: Sample at -76.99306, 49.06472 in Mitella_nuda.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -76.99306, 49.06472
+Warning: Sample at -64.16667, 48.5 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -64.16667, 48.5
+Warning: Sample at -64.15804, 48.50158 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -64.15804, 48.50158
+Warning: Sample at -68.56667, 48.46667 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -68.56667, 48.46667
+Warning: Sample at -68.58333, 48.45 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -68.58333, 48.45
+Warning: Sample at -68.72917, 48.37722 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -68.72917, 48.37722
+Warning: Sample at -68.80777, 48.36861 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -68.80777, 48.36861
+Warning: Sample at -69.25, 48.14222 in Mitella_nuda.csv is missing some environmental data (e.g. BIOCLIM_1)
+Warning: Skipping sample at -69.25, 48.14222
+Warning: Sample at -89.57695, 47.96382 in Mitella_nuda.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -89.57695, 47.96382
+Warning: Sample at -69.66611, 45.64388 in Mitella_nuda.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced)
+Warning: Skipping sample at -69.66611, 45.64388
+Time since start: 2.102
+466649 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_2.5min_na/mitella_nuda/Mitella_nuda.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_2.5min_na/mitella_nuda nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_2.5min_na/mitella_nuda samplesfile=/volumes/output/heuchera_rfolk_2.5min_na/mitella_nuda/Mitella_nuda.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Mitella_nuda
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_2.5min_na/mitella_nuda
+samplesfile: /volumes/output/heuchera_rfolk_2.5min_na/mitella_nuda/Mitella_nuda.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 1962462816, used 155660704, increment 123468192
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1950561280, used 167562240, increment 11901536
+Mitella_nuda: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+215 samples
+Density: max memory 32178700288, total allocated 2118123520, free 1939392096, used 178731424, increment 11169184
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1939392096, used 178731424, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1939392096, used 178731424, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1939392096, used 178731424, increment 0
+Initial loss: 9.231122911158712
+Time since start: 3.413
+500: time = 1.090000 loss = 8.791086
+Resulting gain: 0.4400372599114579
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_2.5min_na/mitella_nuda/Mitella_nuda.asc
+Time since start: 7.059
+Writing /volumes/output/heuchera_rfolk_2.5min_na/mitella_nuda/plots/Mitella_nuda.png
+Ending

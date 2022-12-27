@@ -1,0 +1,54 @@
+Tue Dec 27 15:01:47 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Heuchera_acutifolia.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 19609600
+Extractor: max memory 32178700288, total allocated 2118123520, free 2090110960, used 28012560, increment 8402960
+Extracting random background and sample data
+Time since start: 2.105
+2197 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_2.5min_na/heuchera_acutifolia/Heuchera_acutifolia.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_2.5min_na/heuchera_acutifolia nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_2.5min_na/heuchera_acutifolia samplesfile=/volumes/output/heuchera_rfolk_2.5min_na/heuchera_acutifolia/Heuchera_acutifolia.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Heuchera_acutifolia
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_2.5min_na/heuchera_acutifolia
+samplesfile: /volumes/output/heuchera_rfolk_2.5min_na/heuchera_acutifolia/Heuchera_acutifolia.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 1970229408, used 147894112, increment 119881552
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1968134304, used 149989216, increment 2095104
+Heuchera_acutifolia: 
+Regularization values: linear/quadratic/product: 0.481, categorical: 0.250, threshold: 1.820, hinge: 0.500
+18 samples
+Density: max memory 32178700288, total allocated 2118123520, free 1966035104, used 152088416, increment 2099200
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1966035104, used 152088416, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1966035104, used 152088416, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1966035104, used 152088416, increment 0
+Initial loss: 7.69484807238461
+320: time = 0.244000 loss = 7.000677
+Resulting gain: 0.6941712377526974
+Time since start: 3.184
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_2.5min_na/heuchera_acutifolia/Heuchera_acutifolia.asc
+Time since start: 5.253
+Writing /volumes/output/heuchera_rfolk_2.5min_na/heuchera_acutifolia/plots/Heuchera_acutifolia.png
+Ending

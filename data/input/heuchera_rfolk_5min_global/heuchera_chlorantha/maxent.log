@@ -1,0 +1,44 @@
+Tue Dec 27 14:17:25 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_chlorantha.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
+Extracting random background and sample data
+Warning: Sample at -121.9669, 43.5014 in Heuchera_chlorantha.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -121.9669, 43.5014
+Time since start: 1.024
+2621 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_chlorantha/Heuchera_chlorantha.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/heuchera_chlorantha nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/heuchera_chlorantha samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_chlorantha/Heuchera_chlorantha.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_chlorantha
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/heuchera_chlorantha
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/heuchera_chlorantha/Heuchera_chlorantha.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 918157800, used 1199965720, increment 1180356120
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 918157800, used 1199965720, increment 0
+Heuchera_chlorantha: 
+Regularization values: linear/quadratic/product: 0.244, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 32178700288, total allocated 2118123520, free 918157800, used 1199965720, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 918157800, used 1199965720, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 918157800, used 1199965720, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 918157800, used 1199965720, increment 0
+Initial loss: 7.8713112033234065
+120: time = 0.048000 loss = 7.569986
+Resulting gain: 0.30132500954501307
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/heuchera_chlorantha/Heuchera_chlorantha.asc
+Time since start: 2.877
+Writing /volumes/output/heuchera_rfolk_5min_global/heuchera_chlorantha/plots/Heuchera_chlorantha.png
+Ending

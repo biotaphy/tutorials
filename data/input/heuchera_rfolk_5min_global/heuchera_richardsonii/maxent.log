@@ -1,0 +1,45 @@
+Tue Dec 27 14:31:28 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_richardsonii.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 4194304
+Extracting random background and sample data
+Warning: Sample at -87.75, 42.1333 in Heuchera_richardsonii.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -87.75, 42.1333
+Time since start: 1.032
+64175 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_richardsonii/Heuchera_richardsonii.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/heuchera_richardsonii nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/heuchera_richardsonii samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_richardsonii/Heuchera_richardsonii.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_richardsonii
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/heuchera_richardsonii
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/heuchera_richardsonii/Heuchera_richardsonii.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 911255560, used 1206867960, increment 1185163256
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 911253512, used 1206870008, increment 2048
+Heuchera_richardsonii: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+241 samples
+Density: max memory 32178700288, total allocated 2118123520, free 909156360, used 1208967160, increment 2097152
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 909156360, used 1208967160, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 909156360, used 1208967160, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 909156360, used 1208967160, increment 0
+Initial loss: 9.210340371976184
+260: time = 0.212000 loss = 9.116360
+Resulting gain: 0.09398006453683472
+Time since start: 2.047
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/heuchera_richardsonii/Heuchera_richardsonii.asc
+Time since start: 3.147
+Writing /volumes/output/heuchera_rfolk_5min_global/heuchera_richardsonii/plots/Heuchera_richardsonii.png
+Ending

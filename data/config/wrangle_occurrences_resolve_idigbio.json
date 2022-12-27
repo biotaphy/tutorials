@@ -7,6 +7,6 @@
     "log_filename": "/volumes/output/wrangle_occurrences_resolve_idigbio.log",
     "log_console": true,
     "reader_filename": "/volumes/data/input/occurrence_idigbio.csv",
-    "writer_filename":  "/volumes/output/occurrence_idigbio_resolved.csv",
+    "writer_filename":  "/volumes/output/wrangle_occurrences_resolve_idigbio.csv",
     "wrangler_config_filename":   "/volumes/data/wranglers/occ_resolve.json"
 }

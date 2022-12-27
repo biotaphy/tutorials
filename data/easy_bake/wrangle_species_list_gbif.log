@@ -1,135 +1,145 @@
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera richardsonii R. Br. to Heuchera richardsonii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera americana L. to Heuchera americana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera × easthamii Calder & Savile to Heuchera easthamii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Elmera racemosa (S.Watson) Rydb. to Elmera racemosa
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera halstedii Rydb. to Heuchera halstedii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera macrophylla Lodd. ex G.Don to Heuchera macrophylla
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera flabellifolia Rydb. to Heuchera flabellifolia
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera macrorhiza Small to Heuchera villosa
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera merriamii Eastw. to Heuchera merriamii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera novamexicana Wheelock to Heuchera novamexicana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera caespitosa Eastw. to Heuchera caespitosa
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera undulata Regel & Rach to Heuchera undulata
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pulverulenta Raf. to Heuchera pubescens
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera alpina (S. Watson) Blank. to Heuchera cylindrica alpina
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera suksdorfii Rydb. to Heuchera cylindrica
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera tenuifolia (Wheelock) Rydb. to Heuchera grossulariifolia tenuifolia
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera longipetala Moc. ex Ser. to Heuchera longipetala
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera alba Rydb. to Heuchera alba
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera nana (A. Gray) Rydb. to Heuchera rubescens
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera abramsii Rydb. to Heuchera abramsii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera grandiflora Raf. to Heuchera pubescens
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera ribifolia Fisch. & Avé-Lall. to Heuchera pubescens
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera arkansana Rydb. to Heuchera villosa arkansana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera columbiana Rydb. to Heuchera cylindrica
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera lithophila A.Heller to Heuchera lithophila
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pilosissima Fisch. & C.A. Mey. to Heuchera pilosissima
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera lucida Schltdl. to Heuchera americana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hispida Pursh to Heuchera americana hispida
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hirtiflora Torr. & A.Gray to Heuchera pilosissima
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera glabella Torr. & A. Gray to Heuchera cylindrica glabella
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera flavescens Rydb. to Heuchera parvifolia flavescens
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pulchra Rydb. to Heuchera sanguinea pulchra
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera scapigera Moench to None
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hemsleyana Rosend., Butters & Lakela to Heuchera hemsleyana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera aceroides Rydb. ex Small to Heuchera longiflora
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hirsuta Rydb. to Heuchera elegans
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera acerifolia Raf. to Heuchera villosa
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera curtisii Torr. & A. Gray to Heuchera americana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera alpestris Rosend., Butters & Lakela to Heuchera alpestris
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Vahlia dichotoma (Murray) Kuntze to Vahlia dichotoma
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera acutifolia Rose to Heuchera acutifolia
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera villosa Michx. to Heuchera villosa
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera parviflora Bartl. to Heuchera parviflora
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera cortusa Michx. to Heuchera americana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera bracteata (Torr.) Ser. to Heuchera bracteata
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera rubescens Torr. to Heuchera rubescens
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera crinita Rydb. to Heuchera villosa
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera orizabensis Hemsl. to Heuchera longipetala orizabensis
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera woodsiaphila P.J.Alexander to Heuchera woodsiaphila
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pilosella Rydb. to Heuchera pilosella
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera nuttallii Rydb. to Heuchera micrantha
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Tiarella californica (Kellogg) Rydb. to Tiarella trifoliata laciniata
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera leptomeria Greene to Heuchera rubescens versicolor
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera diversifolia Rydb. to Heuchera micrantha diversifolia
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera chlorantha Piper to Heuchera chlorantha
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera eastwoodiae Rosend., Butters & Lakela to Heuchera eastwoodiae
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera racemosa S.Watson to Elmera racemosa
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera clutei A. Nelson to Heuchera rubescens
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera cylindrica Douglas to Heuchera cylindrica
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera mexicana W. Schaffn. ex Rydb. to Heuchera mexicana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pachypoda Greene to Heuchera rubescens alpicola
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera portula Michx. to Heuchera americana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera calycosa Small to Heuchera americana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera reglensis Rydb. to Heuchera reglensis
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera glaberrima Rydb. to Heuchera micrantha
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera longiflora Rydb. to Heuchera longiflora
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera sanguinea Engelm. to Heuchera sanguinea
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera saxicola E.E.Nelson to Heuchera cylindrica
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera wootonii Rydb. to Heuchera wootonii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera glabra Willd. ex Roem. & Schult. to Heuchera glabra
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera barbarossa C.Presl to Heuchera micrantha
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hemisphaerica Rydb. to Heuchera pilosissima hemisphaerica
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera squamosa Raf. to Heuchera villosa
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera californica Kellogg to Tiarella trifoliata unifoliata
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera parishii Rydb. to Heuchera parishii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera grossulariifolia Rydb. to Heuchera grossulariifolia
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera glauca Raf. to Heuchera parviflora
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera gracilis Rydb. to Heuchera gracilis
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hapemanii J.M. Coult. & Fisher to Sullivantia hapemanii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera lancipetala Rydb. to Heuchera americana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Conimitella williamsii (D.C.Eaton) Rydb. to Conimitella williamsii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera erubescens A. Braun & C.D. Bouché to Heuchera micrantha erubescens
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera townsendii Rydb. to Heuchera sanguinea
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera sitgreavesei Rydb. to Heuchera rubescens
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera rugelii Shuttlew. ex Kunze to Heuchera parviflora
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera cuneata Howell to Heuchera cuneata
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera viscida Pursh to Heuchera americana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera maxima Greene to Heuchera maxima
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera ovalifolia Torr. & A. Gray to Heuchera cylindrica alpina
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Tolmiea menziesii (Pursh) Torr. & A.Gray to Tolmiea menziesii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera divaricata Fisch. ex Ser. to None
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera foliosa Rahn. to Heuchera villosa
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hartwegii (S. Watson ex Wheelock) Rydb. to Heuchera micrantha hartwegii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hirsutissima Rosend., Butters & Lakela to Heuchera hirsutissima
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera brevistaminea Wiggins to Heuchera brevistaminea
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera parvifolia Nutt. ex Torr. & A. Gray to Heuchera parvifolia
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera × rosea L.Möller to None
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hirsuticaulis (Wheelock) Rydb. to Heuchera americana hirsuticaulis
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera versicolor Greene to Heuchera rubescens versicolor
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera menziesii (Pursh) Hook. to Tolmiea menziesii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera micrantha Douglas ex Lindl. to None
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera reniformis Raf. to Heuchera pubescens
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera nivalis Rosend., Butters & Lakela to Heuchera parvifolia nivalis
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera lloydii Rydb. to Heuchera lloydii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera minutiflora Hemsl. to Heuchera longipetala orizabensis
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera elegans Abrams to Heuchera elegans
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera amoena Rosend. & Butters & Lakela to Heuchera amoena
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera caroliniana (Rosend., Butters & Lakela) E.F. Wells to Heuchera caroliniana
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera drummondii G.Nicholson to Heuchera drummondii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera duranii Bacig. to Heuchera duranii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera obtusissima Regel & Rach to Heuchera obtusissima
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pringlei Rydb. to Heuchera merriamii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera puberula Mack. & Bush to Heuchera puberula
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera scabra Rydb. to Heuchera longiflora
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hallii A. Gray to Heuchera hallii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera ciliata Rydb. to Heuchera ciliata
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera dichotoma Murray to Vahlia dichotoma
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera glomerulata Rosend., Butters & Lakela to Heuchera glomerulata
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pubescens Pursh to Heuchera pubescens
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pulchella Wooton & Standl. to Heuchera pulchella
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera utahensis Rydb. to Heuchera parvifolia utahensis
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera roseola Rydb. to Heuchera roseola
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera himalayensis Decne. ex Jacques to Heuchera himalayensis
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera caulescens Pursh to Heuchera villosa
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera williamsii D.C. Eaton to Conimitella williamsii
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera cusickii Rosend., Butters & Lakela to Heuchera grossulariifolia
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera missouriensis Rosend. to Heuchera missouriensis
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Wrote 127 names to /volumes/output/splist_wrangle_gbif.namemap as JSON
-09 Sep 2022 15:26 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera scapigera Moench.
-09 Sep 2022 15:26 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera divaricata Fisch. ex Ser..
-09 Sep 2022 15:26 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera × rosea L.Möller.
-09 Sep 2022 15:26 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera micrantha Douglas ex Lindl..
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Returned 82 accepted species with 41 duplicates.
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Failed to resolve 4 names.
-09 Sep 2022 15:26 DEBUG    AcceptedNameSpeciesListWrangler: Wrote 127 names to /volumes/output/splist_wrangle_gbif.namemap as JSON
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera obtusissima Regel & Rach to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pringlei Rydb. to Heuchera merriamii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera saxicola E.E.Nelson to Heuchera cylindrica
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera nuttallii Rydb. to Heuchera micrantha
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera merriamii Eastw. to Heuchera merriamii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera ribifolia Fisch. & Avé-Lall. to Heuchera pubescens
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera himalayensis Decne. ex Jacques to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera alpestris Rosend., Butters & Lakela to Heuchera alpestris
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Elmera racemosa (S.Watson) Rydb. to Elmera racemosa
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera rubescens Torr. to Heuchera rubescens
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera columbiana Rydb. to Heuchera cylindrica
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera versicolor Greene to Heuchera rubescens versicolor
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera sitgreavesei Rydb. to Heuchera rubescens
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera scapigera Moench to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera viscida Pursh to Heuchera americana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hapemanii J.M. Coult. & Fisher to Sullivantia hapemanii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hartwegii (S. Watson ex Wheelock) Rydb. to Heuchera micrantha hartwegii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pulchella Wooton & Standl. to Heuchera pulchella
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera suksdorfii Rydb. to Heuchera cylindrica
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera glaberrima Rydb. to Heuchera micrantha
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hallii A. Gray to Heuchera hallii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera lucida Schltdl. to Heuchera americana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera richardsonii R. Br. to Heuchera richardsonii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera minutiflora Hemsl. to Heuchera longipetala orizabensis
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera sanguinea Engelm. to Heuchera sanguinea
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera novamexicana Wheelock to Heuchera novamexicana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera longipetala Moc. ex Ser. to Heuchera longipetala
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera gracilis Rydb. to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera acerifolia Raf. to Heuchera villosa
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera reglensis Rydb. to Heuchera reglensis
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera micrantha Douglas ex Lindl. to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera caespitosa Eastw. to Heuchera caespitosa
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pubescens Pursh to Heuchera pubescens
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera orizabensis Hemsl. to Heuchera longipetala orizabensis
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera duranii Bacig. to Heuchera duranii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera elegans Abrams to Heuchera elegans
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hemisphaerica Rydb. to Heuchera pilosissima hemisphaerica
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera cortusa Michx. to Heuchera americana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera glauca Raf. to Heuchera parviflora
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera arkansana Rydb. to Heuchera villosa arkansana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera ciliata Rydb. to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera barbarossa C.Presl to Heuchera micrantha
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera calycosa Small to Heuchera americana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera tenuifolia (Wheelock) Rydb. to Heuchera grossulariifolia tenuifolia
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera woodsiaphila P.J.Alexander to Heuchera woodsiaphila
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera × rosea L.Möller to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hispida Pursh to Heuchera americana hispida
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera foliosa Rahn. to Heuchera villosa
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera utahensis Rydb. to Heuchera parvifolia utahensis
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera grossulariifolia Rydb. to Heuchera grossulariifolia
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera lancipetala Rydb. to Heuchera americana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera puberula Mack. & Bush to Heuchera puberula
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera cuneata Howell to Heuchera cuneata
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pulchra Rydb. to Heuchera sanguinea pulchra
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hirsuta Rydb. to Heuchera elegans
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera bracteata (Torr.) Ser. to Heuchera bracteata
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hirtiflora Torr. & A.Gray to Heuchera pilosissima
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera abramsii Rydb. to Heuchera abramsii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Tolmiea menziesii (Pursh) Torr. & A.Gray to Tolmiea menziesii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera chlorantha Piper to Heuchera chlorantha
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera clutei A. Nelson to Heuchera rubescens
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera nana (A. Gray) Rydb. to Heuchera rubescens
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera scabra Rydb. to Heuchera longiflora
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hemsleyana Rosend., Butters & Lakela to Heuchera hemsleyana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera nivalis Rosend., Butters & Lakela to Heuchera parvifolia nivalis
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera rugelii Shuttlew. ex Kunze to Heuchera parviflora
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera roseola Rydb. to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera townsendii Rydb. to Heuchera sanguinea
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera americana L. to Heuchera americana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera missouriensis Rosend. to Heuchera missouriensis
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera drummondii G.Nicholson to Heuchera drummondii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera lloydii Rydb. to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera reniformis Raf. to Heuchera pubescens
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera racemosa S.Watson to Elmera racemosa
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera aceroides Rydb. ex Small to Heuchera longiflora
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Vahlia dichotoma (Murray) Kuntze to Vahlia dichotoma
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera squamosa Raf. to Heuchera villosa
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera halstedii Rydb. to Heuchera halstedii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Tiarella californica (Kellogg) Rydb. to Tiarella trifoliata laciniata
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera brevistaminea Wiggins to Heuchera brevistaminea
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera leptomeria Greene to Heuchera rubescens versicolor
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera villosa Michx. to Heuchera villosa
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera glabra Willd. ex Roem. & Schult. to Heuchera glabra
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera alba Rydb. to Heuchera alba
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pilosissima Fisch. & C.A. Mey. to Heuchera pilosissima
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera diversifolia Rydb. to Heuchera micrantha diversifolia
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hirsuticaulis (Wheelock) Rydb. to Heuchera americana hirsuticaulis
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera lithophila A.Heller to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera mexicana W. Schaffn. ex Rydb. to Heuchera mexicana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera caulescens Pursh to Heuchera villosa
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera crinita Rydb. to Heuchera villosa
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera parviflora Bartl. to Heuchera parviflora
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera undulata Regel & Rach to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera macrophylla Lodd. ex G.Don to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera glomerulata Rosend., Butters & Lakela to Heuchera glomerulata
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera dichotoma Murray to Vahlia dichotoma
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pulverulenta Raf. to Heuchera pubescens
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera williamsii D.C. Eaton to Conimitella williamsii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera glabella Torr. & A. Gray to Heuchera cylindrica glabella
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera hirsutissima Rosend., Butters & Lakela to Heuchera hirsutissima
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera cusickii Rosend., Butters & Lakela to Heuchera grossulariifolia
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera × easthamii Calder & Savile to Heuchera easthamii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera cylindrica Douglas to Heuchera cylindrica
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Conimitella williamsii (D.C.Eaton) Rydb. to Conimitella williamsii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera flavescens Rydb. to Heuchera parvifolia flavescens
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera curtisii Torr. & A. Gray to Heuchera americana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera flabellifolia Rydb. to Heuchera flabellifolia
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera amoena Rosend. & Butters & Lakela to Heuchera amoena
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pachypoda Greene to Heuchera rubescens alpicola
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera macrorhiza Small to Heuchera villosa
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera caroliniana (Rosend., Butters & Lakela) E.F. Wells to Heuchera caroliniana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera grandiflora Raf. to Heuchera pubescens
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera wootonii Rydb. to Heuchera wootonii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera maxima Greene to Heuchera maxima
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera longiflora Rydb. to Heuchera longiflora
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera portula Michx. to Heuchera americana
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera ovalifolia Torr. & A. Gray to Heuchera cylindrica alpina
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera californica Kellogg to Tiarella trifoliata unifoliata
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera eastwoodiae Rosend., Butters & Lakela to Heuchera eastwoodiae
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera alpina (S. Watson) Blank. to Heuchera cylindrica alpina
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera pilosella Rydb. to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera divaricata Fisch. ex Ser. to None
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera erubescens A. Braun & C.D. Bouché to Heuchera micrantha erubescens
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera menziesii (Pursh) Hook. to Tolmiea menziesii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera parvifolia Nutt. ex Torr. & A. Gray to Heuchera parvifolia
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera acutifolia Rose to Heuchera acutifolia
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Resolved Heuchera parishii Rydb. to Heuchera parishii
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Wrote 127 names to /volumes/output/splist_wrangle_gbif.namemap as JSON
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera obtusissima Regel & Rach.
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera himalayensis Decne. ex Jacques.
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera scapigera Moench.
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera gracilis Rydb..
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera micrantha Douglas ex Lindl..
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera ciliata Rydb..
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera × rosea L.Möller.
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera roseola Rydb..
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera lloydii Rydb..
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera lithophila A.Heller.
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera undulata Regel & Rach.
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera macrophylla Lodd. ex G.Don.
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera pilosella Rydb..
+27 Dec 2022 11:14 INFO     AcceptedNameSpeciesListWrangler: Unable to resolve Heuchera divaricata Fisch. ex Ser..
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Returned 72 accepted species with 41 duplicates.
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Failed to resolve 14 names.
+27 Dec 2022 11:14 DEBUG    AcceptedNameSpeciesListWrangler: Wrote 127 names to /volumes/output/splist_wrangle_gbif.namemap as JSON

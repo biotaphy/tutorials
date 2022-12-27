@@ -1,0 +1,56 @@
+Tue Dec 27 15:04:56 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/na_2.5min/BIOCLIM_1.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_12.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_17.asc
+Checking header of /volumes/env/na_2.5min/BIOCLIM_7.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_ELEVATION.asc
+Checking header of /volumes/env/na_2.5min/GTOPO30_SLOPE_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_sandpercent_reduced.asc
+Checking header of /volumes/env/na_2.5min/ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced.asc
+Checking header of /volumes/env/na_2.5min/LandCover_1_Needleleaf.asc
+Checking header of /volumes/env/na_2.5min/LandCover_6_Herbaceous.asc
+Checking header of /volumes/env/na_2.5min/mask.asc
+Reading samples from Mitella_caulescens.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2094319616, used 23803904, increment 23803904
+Extractor: max memory 32178700288, total allocated 2118123520, free 2085931008, used 32192512, increment 8388608
+Extracting random background and sample data
+Warning: Sample at -122.60935, 47.64592 in Mitella_caulescens.csv is missing some environmental data (e.g. GTOPO30_SLOPE_reduced)
+Warning: Skipping sample at -122.60935, 47.64592
+Time since start: 2.159
+46245 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_2.5min_na/mitella_caulescens/Mitella_caulescens.csv -e /volumes/env/na_2.5min -o /volumes/output/heuchera_rfolk_2.5min_na/mitella_caulescens nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_2.5min_na/mitella_caulescens samplesfile=/volumes/output/heuchera_rfolk_2.5min_na/mitella_caulescens/Mitella_caulescens.csv environmentallayers=/volumes/env/na_2.5min nowarnings autorun novisible nocache -t mask
+Species: Mitella_caulescens
+Layers: BIOCLIM_1 BIOCLIM_12 BIOCLIM_17 BIOCLIM_7 GTOPO30_ELEVATION GTOPO30_SLOPE_reduced ISRICSOILGRIDS_new_average_coarsefragmentpercent_reduced ISRICSOILGRIDS_new_average_phx10percent_reduced ISRICSOILGRIDS_new_average_sandpercent_reduced ISRICSOILGRIDS_new_average_soilorganiccarboncontent_reduced LandCover_1_Needleleaf LandCover_6_Herbaceous mask
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_2.5min_na/mitella_caulescens
+samplesfile: /volumes/output/heuchera_rfolk_2.5min_na/mitella_caulescens/Mitella_caulescens.csv
+environmentallayers: /volumes/env/na_2.5min
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 1960304744, used 157818776, increment 125626264
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 1950549192, used 167574328, increment 9755552
+Mitella_caulescens: 
+Regularization values: linear/quadratic/product: 0.057, categorical: 0.250, threshold: 1.010, hinge: 0.500
+99 samples
+Density: max memory 32178700288, total allocated 2118123520, free 1935138920, used 182984600, increment 15410272
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 1935138920, used 182984600, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 1935138920, used 182984600, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 1935138920, used 182984600, increment 0
+Initial loss: 9.217713126305595
+Time since start: 3.42
+500: time = 1.020000 loss = 8.062304
+Resulting gain: 1.155409304803543
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_2.5min_na/mitella_caulescens/Mitella_caulescens.asc
+Time since start: 6.31
+Writing /volumes/output/heuchera_rfolk_2.5min_na/mitella_caulescens/plots/Mitella_caulescens.png
+Ending

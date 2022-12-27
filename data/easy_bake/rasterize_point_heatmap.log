@@ -1,8 +1,0 @@
-19 Dec 2022 11:21 INFO     rasterize_point_heatmap: 
-
- ***Create heatmap for points in raster /volumes/output/points_heatmap.gtiff
-19 Dec 2022 11:21 INFO     create_point_heatmap_matrix: Created map matrix with min_x, min_y, max_x, max_y, resolution values min_x -164, min_y 15, max_x -53, max_y 64, resolution 5.0
-19 Dec 2022 11:21 INFO     create_point_heatmap_matrix: Read 9035 points within extent, and 1 out of range, from DWCA file /volumes/data/input/occurrence_idigbio.zip.
-19 Dec 2022 11:21 INFO     create_point_heatmap_matrix: Read 13334 points within extent, and 1091 out of range, from CSV file /volumes/data/input/occurrence_gbif.csv.
-19 Dec 2022 11:21 INFO     create_point_heatmap_matrix: Populated map matrix with point counts for each cell ranging from 0 to 1607
-19 Dec 2022 11:21 INFO     rasterize_point_heatmap: Wrote report file to /volumes/output/rasterize_point_heatmap.rpt

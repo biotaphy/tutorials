@@ -1,0 +1,44 @@
+Tue Dec 27 14:27:13 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Elmera_racemosa.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
+Extracting random background and sample data
+Warning: Sample at -122.93083, 47.65222 in Elmera_racemosa.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -122.93083, 47.65222
+Time since start: 1.027
+2415 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/elmera_racemosa/Elmera_racemosa.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/elmera_racemosa nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/elmera_racemosa samplesfile=/volumes/output/heuchera_rfolk_5min_global/elmera_racemosa/Elmera_racemosa.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Elmera_racemosa
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/elmera_racemosa
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/elmera_racemosa/Elmera_racemosa.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 920260632, used 1197862888, increment 1178253288
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 920260632, used 1197862888, increment 0
+Elmera_racemosa: 
+Regularization values: linear/quadratic/product: 0.219, categorical: 0.250, threshold: 1.590, hinge: 0.500
+41 samples
+Density: max memory 32178700288, total allocated 2118123520, free 920260632, used 1197862888, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 920260632, used 1197862888, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 920260632, used 1197862888, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 920260632, used 1197862888, increment 0
+Initial loss: 7.789454566086673
+200: time = 0.080000 loss = 7.679256
+Resulting gain: 0.11019831994480445
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/elmera_racemosa/Elmera_racemosa.asc
+Time since start: 2.9
+Writing /volumes/output/heuchera_rfolk_5min_global/elmera_racemosa/plots/Elmera_racemosa.png
+Ending

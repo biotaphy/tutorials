@@ -1,0 +1,1 @@
+java -mx30688m -cp "/home/astewart/git/Maxent/ArchivedReleases/3.4.4/maxent.jar:/git/Maxent/ArchivedReleases/3.4.4/maxent.jar" density.Explain -l /volumes/output/heuchera_rfolk_5min_global/tolmiea_diplomenziesii/Tolmiea_diplomenziesii.lambdas -c /volumes/output/heuchera_rfolk_5min_global/tolmiea_diplomenziesii/Tolmiea_diplomenziesii.asc /volumes/env/biotaphy_5min_global

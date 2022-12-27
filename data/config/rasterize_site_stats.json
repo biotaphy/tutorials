@@ -3,5 +3,5 @@
     "log_console": true,
     "report_filename": "/volumes/output/rasterize_site_stats.rpt",
     "raster_filename": "/volumes/output/site_stats.tiff",
-    "matrix_filename": "/volumes/data/easy_bake/site_stats.lmm"
+    "matrix_filename": "/volumes/data/input/site_stats.lmm"
 }

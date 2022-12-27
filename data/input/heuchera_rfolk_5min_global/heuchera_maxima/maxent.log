@@ -1,0 +1,48 @@
+Tue Dec 27 14:32:42 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_maxima.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
+Extracting random background and sample data
+Warning: Sample at -119.5676, 34.046 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.5676, 34.046
+Warning: Sample at -119.557, 34.0215 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.557, 34.0215
+Warning: Sample at -119.5658, 34.0217 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.5658, 34.0217
+Time since start: 1.025
+28 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_maxima/Heuchera_maxima.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/heuchera_maxima nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/heuchera_maxima samplesfile=/volumes/output/heuchera_rfolk_5min_global/heuchera_maxima/Heuchera_maxima.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_maxima
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/heuchera_maxima
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/heuchera_maxima/Heuchera_maxima.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 918354704, used 1199768816, increment 1180159216
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 918354704, used 1199768816, increment 0
+Heuchera_maxima: 
+Regularization values: linear/quadratic/product: 1.000, categorical: 0.590, threshold: 1.960, hinge: 0.500
+4 samples
+Density: max memory 32178700288, total allocated 2118123520, free 918354704, used 1199768816, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 918354704, used 1199768816, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 918354704, used 1199768816, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 918354704, used 1199768816, increment 0
+Initial loss: 3.332204510175204
+60: time = 0.003000 loss = 3.308438
+Resulting gain: 0.02376674731090267
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/heuchera_maxima/Heuchera_maxima.asc
+Time since start: 2.78
+Writing /volumes/output/heuchera_rfolk_5min_global/heuchera_maxima/plots/Heuchera_maxima.png
+Ending
