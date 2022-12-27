@@ -8,5 +8,5 @@
     "max_presence": 1.0,
     "grid_filename": "/volumes/data/input/grid_na_5deg.shp",
     "out_matrix_filename": "/volumes/output/heuchera_pam_rn.lmm",
-    "layer_file_pattern": "/volumes/data/input/heuchera_renamed/*/*.asc"
+    "layer_file_pattern": "/volumes/data/input/heuchera_rfolk_sdm/*/*.asc"
 }
