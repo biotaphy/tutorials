@@ -121,8 +121,8 @@ Output
 This process outputs files configured in the script parameter file:
 
 1. an output file with occurrence records named in the writer_filename, like
-   `heuchera_wrangled.csv
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/heuchera_wrangled.csv>`_
+   `heuchera_wrangle_resolve.csv
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/heuchera_wrangle_resolve.csv>`_
    containing the occurrence records, one record per line.  Note that the species_name
    field now contains the new taxonomic name resolved for each record.  If the
    original records contain other attributes, those will be retained with their
