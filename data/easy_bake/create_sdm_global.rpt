@@ -1,0 +1,550 @@
+{
+    "/volumes/data/input/split_resolve_rfolk/Asimitellaria pauciflora.csv": {
+        "species": "Asimitellaria pauciflora",
+        "num_points": 162,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora/Asimitellaria_pauciflora.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora/Asimitellaria_pauciflora.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora/Asimitellaria_pauciflora.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera caespitosa.csv": {
+        "species": "Heuchera caespitosa",
+        "num_points": 12,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_caespitosa/Heuchera_caespitosa.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_caespitosa/Heuchera_caespitosa.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_caespitosa/Heuchera_caespitosa.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera longiflora.csv": {
+        "species": "Heuchera longiflora",
+        "num_points": 62,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_longiflora/Heuchera_longiflora.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_longiflora/Heuchera_longiflora.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_longiflora/Heuchera_longiflora.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Asimitellaria stylosa.csv": {
+        "species": "Asimitellaria stylosa",
+        "num_points": 89,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa/Asimitellaria_stylosa.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa/Asimitellaria_stylosa.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa/Asimitellaria_stylosa.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera puberula.csv": {
+        "species": "Heuchera puberula",
+        "num_points": 51,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_puberula/Heuchera_puberula.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_puberula/Heuchera_puberula.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_puberula/Heuchera_puberula.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Ozomelis stauropetala.csv": {
+        "species": "Ozomelis stauropetala",
+        "num_points": 134,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Ozomelis_stauropetala/Ozomelis_stauropetala.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Ozomelis_stauropetala/Ozomelis_stauropetala.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Ozomelis_stauropetala/Ozomelis_stauropetala.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera rubescens versicolor.csv": {
+        "species": "Heuchera rubescens versicolor",
+        "num_points": 262,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens_versicolor/Heuchera_rubescens_versicolor.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens_versicolor/Heuchera_rubescens_versicolor.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens_versicolor/Heuchera_rubescens_versicolor.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera parvifolia.csv": {
+        "species": "Heuchera parvifolia",
+        "num_points": 1344,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia/Heuchera_parvifolia.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia/Heuchera_parvifolia.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia/Heuchera_parvifolia.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera grossulariifolia.csv": {
+        "species": "Heuchera grossulariifolia",
+        "num_points": 69,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_grossulariifolia/Heuchera_grossulariifolia.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_grossulariifolia/Heuchera_grossulariifolia.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_grossulariifolia/Heuchera_grossulariifolia.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Mitella nuda.csv": {
+        "species": "Mitella nuda",
+        "num_points": 273,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Mitella_nuda/Mitella_nuda.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Mitella_nuda/Mitella_nuda.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Mitella_nuda/Mitella_nuda.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Mitellastra caulescens.csv": {
+        "species": "Mitellastra caulescens",
+        "num_points": 109,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Mitellastra_caulescens/Mitellastra_caulescens.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Mitellastra_caulescens/Mitellastra_caulescens.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Mitellastra_caulescens/Mitellastra_caulescens.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera parishii.csv": {
+        "species": "Heuchera parishii",
+        "num_points": 103,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_parishii/Heuchera_parishii.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_parishii/Heuchera_parishii.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_parishii/Heuchera_parishii.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera villosa.csv": {
+        "species": "Heuchera villosa",
+        "num_points": 97,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_villosa/Heuchera_villosa.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_villosa/Heuchera_villosa.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_villosa/Heuchera_villosa.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Pectiantia pentandra.csv": {
+        "species": "Pectiantia pentandra",
+        "num_points": 458,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Pectiantia_pentandra/Pectiantia_pentandra.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Pectiantia_pentandra/Pectiantia_pentandra.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Pectiantia_pentandra/Pectiantia_pentandra.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera americana.csv": {
+        "species": "Heuchera americana",
+        "num_points": 421,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_americana/Heuchera_americana.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_americana/Heuchera_americana.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_americana/Heuchera_americana.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera cylindrica.csv": {
+        "species": "Heuchera cylindrica",
+        "num_points": 436,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_cylindrica/Heuchera_cylindrica.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_cylindrica/Heuchera_cylindrica.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_cylindrica/Heuchera_cylindrica.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Mitella diphylla.csv": {
+        "species": "Mitella diphylla",
+        "num_points": 318,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Mitella_diphylla/Mitella_diphylla.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Mitella_diphylla/Mitella_diphylla.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Mitella_diphylla/Mitella_diphylla.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera maxima.csv": {
+        "species": "Heuchera maxima",
+        "num_points": 47,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima/Heuchera_maxima.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima/Heuchera_maxima.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima/Heuchera_maxima.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera merriamii.csv": {
+        "species": "Heuchera merriamii",
+        "num_points": 46,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_merriamii/Heuchera_merriamii.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_merriamii/Heuchera_merriamii.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_merriamii/Heuchera_merriamii.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Lithophragma parviflorum.csv": {
+        "species": "Lithophragma parviflorum",
+        "num_points": 274,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum/Lithophragma_parviflorum.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum/Lithophragma_parviflorum.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum/Lithophragma_parviflorum.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera pulchella.csv": {
+        "species": "Heuchera pulchella",
+        "num_points": 7,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_pulchella/Heuchera_pulchella.csv",
+        "method": "rare_species_model",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_pulchella/Heuchera_pulchella.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera alba.csv": {
+        "species": "Heuchera alba",
+        "num_points": 21,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_alba/Heuchera_alba.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_alba/Heuchera_alba.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_alba/Heuchera_alba.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera glomerulata.csv": {
+        "species": "Heuchera glomerulata",
+        "num_points": 59,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_glomerulata/Heuchera_glomerulata.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_glomerulata/Heuchera_glomerulata.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_glomerulata/Heuchera_glomerulata.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera caroliniana.csv": {
+        "species": "Heuchera caroliniana",
+        "num_points": 29,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_caroliniana/Heuchera_caroliniana.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_caroliniana/Heuchera_caroliniana.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_caroliniana/Heuchera_caroliniana.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Telesonix jamesii.csv": {
+        "species": "Telesonix jamesii",
+        "num_points": 37,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Telesonix_jamesii/Telesonix_jamesii.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Telesonix_jamesii/Telesonix_jamesii.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Telesonix_jamesii/Telesonix_jamesii.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera pubescens.csv": {
+        "species": "Heuchera pubescens",
+        "num_points": 37,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens/Heuchera_pubescens.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens/Heuchera_pubescens.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens/Heuchera_pubescens.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera rosendahlii.csv": {
+        "species": "Heuchera rosendahlii",
+        "num_points": 2,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_rosendahlii/Heuchera_rosendahlii.csv",
+        "method": "rare_species_model",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_rosendahlii/Heuchera_rosendahlii.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera richardsonii.csv": {
+        "species": "Heuchera richardsonii",
+        "num_points": 266,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_richardsonii/Heuchera_richardsonii.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_richardsonii/Heuchera_richardsonii.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_richardsonii/Heuchera_richardsonii.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera chlorantha.csv": {
+        "species": "Heuchera chlorantha",
+        "num_points": 33,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_chlorantha/Heuchera_chlorantha.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_chlorantha/Heuchera_chlorantha.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_chlorantha/Heuchera_chlorantha.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera woodsiaphila.csv": {
+        "species": "Heuchera woodsiaphila",
+        "num_points": 4,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_woodsiaphila/Heuchera_woodsiaphila.csv",
+        "method": "rare_species_model",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_woodsiaphila/Heuchera_woodsiaphila.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Asimitellaria furusei.csv": {
+        "species": "Asimitellaria furusei",
+        "num_points": 95,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei/Asimitellaria_furusei.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei/Asimitellaria_furusei.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei/Asimitellaria_furusei.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Bensoniella oregona.csv": {
+        "species": "Bensoniella oregona",
+        "num_points": 28,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona/Bensoniella_oregona.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona/Bensoniella_oregona.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona/Bensoniella_oregona.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera parviflora.csv": {
+        "species": "Heuchera parviflora",
+        "num_points": 28,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_parviflora/Heuchera_parviflora.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_parviflora/Heuchera_parviflora.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_parviflora/Heuchera_parviflora.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Mitella japonica.csv": {
+        "species": "Mitella japonica",
+        "num_points": 78,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Mitella_japonica/Mitella_japonica.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Mitella_japonica/Mitella_japonica.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Mitella_japonica/Mitella_japonica.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera missouriensis.csv": {
+        "species": "Heuchera missouriensis",
+        "num_points": 23,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_missouriensis/Heuchera_missouriensis.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_missouriensis/Heuchera_missouriensis.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_missouriensis/Heuchera_missouriensis.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera mexicana.csv": {
+        "species": "Heuchera mexicana",
+        "num_points": 85,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_mexicana/Heuchera_mexicana.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_mexicana/Heuchera_mexicana.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_mexicana/Heuchera_mexicana.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera inconstans.csv": {
+        "species": "Heuchera inconstans",
+        "num_points": 11,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_inconstans/Heuchera_inconstans.csv",
+        "method": "rare_species_model",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_inconstans/Heuchera_inconstans.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera hirsutissima.csv": {
+        "species": "Heuchera hirsutissima",
+        "num_points": 21,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima/Heuchera_hirsutissima.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima/Heuchera_hirsutissima.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima/Heuchera_hirsutissima.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera longipetala.csv": {
+        "species": "Heuchera longipetala",
+        "num_points": 83,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_longipetala/Heuchera_longipetala.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_longipetala/Heuchera_longipetala.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_longipetala/Heuchera_longipetala.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Brewerimitella ovalis.csv": {
+        "species": "Brewerimitella ovalis",
+        "num_points": 111,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Brewerimitella_ovalis/Brewerimitella_ovalis.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Brewerimitella_ovalis/Brewerimitella_ovalis.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Brewerimitella_ovalis/Brewerimitella_ovalis.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Peltoboykinia tellimoides.csv": {
+        "species": "Peltoboykinia tellimoides",
+        "num_points": 19,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Peltoboykinia_tellimoides/Peltoboykinia_tellimoides.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Peltoboykinia_tellimoides/Peltoboykinia_tellimoides.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Peltoboykinia_tellimoides/Peltoboykinia_tellimoides.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera eastwoodiae.csv": {
+        "species": "Heuchera eastwoodiae",
+        "num_points": 31,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_eastwoodiae/Heuchera_eastwoodiae.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_eastwoodiae/Heuchera_eastwoodiae.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_eastwoodiae/Heuchera_eastwoodiae.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera hallii.csv": {
+        "species": "Heuchera hallii",
+        "num_points": 48,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_hallii/Heuchera_hallii.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_hallii/Heuchera_hallii.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_hallii/Heuchera_hallii.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera elegans.csv": {
+        "species": "Heuchera elegans",
+        "num_points": 115,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_elegans/Heuchera_elegans.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_elegans/Heuchera_elegans.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_elegans/Heuchera_elegans.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera rubescens.csv": {
+        "species": "Heuchera rubescens",
+        "num_points": 422,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens/Heuchera_rubescens.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens/Heuchera_rubescens.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens/Heuchera_rubescens.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera sanguinea.csv": {
+        "species": "Heuchera sanguinea",
+        "num_points": 81,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea/Heuchera_sanguinea.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea/Heuchera_sanguinea.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea/Heuchera_sanguinea.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Tiarella polyphylla.csv": {
+        "species": "Tiarella polyphylla",
+        "num_points": 281,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Tiarella_polyphylla/Tiarella_polyphylla.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Tiarella_polyphylla/Tiarella_polyphylla.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Tiarella_polyphylla/Tiarella_polyphylla.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera bracteata.csv": {
+        "species": "Heuchera bracteata",
+        "num_points": 86,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_bracteata/Heuchera_bracteata.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_bracteata/Heuchera_bracteata.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_bracteata/Heuchera_bracteata.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera brevistaminea.csv": {
+        "species": "Heuchera brevistaminea",
+        "num_points": 14,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_brevistaminea/Heuchera_brevistaminea.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_brevistaminea/Heuchera_brevistaminea.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_brevistaminea/Heuchera_brevistaminea.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Conimitella williamsii.csv": {
+        "species": "Conimitella williamsii",
+        "num_points": 41,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Conimitella_williamsii/Conimitella_williamsii.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Conimitella_williamsii/Conimitella_williamsii.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Conimitella_williamsii/Conimitella_williamsii.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera novomexicana.csv": {
+        "species": "Heuchera novomexicana",
+        "num_points": 45,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_novomexicana/Heuchera_novomexicana.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_novomexicana/Heuchera_novomexicana.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_novomexicana/Heuchera_novomexicana.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera micrantha.csv": {
+        "species": "Heuchera micrantha",
+        "num_points": 527,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_micrantha/Heuchera_micrantha.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_micrantha/Heuchera_micrantha.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_micrantha/Heuchera_micrantha.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera glabra.csv": {
+        "species": "Heuchera glabra",
+        "num_points": 192,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_glabra/Heuchera_glabra.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_glabra/Heuchera_glabra.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_glabra/Heuchera_glabra.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera wellsiae.csv": {
+        "species": "Heuchera wellsiae",
+        "num_points": 4,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_wellsiae/Heuchera_wellsiae.csv",
+        "method": "rare_species_model",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_wellsiae/Heuchera_wellsiae.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera soltisii.csv": {
+        "species": "Heuchera soltisii",
+        "num_points": 14,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_soltisii/Heuchera_soltisii.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_soltisii/Heuchera_soltisii.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_soltisii/Heuchera_soltisii.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Brewerimitella breweri.csv": {
+        "species": "Brewerimitella breweri",
+        "num_points": 282,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Brewerimitella_breweri/Brewerimitella_breweri.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Brewerimitella_breweri/Brewerimitella_breweri.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Brewerimitella_breweri/Brewerimitella_breweri.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Tellima grandiflora.csv": {
+        "species": "Tellima grandiflora",
+        "num_points": 520,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Tellima_grandiflora/Tellima_grandiflora.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Tellima_grandiflora/Tellima_grandiflora.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Tellima_grandiflora/Tellima_grandiflora.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Elmera racemosa.csv": {
+        "species": "Elmera racemosa",
+        "num_points": 62,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Elmera_racemosa/Elmera_racemosa.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Elmera_racemosa/Elmera_racemosa.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Elmera_racemosa/Elmera_racemosa.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera pilosissima.csv": {
+        "species": "Heuchera pilosissima",
+        "num_points": 48,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_pilosissima/Heuchera_pilosissima.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_pilosissima/Heuchera_pilosissima.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_pilosissima/Heuchera_pilosissima.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera acutifolia.csv": {
+        "species": "Heuchera acutifolia",
+        "num_points": 19,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia/Heuchera_acutifolia.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia/Heuchera_acutifolia.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia/Heuchera_acutifolia.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera wootonii.csv": {
+        "species": "Heuchera wootonii",
+        "num_points": 22,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii/Heuchera_wootonii.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii/Heuchera_wootonii.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii/Heuchera_wootonii.asc"
+    },
+    "/volumes/data/input/split_resolve_rfolk/Heuchera abramsii.csv": {
+        "species": "Heuchera abramsii",
+        "num_points": 28,
+        "csv_filename": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii/Heuchera_abramsii.csv",
+        "method": "maxent",
+        "maxent_arguments": "nowarnings nocache autorun -z togglelayertype=mask",
+        "model_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii/Heuchera_abramsii.lambdas",
+        "projected_distribution_file": "/volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii/Heuchera_abramsii.asc"
+    }
+}

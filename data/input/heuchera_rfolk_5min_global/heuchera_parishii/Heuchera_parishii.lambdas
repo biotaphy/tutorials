@@ -1,9 +1,0 @@
-(mask=50.0), 0.0, 0.0, 1.0
-ISRICSOILGRIDS_new_average_phx10percent_reduced, 0.0, 60.0, 79.0
-ISRICSOILGRIDS_new_average_phx10percent_reduced^2, -8.662379228414707, 3600.0, 6241.0
-`ISRICSOILGRIDS_new_average_phx10percent_reduced, -0.37914608880394857, 60.0, 60.5
-`ISRICSOILGRIDS_new_average_phx10percent_reduced, -1.2483742023750581, 60.0, 64.5
-linearPredictorNormalizer, -1.367833096009564
-densityNormalizer, 23.138583080334136
-numBackgroundPoints, 115
-entropy, 3.8327099563552607

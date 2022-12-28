@@ -1,0 +1,552 @@
+28 Dec 2022 11:35 INFO     create_sdm: 
+
+***Create SDMs for 62 species occurrence CSVs
+28 Dec 2022 11:35 INFO     create_sdm: 
+*** Starting SDM for Asimitellaria pauciflora, file 1 of 62
+28 Dec 2022 11:35 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:35 INFO     model: Create Maxent model
+28 Dec 2022 11:36 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora/Asimitellaria_pauciflora.lambdas
+28 Dec 2022 11:36 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora/Asimitellaria_pauciflora.asc
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Completed SDM computation for Asimitellaria pauciflora
+
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Starting SDM for Heuchera caespitosa, file 2 of 62
+28 Dec 2022 11:36 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:36 INFO     model: Create Maxent model
+28 Dec 2022 11:36 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_caespitosa/Heuchera_caespitosa.lambdas
+28 Dec 2022 11:36 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_caespitosa/Heuchera_caespitosa.asc
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera caespitosa
+
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Starting SDM for Heuchera longiflora, file 3 of 62
+28 Dec 2022 11:36 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:36 INFO     model: Create Maxent model
+28 Dec 2022 11:36 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_longiflora/Heuchera_longiflora.lambdas
+28 Dec 2022 11:36 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_longiflora/Heuchera_longiflora.asc
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera longiflora
+
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Starting SDM for Asimitellaria stylosa, file 4 of 62
+28 Dec 2022 11:36 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:36 INFO     model: Create Maxent model
+28 Dec 2022 11:36 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa/Asimitellaria_stylosa.lambdas
+28 Dec 2022 11:36 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa/Asimitellaria_stylosa.asc
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Completed SDM computation for Asimitellaria stylosa
+
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Starting SDM for Heuchera puberula, file 5 of 62
+28 Dec 2022 11:36 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:36 INFO     model: Create Maxent model
+28 Dec 2022 11:36 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_puberula/Heuchera_puberula.lambdas
+28 Dec 2022 11:36 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_puberula/Heuchera_puberula.asc
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera puberula
+
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Starting SDM for Ozomelis stauropetala, file 6 of 62
+28 Dec 2022 11:36 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:36 INFO     model: Create Maxent model
+28 Dec 2022 11:36 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Ozomelis_stauropetala/Ozomelis_stauropetala.lambdas
+28 Dec 2022 11:36 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Ozomelis_stauropetala/Ozomelis_stauropetala.asc
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Completed SDM computation for Ozomelis stauropetala
+
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Starting SDM for Heuchera rubescens versicolor, file 7 of 62
+28 Dec 2022 11:36 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:36 INFO     model: Create Maxent model
+28 Dec 2022 11:36 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens_versicolor/Heuchera_rubescens_versicolor.lambdas
+28 Dec 2022 11:36 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens_versicolor/Heuchera_rubescens_versicolor.asc
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera rubescens versicolor
+
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Starting SDM for Heuchera parvifolia, file 8 of 62
+28 Dec 2022 11:36 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:36 INFO     model: Create Maxent model
+28 Dec 2022 11:36 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia/Heuchera_parvifolia.lambdas
+28 Dec 2022 11:36 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia/Heuchera_parvifolia.asc
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera parvifolia
+
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Starting SDM for Heuchera grossulariifolia, file 9 of 62
+28 Dec 2022 11:36 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:36 INFO     model: Create Maxent model
+28 Dec 2022 11:36 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_grossulariifolia/Heuchera_grossulariifolia.lambdas
+28 Dec 2022 11:36 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_grossulariifolia/Heuchera_grossulariifolia.asc
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera grossulariifolia
+
+28 Dec 2022 11:36 INFO     create_sdm: 
+*** Starting SDM for Mitella nuda, file 10 of 62
+28 Dec 2022 11:36 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:36 INFO     model: Create Maxent model
+28 Dec 2022 11:37 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Mitella_nuda/Mitella_nuda.lambdas
+28 Dec 2022 11:37 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Mitella_nuda/Mitella_nuda.asc
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Completed SDM computation for Mitella nuda
+
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Starting SDM for Mitellastra caulescens, file 11 of 62
+28 Dec 2022 11:37 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:37 INFO     model: Create Maxent model
+28 Dec 2022 11:37 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Mitellastra_caulescens/Mitellastra_caulescens.lambdas
+28 Dec 2022 11:37 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Mitellastra_caulescens/Mitellastra_caulescens.asc
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Completed SDM computation for Mitellastra caulescens
+
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Starting SDM for Heuchera parishii, file 12 of 62
+28 Dec 2022 11:37 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:37 INFO     model: Create Maxent model
+28 Dec 2022 11:37 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_parishii/Heuchera_parishii.lambdas
+28 Dec 2022 11:37 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_parishii/Heuchera_parishii.asc
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera parishii
+
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Starting SDM for Heuchera villosa, file 13 of 62
+28 Dec 2022 11:37 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:37 INFO     model: Create Maxent model
+28 Dec 2022 11:37 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_villosa/Heuchera_villosa.lambdas
+28 Dec 2022 11:37 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_villosa/Heuchera_villosa.asc
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera villosa
+
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Starting SDM for Pectiantia pentandra, file 14 of 62
+28 Dec 2022 11:37 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:37 INFO     model: Create Maxent model
+28 Dec 2022 11:37 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Pectiantia_pentandra/Pectiantia_pentandra.lambdas
+28 Dec 2022 11:37 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Pectiantia_pentandra/Pectiantia_pentandra.asc
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Completed SDM computation for Pectiantia pentandra
+
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Starting SDM for Heuchera americana, file 15 of 62
+28 Dec 2022 11:37 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:37 INFO     model: Create Maxent model
+28 Dec 2022 11:37 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_americana/Heuchera_americana.lambdas
+28 Dec 2022 11:37 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_americana/Heuchera_americana.asc
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera americana
+
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Starting SDM for Heuchera cylindrica, file 16 of 62
+28 Dec 2022 11:37 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:37 INFO     model: Create Maxent model
+28 Dec 2022 11:37 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_cylindrica/Heuchera_cylindrica.lambdas
+28 Dec 2022 11:37 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_cylindrica/Heuchera_cylindrica.asc
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera cylindrica
+
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Starting SDM for Mitella diphylla, file 17 of 62
+28 Dec 2022 11:37 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:37 INFO     model: Create Maxent model
+28 Dec 2022 11:37 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Mitella_diphylla/Mitella_diphylla.lambdas
+28 Dec 2022 11:37 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Mitella_diphylla/Mitella_diphylla.asc
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Completed SDM computation for Mitella diphylla
+
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Starting SDM for Heuchera maxima, file 18 of 62
+28 Dec 2022 11:37 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:37 INFO     model: Create Maxent model
+28 Dec 2022 11:37 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima/Heuchera_maxima.lambdas
+28 Dec 2022 11:37 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima/Heuchera_maxima.asc
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera maxima
+
+28 Dec 2022 11:37 INFO     create_sdm: 
+*** Starting SDM for Heuchera merriamii, file 19 of 62
+28 Dec 2022 11:37 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:37 INFO     model: Create Maxent model
+28 Dec 2022 11:38 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_merriamii/Heuchera_merriamii.lambdas
+28 Dec 2022 11:38 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_merriamii/Heuchera_merriamii.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera merriamii
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Lithophragma parviflorum, file 20 of 62
+28 Dec 2022 11:38 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:38 INFO     model: Create Maxent model
+28 Dec 2022 11:38 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum/Lithophragma_parviflorum.lambdas
+28 Dec 2022 11:38 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum/Lithophragma_parviflorum.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Lithophragma parviflorum
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Heuchera pulchella, file 21 of 62
+28 Dec 2022 11:38 INFO     model: Create rare species model and map
+28 Dec 2022 11:38 INFO     model: Completed rare_species_model projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_pulchella/Heuchera_pulchella.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera pulchella
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Heuchera alba, file 22 of 62
+28 Dec 2022 11:38 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:38 INFO     model: Create Maxent model
+28 Dec 2022 11:38 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_alba/Heuchera_alba.lambdas
+28 Dec 2022 11:38 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_alba/Heuchera_alba.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera alba
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Heuchera glomerulata, file 23 of 62
+28 Dec 2022 11:38 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:38 INFO     model: Create Maxent model
+28 Dec 2022 11:38 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_glomerulata/Heuchera_glomerulata.lambdas
+28 Dec 2022 11:38 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_glomerulata/Heuchera_glomerulata.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera glomerulata
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Heuchera caroliniana, file 24 of 62
+28 Dec 2022 11:38 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:38 INFO     model: Create Maxent model
+28 Dec 2022 11:38 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_caroliniana/Heuchera_caroliniana.lambdas
+28 Dec 2022 11:38 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_caroliniana/Heuchera_caroliniana.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera caroliniana
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Telesonix jamesii, file 25 of 62
+28 Dec 2022 11:38 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:38 INFO     model: Create Maxent model
+28 Dec 2022 11:38 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Telesonix_jamesii/Telesonix_jamesii.lambdas
+28 Dec 2022 11:38 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Telesonix_jamesii/Telesonix_jamesii.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Telesonix jamesii
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Heuchera pubescens, file 26 of 62
+28 Dec 2022 11:38 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:38 INFO     model: Create Maxent model
+28 Dec 2022 11:38 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens/Heuchera_pubescens.lambdas
+28 Dec 2022 11:38 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens/Heuchera_pubescens.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera pubescens
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Heuchera rosendahlii, file 27 of 62
+28 Dec 2022 11:38 INFO     model: Create rare species model and map
+28 Dec 2022 11:38 INFO     model: Completed rare_species_model projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_rosendahlii/Heuchera_rosendahlii.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera rosendahlii
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Heuchera richardsonii, file 28 of 62
+28 Dec 2022 11:38 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:38 INFO     model: Create Maxent model
+28 Dec 2022 11:38 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_richardsonii/Heuchera_richardsonii.lambdas
+28 Dec 2022 11:38 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_richardsonii/Heuchera_richardsonii.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera richardsonii
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Heuchera chlorantha, file 29 of 62
+28 Dec 2022 11:38 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:38 INFO     model: Create Maxent model
+28 Dec 2022 11:38 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_chlorantha/Heuchera_chlorantha.lambdas
+28 Dec 2022 11:38 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_chlorantha/Heuchera_chlorantha.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera chlorantha
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Heuchera woodsiaphila, file 30 of 62
+28 Dec 2022 11:38 INFO     model: Create rare species model and map
+28 Dec 2022 11:38 INFO     model: Completed rare_species_model projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_woodsiaphila/Heuchera_woodsiaphila.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera woodsiaphila
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Asimitellaria furusei, file 31 of 62
+28 Dec 2022 11:38 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:38 INFO     model: Create Maxent model
+28 Dec 2022 11:38 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei/Asimitellaria_furusei.lambdas
+28 Dec 2022 11:38 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei/Asimitellaria_furusei.asc
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Completed SDM computation for Asimitellaria furusei
+
+28 Dec 2022 11:38 INFO     create_sdm: 
+*** Starting SDM for Bensoniella oregona, file 32 of 62
+28 Dec 2022 11:38 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:38 INFO     model: Create Maxent model
+28 Dec 2022 11:39 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona/Bensoniella_oregona.lambdas
+28 Dec 2022 11:39 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona/Bensoniella_oregona.asc
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Completed SDM computation for Bensoniella oregona
+
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Starting SDM for Heuchera parviflora, file 33 of 62
+28 Dec 2022 11:39 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:39 INFO     model: Create Maxent model
+28 Dec 2022 11:39 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_parviflora/Heuchera_parviflora.lambdas
+28 Dec 2022 11:39 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_parviflora/Heuchera_parviflora.asc
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera parviflora
+
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Starting SDM for Mitella japonica, file 34 of 62
+28 Dec 2022 11:39 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:39 INFO     model: Create Maxent model
+28 Dec 2022 11:39 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Mitella_japonica/Mitella_japonica.lambdas
+28 Dec 2022 11:39 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Mitella_japonica/Mitella_japonica.asc
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Completed SDM computation for Mitella japonica
+
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Starting SDM for Heuchera missouriensis, file 35 of 62
+28 Dec 2022 11:39 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:39 INFO     model: Create Maxent model
+28 Dec 2022 11:39 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_missouriensis/Heuchera_missouriensis.lambdas
+28 Dec 2022 11:39 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_missouriensis/Heuchera_missouriensis.asc
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera missouriensis
+
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Starting SDM for Heuchera mexicana, file 36 of 62
+28 Dec 2022 11:39 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:39 INFO     model: Create Maxent model
+28 Dec 2022 11:39 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_mexicana/Heuchera_mexicana.lambdas
+28 Dec 2022 11:39 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_mexicana/Heuchera_mexicana.asc
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera mexicana
+
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Starting SDM for Heuchera inconstans, file 37 of 62
+28 Dec 2022 11:39 INFO     model: Create rare species model and map
+28 Dec 2022 11:39 INFO     model: Completed rare_species_model projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_inconstans/Heuchera_inconstans.asc
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera inconstans
+
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Starting SDM for Heuchera hirsutissima, file 38 of 62
+28 Dec 2022 11:39 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:39 INFO     model: Create Maxent model
+28 Dec 2022 11:39 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima/Heuchera_hirsutissima.lambdas
+28 Dec 2022 11:39 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima/Heuchera_hirsutissima.asc
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera hirsutissima
+
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Starting SDM for Heuchera longipetala, file 39 of 62
+28 Dec 2022 11:39 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:39 INFO     model: Create Maxent model
+28 Dec 2022 11:39 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_longipetala/Heuchera_longipetala.lambdas
+28 Dec 2022 11:39 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_longipetala/Heuchera_longipetala.asc
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera longipetala
+
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Starting SDM for Brewerimitella ovalis, file 40 of 62
+28 Dec 2022 11:39 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:39 INFO     model: Create Maxent model
+28 Dec 2022 11:39 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Brewerimitella_ovalis/Brewerimitella_ovalis.lambdas
+28 Dec 2022 11:39 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Brewerimitella_ovalis/Brewerimitella_ovalis.asc
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Completed SDM computation for Brewerimitella ovalis
+
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Starting SDM for Peltoboykinia tellimoides, file 41 of 62
+28 Dec 2022 11:39 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:39 INFO     model: Create Maxent model
+28 Dec 2022 11:39 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Peltoboykinia_tellimoides/Peltoboykinia_tellimoides.lambdas
+28 Dec 2022 11:39 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Peltoboykinia_tellimoides/Peltoboykinia_tellimoides.asc
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Completed SDM computation for Peltoboykinia tellimoides
+
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Starting SDM for Heuchera eastwoodiae, file 42 of 62
+28 Dec 2022 11:39 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:39 INFO     model: Create Maxent model
+28 Dec 2022 11:39 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_eastwoodiae/Heuchera_eastwoodiae.lambdas
+28 Dec 2022 11:39 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_eastwoodiae/Heuchera_eastwoodiae.asc
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera eastwoodiae
+
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Starting SDM for Heuchera hallii, file 43 of 62
+28 Dec 2022 11:39 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:39 INFO     model: Create Maxent model
+28 Dec 2022 11:39 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_hallii/Heuchera_hallii.lambdas
+28 Dec 2022 11:39 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_hallii/Heuchera_hallii.asc
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera hallii
+
+28 Dec 2022 11:39 INFO     create_sdm: 
+*** Starting SDM for Heuchera elegans, file 44 of 62
+28 Dec 2022 11:40 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:40 INFO     model: Create Maxent model
+28 Dec 2022 11:40 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_elegans/Heuchera_elegans.lambdas
+28 Dec 2022 11:40 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_elegans/Heuchera_elegans.asc
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera elegans
+
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Starting SDM for Heuchera rubescens, file 45 of 62
+28 Dec 2022 11:40 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:40 INFO     model: Create Maxent model
+28 Dec 2022 11:40 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens/Heuchera_rubescens.lambdas
+28 Dec 2022 11:40 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens/Heuchera_rubescens.asc
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera rubescens
+
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Starting SDM for Heuchera sanguinea, file 46 of 62
+28 Dec 2022 11:40 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:40 INFO     model: Create Maxent model
+28 Dec 2022 11:40 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea/Heuchera_sanguinea.lambdas
+28 Dec 2022 11:40 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea/Heuchera_sanguinea.asc
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera sanguinea
+
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Starting SDM for Tiarella polyphylla, file 47 of 62
+28 Dec 2022 11:40 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:40 INFO     model: Create Maxent model
+28 Dec 2022 11:40 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Tiarella_polyphylla/Tiarella_polyphylla.lambdas
+28 Dec 2022 11:40 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Tiarella_polyphylla/Tiarella_polyphylla.asc
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Completed SDM computation for Tiarella polyphylla
+
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Starting SDM for Heuchera bracteata, file 48 of 62
+28 Dec 2022 11:40 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:40 INFO     model: Create Maxent model
+28 Dec 2022 11:40 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_bracteata/Heuchera_bracteata.lambdas
+28 Dec 2022 11:40 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_bracteata/Heuchera_bracteata.asc
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera bracteata
+
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Starting SDM for Heuchera brevistaminea, file 49 of 62
+28 Dec 2022 11:40 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:40 INFO     model: Create Maxent model
+28 Dec 2022 11:40 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_brevistaminea/Heuchera_brevistaminea.lambdas
+28 Dec 2022 11:40 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_brevistaminea/Heuchera_brevistaminea.asc
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera brevistaminea
+
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Starting SDM for Conimitella williamsii, file 50 of 62
+28 Dec 2022 11:40 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:40 INFO     model: Create Maxent model
+28 Dec 2022 11:40 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Conimitella_williamsii/Conimitella_williamsii.lambdas
+28 Dec 2022 11:40 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Conimitella_williamsii/Conimitella_williamsii.asc
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Completed SDM computation for Conimitella williamsii
+
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Starting SDM for Heuchera novomexicana, file 51 of 62
+28 Dec 2022 11:40 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:40 INFO     model: Create Maxent model
+28 Dec 2022 11:40 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_novomexicana/Heuchera_novomexicana.lambdas
+28 Dec 2022 11:40 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_novomexicana/Heuchera_novomexicana.asc
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera novomexicana
+
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Starting SDM for Heuchera micrantha, file 52 of 62
+28 Dec 2022 11:40 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:40 INFO     model: Create Maxent model
+28 Dec 2022 11:40 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_micrantha/Heuchera_micrantha.lambdas
+28 Dec 2022 11:40 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_micrantha/Heuchera_micrantha.asc
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera micrantha
+
+28 Dec 2022 11:40 INFO     create_sdm: 
+*** Starting SDM for Heuchera glabra, file 53 of 62
+28 Dec 2022 11:40 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:40 INFO     model: Create Maxent model
+28 Dec 2022 11:41 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_glabra/Heuchera_glabra.lambdas
+28 Dec 2022 11:41 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_glabra/Heuchera_glabra.asc
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera glabra
+
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Starting SDM for Heuchera wellsiae, file 54 of 62
+28 Dec 2022 11:41 INFO     model: Create rare species model and map
+28 Dec 2022 11:41 INFO     model: Completed rare_species_model projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_wellsiae/Heuchera_wellsiae.asc
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera wellsiae
+
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Starting SDM for Heuchera soltisii, file 55 of 62
+28 Dec 2022 11:41 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:41 INFO     model: Create Maxent model
+28 Dec 2022 11:41 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_soltisii/Heuchera_soltisii.lambdas
+28 Dec 2022 11:41 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_soltisii/Heuchera_soltisii.asc
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera soltisii
+
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Starting SDM for Brewerimitella breweri, file 56 of 62
+28 Dec 2022 11:41 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:41 INFO     model: Create Maxent model
+28 Dec 2022 11:41 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Brewerimitella_breweri/Brewerimitella_breweri.lambdas
+28 Dec 2022 11:41 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Brewerimitella_breweri/Brewerimitella_breweri.asc
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Completed SDM computation for Brewerimitella breweri
+
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Starting SDM for Tellima grandiflora, file 57 of 62
+28 Dec 2022 11:41 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:41 INFO     model: Create Maxent model
+28 Dec 2022 11:41 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Tellima_grandiflora/Tellima_grandiflora.lambdas
+28 Dec 2022 11:41 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Tellima_grandiflora/Tellima_grandiflora.asc
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Completed SDM computation for Tellima grandiflora
+
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Starting SDM for Elmera racemosa, file 58 of 62
+28 Dec 2022 11:41 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:41 INFO     model: Create Maxent model
+28 Dec 2022 11:41 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Elmera_racemosa/Elmera_racemosa.lambdas
+28 Dec 2022 11:41 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Elmera_racemosa/Elmera_racemosa.asc
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Completed SDM computation for Elmera racemosa
+
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Starting SDM for Heuchera pilosissima, file 59 of 62
+28 Dec 2022 11:41 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:41 INFO     model: Create Maxent model
+28 Dec 2022 11:41 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_pilosissima/Heuchera_pilosissima.lambdas
+28 Dec 2022 11:41 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_pilosissima/Heuchera_pilosissima.asc
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera pilosissima
+
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Starting SDM for Heuchera acutifolia, file 60 of 62
+28 Dec 2022 11:41 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:41 INFO     model: Create Maxent model
+28 Dec 2022 11:41 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia/Heuchera_acutifolia.lambdas
+28 Dec 2022 11:41 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia/Heuchera_acutifolia.asc
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera acutifolia
+
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Starting SDM for Heuchera wootonii, file 61 of 62
+28 Dec 2022 11:41 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:41 INFO     model: Create Maxent model
+28 Dec 2022 11:41 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii/Heuchera_wootonii.lambdas
+28 Dec 2022 11:41 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii/Heuchera_wootonii.asc
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera wootonii
+
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Starting SDM for Heuchera abramsii, file 62 of 62
+28 Dec 2022 11:41 INFO     _create_mask: Created mask /volumes/env/biotaphy_5min_global/mask.asc for current SDM
+28 Dec 2022 11:41 INFO     model: Create Maxent model
+28 Dec 2022 11:41 INFO     model: Completed Maxent model with file /volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii/Heuchera_abramsii.lambdas
+28 Dec 2022 11:41 INFO     model: Completed maxent projection to /volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii/Heuchera_abramsii.asc
+28 Dec 2022 11:41 INFO     create_sdm: 
+*** Completed SDM computation for Heuchera abramsii
+
+28 Dec 2022 11:41 INFO     create_sdm: Wrote report file to /volumes/output/create_sdm_global.rpt

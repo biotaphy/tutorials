@@ -130,11 +130,11 @@ This process outputs files configured in the script parameter file:
 
 2. If `report_filename` is specified in the script parameter file, a summary of name
    resolutions, like
-   `wrangle_occurrences.rpt
+   `wrangle_occurrences_resolve.rpt
    <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_occurrences_resolve.rpt>`_
 
 3. If `log_filename` is specified in the script parameter file, a logfile like
-   `wrangle_occurrences.log
+   `wrangle_occurrences_resolve.log
    <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_occurrences_resolve.log>`_
    containing a summary of the processing.
 

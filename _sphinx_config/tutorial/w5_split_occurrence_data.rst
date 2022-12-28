@@ -37,17 +37,16 @@ so the output will be data merged from both data sources, and split by species n
 Input: Script parameter file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A JSON parameter file is required for this command.  The parameter file in our
-first example is `split_gbif.json
-<https://github.com/biotaphy/tutorials/blob/main/data/config/split_gbif.json>`_.
-This one splits GBIF data, which already contains accepted names, so we can skip name
-resolution.
-
-The parameter file in our second
+A JSON parameter file is required for this command.  The parameter file in our first
 example is `split_resolve.json
 <https://github.com/biotaphy/tutorials/blob/main/data/config/split_resolve.json>`_.
 This one splits both iDigBio and GBIF data, and resolves to the canonical form of
 accepted names according to the GBIF taxonomy service.
+
+The parameter file in our second example is `split_gbif.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/split_gbif.json>`_.
+This one splits GBIF data, which already contains accepted names, so we can skip name
+resolution.
 
 These are the required and optional parameters:
 
@@ -115,18 +114,23 @@ computer, then update the repository.
 Run tutorial
 --------------------------------
 
-Initiate the split_occurrence_data process with the following:
+Initiate the split_occurrence_data process with the following commands.  The second
+command uses our second example configuration, splitting GBIF data on its
+acceptedScientificName field without additional name resolution.  Output example
+data is from the first command.:
 
 For MacOSX or Linux systems:
 .. code-block::
 
   ./run_tutorial.sh split_occurrence_data data/config/split_resolve.json
+  ./run_tutorial.sh split_occurrence_data data/config/split_resolve_gbif.json
 
 For Windows systems:
 
 .. code-block::
 
-   ./run_tutorial.bat split_occurrence_data data/config/split_resolve.json
+  ./run_tutorial.bat split_occurrence_data data/config/split_resolve.json
+  ./run_tutorial.bat split_occurrence_data data/config/split_resolve_gbif.json
 
 
 ------------------------------------------------

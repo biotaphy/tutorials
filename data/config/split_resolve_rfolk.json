@@ -1,0 +1,14 @@
+{
+    "max_open_writers": 100,
+    "report_filename": "/volumes/output/split_resolve_rfolk.rpt",
+    "log_filename": "/volumes/output/split_resolve_rfolk.log",
+    "log_console": true,
+    "csv":  [
+      ["/volumes/data/input/heuchera.csv",
+        "/volumes/data/wranglers/occ_resolve.json",
+        "species_name",
+        "x",
+        "y"
+      ]],
+  "out_dir": "/volumes/output/split_resolve_rfolk"
+}
