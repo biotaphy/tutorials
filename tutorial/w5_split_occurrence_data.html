@@ -130,14 +130,13 @@ so the output will be data merged from both data sources, and split by species n
 </section>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading"></a></h3>
-<p>A JSON parameter file is required for this command.  The parameter file in our
-first example is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/split_gbif.json">split_gbif.json</a>.
-This one splits GBIF data, which already contains accepted names, so we can skip name
-resolution.</p>
-<p>The parameter file in our second
+<p>A JSON parameter file is required for this command.  The parameter file in our first
 example is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/split_resolve.json">split_resolve.json</a>.
 This one splits both iDigBio and GBIF data, and resolves to the canonical form of
 accepted names according to the GBIF taxonomy service.</p>
+<p>The parameter file in our second example is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/split_gbif.json">split_gbif.json</a>.
+This one splits GBIF data, which already contains accepted names, so we can skip name
+resolution.</p>
 <p>These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -202,14 +201,19 @@ computer, then update the repository.</p>
 </section>
 <section id="run-tutorial">
 <h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading"></a></h2>
-<p>Initiate the split_occurrence_data process with the following:</p>
+<p>Initiate the split_occurrence_data process with the following commands.  The second
+command uses our second example configuration, splitting GBIF data on its
+acceptedScientificName field without additional name resolution.  Output example
+data is from the first command.:</p>
 <p>For MacOSX or Linux systems:
 .. code-block:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_resolve</span><span class="o">.</span><span class="n">json</span>
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_resolve_gbif</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 <p>For Windows systems:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_resolve</span><span class="o">.</span><span class="n">json</span>
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">split_occurrence_data</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">split_resolve_gbif</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>
