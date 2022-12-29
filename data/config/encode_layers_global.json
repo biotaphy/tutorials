@@ -1,7 +1,7 @@
 {
-    "log_filename": "/volumes/output/encode_layers_1deg_global.log",
+    "log_filename": "/volumes/output/encode_layers_global.log",
     "log_console": true,
-    "report_filename": "/volumes/output/encode_layers_1deg_global.rpt",
+    "report_filename": "/volumes/output/encode_layers_global.rpt",
     "encode_method": "presence_absence",
     "min_coverage": 25,
     "min_presence": 0.1,
