@@ -1,0 +1,46 @@
+Wed Dec 28 11:36:20 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Asimitellaria_stylosa.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
+Extracting random background and sample data
+Warning: Sample at 136.14, 33.9133 in Asimitellaria_stylosa.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at 136.14, 33.9133
+Warning: Sample at 136.140157, 33.913321 in Asimitellaria_stylosa.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at 136.140157, 33.913321
+Time since start: 1.021
+2051 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa/Asimitellaria_stylosa.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa samplesfile=/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa/Asimitellaria_stylosa.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Asimitellaria_stylosa
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa/Asimitellaria_stylosa.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 920336024, used 1197787496, increment 1178177896
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 920336024, used 1197787496, increment 0
+Asimitellaria_stylosa: 
+Regularization values: linear/quadratic/product: 0.159, categorical: 0.250, threshold: 1.380, hinge: 0.500
+62 samples
+Density: max memory 32178700288, total allocated 2118123520, free 920336024, used 1197787496, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 920336024, used 1197787496, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 920336024, used 1197787496, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 920336024, used 1197787496, increment 0
+Initial loss: 7.62608275807238
+140: time = 0.056000 loss = 7.452177
+Resulting gain: 0.17390575644300554
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa/Asimitellaria_stylosa.asc
+Time since start: 2.908
+Writing /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_stylosa/plots/Asimitellaria_stylosa.png
+Ending

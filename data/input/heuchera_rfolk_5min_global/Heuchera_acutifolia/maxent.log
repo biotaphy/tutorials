@@ -1,0 +1,42 @@
+Wed Dec 28 11:41:42 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_acutifolia.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 15415296
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 4194304
+Extracting random background and sample data
+Time since start: 1.025
+550 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia/Heuchera_acutifolia.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia/Heuchera_acutifolia.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_acutifolia
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia/Heuchera_acutifolia.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 918356160, used 1199767360, increment 1180157760
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 918356160, used 1199767360, increment 0
+Heuchera_acutifolia: 
+Regularization values: linear/quadratic/product: 0.481, categorical: 0.250, threshold: 1.820, hinge: 0.500
+18 samples
+Density: max memory 32178700288, total allocated 2118123520, free 918356160, used 1199767360, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 918356160, used 1199767360, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 918356160, used 1199767360, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 918356160, used 1199767360, increment 0
+Initial loss: 6.309918278226516
+120: time = 0.030000 loss = 6.015996
+Resulting gain: 0.2939219648410045
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia/Heuchera_acutifolia.asc
+Time since start: 2.839
+Writing /volumes/output/heuchera_rfolk_5min_global/Heuchera_acutifolia/plots/Heuchera_acutifolia.png
+Ending

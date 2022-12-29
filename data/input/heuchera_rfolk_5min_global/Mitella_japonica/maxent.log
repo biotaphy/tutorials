@@ -1,0 +1,44 @@
+Wed Dec 28 11:39:13 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Mitella_japonica.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
+Extracting random background and sample data
+Warning: Sample at 130.8, 31.1 in Mitella_japonica.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at 130.8, 31.1
+Time since start: 1.033
+1611 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Mitella_japonica/Mitella_japonica.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Mitella_japonica nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Mitella_japonica samplesfile=/volumes/output/heuchera_rfolk_5min_global/Mitella_japonica/Mitella_japonica.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Mitella_japonica
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Mitella_japonica
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Mitella_japonica/Mitella_japonica.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 920365112, used 1197758408, increment 1178148808
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 920365112, used 1197758408, increment 0
+Mitella_japonica: 
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Density: max memory 32178700288, total allocated 2118123520, free 920365112, used 1197758408, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 920365112, used 1197758408, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 920365112, used 1197758408, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 920365112, used 1197758408, increment 0
+Initial loss: 7.384610383176974
+120: time = 0.044000 loss = 7.308963
+Resulting gain: 0.07564696570574458
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Mitella_japonica/Mitella_japonica.asc
+Time since start: 2.854
+Writing /volumes/output/heuchera_rfolk_5min_global/Mitella_japonica/plots/Mitella_japonica.png
+Ending

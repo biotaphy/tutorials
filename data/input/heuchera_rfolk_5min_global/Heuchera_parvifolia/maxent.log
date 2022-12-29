@@ -1,0 +1,45 @@
+Wed Dec 28 11:36:41 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_parvifolia.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2094319616, used 23803904, increment 23803904
+Extractor: max memory 32178700288, total allocated 2118123520, free 2083835904, used 34287616, increment 10483712
+Extracting random background and sample data
+Warning: Sample at -109.577, 40.9378 in Heuchera_parvifolia.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -109.577, 40.9378
+Time since start: 1.063
+27989 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia/Heuchera_parvifolia.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia/Heuchera_parvifolia.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_parvifolia
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia/Heuchera_parvifolia.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 902602696, used 1215520824, increment 1181233208
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 900425528, used 1217697992, increment 2177168
+Heuchera_parvifolia: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+964 samples
+Density: max memory 32178700288, total allocated 2118123520, free 900425528, used 1217697992, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 900425528, used 1217697992, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 900425528, used 1217697992, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 900425528, used 1217697992, increment 0
+Initial loss: 9.210340371976184
+180: time = 0.164000 loss = 8.798457
+Resulting gain: 0.41188307592086204
+Time since start: 2.065
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia/Heuchera_parvifolia.asc
+Time since start: 3.126
+Writing /volumes/output/heuchera_rfolk_5min_global/Heuchera_parvifolia/plots/Heuchera_parvifolia.png
+Ending

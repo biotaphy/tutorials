@@ -1,0 +1,57 @@
+Wed Dec 28 11:38:01 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Lithophragma_parviflorum.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 4194304
+Extracting random background and sample data
+Warning: Sample at -122.9343189, 49.0830413 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -122.9343189, 49.0830413
+Warning: Sample at -122.88718, 48.76435 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -122.88718, 48.76435
+Warning: Sample at -122.55555, 48.53528 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -122.55555, 48.53528
+Warning: Sample at -122.55352, 48.53402 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -122.55352, 48.53402
+Warning: Sample at -122.5469, 48.52037 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -122.5469, 48.52037
+Warning: Sample at -122.70273, 48.49269 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -122.70273, 48.49269
+Warning: Sample at -122.69472, 48.49833 in Lithophragma_parviflorum.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -122.69472, 48.49833
+Time since start: 1.043
+34317 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum/Lithophragma_parviflorum.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum samplesfile=/volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum/Lithophragma_parviflorum.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Lithophragma_parviflorum
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum/Lithophragma_parviflorum.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 913386728, used 1204736792, increment 1183032088
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 911291624, used 1206831896, increment 2095104
+Lithophragma_parviflorum: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+225 samples
+Density: max memory 32178700288, total allocated 2118123520, free 911211608, used 1206911912, increment 80016
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 911131592, used 1206991928, increment 80016
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 911131592, used 1206991928, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 911131592, used 1206991928, increment 0
+Initial loss: 9.210340371976184
+360: time = 0.253000 loss = 8.829003
+Resulting gain: 0.38133765060747926
+Time since start: 2.091
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum/Lithophragma_parviflorum.asc
+Time since start: 3.135
+Writing /volumes/output/heuchera_rfolk_5min_global/Lithophragma_parviflorum/plots/Lithophragma_parviflorum.png
+Ending

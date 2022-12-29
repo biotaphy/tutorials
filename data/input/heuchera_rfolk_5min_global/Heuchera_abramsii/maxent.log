@@ -1,0 +1,45 @@
+Wed Dec 28 11:41:52 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_abramsii.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 15415296
+Extractor: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 2095104
+Extracting random background and sample data
+Time since start: 1.031
+74 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii/Heuchera_abramsii.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii/Heuchera_abramsii.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_abramsii
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii/Heuchera_abramsii.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 922611424, used 1195512096, increment 1178001696
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 922611424, used 1195512096, increment 0
+Heuchera_abramsii: 
+Regularization values: linear/quadratic/product: 1.000, categorical: 0.635, threshold: 1.990, hinge: 0.500
+1 samples
+Density: max memory 32178700288, total allocated 2118123520, free 922611424, used 1195512096, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 922611424, used 1195512096, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 922611424, used 1195512096, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 922611424, used 1195512096, increment 0
+Initial loss: 4.30406509320417
+20: time = 0.000000 loss = 4.304065
+Resulting gain: 0.0
+Leaving out Fixed cumulative value 5 from threshold table, as uninitialized
+Leaving out Fixed cumulative value 10 from threshold table, as uninitialized
+Leaving out Equate entropy of thresholded and original distributions from threshold table, as uninitialized
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii/Heuchera_abramsii.asc
+Time since start: 2.786
+Writing /volumes/output/heuchera_rfolk_5min_global/Heuchera_abramsii/plots/Heuchera_abramsii.png
+Ending

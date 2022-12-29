@@ -1,0 +1,42 @@
+Wed Dec 28 11:41:47 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_wootonii.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 15415296
+Extractor: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 2095104
+Extracting random background and sample data
+Time since start: 1.03
+167 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii/Heuchera_wootonii.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii/Heuchera_wootonii.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_wootonii
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii/Heuchera_wootonii.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 922571280, used 1195552240, increment 1178041840
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 922571280, used 1195552240, increment 0
+Heuchera_wootonii: 
+Regularization values: linear/quadratic/product: 0.800, categorical: 0.500, threshold: 1.900, hinge: 0.500
+10 samples
+Density: max memory 32178700288, total allocated 2118123520, free 922571280, used 1195552240, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 922571280, used 1195552240, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 922571280, used 1195552240, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 922571280, used 1195552240, increment 0
+Initial loss: 5.117993812416755
+60: time = 0.006000 loss = 4.792762
+Resulting gain: 0.3252320473946053
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii/Heuchera_wootonii.asc
+Time since start: 2.805
+Writing /volumes/output/heuchera_rfolk_5min_global/Heuchera_wootonii/plots/Heuchera_wootonii.png
+Ending

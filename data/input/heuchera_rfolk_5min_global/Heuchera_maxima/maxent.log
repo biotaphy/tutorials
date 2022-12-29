@@ -1,0 +1,98 @@
+Wed Dec 28 11:37:51 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_maxima.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
+Extracting random background and sample data
+Warning: Sample at -119.7215, 34.0425 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.7215, 34.0425
+Warning: Sample at -119.7105, 34.0401 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.7105, 34.0401
+Warning: Sample at -119.7292, 34.0462 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.7292, 34.0462
+Warning: Sample at -119.702, 34.032 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.702, 34.032
+Warning: Sample at -119.702673, 34.03195663 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.702673, 34.03195663
+Warning: Sample at -119.704, 34.03 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.704, 34.03
+Warning: Sample at -119.702973, 34.03195663 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.702973, 34.03195663
+Warning: Sample at -119.703173, 34.03185663 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.703173, 34.03185663
+Warning: Sample at -119.6956728, 34.02695683 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.6956728, 34.02695683
+Warning: Sample at -119.755, 34.05 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.755, 34.05
+Warning: Sample at -119.7042, 34.0308 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.7042, 34.0308
+Warning: Sample at -119.70417, 34.03083 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.70417, 34.03083
+Warning: Sample at -119.703013, 34.03199663 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.703013, 34.03199663
+Warning: Sample at -119.5939707, 34.04685699 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.5939707, 34.04685699
+Warning: Sample at -119.5676, 34.046 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.5676, 34.046
+Warning: Sample at -119.5601, 34.0483 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.5601, 34.0483
+Warning: Sample at -119.557, 34.0215 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.557, 34.0215
+Warning: Sample at -119.5658, 34.0217 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.5658, 34.0217
+Warning: Sample at -119.5444, 34.022 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.5444, 34.022
+Warning: Sample at -119.3926658, 34.00495962 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.3926658, 34.00495962
+Warning: Sample at -119.4251665, 34.00995925 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.4251665, 34.00995925
+Warning: Sample at -119.3887, 34.0052 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.3887, 34.0052
+Warning: Sample at -119.4267, 34.0137 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.4267, 34.0137
+Warning: Sample at -119.42, 34.009 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.42, 34.009
+Warning: Sample at -119.4198, 34.0123 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.4198, 34.0123
+Warning: Sample at -119.42528, 34.01389 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.42528, 34.01389
+Warning: Sample at -119.4266, 34.0123 in Heuchera_maxima.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -119.4266, 34.0123
+Time since start: 1.034
+37 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima/Heuchera_maxima.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima/Heuchera_maxima.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_maxima
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima/Heuchera_maxima.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 918374560, used 1199748960, increment 1180139360
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 918374560, used 1199748960, increment 0
+Heuchera_maxima: 
+Regularization values: linear/quadratic/product: 1.000, categorical: 0.575, threshold: 1.950, hinge: 0.500
+5 samples
+Density: max memory 32178700288, total allocated 2118123520, free 918374560, used 1199748960, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 918374560, used 1199748960, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 918374560, used 1199748960, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 918374560, used 1199748960, increment 0
+Initial loss: 3.6109179126442243
+20: time = 0.001000 loss = 3.610918
+Resulting gain: 0.0
+Leaving out Fixed cumulative value 5 from threshold table, as uninitialized
+Leaving out Fixed cumulative value 10 from threshold table, as uninitialized
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima/Heuchera_maxima.asc
+Time since start: 2.809
+Writing /volumes/output/heuchera_rfolk_5min_global/Heuchera_maxima/plots/Heuchera_maxima.png
+Ending

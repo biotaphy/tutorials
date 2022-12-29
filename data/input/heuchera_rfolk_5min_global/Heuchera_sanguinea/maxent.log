@@ -1,0 +1,42 @@
+Wed Dec 28 11:40:11 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_sanguinea.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 15415296
+Extractor: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 2095104
+Extracting random background and sample data
+Time since start: 1.029
+5114 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea/Heuchera_sanguinea.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea/Heuchera_sanguinea.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_sanguinea
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea/Heuchera_sanguinea.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 920140400, used 1197983120, increment 1180472720
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 920140400, used 1197983120, increment 0
+Heuchera_sanguinea: 
+Regularization values: linear/quadratic/product: 0.161, categorical: 0.250, threshold: 1.390, hinge: 0.500
+61 samples
+Density: max memory 32178700288, total allocated 2118123520, free 920140400, used 1197983120, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 920140400, used 1197983120, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 920138352, used 1197985168, increment 2048
+Sequential: max memory 32178700288, total allocated 2118123520, free 918041200, used 1200082320, increment 2097152
+Initial loss: 8.539737155851132
+240: time = 0.109000 loss = 7.940374
+Resulting gain: 0.5993633911139238
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea/Heuchera_sanguinea.asc
+Time since start: 2.909
+Writing /volumes/output/heuchera_rfolk_5min_global/Heuchera_sanguinea/plots/Heuchera_sanguinea.png
+Ending

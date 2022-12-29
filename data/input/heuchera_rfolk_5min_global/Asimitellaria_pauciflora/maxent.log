@@ -1,0 +1,42 @@
+Wed Dec 28 11:35:59 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Asimitellaria_pauciflora.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2096418816, used 21704704, increment 4194304
+Extracting random background and sample data
+Time since start: 1.024
+2893 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora/Asimitellaria_pauciflora.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora samplesfile=/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora/Asimitellaria_pauciflora.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Asimitellaria_pauciflora
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora/Asimitellaria_pauciflora.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 920246768, used 1197876752, increment 1176172048
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 918147568, used 1199975952, increment 2099200
+Asimitellaria_pauciflora: 
+Regularization values: linear/quadratic/product: 0.093, categorical: 0.250, threshold: 1.060, hinge: 0.500
+94 samples
+Density: max memory 32178700288, total allocated 2118123520, free 918147568, used 1199975952, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 918147568, used 1199975952, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 918147568, used 1199975952, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 918147568, used 1199975952, increment 0
+Initial loss: 7.970049304976135
+100: time = 0.054000 loss = 7.873192
+Resulting gain: 0.09685680731809487
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora/Asimitellaria_pauciflora.asc
+Time since start: 2.877
+Writing /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_pauciflora/plots/Asimitellaria_pauciflora.png
+Ending

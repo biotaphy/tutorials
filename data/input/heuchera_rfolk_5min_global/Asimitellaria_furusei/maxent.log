@@ -1,0 +1,44 @@
+Wed Dec 28 11:38:52 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Asimitellaria_furusei.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 15415296
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 4194304
+Extracting random background and sample data
+Warning: Sample at 135.0, 35.7 in Asimitellaria_furusei.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at 135.0, 35.7
+Time since start: 1.035
+2154 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei/Asimitellaria_furusei.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei samplesfile=/volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei/Asimitellaria_furusei.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Asimitellaria_furusei
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei/Asimitellaria_furusei.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 920292744, used 1197830776, increment 1178221176
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 920292744, used 1197830776, increment 0
+Asimitellaria_furusei: 
+Regularization values: linear/quadratic/product: 0.179, categorical: 0.250, threshold: 1.180, hinge: 0.500
+82 samples
+Density: max memory 32178700288, total allocated 2118123520, free 920292744, used 1197830776, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 920292744, used 1197830776, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 920292744, used 1197830776, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 920292744, used 1197830776, increment 0
+Initial loss: 7.675081857716334
+120: time = 0.047000 loss = 7.655186
+Resulting gain: 0.019896065366395987
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei/Asimitellaria_furusei.asc
+Time since start: 2.874
+Writing /volumes/output/heuchera_rfolk_5min_global/Asimitellaria_furusei/plots/Asimitellaria_furusei.png
+Ending

@@ -1,0 +1,42 @@
+Wed Dec 28 11:39:30 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_hirsutissima.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2102708224, used 15415296, increment 15415296
+Extractor: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 2095104
+Extracting random background and sample data
+Time since start: 1.039
+140 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima/Heuchera_hirsutissima.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima/Heuchera_hirsutissima.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_hirsutissima
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima/Heuchera_hirsutissima.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 922563424, used 1195560096, increment 1178049696
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 922563424, used 1195560096, increment 0
+Heuchera_hirsutissima: 
+Regularization values: linear/quadratic/product: 1.000, categorical: 0.590, threshold: 1.960, hinge: 0.500
+4 samples
+Density: max memory 32178700288, total allocated 2118123520, free 922563424, used 1195560096, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 922563424, used 1195560096, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 922563424, used 1195560096, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 922563424, used 1195560096, increment 0
+Initial loss: 4.941642422609304
+60: time = 0.004000 loss = 4.928398
+Resulting gain: 0.013244358391847122
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima/Heuchera_hirsutissima.asc
+Time since start: 2.84
+Writing /volumes/output/heuchera_rfolk_5min_global/Heuchera_hirsutissima/plots/Heuchera_hirsutissima.png
+Ending

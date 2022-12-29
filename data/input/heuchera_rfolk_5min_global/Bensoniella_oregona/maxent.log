@@ -1,0 +1,42 @@
+Wed Dec 28 11:38:57 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Bensoniella_oregona.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
+Extracting random background and sample data
+Time since start: 1.065
+456 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona/Bensoniella_oregona.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona samplesfile=/volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona/Bensoniella_oregona.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Bensoniella_oregona
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona/Bensoniella_oregona.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 916246440, used 1201877080, increment 1182267480
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 916246440, used 1201877080, increment 0
+Bensoniella_oregona: 
+Regularization values: linear/quadratic/product: 0.757, categorical: 0.464, threshold: 1.890, hinge: 0.500
+11 samples
+Density: max memory 32178700288, total allocated 2118123520, free 916246440, used 1201877080, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 916246440, used 1201877080, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 916246440, used 1201877080, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 916246440, used 1201877080, increment 0
+Initial loss: 6.1224928095143865
+60: time = 0.009000 loss = 5.975093
+Resulting gain: 0.1473998455401473
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona/Bensoniella_oregona.asc
+Time since start: 3.031
+Writing /volumes/output/heuchera_rfolk_5min_global/Bensoniella_oregona/plots/Bensoniella_oregona.png
+Ending

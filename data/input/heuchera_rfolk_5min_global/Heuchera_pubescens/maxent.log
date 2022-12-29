@@ -1,0 +1,42 @@
+Wed Dec 28 11:38:28 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_pubescens.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2100613120, used 17510400, increment 17510400
+Extractor: max memory 32178700288, total allocated 2118123520, free 2098513920, used 19609600, increment 2099200
+Extracting random background and sample data
+Time since start: 1.043
+1949 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens/Heuchera_pubescens.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens/Heuchera_pubescens.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_pubescens
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens/Heuchera_pubescens.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 918271176, used 1199852344, increment 1180242744
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 918271176, used 1199852344, increment 0
+Heuchera_pubescens: 
+Regularization values: linear/quadratic/product: 0.241, categorical: 0.250, threshold: 1.670, hinge: 0.500
+33 samples
+Density: max memory 32178700288, total allocated 2118123520, free 918271176, used 1199852344, increment 0
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 918271176, used 1199852344, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 918271176, used 1199852344, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 918271176, used 1199852344, increment 0
+Initial loss: 7.575071699507561
+120: time = 0.049000 loss = 7.531589
+Resulting gain: 0.043482467958577686
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens/Heuchera_pubescens.asc
+Time since start: 2.88
+Writing /volumes/output/heuchera_rfolk_5min_global/Heuchera_pubescens/plots/Heuchera_pubescens.png
+Ending

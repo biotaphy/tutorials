@@ -2,7 +2,7 @@
     "log_filename": "/volumes/output/wrangle_matrix_global.log",
     "log_console": true,
     "report_filename": "/volumes/output/wrangle_matrix_global.rpt",
-    "in_matrix_filename": "/volumes/data/easy_bake/heuchera_rfolk_global.lmm",
-    "out_matrix_filename": "/volumes/output/heuchera_rfolk_global_wrangled.lmm",
+    "in_matrix_filename": "/volumes/data/input/heuchera_rfolk_1deg_global.lmm",
+    "out_matrix_filename": "/volumes/output/heuchera_rfolk_1deg_global_wrangled.lmm",
     "wrangler_configuration_file": "/volumes/data/wranglers/matrix_wrangle.json"
 }

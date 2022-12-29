@@ -1,0 +1,48 @@
+Wed Dec 28 11:40:06 CST 2022
+MaxEnt version 3.4.4
+Checking header of /volumes/env/biotaphy_5min_global/ISRICSOILGRIDS_new_average_phx10percent_reduced.asc
+Checking header of /volumes/env/biotaphy_5min_global/mask.asc
+Reading samples from Heuchera_rubescens.csv
+Read samples: max memory 32178700288, total allocated 2118123520, free 2094319616, used 23803904, increment 23803904
+Extractor: max memory 32178700288, total allocated 2118123520, free 2090125312, used 27998208, increment 4194304
+Extracting random background and sample data
+Warning: Sample at -120.1073, 38.9429 in Heuchera_rubescens.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -120.1073, 38.9429
+Warning: Sample at -120.1063399, 38.95118561 in Heuchera_rubescens.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -120.1063399, 38.95118561
+Warning: Sample at -120.00981, 38.98403 in Heuchera_rubescens.csv is missing some environmental data (e.g. ISRICSOILGRIDS_new_average_phx10percent_reduced)
+Warning: Skipping sample at -120.00981, 38.98403
+Time since start: 1.031
+16775 points with values for all grids
+Adding samples to background in feature space
+Command line used:  samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens/Heuchera_rubescens.csv -e /volumes/env/biotaphy_5min_global -o /volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens nowarnings nocache autorun -z togglelayertype=mask
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=/volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens samplesfile=/volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens/Heuchera_rubescens.csv environmentallayers=/volumes/env/biotaphy_5min_global nowarnings autorun novisible nocache -t mask
+Species: Heuchera_rubescens
+Layers: ISRICSOILGRIDS_new_average_phx10percent_reduced mask
+Layertypes: Continuous Categorical
+outputdirectory: /volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens
+samplesfile: /volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens/Heuchera_rubescens.csv
+environmentallayers: /volumes/env/biotaphy_5min_global
+warnings: false
+autorun: true
+visible: false
+cache: false
+
+getSamples: max memory 32178700288, total allocated 2118123520, free 909147120, used 1208976400, increment 1180978192
+Making features
+makeFeatures: max memory 32178700288, total allocated 2118123520, free 907052016, used 1211071504, increment 2095104
+Heuchera_rubescens: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+225 samples
+Density: max memory 32178700288, total allocated 2118123520, free 904913944, used 1213209576, increment 2138072
+linearPredictor: max memory 32178700288, total allocated 2118123520, free 904913944, used 1213209576, increment 0
+FeaturedSpace: max memory 32178700288, total allocated 2118123520, free 904913944, used 1213209576, increment 0
+Sequential: max memory 32178700288, total allocated 2118123520, free 904913944, used 1213209576, increment 0
+Initial loss: 9.210340371976184
+240: time = 0.166000 loss = 8.363712
+Resulting gain: 0.8466285446542106
+Projecting...
+Writing file /volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens/Heuchera_rubescens.asc
+Time since start: 3.037
+Writing /volumes/output/heuchera_rfolk_5min_global/Heuchera_rubescens/plots/Heuchera_rubescens.png
+Ending
