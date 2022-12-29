@@ -1,37 +1,73 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>Specimen Occurrences: Data and Wrangling &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
-    <script src="../_static/js/theme.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Species List: Wrangling" href="data_wrangle_species_list.html" />
     <link rel="prev" title="Matrices: Data and Wrangling" href="data_wrangle_matrix.html" /> 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
+          
+
+          
             <a href="../index.html" class="icon icon-home"> Biotaphy Tutorials
+          
+
+          
           </a>
+
+          
+            
+            
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -39,7 +75,18 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
@@ -83,34 +130,75 @@
 <li class="toctree-l1"><a class="reference internal" href="../pages/configure_inputs.html">User Data and Parameters</a></li>
 </ul>
 
+            
+          
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Biotaphy Tutorials</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Specimen Occurrences: Data and Wrangling</li>
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Specimen Occurrences: Data and Wrangling</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
             <a href="../_sources/tutorial/data_wrangle_occurrence.rst.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
+            
   <section id="specimen-occurrences-data-and-wrangling">
-<h1>Specimen Occurrences: Data and Wrangling<a class="headerlink" href="#specimen-occurrences-data-and-wrangling" title="Permalink to this heading"></a></h1>
+<h1>Specimen Occurrences: Data and Wrangling<a class="headerlink" href="#specimen-occurrences-data-and-wrangling" title="Permalink to this heading">¶</a></h1>
 <section id="occurrence-data">
-<h2>Occurrence Data<a class="headerlink" href="#occurrence-data" title="Permalink to this heading"></a></h2>
+<h2>Occurrence Data<a class="headerlink" href="#occurrence-data" title="Permalink to this heading">¶</a></h2>
 <p>Several tools (<a class="reference external" href="w5_split_occurrence_data">split_occurrence_data</a>,
 <a class="reference external" href="w3_wrangle_occurrence_data">wrangle_occurrences</a>) accept occurrence data.
 The filename must be specified in the script parameter file, described in each tool’s
@@ -157,7 +245,7 @@ occurrence data as DwCA files.  If providing iDigBio sourced data as a CSV file,
 <cite>geopoint</cite> parameter must be specified, as well as the <cite>x_key</cite> and <cite>y_key</cite>.</p>
 </section>
 <section id="wrangler-configuration-file">
-<h2>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading"></a></h2>
+<h2>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading">¶</a></h2>
 <p>A file specifying 0 or more wranglers to apply to the tree data, and options
 specific to each.  Configuration files:</p>
 <ul class="simple">
@@ -171,7 +259,7 @@ and no other data manipuation is requested, the configuration file can contain a
 list, such as:  <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/no_wrangle">no_wrangle</a>.</p>
 </section>
 <section id="occurrence-wrangler-types">
-<h2>Occurrence Wrangler Types<a class="headerlink" href="#occurrence-wrangler-types" title="Permalink to this heading"></a></h2>
+<h2>Occurrence Wrangler Types<a class="headerlink" href="#occurrence-wrangler-types" title="Permalink to this heading">¶</a></h2>
 <p>When running wranglers on an occurrence data set, wranglers are applied in the order
 that they are listed in the wrangler config file.</p>
 <p>Currently, wrangler_type names correspond to the wrangler class <cite>name</cite> attribute in
@@ -185,7 +273,7 @@ wranglers will not work as intended.  These wranglers should be
 used when running <cite>split_occurrence_data</cite> or <cite>wrangle_occurrence_data</cite> only with input
 data grouped by species.</p>
 <section id="acceptednameoccurrencewrangler">
-<h3>AcceptedNameOccurrenceWrangler<a class="headerlink" href="#acceptednameoccurrencewrangler" title="Permalink to this heading"></a></h3>
+<h3>AcceptedNameOccurrenceWrangler<a class="headerlink" href="#acceptednameoccurrencewrangler" title="Permalink to this heading">¶</a></h3>
 <p>The AcceptedNameOccurrenceWrangler matches the value in the occurrence data identified
 as the “species” field with an “accepted name” as defined in a name-map or by a
 taxonomic service.</p>
@@ -218,7 +306,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </div></blockquote>
 </section>
 <section id="attributefilterwrangler">
-<h3>AttributeFilterWrangler<a class="headerlink" href="#attributefilterwrangler" title="Permalink to this heading"></a></h3>
+<h3>AttributeFilterWrangler<a class="headerlink" href="#attributefilterwrangler" title="Permalink to this heading">¶</a></h3>
 <p>The AttributeFilterWrangler filters out points based on whether the value in the
 given attribute passes the given function.</p>
 <ul class="simple">
@@ -231,7 +319,7 @@ given attribute passes the given function.</p>
 </ul>
 </section>
 <section id="attributemodifierwrangler">
-<h3>AttributeModifierWrangler<a class="headerlink" href="#attributemodifierwrangler" title="Permalink to this heading"></a></h3>
+<h3>AttributeModifierWrangler<a class="headerlink" href="#attributemodifierwrangler" title="Permalink to this heading">¶</a></h3>
 <p>The AttributeModifierWrangler modifies a newly added or existing attribute, computing
 the value with the given function.</p>
 <ul class="simple">
@@ -244,7 +332,7 @@ the value with the given function.</p>
 </ul>
 </section>
 <section id="boundingboxfilter">
-<h3>BoundingBoxFilter<a class="headerlink" href="#boundingboxfilter" title="Permalink to this heading"></a></h3>
+<h3>BoundingBoxFilter<a class="headerlink" href="#boundingboxfilter" title="Permalink to this heading">¶</a></h3>
 <p>The BoundingBoxFilter filters out occurrence points if they do not fall within the given
 bounding box.</p>
 <ul class="simple">
@@ -259,7 +347,7 @@ bounding box.</p>
 </ul>
 </section>
 <section id="commonformatwrangler">
-<h3>CommonFormatWrangler<a class="headerlink" href="#commonformatwrangler" title="Permalink to this heading"></a></h3>
+<h3>CommonFormatWrangler<a class="headerlink" href="#commonformatwrangler" title="Permalink to this heading">¶</a></h3>
 <p>The CommonFormatWrangler modifies points to a common format, using the given
 attribute-map between the original fields, and the desired fields in the common format.</p>
 <ul class="simple">
@@ -271,7 +359,7 @@ attribute-map between the original fields, and the desired fields in the common 
 </ul>
 </section>
 <section id="coordinateconverterwrangler">
-<h3>CoordinateConverterWrangler<a class="headerlink" href="#coordinateconverterwrangler" title="Permalink to this heading"></a></h3>
+<h3>CoordinateConverterWrangler<a class="headerlink" href="#coordinateconverterwrangler" title="Permalink to this heading">¶</a></h3>
 <p>The CoordinateConverterWrangler modifies occurrence points by transforming the
 x and y coordinates from one projection (coded as an EPSG number) into another
 projection.  The new coordinates overwrite the x and y fields.  If original_x_attribute
@@ -296,7 +384,7 @@ or source_epsg MUST be provided.</p></li>
 </ul>
 </section>
 <section id="decimalprecisionfilter">
-<h3>DecimalPrecisionFilter<a class="headerlink" href="#decimalprecisionfilter" title="Permalink to this heading"></a></h3>
+<h3>DecimalPrecisionFilter<a class="headerlink" href="#decimalprecisionfilter" title="Permalink to this heading">¶</a></h3>
 <p>The DecimalPrecisionFilter filters out occurrence points where one or both coordinates
 have values where the number of digits to the right of the decimal point is less than
 the given number.</p>
@@ -310,7 +398,7 @@ precision.</p></li>
 </ul>
 </section>
 <section id="disjointgeometriesfilter">
-<h3>DisjointGeometriesFilter<a class="headerlink" href="#disjointgeometriesfilter" title="Permalink to this heading"></a></h3>
+<h3>DisjointGeometriesFilter<a class="headerlink" href="#disjointgeometriesfilter" title="Permalink to this heading">¶</a></h3>
 <p>The DisjointGeometriesFilter filters out points where the coordinates intersect with
 the given geometries.</p>
 <ul class="simple">
@@ -322,7 +410,7 @@ the given geometries.</p>
 </ul>
 </section>
 <section id="intersectgeometriesfilter">
-<h3>IntersectGeometriesFilter<a class="headerlink" href="#intersectgeometriesfilter" title="Permalink to this heading"></a></h3>
+<h3>IntersectGeometriesFilter<a class="headerlink" href="#intersectgeometriesfilter" title="Permalink to this heading">¶</a></h3>
 <p>The IntersectGeometriesFilter filters out points where the coordinates do NOT intersect
 with the given geometries.</p>
 <ul class="simple">
@@ -334,7 +422,7 @@ with the given geometries.</p>
 </ul>
 </section>
 <section id="minimumpointswrangler">
-<h3>MinimumPointsWrangler<a class="headerlink" href="#minimumpointswrangler" title="Permalink to this heading"></a></h3>
+<h3>MinimumPointsWrangler<a class="headerlink" href="#minimumpointswrangler" title="Permalink to this heading">¶</a></h3>
 <p>See the <a class="reference external" href="#OccurrenceWranglerTypes">Note</a> above for important information on the use
 of this wrangler.</p>
 <p>The MinimumPointsWrangler filters out groups of points where the number of points in a
@@ -348,7 +436,7 @@ group does not meet the minimum.</p>
 </ul>
 </section>
 <section id="spatialindexfilter">
-<h3>SpatialIndexFilter<a class="headerlink" href="#spatialindexfilter" title="Permalink to this heading"></a></h3>
+<h3>SpatialIndexFilter<a class="headerlink" href="#spatialindexfilter" title="Permalink to this heading">¶</a></h3>
 <p>The SpatialIndexFilter filters out points that match some given condition
 (check_hit_function) on the given spatial index.</p>
 <ul class="simple">
@@ -365,7 +453,7 @@ counted.</p></li>
 </ul>
 </section>
 <section id="uniquelocalitiesfilter">
-<h3>UniqueLocalitiesFilter<a class="headerlink" href="#uniquelocalitiesfilter" title="Permalink to this heading"></a></h3>
+<h3>UniqueLocalitiesFilter<a class="headerlink" href="#uniquelocalitiesfilter" title="Permalink to this heading">¶</a></h3>
 <p>See the <a class="reference external" href="#OccurrenceWranglerTypes">Note</a> above for important information on the use
 of this wrangler.</p>
 <p>The UniqueLocalitiesFilter filters out points from a grouping that do not have unique
@@ -384,33 +472,50 @@ checked within groups.</p>
 
 
            </div>
+           
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="data_wrangle_matrix.html" class="btn btn-neutral float-left" title="Matrices: Data and Wrangling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="data_wrangle_species_list.html" class="btn btn-neutral float-right" title="Species List: Wrangling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="data_wrangle_matrix.html" class="btn btn-neutral float-left" title="Matrices: Data and Wrangling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Biotaphy Team.</p>
-  </div>
+    <p>
+        &#169; Copyright 2022, Biotaphy Team.
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
