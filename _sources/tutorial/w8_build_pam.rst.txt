@@ -199,19 +199,94 @@ Most outputs are configured in the script parameter file, and may include:
    <https://github.com/biotaphy/tutorials/blob/main/data/input/>`_ because we will use
    it as input in Step 3.
 
+
+
 --------------------------------
-Step 3: Calculate statistics for a PAM
+Step 3: Wrangle PAM to remove empties
 --------------------------------
 
 Now that a grid has been built, and a PAM has been populated by intersecting species
-distribution models with the grid, we calculate biogeographic statistics on that PAM.
+distribution models with the grid, we will remove all sites (rows) with no species
+and species (columns) with no sites.
+
+Input: Script parameter file
+******************************************
+
+An example JSON file for running the wrangle_matrix command is at
+`wrangle_matrix_global.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix_global.json>`_.
+
+While the output statistics should not differ between a PAM with or without empty rows
+and columns, the un-wrangled matrix will produce unnecessarily large statistics
+matrices, with empty rows and columns.
+
+These are the required and optional parameters:
+
+* Required:
+
+  * **in_matrix_filename**: The full filename to the input matrix.
+  * **out_matrix_filename**: The full filename to the output wrangled matrix.
+  * **wrangler_configuration_file**: matrix wrangler configuration file,
+    described in the next section.  The tutorial example wrangler is
+    `matrix_wrangle.json
+    <https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json>`_
+    and is described in the next section.
+
+* Optional
+
+  * **log_filename**: Output filename to write logging data
+  * **log_console**: 'true' to write log to console
+  * **report_filename**: output filename with summary
+
+Run wrangle_matrix command
+******************************************
+
+Initiate the wrangle_matrix process with the following:
+
+For Linux/Mac systems
+
+.. code-block::
+
+      ./run_tutorial.sh wrangle_matrix data/config/wrangle_matrix_global.json
+
+For Windows systems
+
+.. code-block::
+
+      ./run_tutorial.bat wrangle_matrix data/config/wrangle_matrix_global.json
+
+Output
+******************************************
+
+The wrangle_matrix tool outputs a trimmed matrix, in this case with no empty site rows
+or species columns.  Outputs may include:
+
+1. A "report_filename" named in the script parameter file, a summary of statistics
+   calculations will be written to this file, like `calculate_pam_stats.rpt
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/calculate_pam_stats.rpt>`_.
+2. A "log_filename" named in the script parameter file, that will be created, like `calculate_pam_stats.log
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/calculate_pam_stats.log>`_.
+3. If "log_console" is specified in the script parameter file, logs will be written to the
+   command prompt during execution.
+
+An example of the output matrix (out_matrix_filename) is in the `input directory
+<https://github.com/biotaphy/tutorials/blob/main/data/input>`_ because it will be
+used as input for computations in the Step 4.
+
+--------------------------------
+Step 4: Calculate statistics for a PAM
+--------------------------------
+
+Now that a grid has been built, and a PAM has been populated by intersecting species
+distribution models with the grid, and the PAM has had all the empty rows and columns
+trimmed, we calculate biogeographic statistics on that PAM.
 
 Input: Script parameter file
 ******************************************
 
 An example JSON file for running the calculate_pam_stats command is at
-`calculate_pam_stats.json
-<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json>`_.
+`calculate_pam_stats_noempties.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats_noempties.json>`_.
 These are the required and optional parameters:
 
 * Required:
@@ -226,7 +301,7 @@ These are the required and optional parameters:
   * **covariance_matrix**: The full path and base filename for writing covariance matrices.
   * **diversity_matrix**: The full filename for writing the diversity matrix.
   * **site_stats_matrix**: The full filename for writing the site statistics matrix.
-  * **species_stats_matrix**: The full filename for writing the species statistics 
+  * **species_stats_matrix**: The full filename for writing the species statistics
     matrix.
   * **tree_filename**: The full filename to an input tree in Nexus format.
   * **tree_matrix**: The full filename to an input tree encoded as a matrix.
@@ -252,7 +327,7 @@ For Windows systems
 Output
 ******************************************
 
-The calculate_pam_stats tool outputs computes various statistics, depending on the 
+The calculate_pam_stats tool outputs computes various statistics, depending on the
 output files specified in the command configuration file.  Outputs may include:
 
 1. A "report_filename" named in the script parameter file, a summary of statistics
@@ -268,7 +343,7 @@ Examples of output statistics are in the `input directory
 used as input for visualizations later.
 
 1. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
-   and it is written to the covariance_matrix filename, where the statistic name is 
+   and it is written to the covariance_matrix filename, where the statistic name is
    appended to the end of the base file name, examples are covariance_sigma_species.lmm and
    covariance_sigma_sites.lmm.
 2. A "diversity_matrix" containing different diversity statistics, like diversity.lmm.

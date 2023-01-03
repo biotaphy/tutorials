@@ -111,10 +111,16 @@
 <li class="toctree-l3"><a class="reference internal" href="#id2">Output</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#step-3-calculate-statistics-for-a-pam">Step 3: Calculate statistics for a PAM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-3-wrangle-pam-to-remove-empties">Step 3: Wrangle PAM to remove empties</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id4">Input: Script parameter file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-wrangle-matrix-command">Run wrangle_matrix command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id5">Output</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#step-4-calculate-statistics-for-a-pam">Step 4: Calculate statistics for a PAM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Input: Script parameter file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Output</a></li>
 </ul>
 </li>
 </ul>
@@ -370,14 +376,75 @@ it as input in Step 3.</p></li>
 </ol>
 </section>
 </section>
-<section id="step-3-calculate-statistics-for-a-pam">
-<h2>Step 3: Calculate statistics for a PAM<a class="headerlink" href="#step-3-calculate-statistics-for-a-pam" title="Permalink to this heading">¶</a></h2>
+<section id="step-3-wrangle-pam-to-remove-empties">
+<h2>Step 3: Wrangle PAM to remove empties<a class="headerlink" href="#step-3-wrangle-pam-to-remove-empties" title="Permalink to this heading">¶</a></h2>
 <p>Now that a grid has been built, and a PAM has been populated by intersecting species
-distribution models with the grid, we calculate biogeographic statistics on that PAM.</p>
+distribution models with the grid, we will remove all sites (rows) with no species
+and species (columns) with no sites.</p>
 <section id="id4">
 <h3>Input: Script parameter file<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>An example JSON file for running the wrangle_matrix command is at
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix_global.json">wrangle_matrix_global.json</a>.</p>
+<p>While the output statistics should not differ between a PAM with or without empty rows
+and columns, the un-wrangled matrix will produce unnecessarily large statistics
+matrices, with empty rows and columns.</p>
+<p>These are the required and optional parameters:</p>
+<ul class="simple">
+<li><p>Required:</p>
+<ul>
+<li><p><strong>in_matrix_filename</strong>: The full filename to the input matrix.</p></li>
+<li><p><strong>out_matrix_filename</strong>: The full filename to the output wrangled matrix.</p></li>
+<li><p><strong>wrangler_configuration_file</strong>: matrix wrangler configuration file,
+described in the next section.  The tutorial example wrangler is
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json">matrix_wrangle.json</a>
+and is described in the next section.</p></li>
+</ul>
+</li>
+<li><p>Optional</p>
+<ul>
+<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
+<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
+<li><p><strong>report_filename</strong>: output filename with summary</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="run-wrangle-matrix-command">
+<h3>Run wrangle_matrix command<a class="headerlink" href="#run-wrangle-matrix-command" title="Permalink to this heading">¶</a></h3>
+<p>Initiate the wrangle_matrix process with the following:</p>
+<p>For Linux/Mac systems</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_matrix</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_matrix_global</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+<p>For Windows systems</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">wrangle_matrix</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_matrix_global</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h3>Output<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>The wrangle_matrix tool outputs a trimmed matrix, in this case with no empty site rows
+or species columns.  Outputs may include:</p>
+<ol class="arabic simple">
+<li><p>A “report_filename” named in the script parameter file, a summary of statistics
+calculations will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/calculate_pam_stats.rpt">calculate_pam_stats.rpt</a>.</p></li>
+<li><p>A “log_filename” named in the script parameter file, that will be created, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/calculate_pam_stats.log">calculate_pam_stats.log</a>.</p></li>
+<li><p>If “log_console” is specified in the script parameter file, logs will be written to the
+command prompt during execution.</p></li>
+</ol>
+<p>An example of the output matrix (out_matrix_filename) is in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input">input directory</a> because it will be
+used as input for computations in the Step 4.</p>
+</section>
+</section>
+<section id="step-4-calculate-statistics-for-a-pam">
+<h2>Step 4: Calculate statistics for a PAM<a class="headerlink" href="#step-4-calculate-statistics-for-a-pam" title="Permalink to this heading">¶</a></h2>
+<p>Now that a grid has been built, and a PAM has been populated by intersecting species
+distribution models with the grid, and the PAM has had all the empty rows and columns
+trimmed, we calculate biogeographic statistics on that PAM.</p>
+<section id="id7">
+<h3>Input: Script parameter file<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <p>An example JSON file for running the calculate_pam_stats command is at
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json">calculate_pam_stats.json</a>.
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats_noempties.json">calculate_pam_stats_noempties.json</a>.
 These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -413,8 +480,8 @@ matrix.</p></li>
 </pre></div>
 </div>
 </section>
-<section id="id5">
-<h3>Output<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<section id="id8">
+<h3>Output<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
 <p>The calculate_pam_stats tool outputs computes various statistics, depending on the
 output files specified in the command configuration file.  Outputs may include:</p>
 <ol class="arabic simple">
