@@ -104,7 +104,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#step-2-encode-species-layers">Step 2: Encode species layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-encode-species-layers-into-grid-defined-pam">Step 2: Encode species layers into grid-defined PAM</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#input-layers">Input: Layers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id1">Input: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-encode-layers-command">Run encode_layers command</a></li>
@@ -117,7 +117,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#id5">Output</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#step-4-calculate-statistics-for-a-pam">Step 4: Calculate statistics for a PAM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-4-calculate-statistics-for-pam">Step 4: Calculate statistics for PAM</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id7">Input: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id8">Output</a></li>
@@ -288,8 +288,8 @@ use it as an input in Step 2.</p></li>
 </ol>
 </section>
 </section>
-<section id="step-2-encode-species-layers">
-<h2>Step 2: Encode species layers<a class="headerlink" href="#step-2-encode-species-layers" title="Permalink to this heading">¶</a></h2>
+<section id="step-2-encode-species-layers-into-grid-defined-pam">
+<h2>Step 2: Encode species layers into grid-defined PAM<a class="headerlink" href="#step-2-encode-species-layers-into-grid-defined-pam" title="Permalink to this heading">¶</a></h2>
 <section id="input-layers">
 <h3>Input: Layers<a class="headerlink" href="#input-layers" title="Permalink to this heading">¶</a></h3>
 <p>Layers are specified in the Script parameter file, described fully in the next section.
@@ -297,7 +297,7 @@ Each layer of a PAM represents the presence or absence of a taxon in the set of 
 used in the analysis.  Presence or absence is calculated with the min_coverage,
 min_presence, and  max_presence parameters also detailed in the Script parameter file.</p>
 <p>If you want to define different values
-for computing different layers, you can create a matrix from each set of layers that
+for computing each layer, you can create a matrix from each set of layers that
 share parameters (each matrix created with a different configuration file containing
 different parameters and the same grid), then aggregate the matrices in another step.</p>
 </section>
@@ -385,7 +385,7 @@ and species (columns) with no sites.</p>
 <h3>Input: Script parameter file<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
 <p>An example JSON file for running the wrangle_matrix command is at
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix_global.json">wrangle_matrix_global.json</a>.</p>
-<p>While the output statistics should not differ between a PAM with or without empty rows
+<p><strong>Note:</strong> While the output statistics should not differ between a PAM with or without empty rows
 and columns, the un-wrangled matrix will produce unnecessarily large statistics
 matrices, with empty rows and columns.</p>
 <p>These are the required and optional parameters:</p>
@@ -436,11 +436,11 @@ command prompt during execution.</p></li>
 used as input for computations in the Step 4.</p>
 </section>
 </section>
-<section id="step-4-calculate-statistics-for-a-pam">
-<h2>Step 4: Calculate statistics for a PAM<a class="headerlink" href="#step-4-calculate-statistics-for-a-pam" title="Permalink to this heading">¶</a></h2>
-<p>Now that a grid has been built, and a PAM has been populated by intersecting species
+<section id="step-4-calculate-statistics-for-pam">
+<h2>Step 4: Calculate statistics for PAM<a class="headerlink" href="#step-4-calculate-statistics-for-pam" title="Permalink to this heading">¶</a></h2>
+<p>Now that the grid has been built, a PAM has been defined by intersecting species
 distribution models with the grid, and the PAM has had all the empty rows and columns
-trimmed, we calculate biogeographic statistics on that PAM.</p>
+trimmed, we can calculate biogeographic statistics on that PAM.</p>
 <section id="id7">
 <h3>Input: Script parameter file<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
 <p>An example JSON file for running the calculate_pam_stats command is at
