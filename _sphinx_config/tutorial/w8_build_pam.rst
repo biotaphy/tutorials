@@ -101,7 +101,7 @@ Outputs are configured in the script parameter file, and may include:
    use it as an input in Step 2.
 
 --------------------------------
-Step 2: Encode species layers
+Step 2: Encode species layers into grid-defined PAM
 --------------------------------
 
 Input: Layers
@@ -113,7 +113,7 @@ used in the analysis.  Presence or absence is calculated with the min_coverage,
 min_presence, and  max_presence parameters also detailed in the Script parameter file.
 
 If you want to define different values
-for computing different layers, you can create a matrix from each set of layers that
+for computing each layer, you can create a matrix from each set of layers that
 share parameters (each matrix created with a different configuration file containing
 different parameters and the same grid), then aggregate the matrices in another step.
 
@@ -216,7 +216,7 @@ An example JSON file for running the wrangle_matrix command is at
 `wrangle_matrix_global.json
 <https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix_global.json>`_.
 
-While the output statistics should not differ between a PAM with or without empty rows
+**Note:** While the output statistics should not differ between a PAM with or without empty rows
 and columns, the un-wrangled matrix will produce unnecessarily large statistics
 matrices, with empty rows and columns.
 
@@ -274,12 +274,12 @@ An example of the output matrix (out_matrix_filename) is in the `input directory
 used as input for computations in the Step 4.
 
 --------------------------------
-Step 4: Calculate statistics for a PAM
+Step 4: Calculate statistics for PAM
 --------------------------------
 
-Now that a grid has been built, and a PAM has been populated by intersecting species
+Now that the grid has been built, a PAM has been defined by intersecting species
 distribution models with the grid, and the PAM has had all the empty rows and columns
-trimmed, we calculate biogeographic statistics on that PAM.
+trimmed, we can calculate biogeographic statistics on that PAM.
 
 Input: Script parameter file
 ******************************************
