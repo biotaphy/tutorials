@@ -1,7 +1,7 @@
 {
-    "log_filename": "/volumes/output/rasterize_site_stats.log",
+    "log_filename": "/volumes/output/rasterize_site_stats_noempties.log",
     "log_console": true,
-    "report_filename": "/volumes/output/rasterize_site_stats.rpt",
-    "raster_filename": "/volumes/output/site_stats.tiff",
-    "matrix_filename": "/volumes/data/input/site_stats.lmm"
+    "report_filename": "/volumes/output/rasterize_site_stats_noempties.rpt",
+    "raster_filename": "/volumes/output/site_stats_noempties.tiff",
+    "matrix_filename": "/volumes/data/easy_bake/site_stats_noempties.lmm"
 }

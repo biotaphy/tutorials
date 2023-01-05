@@ -3,9 +3,6 @@
         "name": "PurgeEmptySlicesWrangler",
         "version": "1.0",
         "changes": {
-            "0": {
-                "purged": 51886
-            },
             "1": {
                 "purged": 7
             }

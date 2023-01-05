@@ -3,6 +3,6 @@
     "log_console": true,
     "report_filename": "/volumes/output/wrangle_matrix_global.rpt",
     "in_matrix_filename": "/volumes/data/input/heuchera_rfolk_1deg_global.lmm",
-    "out_matrix_filename": "/volumes/output/heuchera_rfolk_1deg_global_noempties.lmm",
+    "out_matrix_filename": "/volumes/output/heuchera_rfolk_1deg_global_trimspecies.lmm",
     "wrangler_configuration_file": "/volumes/data/wranglers/matrix_wrangle.json"
 }
