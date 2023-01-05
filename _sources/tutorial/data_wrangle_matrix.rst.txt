@@ -72,7 +72,7 @@ The MatchSpeciesListMatrixWrangler subsets and re-orders a matrix to match a
 Species List.  
 
 * Required
-
+noempty
   * **species_list** (str): The filename of a species list to match.
   * **species_axis** (int): An integer indicating which axis contains species names.
 
@@ -97,7 +97,9 @@ sum of all values is zero.
 * Optional
 
   * **purge_axes** (int or list of int): A list of axes to test for all-zeros.  If not 
-    provided, defaults to all axes.
+    provided, defaults to all axes.  It is recommended to purge only the species
+    axis (0), leaving all sites in for statistics and visualization (conversion to
+    geojson or raster).
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

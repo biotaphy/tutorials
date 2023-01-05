@@ -202,12 +202,11 @@ Most outputs are configured in the script parameter file, and may include:
 
 
 --------------------------------
-Step 3: Wrangle PAM to remove empties
+Step 3: Wrangle PAM to remove species with no presence
 --------------------------------
 
 Now that a grid has been built, and a PAM has been populated by intersecting species
-distribution models with the grid, we will remove all sites (rows) with no species
-and species (columns) with no sites.
+distribution models with the grid, we will remove all species (columns) with no sites.
 
 Input: Script parameter file
 ******************************************
@@ -216,9 +215,8 @@ An example JSON file for running the wrangle_matrix command is at
 `wrangle_matrix_global.json
 <https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix_global.json>`_.
 
-**Note:** While the output statistics should not differ between a PAM with or without empty rows
-and columns, the un-wrangled matrix will produce unnecessarily large statistics
-matrices, with empty rows and columns.
+This example wrangler will remove species with no occurrences in the sites.  We will
+not remove sites without species.
 
 These are the required and optional parameters:
 
@@ -227,16 +225,23 @@ These are the required and optional parameters:
   * **in_matrix_filename**: The full filename to the input matrix.
   * **out_matrix_filename**: The full filename to the output wrangled matrix.
   * **wrangler_configuration_file**: matrix wrangler configuration file,
-    described in the next section.  The tutorial example wrangler is
-    `matrix_wrangle.json
-    <https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json>`_
-    and is described in the next section.
+    described in the next section.  The tutorial example wrangler is described in the
+    next section.
 
 * Optional
 
   * **log_filename**: Output filename to write logging data
   * **log_console**: 'true' to write log to console
   * **report_filename**: output filename with summary
+
+Input: Wrangler file
+*******************************
+
+An example JSON file for wrangling the matrix, in this case purging columns
+of species that have no sites present, is in `matrix_wrangle.json
+<https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json>`_.
+In this example, we will use only the PurgeEmptySlicesWrangler, and apply it to axis 1,
+the species axis.
 
 Run wrangle_matrix command
 ******************************************
@@ -262,31 +267,32 @@ The wrangle_matrix tool outputs a trimmed matrix, in this case with no empty sit
 or species columns.  Outputs may include:
 
 1. A "report_filename" named in the script parameter file, a summary of statistics
-   calculations will be written to this file, like `calculate_pam_stats.rpt
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/calculate_pam_stats.rpt>`_.
-2. A "log_filename" named in the script parameter file, that will be created, like `calculate_pam_stats.log
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/calculate_pam_stats.log>`_.
+   calculations will be written to this file, like `wrangle_matrix_global.rpt
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_matrix_global.rpt>`_.
+2. A "log_filename" named in the script parameter file, that will be created, like
+   `wrangle_matrix_global.log
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_matrix_global.log>`_.
 3. If "log_console" is specified in the script parameter file, logs will be written to the
    command prompt during execution.
 
-An example of the output matrix (out_matrix_filename) is in the `input directory
-<https://github.com/biotaphy/tutorials/blob/main/data/input>`_ because it will be
-used as input for computations in the Step 4.
+An example of the output matrix (heuchera_rfolk_1deg_global_trimspecies.lmm) is in the
+`input directory <https://github.com/biotaphy/tutorials/blob/main/data/input>`_
+because it will be used as input for computations in the Step 4.
 
 --------------------------------
 Step 4: Calculate statistics for PAM
 --------------------------------
 
 Now that the grid has been built, a PAM has been defined by intersecting species
-distribution models with the grid, and the PAM has had all the empty rows and columns
+distribution models with the grid, and the PAM has had the empty columns
 trimmed, we can calculate biogeographic statistics on that PAM.
 
 Input: Script parameter file
 ******************************************
 
 An example JSON file for running the calculate_pam_stats command is at
-`calculate_pam_stats_noempties.json
-<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats_noempties.json>`_.
+`calculate_pam_stats.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json>`_.
 These are the required and optional parameters:
 
 * Required:
@@ -338,14 +344,19 @@ output files specified in the command configuration file.  Outputs may include:
 3. If "log_console" is specified in the script parameter file, logs will be written to the
    command prompt during execution.
 
-Examples of output statistics are in the `input directory
-<https://github.com/biotaphy/tutorials/blob/main/data/input>`_ because they will be
-used as input for visualizations later.
+Examples of output statistics (covariance_sigma_sites.lmm, covariance_sigma_species.lmm,
+diversity.lmm, species_stats.lmm) are in the `easy_bake directory
+<https://github.com/biotaphy/tutorials/blob/main/data/easy_bake>`_ .
 
 1. One or more "covariance_matrix" files.  Each covariance statistic produces a matrix
    and it is written to the covariance_matrix filename, where the statistic name is
    appended to the end of the base file name, examples are covariance_sigma_species.lmm and
    covariance_sigma_sites.lmm.
 2. A "diversity_matrix" containing different diversity statistics, like diversity.lmm.
-3. A "site_stats_matrix" containing site statistics, like site_stats.lmm.
-4. A "species_stats_matrix" containing species statistics, like species_stats.lmm.
+3. A "species_stats_matrix" containing species statistics, like species_stats.lmm.
+
+An example of output site statistics (site_stats.lmm) is in the `input directory
+<https://github.com/biotaphy/tutorials/blob/main/data/input>`_ because we will rasterize
+it for visualization later.
+
+4. A "site_stats_matrix" containing site statistics, like site_stats.lmm.
