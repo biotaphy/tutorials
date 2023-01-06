@@ -1,5 +1,5 @@
 ==================================
-Webinar 6: Species Distribution Modeling (SDM)
+Tutorial 6: Species Distribution Modeling (SDM)
 ==================================
 
 Create one or more Species Distribution Models using Maxent for

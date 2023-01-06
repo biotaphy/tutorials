@@ -2,16 +2,13 @@
 Tutorial 10: Create Visualizations for Outputs
 ==============================
 
-Site statistics created in Webinars 8 and 9 are saved into one or more matrix files with
-sites along the 0 axis (rows).  Axis headers for the 0 axis contain the x and y
+Site statistics created in Tutorials 9 and 10 are saved into one or more matrix files
+with sites along the 0 axis (rows).  Axis headers for the 0 axis contain the x and y
 coordinates for the centroid of each grid cell.  The 1 axis contains a different
 statistic in every column.
 
-These
-
-        "covariance_stats", "site_matrix_stats", "site_tree_stats",
-        "site_tree_distance_matrix_stats", "site_pam_dist_mtx_stats"]
-
+These statistics can be written to a raster or vector file and displayed as a map in
+a GIS or other map application.
 
 --------------------
 Introduction
@@ -20,10 +17,19 @@ Introduction
 Read `Tutorial Overview <../tutorial/w1_overview>`_ for an overview of how all
 tutorials work.
 
-
 --------------------------------
 Rasterize a matrix containing site statistics
 --------------------------------
+
+Statistics outputs are saved as matrices, and contain one or more calculations, each
+value for a site saved in its own column.  Matrix outputs available for computation in
+the previous tutorials include:
+    * covariance_stats
+    * site_matrix_stats
+    * site_tree_stats
+    * site_tree_distance_matrix_stats
+    * site_pam_dist_mtx_stats
+
 
 Input: Script parameter file
 ******************************************

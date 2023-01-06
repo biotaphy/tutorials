@@ -1,5 +1,5 @@
 =======================================
-Webinar 2: Resolving Nomenclature
+Tutorial 2: Resolving Nomenclature
 =======================================
 
 Create an updated/accepted species list and name-map (original_name --> accepted_name).

@@ -1,5 +1,5 @@
 ============================================
-Webinar 3: Wrangle occurrence data
+Tutorial 3: Wrangle occurrence data
 ============================================
 
 Filter occurrence and/or modify data in a single dataset.  The tool allows multiple

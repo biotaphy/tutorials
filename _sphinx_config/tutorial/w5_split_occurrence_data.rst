@@ -1,5 +1,5 @@
 ================================================================
-Webinar 5: Split and merge occurrence data by species
+Tutorial 5: Split and merge occurrence data by species
 ================================================================
 
 Split one or more occurrence datasets by species.  This tool will split a large dataset

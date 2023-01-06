@@ -1,5 +1,5 @@
 ==============================
-Webinar 9: Integrating Phylogenies with Species and Biogeographic Data
+Tutorial 10: Analyze PAM with Phylogeny
 ==============================
 
 Analyze the PAM matrix with a tree containing the same species to determine the
@@ -19,7 +19,7 @@ Step 1: Cleanup the matrix
 Subset the matrix to the tree species, so that statistics can be built on the
 intersection of species between the phylogentic tree and the matrix.  We will trim the
 matrix of all species that do not occur in the tree. We will also remove any empty
-(all zeros) rows and columns.
+(all zeros) columns.
 
 
 Input: PAM matrix
