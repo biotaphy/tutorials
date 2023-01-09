@@ -2,13 +2,25 @@
 Tutorial 10: Create Visualizations for Outputs
 ==============================
 
-Site statistics created in Tutorials 9 and 10 are saved into one or more matrix files
-with sites along the 0 axis (rows).  Axis headers for the 0 axis contain the x and y
-coordinates for the centroid of each grid cell.  The 1 axis contains a different
-statistic in every column.
+Most matrices used for input or output to Biotaphy tools with sites along the 0 axis
+(rows) and species data or statistics along the 1 axis (columns).  Axis headers for
+the 0 axis contain the x and y coordinates for the centroid of each grid cell.
+The 1 axis contains a species name or statistic for each column.
 
-These statistics can be written to a raster or vector file and displayed as a map in
-a GIS or other map application.
+PAMs are created in Tutorial 8 from a set of species distribution layers, encoding
+presence or absence values according to a set of defined rules.  The layers are saved
+into a matrix file called a Presence Absence Matrix (PAM).  Each column contains data
+for a single species. To examine the results of encoding you can create a multi-band
+raster image of up to 256 bands.  PAMs can be rasterized before or after "wrangling".
+In particular, rasterizing after applying the PurgeEmptySlicesWrangler may be
+significantly smaller, as the number of species may be less (creating fewer bands) and
+the geospatial extent may be reduced.
+
+Site statistics created in Tutorials 9 and 10 are saved into one or more matrix files.
+Each column contains a different statistic.
+
+The PAM and site statistics can be written to a raster or vector file and displayed
+as a map in a GIS or other map application.
 
 --------------------
 Introduction
@@ -16,6 +28,13 @@ Introduction
 
 Read `Tutorial Overview <../tutorial/w1_overview>`_ for an overview of how all
 tutorials work.
+
+--------------------------------
+Rasterize a PAM
+--------------------------------
+
+After encoding a set of species distribution layers into a matrix, you may want to
+visually examine the results, by converting the PAM into a multi-band Geotiff file.
 
 --------------------------------
 Rasterize a matrix containing site statistics

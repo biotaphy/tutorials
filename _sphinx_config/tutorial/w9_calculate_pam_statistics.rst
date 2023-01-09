@@ -89,7 +89,7 @@ or species columns.  Outputs may include:
 3. If "log_console" is specified in the script parameter file, logs will be written to the
    command prompt during execution.
 
-An example of the output matrix (heuchera_rfolk_1deg_global_trimspecies.lmm) is in the
+An example of the output matrix (heuchera_rfolk_1deg_global_noempties.lmm) is in the
 `input directory <https://github.com/biotaphy/tutorials/blob/main/data/input>`_
 because it will be used as input for computations in the Step 4.
 
