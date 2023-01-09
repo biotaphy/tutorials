@@ -2,7 +2,7 @@
     "log_console": true,
     "log_filename": "/volumes/output/convert_lmm_to_raster_compressed.log",
     "report_filename": "/volumes/output/convert_lmm_to_raster_compressed.rpt",
-    "in_lmm_filename": "/volumes/data/input/heuchera_rfolk_1deg_global_trimspecies.lmm",
+    "in_lmm_filename": "/volumes/data/input/heuchera_rfolk_1deg_global_noempties.lmm",
     "is_pam": true,
-    "out_geotiff_filename": "/volumes/output/heuchera_rfolk_1deg_global_trimspecies.tiff"
+    "out_geotiff_filename": "/volumes/output/heuchera_rfolk_1deg_global_noempties.tiff"
 }

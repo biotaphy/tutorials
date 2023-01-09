@@ -3,9 +3,26 @@
         "name": "PurgeEmptySlicesWrangler",
         "version": "1.0",
         "changes": {
+            "0": {
+                "purged": 51886
+            },
             "1": {
                 "purged": 7
             }
+        }
+    },
+    {
+        "input_matrix": {
+            "file": "/volumes/data/input/heuchera_rfolk_1deg_global.lmm",
+            "height": 54000,
+            "width": 62
+        }
+    },
+    {
+        "output_matrix": {
+            "file": "/volumes/output/heuchera_rfolk_1deg_global_noempties.lmm",
+            "height": 2114,
+            "width": 55
         }
     }
 ]

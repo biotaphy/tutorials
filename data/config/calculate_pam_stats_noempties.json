@@ -1,0 +1,10 @@
+{
+    "log_filename": "/volumes/output/calculate_pam_stats_noempties.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/calculate_pam_stats_noempties.rpt",
+    "covariance_matrix": "/volumes/output/covariance_noempties.lmm",
+    "diversity_matrix":  "/volumes/output/diversity_noempties.lmm",
+    "site_stats_matrix":  "/volumes/output/site_stats_noempties.lmm",
+    "species_stats_matrix": "/volumes/output/species_stats_noempties.lmm",
+    "pam_filename": "/volumes/data/input/heuchera_rfolk_1deg_global_noempties.lmm"
+}
