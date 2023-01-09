@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Webinar 8: Introducing Presence-Absence Matrices (PAMs) &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Tutorial 8: Introducing Presence-Absence Matrices (PAMs) &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
   
 
   
@@ -40,9 +40,7 @@
 
     
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Webinar 9: Integrating Phylogenies with Species and Biogeographic Data" href="w9_phylo_diversity.html" />
-    <link rel="prev" title="Webinar 6: Species Distribution Modeling (SDM)" href="w6_create_sdms.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -87,51 +85,15 @@
               
             
             
-              <ul class="current">
+              <ul>
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w10_visualizations.html">Tutorial 10: Create Visualizations for Outputs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolving Nomenclature</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling (SDM)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Webinar 8: Introducing Presence-Absence Matrices (PAMs)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#step-1-build-a-grid">Step 1: Build a grid</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#run-build-grid-command">Run build_grid command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#step-2-encode-species-layers-into-grid-defined-pam">Step 2: Encode species layers into grid-defined PAM</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#input-layers">Input: Layers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Input: Script parameter file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#run-encode-layers-command">Run encode_layers command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Output</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#step-3-wrangle-pam-to-remove-species-with-no-presence">Step 3: Wrangle PAM to remove species with no presence</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id4">Input: Script parameter file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#input-wrangler-file">Input: Wrangler file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#run-wrangle-matrix-command">Run wrangle_matrix command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">Output</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#step-4-calculate-statistics-for-pam">Step 4: Calculate statistics for PAM</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id7">Input: Script parameter file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#run-calculate-pam-stats-command">Run calculate_pam_stats command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id8">Output</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="w9_phylo_diversity.html">Webinar 9: Integrating Phylogenies with Species and Biogeographic Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_tree.html">Trees: Data and Wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Tutorial 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
@@ -186,7 +148,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Webinar 8: Introducing Presence-Absence Matrices (PAMs)</li>
+      <li>Tutorial 8: Introducing Presence-Absence Matrices (PAMs)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -205,8 +167,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="webinar-8-introducing-presence-absence-matrices-pams">
-<h1>Webinar 8: Introducing Presence-Absence Matrices (PAMs)<a class="headerlink" href="#webinar-8-introducing-presence-absence-matrices-pams" title="Permalink to this heading">¶</a></h1>
+  <section id="tutorial-8-introducing-presence-absence-matrices-pams">
+<h1>Tutorial 8: Introducing Presence-Absence Matrices (PAMs)<a class="headerlink" href="#tutorial-8-introducing-presence-absence-matrices-pams" title="Permalink to this heading">¶</a></h1>
 <p>Create a Presence-Absence Matrix (PAM) from species distribution prediction layers.
 This exercise contains 3 steps.  First, we define and build a grid of our area of
 interest.  This will define the size and location of grid cells used for analyzing a
@@ -377,144 +339,6 @@ it as input in Step 3.</p></li>
 </ol>
 </section>
 </section>
-<section id="step-3-wrangle-pam-to-remove-species-with-no-presence">
-<h2>Step 3: Wrangle PAM to remove species with no presence<a class="headerlink" href="#step-3-wrangle-pam-to-remove-species-with-no-presence" title="Permalink to this heading">¶</a></h2>
-<p>Now that a grid has been built, and a PAM has been populated by intersecting species
-distribution models with the grid, we will remove all species (columns) with no sites.</p>
-<section id="id4">
-<h3>Input: Script parameter file<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
-<p>An example JSON file for running the wrangle_matrix command is at
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix_global.json">wrangle_matrix_global.json</a>.</p>
-<p>This example wrangler will remove species with no occurrences in the sites.  We will
-not remove sites without species.</p>
-<p>These are the required and optional parameters:</p>
-<ul class="simple">
-<li><p>Required:</p>
-<ul>
-<li><p><strong>in_matrix_filename</strong>: The full filename to the input matrix.</p></li>
-<li><p><strong>out_matrix_filename</strong>: The full filename to the output wrangled matrix.</p></li>
-<li><p><strong>wrangler_configuration_file</strong>: matrix wrangler configuration file,
-described in the next section.  The tutorial example wrangler is described in the
-next section.</p></li>
-</ul>
-</li>
-<li><p>Optional</p>
-<ul>
-<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
-<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
-<li><p><strong>report_filename</strong>: output filename with summary</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="input-wrangler-file">
-<h3>Input: Wrangler file<a class="headerlink" href="#input-wrangler-file" title="Permalink to this heading">¶</a></h3>
-<p>An example JSON file for wrangling the matrix, in this case purging columns
-of species that have no sites present, is in <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json">matrix_wrangle.json</a>.
-In this example, we will use only the PurgeEmptySlicesWrangler, and apply it to axis 1,
-the species axis.</p>
-</section>
-<section id="run-wrangle-matrix-command">
-<h3>Run wrangle_matrix command<a class="headerlink" href="#run-wrangle-matrix-command" title="Permalink to this heading">¶</a></h3>
-<p>Initiate the wrangle_matrix process with the following:</p>
-<p>For Linux/Mac systems</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">wrangle_matrix</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_matrix_global</span><span class="o">.</span><span class="n">json</span>
-</pre></div>
-</div>
-<p>For Windows systems</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">wrangle_matrix</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_matrix_global</span><span class="o">.</span><span class="n">json</span>
-</pre></div>
-</div>
-</section>
-<section id="id5">
-<h3>Output<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
-<p>The wrangle_matrix tool outputs a trimmed matrix, in this case with no empty site rows
-or species columns.  Outputs may include:</p>
-<ol class="arabic simple">
-<li><p>A “report_filename” named in the script parameter file, a summary of statistics
-calculations will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_matrix_global.rpt">wrangle_matrix_global.rpt</a>.</p></li>
-<li><p>A “log_filename” named in the script parameter file, that will be created, like
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_matrix_global.log">wrangle_matrix_global.log</a>.</p></li>
-<li><p>If “log_console” is specified in the script parameter file, logs will be written to the
-command prompt during execution.</p></li>
-</ol>
-<p>An example of the output matrix (heuchera_rfolk_1deg_global_trimspecies.lmm) is in the
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input">input directory</a>
-because it will be used as input for computations in the Step 4.</p>
-</section>
-</section>
-<section id="step-4-calculate-statistics-for-pam">
-<h2>Step 4: Calculate statistics for PAM<a class="headerlink" href="#step-4-calculate-statistics-for-pam" title="Permalink to this heading">¶</a></h2>
-<p>Now that the grid has been built, a PAM has been defined by intersecting species
-distribution models with the grid, and the PAM has had the empty columns
-trimmed, we can calculate biogeographic statistics on that PAM.</p>
-<section id="id7">
-<h3>Input: Script parameter file<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
-<p>An example JSON file for running the calculate_pam_stats command is at
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/calculate_pam_stats.json">calculate_pam_stats.json</a>.
-These are the required and optional parameters:</p>
-<ul class="simple">
-<li><p>Required:</p>
-<ul>
-<li><p><strong>pam_filename</strong>: The full filename to the input PAM file.</p></li>
-</ul>
-</li>
-<li><p>Optional</p>
-<ul>
-<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
-<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
-<li><p><strong>report_filename</strong>: output filename with summary</p></li>
-<li><p><strong>covariance_matrix</strong>: The full path and base filename for writing covariance matrices.</p></li>
-<li><p><strong>diversity_matrix</strong>: The full filename for writing the diversity matrix.</p></li>
-<li><p><strong>site_stats_matrix</strong>: The full filename for writing the site statistics matrix.</p></li>
-<li><p><strong>species_stats_matrix</strong>: The full filename for writing the species statistics
-matrix.</p></li>
-<li><p><strong>tree_filename</strong>: The full filename to an input tree in Nexus format.</p></li>
-<li><p><strong>tree_matrix</strong>: The full filename to an input tree encoded as a matrix.</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="run-calculate-pam-stats-command">
-<h3>Run calculate_pam_stats command<a class="headerlink" href="#run-calculate-pam-stats-command" title="Permalink to this heading">¶</a></h3>
-<p>Initiate the calculate_pam_stats process with the following:</p>
-<p>For Linux/Mac systems</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">calculate_pam_stats</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">calculate_pam_stats</span><span class="o">.</span><span class="n">json</span>
-</pre></div>
-</div>
-<p>For Windows systems</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">calculate_pam_stats</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">calculate_pam_stats</span><span class="o">.</span><span class="n">json</span>
-</pre></div>
-</div>
-</section>
-<section id="id8">
-<h3>Output<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h3>
-<p>The calculate_pam_stats tool outputs computes various statistics, depending on the
-output files specified in the command configuration file.  Outputs may include:</p>
-<ol class="arabic simple">
-<li><p>A “report_filename” named in the script parameter file, a summary of statistics
-calculations will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/calculate_pam_stats.rpt">calculate_pam_stats.rpt</a>.</p></li>
-<li><p>A “log_filename” named in the script parameter file, that will be created, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/calculate_pam_stats.log">calculate_pam_stats.log</a>.</p></li>
-<li><p>If “log_console” is specified in the script parameter file, logs will be written to the
-command prompt during execution.</p></li>
-</ol>
-<p>Examples of output statistics (covariance_sigma_sites.lmm, covariance_sigma_species.lmm,
-diversity.lmm, species_stats.lmm) are in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake">easy_bake directory</a> .</p>
-<ol class="arabic simple">
-<li><p>One or more “covariance_matrix” files.  Each covariance statistic produces a matrix
-and it is written to the covariance_matrix filename, where the statistic name is
-appended to the end of the base file name, examples are covariance_sigma_species.lmm and
-covariance_sigma_sites.lmm.</p></li>
-<li><p>A “diversity_matrix” containing different diversity statistics, like diversity.lmm.</p></li>
-<li><p>A “species_stats_matrix” containing species statistics, like species_stats.lmm.</p></li>
-</ol>
-<p>An example of output site statistics (site_stats.lmm) is in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/input">input directory</a> because we will rasterize
-it for visualization later.</p>
-<ol class="arabic simple" start="4">
-<li><p>A “site_stats_matrix” containing site statistics, like site_stats.lmm.</p></li>
-</ol>
-</section>
-</section>
 </section>
 
 
@@ -522,10 +346,6 @@ it for visualization later.</p>
            
           </div>
           <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="w9_phylo_diversity.html" class="btn btn-neutral float-right" title="Webinar 9: Integrating Phylogenies with Species and Biogeographic Data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="w6_create_sdms.html" class="btn btn-neutral float-left" title="Webinar 6: Species Distribution Modeling (SDM)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-    </div>
 
   <hr/>
 

@@ -40,9 +40,7 @@
 
     
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Webinar 1: Tutorial Overview" href="w1_overview.html" />
-    <link rel="prev" title="Tutorial Preparation" href="../pages/installation.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -87,31 +85,15 @@
               
             
             
-              <ul class="current">
+              <ul>
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial 10: Create Visualizations for Outputs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#rasterize-a-matrix-containing-site-statistics">Rasterize a matrix containing site statistics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#run-build-grid-command">Run build_grid command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="w1_overview.html">Webinar 1: Tutorial Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w2_resolve_splist_names.html">Webinar 2: Resolving Nomenclature</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Webinar 3: Wrangle occurrence data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Webinar 5: Split and merge occurrence data by species</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Webinar 6: Species Distribution Modeling (SDM)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8_build_pam.html">Webinar 8: Introducing Presence-Absence Matrices (PAMs)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w9_phylo_diversity.html">Webinar 9: Integrating Phylogenies with Species and Biogeographic Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_species_list.html">Species List: Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_tree.html">Trees: Data and Wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Tutorial 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="idigbio_download.html">Download occurrence data from iDigBio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/glossary.html">Biotaphy Tutorial Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/references.html">References</a></li>
@@ -172,7 +154,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/tutorial/w10_visualizations.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w11_format_visualize.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -187,22 +169,46 @@
             
   <section id="tutorial-10-create-visualizations-for-outputs">
 <h1>Tutorial 10: Create Visualizations for Outputs<a class="headerlink" href="#tutorial-10-create-visualizations-for-outputs" title="Permalink to this heading">¶</a></h1>
-<p>Site statistics created in Webinars 8 and 9 are saved into one or more matrix files with
-sites along the 0 axis (rows).  Axis headers for the 0 axis contain the x and y
-coordinates for the centroid of each grid cell.  The 1 axis contains a different
-statistic in every column.</p>
-<p>These</p>
-<blockquote>
-<div><p>“covariance_stats”, “site_matrix_stats”, “site_tree_stats”,
-“site_tree_distance_matrix_stats”, “site_pam_dist_mtx_stats”]</p>
-</div></blockquote>
+<p>Most matrices used for input or output to Biotaphy tools with sites along the 0 axis
+(rows) and species data or statistics along the 1 axis (columns).  Axis headers for
+the 0 axis contain the x and y coordinates for the centroid of each grid cell.
+The 1 axis contains a species name or statistic for each column.</p>
+<p>PAMs are created in Tutorial 8 from a set of species distribution layers, encoding
+presence or absence values according to a set of defined rules.  The layers are saved
+into a matrix file called a Presence Absence Matrix (PAM).  Each column contains data
+for a single species. To examine the results of encoding you can create a multi-band
+raster image of up to 256 bands.  PAMs can be rasterized before or after “wrangling”.
+In particular, rasterizing after applying the PurgeEmptySlicesWrangler may be
+significantly smaller, as the number of species may be less (creating fewer bands) and
+the geospatial extent may be reduced.</p>
+<p>Site statistics created in Tutorials 9 and 10 are saved into one or more matrix files.
+Each column contains a different statistic.</p>
+<p>The PAM and site statistics can be written to a raster or vector file and displayed
+as a map in a GIS or other map application.</p>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
 <p>Read <a class="reference external" href="../tutorial/w1_overview">Tutorial Overview</a> for an overview of how all
 tutorials work.</p>
 </section>
+<section id="rasterize-a-pam">
+<h2>Rasterize a PAM<a class="headerlink" href="#rasterize-a-pam" title="Permalink to this heading">¶</a></h2>
+<p>After encoding a set of species distribution layers into a matrix, you may want to
+visually examine the results, by converting the PAM into a multi-band Geotiff file.</p>
+</section>
 <section id="rasterize-a-matrix-containing-site-statistics">
 <h2>Rasterize a matrix containing site statistics<a class="headerlink" href="#rasterize-a-matrix-containing-site-statistics" title="Permalink to this heading">¶</a></h2>
+<p>Statistics outputs are saved as matrices, and contain one or more calculations, each
+value for a site saved in its own column.  Matrix outputs available for computation in
+the previous tutorials include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>covariance_stats</p></li>
+<li><p>site_matrix_stats</p></li>
+<li><p>site_tree_stats</p></li>
+<li><p>site_tree_distance_matrix_stats</p></li>
+<li><p>site_pam_dist_mtx_stats</p></li>
+</ul>
+</div></blockquote>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading">¶</a></h3>
 <p>A JSON parameter file is required for this command.  The tutorial parameter file
@@ -262,10 +268,6 @@ command prompt during execution.</p></li>
            
           </div>
           <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="w1_overview.html" class="btn btn-neutral float-right" title="Webinar 1: Tutorial Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="../pages/installation.html" class="btn btn-neutral float-left" title="Tutorial Preparation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-    </div>
 
   <hr/>
 
