@@ -42,15 +42,11 @@ ENV MAXENT_JAR=/git/Maxent/ArchivedReleases/$MAXENT_VERSION/maxent.jar
 # Populate volumes with inputs
 COPY ./data/input     /volumes/data/input
 COPY ./data/config    /volumes/data/config
-# COPY ./data/easy_bake /volumes/data/easy_bake
 COPY ./data/wranglers /volumes/data/wranglers
-# Populate big data volume
-COPY ./data/env/worldclim1.4  /volumes/env/worldclim1.4
-COPY ./data/env/ecoreg_10min_global.tif /volumes/env/ecoreg_10min_global.tif
-
+# Populate big data volume with global 5 minute data
+COPY ./data/env/worldclim1.4  /volumes/env/biotaphy_5min_global
+COPY ./data/env/ecoreg_5min_global.tif /volumes/env/ecoreg_5min_global.tif
+# and North American 2.5 minute data
 COPY ./data/env/na_2.5min  /volumes/env/na_2.5min
 COPY ./data/env/ecoreg_na_2.5min.tif /volumes/env/ecoreg_na_2.5min.tif
 
-COPY ./data/env/worldclim1.4  /volumes/env/worldclim1.4
-COPY ./data/env/ecoreg_10min_global.tif /volumes/env/ecoreg_10min_global.tif
-SHELL ["/bin/bash", "-c"]
