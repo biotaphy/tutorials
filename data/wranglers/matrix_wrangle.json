@@ -1,6 +1,5 @@
 [
     {
-        "wrangler_type": "PurgeEmptySlicesWrangler",
-        "purge_axes": 1
+        "wrangler_type": "PurgeEmptySlicesWrangler"
     }
 ]
