@@ -268,10 +268,11 @@ COMMANDS=(
 "list_commands" "list_outputs"  "list_volumes"
 # Need configuration file parameter
 "build_grid"  "calculate_pam_stats"
-"convert_lmm_to_geojson"  "convert_lmm_to_csv"
+"convert_lmm_to_geojson"  "convert_lmm_to_raster"
+#"convert_lmm_to_csv"
 "create_sdm"    "encode_layers"
 "randomize_pam"
-"rasterize_point_heatmap"  "rasterize_site_stats"
+"rasterize_point_heatmap"
 "split_occurrence_data"
 "wrangle_matrix"   "wrangle_occurrences"  "wrangle_species_list"   "wrangle_tree"
 )

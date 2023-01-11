@@ -1,8 +1,8 @@
 {
     "log_console": true,
-    "log_filename": "/volumes/output/convert_lmm_to_raster_compressed.log",
-    "report_filename": "/volumes/output/convert_lmm_to_raster_compressed.rpt",
-    "in_lmm_filename": "/volumes/data/input/site_stats_noempties.lmm",
-    "is_pam": true,
-    "out_geotiff_filename": "/volumes/output/site_stats_noempties.tiff"
+    "log_filename": "/volumes/output/convert_lmm_to_raster_stats.log",
+    "report_filename": "/volumes/output/convert_lmm_to_raster_stats.rpt",
+    "in_lmm_filename": "/volumes/data/input/site_stats.lmm",
+    "matrix_type": "site_stats",
+    "out_raster_filename": "/volumes/output/site_stats.tiff"
 }

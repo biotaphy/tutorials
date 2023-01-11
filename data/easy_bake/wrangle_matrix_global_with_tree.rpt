@@ -40,7 +40,7 @@
     },
     {
         "output_matrix": {
-            "file": "/volumes/output/heuchera_rfolk_1deg_global_trimspecies_matchtree.lmm",
+            "file": "/volumes/output/heuchera_rfolk_1deg_global_noempties_matchtree.lmm",
             "height": 54000,
             "width": 45
         }
