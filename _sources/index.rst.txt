@@ -13,7 +13,8 @@ computations on a Docker instance.
     pages/installation
     pages/quickstart
 
-    tutorial/w*
+    tutorial/w?_*
+    tutorial/w??_*
     tutorial/script_params
 
     tutorial/data_wrangle*
