@@ -1,0 +1,9 @@
+{
+    "log_console": true,
+    "log_filename": "/volumes/output/convert_lmm_to_shapefile.log",
+    "report_filename": "/volumes/output/convert_lmm_to_shapefile.rpt",
+    "in_lmm_filename": "/volumes/output/site_stats.lmm",
+    "is_pam": false,
+    "geometry_type": "polygon",
+    "out_shapefile": "/volumes/output/site_stats.shp"
+}

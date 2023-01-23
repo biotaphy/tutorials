@@ -1,10 +1,10 @@
 {
     "log_filename": "/volumes/output/convert_csv_to_lmm.log",
     "log_console": true,
-    "data_type": "int",
+    "data_type": "float",
     "header_rows": 1,
-    "header_cols": 3,
+    "header_cols": 1,
     "report_filename": "/volumes/output/convert_csv_to_lmm.rpt",
-    "in_csv_filename": "/volumes/data/input/heuchera_pam_rn.csv",
-    "out_lmm_filename": "/volumes/output/heuchera_pam_rn_from_csv.lmm"
+    "in_csv_filename": "/volumes/output/covariance_sigma_species.csv",
+    "out_lmm_filename": "/volumes/output/covariance_sigma_species_fromcsv.lmm"
 }
