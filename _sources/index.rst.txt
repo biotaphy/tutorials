@@ -13,10 +13,10 @@ computations on a Docker instance.
     pages/installation
     pages/quickstart
 
-    tutorial/tutorial*
+    tutorial/w*
     tutorial/script_params
 
-    tutorial/*wrangle*
+    tutorial/data_wrangle*
 
     tutorial/idigbio_download
     pages/glossary
