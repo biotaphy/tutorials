@@ -1,5 +1,5 @@
 ==============================
-Tutorial 10: Analyze PAM with Phylogeny
+Tutorial 9: Analyze PAM with Phylogeny
 ==============================
 
 Analyze the PAM matrix with a tree containing the same species to determine the
@@ -25,8 +25,8 @@ matrix of all species that do not occur in the tree. We will also remove any emp
 Input: PAM matrix
 ******************************************
 
-Use a pre-created PAM, similar to that created in `Webinar 8 <w8_build_pam>`_.
-We will use the example PAM heuchera_pam_rn.lmm, available in the
+Use a pre-created PAM, identical to that created in `Tutorial 7 <w7_build_pam>`_.
+We will use the example PAM heuchera_rfolk_1deg_global.lmm, available in the
 `input directory
 <https://github.com/biotaphy/tutorials/tree/main/data/input>`_.
 
@@ -39,17 +39,15 @@ different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in `data_wrangle_matrix <data_wrangle_matrix>`_
 
-We will use the wrangler configuration file `matrix_wrangle.json
-<https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json>`_.
+We will use the wrangler configuration file `matrix_wrangle_with_tree.json
+<https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle_with_tree.json>`_.
 We will match our matrix to a phylogenetic tree, using the **MatchTreeMatrixWrangler**.
 This requires an input tree, described below.  We will also remove any empty slices,
 rows/sites with no species or columns/species with no present sites, using the
 **PurgeEmptySlicesWrangler**.
 
 **Note**: It is important when matching species between a matrix and a tree, that the
-species names match when possible.  The example PAM was created from re-named species
-layers (using spaces instead of underscores between the genus and species) so they
-will match the tree.
+species names match when possible.
 
 Input: Phylogenetic tree
 ******************************************
@@ -65,8 +63,8 @@ Input: Script parameter file
 
 As with all other Biotaphy commands, a JSON parameter file is required to pull together
 all of the input, and output files, and any additional parameters.  The script
-parameter file for this exercise is `wrangle_matrix.json
-<https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix.json>`_.
+parameter file for this exercise is `wrangle_matrix_global_with_tree.json
+<https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix_global_with_tree.json>`_.
 These are the required and optional parameters:
 
 * Required:
@@ -93,14 +91,16 @@ For Linux/Mac systems:
 
 .. code-block::
 
-      ./run_tutorial.sh  wrangle_matrix  data/config/wrangle_matrix.json
+      ./run_tutorial.sh  wrangle_matrix  data/config/wrangle_matrix_global_with_tree.json
+      ./run_tutorial.sh  wrangle_matrix  data/config/wrangle_matrix_global_with_treeonly.json
 
 
 For Windows systems:
 
 .. code-block::
 
-      ./run_tutorial.bat  wrangle_matrix  data/config/wrangle_matrix.json
+      ./run_tutorial.bat  wrangle_matrix  data/config/wrangle_matrix_global_with_tree.json
+      ./run_tutorial.bat  wrangle_matrix  data/config/wrangle_matrix_global_with_treeonly.json
 
 Output
 ******************************************
@@ -108,13 +108,15 @@ Output
 This process outputs a file containing the modified matrix and any optional logfiles 
 and reports specified in the Script parameter file.
 
-The `report file <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_matrix.rpt>`_
-shows a summary of the processes executed, including the species purged from the matrix because
-they didn't appear in the phylogenetic tree, and the number of sites (rows) and species (columns)
-removed because they were all zeros (no presence).
+The `report file
+<https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_matrix_global_with_tree.rpt>`_
+shows a summary of the processes executed, including the species purged from the matrix
+because they didn't appear in the phylogenetic tree, and the number of sites (rows) and
+species (columns) removed because they were all zeros (no presence).
 
-The resulting trimmed matrix, The resulting trimmed matrix, heuchera_pam_rn_wrangled.lmm, is in the
-`input directory <https://github.com/biotaphy/tutorials/tree/main/data/input>`_ so we can use it in
+The resulting trimmed matrix, The resulting trimmed matrix,
+heuchera_rfolk_1deg_global_noempties_matchtree.lmm, is in the `input directory
+<https://github.com/biotaphy/tutorials/tree/main/data/input>`_ so we can use it in
 the next step.
 
 --------------------------------
@@ -128,9 +130,9 @@ which employ the matching tree data.
 Input: trimmed PAM matrix
 ******************************************
 
-Use the PAM wrangled in the and created as an output in the previous step.  The
-wrangled PAM is available as heuchera_pam_rn_wrangled.lmm in the `input directory
-<https://github.com/biotaphy/tutorials/tree/main/data/input>`_.
+Use the PAM wrangled and created as an output in the previous step.  The
+wrangled PAM is available as heuchera_rfolk_1deg_global_noempties_matchtree.lmm in the
+`input directory <https://github.com/biotaphy/tutorials/tree/main/data/input>`_.
 
 Input: Phylogenetic tree
 ******************************************
@@ -173,13 +175,15 @@ For Linux/Mac systems
 
 .. code-block::
 
-      ./run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
+      ./run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats_pd.json
+      ./run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats_noempties_pd.json
 
 For Windows systems
 
 .. code-block::
 
-      ./run_tutorial.bat calculate_pam_stats data/config/calculate_pam_stats.json
+      ./run_tutorial.bat calculate_pam_stats data/config/calculate_pam_stats_pd.json
+      ./run_tutorial.bat calculate_pam_stats data/config/calculate_pam_stats_noempties_pd.json
 
 Output
 ******************************************

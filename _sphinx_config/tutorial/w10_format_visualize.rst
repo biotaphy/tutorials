@@ -79,6 +79,8 @@ For Linux/Mac systems:
 
       ./run_tutorial.sh convert_lmm_to_raster data/config/convert_lmm_to_raster.json
       ./run_tutorial.sh convert_lmm_to_raster data/config/convert_lmm_to_raster_compressed.json
+      ./run_tutorial.sh convert_lmm_to_raster data/config/convert_lmm_to_raster_stats.json
+      ./run_tutorial.sh convert_lmm_to_raster data/config/convert_lmm_to_raster_compressed_stats.json
 
 For Windows systems:
 

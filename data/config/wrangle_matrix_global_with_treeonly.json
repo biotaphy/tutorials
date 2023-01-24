@@ -1,0 +1,8 @@
+{
+    "log_filename": "/volumes/output/wrangle_matrix_global_with_treeonly.log",
+    "log_console": true,
+    "report_filename": "/volumes/output/wrangle_matrix_global_with_treeonly.rpt",
+    "in_matrix_filename": "/volumes/data/input/heuchera_rfolk_1deg_global.lmm",
+    "out_matrix_filename": "/volumes/output/heuchera_rfolk_1deg_global_matchtree.lmm",
+    "wrangler_configuration_file": "/volumes/data/wranglers/matrix_wrangle_with_treeonly.json"
+}

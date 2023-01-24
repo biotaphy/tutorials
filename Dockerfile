@@ -44,9 +44,7 @@ COPY ./data/input     /volumes/data/input
 COPY ./data/config    /volumes/data/config
 COPY ./data/wranglers /volumes/data/wranglers
 # Populate big data volume with global 5 minute data
-COPY ./data/env/worldclim1.4  /volumes/env/biotaphy_5min_global
+COPY ./data/env/biotaphy_5min_global  /volumes/env/biotaphy_5min_global
 COPY ./data/env/ecoreg_5min_global.tif /volumes/env/ecoreg_5min_global.tif
-# and North American 2.5 minute data
-COPY ./data/env/na_2.5min  /volumes/env/na_2.5min
-COPY ./data/env/ecoreg_na_2.5min.tif /volumes/env/ecoreg_na_2.5min.tif
+
 

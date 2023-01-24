@@ -4,5 +4,62 @@
     "output covariance matrix sigma species": "/volumes/output/covariance_sigma_species.lmm",
     "output diversity_matrix": "/volumes/output/diversity.lmm",
     "output site_stats_matrix": "/volumes/output/site_stats.lmm",
-    "output species_stats_matrix": "/volumes/output/species_stats.lmm"
+    "output species_stats_matrix": "/volumes/output/species_stats.lmm",
+    "Covariance": {
+        "sigma sites": {
+            "columns": 54000,
+            "column_headers": 54000,
+            "column_header_elts": 3,
+            "rows": 54000,
+            "row_headers": 54000,
+            "row_header_elts": 3,
+            "max": 0.1705785123966942,
+            "min": -0.023801652892561982
+        },
+        "sigma species": {
+            "columns": 62,
+            "column_headers": 62,
+            "column_header_elts": 20,
+            "rows": 62,
+            "row_headers": 62,
+            "row_header_elts": 20,
+            "max": 0.2461011377052027,
+            "min": -0.061592581420972396
+        }
+    },
+    "Diversity": {
+        "columns": 6,
+        "column_headers": 6,
+        "column_header_elts": 7,
+        "max": 3973.2223273415325,
+        "min": 24.273486430062626,
+        "statistics": [
+            "c-score",
+            "lande",
+            "legendre",
+            "num sites",
+            "num species",
+            "whittaker"
+        ]
+    },
+    "Site Statistics": {
+        "columns": 54000,
+        "column_headers": 4,
+        "column_header_elts": 5,
+        "rows": 4,
+        "row_headers": 54000,
+        "row_header_elts": 3,
+        "max": NaN,
+        "min": NaN
+    },
+    "Species Statistics": {
+        "columns": 62,
+        "column_headers": 4,
+        "column_header_elts": 5,
+        "rows": 4,
+        "row_headers": 62,
+        "row_header_elts": 20,
+        "max": NaN,
+        "min": NaN
+    }
 }

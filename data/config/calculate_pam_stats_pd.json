@@ -7,5 +7,5 @@
     "diversity_matrix":  "/volumes/output/diversity_pd.lmm",
     "site_stats_matrix":  "/volumes/output/site_stats_pd.lmm",
     "species_stats_matrix": "/volumes/output/species_stats_pd.lmm",
-    "pam_filename": "/volumes/data/input/heuchera_rfolk_1deg_global_trimspecies_matchtree.lmm"
+    "pam_filename": "/volumes/data/input/heuchera_rfolk_1deg_global_matchtree.lmm"
 }
