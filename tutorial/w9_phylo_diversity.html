@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Tutorial 10: Analyze PAM with Phylogeny &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Tutorial 9: Analyze PAM with Phylogeny &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
   
 
   
@@ -41,8 +41,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Tutorial 10: Create Visualizations for Outputs" href="w11_format_visualize.html" />
-    <link rel="prev" title="Tutorial 9: Calculate PAM Statistics" href="w9_calculate_pam_statistics.html" /> 
+    <link rel="next" title="Tutorial 10: Create Visualizations for Outputs" href="w10_format_visualize.html" />
+    <link rel="prev" title="Tutorial 8: Calculate PAM Statistics" href="w8_calculate_pam_statistics.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -96,9 +96,9 @@
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Tutorial 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Tutorial 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Tutorial 6: Species Distribution Modeling (SDM)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w8_build_pam.html">Tutorial 8: Introducing Presence-Absence Matrices (PAMs)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w9_calculate_pam_statistics.html">Tutorial 9: Calculate PAM Statistics</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial 10: Analyze PAM with Phylogeny</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Tutorial 7: Introducing Presence-Absence Matrices (PAMs)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w8_calculate_pam_statistics.html">Tutorial 8: Calculate PAM Statistics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial 9: Analyze PAM with Phylogeny</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-1-cleanup-the-matrix">Step 1: Cleanup the matrix</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#input-pam-matrix">Input: PAM matrix</a></li>
@@ -119,7 +119,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="w11_format_visualize.html">Tutorial 10: Create Visualizations for Outputs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w10_format_visualize.html">Tutorial 10: Create Visualizations for Outputs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -179,13 +179,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Tutorial 10: Analyze PAM with Phylogeny</li>
+      <li>Tutorial 9: Analyze PAM with Phylogeny</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/tutorial/w10_phylo_diversity.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w9_phylo_diversity.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -198,8 +198,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="tutorial-10-analyze-pam-with-phylogeny">
-<h1>Tutorial 10: Analyze PAM with Phylogeny<a class="headerlink" href="#tutorial-10-analyze-pam-with-phylogeny" title="Permalink to this heading">¶</a></h1>
+  <section id="tutorial-9-analyze-pam-with-phylogeny">
+<h1>Tutorial 9: Analyze PAM with Phylogeny<a class="headerlink" href="#tutorial-9-analyze-pam-with-phylogeny" title="Permalink to this heading">¶</a></h1>
 <p>Analyze the PAM matrix with a tree containing the same species to determine the
 phylogenetic diversity of a region.</p>
 <section id="introduction">
@@ -215,8 +215,8 @@ matrix of all species that do not occur in the tree. We will also remove any emp
 (all zeros) columns.</p>
 <section id="input-pam-matrix">
 <h3>Input: PAM matrix<a class="headerlink" href="#input-pam-matrix" title="Permalink to this heading">¶</a></h3>
-<p>Use a pre-created PAM, similar to that created in <a class="reference external" href="w8_build_pam">Webinar 8</a>.
-We will use the example PAM heuchera_pam_rn.lmm, available in the
+<p>Use a pre-created PAM, identical to that created in <a class="reference external" href="w7_build_pam">Tutorial 7</a>.
+We will use the example PAM heuchera_rfolk_1deg_global.lmm, available in the
 <a class="reference external" href="https://github.com/biotaphy/tutorials/tree/main/data/input">input directory</a>.</p>
 </section>
 <section id="input-wrangler-configuration-file">
@@ -226,15 +226,13 @@ input matrix.  This is a file containing a JSON list of wranglers - each perform
 different operation, and each has its own parameters.
 More information on file format, available wrangler types, and the required and/or
 optional parameters for each are in <a class="reference external" href="data_wrangle_matrix">data_wrangle_matrix</a></p>
-<p>We will use the wrangler configuration file <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle.json">matrix_wrangle.json</a>.
+<p>We will use the wrangler configuration file <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/wranglers/matrix_wrangle_with_tree.json">matrix_wrangle_with_tree.json</a>.
 We will match our matrix to a phylogenetic tree, using the <strong>MatchTreeMatrixWrangler</strong>.
 This requires an input tree, described below.  We will also remove any empty slices,
 rows/sites with no species or columns/species with no present sites, using the
 <strong>PurgeEmptySlicesWrangler</strong>.</p>
 <p><strong>Note</strong>: It is important when matching species between a matrix and a tree, that the
-species names match when possible.  The example PAM was created from re-named species
-layers (using spaces instead of underscores between the genus and species) so they
-will match the tree.</p>
+species names match when possible.</p>
 </section>
 <section id="input-phylogenetic-tree">
 <h3>Input: Phylogenetic tree<a class="headerlink" href="#input-phylogenetic-tree" title="Permalink to this heading">¶</a></h3>
@@ -246,7 +244,7 @@ file.  The tree is available at  <a class="reference external" href="https://git
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading">¶</a></h3>
 <p>As with all other Biotaphy commands, a JSON parameter file is required to pull together
 all of the input, and output files, and any additional parameters.  The script
-parameter file for this exercise is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix.json">wrangle_matrix.json</a>.
+parameter file for this exercise is <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/wrangle_matrix_global_with_tree.json">wrangle_matrix_global_with_tree.json</a>.
 These are the required and optional parameters:</p>
 <ul class="simple">
 <li><p>Required:</p>
@@ -272,11 +270,13 @@ contains two wranglers, the <strong>MatchTreeMatrixWrangler</strong> and the
 <h3>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading">¶</a></h3>
 <p>Initiate the process with the following:</p>
 <p>For Linux/Mac systems:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span>  <span class="n">wrangle_matrix</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_matrix</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span>  <span class="n">wrangle_matrix</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_matrix_global_with_tree</span><span class="o">.</span><span class="n">json</span>
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span>  <span class="n">wrangle_matrix</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_matrix_global_with_treeonly</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 <p>For Windows systems:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">wrangle_matrix</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_matrix</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">wrangle_matrix</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_matrix_global_with_tree</span><span class="o">.</span><span class="n">json</span>
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">wrangle_matrix</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">wrangle_matrix_global_with_treeonly</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>
@@ -284,12 +284,12 @@ contains two wranglers, the <strong>MatchTreeMatrixWrangler</strong> and the
 <h3>Output<a class="headerlink" href="#output" title="Permalink to this heading">¶</a></h3>
 <p>This process outputs a file containing the modified matrix and any optional logfiles
 and reports specified in the Script parameter file.</p>
-<p>The <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_matrix.rpt">report file</a>
-shows a summary of the processes executed, including the species purged from the matrix because
-they didn’t appear in the phylogenetic tree, and the number of sites (rows) and species (columns)
-removed because they were all zeros (no presence).</p>
-<p>The resulting trimmed matrix, The resulting trimmed matrix, heuchera_pam_rn_wrangled.lmm, is in the
-<a class="reference external" href="https://github.com/biotaphy/tutorials/tree/main/data/input">input directory</a> so we can use it in
+<p>The <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/wrangle_matrix_global_with_tree.rpt">report file</a>
+shows a summary of the processes executed, including the species purged from the matrix
+because they didn’t appear in the phylogenetic tree, and the number of sites (rows) and
+species (columns) removed because they were all zeros (no presence).</p>
+<p>The resulting trimmed matrix, The resulting trimmed matrix,
+heuchera_rfolk_1deg_global_noempties_matchtree.lmm, is in the <a class="reference external" href="https://github.com/biotaphy/tutorials/tree/main/data/input">input directory</a> so we can use it in
 the next step.</p>
 </section>
 </section>
@@ -300,8 +300,9 @@ re-calculate biogeographic statistics on it, including phylogenetic diversity st
 which employ the matching tree data.</p>
 <section id="input-trimmed-pam-matrix">
 <h3>Input: trimmed PAM matrix<a class="headerlink" href="#input-trimmed-pam-matrix" title="Permalink to this heading">¶</a></h3>
-<p>Use the PAM wrangled in the and created as an output in the previous step.  The
-wrangled PAM is available as heuchera_pam_rn_wrangled.lmm in the <a class="reference external" href="https://github.com/biotaphy/tutorials/tree/main/data/input">input directory</a>.</p>
+<p>Use the PAM wrangled and created as an output in the previous step.  The
+wrangled PAM is available as heuchera_rfolk_1deg_global_noempties_matchtree.lmm in the
+<a class="reference external" href="https://github.com/biotaphy/tutorials/tree/main/data/input">input directory</a>.</p>
 </section>
 <section id="id3">
 <h3>Input: Phylogenetic tree<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
@@ -339,11 +340,13 @@ matrix.</p></li>
 <h3>Run calculate_pam_stats command<a class="headerlink" href="#run-calculate-pam-stats-command" title="Permalink to this heading">¶</a></h3>
 <p>Initiate the calculate_pam_stats process with the following:</p>
 <p>For Linux/Mac systems</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">calculate_pam_stats</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">calculate_pam_stats</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">calculate_pam_stats</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">calculate_pam_stats_pd</span><span class="o">.</span><span class="n">json</span>
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">calculate_pam_stats</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">calculate_pam_stats_noempties_pd</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 <p>For Windows systems</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">calculate_pam_stats</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">calculate_pam_stats</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">calculate_pam_stats</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">calculate_pam_stats_pd</span><span class="o">.</span><span class="n">json</span>
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">calculate_pam_stats</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">calculate_pam_stats_noempties_pd</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>
@@ -376,8 +379,8 @@ appended to the end of the base file name.</p></li>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="w11_format_visualize.html" class="btn btn-neutral float-right" title="Tutorial 10: Create Visualizations for Outputs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="w9_calculate_pam_statistics.html" class="btn btn-neutral float-left" title="Tutorial 9: Calculate PAM Statistics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="w10_format_visualize.html" class="btn btn-neutral float-right" title="Tutorial 10: Create Visualizations for Outputs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="w8_calculate_pam_statistics.html" class="btn btn-neutral float-left" title="Tutorial 8: Calculate PAM Statistics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

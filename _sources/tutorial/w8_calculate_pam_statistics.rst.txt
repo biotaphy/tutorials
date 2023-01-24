@@ -1,5 +1,5 @@
 ==============================
-Tutorial 9: Calculate PAM Statistics
+Tutorial 8: Calculate PAM Statistics
 ==============================
 
 The purpose of a PAM data structure is to analyze a group of species over a landscape.
@@ -136,12 +136,14 @@ For Linux/Mac systems
 .. code-block::
 
       ./run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats.json
+      ./run_tutorial.sh calculate_pam_stats data/config/calculate_pam_stats_noempties.json
 
 For Windows systems
 
 .. code-block::
 
       ./run_tutorial.bat calculate_pam_stats data/config/calculate_pam_stats.json
+      ./run_tutorial.bat calculate_pam_stats data/config/calculate_pam_stats_noempties.json
 
 
 Output

@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Tutorial 8: Introducing Presence-Absence Matrices (PAMs) &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Tutorial 7: Introducing Presence-Absence Matrices (PAMs) &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
   
 
   
@@ -41,7 +41,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Tutorial 9: Calculate PAM Statistics" href="w9_calculate_pam_statistics.html" />
+    <link rel="next" title="Tutorial 8: Calculate PAM Statistics" href="w8_calculate_pam_statistics.html" />
     <link rel="prev" title="Tutorial 6: Species Distribution Modeling (SDM)" href="w6_create_sdms.html" /> 
 </head>
 
@@ -96,7 +96,7 @@
 <li class="toctree-l1"><a class="reference internal" href="w3_wrangle_occurrence_data.html">Tutorial 3: Wrangle occurrence data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w5_split_occurrence_data.html">Tutorial 5: Split and merge occurrence data by species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w6_create_sdms.html">Tutorial 6: Species Distribution Modeling (SDM)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial 8: Introducing Presence-Absence Matrices (PAMs)</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial 7: Introducing Presence-Absence Matrices (PAMs)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#step-1-build-a-grid">Step 1: Build a grid</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
@@ -113,9 +113,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="w9_calculate_pam_statistics.html">Tutorial 9: Calculate PAM Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w10_phylo_diversity.html">Tutorial 10: Analyze PAM with Phylogeny</a></li>
-<li class="toctree-l1"><a class="reference internal" href="w11_format_visualize.html">Tutorial 10: Create Visualizations for Outputs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w8_calculate_pam_statistics.html">Tutorial 8: Calculate PAM Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w9_phylo_diversity.html">Tutorial 9: Analyze PAM with Phylogeny</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w10_format_visualize.html">Tutorial 10: Create Visualizations for Outputs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_matrix.html">Matrices: Data and Wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_wrangle_occurrence.html">Specimen Occurrences: Data and Wrangling</a></li>
@@ -175,13 +175,13 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Tutorial 8: Introducing Presence-Absence Matrices (PAMs)</li>
+      <li>Tutorial 7: Introducing Presence-Absence Matrices (PAMs)</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/tutorial/w8_build_pam.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/w7_build_pam.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -194,8 +194,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="tutorial-8-introducing-presence-absence-matrices-pams">
-<h1>Tutorial 8: Introducing Presence-Absence Matrices (PAMs)<a class="headerlink" href="#tutorial-8-introducing-presence-absence-matrices-pams" title="Permalink to this heading">¶</a></h1>
+  <section id="tutorial-7-introducing-presence-absence-matrices-pams">
+<h1>Tutorial 7: Introducing Presence-Absence Matrices (PAMs)<a class="headerlink" href="#tutorial-7-introducing-presence-absence-matrices-pams" title="Permalink to this heading">¶</a></h1>
 <p>Create a Presence-Absence Matrix (PAM) from species distribution prediction layers.
 This exercise contains 3 steps.  First, we define and build a grid of our area of
 interest.  This will define the size and location of grid cells used for analyzing a
@@ -253,11 +253,11 @@ These are the required and optional parameters:</p>
 <h3>Run build_grid command<a class="headerlink" href="#run-build-grid-command" title="Permalink to this heading">¶</a></h3>
 <p>Initiate the process with the following:</p>
 <p>For Linux/Mac systems:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">build_grid</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">build_grid</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">build_grid</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">build_grid_1deg_global</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 <p>For Windows systems:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">build_grid</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">build_grid</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">build_grid</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">build_grid_1deg_global</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>
@@ -336,11 +336,11 @@ file.</p></li>
 <h3>Run encode_layers command<a class="headerlink" href="#run-encode-layers-command" title="Permalink to this heading">¶</a></h3>
 <p>Initiate the process with the following:</p>
 <p>For Linux/Mac systems:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">encode_layers</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">encode_layers</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">encode_layers</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">encode_layers_global</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 <p>For Windows systems:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">encode_layers</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">encode_layers</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span> <span class="n">encode_layers</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">encode_layers_global</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 <p><strong>Note</strong>: You may get the following warning.  This indicates that there is a window with no
@@ -355,9 +355,9 @@ values, a common occurrence in most datasets, and may be safely ignored.</p>
 <p>Most outputs are configured in the script parameter file, and may include:</p>
 <ol class="arabic simple">
 <li><p>If “report_filename” is specified in the script parameter file, a summary of the
-encoded layers will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers_1deg_global.rpt">encode_layers_1deg_global.rpt</a>.</p></li>
+encoded layers will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers_global.rpt">encode_layers_global.rpt</a>.</p></li>
 <li><p>If “log_filename” is specified in the script parameter file, that will be created,
-like , like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers_1deg_global.log">encode_layers_1deg_global.log</a>.</p></li>
+like , like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers_global.log">encode_layers_global.log</a>.</p></li>
 <li><p>If “log_console” is specified in the script parameter file, logs will be written to the
 command prompt during execution.</p></li>
 <li><p>A matrix containing one column to the arguments specified in the configuration JSON file,
@@ -374,7 +374,7 @@ it as input in Step 3.</p></li>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="w9_calculate_pam_statistics.html" class="btn btn-neutral float-right" title="Tutorial 9: Calculate PAM Statistics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="w8_calculate_pam_statistics.html" class="btn btn-neutral float-right" title="Tutorial 8: Calculate PAM Statistics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="w6_create_sdms.html" class="btn btn-neutral float-left" title="Tutorial 6: Species Distribution Modeling (SDM)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

@@ -1,5 +1,5 @@
 ==============================
-Tutorial 8: Introducing Presence-Absence Matrices (PAMs)
+Tutorial 7: Introducing Presence-Absence Matrices (PAMs)
 ==============================
 
 Create a Presence-Absence Matrix (PAM) from species distribution prediction layers.
@@ -72,13 +72,13 @@ For Linux/Mac systems:
 
 .. code-block::
 
-      ./run_tutorial.sh build_grid data/config/build_grid.json
+      ./run_tutorial.sh build_grid data/config/build_grid_1deg_global.json
 
 For Windows systems:
 
 .. code-block::
 
-   ./run_tutorial.bat  build_grid  data/config/build_grid.json
+   ./run_tutorial.bat  build_grid  data/config/build_grid_1deg_global.json
 
 
 Output
@@ -165,13 +165,13 @@ For Linux/Mac systems:
 
 .. code-block::
 
-      ./run_tutorial.sh encode_layers data/config/encode_layers.json
+      ./run_tutorial.sh encode_layers data/config/encode_layers_global.json
 
 For Windows systems:
 
 .. code-block::
 
-      ./run_tutorial.bat encode_layers data/config/encode_layers.json
+      ./run_tutorial.bat encode_layers data/config/encode_layers_global.json
 
 **Note**: You may get the following warning.  This indicates that there is a window with no
 values, a common occurrence in most datasets, and may be safely ignored.
@@ -187,11 +187,11 @@ Output
 Most outputs are configured in the script parameter file, and may include:
 
 1. If "report_filename" is specified in the script parameter file, a summary of the
-   encoded layers will be written to this file, like `encode_layers_1deg_global.rpt
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers_1deg_global.rpt>`_.
+   encoded layers will be written to this file, like `encode_layers_global.rpt
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers_global.rpt>`_.
 2. If "log_filename" is specified in the script parameter file, that will be created,
-   like , like `encode_layers_1deg_global.log
-   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers_1deg_global.log>`_.
+   like , like `encode_layers_global.log
+   <https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/encode_layers_global.log>`_.
 3. If "log_console" is specified in the script parameter file, logs will be written to the
    command prompt during execution.
 4. A matrix containing one column to the arguments specified in the configuration JSON file,
