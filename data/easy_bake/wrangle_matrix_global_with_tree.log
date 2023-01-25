@@ -1,66 +1,68 @@
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Peltoboykinia watanabei NOT present in matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera richardsonii from column 40 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera caroliniana from column 32 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera pubescens from column 56 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera alba from column 8 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera longiflora from column 2 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera americana from column 60 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera parvifolia from column 52 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera wootonii from column 61 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera inconstans from column 34 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera soltisii from column 31 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera novomexicana from column 13 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera glomerulata from column 12 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera eastwoodiae from column 17 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera woodsiaphila from column 25 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera bracteata from column 50 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera hallii from column 51 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera mexicana from column 43 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera longipetala from column 10 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera acutifolia from column 18 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera hirsutissima from column 3 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera caespitosa from column 47 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera abramsii from column 6 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera elegans from column 35 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera parishii from column 33 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera brevistaminea from column 57 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera rosendahlii from column 48 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera wellsiae from column 55 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera sanguinea from column 41 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera versicolor NOT present in matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera pulchella from column 38 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera rubescens from column 22 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera merriamii from column 36 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera grossulariifolia from column 20 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera pilosissima from column 0 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera maxima from column 5 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera micrantha from column 44 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera glabra from column 9 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera villosa from column 39 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera puberula from column 54 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera missouriensis from column 23 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera parviflora from column 45 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera chlorantha from column 58 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera cylindrica from column 37 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon menziesii NOT present in matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon diplomenziesii NOT present in matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Tellima grandiflora from column 7 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella pentandra NOT present in matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella stylosa NOT present in matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella furusei NOT present in matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella pauciflora NOT present in matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella japonica from column 53 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella breweri NOT present in matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella ovalis NOT present in matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Bensoniella oregona from column 49 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Lithophragma parviflorum from column 27 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella nuda from column 11 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella diphylla from column 24 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Tiarella polyphylla from column 59 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Elmera racemosa from column 30 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella caulescens NOT present in matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Conimitella williamsii from column 4 added to slices for wrangled matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella stauropetala NOT present in matrix
-24 Jan 2023 20:47 INFO     MatchTreeMatrixWrangler: Tree taxon Telesonix jamesii from column 16 added to slices for wrangled matrix
-24 Jan 2023 20:47 DEBUG    MatchTreeMatrixWrangler: 10 species purged from matrix with 62 original species, ['Asimitellaria pauciflora', 'Brewerimitella breweri', 'Heuchera rubescens versicolor', 'Asimitellaria stylosa', 'Mitellastra caulescens', 'Pectiantia pentandra', 'Brewerimitella ovalis', 'Peltoboykinia tellimoides', 'Asimitellaria furusei', 'Ozomelis stauropetala'].
-24 Jan 2023 20:47 DEBUG    MatchTreeMatrixWrangler: 12 Tree taxa of 64 not found in matrix: {'Mitella pauciflora', 'Mitella caulescens', 'diplomenziesii', 'Heuchera versicolor', 'Mitella pentandra', 'Mitella stylosa', 'Peltoboykinia watanabei', 'Mitella stauropetala', 'Mitella furusei', 'menziesii', 'Mitella ovalis', 'Mitella breweri'}
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Peltoboykinia watanabei NOT present in matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera richardsonii from column 40 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera caroliniana from column 32 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera pubescens from column 56 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera alba from column 8 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera longiflora from column 2 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera americana from column 60 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera parvifolia from column 52 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera wootonii from column 61 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera inconstans from column 34 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera soltisii from column 31 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera novomexicana from column 13 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera glomerulata from column 12 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera eastwoodiae from column 17 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera woodsiaphila from column 25 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera bracteata from column 50 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera hallii from column 51 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera mexicana from column 43 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera longipetala from column 10 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera acutifolia from column 18 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera hirsutissima from column 3 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera caespitosa from column 47 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera abramsii from column 6 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera elegans from column 35 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera parishii from column 33 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera brevistaminea from column 57 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera rosendahlii from column 48 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera wellsiae from column 55 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera sanguinea from column 41 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera versicolor NOT present in matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera pulchella from column 38 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera rubescens from column 22 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera merriamii from column 36 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera grossulariifolia from column 20 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera pilosissima from column 0 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera maxima from column 5 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera micrantha from column 44 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera glabra from column 9 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera villosa from column 39 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera puberula from column 54 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera missouriensis from column 23 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera parviflora from column 45 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera chlorantha from column 58 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Heuchera cylindrica from column 37 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon menziesii NOT present in matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon diplomenziesii NOT present in matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Tellima grandiflora from column 7 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella pentandra NOT present in matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella stylosa NOT present in matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella furusei NOT present in matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella pauciflora NOT present in matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella japonica from column 53 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella breweri NOT present in matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella ovalis NOT present in matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Bensoniella oregona from column 49 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Lithophragma parviflorum from column 27 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella nuda from column 11 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella diphylla from column 24 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Tiarella polyphylla from column 59 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Elmera racemosa from column 30 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella caulescens NOT present in matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Conimitella williamsii from column 4 added to slices for wrangled matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Mitella stauropetala NOT present in matrix
+25 Jan 2023 21:48 INFO     MatchTreeMatrixWrangler: Tree taxon Telesonix jamesii from column 16 added to slices for wrangled matrix
+25 Jan 2023 21:48 DEBUG    MatchTreeMatrixWrangler: 10 species purged from matrix with 62 original species, ['Asimitellaria pauciflora', 'Brewerimitella breweri', 'Heuchera rubescens versicolor', 'Asimitellaria stylosa', 'Mitellastra caulescens', 'Pectiantia pentandra', 'Brewerimitella ovalis', 'Peltoboykinia tellimoides', 'Asimitellaria furusei', 'Ozomelis stauropetala'].
+25 Jan 2023 21:48 DEBUG    MatchTreeMatrixWrangler: 12 Tree taxa of 64 not found in matrix: {'Mitella ovalis', 'Mitella caulescens', 'diplomenziesii', 'Mitella pentandra', 'Mitella stylosa', 'Mitella breweri', 'Peltoboykinia watanabei', 'Heuchera versicolor', 'menziesii', 'Mitella stauropetala', 'Mitella pauciflora', 'Mitella furusei'}
+25 Jan 2023 21:48 DEBUG    PurgeEmptySlicesWrangler: Purged 51930 from axis 0.
+25 Jan 2023 21:48 DEBUG    PurgeEmptySlicesWrangler: Purged 7 from axis 1.

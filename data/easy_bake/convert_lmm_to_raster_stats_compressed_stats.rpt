@@ -1,0 +1,17 @@
+{
+    "min_x": -163.0,
+    "min_y": 17.0,
+    "max_x": 145.0,
+    "max_y": 64.0,
+    "resolution": 1.0,
+    "height": 47,
+    "width": 308,
+    "nodata": -9999,
+    "raster_data_type": "gdal.GDT_Float64",
+    "matrix_type": "float64",
+    "band 1": "alpha",
+    "band 2": "alpha proportional",
+    "band 3": "phi",
+    "band 4": "phi average proportional",
+    "matrix_filename": "/volumes/data/input/site_stats_noempties.lmm"
+}

@@ -1,0 +1,4 @@
+25 Jan 2023 22:23 WARNING  convert_lmm_to_shapefile: Beware: convert_lmm_to_shapefile has not been fully tested
+25 Jan 2023 22:23 DEBUG    vectorize_map_matrix: Found bounding box -180.0, -60.0, 180.0, 90.0 for matrix
+25 Jan 2023 22:23 INFO     vectorize_map_matrix: Wrote shapefile to /volumes/output/site_stats.shp.
+25 Jan 2023 22:23 INFO     convert_lmm_to_shapefile: Wrote report file to /volumes/output/convert_lmm_to_shapefile.rpt

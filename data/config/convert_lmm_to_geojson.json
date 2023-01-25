@@ -2,9 +2,8 @@
     "log_filename": "/volumes/output/convert_lmm_to_geojson.log",
     "log_console": true,
     "report_filename": "/volumes/output/convert_lmm_to_geojson.rpt",
-    "ignore_shapefile_filename": "/volumes/data/input/grid_na_5deg.shp",
     "resolution": 5,
     "omit_value": [-9999],
-    "in_lmm_filename": "/volumes/data/input/heuchera_pam_rn.lmm",
-    "out_geojson_filename": "/volumes/output/heuchera_pam_rn.geojson"
+    "in_lmm_filename": "/volumes/data/input/site_stats.lmm",
+    "out_geojson_filename": "/volumes/output/site_stats.geojson"
 }

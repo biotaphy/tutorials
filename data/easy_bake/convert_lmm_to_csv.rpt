@@ -1,0 +1,12 @@
+{
+    "columns": 62,
+    "column_headers": 4,
+    "column_header_elts": 5,
+    "rows": 4,
+    "row_headers": 62,
+    "row_header_elts": 20,
+    "max": NaN,
+    "min": NaN,
+    "in_matrix_filename": "/volumes/data/input/species_stats.lmm",
+    "out_csv_filename": "/volumes/output/species_stats.csv"
+}

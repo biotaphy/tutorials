@@ -1,0 +1,3 @@
+25 Jan 2023 22:22 INFO     convert_lmm_to_csv: Loaded matrix /volumes/data/input/species_stats.lmm with 62 rows and 4 columns
+25 Jan 2023 22:22 INFO     convert_lmm_to_csv: Wrote matrix /volumes/data/input/species_stats.lmm to CSV file /volumes/output/species_stats.csv
+25 Jan 2023 22:22 INFO     convert_lmm_to_csv: Wrote report file to /volumes/output/convert_lmm_to_csv.rpt

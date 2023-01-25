@@ -1,0 +1,22 @@
+{
+    "min_x": -180.0,
+    "min_y": -60.0,
+    "max_x": 180.0,
+    "max_y": 90.0,
+    "resolution": 1.0,
+    "height": 150,
+    "width": 360,
+    "vector_data_type": "ogr.OFTReal",
+    "matrix_type": "float64",
+    "matrix_fields": {
+        "site_id": "site_id",
+        "x": "x",
+        "y": "y",
+        "alpha": "alpha",
+        "alpha proportional": "alpha_prop",
+        "phi": "phi",
+        "phi average proportional": "phi_averag"
+    },
+    "matrix_filename": "/volumes/data/input/site_stats.lmm",
+    "out_shapefile": "/volumes/output/site_stats.shp"
+}

@@ -2,7 +2,7 @@
     "log_console": true,
     "log_filename": "/volumes/output/convert_lmm_to_raster_stats.log",
     "report_filename": "/volumes/output/convert_lmm_to_raster_stats.rpt",
-    "in_lmm_filename": "/volumes/output/site_stats.lmm",
+    "in_lmm_filename": "/volumes/data/input/site_stats.lmm",
     "matrix_type": "site_stats",
     "out_raster_filename": "/volumes/output/site_stats.tiff"
 }

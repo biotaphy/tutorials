@@ -1,0 +1,5 @@
+25 Jan 2023 22:22 INFO     geojsonify_matrix: Found 54000 sites and 4 taxa in matrix.
+25 Jan 2023 22:22 INFO     geojsonify_matrix: Omit values [-9999.0] from geojson.
+25 Jan 2023 22:22 INFO     geojsonify_matrix: Added 54000 sites to geojson.
+25 Jan 2023 22:22 INFO     convert_lmm_to_geojson: Wrote geojson to /volumes/output/site_stats.geojson.
+25 Jan 2023 22:22 INFO     convert_lmm_to_geojson: Wrote report file to /volumes/output/convert_lmm_to_geojson.rpt

@@ -1,0 +1,8 @@
+25 Jan 2023 21:46 INFO     convert_lmm_to_raster: ***Create raster image for matrix /volumes/data/input/site_stats_noempties.lmm
+25 Jan 2023 21:46 DEBUG    rasterize_geospatial_matrix: Found bounding box -163.0, 17.0, 145.0, 64.0 for matrix
+25 Jan 2023 21:46 INFO     rasterize_geospatial_matrix: Added band 1 (alpha)
+25 Jan 2023 21:46 INFO     rasterize_geospatial_matrix: Added band 2 (alpha proportional)
+25 Jan 2023 21:46 INFO     rasterize_geospatial_matrix: Added band 3 (phi)
+25 Jan 2023 21:46 INFO     rasterize_geospatial_matrix: Added band 4 (phi average proportional)
+25 Jan 2023 21:46 INFO     rasterize_geospatial_matrix: Wrote raster with 4 bands to /volumes/output/site_stats_noempties.tiff
+25 Jan 2023 21:46 INFO     convert_lmm_to_raster: Wrote report file to /volumes/output/convert_lmm_to_raster_stats_compressed_stats.rpt
