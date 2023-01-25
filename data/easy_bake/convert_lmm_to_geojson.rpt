@@ -1,12 +1,12 @@
 {
     "matrix_species_count": 4,
-    "matrix_site_count": 54000,
-    "json_site_count": 54000,
+    "matrix_site_count": 2114,
+    "json_site_count": 2114,
     "feature_type": "polygon",
     "grid_resolution": 1.0,
     "ignored_values": [
         "-9999.0"
     ],
-    "matrix_filename": "/volumes/data/input/site_stats.lmm",
-    "out_geojson_filename": "/volumes/output/site_stats.geojson"
+    "matrix_filename": "/volumes/data/input/site_stats_noempties.lmm",
+    "out_geojson_filename": "/volumes/output/site_stats_noempties.geojson"
 }

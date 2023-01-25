@@ -4,6 +4,6 @@
     "report_filename": "/volumes/output/convert_lmm_to_geojson.rpt",
     "resolution": 5,
     "omit_value": [-9999],
-    "in_lmm_filename": "/volumes/data/input/site_stats.lmm",
-    "out_geojson_filename": "/volumes/output/site_stats.geojson"
+    "in_lmm_filename": "/volumes/data/input/site_stats_noempties.lmm",
+    "out_geojson_filename": "/volumes/output/site_stats_noempties.geojson"
 }
