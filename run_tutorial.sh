@@ -19,7 +19,7 @@ usage ()
     # possibly print the wrong Usage string.
     config_required=(
     "build_grid"  "calculate_pam_stats" "encode_layers"  "split_occurrence_data"
-    "rasterize_point_heatmap"  "rasterize_site_stats"
+    "rasterize_point_heatmap"  "convert_lmm_to_raster"  "convert_lmm_to_shapefile"
     "wrangle_species_list"  "wrangle_occurrences"  "wrangle_tree"
     )
     echo ""
@@ -145,12 +145,10 @@ start_container() {
 # -----------------------------------------------------------
 execute_process() {
     start_container
-    # Command to execute in container
-    if [ "$CMD" == "create_sdm" ]; then
-        command="python3 ${command_path}/${CMD}.py --config_file=${CONTAINER_CONFIG_FILE}"
-    else
-        command="${CMD} --config_file=${CONTAINER_CONFIG_FILE}"
-    fi
+    # Command to execute in container; tools installed as executables in /usr/local/bin
+    command="${CMD} --config_file=${CONTAINER_CONFIG_FILE}"
+#    # or run python command from downloaded repo
+#    command="python3 ${command_path}/${CMD}.py --config_file=${CONTAINER_CONFIG_FILE}"
     echo " - Execute '${command}' on container $CONTAINER_NAME" | tee -a "$LOG"
     # Run the command in the container
     docker exec -it ${CONTAINER_NAME} ${command}
@@ -268,8 +266,8 @@ COMMANDS=(
 "list_commands" "list_outputs"  "list_volumes"
 # Need configuration file parameter
 "build_grid"  "calculate_pam_stats"
-"convert_lmm_to_geojson"  "convert_lmm_to_raster"
-#"convert_lmm_to_csv"
+"convert_lmm_to_csv"  "convert_lmm_to_geojson"  "convert_lmm_to_shapefile"
+"convert_lmm_to_raster"
 "create_sdm"    "encode_layers"
 "randomize_pam"
 "rasterize_point_heatmap"
@@ -324,13 +322,20 @@ elif [ $arg_count -eq 1 ]; then
     fi
 # Arguments: command, config file
 else
+    echo "*** arg_count > 1; command $CMD ***" | tee -a "$LOG"
     if [[ " ${COMMANDS[*]} " =~  ${CMD}  ]]; then
         create_volumes
+        echo "*** create_volumes ***" | tee -a "$LOG"
         build_image_fill_data
+        echo "*** build_image_fill_data ***" | tee -a "$LOG"
         start_container
+        echo "*** start_container ***" | tee -a "$LOG"
         execute_process
+        echo "*** execute_process ***" | tee -a "$LOG"
         save_outputs
+        echo "*** save_outputs ***" | tee -a "$LOG"
         remove_container
+        echo "*** remove_container ***" | tee -a "$LOG"
     else
         echo "Unrecognized command: $CMD"
         usage

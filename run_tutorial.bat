@@ -316,14 +316,8 @@ exit /b 0
 
     :: Command to execute in container
     call:time_stamp - Execute on container %CONTAINER_NAME% %CMD% --config_file=%CONTAINER_CONFIG_FILE%
-    :: Run the command in the container
-    if %CMD% == create_sdm (
-        echo Docker command is python3 %CMD_PATH%/%CMD%.py --config_file=%CONTAINER_CONFIG_FILE%
-        docker exec -it %CONTAINER_NAME% python3 %CMD_PATH%/%CMD%.py --config_file=%CONTAINER_CONFIG_FILE%
-    ) else (
-        echo Docker command is %CMD% --config_file=%CONTAINER_CONFIG_FILE%
-        docker exec -it %CONTAINER_NAME% %CMD% --config_file=%CONTAINER_CONFIG_FILE%
-    )
+    :: Run the command in the container, tools installed in /usr/local/bin
+    docker exec -it %CONTAINER_NAME% %CMD% --config_file=%CONTAINER_CONFIG_FILE%
     EndLocal
 exit /b 0
 
