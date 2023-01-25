@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Tutorial 10: Create Visualizations for Outputs &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
+  <title>Tutorial 10: Reformat Outputs for Examination &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
   
 
   
@@ -99,21 +99,20 @@
 <li class="toctree-l1"><a class="reference internal" href="w7_build_pam.html">Tutorial 7: Introducing Presence-Absence Matrices (PAMs)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w8_calculate_pam_statistics.html">Tutorial 8: Calculate PAM Statistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="w9_phylo_diversity.html">Tutorial 9: Analyze PAM with Phylogeny</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial 10: Create Visualizations for Outputs</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial 10: Reformat Outputs for Examination</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#convert-a-pam-to-a-geotiff">Convert a PAM to a Geotiff</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#convert-a-matrix-to-a-geospatial-format">Convert a matrix to a geospatial format</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#input-script-parameter-file">Input: Script parameter file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-convert-lmm-to-raster-command">Run convert_lmm_to_raster command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#convert-a-site-statistics-matrix-to-a-geotiff">Convert a site statistics matrix to a Geotiff</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#convert-a-species-statistics-matrix-to-a-csv">Convert a species statistics matrix to a CSV</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id1">Input: Script parameter file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">Run convert_lmm_to_raster command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-convert-lmm-to-csv-command">Run convert_lmm_to_csv command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Output</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#convert-a-species-statistics-matrix-to-a-csv">Convert a species statistics matrix to a CSV</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="script_params.html">Script parameters file</a></li>
@@ -175,7 +174,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Tutorial 10: Create Visualizations for Outputs</li>
+      <li>Tutorial 10: Reformat Outputs for Examination</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -194,8 +193,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="tutorial-10-create-visualizations-for-outputs">
-<h1>Tutorial 10: Create Visualizations for Outputs<a class="headerlink" href="#tutorial-10-create-visualizations-for-outputs" title="Permalink to this heading">¶</a></h1>
+  <section id="tutorial-10-reformat-outputs-for-examination">
+<h1>Tutorial 10: Reformat Outputs for Examination<a class="headerlink" href="#tutorial-10-reformat-outputs-for-examination" title="Permalink to this heading">¶</a></h1>
 <p>Most matrices used for input or output to Biotaphy tools with sites along the 0 axis
 (rows) and species data or statistics along the 1 axis (columns).  Axis headers for
 the 0 axis contain the x and y coordinates for the centroid of each grid cell.
@@ -217,19 +216,44 @@ as a map in a GIS or other map application.</p>
 <p>Read <a class="reference external" href="../tutorial/w1_overview">Tutorial Overview</a> for an overview of how all
 tutorials work.</p>
 </section>
-<section id="convert-a-pam-to-a-geotiff">
-<h2>Convert a PAM to a Geotiff<a class="headerlink" href="#convert-a-pam-to-a-geotiff" title="Permalink to this heading">¶</a></h2>
-<p>After encoding a set of species distribution layers into a matrix, you may want to
-visually examine the results, by converting the PAM into a multi-band Geotiff file.</p>
+<section id="convert-a-matrix-to-a-geospatial-format">
+<h2>Convert a matrix to a geospatial format<a class="headerlink" href="#convert-a-matrix-to-a-geospatial-format" title="Permalink to this heading">¶</a></h2>
+<p>There are several geospatial matrix inputs and outputs which can be converted into
+several standard formats that can be visualized in a mapping application such
+as QGIS, GRASS, or ESRI ArcINFO.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>convert_lmm_to_raster</cite> will create a raster dataset with multiple bands, and
+save it as a Geotiff file.</p></li>
+<li><p><cite>convert_lmm_to_geojson</cite> and <cite>convert_lmm_to_shapefile</cite> will create a geojson file
+or shapefile with multiple attributes (one per species or statistic) for each
+point or polygon.</p></li>
+</ul>
+</div></blockquote>
+<p>PAMs are inherently geospatial, and statistics calculated from a PAM create some
+geospatial statistics matrices with one or more calculations, with a each statistic
+column containing a value for every site.  Matrix outputs with geospatial (site) data
+include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>covariance_stats</p></li>
+<li><p>site_matrix_stats</p></li>
+<li><p>site_tree_stats</p></li>
+<li><p>site_tree_distance_matrix_stats</p></li>
+<li><p>site_pam_dist_mtx_stats</p></li>
+</ul>
+</div></blockquote>
+<p>A “wrangled” PAM, also known as a “compressed” PAM, with missing rows and columns can
+also be turned into a raster.  The raster may have a smaller extent than the original
+if sites along the boundaries have been removed, but any sites within the smaller
+extent of the input PAM will be filled in with zeros.  The compressed output may be a
+significantly smaller file size, but will have the same non-zero content as the
+original PAM.</p>
 <section id="input-script-parameter-file">
 <h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading">¶</a></h3>
-<p>A “wrangled” PAM, with missing rows and columns can also be turned into a raster.  The
-raster may have a smaller extent than the original if sites along the boundaries have
-been removed, but any sites within the smaller extent of the input PAM will be filled
-in with zeros.  The wrangled PAM may be a significantly smaller file size, but will have
-the same non-zero content as an original PAM.</p>
 <p>A JSON parameter file is required for this command.  For comparison, we will wrangle
-both an original PAM and the same PAM with empty rows and columns removed.
+both an original PAM and the same PAM with empty rows and columns removed, plus a
+the site_statistics matrix computed from the
 The tutorial parameter files are <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/convert_lmm_to_raster.json">convert_lmm_to_raster.json</a>
 and  <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/convert_lmm_to_raster_compressed.json">convert_lmm_to_raster_compressed.json</a>.</p>
 <p>These are the required and optional parameters:</p>
@@ -266,6 +290,8 @@ and  <a class="reference external" href="https://github.com/biotaphy/tutorials/b
 <p>For Windows systems:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">convert_lmm_to_raster</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">convert_lmm_to_raster</span><span class="o">.</span><span class="n">json</span>
 <span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">convert_lmm_to_raster</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">convert_lmm_to_raster_compressed</span><span class="o">.</span><span class="n">json</span>
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">convert_lmm_to_raster</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">convert_lmm_to_raster_stats</span><span class="o">.</span><span class="n">json</span>
+<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">convert_lmm_to_raster</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">convert_lmm_to_raster_compressed_stats</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>
@@ -289,12 +315,13 @@ to the geotiff files will list the bands and the species contained within them.<
 </ol>
 </section>
 </section>
-<section id="convert-a-site-statistics-matrix-to-a-geotiff">
-<h2>Convert a site statistics matrix to a Geotiff<a class="headerlink" href="#convert-a-site-statistics-matrix-to-a-geotiff" title="Permalink to this heading">¶</a></h2>
-<p>Statistics outputs are saved as matrices, and contain one or more calculations.  Some
-of the statistics matrices contain site statistics, with a each statistic column
-containing a value for every site.  Matrix outputs with geospatial (site) data
-include:</p>
+<section id="convert-a-species-statistics-matrix-to-a-csv">
+<h2>Convert a species statistics matrix to a CSV<a class="headerlink" href="#convert-a-species-statistics-matrix-to-a-csv" title="Permalink to this heading">¶</a></h2>
+<p>Statistics outputs are saved as matrices, and contain one or more calculations.  All
+matrices can be converted to a CSV file, but those with geospatial (site) data may have
+more rows or columns than can be displayed in common spreadsheet applications.  The CSVs
+are still valid, but are more appropriate for programmatic processing.  Geospatial
+statistics matrices include:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>covariance_stats</p></li>
@@ -314,66 +341,51 @@ in with zeros.  The wrangled PAM may be a significantly smaller file size, but w
 the same non-zero content as an original PAM.</p>
 <p>A JSON parameter file is required for this command.  For comparison, we will wrangle
 both an original site-statistics matrix and site-statistics computed on a PAM with
-empty rows and columns removed.  The tutorial parameter files are
-<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/convert_lmm_to_raster_stats.json">convert_lmm_to_raster_stats.json</a>
-and  <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/convert_lmm_to_raster_compressed_stats.json">convert_lmm_to_raster_compressed.json</a>.</p>
-<p>The required and optional parameters are the same as when rasterizing a PAM:</p>
-<ul>
-<li><p>Required:</p>
+empty rows and columns removed.  The tutorial parameter file is
+<a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/convert_lmm_to_csv.json">convert_lmm_to_csv.json</a>/</p>
+<p>The required and optional parameters are :</p>
 <ul class="simple">
+<li><p>Required:</p>
+<ul>
 <li><p><strong>in_lmm_filename</strong>: The relative or absolute path for the input matrix.</p></li>
-<li><p><strong>out_raster_filename</strong>: The relative or absolute path for the output geotiff.</p></li>
+<li><p><strong>out_csv_filename</strong>: The relative or absolute path for the output csv.</p></li>
 </ul>
 </li>
 <li><p>Optional
-* <strong>column</strong>: Optional list of columns to rasterize.  If this parameter is left out,</p>
-<blockquote>
-<div><p>every column in the matrix (up to the limit of 256) will be in a separate band.</p>
-</div></blockquote>
-<ul class="simple">
-<li><p><strong>log_filename</strong>: Output filename to write logging data</p></li>
-<li><p><strong>log_console</strong>: ‘true’ to write log to console</p></li>
-<li><p><strong>report_filename</strong>: output filename with process summary</p></li>
-</ul>
-</li>
+* <strong>log_filename</strong>: Output filename to write logging data
+* <strong>log_console</strong>: ‘true’ to write log to console
+* <strong>report_filename</strong>: output filename with process summary</p></li>
 </ul>
 </section>
-<section id="id3">
-<h3>Run convert_lmm_to_raster command<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h3>
+<section id="run-convert-lmm-to-csv-command">
+<h3>Run convert_lmm_to_csv command<a class="headerlink" href="#run-convert-lmm-to-csv-command" title="Permalink to this heading">¶</a></h3>
 <p>Initiate the processes with the 2 following commands:</p>
 <p>For Linux/Mac systems:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">convert_lmm_to_raster</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">convert_lmm_to_raster</span><span class="o">.</span><span class="n">json</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">convert_lmm_to_raster</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">convert_lmm_to_raster_compressed</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">sh</span> <span class="n">convert_lmm_to_csv</span> <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">convert_lmm_to_csv</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 <p>For Windows systems:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">convert_lmm_to_raster</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">convert_lmm_to_raster_stats</span><span class="o">.</span><span class="n">json</span>
-<span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">convert_lmm_to_raster</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">convert_lmm_to_raster_compressed_stats</span><span class="o">.</span><span class="n">json</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run_tutorial</span><span class="o">.</span><span class="n">bat</span>  <span class="n">convert_lmm_to_csv</span>  <span class="n">data</span><span class="o">/</span><span class="n">config</span><span class="o">/</span><span class="n">convert_lmm_to_csv</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
 </section>
-<section id="id4">
-<h3>Output<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
-<p>Outputs are configured in the script parameter file, and may include:</p>
+<section id="id2">
+<h3>Output<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
+<p>Outputs are configured in the script parameter file, include the output csv file
+<a href="#id4"><span class="problematic" id="id5">`species_stats.csv
+&lt;https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/species_stats.csv`_</span></a>
+and the following optional outputs:</p>
 <ol class="arabic simple">
 <li><p>If “report_filename” is specified in the script parameter file, a summary of the
-grid will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/convert_lmm_to_raster.rpt">convert_lmm_to_raster.rpt</a>.
+grid will be written to this file, like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/convert_lmm_to_csv.rpt">convert_lmm_to_csv.rpt</a>.
 The corresponding report for the compressed PAM clearly shows the size reduction,
-and is in  <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/convert_lmm_to_raster_compressed.rpt">convert_lmm_to_raster_compressed.rpt</a>.</p></li>
+and is in  <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/convert_lmm_to_csv.rpt">convert_lmm_to_raster_compressed.rpt</a>.</p></li>
 <li><p>If “log_filename” is specified in the script parameter file, that will be created,
-like , like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/convert_lmm_to_raster.log">convert_lmm_to_raster.log</a>.</p></li>
+like , like <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/convert_lmm_to_csv.log">convert_lmm_to_csv.log</a>.</p></li>
 <li><p>If “log_console” is specified in the script parameter file, logs will be written to the
 command prompt during execution.</p></li>
-<li><p>Two geotiff format raster files, each with multiple bands, one for each of the
-species, are heuchera_rfolk_1deg_global.tiff and
-heuchera_rfolk_1deg_global_noempties.tiff in the <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/easy_bake/">easy_bake directory</a> .  These can be
-displayed in any mapping application.  Both the report file and metadata attached
-to the geotiff files will list the bands and the species contained within them.</p></li>
 </ol>
 </section>
-</section>
-<section id="convert-a-species-statistics-matrix-to-a-csv">
-<h2>Convert a species statistics matrix to a CSV<a class="headerlink" href="#convert-a-species-statistics-matrix-to-a-csv" title="Permalink to this heading">¶</a></h2>
 </section>
 </section>
 
