@@ -15,7 +15,7 @@ RUN pip install requests
 
 RUN mkdir git
 
-# specify-lmpy testing branch from Github
+# specify-lmpy latest from Github
 RUN cd git &&  \
     git clone https://github.com/specifysystems/lmpy.git &&  \
     cd lmpy \
