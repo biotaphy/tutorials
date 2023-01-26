@@ -139,13 +139,20 @@ Convert a species statistics matrix to a CSV
 Statistics outputs are saved as matrices, and contain one or more calculations.  All
 matrices can be converted to a CSV file, but those with geospatial (site) data may have
 more rows or columns than can be displayed in common spreadsheet applications.  The CSVs
-are still valid, but are more appropriate for programmatic processing.  Geospatial
-statistics matrices include:
+are still valid, but are more appropriate for programmatic processing.
+Geospatial statistics matrices include:
     * covariance_stats
     * site_matrix_stats
     * site_tree_stats
     * site_tree_distance_matrix_stats
     * site_pam_dist_mtx_stats
+Non-geospatial matrices (more appropriate for CSVs) include:
+    * diversity_stats
+    * species_matrix_stats
+    * sigma_species_covariance_stats
+Site-by-site stats matrix is not appropriate for mapping, and could be very large.  A
+CSV format site-by-site matrix could be handled programmatically:
+    * sigma_sites_covariance_stats
 
 Input: Script parameter file
 ******************************************
