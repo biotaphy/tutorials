@@ -320,8 +320,8 @@ to the geotiff files will list the bands and the species contained within them.<
 <p>Statistics outputs are saved as matrices, and contain one or more calculations.  All
 matrices can be converted to a CSV file, but those with geospatial (site) data may have
 more rows or columns than can be displayed in common spreadsheet applications.  The CSVs
-are still valid, but are more appropriate for programmatic processing.  Geospatial
-statistics matrices include:</p>
+are still valid, but are more appropriate for programmatic processing.
+Geospatial statistics matrices include:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>covariance_stats</p></li>
@@ -329,6 +329,21 @@ statistics matrices include:</p>
 <li><p>site_tree_stats</p></li>
 <li><p>site_tree_distance_matrix_stats</p></li>
 <li><p>site_pam_dist_mtx_stats</p></li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>Non-geospatial matrices (more appropriate for CSVs) include:</dt><dd><ul class="simple">
+<li><p>diversity_stats</p></li>
+<li><p>species_matrix_stats</p></li>
+<li><p>sigma_species_covariance_stats</p></li>
+</ul>
+</dd>
+</dl>
+<p>Site-by-site stats matrix is not appropriate for mapping, and could be very large.  A
+CSV format site-by-site matrix could be handled programmatically:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>sigma_sites_covariance_stats</p></li>
 </ul>
 </div></blockquote>
 <section id="id1">
