@@ -1,92 +1,48 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Trees: Data and Wrangling &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=036e6a88"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Download occurrence data from iDigBio" href="idigbio_download.html" />
     <link rel="prev" title="Species List: Wrangling" href="data_wrangle_species_list.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> Biotaphy Tutorials
           
-
-          
+          <a href="../index.html" class="icon icon-home">
+            Biotaphy Tutorials
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
@@ -124,75 +80,34 @@
 <li class="toctree-l1"><a class="reference internal" href="../pages/configure_inputs.html">User Data and Parameters</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Biotaphy Tutorials</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Trees: Data and Wrangling</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Trees: Data and Wrangling</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/tutorial/data_wrangle_tree.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <section id="trees-data-and-wrangling">
-<h1>Trees: Data and Wrangling<a class="headerlink" href="#trees-data-and-wrangling" title="Permalink to this heading">¶</a></h1>
+<h1>Trees: Data and Wrangling<a class="headerlink" href="#trees-data-and-wrangling" title="Link to this heading"></a></h1>
 <section id="tree-data">
-<h2>Tree Data<a class="headerlink" href="#tree-data" title="Permalink to this heading">¶</a></h2>
+<h2>Tree Data<a class="headerlink" href="#tree-data" title="Link to this heading"></a></h2>
 <p>Trees may be created by the user, downloaded from one of various sources, or output by
 another Biotaphy process.  Trees must be in Nexus or Newick format.  The tutorial
 example tree, subtree-ottol-saxifragales.tre, is in the <a class="reference external" href="https://github.com/biotaphy/tutorials/tree/main/data/input">data input directory</a></p>
@@ -201,7 +116,7 @@ the desired tree, then choose <strong>Download subtree as Newick string</strong>
 rightmost panel.</p>
 </section>
 <section id="wrangler-configuration-file">
-<h2>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Permalink to this heading">¶</a></h2>
+<h2>Wrangler configuration file<a class="headerlink" href="#wrangler-configuration-file" title="Link to this heading"></a></h2>
 <p>A file specifying 0 or more wranglers to apply to the tree data, and options
 specific to each.  Configuration files:</p>
 <ul class="simple">
@@ -212,14 +127,14 @@ specific to each.  Configuration files:</p>
 </ul>
 </section>
 <section id="tree-data-wrangler-types">
-<h2>Tree Data Wrangler Types<a class="headerlink" href="#tree-data-wrangler-types" title="Permalink to this heading">¶</a></h2>
+<h2>Tree Data Wrangler Types<a class="headerlink" href="#tree-data-wrangler-types" title="Link to this heading"></a></h2>
 <p>When running wranglers on a tree, wranglers are applied in the order
 that they are listed in the wrangler config file.</p>
 <p>Currently, wrangler_type names correspond to the wrangler class <cite>name</cite> attribute in
 this module’s files.  Each wrangler’s parameters correspond to the constructor
 arguments for that wrangler.</p>
 <section id="acceptednametreewrangler">
-<h3>AcceptedNameTreeWrangler<a class="headerlink" href="#acceptednametreewrangler" title="Permalink to this heading">¶</a></h3>
+<h3>AcceptedNameTreeWrangler<a class="headerlink" href="#acceptednametreewrangler" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>optional</p>
 <ul>
@@ -241,7 +156,7 @@ ensure that if something fails, all is not lost. Defaults to 100.</p></li>
 </ul>
 </section>
 <section id="matchmatrixtreewrangler">
-<h3>MatchMatrixTreeWrangler<a class="headerlink" href="#matchmatrixtreewrangler" title="Permalink to this heading">¶</a></h3>
+<h3>MatchMatrixTreeWrangler<a class="headerlink" href="#matchmatrixtreewrangler" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -254,7 +169,7 @@ Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
 </ul>
 </section>
 <section id="matchspecieslisttreewrangler">
-<h3>MatchSpeciesListTreeWrangler<a class="headerlink" href="#matchspecieslisttreewrangler" title="Permalink to this heading">¶</a></h3>
+<h3>MatchSpeciesListTreeWrangler<a class="headerlink" href="#matchspecieslisttreewrangler" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -264,7 +179,7 @@ Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
 </ul>
 </section>
 <section id="subsettreewrangler">
-<h3>SubsetTreeWrangler<a class="headerlink" href="#subsettreewrangler" title="Permalink to this heading">¶</a></h3>
+<h3>SubsetTreeWrangler<a class="headerlink" href="#subsettreewrangler" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>required</p>
 <ul>
@@ -278,50 +193,33 @@ Biotaphy matrices are two-dimensional, with sites (locations) in the 0 axis
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="idigbio_download.html" class="btn btn-neutral float-right" title="Download occurrence data from iDigBio" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="data_wrangle_species_list.html" class="btn btn-neutral float-left" title="Species List: Wrangling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="idigbio_download.html" class="btn btn-neutral float-right" title="Download occurrence data from iDigBio" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2022, Biotaphy Team.
-
-    </p>
+    <p>&#169; Copyright 2022, Biotaphy Team.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

@@ -1,92 +1,48 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Tutorial 6: Species Distribution Modeling (SDM) &mdash; Biotaphy Tutorials 1.0a1 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=036e6a88"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Tutorial 7: Introducing Presence-Absence Matrices (PAMs)" href="w7_build_pam.html" />
     <link rel="prev" title="Tutorial 5: Split and merge occurrence data by species" href="w5_split_occurrence_data.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> Biotaphy Tutorials
           
-
-          
+          <a href="../index.html" class="icon icon-home">
+            Biotaphy Tutorials
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../pages/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pages/installation.html">Tutorial Preparation</a></li>
@@ -125,73 +81,32 @@
 <li class="toctree-l1"><a class="reference internal" href="../pages/configure_inputs.html">User Data and Parameters</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Biotaphy Tutorials</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Tutorial 6: Species Distribution Modeling (SDM)</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Tutorial 6: Species Distribution Modeling (SDM)</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/tutorial/w6_create_sdms.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <section id="tutorial-6-species-distribution-modeling-sdm">
-<h1>Tutorial 6: Species Distribution Modeling (SDM)<a class="headerlink" href="#tutorial-6-species-distribution-modeling-sdm" title="Permalink to this heading">¶</a></h1>
+<h1>Tutorial 6: Species Distribution Modeling (SDM)<a class="headerlink" href="#tutorial-6-species-distribution-modeling-sdm" title="Link to this heading"></a></h1>
 <p>Create one or more Species Distribution Models using Maxent for
 occurrence data with the minimum number of points defined in the configuration file or
 the <cite>Rare Species Model</cite> algorithm for data without the required minimum number of
@@ -199,14 +114,14 @@ points.  The Rare Species Model intersects the convex hull of the points
 with a raster denoting ecoregions.  For all species data using Maxent, the tool uses the
 Maxent parameters indicated in the configuration file.</p>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
 <p>Read <a class="reference external" href="../tutorial/w1_overview">Tutorial Overview</a> for an overview of how all
 tutorials work.</p>
 </section>
 <section id="data-preparation">
-<h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Permalink to this heading">¶</a></h2>
+<h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Link to this heading"></a></h2>
 <section id="input-occurrence-records">
-<h3>Input: occurrence records<a class="headerlink" href="#input-occurrence-records" title="Permalink to this heading">¶</a></h3>
+<h3>Input: occurrence records<a class="headerlink" href="#input-occurrence-records" title="Link to this heading"></a></h3>
 <p>The create_sdm tool accepts one or more occurrence CSV datasets, defined in two ways in
 the configuration file: either specified by a parent directory in the <cite>points_dir</cite>
 parameter, and/or a list of individual files in the <cite>points_layer</cite> parameter.  The
@@ -216,14 +131,14 @@ y_key, specified in the configuration file.</p>
 <p>More information is in the <strong>Occurrence Data</strong> section of <a class="reference external" href="data_wrangle_occurrence#occurrence-data">data_wrangle_occurrence</a>.</p>
 </section>
 <section id="input-environmental-layers">
-<h3>Input: environmental layers<a class="headerlink" href="#input-environmental-layers" title="Permalink to this heading">¶</a></h3>
+<h3>Input: environmental layers<a class="headerlink" href="#input-environmental-layers" title="Link to this heading"></a></h3>
 <p>The environmental layers files are raster files of environmental data relevant to the
 species being modeled.  Maxent, the only SDM algorithm offered in Biotaphy tools,
 requires environmental layers in ASCII format.  Environmental layers are identified in
 the script parameter file by their parent directory.</p>
 </section>
 <section id="input-ecoregions-file">
-<h3>Input: ecoregions file<a class="headerlink" href="#input-ecoregions-file" title="Permalink to this heading">¶</a></h3>
+<h3>Input: ecoregions file<a class="headerlink" href="#input-ecoregions-file" title="Link to this heading"></a></h3>
 <p>The ecoregions file is a raster file indicating broad ecoregions for the region
 being modeled.  Ecoregions data can be used to compute a simple Rare Species Model
 for species without sufficient points for a Maxent model, by intersecting the convex
@@ -231,7 +146,7 @@ hull of the points with the ecoregions.  These data are available from coarse to
 scales, at global and regional extents.  This file can be in ASCII or GeoTiff format.</p>
 </section>
 <section id="input-script-parameter-file">
-<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Permalink to this heading">¶</a></h3>
+<h3>Input: Script parameter file<a class="headerlink" href="#input-script-parameter-file" title="Link to this heading"></a></h3>
 <p>A JSON parameter file is required for this command.  A test tutorial parameter file is:
 <a class="reference external" href="https://github.com/biotaphy/tutorials/blob/main/data/config/create_sdm_global.json">create_sdm_global.json</a>,</p>
 <p>These are the required and optional parameters:</p>
@@ -283,7 +198,7 @@ used for modeling to.  If the data contains less than the minimum, the
 </section>
 </section>
 <section id="run-tutorial">
-<h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Permalink to this heading">¶</a></h2>
+<h2>Run tutorial<a class="headerlink" href="#run-tutorial" title="Link to this heading"></a></h2>
 <p>with a list and a directory containing occurrence data files.</p>
 <p>Initiate the create_sdm process with the following:</p>
 <p>For Linux/Mac systems:</p>
@@ -293,7 +208,7 @@ used for modeling to.  If the data contains less than the minimum, the
 </div>
 </section>
 <section id="output">
-<h2>Output<a class="headerlink" href="#output" title="Permalink to this heading">¶</a></h2>
+<h2>Output<a class="headerlink" href="#output" title="Link to this heading"></a></h2>
 <p>Most outputs are configured in the script parameter file, and may include:</p>
 <ol class="arabic simple">
 <li><p>If “report_filename” is specified in the script parameter file, a summary of SDM results
@@ -316,50 +231,33 @@ in <a class="reference external" href="w8_build_pam">Webinar 8</a>.</p></li>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="w7_build_pam.html" class="btn btn-neutral float-right" title="Tutorial 7: Introducing Presence-Absence Matrices (PAMs)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="w5_split_occurrence_data.html" class="btn btn-neutral float-left" title="Tutorial 5: Split and merge occurrence data by species" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="w7_build_pam.html" class="btn btn-neutral float-right" title="Tutorial 7: Introducing Presence-Absence Matrices (PAMs)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2022, Biotaphy Team.
-
-    </p>
+    <p>&#169; Copyright 2022, Biotaphy Team.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
